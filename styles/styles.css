@@ -1,0 +1,144 @@
+
+/* Reset CSS, um Standard-Stile zu entfernen */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+head {
+    display: none;
+}
+
+body {
+    font: 400 16px/1.5 -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    letter-spacing: normal;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #fff;
+    box-shadow: 0 3px 1px -2px #0003, 0 2px 2px #00000024, 0 1px 5px #0000001f;
+}
+
+header .nav-header {
+    display: flex;
+    gap: 32px;
+    max-width: 1300px;
+    padding: 24px 72px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+header .nav-header .left-col {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 66%;
+    gap: 16px;
+}
+
+header .nav-header .link-container {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+header .nav-header .nav-link {
+    color: #606060;
+}
+
+header .nav-header a {
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+
+header .nav-header .title-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header .nav-header .title-container .title {
+    font: 600 24px/32px -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    letter-spacing: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+header .nav-header .right-col {
+	display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+header .nav-header .rki-logo-link {
+	left: 200;
+	margin-right: 10px;
+}
+
+header .nav-header .rki-logo-link .rki-logo {
+	max-height: 72px;
+	max-width: 100%;
+}
+
+
+.abstract-tag-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+    max-width: 1300px;
+   
+    padding: 24px 72px;
+    box-sizing: border-box;
+    
+    margin: 0 auto;
+}
+
+p {
+	    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+h1 {
+    font: 700 32px/48px -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    letter-spacing: normal;
+    margin: 0 0 16px;
+}
+
+h2 {
+    font-weight: 600;
+    padding-bottom: 0.3em;
+    font-size: 1.5em;
+    border-bottom: 1px solid hsl(210deg,18%,87%);
+}
+
+blockquote {
+	margin-top: 10px;
+    
+    padding: 0 1em;
+    color: #57606a;
+    border-left: 0.25em solid #d0d7de;
+}
+
+
+#iframe-container {
+	padding-top: 10px;
+	height: 100vh;
+	overflow-y: hidden;
+}
+
+iframe {
+	width: 100%;
+	height: 100%;
+	border: none;
+}
