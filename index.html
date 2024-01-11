@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>rki.demis.disease#1.2.0-rc.1</title>
+	<title>DEMIS-Implementationguides</title>
 	<link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
@@ -26,17 +26,41 @@
 	</header>
 	<div class="abstract-tag-container">
 		<div class="abstract-container">
-			<h1>Überblick</h1>
-			<p>Auf den folgenden Unterseiten finden Sie die im Rahmen des DEMIS-Projektes (vor)veröffentlichten Implementierungsleitfäden.</p>
+			<h1>Vorveröffentlichung DEMIS-FHIR-Profile</h1>
+			<p>Auf dieser Seite werden kommende Profilanpassungen der jeweiligen DEMIS-Pakete vorab veröffentlich. Die Simplifier-Seiten der FHIR-Profile beinhalten weiterhin den Profil-Stand, welcher aktuell vom DEMIS-Backend unterstützt wird. Diese Vorabveröffentlichung ist auf keinem DEMIS Testserver aktiv.</p>
 			<p/>
-			<h2>DEMIS Common (rki.demis.common)</h2>
-			<p>Folgende Vorabversionen wurden bisher veröffentlicht:</p>
+			<br/>
+			<h2>FHIR-Profile Basismeldeinhalte (rki.demis.common)</h2>
+			<p>Das Paket rki.demis.common beinhaltet eine Reihe an DEMIS-Basis-Ressourcen, welche bisher Bestandteil des rki.demis.r4.core-Paketes waren. Es handelt sich dabei um sogenannte Basis-Ressourcen wie betroffene Person oder Melder, die von spezifischen DEMIS-Paketen (z.B. rki.demis.laboratory oder rki.demis.disease) verwendet werden. Diese Ressourcen sind jetzt im separaten rki.demis.common-Paket gebündelt.</p>
 			<blockquote>
 				<p class="link">
-					<a class="package-link" href="./rki.demis.common-1.0.0-alpha.1/index.html">rki.demis.common-1.0.0-alpha.1</a>
+					<a class="package-link" href="./rki.demis.common-1.0.0-alpha.1/index.html">Version rki.demis.common-1.0.0-rc.2 (15.12.2023)</a>
+					<dl>
+						<dt>Change log (gegenüber rki.demis.common-1.0.0-rc.1):</dt>
+							<dd>- CodeSystem und ValueSet geographicRegion hinzugefügt (diese waren bisher Bestandteil des disease-Paketes)</dd>
+					</dl><br/> 
+					<a class="package-link" href="./rki.demis.common-1.0.0-alpha.1/index.html">Version rki.demis.common-1.0.0-rc.1 (01.12.2023)</a><br/>
+					<dl>
+						<dt>Change log (gegenüber rki.demis.common-1.0.0-alpha.1):</dt>
+							<dd>- Übernahme als Release Candidate</dd>
+							<dd>- patternCoding mit LOINC-Code 34782-3 in Composition.type entfernt; es ist jetzt in den spezifischen Meldungs-Profilen NotificationLaboratory (rki.demis.laboratory) und NotificationDisease (rki.demis.disease) gesetzt</dd>
+					</dl><br/> 
+					<a class="package-link" href="./rki.demis.common-1.0.0-alpha.1/index.html">Version rki.demis.common-1.0.0-alpha.1 (13.11.2023)</a>
+					<dl>
+						<dt>Inhaltlich wurden an diesen Ressourcen gegenüber der Version rki.demis.r4.core 1.24.0-alpha.2 folgende Änderungen vorgenommen:</dt>
+							<dd>- Plausibilitätsprüfung von Kontaktdaten: Warning-Constraints wurden zur Validierung von Email, Telefonnummer, Faxnummer und URL hinzugefügt</dd>
+							<dd>- Land wird nun als ISO-Länder-Code abgebildet; die DEMIS-Ländercodes sind weiterhin valide</dd>
+							<dd>- CodeSystem OrganizationType wurde erweitert</dd>
+							<dd>- CapabilityStatements werden nicht mehr benötigt und wurden entfernt</dd>
+							<dd>- mustSupport-Markierungen für Unterelemente wurden hinzugefügt</dd>
+							<dt>- FHIR-technische Verbesserungen:</dt>
+								<dd>- meta-Tag ist verpflichtend</dd>
+								<dd>- Kompatibilität der CodeSysteme und ValueSets mit Shareable CodeSystem bzw. Shareable ValueSet ist sichergestellt: publisher- und experimental-Tag wurden hinzugefügt </dd>
+								<dd>- an Stelle von fixed Values werden pattern definiert</dd>
+					</dl><br/> 
 				</p>
 			</blockquote>
-			<h2>DEMIS Erregernachweismeldung (rki.demis.laboratory)</h2>
+			<h2>FHIR-Profile Erregernachweismeldung (rki.demis.laboratory)</h2>
 			<blockquote>
 				<p class="link">
 					<a class="package-link" href="./rki.demis.laboratory-1.24.0-alpha.1/index.html">rki.demis.laboratory-1.24.0-alpha.1</a><br/>
@@ -44,7 +68,7 @@
 					<a class="package-link" href="./rki.demis.laboratory-1.24.0-alpha.3/index.html">rki.demis.laboratory-1.24.0-alpha.3</a>
 				</p>
 			</blockquote>
-			<h2>DEMIS Arztmeldung (rki.demis.disease)</h2>
+			<h2>FHIR-Profile Erkrankungsmeldung (rki.demis.disease)</h2>
 			<blockquote>
 				<p class="link">
 					<a class="package-link" href="./rki.demis.disease-1.2.0-alpha.1/index.html">rki.demis.disease-1.2.0-alpha.1</a><br/>
@@ -52,7 +76,7 @@
 					<a class="package-link" href="./rki.demis.disease-1.2.0-rc.1/index.html">rki.demis.disease-1.2.0-rc.1</a>
 				</p>
 			</blockquote>
-			<h2>DEMIS Bettenbelegungsstatistik (rki.demis.statistic)</h2>
+			<h2>FHIR-Profile Bettenbelegungsstatistik (rki.demis.statistic)</h2>
 			<p></p>
 		</div>
 	<div>
