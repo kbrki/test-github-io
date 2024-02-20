@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="FacilityAddressNotifiedPerson" />
+  <url value="https://demis.rki.de/fhir/StructureDefinition/FacilityAddressNotifiedPerson" />
+  <version value="1.2.0" />
+  <name value="FacilityAddressNotifiedPerson" />
+  <title value="Einrichtungsadresse Betroffene Person" />
+  <status value="active" />
+  <date value="2023-10-16" />
+  <description value="Über Einrichtungsadresse kann eine Einrichtung als Aufenthaltsort für die Betroffene Person angegeben werden." />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Patient.address" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="https://demis.rki.de/fhir/StructureDefinition/FacilityAddressNotifiedPerson" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <short value="Einrichtung" />
+      <definition value="Einrichtung in der sich die Betroffene Person aufhält" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/NotifiedPersonFacility" />
+        <aggregation value="bundled" />
+      </type>
+    </element>
+    <element id="Extension.value[x].reference">
+      <path value="Extension.value[x].reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

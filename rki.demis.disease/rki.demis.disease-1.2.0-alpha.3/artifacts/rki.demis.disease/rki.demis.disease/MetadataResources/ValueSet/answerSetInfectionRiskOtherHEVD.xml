@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetInfectionRiskOtherHEVD"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetInfectionRiskOtherHEVD"/>
+  <version value="1.0.0"/>
+  <name value="AnswerSetInfectionRiskOtherHEVD"/>
+  <title value="Antwort zu Sonstiger Kontakt bei Hepatitis E"/>
+  <status value="active"/>
+  <date value="2023-03-23"/>
+  <description value="Das ValueSet AnswerSetInfectionRiskOtherHEVD enthält die Codes der Antwortmöglichkeiten für Sonstiger Kontakt bei Hepatitis E."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <code value="264327008"/>
+        <display value="Abwasser"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Waste water (substance)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="421665008"/>
+        <display value="Fluss"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="River water (substance)"/>
+        </designation>
+      </concept>
+	  <concept>
+		<code value="420492000"/>
+		<display value="See"/>
+		<designation>
+		  <language value="en-US"/>
+		  <use>
+			<system value="http://snomed.info/sct"/>
+			<code value="900000000000003001"/>
+		  </use>
+		  <value value="Lake water (substance)"/>
+	    </designation>
+      </concept>
+      <concept>
+        <code value="446278008"/>
+        <display value="Schwimmbad"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Swimming pool water (substance)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="289925000"/>
+        <display value="Müll"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Waste material (substance)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="415555003"/>
+        <display value="Erde/Schlamm"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Soil (substance)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="74964007"/>
+        <display value="-andere/sonstige-"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Other (qualifier value)"/>
+        </designation>
+      </concept>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+      <version value="2.1.0"/>
+      <concept>
+        <code value="ASKU"/>
+        <display value="asked but unknown"/>
+      </concept>
+      <concept>
+        <code value="NASK"/>
+        <display value="not asked"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

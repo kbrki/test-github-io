@@ -1,0 +1,23 @@
+<Condition xmlns="http://hl7.org/fhir">
+   <id value="cc86fc62-11af-3411-8b5e-6b2202206ec4"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseCVDD"></profile>
+   </meta>
+   <verificationStatus>
+      <coding>
+         <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"></system>
+         <code value="confirmed"></code>
+      </coding>
+   </verificationStatus>
+   <code>
+      <coding>
+         <system value="https://demis.rki.de/fhir/CodeSystem/notificationDiseaseCategory"></system>
+         <code value="cvdd"></code>
+         <display value="Coronavirus-Krankheit-2019 (COVID-19)"></display>
+      </coding>
+   </code>
+   <subject>
+      <reference value="Patient/ac163863-fefa-3ce2-8511-7a4150d6ad43"></reference>
+   </subject>
+   <recordedDate value="2021-03-04"></recordedDate>
+</Condition>

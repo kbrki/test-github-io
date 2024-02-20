@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetInfectionRiskNEID"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetInfectionRiskNEID"/>
+  <version value="1.0.0"/>
+  <name value="AnswerSetInfectionRiskNEID"/>
+  <title value="Antwort zu Risikofaktoren bei Meningokokken"/>
+  <status value="active"/>
+  <date value="2023-04-25"/>
+  <description value="Das ValueSet AnswerSetInfectionRiskNEID enthält die Codes der Antwortmöglichkeiten für Risikofaktoren bei Meningokokken."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <code value="260413007"/>
+        <display value="keine"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="None (qualifier value)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="707147002"/>
+        <display value="Asplenie"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Asplenia (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="24419001"/>
+        <display value="Komplementdefekte"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Disorder of complement (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="119249001"/>
+        <display value="Agammaglobulinämie"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Agammaglobulinemia (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="119250001"/>
+        <display value="Hypogammaglobulinämie"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Hypogammaglobulinemia (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="10838971000119103+783440008"/>
+        <display value="Medikamentöse Immunsuppression (C5-Komplement-Inhibitoren, wie Eculizumab oder Ravulizumab)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="10838971000119103 | Immunodeficiency caused by long term therapeutic use of drug (disorder) | + 783440008 | Substance with complement 5 inhibitor mechanism of action (substance) |"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="234645009"/>
+        <display value="Andere medikamentöse Immunsuppression"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Drug-induced immunodeficiency (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="234532001"/>
+        <display value="Andere Immundefekte"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Immunodeficiency disorder (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="225531006:47429007=472986005"/>
+        <display value="Männer, die Sex mit Männern haben (MSM)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="225531006 | Homosexual behavior (finding) | :  47429007 | Associated with (attribute) | = 472986005 | Sexually active with men (finding) |"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="74964007"/>
+        <display value="-andere/sonstige-"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Other (qualifier value)"/>
+        </designation>
+      </concept>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+      <version value="2.1.0"/>
+      <concept>
+        <code value="ASKU"/>
+        <display value="asked but unknown"/>
+      </concept>
+      <concept>
+        <code value="NASK"/>
+        <display value="not asked"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

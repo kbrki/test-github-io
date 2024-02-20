@@ -1,0 +1,29 @@
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="NotifierFacility-example" />
+  <meta>
+    <profile value="https://demis.rki.de/fhir/StructureDefinition/NotifierFacility" />
+  </meta>
+  <identifier>
+    <system value="https://fhir.kbv.de/NamingSystem/KBV_NS_Base_BSNR" />
+    <value value="272607400" />
+  </identifier>
+  <type>
+    <coding>
+      <system value="https://demis.rki.de/fhir/CodeSystem/organizationType" />
+      <code value="laboratory" />
+    </coding>
+  </type>
+  <name value="Labor Sonnenschein" />
+  <telecom>
+    <system value="phone" />
+    <value value="+49 (0)2737 - 123456" />
+    <use value="work" />
+  </telecom>
+  <address>
+    <line value="Seeweg 15" />
+    <city value="Berlin" />
+    <state value="DE-BE" />
+    <postalCode value="10117" />
+    <country value="DE" />
+  </address>
+</Organization>

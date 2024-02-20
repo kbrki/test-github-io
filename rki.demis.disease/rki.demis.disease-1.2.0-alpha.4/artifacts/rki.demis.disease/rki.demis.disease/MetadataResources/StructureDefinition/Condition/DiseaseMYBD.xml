@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="DiseaseMYBD"/>
+  <url value="https://demis.rki.de/fhir/StructureDefinition/DiseaseMYBD"/>
+  <version value="1.0.0"/>
+  <name value="DiseaseMYBD"/>
+  <title value="Behandlungsabbruch Tuberkulose"/>
+  <status value="active"/>
+  <date value="2023-04-19"/>
+  <description value="Enthält Informationen hinsichtlich Behandlungsabbruch Tuberkulose."/>
+  <fhirVersion value="4.0.1"/>
+  <mapping>
+    <identity value="sct-concept"/>
+    <uri value="http://snomed.info/conceptdomain"/>
+    <name value="SNOMED CT Concept Domain Binding"/>
+  </mapping>
+  <mapping>
+    <identity value="sct-attr"/>
+    <uri value="http://snomed.org/attributebinding"/>
+    <name value="SNOMED CT Attribute Binding"/>
+  </mapping>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="Condition"/>
+  <baseDefinition value="https://demis.rki.de/fhir/StructureDefinition/Disease"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Condition.code">
+      <path value="Condition.code"/>
+      <short value="Meldetatbestand Behandlungsabbruch Tuberkulose"/>
+      <definition value="Bei Meldetatbestand Behandlungsabbruch Tuberkulose ist Condition.code.coding.code mit &quot;mybd&quot; zu belegen."/>
+    </element>
+    <element id="Condition.code.coding.system">
+      <path value="Condition.code.coding.system"/>
+      <fixedUri value="https://demis.rki.de/fhir/CodeSystem/notificationDiseaseCategory"/>
+    </element>
+    <element id="Condition.code.coding.code">
+      <path value="Condition.code.coding.code"/>
+      <fixedCode value="mybd"/>
+    </element>
+  </differential>
+</StructureDefinition>

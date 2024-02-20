@@ -1,0 +1,25 @@
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="Comment-example" />
+  <meta>
+    <profile value="https://demis.rki.de/fhir/StructureDefinition/Notifier" />
+  </meta>
+  <name>
+    <use value="official" />
+    <family value="Jung" />
+    <given value="Anna" />
+  </name>
+  <telecom>
+    <extension url="https://demis.rki.de/fhir/StructureDefinition/Comment">
+      <valueString value="montag-freitag 8:00-17:00" />
+    </extension>
+    <system value="phone" />
+    <value value="0123 456789" />
+    <use value="work" />
+  </telecom>
+  <address>
+    <line value="Rosenbergstr. 85" />
+    <city value="Stuttgart" />
+    <postalCode value="70193" />
+    <country value="DE" />
+  </address>
+</Practitioner>

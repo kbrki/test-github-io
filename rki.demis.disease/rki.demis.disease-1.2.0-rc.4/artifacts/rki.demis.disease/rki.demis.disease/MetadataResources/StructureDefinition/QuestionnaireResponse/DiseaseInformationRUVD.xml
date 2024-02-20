@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+	<id value="DiseaseInformationRUVD" />
+	<url value="https://demis.rki.de/fhir/StructureDefinition/DiseaseInformationRUVD" />
+	<version value="1.0.0" />
+	<name value="DiseaseInformationRUVD" />
+	<title value="Röteln postnatal -spezifische klinische und epidemiologische Angaben" />
+	<status value="active" />
+	<date value="2023-02-02" />
+	<description value="DiseaseInformationRUVD" />
+	<fhirVersion value="4.0.1" />
+	<kind value="resource" />
+	<abstract value="false" />
+	<type value="QuestionnaireResponse" />
+	<baseDefinition value="https://demis.rki.de/fhir/StructureDefinition/DiseaseInformation" />
+	<derivation value="constraint" />
+	<differential>
+		<element id="QuestionnaireResponse.questionnaire">
+			<path value="QuestionnaireResponse.questionnaire" />
+			<fixedCanonical value="https://demis.rki.de/fhir/Questionnaire/DiseaseQuestionsRUVD" />
+		</element>
+	</differential>
+</StructureDefinition>

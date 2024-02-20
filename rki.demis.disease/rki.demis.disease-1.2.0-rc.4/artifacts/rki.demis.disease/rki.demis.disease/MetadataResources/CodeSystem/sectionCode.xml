@@ -1,0 +1,26 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="sectionCode" />
+  <url value="https://demis.rki.de/fhir/CodeSystem/sectionCode" />
+  <version value="1.0.0" />
+  <name value="SectionCode" />
+  <title value="Section-Code" />
+  <status value="active" />
+  <date value="2022-01-18" />
+  <description value="Das CodeSystem SectionCode enthält die Codes der document sections." />
+  <caseSensitive value="false" />
+  <valueSet value="https://demis.rki.de/fhir/ValueSet/sectionCode" />
+  <content value="complete" />
+  <count value="3" />
+  <concept>
+    <code value="diagnosis" />
+    <display value="Diagnose" />
+  </concept>
+  <concept>
+    <code value="generalClinAndEpiInformation" />
+    <display value="Meldetatbestandsübergreifende klinische und epidemiologische Angaben" />
+  </concept>
+  <concept>
+    <code value="specificClinAndEpiInformation" />
+    <display value="Meldetatbestandsspezifische klinische und epidemiologische Angaben" />
+  </concept>
+</CodeSystem>

@@ -1,0 +1,73 @@
+<Composition xmlns="http://hl7.org/fhir">
+   <id value="553633fe-5faf-3bfe-9e74-44b625bdc9c7"></id>
+   <meta>
+      <lastUpdated value="2022-12-07T09:50:00.000+01:00"></lastUpdated>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/NotificationDiseaseCLOD"></profile>
+   </meta>
+   <identifier>
+      <system value="https://demis.rki.de/fhir/NamingSystem/NotificationId"></system>
+      <value value="80201f2f-65a4-432d-a007-c52888848e07"></value>
+   </identifier>
+   <status value="final"></status>
+   <type>
+      <coding>
+         <system value="http://loinc.org"></system>
+         <code value="34782-3"></code>
+         <display value="Infectious disease Note"></display>
+      </coding>
+   </type>
+   <category>
+      <coding>
+         <system value="https://demis.rki.de/fhir/CodeSystem/notificationType"></system>
+         <code value="6.1_2"></code>
+         <display value="Meldung gemäß §6 Absatz 1, 2"></display>
+      </coding>
+   </category>
+   <subject>
+      <reference value="Patient/eb14bc48-e720-36b9-b1b5-eca7f78e64bf"></reference>
+   </subject>
+   <date value="2022-12-07T01:00:00+01:00"></date>
+   <author>
+      <reference value="PractitionerRole/2b1091fb-c014-3854-b4ff-6851cf8d4b05"></reference>
+   </author>
+   <title value="Meldung gemäß §6 Absatz 1, 2 IfSG"></title>
+   <section>
+      <title value="Diagnose"></title>
+      <code>
+         <coding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/sectionCode"></system>
+            <code value="diagnosis"></code>
+            <display value="Diagnose"></display>
+         </coding>
+      </code>
+      <entry>
+         <reference value="Condition/36890b03-a869-3ef2-8646-1b32fefcb368"></reference>
+      </entry>
+   </section>
+   <section>
+      <title value="Meldetatbestandsübergreifende klinische und epidemiologische Angaben"></title>
+      <code>
+         <coding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/sectionCode"></system>
+            <code value="generalClinAndEpiInformation"></code>
+            <display value="Meldetatbestandsübergreifende klinische und epidemiologische Angaben"></display>
+         </coding>
+      </code>
+      <entry>
+         <reference value="QuestionnaireResponse/6a29221a-1adf-3a2a-89e2-af77320251db"></reference>
+      </entry>
+   </section>
+   <section>
+      <title value="Meldetatbestandsspezifische klinische und epidemiologische Angaben"></title>
+      <code>
+         <coding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/sectionCode"></system>
+            <code value="specificClinAndEpiInformation"></code>
+            <display value="Meldetatbestandsspezifische klinische und epidemiologische Angaben"></display>
+         </coding>
+      </code>
+      <entry>
+         <reference value="QuestionnaireResponse/e3ef77f5-cc54-3cb4-a509-dc9184b878c2"></reference>
+      </entry>
+   </section>
+</Composition>

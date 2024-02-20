@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+	<id value="NotificationDiseaseCVDD" />
+	<url value="https://demis.rki.de/fhir/StructureDefinition/NotificationDiseaseCVDD" />
+	<version value="1.1.0" />
+	<name value="NotificationDiseaseCVDD" />
+	<title value="COVID-19-Erkrankungsmeldung" />
+	<status value="active" />
+	<date value="2022-12-17" />
+	<description value="Die COVID-19-Erkrankungsmeldung spezifiziert die Meldeinhalte hinsichtlich der Coronavirus-Krankheit-2019." />
+	<fhirVersion value="4.0.1" />
+	<mapping>
+		<identity value="workflow" />
+		<uri value="http://hl7.org/fhir/workflow" />
+		<name value="Workflow Pattern" />
+	</mapping>
+	<mapping>
+		<identity value="rim" />
+		<uri value="http://hl7.org/v3" />
+		<name value="RIM Mapping" />
+	</mapping>
+	<mapping>
+		<identity value="cda" />
+		<uri value="http://hl7.org/v3/cda" />
+		<name value="CDA (R2)" />
+	</mapping>
+	<mapping>
+		<identity value="fhirdocumentreference" />
+		<uri value="http://hl7.org/fhir/documentreference" />
+		<name value="FHIR DocumentReference" />
+	</mapping>
+	<mapping>
+		<identity value="w5" />
+		<uri value="http://hl7.org/fhir/fivews" />
+		<name value="FiveWs Pattern Mapping" />
+	</mapping>
+	<kind value="resource" />
+	<abstract value="true" />
+	<type value="Composition" />
+	<baseDefinition value="https://demis.rki.de/fhir/StructureDefinition/NotificationDisease" />
+	<derivation value="constraint" />
+	<differential>
+		<element id="Composition.category.coding.system">
+			<path value="Composition.category.coding.system" />
+			<fixedUri value="https://demis.rki.de/fhir/CodeSystem/notificationType" />
+		</element>
+		<element id="Composition.category.coding.code">
+			<path value="Composition.category.coding.code" />
+			<fixedCode value="6.1_2" />
+		</element>
+		<element id="Composition.section:disease">
+			<path value="Composition.section" />
+			<sliceName value="disease" />
+			<short value="Enthält einen Verweis auf die Covid-19-Erkankung" />
+			<definition value="Enthält einen Verweis auf die Covid-19-Erkankung" />
+		</element>
+		<element id="Composition.section:disease.entry">
+			<path value="Composition.section.entry" />
+			<type>
+				<code value="Reference" />
+				<targetProfile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseCVDD" />
+			</type>
+		</element>
+		<element id="Composition.section:diseaseInformation">
+			<path value="Composition.section" />
+			<sliceName value="diseaseInformation" />
+			<short value="Enthält einen Verweis auf die Covid-19-Erkrankungs-Informationen" />
+			<definition value="Enthält einen Verweis auf die Covid-19-Erkrankungs-Informationen" />
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:diseaseInformation.entry">
+			<path value="Composition.section.entry" />
+			<type>
+				<code value="Reference" />
+				<targetProfile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseInformationCVDD" />
+			</type>
+		</element>
+	</differential>
+</StructureDefinition>

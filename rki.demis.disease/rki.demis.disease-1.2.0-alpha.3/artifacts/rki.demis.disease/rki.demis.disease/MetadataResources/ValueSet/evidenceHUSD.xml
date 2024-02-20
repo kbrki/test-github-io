@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="evidenceHUSD"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/evidenceHUSD"/>
+  <version value="1.0.0"/>
+  <name value="EvidenceHUSD"/>
+  <title value="Hämolytisch-urämisches Syndrom (HUS)-Symptom und -Manifestation"/>
+  <status value="active"/>
+  <date value="2023-04-24"/>
+  <description value="Das ValueSet EvidenceHUSD enthält die Codes der Hämolytisch-urämisches Syndrom (HUS)-Symptome und -Manifestationen."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <code value="61261009"/>
+        <display value="Anämie, hämolytische"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Hemolytic anemia (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="21522001"/>
+        <display value="Bauchschmerzen"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Abdominal pain (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="95545007"/>
+        <display value="Durchfall, blutig"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Hemorrhagic diarrhea (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="409966000"/>
+        <display value="Durchfall, akut"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Acute diarrhea (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="422400008"/>
+        <display value="Erbrechen"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Vomiting (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="386661006"/>
+        <display value="Fieber"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Fever (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="236423003"/>
+        <display value="Nierenfunktionsstörung"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Renal impairment (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="308921004:42752001=56681004"/>
+        <display value="Symptome, zerebrale"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="308921004 |Neurological symptom (finding)|:  42752001 |Due to (attribute)| = 56681004 |Cerebral alteration (finding)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="302215000"/>
+        <display value="Thrombozytopenie (&lt;= 150.000 Zellen/cmm)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Thrombocytopenic disorder (disorder)"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,47 @@
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="NotifiedPerson-example" />
+  <meta>
+    <profile value="https://demis.rki.de/fhir/StructureDefinition/NotifiedPerson" />
+  </meta>
+  <name>
+    <use value="official" />
+    <family value="Müller" />
+    <given value="Karl-Heinz" />
+  </name>
+  <telecom>
+    <extension url="https://demis.rki.de/fhir/StructureDefinition/Comment">
+      <valueString value="Ab 14 Uhr" />
+    </extension>
+    <system value="phone" />
+    <value value="+49 (0)12345 - 123456" />
+    <use value="work" />
+  </telecom>
+  <gender value="male" />
+  <birthDate value="1974-12-25" />
+  <address>
+    <extension url="https://demis.rki.de/fhir/StructureDefinition/AddressUse">
+      <valueCoding>
+        <system value="https://demis.rki.de/fhir/CodeSystem/addressUse" />
+        <code value="ordinary" />
+      </valueCoding>
+    </extension>
+    <extension url="https://demis.rki.de/fhir/StructureDefinition/FacilityAddressNotifiedPerson">
+      <valueReference>
+        <reference value="Organzation/98cda07d-1fa7-47f6-ad79-e66de48d6078" />
+      </valueReference>
+    </extension>
+  </address>
+  <contact>
+    <relationship>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0131" />
+        <code value="E" />
+      </coding>
+    </relationship>
+    <name>
+      <use value="official" />
+      <family value="Meier" />
+      <given value="Joachim" />
+    </name>
+  </contact>
+</Patient>

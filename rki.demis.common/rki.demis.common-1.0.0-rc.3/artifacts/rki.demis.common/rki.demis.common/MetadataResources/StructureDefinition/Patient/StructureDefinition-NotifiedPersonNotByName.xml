@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="NotifiedPersonNotByName" />
+  <url value="https://demis.rki.de/fhir/StructureDefinition/NotifiedPersonNotByName" />
+  <version value="1.2.0" />
+  <name value="NotifiedPersonNotByName" />
+  <title value="Betroffene Person (nichtnamentlich)" />
+  <status value="draft" />
+  <date value="2024-02-05" />
+  <description value="Profil zur Abbildung von nichtnamentlich gemeldeten Personen, z.B. im Zusammenhang mit Meldungen gemäß §7 Abs. 3 und 4 IfSG." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Patient" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Patient" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Patient.meta">
+      <path value="Patient.meta" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.meta.profile">
+      <path value="Patient.meta.profile" />
+      <min value="1" />
+      <max value="1" />
+      <fixedCanonical value="https://demis.rki.de/fhir/StructureDefinition/NotifiedPersonNotByName" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.contained">
+      <path value="Patient.contained" />
+      <max value="0" />
+    </element>
+    <element id="Patient.identifier">
+      <path value="Patient.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Patient.active">
+      <path value="Patient.active" />
+      <max value="0" />
+    </element>
+    <element id="Patient.name">
+      <path value="Patient.name" />
+      <max value="0" />
+    </element>
+    <element id="Patient.telecom">
+      <path value="Patient.telecom" />
+      <max value="0" />
+    </element>
+    <element id="Patient.gender">
+      <path value="Patient.gender" />
+      <short value="Geschlecht" />
+      <definition value="Geschlecht der nichtnamentlichen betroffenen Person" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.birthDate">
+      <path value="Patient.birthDate" />
+      <short value="Geburtsdatum" />
+      <definition value="Geburtsdatum der nichtnamentlichen betroffenen Person" />
+      <constraint>
+        <key value="yearAndMonthOnlyBirthDate" />
+        <severity value="error" />
+        <human value="Das Geburtsdatum darf lediglich Jahr und Monat der Geburt beinhalten. Das Geburtsjahr muss mit 19 oder 20 beginnen." />
+        <expression value="$this.toString().matches('^19[0-9]{2}-[0-9]{2}|20[0-9]{2}-[0-9]{2}|19[0-9]{2}|20[0-9]{2}$')" />
+      </constraint>
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.deceased[x]">
+      <path value="Patient.deceased[x]" />
+      <max value="0" />
+    </element>
+    <element id="Patient.address">
+      <path value="Patient.address" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="extension('https://demis.rki.de/fhir/StructureDefinition/AddressUse').value" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <short value="Adresse" />
+      <definition value="Adresse der nichtnamentlichen betroffenen Person" />
+      <max value="3" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.address:hauptwohnung">
+      <path value="Patient.address" />
+      <sliceName value="hauptwohnung" />
+      <max value="1" />
+    </element>
+    <element id="Patient.address:hauptwohnung.extension">
+      <path value="Patient.address.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Patient.address:hauptwohnung.extension:addressUse">
+      <path value="Patient.address.extension" />
+      <sliceName value="addressUse" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://demis.rki.de/fhir/StructureDefinition/AddressUse" />
+      </type>
+      <mustSupport value="true" />
+      <isModifier value="false" />
+    </element>
+    <element id="Patient.address:hauptwohnung.extension:addressUse.value[x]">
+      <path value="Patient.address.extension.value[x]" />
+      <fixedCoding>
+        <system value="https://demis.rki.de/fhir/CodeSystem/addressUse" />
+        <code value="primary" />
+      </fixedCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.address:hauptwohnung.use">
+      <path value="Patient.address.use" />
+      <max value="0" />
+    </element>
+    <element id="Patient.address:hauptwohnung.type">
+      <path value="Patient.address.type" />
+      <max value="0" />
+    </element>
+    <element id="Patient.address:hauptwohnung.text">
+      <path value="Patient.address.text" />
+      <max value="0" />
+    </element>
+    <element id="Patient.address:hauptwohnung.line">
+      <path value="Patient.address.line" />
+      <max value="0" />
+    </element>
+    <element id="Patient.address:hauptwohnung.city">
+      <path value="Patient.address.city" />
+      <max value="0" />
+    </element>
+    <element id="Patient.address:hauptwohnung.district">
+      <path value="Patient.address.district" />
+      <max value="0" />
+    </element>
+    <element id="Patient.address:hauptwohnung.state">
+      <path value="Patient.address.state" />
+      <max value="0" />
+    </element>
+    <element id="Patient.address:hauptwohnung.postalCode">
+      <path value="Patient.address.postalCode" />
+      <constraint>
+        <key value="threeDigitPostalCode" />
+        <severity value="error" />
+        <human value="Die 'verkürzte' Postleitzahl muss aus den ersten 3 Ziffern der 'normalen' Postleitzahl bestehen." />
+        <expression value="$this.toString().matches('^[0-9]{3}$')" />
+      </constraint>
+    </element>
+    <element id="Patient.address:hauptwohnung.country">
+      <path value="Patient.address.country" />
+      <max value="0" />
+    </element>
+    <element id="Patient.address:hauptwohnung.period">
+      <path value="Patient.address.period" />
+      <max value="0" />
+    </element>
+    <element id="Patient.address:gewoehnlicherAufenthaltsort">
+      <path value="Patient.address" />
+      <sliceName value="gewoehnlicherAufenthaltsort" />
+      <max value="1" />
+    </element>
+    <element id="Patient.address:gewoehnlicherAufenthaltsort.extension">
+      <path value="Patient.address.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Patient.address:gewoehnlicherAufenthaltsort.extension:addressUse">
+      <path value="Patient.address.extension" />
+      <sliceName value="addressUse" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://demis.rki.de/fhir/StructureDefinition/AddressUse" />
+      </type>
+      <mustSupport value="true" />
+      <isModifier value="false" />
+    </element>
+    <element id="Patient.address:gewoehnlicherAufenthaltsort.extension:addressUse.value[x]">
+      <path value="Patient.address.extension.value[x]" />
+      <fixedCoding>
+        <system value="https://demis.rki.de/fhir/CodeSystem/addressUse" />
+        <code value="ordinary" />
+      </fixedCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.address:gewoehnlicherAufenthaltsort.use">
+      <path value="Patient.address.use" />
+      <max value="0" />
+    </element>
+    <element id="Patient.address:gewoehnlicherAufenthaltsort.type">
+      <path value="Patient.address.type" />
+      <max value="0" />
+    </element>
+    <element id="Patient.address:gewoehnlicherAufenthaltsort.text">
+      <path value="Patient.address.text" />
+      <max value="0" />
+    </element>
+    <element id="Patient.address:gewoehnlicherAufenthaltsort.line">
+      <path value="Patient.address.line" />
+      <max value="0" />
+    </element>
+    <element id="Patient.address:gewoehnlicherAufenthaltsort.city">
+      <path value="Patient.address.city" />
+      <max value="0" />
+    </element>
+    <element id="Patient.address:gewoehnlicherAufenthaltsort.district">
+      <path value="Patient.address.district" />
+      <max value="0" />
+    </element>
+    <element id="Patient.address:gewoehnlicherAufenthaltsort.state">
+      <path value="Patient.address.state" />
+      <max value="0" />
+    </element>
+    <element id="Patient.address:gewoehnlicherAufenthaltsort.postalCode">
+      <path value="Patient.address.postalCode" />
+      <constraint>
+        <key value="threeDigitPostalCode" />
+        <severity value="error" />
+        <human value="Die 'verkürzte' Postleitzahl muss aus den ersten 3 Ziffern der 'normalen' Postleitzahl bestehen." />
+        <expression value="$this.toString().matches('^[0-9]{3}$')" />
+      </constraint>
+    </element>
+    <element id="Patient.address:gewoehnlicherAufenthaltsort.country">
+      <path value="Patient.address.country" />
+      <max value="0" />
+    </element>
+    <element id="Patient.address:gewoehnlicherAufenthaltsort.period">
+      <path value="Patient.address.period" />
+      <max value="0" />
+    </element>
+    <element id="Patient.address:derzeitigerAufenthaltsort">
+      <path value="Patient.address" />
+      <sliceName value="derzeitigerAufenthaltsort" />
+      <max value="1" />
+    </element>
+    <element id="Patient.address:derzeitigerAufenthaltsort.extension">
+      <path value="Patient.address.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Patient.address:derzeitigerAufenthaltsort.extension:addressUse">
+      <path value="Patient.address.extension" />
+      <sliceName value="addressUse" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://demis.rki.de/fhir/StructureDefinition/AddressUse" />
+      </type>
+      <mustSupport value="true" />
+      <isModifier value="false" />
+    </element>
+    <element id="Patient.address:derzeitigerAufenthaltsort.extension:addressUse.value[x]">
+      <path value="Patient.address.extension.value[x]" />
+      <fixedCoding>
+        <system value="https://demis.rki.de/fhir/CodeSystem/addressUse" />
+        <code value="current" />
+      </fixedCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.address:derzeitigerAufenthaltsort.use">
+      <path value="Patient.address.use" />
+      <max value="0" />
+    </element>
+    <element id="Patient.address:derzeitigerAufenthaltsort.type">
+      <path value="Patient.address.type" />
+      <max value="0" />
+    </element>
+    <element id="Patient.address:derzeitigerAufenthaltsort.text">
+      <path value="Patient.address.text" />
+      <max value="0" />
+    </element>
+    <element id="Patient.address:derzeitigerAufenthaltsort.line">
+      <path value="Patient.address.line" />
+      <max value="0" />
+    </element>
+    <element id="Patient.address:derzeitigerAufenthaltsort.city">
+      <path value="Patient.address.city" />
+      <max value="0" />
+    </element>
+    <element id="Patient.address:derzeitigerAufenthaltsort.district">
+      <path value="Patient.address.district" />
+      <max value="0" />
+    </element>
+    <element id="Patient.address:derzeitigerAufenthaltsort.state">
+      <path value="Patient.address.state" />
+      <max value="0" />
+    </element>
+    <element id="Patient.address:derzeitigerAufenthaltsort.postalCode">
+      <path value="Patient.address.postalCode" />
+      <constraint>
+        <key value="threeDigitPostalCode" />
+        <severity value="error" />
+        <human value="Die 'verkürzte' Postleitzahl muss aus den ersten 3 Ziffern der 'normalen' Postleitzahl bestehen." />
+        <expression value="$this.toString().matches('^[0-9]{3}$')" />
+      </constraint>
+    </element>
+    <element id="Patient.address:derzeitigerAufenthaltsort.country">
+      <path value="Patient.address.country" />
+      <max value="0" />
+    </element>
+    <element id="Patient.address:derzeitigerAufenthaltsort.period">
+      <path value="Patient.address.period" />
+      <max value="0" />
+    </element>
+    <element id="Patient.maritalStatus">
+      <path value="Patient.maritalStatus" />
+      <max value="0" />
+    </element>
+    <element id="Patient.multipleBirth[x]">
+      <path value="Patient.multipleBirth[x]" />
+      <max value="0" />
+    </element>
+    <element id="Patient.photo">
+      <path value="Patient.photo" />
+      <max value="0" />
+    </element>
+    <element id="Patient.contact">
+      <path value="Patient.contact" />
+      <max value="0" />
+    </element>
+    <element id="Patient.communication">
+      <path value="Patient.communication" />
+      <max value="0" />
+    </element>
+    <element id="Patient.generalPractitioner">
+      <path value="Patient.generalPractitioner" />
+      <max value="0" />
+    </element>
+    <element id="Patient.managingOrganization">
+      <path value="Patient.managingOrganization" />
+      <max value="0" />
+    </element>
+    <element id="Patient.link">
+      <path value="Patient.link" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

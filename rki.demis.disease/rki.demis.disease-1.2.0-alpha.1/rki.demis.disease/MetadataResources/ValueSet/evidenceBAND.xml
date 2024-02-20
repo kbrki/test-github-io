@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="evidenceBAND"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/evidenceBAND"/>
+  <version value="1.0.0"/>
+  <name value="EvidenceBAND"/>
+  <title value="Milzbrand-Symptom und -Manifestation"/>
+  <status value="active"/>
+  <date value="2022-11-30"/>
+  <description value="Das ValueSet EvidenceBAND enthält die Codes der Milzbrand-Symptome und -Manifestationen."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="21522001"/>
+        <display value="Bauchschmerzen"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="21522001 |Abdominal pain (finding)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="131148009:363698007=128319008"/>
+        <display value="Blutung, intrakraniell"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="131148009 |Bleeding (finding)| : 363698007 |Finding site (attribute)| = 128319008 |Intracranial structure (body structure)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="409966000"/>
+        <display value="Durchfall, akut"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="409966000 |Acute diarrhea (disorder)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="267036007"/>
+        <display value="Atemstörung (Dyspnoe)"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="267036007 |Dyspnea (finding)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="95391000"/>
+        <display value="Entzündung im Bereich einer Injektionsstelle"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="95391000 |Injection site inflammation (disorder)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="422400008"/>
+        <display value="Erbrechen"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="422400008 |Vomiting (disorder)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="52486002"/>
+        <display value="Fasziitis, nekrotisierend"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="52486002 |Necrotizing fasciitis (disorder)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="386661006"/>
+        <display value="Fieber"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="386661006 |Fever (finding)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="95324001:116676008=70831001"/>
+        <display value="Hautläsion, papulös"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="95324001 |Skin lesion (disorder)| : 116676008 |Associated morphology (attribute)| = 70831001 |Papular rash (morphologic abnormality)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="95324001:116676008=53788007"/>
+        <display value="Hautläsion, vesikulös"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="95324001 |Skin lesion (disorder)| : 116676008 |Associated morphology (attribute)| = 53788007 |Vesicular rash (morphologic abnormality)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="25064002"/>
+        <display value="Kopfschmerzen"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="25064002 |Headache (finding)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="416893007:246075003=21927003"/>
+        <display value="Milzbrandkarbunkel"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="416893007 |Carbuncle (disorder)| : 246075003 |Causative agent (attribute)| = 21927003 |Bacillus anthracis (organism)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="161882006"/>
+        <display value="Nackensteifigkeit"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="161882006 |Stiff neck (finding)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="447931005"/>
+        <display value="septisches Krankheitsbild"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="447931005 |Clinical sepsis (disorder)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="422587007"/>
+        <display value="Übelkeit"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="422587007 |Nausea (finding)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="3006004"/>
+        <display value="veränderte Bewusstseinslage"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="3006004 |Disturbance of consciousness (finding)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="363646005"/>
+        <display value="verbreitertes Mediastinum, radiologisch"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="363646005 |Widened mediastinum (finding)|"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

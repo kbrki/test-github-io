@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="evidenceRBVD"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/evidenceRBVD"/>
+  <version value="1.0.0"/>
+  <name value="EvidenceRBVD"/>
+  <title value="Tollwut-Symptom und -Manifestation"/>
+  <status value="active"/>
+  <date value="2023-04-25"/>
+  <description value="Das ValueSet EvidenceRBVD enthält die Codes der Tollwut-Symptome und -Manifestationen."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <code value="198288003"/>
+        <display value="Angstzustände"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Anxiety state (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="2776000"/>
+        <display value="Delirium"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Delirium (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="24199005"/>
+        <display value="Erregtheit"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Feeling agitated (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="34714000:{363698007=49928004}"/>
+        <display value="Spasmen der Schluckmuskulatur"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="34714000 |Local spasm (finding)| : {363698007 |Finding site (attribute)| = 49928004 |Structure of anterior portion of neck (body structure)|}"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="266196000"/>
+        <display value="Wasserscheu (Hydrophobie)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Rabies - hydrophobia (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="45352006"/>
+        <display value="Krämpfe"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Spasm (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="44695005"/>
+        <display value="Lähmung"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Paralysis (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="22253000:47429007=782161000"/>
+        <display value="Schmerzen im Bereich der Bissstelle"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="22253000 |Pain (finding)|:    47429007 |Associated with (attribute)| = 782161000 | Bite (event) |"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="91019004:47429007=782161000"/>
+        <display value="Sensibilitätsstörungen (Parästhesien) im Bereich der Bissstelle"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="91019004 |Paresthesia (finding)|: 47429007 |Associated with (attribute)| = 782161000 | Bite (event) |"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

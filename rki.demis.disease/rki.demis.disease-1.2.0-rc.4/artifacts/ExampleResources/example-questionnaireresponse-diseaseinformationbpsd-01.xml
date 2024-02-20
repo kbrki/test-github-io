@@ -1,0 +1,81 @@
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+   <id value="49471f45-cd45-3aff-ac52-6c88fde59e08"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseInformationBPSD"></profile>
+   </meta>
+   <questionnaire value="https://demis.rki.de/fhir/Questionnaire/DiseaseQuestionsBPSD"></questionnaire>
+   <status value="completed"></status>
+   <subject>
+      <reference value="Patient/48e4549c-6c2a-3451-b543-8a7d55bb6ccd"></reference>
+   </subject>
+   <item>
+      <linkId value="immunization"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+            <code value="no"></code>
+            <display value="Nein"></display>
+         </valueCoding>
+      </answer>
+   </item>
+   <item>
+      <linkId value="immunizationMother"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+            <code value="yes"></code>
+            <display value="Ja"></display>
+         </valueCoding>
+         <item>
+            <linkId value="immunizationMotherRef"></linkId>
+            <answer>
+               <valueReference>
+                  <reference value="Immunization/ed0588e0-e9e4-382f-b5dd-b42ece6bef8b"></reference>
+               </valueReference>
+            </answer>
+         </item>
+         <item>
+            <linkId value="immunizationMotherRef"></linkId>
+            <answer>
+               <valueReference>
+                  <reference value="Immunization/31d7c9f5-2659-3129-b1d5-755922566bc8"></reference>
+               </valueReference>
+            </answer>
+         </item>
+         <item>
+            <linkId value="immunizationMotherRef"></linkId>
+            <answer>
+               <valueReference>
+                  <reference value="Immunization/ef826412-9be6-3ec1-86ab-6e290eebd88b"></reference>
+               </valueReference>
+            </answer>
+         </item>
+         <item>
+            <linkId value="immunizationMotherRef"></linkId>
+            <answer>
+               <valueReference>
+                  <reference value="Immunization/1e1ec21c-50cc-390b-ae71-3af264f6f8e4"></reference>
+               </valueReference>
+            </answer>
+         </item>
+         <item>
+            <linkId value="immunizationMotherRef"></linkId>
+            <answer>
+               <valueReference>
+                  <reference value="Immunization/a8fe7a2f-f38f-3154-a9a3-37b9b7517ede"></reference>
+               </valueReference>
+            </answer>
+         </item>
+      </answer>
+   </item>
+   <item>
+      <linkId value="outbreak"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+            <code value="no"></code>
+            <display value="Nein"></display>
+         </valueCoding>
+      </answer>
+   </item>
+</QuestionnaireResponse>

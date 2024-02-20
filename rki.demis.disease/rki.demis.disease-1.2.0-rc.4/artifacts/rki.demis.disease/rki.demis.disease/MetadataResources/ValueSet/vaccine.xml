@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vaccine"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/vaccine"/>
+  <version value="1.0.0"/>
+  <name value="Vaccine"/>
+  <title value="Impfstoff"/>
+  <status value="retired"/>
+  <date value="2023-06-22"/>
+  <description value="Das ValueSet Vaccine enthält die Codes der Impfstoffe."/>
+  <compose>
+    <include>
+      <system value="https://demis.rki.de/fhir/CodeSystem/vaccine"/>
+      <version value="1.0.0"/>
+    </include>
+  </compose>
+</ValueSet>

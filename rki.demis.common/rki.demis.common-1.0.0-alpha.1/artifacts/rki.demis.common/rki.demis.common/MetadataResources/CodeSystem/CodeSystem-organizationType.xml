@@ -1,0 +1,1028 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<id value="organizationType" />
+	<url value="https://demis.rki.de/fhir/CodeSystem/organizationType" />
+	<version value="1.2.0" />
+	<name value="OrganizationType" />
+	<title value="Einrichtungsart" />
+	<status value="active" />
+	<experimental value="false" />
+	<date value="2023-09-19" />
+	<publisher value="Robert Koch-Institut" />
+	<description value="Das CodeSystem OrganizationType enthält die Codes der Einrichtungsarten." />
+	<caseSensitive value="false" />
+	<valueSet value="https://demis.rki.de/fhir/ValueSet/organizationType" />
+	<hierarchyMeaning value="is-a" />
+	<content value="complete" />
+	<count value="50" />
+	<concept>
+		<code value="medFacility" />
+		<display value="Medizinische Einrichtung" />
+		<designation>
+			<language value="en-US" />
+			<use>
+				<system value="http://snomed.info/sct" />
+				<code value="900000000000003001" />
+			</use>
+			<value value="Medical facility" />
+		</designation>
+		<designation>
+			<language value="de-DE" />
+			<use>
+				<system value="http://snomed.info/sct" />
+				<code value="900000000000003001" />
+			</use>
+			<value value="Medizinische Einrichtung" />
+		</designation>
+		<concept>
+			<code value="hospital" />
+			<display value="Krankenhaus" />
+			<designation>
+				<language value="en-US" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Hospital" />
+			</designation>
+			<designation>
+				<language value="de-DE" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Krankenhaus" />
+			</designation>
+		</concept>
+		<concept>
+			<code value="outpatSurgery" />
+			<display value="Einrichtung für ambulantes Operieren" />
+			<designation>
+				<language value="en-US" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Facility for outpatient surgery" />
+			</designation>
+			<designation>
+				<language value="de-DE" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Einrichtung für ambulantes Operieren" />
+			</designation>
+		</concept>
+		<concept>
+			<code value="prevCareRehab" />
+			<display value="Vorsorge- oder Reha-Einrichtung" />
+			<designation>
+				<language value="en-US" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Preventive care or rehab facility" />
+			</designation>
+			<designation>
+				<language value="de-DE" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Vorsorge- oder Reha-Einrichtung" />
+			</designation>
+		</concept>
+		<concept>
+			<code value="dialysisFacility" />
+			<display value="Dialyseeinrichtung" />
+			<designation>
+				<language value="en-US" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Dialysis facility" />
+			</designation>
+			<designation>
+				<language value="de-DE" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Dialyseeinrichtung" />
+			</designation>
+		</concept>
+		<concept>
+			<code value="dayHospital" />
+			<display value="Tagesklinik" />
+			<designation>
+				<language value="en-US" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Day hospital" />
+			</designation>
+			<designation>
+				<language value="de-DE" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Tagesklinik" />
+			</designation>
+		</concept>
+		<concept>
+			<code value="maternity" />
+			<display value="Entbindungseinrichtung" />
+			<designation>
+				<language value="en-US" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Maternity" />
+			</designation>
+			<designation>
+				<language value="de-DE" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Entbindungseinrichtung" />
+			</designation>
+		</concept>
+		<concept>
+			<code value="physicianOffice" />
+			<display value="Arztpraxis" />
+			<designation>
+				<language value="en-US" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Physician's office" />
+			</designation>
+			<designation>
+				<language value="de-DE" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Arztpraxis" />
+			</designation>
+		</concept>
+		<concept>
+			<code value="dentalSurgery" />
+			<display value="Zahnarztpraxis" />
+			<designation>
+				<language value="en-US" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Dental surgery" />
+			</designation>
+			<designation>
+				<language value="de-DE" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Zahnarztpraxis" />
+			</designation>
+		</concept>
+		<concept>
+			<code value="psycFacility" />
+			<display value="Psychotherapeutische Praxis" />
+			<designation>
+				<language value="en-US" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Psychotherapeutic facility" />
+			</designation>
+			<designation>
+				<language value="de-DE" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Psychotherapeutische Praxis" />
+			</designation>
+		</concept>
+		<concept>
+			<code value="othMedPractice" />
+			<display value="Sonstige Heilberufepraxis" />
+			<designation>
+				<language value="en-US" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Other health professional practice" />
+			</designation>
+			<designation>
+				<language value="de-DE" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Sonstige Heilberufepraxis" />
+			</designation>
+		</concept>
+		<concept>
+			<code value="medFacPHA" />
+			<display value="Medizinische Einrichtung des ÖGDs" />
+			<designation>
+				<language value="en-US" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Public health medical facility" />
+			</designation>
+			<designation>
+				<language value="de-DE" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Medizinische Einrichtung des ÖGDs" />
+			</designation>
+		</concept>
+		<concept>
+			<code value="emResServ" />
+			<display value="Rettungsdienst" />
+			<designation>
+				<language value="en-US" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Emergency rescue service" />
+			</designation>
+			<designation>
+				<language value="de-DE" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Rettungsdienst" />
+			</designation>
+		</concept>
+		<concept>
+			<code value="civDisFacility" />
+			<display value="Einrichtungen des Zivil- und Katastrophenschutzes" />
+			<designation>
+				<language value="en-US" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Facility for civil Protection and Disaster Assistance" />
+			</designation>
+			<designation>
+				<language value="de-DE" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Einrichtungen des Zivil- und Katastrophenschutzes" />
+			</designation>
+		</concept>
+		<concept>
+			<code value="othMedFacility" />
+			<display value="Sonstige medizinische Einrichtung" />
+			<designation>
+				<language value="en-US" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Other medical facility" />
+			</designation>
+			<designation>
+				<language value="de-DE" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Sonstige medizinische Einrichtung" />
+			</designation>
+		</concept>
+	</concept>
+	<concept>
+		<code value="childCareFacility" />
+		<display value="Gemeinschaftseinrichtung" />
+		<definition value="§ 33 IfSG; Einrichtung, in der überwiegend Säuglinge, Kinder oder Jugendliche betreut werden" />
+		<designation>
+			<language value="en-US" />
+			<use>
+				<system value="http://snomed.info/sct" />
+				<code value="900000000000003001" />
+			</use>
+			<value value="Child care facility" />
+		</designation>
+		<designation>
+			<language value="de-DE" />
+			<use>
+				<system value="http://snomed.info/sct" />
+				<code value="900000000000003001" />
+			</use>
+			<value value="Gemeinschaftseinrichtung" />
+		</designation>
+		<concept>
+			<code value="kindergarten" />
+			<display value="Kindertageseinrichtung (z. B. Kita)" />
+			<designation>
+				<language value="en-US" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Kindergarten etc" />
+			</designation>
+			<designation>
+				<language value="de-DE" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Kindertageseinrichtung (z. B. Kita)" />
+			</designation>
+		</concept>
+		<concept>
+			<code value="childDayNursery" />
+			<display value="Kindertagespflege" />
+			<designation>
+				<language value="en-US" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Child day nursery" />
+			</designation>
+			<designation>
+				<language value="de-DE" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Kindertagespflege" />
+			</designation>
+		</concept>
+		<concept>
+			<code value="school" />
+			<display value="Schule" />
+			<designation>
+				<language value="en-US" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="School" />
+			</designation>
+			<designation>
+				<language value="de-DE" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Schule" />
+			</designation>
+		</concept>
+		<concept>
+			<code value="childHome" />
+			<display value="Kinderheim o.ä." />
+			<definition value="Heim, in dem überwiegend Säuglinge, Kinder oder Jugendliche untergebracht sind" />
+			<designation>
+				<language value="en-US" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Children's home etc" />
+			</designation>
+			<designation>
+				<language value="de-DE" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Kinderheim o.ä." />
+			</designation>
+		</concept>
+		<concept>
+			<code value="holidayCamp" />
+			<display value="Ferienlager" />
+			<designation>
+				<language value="en-US" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Holiday camp" />
+			</designation>
+			<designation>
+				<language value="de-DE" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Ferienlager" />
+			</designation>
+		</concept>
+		<concept>
+			<code value="childDayCare" />
+			<display value="Kinderhort" />
+			<designation>
+				<language value="en-US" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Child daycare center" />
+			</designation>
+			<designation>
+				<language value="de-DE" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Kinderhort" />
+			</designation>
+		</concept>
+		<concept>
+			<code value="othEdFac" />
+			<display value="sonstige Ausbildungseinrichtung" />
+			<designation>
+				<language value="en-US" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Other educational facility" />
+			</designation>
+			<designation>
+				<language value="de-DE" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="sonstige Ausbildungseinrichtung" />
+			</designation>
+		</concept>
+		<concept>
+			<code value="othChildCareFac" />
+			<display value="Sonstige Kinderbetreuungseinrichtung" />
+			<definition value="Sonstige Einrichtung, in der überwiegend Säuglinge, Kinder oder Jugendliche betreut werden" />
+			<designation>
+				<language value="en-US" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Other child care facility" />
+			</designation>
+			<designation>
+				<language value="de-DE" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Sonstige Kinderbetreuungseinrichtung" />
+			</designation>
+		</concept>
+	</concept>
+	<concept>
+		<code value="housingFacility" />
+		<display value="Gemeinschaftsunterkunft" />
+		<definition value="§ 35, 36 Abs. 1 Nr. 3 - 6 IfSG" />
+		<designation>
+			<language value="en-US" />
+			<use>
+				<system value="http://snomed.info/sct" />
+				<code value="900000000000003001" />
+			</use>
+			<value value="Housing facility" />
+		</designation>
+		<designation>
+			<language value="de-DE" />
+			<use>
+				<system value="http://snomed.info/sct" />
+				<code value="900000000000003001" />
+			</use>
+			<value value="Gemeinschaftsunterkunft" />
+		</designation>
+		<concept>
+			<code value="nursingHome" />
+			<display value="voll- oder teilstationäre Einrichtung und besondere Wohnform zur Betreuung und Unterbringung" />
+			<designation>
+				<language value="en-US" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Nursing home" />
+			</designation>
+			<designation>
+				<language value="de-DE" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="voll- oder teilstationäre Einrichtung und besondere Wohnform zur Betreuung und Unterbringung" />
+			</designation>
+			<concept>
+				<code value="elderlyCareHome" />
+				<display value="älterer Menschen" />
+				<designation>
+					<language value="en-US" />
+					<use>
+						<system value="http://snomed.info/sct" />
+						<code value="900000000000003001" />
+					</use>
+					<value value="Elderly care home" />
+				</designation>
+				<designation>
+					<language value="de-DE" />
+					<use>
+						<system value="http://snomed.info/sct" />
+						<code value="900000000000003001" />
+					</use>
+					<value value="älterer Menschen" />
+				</designation>
+			</concept>
+			<concept>
+				<code value="disabledCareHome" />
+				<display value="behinderter Menschen" />
+				<designation>
+					<language value="en-US" />
+					<use>
+						<system value="http://snomed.info/sct" />
+						<code value="900000000000003001" />
+					</use>
+					<value value="Disabled care home" />
+				</designation>
+				<designation>
+					<language value="de-DE" />
+					<use>
+						<system value="http://snomed.info/sct" />
+						<code value="900000000000003001" />
+					</use>
+					<value value="behinderter Menschen" />
+				</designation>
+			</concept>
+			<concept>
+				<code value="assistedCareHome" />
+				<display value="pflegebedürftiger Menschen" />
+				<designation>
+					<language value="en-US" />
+					<use>
+						<system value="http://snomed.info/sct" />
+						<code value="900000000000003001" />
+					</use>
+					<value value="Assisted care home" />
+				</designation>
+				<designation>
+					<language value="de-DE" />
+					<use>
+						<system value="http://snomed.info/sct" />
+						<code value="900000000000003001" />
+					</use>
+					<value value="pflegebedürftiger Menschen" />
+				</designation>
+			</concept>
+		</concept>
+		<concept>
+			<code value="homelessShelter" />
+			<display value="Obdachlosenunterkunft" />
+			<designation>
+				<language value="en-US" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Homeless shelter" />
+			</designation>
+			<designation>
+				<language value="de-DE" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Obdachlosenunterkunft" />
+			</designation>
+		</concept>
+		<concept>
+			<code value="migrantAccom" />
+			<display value="Migrantenunterkunft" />
+			<definition value="Einrichtung zur gemeinschaftlichen Unterbringung von Asylbewerbern, vollziehbar Ausreisepflichtigen, Flüchtlingen und Spätaussiedlern" />
+			<designation>
+				<language value="en-US" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Migrant accommodation" />
+			</designation>
+			<designation>
+				<language value="de-DE" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Migrantenunterkunft" />
+			</designation>
+		</concept>
+		<concept>
+			<code value="prison" />
+			<display value="Justizvollzugsanstalt" />
+			<designation>
+				<language value="en-US" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Prison" />
+			</designation>
+			<designation>
+				<language value="de-DE" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Justizvollzugsanstalt" />
+			</designation>
+		</concept>
+		<concept>
+			<code value="othMassAccom" />
+			<display value="Sonstige Massenunterkunft" />
+			<designation>
+				<language value="en-US" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Other mass accommodation" />
+			</designation>
+			<designation>
+				<language value="de-DE" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Sonstige Massenunterkunft" />
+			</designation>
+		</concept>
+		<concept>
+			<code value="outpatICServ" />
+			<display value="Ambulanter Intensivpflegedienst" />
+			<definition value="ambulanter Pflegedienst, der ambulante Intensivpflege in Einrichtungen, Wohngruppen oder sonstigen gemeinschaftlichen Wohnformen erbringt" />
+			<designation>
+				<language value="en-US" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Outpatient intensive care service" />
+			</designation>
+			<designation>
+				<language value="de-DE" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Ambulanter Intensivpflegedienst" />
+			</designation>
+		</concept>
+		<concept>
+			<code value="othOutpatCareS" />
+			<display value="Sonstiger ambulanter Pflegedienst" />
+			<designation>
+				<language value="en-US" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Other outpatient care service" />
+			</designation>
+			<designation>
+				<language value="de-DE" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Sonstiger ambulanter Pflegedienst" />
+			</designation>
+		</concept>
+		<concept>
+			<code value="othBloodRiskFac" />
+			<display value="Sonstige Einrichtung mit Blutübertragungsrisiko" />
+			<definition value="Einrichtung oder Unternehmen, in dem durch Tätigkeiten am Menschen durch Blut Krankheitserreger übertragen werden können" />
+			<designation>
+				<language value="en-US" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Other facility with blood-borne transmission risk" />
+			</designation>
+			<designation>
+				<language value="de-DE" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Sonstige Einrichtung mit Blutübertragungsrisiko" />
+			</designation>
+		</concept>
+	</concept>
+	<concept>
+		<code value="othHygRelFacility" />
+		<display value="Sonstige hygienerelevante Einrichtung" />
+		<designation>
+			<language value="en-US" />
+			<use>
+				<system value="http://snomed.info/sct" />
+				<code value="900000000000003001" />
+			</use>
+			<value value="Other hygiene-relevant facility" />
+		</designation>
+		<designation>
+			<language value="de-DE" />
+			<use>
+				<system value="http://snomed.info/sct" />
+				<code value="900000000000003001" />
+			</use>
+			<value value="Sonstige hygienerelevante Einrichtung" />
+		</designation>
+	</concept>
+	<concept>
+		<code value="othAccom" />
+		<display value="Andere Unterkunft" />
+		<designation>
+			<language value="en-US" />
+			<use>
+				<system value="http://snomed.info/sct" />
+				<code value="900000000000003001" />
+			</use>
+			<value value="Other accommodation" />
+		</designation>
+		<designation>
+			<language value="de-DE" />
+			<use>
+				<system value="http://snomed.info/sct" />
+				<code value="900000000000003001" />
+			</use>
+			<value value="Andere Unterkunft" />
+		</designation>
+		<concept>
+			<code value="hotel" />
+			<display value="Hotel o.ä." />
+			<designation>
+				<language value="en-US" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Hotel etc" />
+			</designation>
+			<designation>
+				<language value="de-DE" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Hotel o.ä." />
+			</designation>
+		</concept>
+		<concept>
+			<code value="holidayHome" />
+			<display value="Ferienwohnung" />
+			<designation>
+				<language value="en-US" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Holiday home" />
+			</designation>
+			<designation>
+				<language value="de-DE" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Ferienwohnung" />
+			</designation>
+		</concept>
+		<concept>
+			<code value="camping" />
+			<display value="Campingplatz o.ä." />
+			<designation>
+				<language value="en-US" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Camping facility etc" />
+			</designation>
+			<designation>
+				<language value="de-DE" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Campingplatz o.ä." />
+			</designation>
+		</concept>
+		<concept>
+			<code value="ship" />
+			<display value="Schiff o.ä." />
+			<designation>
+				<language value="en-US" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Ship etc" />
+			</designation>
+			<designation>
+				<language value="de-DE" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Schiff o.ä." />
+			</designation>
+		</concept>
+	</concept>
+	<concept>
+		<code value="foodEstablmt" />
+		<display value="Lebensmittelbetrieb" />
+		<designation>
+			<language value="en-US" />
+			<use>
+				<system value="http://snomed.info/sct" />
+				<code value="900000000000003001" />
+			</use>
+			<value value="Food establishment" />
+		</designation>
+		<designation>
+			<language value="de-DE" />
+			<use>
+				<system value="http://snomed.info/sct" />
+				<code value="900000000000003001" />
+			</use>
+			<value value="Lebensmittelbetrieb" />
+		</designation>
+	</concept>
+	<concept>
+		<code value="laboratory" />
+		<display value="Erregerdiagnostische Untersuchungsstelle" />
+		<designation>
+			<language value="en-US" />
+			<use>
+				<system value="http://snomed.info/sct" />
+				<code value="900000000000003001" />
+			</use>
+			<value value="Laboratory" />
+		</designation>
+		<designation>
+			<language value="de-DE" />
+			<use>
+				<system value="http://snomed.info/sct" />
+				<code value="900000000000003001" />
+			</use>
+			<value value="Erregerdiagnostische Untersuchungsstelle" />
+		</designation>
+		<concept>
+			<code value="publicHealthLab" />
+			<display value="Medizinaluntersuchungsamt" />
+			<designation>
+				<language value="en-US" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Public health laboratory" />
+			</designation>
+			<designation>
+				<language value="de-DE" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Medizinaluntersuchungsamt" />
+			</designation>
+		</concept>
+		<concept>
+			<code value="refLab" />
+			<display value="Einrichtung der Spezialdiagnostik" />
+			<definition value="inkl. NRZ, Konsiliarlabor" />
+			<designation>
+				<language value="en-US" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Reference laboratory" />
+			</designation>
+			<designation>
+				<language value="de-DE" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Einrichtung der Spezialdiagnostik" />
+			</designation>
+		</concept>
+		<concept>
+			<code value="hospitalLab" />
+			<display value="Krankenhauslabor" />
+			<designation>
+				<language value="en-US" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Hospital laboratory" />
+			</designation>
+			<designation>
+				<language value="de-DE" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Krankenhauslabor" />
+			</designation>
+		</concept>
+		<concept>
+			<code value="pathology" />
+			<display value="Pathologisch-anatomische Einrichtung" />
+			<definition value="Einrichtung der pathologisch-anatomischen Diagnostik" />
+			<designation>
+				<language value="en-US" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Pathology" />
+			</designation>
+			<designation>
+				<language value="de-DE" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Pathologisch-anatomische Einrichtung" />
+			</designation>
+		</concept>
+		<concept>
+			<code value="othPublicLab" />
+			<display value="Sonstige öffentliche Untersuchungsstelle" />
+			<designation>
+				<language value="en-US" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Other public laboratory" />
+			</designation>
+			<designation>
+				<language value="de-DE" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Sonstige öffentliche Untersuchungsstelle" />
+			</designation>
+		</concept>
+		<concept>
+			<code value="othPrivatLab" />
+			<display value="Sonstige private Untersuchungsstelle" />
+			<definition value="inkl. Arztpraxis mit Infektionserregerdiagnostik" />
+			<designation>
+				<language value="en-US" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Other private laboratory" />
+			</designation>
+			<designation>
+				<language value="de-DE" />
+				<use>
+					<system value="http://snomed.info/sct" />
+					<code value="900000000000003001" />
+				</use>
+				<value value="Sonstige private Untersuchungsstelle" />
+			</designation>
+		</concept>
+	</concept>
+</CodeSystem>

@@ -1,0 +1,285 @@
+<?xml version='1.0' encoding='utf-8'?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="NotifierFacility" />
+  <url value="https://demis.rki.de/fhir/StructureDefinition/NotifierFacility" />
+  <version value="1.5.0" />
+  <name value="NotifierFacility" />
+  <title value="Melder-Einrichtung" />
+  <status value="active" />
+  <date value="2024-01-08" />
+  <description value="Die Melder-Einrichtung enthält die Angaben der meldenden Einrichtung. Die Informationen werden vom zuständigen Gesundsamt zur  Kontaktaufnahme genutzt." />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="servd" />
+    <uri value="http://www.omg.org/spec/ServD/1.0/" />
+    <name value="ServD" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Organization" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Organization" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Organization.meta">
+      <path value="Organization.meta" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.meta.profile">
+      <path value="Organization.meta.profile" />
+      <min value="1" />
+      <max value="1" />
+      <fixedCanonical value="https://demis.rki.de/fhir/StructureDefinition/NotifierFacility" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.identifier">
+      <path value="Organization.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <short value="Identifier der Melder-Einrichtung" />
+      <definition value="Als Identifier kann die BSNR oder die von DEMIS zugewiesene Labornummer angegegeben werden." />
+    </element>
+    <element id="Organization.identifier:bsnr">
+      <path value="Organization.identifier" />
+      <sliceName value="bsnr" />
+      <type>
+        <code value="Identifier" />
+        <profile value="http://fhir.de/StructureDefinition/identifier-bsnr" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.identifier:demisLaboratoryId">
+      <path value="Organization.identifier" />
+      <sliceName value="demisLaboratoryId" />
+      <short value="DEMIS-Labornummer" />
+      <definition value="DEMIS-Labornummer, die dem Melder bei der Anmeldung an DEMIS zugewiesen wird. Es handelt sich um eine eindeutige 5-stellige Nummer im NamingSystem https://demis.rki.de/fhir/NamingSystem/DemisLaboratoryId." />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.identifier:demisLaboratoryId.system">
+      <path value="Organization.identifier.system" />
+      <min value="1" />
+      <fixedUri value="https://demis.rki.de/fhir/NamingSystem/DemisLaboratoryId" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.identifier:demisLaboratoryId.value">
+      <path value="Organization.identifier.value" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.identifier:demisParticipantId">
+      <path value="Organization.identifier" />
+      <sliceName value="demisParticipantId" />
+      <short value="DEMIS-Teilnehmer-Nummer" />
+      <definition value="DEMIS-Teilnehmernummer, welche durch das RKI an ausgewählte Systemteilnehmer vergeben wird. Der Identifier entstammt folgendem NamingSystem: https://demis.rki.de/fhir/NamingSystem/DemisParticipantId. Dieses NamingSystem wird der zukünftige Standard und soll die DEMIS-Labornummer perspektivisch ersetzen." />
+    </element>
+    <element id="Organization.identifier:demisParticipantId.system">
+      <path value="Organization.identifier.system" />
+      <min value="1" />
+      <fixedUri value="https://demis.rki.de/fhir/NamingSystem/DemisParticipantId" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.identifier:demisParticipantId.value">
+      <path value="Organization.identifier.value" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.type">
+      <path value="Organization.type" />
+      <short value="Art der meldenden Einrichtung" />
+      <definition value="Art der meldenden Einrichtung. Der Wert muss entsprechend des vom RKI definierten ValueSets (https://demis.rki.de/fhir/ValueSet/organizationType) im coding Element dargestellt werden." />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.type.coding">
+      <path value="Organization.type.coding" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://demis.rki.de/fhir/ValueSet/organizationType" />
+      </binding>
+    </element>
+    <element id="Organization.type.coding.system">
+      <path value="Organization.type.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.type.coding.code">
+      <path value="Organization.type.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.type.text">
+      <path value="Organization.type.text" />
+      <max value="0" />
+    </element>
+    <element id="Organization.name">
+      <path value="Organization.name" />
+      <short value="Bezeichnung der Einrichtung" />
+      <definition value="Bezeichnung der Einrichtung" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.telecom">
+      <path value="Organization.telecom" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <short value="Kontaktangaben der Einrichtung" />
+      <definition value="Kontaktangaben der Einrichtung. Telefonnummern, E-Mailadressen, Urls und Faxnummern können angegeben werden." />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.telecom:Email">
+      <path value="Organization.telecom" />
+      <sliceName value="Email" />
+    </element>
+    <element id="Organization.telecom:Email.system">
+      <path value="Organization.telecom.system" />
+      <min value="1" />
+      <fixedCode value="email" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.telecom:Email.value">
+      <path value="Organization.telecom.value" />
+      <min value="1" />
+      <constraint>
+        <key value="validEmailAddress" />
+        <severity value="warning" />
+        <human value="Die E-Mail-Adresse muss valide sein." />
+        <expression value="$this.matches('^[a-zA-Z0-9._%+-]+@(?:[a-zA-Z0-9-]+[.])+[a-zA-Z0-9]{2,63}$')" />
+      </constraint>
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.telecom:Phone">
+      <path value="Organization.telecom" />
+      <sliceName value="Phone" />
+    </element>
+    <element id="Organization.telecom:Phone.system">
+      <path value="Organization.telecom.system" />
+      <min value="1" />
+      <fixedCode value="phone" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.telecom:Phone.value">
+      <path value="Organization.telecom.value" />
+      <min value="1" />
+      <constraint>
+        <key value="validPhoneNumber" />
+        <severity value="warning" />
+        <human value="Die Telefonnummer muss valide sein." />
+        <expression value="$this.matches('^[0+][0-9 \\-\\(\\)]{6,50}$')" />
+      </constraint>
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.telecom:Url">
+      <path value="Organization.telecom" />
+      <sliceName value="Url" />
+    </element>
+    <element id="Organization.telecom:Url.system">
+      <path value="Organization.telecom.system" />
+      <min value="1" />
+      <fixedCode value="url" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.telecom:Url.value">
+      <path value="Organization.telecom.value" />
+      <min value="1" />
+      <constraint>
+        <key value="validUrl" />
+        <severity value="warning" />
+        <human value="Die Url muss valide sein." />
+        <expression value="$this.matches('^(https?:\\/\\/(?:www\\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\.[^\\s]{2,}|www\\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\.[^\\s]{2,}|https?:\\/\\/(?:www\\.|(?!www))[a-zA-Z0-9]+\\.[^\\s]{2,}|www\\.[a-zA-Z0-9]+\\.[^\\s]{2,})$')" />
+      </constraint>
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.telecom:Fax">
+      <path value="Organization.telecom" />
+      <sliceName value="Fax" />
+    </element>
+    <element id="Organization.telecom:Fax.system">
+      <path value="Organization.telecom.system" />
+      <min value="1" />
+      <fixedCode value="fax" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.telecom:Fax.value">
+      <path value="Organization.telecom.value" />
+      <min value="1" />
+      <constraint>
+        <key value="validFaxNumber" />
+        <severity value="warning" />
+        <human value="Die Faxnummer muss valide sein." />
+        <expression value="$this.matches('^[0+][0-9 \\-\\(\\)]{6,50}$')" />
+      </constraint>
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.address">
+      <path value="Organization.address" />
+      <short value="Einrichtungsaddresse" />
+      <definition value="Einrichtungsaddresse" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Address" />
+        <profile value="http://fhir.de/StructureDefinition/address-de-basis" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.address.line">
+      <path value="Organization.address.line" />
+      <max value="1" />
+    </element>
+    <element id="Organization.address.city">
+      <path value="Organization.address.city" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.address.postalCode">
+      <path value="Organization.address.postalCode" />
+      <min value="1" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="https://demis.rki.de/fhir/ValueSet/postalCode" />
+      </binding>
+    </element>
+    <element id="Organization.address.country">
+      <path value="Organization.address.country" />
+      <min value="1" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/iso3166-1-2" />
+      </binding>
+    </element>
+    <element id="Organization.partOf">
+      <path value="Organization.partOf" />
+      <short value="Übergeordnete Einrichtung, zu der diese Einrichtung gehört" />
+      <definition value="Übergeordnete Einrichtung, zu der diese Einrichtung gehört" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.contact">
+      <path value="Organization.contact" />
+      <short value="Ansprechpartner der Einrichtung" />
+      <definition value="Ansprechpartner der Einrichtung" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.endpoint">
+      <path value="Organization.endpoint" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

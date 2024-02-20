@@ -1,0 +1,22 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <id value="DiseaseInformationCLOD" />
+    <url value="https://demis.rki.de/fhir/StructureDefinition/DiseaseInformationCLOD" />
+    <version value="1.0.0" />
+    <name value="DiseaseInformationCLOD" />
+    <title value="Botulismus-spezifische klinische und epidemiologische Angaben" />
+    <status value="active" />
+    <date value="2022-11-30" />
+    <description value="DiseaseInformationCLOD" />
+    <fhirVersion value="4.0.1" />
+    <kind value="resource" />
+    <abstract value="false" />
+    <type value="QuestionnaireResponse" />
+    <baseDefinition value="https://demis.rki.de/fhir/StructureDefinition/DiseaseInformation" />
+    <derivation value="constraint" />
+    <differential>
+        <element id="QuestionnaireResponse.questionnaire">
+            <path value="QuestionnaireResponse.questionnaire" />
+            <fixedCanonical value="https://demis.rki.de/fhir/Questionnaire/DiseaseQuestionsCLOD" />
+        </element>
+    </differential>
+</StructureDefinition>

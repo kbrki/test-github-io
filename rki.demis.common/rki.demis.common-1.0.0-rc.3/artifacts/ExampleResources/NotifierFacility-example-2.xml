@@ -1,0 +1,29 @@
+<Organization xmlns="http://hl7.org/fhir">
+    <id value="NotifierFacility-example-2" />
+    <meta>
+        <profile value="https://demis.rki.de/fhir/StructureDefinition/NotifierFacility" />
+    </meta>
+    <identifier>
+        <system value="https://demis.rki.de/fhir/NamingSystem/DemisLaboratoryId" />
+        <value value="12345" />
+    </identifier>
+    <type>
+        <coding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/organizationType" />
+            <code value="laboratory" />
+        </coding>
+    </type>
+    <name value="Labor Mondschein" />
+    <telecom>
+        <system value="phone" />
+        <value value="+49 (0)2738 - 123456" />
+        <use value="work" />
+    </telecom>
+    <address>
+        <line value="Seeweg 16" />
+        <city value="Berlin" />
+        <state value="DE-BE" />
+        <postalCode value="10117" />
+        <country value="DE" />
+    </address>
+</Organization>

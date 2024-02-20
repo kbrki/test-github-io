@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="County" />
+  <url value="https://demis.rki.de/fhir/StructureDefinition/County" />
+  <version value="1.0.0" />
+  <name value="County" />
+  <title value="Landkreis" />
+  <status value="active" />
+  <date value="2023-12-12" />
+  <description value="Über die Landkreis-Extension kann der Landkreis der Adresse des Melders angegeben werden. Dies ist nur im Rahmen von DIM (elektronisch erfasste COVID-19- und Grippe-Impfmeldungen) relevant." />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Practitioner.address" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="https://demis.rki.de/fhir/StructureDefinition/County" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <short value="Landkreis" />
+      <definition value="Landkreis" />
+      <min value="1" />
+      <type>
+        <code value="Coding" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="extensible" />
+        <description value="Landkreis" />
+        <valueSet value="https://demis.rki.de/fhir/ValueSet/county" />
+      </binding>
+    </element>
+    <element id="Extension.value[x].system">
+      <path value="Extension.value[x].system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Extension.value[x].code">
+      <path value="Extension.value[x].code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

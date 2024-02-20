@@ -1,0 +1,399 @@
+<Parameters xmlns="http://hl7.org/fhir">
+  <id value="ProcessNotificationRequestParameters-example" />
+  <meta>
+    <profile value="https://demis.rki.de/fhir/StructureDefinition/ProcessNotificationRequestParameters" />
+  </meta>
+  <parameter>
+    <name value="content" />
+    <resource>
+		<Bundle xmlns="http://hl7.org/fhir">
+		   <id value="098f6bcd-4621-3373-8ade-4e832627b4f6"/>
+		   <meta>
+			  <lastUpdated value="2021-03-04T12:00:00.000+01:00"/>
+			  <profile value="https://demis.rki.de/fhir/StructureDefinition/NotificationBundleDisease"/>
+		   </meta>
+		   <identifier>
+			  <system value="https://demis.rki.de/fhir/NamingSystem/NotificationBundleId"/>
+			  <value value="f6f4061a-1bdd-31c0-8d81-09b39f581270"/>
+		   </identifier>
+		   <type value="document"/>
+		   <timestamp value="2021-03-04T12:00:00.000+01:00"/>
+		   <entry>
+			  <fullUrl value="https://demis.rki.de/fhir/Composition/9f0a1336-3ac2-3a31-bfff-b8233c214452"/>
+			  <resource>
+				 <Composition xmlns="http://hl7.org/fhir">
+					<id value="9f0a1336-3ac2-3a31-bfff-b8233c214452"/>
+					<meta>
+					   <lastUpdated value="2021-03-04T12:00:00.000+01:00"/>
+					   <profile value="https://demis.rki.de/fhir/StructureDefinition/NotificationDiseaseCVDD"/>
+					</meta>
+					<identifier>
+					   <system value="https://demis.rki.de/fhir/NamingSystem/NotificationId"/>
+					   <value value="b84d3abf-a524-4a24-a019-48b2b96bf1de"/>
+					</identifier>
+					<status value="final"/>
+					<type>
+					   <coding>
+						  <system value="http://loinc.org"/>
+						  <code value="34782-3"/>
+						  <display value="Infectious disease Note"/>
+					   </coding>
+					</type>
+					<category>
+					   <coding>
+						  <system value="https://demis.rki.de/fhir/CodeSystem/notificationType"/>
+						  <code value="6.1_2"/>
+						  <display value="Meldung gemäß §6 Absatz 1, 2"/>
+					   </coding>
+					</category>
+					<subject>
+					   <reference value="Patient/ac163863-fefa-3ce2-8511-7a4150d6ad43"/>
+					</subject>
+					<date value="2021-03-04T01:00:00+01:00"/>
+					<author>
+					   <reference value="PractitionerRole/6373194f-4d06-382a-a67d-e3c7da243c30"/>
+					</author>
+					<title value="Meldung gemäß §6 Absatz 1, 2 IfSG"/>
+					<section>
+					   <title value="Diagnose"/>
+					   <code>
+						  <coding>
+							 <system value="https://demis.rki.de/fhir/CodeSystem/sectionCode"/>
+							 <code value="diagnosis"/>
+							 <display value="Diagnose"/>
+						  </coding>
+					   </code>
+					   <entry>
+						  <reference value="Condition/cc86fc62-11af-3411-8b5e-6b2202206ec4"/>
+					   </entry>
+					</section>
+					<section>
+					   <title value="Meldetatbestandsübergreifende klinische und epidemiologische Angaben"/>
+					   <code>
+						  <coding>
+							 <system value="https://demis.rki.de/fhir/CodeSystem/sectionCode"/>
+							 <code value="generalClinAndEpiInformation"/>
+							 <display value="Meldetatbestandsübergreifende klinische und epidemiologische Angaben"/>
+						  </coding>
+					   </code>
+					   <entry>
+						  <reference value="QuestionnaireResponse/2f0c6b36-6421-35a8-8ea1-0e013db39410"/>
+					   </entry>
+					</section>
+					<section>
+					   <title value="Meldetatbestandsspezifische klinische und epidemiologische Angaben"/>
+					   <code>
+						  <coding>
+							 <system value="https://demis.rki.de/fhir/CodeSystem/sectionCode"/>
+							 <code value="specificClinAndEpiInformation"/>
+							 <display value="Meldetatbestandsspezifische klinische und epidemiologische Angaben"/>
+						  </coding>
+					   </code>
+					   <entry>
+						  <reference value="QuestionnaireResponse/146e5ced-db63-36e0-b8d3-85fa94218d8b"/>
+					   </entry>
+					</section>
+				 </Composition>
+			  </resource>
+		   </entry>
+		   <entry>
+			  <fullUrl value="https://demis.rki.de/fhir/Patient/ac163863-fefa-3ce2-8511-7a4150d6ad43"/>
+			  <resource>
+				 <Patient xmlns="http://hl7.org/fhir">
+					<id value="ac163863-fefa-3ce2-8511-7a4150d6ad43"/>
+					<meta>
+					   <profile value="https://demis.rki.de/fhir/StructureDefinition/NotifiedPerson"/>
+					</meta>
+					<name>
+					   <use value="official"/>
+					   <family value="Fontane"/>
+					   <given value="Theodor"/>
+					</name>
+					<gender value="male"/>
+					<birthDate value="1991-12-30"/>
+					<address>
+					   <extension url="https://demis.rki.de/fhir/StructureDefinition/AddressUse">
+						  <valueCoding>
+							 <system value="https://demis.rki.de/fhir/CodeSystem/addressUse"/>
+							 <code value="primary"/>
+						  </valueCoding>
+					   </extension>
+					   <line value="Heerstr. 1"/>
+					   <city value="Berlin"/>
+					   <postalCode value="14052"/>
+					   <country value="20422"/>
+					</address>
+				 </Patient>
+			  </resource>
+		   </entry>
+		   <entry>
+			  <fullUrl value="https://demis.rki.de/fhir/Condition/cc86fc62-11af-3411-8b5e-6b2202206ec4"/>
+			  <resource>
+				 <Condition xmlns="http://hl7.org/fhir">
+					<id value="cc86fc62-11af-3411-8b5e-6b2202206ec4"/>
+					<meta>
+					   <profile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseCVDD"/>
+					</meta>
+					<verificationStatus>
+					   <coding>
+						  <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+						  <code value="confirmed"/>
+					   </coding>
+					</verificationStatus>
+					<code>
+					   <coding>
+						  <system value="https://demis.rki.de/fhir/CodeSystem/notificationDiseaseCategory"/>
+						  <code value="cvdd"/>
+						  <display value="Coronavirus-Krankheit-2019 (COVID-19)"/>
+					   </coding>
+					</code>
+					<subject>
+					   <reference value="Patient/ac163863-fefa-3ce2-8511-7a4150d6ad43"/>
+					</subject>
+					<recordedDate value="2021-03-04"/>
+				 </Condition>
+			  </resource>
+		   </entry>
+		   <entry>
+			  <fullUrl value="https://demis.rki.de/fhir/Organization/7b1cb8d3-f4bb-3cf6-8c0e-01e6657a13ea"/>
+			  <resource>
+				 <Organization xmlns="http://hl7.org/fhir">
+					<id value="7b1cb8d3-f4bb-3cf6-8c0e-01e6657a13ea"/>
+					<meta>
+					   <profile value="https://demis.rki.de/fhir/StructureDefinition/NotifierFacility"/>
+					</meta>
+					<identifier>
+					   <system value="https://fhir.kbv.de/NamingSystem/KBV_NS_Base_BSNR"/>
+					   <value value="987654300"/>
+					</identifier>
+					<type>
+					   <coding>
+						  <system value="https://demis.rki.de/fhir/CodeSystem/organizationType"/>
+						  <code value="hospital"/>
+					   </coding>
+					</type>
+					<name value="Sankt Gertrauden Krankenhaus"/>
+					<telecom>
+					   <system value="phone"/>
+					   <value value="309876543210"/>
+					   <use value="work"/>
+					</telecom>
+					<address>
+					   <line value="Dingsweg 321"/>
+					   <city value="Berlin"/>
+					   <postalCode value="13055"/>
+					   <country value="20422"/>
+					</address>
+				 </Organization>
+			  </resource>
+		   </entry>
+		   <entry>
+			  <fullUrl value="https://demis.rki.de/fhir/PractitionerRole/6373194f-4d06-382a-a67d-e3c7da243c30"/>
+			  <resource>
+				 <PractitionerRole xmlns="http://hl7.org/fhir">
+					<id value="6373194f-4d06-382a-a67d-e3c7da243c30"/>
+					<meta>
+					   <profile value="https://demis.rki.de/fhir/StructureDefinition/NotifierRole"/>
+					</meta>
+					<organization>
+					   <reference value="Organization/7b1cb8d3-f4bb-3cf6-8c0e-01e6657a13ea"/>
+					</organization>
+				 </PractitionerRole>
+			  </resource>
+		   </entry>
+		   <entry>
+			  <fullUrl value="https://demis.rki.de/fhir/Encounter/cf424cfb-8809-3b51-8ab2-d8bf979cbe8d"/>
+			  <resource>
+				 <Encounter xmlns="http://hl7.org/fhir">
+					<id value="cf424cfb-8809-3b51-8ab2-d8bf979cbe8d"/>
+					<meta>
+					   <profile value="https://demis.rki.de/fhir/StructureDefinition/Hospitalization"/>
+					</meta>
+					<status value="in-progress"/>
+					<class>
+					   <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+					   <code value="IMP"/>
+					   <display value="inpatient encounter"/>
+					</class>
+					<serviceType>
+					   <coding>
+						  <system value="https://demis.rki.de/fhir/CodeSystem/hospitalizationServiceType"/>
+						  <code value="0800"/>
+						  <display value="Pneumologie"/>
+					   </coding>
+					</serviceType>
+					<subject>
+					   <reference value="Patient/ac163863-fefa-3ce2-8511-7a4150d6ad43"/>
+					</subject>
+					<period>
+					   <start value="2021-03-04"/>
+					</period>
+					<serviceProvider>
+					   <reference value="Organization/7b1cb8d3-f4bb-3cf6-8c0e-01e6657a13ea"/>
+					</serviceProvider>
+				 </Encounter>
+			  </resource>
+		   </entry>
+		   <entry>
+			  <fullUrl value="https://demis.rki.de/fhir/QuestionnaireResponse/2f0c6b36-6421-35a8-8ea1-0e013db39410"/>
+			  <resource>
+				 <QuestionnaireResponse xmlns="http://hl7.org/fhir">
+					<id value="2f0c6b36-6421-35a8-8ea1-0e013db39410"/>
+					<meta>
+					   <profile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseInformationCommon"/>
+					</meta>
+					<questionnaire value="https://demis.rki.de/fhir/Questionnaire/DiseaseQuestionsCommon"/>
+					<status value="completed"/>
+					<subject>
+					   <reference value="Patient/ac163863-fefa-3ce2-8511-7a4150d6ad43"/>
+					</subject>
+					<item>
+					   <linkId value="isDead"/>
+					   <answer>
+						  <valueCoding>
+							 <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"/>
+							 <code value="no"/>
+							 <display value="Nein"/>
+						  </valueCoding>
+					   </answer>
+					</item>
+					<item>
+					   <linkId value="militaryAffiliation"/>
+					   <answer>
+						  <valueCoding>
+							 <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+							 <code value="NASK"/>
+							 <display value="not asked"/>
+						  </valueCoding>
+					   </answer>
+					</item>
+					<item>
+					   <linkId value="labSpecimenTaken"/>
+					   <answer>
+						  <valueCoding>
+							 <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+							 <code value="NASK"/>
+							 <display value="not asked"/>
+						  </valueCoding>
+					   </answer>
+					</item>
+					<item>
+					   <linkId value="hospitalized"/>
+					   <answer>
+						  <valueCoding>
+							 <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"/>
+							 <code value="yes"/>
+							 <display value="Ja"/>
+						  </valueCoding>
+						  <item>
+							 <linkId value="hospitalizedGroup"/>
+							 <item>
+								<linkId value="hospitalizedEncounter"/>
+								<answer>
+								   <valueReference>
+									  <reference value="Encounter/cf424cfb-8809-3b51-8ab2-d8bf979cbe8d"/>
+								   </valueReference>
+								</answer>
+							 </item>
+						  </item>
+					   </answer>
+					</item>
+					<item>
+					   <linkId value="infectProtectFacility"/>
+					   <answer>
+						  <valueCoding>
+							 <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+							 <code value="NASK"/>
+							 <display value="not asked"/>
+						  </valueCoding>
+					   </answer>
+					</item>
+					<item>
+					   <linkId value="placeExposure"/>
+					   <answer>
+						  <valueCoding>
+							 <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+							 <code value="NASK"/>
+							 <display value="not asked"/>
+						  </valueCoding>
+					   </answer>
+					</item>
+					<item>
+					   <linkId value="organDonation"/>
+					   <answer>
+						  <valueCoding>
+							 <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+							 <code value="NASK"/>
+							 <display value="not asked"/>
+						  </valueCoding>
+					   </answer>
+					</item>
+					<item>
+					   <linkId value="additionalInformation"/>
+					   <answer>
+						  <valueString value="Die Meldungsgenerierung erfolgte automatisch über den Aufnahmedatensatz gem. §301 SGB V. Nicht alle erforderlichen Informationen konnten daher erhoben werden."/>
+					   </answer>
+					</item>
+				 </QuestionnaireResponse>
+			  </resource>
+		   </entry>
+		   <entry>
+			  <fullUrl value="https://demis.rki.de/fhir/QuestionnaireResponse/146e5ced-db63-36e0-b8d3-85fa94218d8b"/>
+			  <resource>
+				 <QuestionnaireResponse xmlns="http://hl7.org/fhir">
+					<id value="146e5ced-db63-36e0-b8d3-85fa94218d8b"/>
+					<meta>
+					   <profile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseInformationCVDD"/>
+					</meta>
+					<questionnaire value="https://demis.rki.de/fhir/Questionnaire/DiseaseQuestionsCVDD"/>
+					<status value="completed"/>
+					<subject>
+					   <reference value="Patient/ac163863-fefa-3ce2-8511-7a4150d6ad43"/>
+					</subject>
+					<item>
+					   <linkId value="infectionSource"/>
+					   <answer>
+						  <valueCoding>
+							 <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+							 <code value="NASK"/>
+							 <display value="not asked"/>
+						  </valueCoding>
+					   </answer>
+					</item>
+					<item>
+					   <linkId value="infectionEnvironmentSetting"/>
+					   <answer>
+						  <valueCoding>
+							 <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+							 <code value="NASK"/>
+							 <display value="not asked"/>
+						  </valueCoding>
+					   </answer>
+					</item>
+					<item>
+					   <linkId value="immunization"/>
+					   <answer>
+						  <valueCoding>
+							 <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+							 <code value="NASK"/>
+							 <display value="not asked"/>
+						  </valueCoding>
+					   </answer>
+					</item>
+					<item>
+					   <linkId value="reason"/>
+					   <answer>
+						  <valueCoding>
+							 <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+							 <code value="NASK"/>
+							 <display value="not asked"/>
+						  </valueCoding>
+					   </answer>
+					</item>
+				 </QuestionnaireResponse>
+			  </resource>
+		   </entry>
+		</Bundle>
+    </resource>
+  </parameter>
+</Parameters>

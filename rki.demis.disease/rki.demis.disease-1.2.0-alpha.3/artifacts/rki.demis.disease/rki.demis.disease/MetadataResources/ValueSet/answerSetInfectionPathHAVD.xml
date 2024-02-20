@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetInfectionPathHAVD"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetInfectionPathHAVD"/>
+  <version value="1.0.0"/>
+  <name value="AnswerSetInfectionPathHAVD"/>
+  <title value="Antwort zum verzehrten Lebensmittel bei Hepatitis A"/>
+  <status value="active"/>
+  <date value="2023-03-23"/>
+  <description value="Das ValueSet AnswerSetInfectionPathHAVD enthält die Codes der Antwortmöglichkeiten für die verzehrten Lebensmittel bei Hepatitis A."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <code value="409496000+228023009+63045006"/>
+        <display value="Tiefkühl-Beeren und/oder Produkte, die Tiefkühl-Beeren enthalten"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="409496000 |Mode of transmission (observable entity)| + 228023009 |Frozen food (substance)| + 63045006 |Berry (substance)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="409496000:704319004=227423000"/>
+        <display value="Datteln"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="409496000 |Mode of transmission (observable entity)| : 704319004 |Inheres in (attribute)| = 227423000 |Dates - food (substance)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="409496000:704319004=44027008"/>
+        <display value="Meeresfrüchten, z.B. Austern Muscheln"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="409496000 |Mode of transmission (observable entity)| : 704319004 |Inheres in (attribute)| = 44027008 |Seafood (substance)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="74964007"/>
+        <display value="-andere/sonstige-"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Other (qualifier value)"/>
+        </designation>
+      </concept>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+      <version value="2.1.0"/>
+      <concept>
+        <code value="ASKU"/>
+        <display value="asked but unknown"/>
+      </concept>
+      <concept>
+        <code value="NASK"/>
+        <display value="not asked"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

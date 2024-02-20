@@ -1,0 +1,29 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="militaryAffiliation" />
+  <url value="https://demis.rki.de/fhir/CodeSystem/militaryAffiliation" />
+  <version value="1.0.0" />
+  <name value="MilitaryAffiliation" />
+  <title value="Zugehörigkeit zur Bundeswehr" />
+  <status value="active" />
+  <date value="2022-01-18" />
+  <description value="Das CodeSystem MilitaryAffiliation enthält die Codes zur Angabe der Zugehörigkeit zur Bundeswehr." />
+  <caseSensitive value="false" />
+  <valueSet value="https://demis.rki.de/fhir/ValueSet/militaryAffiliation" />
+  <content value="complete" />
+  <count value="3" />
+  <concept>
+    <code value="noReferenceToBundeswehr" />
+    <display value="Kein Bezug zur BW" />
+  </concept>
+  <concept>
+    <code value="civilPersonActiveInBundeswehr" />
+    <display value="Zivilperson tätig/untergebracht in Einrichtung der BW" />
+  </concept>
+  <concept>
+    <code value="memberOfBundeswehr" />
+    <display value="Soldat/BW-Angehöriger" />
+  </concept>
+</CodeSystem>
+    
+    
+    

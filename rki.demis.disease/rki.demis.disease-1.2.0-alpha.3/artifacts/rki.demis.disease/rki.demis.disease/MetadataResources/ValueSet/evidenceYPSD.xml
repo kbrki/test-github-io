@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="evidenceYPSD"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/evidenceYPSD"/>
+  <version value="1.0.0"/>
+  <name value="EvidenceYPSD"/>
+  <title value="Pest-Symptom und -Manifestation"/>
+  <status value="active"/>
+  <date value="2023-03-23"/>
+  <description value="Das ValueSet EvidenceYPSD enthält die Codes der Pest-Symptome und -Manifestationen."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <code value="66857006"/>
+        <display value="Blutiger Auswurf (Hämoptyse)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Hemoptysis (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="29857009"/>
+        <display value="Brustschmerzen"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Chest pain (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="386661006"/>
+        <display value="Fieber"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Fever (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="49727002"/>
+        <display value="Husten"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Cough (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="30746006"/>
+        <display value="Lymphknotenschwellung"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Lymphadenopathy (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="7180009"/>
+        <display value="Hirnhautentzündung (Meningitis )"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Meningitis (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="405737000"/>
+        <display value="Rachenentzündung (Pharyngitis)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Pharyngitis (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="447931005"/>
+        <display value="septisches Krankheitsbild"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Clinical sepsis (disorder)"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

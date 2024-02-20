@@ -1,0 +1,25 @@
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="ReceivedNotification-example" />
+  <meta>
+    <profile value="https://demis.rki.de/fhir/StructureDefinition/NotificationReceipt" />
+  </meta>
+  <extension url="https://demis.rki.de/fhir/StructureDefinition/ReceivedNotification">
+    <valueIdentifier>
+      <system value="https://demis.rki.de/fhir/NamingSystem/NotificationBundleId" />
+      <value value="8e879be5-37cb-4ea4-885a-1f4bb30e360a" />
+    </valueIdentifier>
+  </extension>
+  <status value="final" />
+  <type>
+    <coding>
+      <system value="http://loinc.org" />
+      <code value="77999-1" />
+      <display value="Case notification comment" />
+    </coding>
+  </type>
+  <date value="2021-03-11T08:34:03+00:00" />
+  <author>
+    <reference value="Organization/DEMIS" />
+  </author>
+  <title value="Meldevorgangsquittung" />
+</Composition>

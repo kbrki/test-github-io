@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vaccineSXXD"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/vaccineSXXD"/>
+  <version value="1.0.0"/>
+  <name value="VaccineSXXD"/>
+  <title value="Verdacht auf Paratyphus/Typhus-Impfstoff als SNOMED-Code"/>
+  <status value="active"/>
+  <date value="2023-03-23"/>
+  <description value="Das ValueSet VaccineSXXD enthält die Codes der Verdacht auf Paratyphus/Typhus-Impfstoffe als SNOMED-Code."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <code value="871804001"/>
+        <display value="Inaktivierter Hepatitis A-Adsorbat- und Typhus-Polysaccharid- Impfstoff (ViATIM)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Vaccine product containing only Hepatitis A virus and Salmonella enterica subspecies enterica serovar Typhi antigens (medicinal product)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="971000221109"/>
+        <display value="Typhus-Impfstoff, oral,lebend abgeschwächt (Typhoral L)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Vaccine product containing only live attenuated Salmonella enterica subspecies enterica serovar Typhi antigen in oral dose form (medicinal product form)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="2171000221104"/>
+        <display value="Typhus-Polysaccharid-Impfstoff (Typhim Vi)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Vaccine product containing only Salmonella enterica subspecies enterica serovar Typhi capsular polysaccharide unconjugated antigen in parenteral dose form (medicinal product form)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="74964007"/>
+        <display value="-andere/sonstige-"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Other (qualifier value)"/>
+        </designation>
+      </concept>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+      <version value="2.1.0"/>
+      <concept>
+        <code value="ASKU"/>
+        <display value="asked but unknown"/>
+      </concept>
+      <concept>
+        <code value="NASK"/>
+        <display value="not asked"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

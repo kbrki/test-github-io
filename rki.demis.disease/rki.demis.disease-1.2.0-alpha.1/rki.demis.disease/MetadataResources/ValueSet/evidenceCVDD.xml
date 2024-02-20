@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="evidenceCVDD"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/evidenceCVDD"/>
+  <version value="1.0.0"/>
+  <name value="EvidenceCVDD"/>
+  <title value="Covid-19-Symptom und -Manifestation"/>
+  <status value="active"/>
+  <date value="2022-01-18"/>
+  <description value="Das ValueSet EvidenceCVDD enthält die Codes der Covid-19-Symptome und -Manifestationen."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="386661006"/>
+        <display value="Fever (finding)"/>
+      </concept>
+      <concept>
+        <code value="267102003"/>
+        <display value="Sore throat symptom (finding)"/>
+      </concept>
+      <concept>
+        <code value="49727002"/>
+        <display value="Cough (finding)"/>
+      </concept>
+      <concept>
+        <code value="233604007"/>
+        <display value="Pneumonia (disorder)"/>
+      </concept>
+      <concept>
+        <code value="275280004"/>
+        <display value="Sniffles (finding)"/>
+      </concept>
+      <concept>
+        <code value="67782005"/>
+        <display value="Acute respiratory distress syndrome (disorder)"/>
+      </concept>
+      <concept>
+        <code value="371820004"/>
+        <display value="Patient ventilated (finding)"/>
+      </concept>
+      <concept>
+        <code value="267036007"/>
+        <display value="Dyspnea (finding)"/>
+      </concept>
+      <concept>
+        <code value="62315008"/>
+        <display value="Diarrhea (finding)"/>
+      </concept>
+      <concept>
+        <code value="44169009"/>
+        <display value="Loss of sense of smell (finding)"/>
+      </concept>
+      <concept>
+        <code value="36955009"/>
+        <display value="Loss of taste (finding)"/>
+      </concept>
+      <concept>
+        <code value="271823003"/>
+        <display value="Tachypnea (finding)"/>
+      </concept>
+      <concept>
+        <code value="3424008"/>
+        <display value="Tachycardia (finding)"/>
+      </concept>
+      <concept>
+        <code value="213257006"/>
+        <display value="Generally unwell (finding)"/>
+      </concept>
+      <concept>
+        <code value="43724002"/>
+        <display value="Chill (finding)"/>
+      </concept>
+      <concept>
+        <code value="25064002"/>
+        <display value="Headache (finding)"/>
+      </concept>
+      <concept>
+        <code value="68962001"/>
+        <display value="Muscle pain (finding)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

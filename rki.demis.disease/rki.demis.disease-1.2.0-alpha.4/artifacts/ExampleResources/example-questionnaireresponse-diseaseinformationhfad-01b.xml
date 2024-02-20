@@ -1,0 +1,31 @@
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+   <id value="936db1f7-5ad4-3e49-8042-0e2f2187daaa"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseInformationHFAD"></profile>
+   </meta>
+   <questionnaire value="https://demis.rki.de/fhir/Questionnaire/DiseaseQuestionsHFAD"></questionnaire>
+   <status value="amended"></status>
+   <subject>
+      <reference value="Patient/1883d3cb-3503-3daf-ba17-86c7df21fe36"></reference>
+   </subject>
+   <item>
+      <linkId value="pathogen"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="79875007"></code>
+            <display value="Krim-Kongo-Fieber-Virus (Crimean-Congo hemorrhagic fever virus, CCHFV)"></display>
+         </valueCoding>
+      </answer>
+   </item>
+   <item>
+      <linkId value="outbreak"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"></system>
+            <code value="ASKU"></code>
+            <display value="asked but unknown"></display>
+         </valueCoding>
+      </answer>
+   </item>
+</QuestionnaireResponse>

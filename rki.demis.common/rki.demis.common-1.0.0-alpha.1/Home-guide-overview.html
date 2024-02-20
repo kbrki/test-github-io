@@ -1,0 +1,1028 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <title>Implementierungsleitfaden für DEMIS Common (Basismeldeinhalte)</title>
+
+        <link rel="icon" href="static/styles/common/favicon.ico" />
+
+        <script src="static/styles/common/jquery/jquery.min.js"></script>
+        <script src="static/styles/common/bootstrap/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="static/styles/common/main.min.css" />
+        <link rel="stylesheet" href="static/styles/common/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="static/styles/common/rendering/rendering.min.css" />
+
+        <script src="static/styles/common/rendering/stu3TreeTable.min.js"></script>
+        <script src="static/styles/common/rendering/baseTreetable.min.js"></script>
+
+        <link rel="stylesheet" href="static/styles/treetable/style.css?v=1da167c05358000" />
+
+    </head>
+
+    <body>
+
+        <div id="ig-viewer">
+
+            <div class="ig-view-content">
+
+                <div id="ig-view-treetable">
+
+                    <div class="segment-default-header" role="banner" aria-label="Header">
+                        <div class="row">
+                            <header class="col-md-12" aria-hidden="true">
+                                <h1 class="title">
+                                    <b>Implementierungsleitfaden für DEMIS Common (Basismeldeinhalte)</b>
+                                </h1>
+                            </header>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid">
+                        <div id="guide-panel">
+                            <div class="tree-panel" role="navigation" aria-label="Main menu">
+                                
+
+<div class="tree-content">
+    <div>
+
+        <input data-val="true" data-val-required="The Id field is required." id="GuideId" name="Guide.Id" type="hidden" value="5033" />
+
+        <table id="treetable" class="treetable ig-treetable hidden">
+
+                    <tr data-id="Home"
+                        data-filepath="Home"
+                        data-serial-nr="2"
+                        data-is-folder="True"
+                        class="rootnode treenode">
+                        <td>
+                            <a href="Home.html">
+                                <span class="baseIcon resource"></span>
+                                <span title="Home">Home</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/guide-overIG.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/guide-overIG.guide.md"
+                        data-parentId="Home"
+                        data-serial-nr="6"
+                        class="treenode">
+                        <td>
+                            <a href="Home-guide-overIG.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="&#xDC;ber diesen Leitfaden">&#xDC;ber diesen Leitfaden</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/guide-overview.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/guide-overview.guide.md"
+                        data-parentId="Home"
+                        data-serial-nr="7"
+                        class="treenode selected">
+                        <td>
+                            <a href="Home-guide-overview.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Grundlagen und &#xDC;berblick">Grundlagen und &#xDC;berblick</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/guide-changelog.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/guide-changelog.guide.md"
+                        data-parentId="Home"
+                        data-serial-nr="8"
+                        class="treenode">
+                        <td>
+                            <a href="Home-guide-changelog.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="&#xC4;nderungshistorie">&#xC4;nderungshistorie</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/guide-hints.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/guide-hints.guide.md"
+                        data-parentId="Home"
+                        data-serial-nr="9"
+                        class="treenode">
+                        <td>
+                            <a href="Home-guide-hints.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Erg&#xE4;nzende Hinweise">Erg&#xE4;nzende Hinweise</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/guide-knownissues.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/guide-knownissues.guide.md"
+                        data-parentId="Home"
+                        data-serial-nr="10"
+                        class="treenode">
+                        <td>
+                            <a href="Home-guide-knownissues.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Known Issues">Known Issues</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/guide-links.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/guide-links.guide.md"
+                        data-parentId="Home"
+                        data-serial-nr="11"
+                        class="treenode">
+                        <td>
+                            <a href="Home-guide-links.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Weiterf&#xFC;hrende Informationen">Weiterf&#xFC;hrende Informationen</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources"
+                        data-is-folder="True"
+                        data-filepath="Home/resources"
+                        data-parentId="Home"
+                        data-serial-nr="12"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Ressourcen">Ressourcen</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/structuredefinitions"
+                        data-parentId="Home/resources"
+                        data-serial-nr="15"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="StructureDefinitions">StructureDefinitions</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Bundle"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/structuredefinitions/Bundle"
+                        data-parentId="Home/resources/structuredefinitions"
+                        data-serial-nr="18"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Bundle.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Meldevorgang (Bundle)">Meldevorgang (Bundle)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Bundle/guide-NotificationBundle.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Bundle/guide-NotificationBundle.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Bundle"
+                        data-serial-nr="20"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Bundle-guide-NotificationBundle.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Meldevorgang (NotificationBundle)">Meldevorgang (NotificationBundle)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Bundle/guide-ReceiptBundle.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Bundle/guide-ReceiptBundle.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Bundle"
+                        data-serial-nr="21"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Bundle-guide-ReceiptBundle.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Quittungs-Bundle (ReceiptBundle)">Quittungs-Bundle (ReceiptBundle)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Composition"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/structuredefinitions/Composition"
+                        data-parentId="Home/resources/structuredefinitions"
+                        data-serial-nr="22"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Composition.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Meldung (Notification)">Meldung (Notification)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Composition/guide-Notification.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Composition/guide-Notification.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Composition"
+                        data-serial-nr="24"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Composition-guide-Notification.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Meldung (Notification)">Meldung (Notification)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Composition/guide-NotificationReceipt.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Composition/guide-NotificationReceipt.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Composition"
+                        data-serial-nr="25"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Composition-guide-NotificationReceipt.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Meldequittung (NotificationReceipt)">Meldequittung (NotificationReceipt)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Organization"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/structuredefinitions/Organization"
+                        data-parentId="Home/resources/structuredefinitions"
+                        data-serial-nr="26"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Organization.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Einrichtung (Organization)">Einrichtung (Organization)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Organization/guide-NotifiedPersonFacility.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Organization/guide-NotifiedPersonFacility.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Organization"
+                        data-serial-nr="28"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Organization-guide-NotifiedPersonFacility.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Betroffenen-Einrichtung (NotifiedPersonFacility)">Betroffenen-Einrichtung (NotifiedPersonFacility)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Organization/guide-NotifierFacility.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Organization/guide-NotifierFacility.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Organization"
+                        data-serial-nr="29"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Organization-guide-NotifierFacility.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Melder-Einrichtung (NotifierFacility)">Melder-Einrichtung (NotifierFacility)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Organization/guide-SubmittingFacility.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Organization/guide-SubmittingFacility.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Organization"
+                        data-serial-nr="30"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Organization-guide-SubmittingFacility.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Einsender-Einrichtung (SubmittingFacility)">Einsender-Einrichtung (SubmittingFacility)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Organization/guide-TransmittingSite.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Organization/guide-TransmittingSite.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Organization"
+                        data-serial-nr="31"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Organization-guide-TransmittingSite.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="&#xDC;bermittlungsstelle (TransmittingSite)">&#xDC;bermittlungsstelle (TransmittingSite)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Patient"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/structuredefinitions/Patient"
+                        data-parentId="Home/resources/structuredefinitions"
+                        data-serial-nr="32"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Patient.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Betroffene Person (NotifedPerson)">Betroffene Person (NotifedPerson)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Patient/guide-NotifiedPerson.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Patient/guide-NotifiedPerson.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Patient"
+                        data-serial-nr="34"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Patient-guide-NotifiedPerson.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Betroffene Person (NotifiedPerson)">Betroffene Person (NotifiedPerson)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Patient/guide-NotifiedPersonNotByName.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Patient/guide-NotifiedPersonNotByName.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Patient"
+                        data-serial-nr="35"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Patient-guide-NotifiedPersonNotByName.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Betroffene Person nichtnamentlich (NotifiedPersonNotByName)">Betroffene Person nichtnamentlich (NotifiedPersonNotByName)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Practitioner"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/structuredefinitions/Practitioner"
+                        data-parentId="Home/resources/structuredefinitions"
+                        data-serial-nr="36"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Practitioner.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Person des Gesundheitsprozesses (Practitioner)">Person des Gesundheitsprozesses (Practitioner)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Practitioner/guide-Notifier.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Practitioner/guide-Notifier.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Practitioner"
+                        data-serial-nr="38"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Practitioner-guide-Notifier.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Melder (Notifier)">Melder (Notifier)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Practitioner/guide-SubmittingPerson.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Practitioner/guide-SubmittingPerson.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Practitioner"
+                        data-serial-nr="39"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Practitioner-guide-SubmittingPerson.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Einsender (SubmittingPerson)">Einsender (SubmittingPerson)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/PractitionerRole"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/structuredefinitions/PractitionerRole"
+                        data-parentId="Home/resources/structuredefinitions"
+                        data-serial-nr="40"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-PractitionerRole.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Rolle (PractitionerRole)">Rolle (PractitionerRole)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/PractitionerRole/guide-NotifierRole.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/PractitionerRole/guide-NotifierRole.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/PractitionerRole"
+                        data-serial-nr="42"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-PractitionerRole-guide-NotifierRole.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Melder-Rolle (NotifierRole)">Melder-Rolle (NotifierRole)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/PractitionerRole/guide-SubmittingRole.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/PractitionerRole/guide-SubmittingRole.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/PractitionerRole"
+                        data-serial-nr="43"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-PractitionerRole-guide-SubmittingRole.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Einsender-Rolle (SubmittingRole)">Einsender-Rolle (SubmittingRole)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/OperationOutcome"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/structuredefinitions/OperationOutcome"
+                        data-parentId="Home/resources/structuredefinitions"
+                        data-serial-nr="44"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-OperationOutcome.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Verarbeitungsergebnis (OperationOutcome)">Verarbeitungsergebnis (OperationOutcome)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/OperationOutcome/guide-ProcessNotificationResponse.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/OperationOutcome/guide-ProcessNotificationResponse.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/OperationOutcome"
+                        data-serial-nr="46"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-OperationOutcome-guide-ProcessNotificationResponse.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Response f&#xFC;r $process-notification (ProcessNotificationResponse)">Response f&#xFC;r $process-notification (ProcessNotificationResponse)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Parameters"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/structuredefinitions/Parameters"
+                        data-parentId="Home/resources/structuredefinitions"
+                        data-serial-nr="47"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Parameters.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Parameter (Parameters)">Parameter (Parameters)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Parameters/guide-processnotificationrequestparameters.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Parameters/guide-processnotificationrequestparameters.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Parameters"
+                        data-serial-nr="50"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Parameters-guide-processnotificationrequestparameters.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="ProcessNotificationRequestParameters">ProcessNotificationRequestParameters</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Parameters/guide-processnotificationresponseparameters.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Parameters/guide-processnotificationresponseparameters.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Parameters"
+                        data-serial-nr="51"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Parameters-guide-processnotificationresponseparameters.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="ProcessNotificationResponseParameters">ProcessNotificationResponseParameters</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/terminologies"
+                        data-parentId="Home/resources"
+                        data-serial-nr="52"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Terminologien">Terminologien</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/codesystems"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/terminologies/codesystems"
+                        data-parentId="Home/resources/terminologies"
+                        data-serial-nr="55"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-codesystems.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="CodeSystems">CodeSystems</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/codesystems/guide-addressUse.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/codesystems/guide-addressUse.guide.md"
+                        data-parentId="Home/resources/terminologies/codesystems"
+                        data-serial-nr="58"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-codesystems-guide-addressUse.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Adressnutzung">Adressnutzung</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/codesystems/guide-country.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/codesystems/guide-country.guide.md"
+                        data-parentId="Home/resources/terminologies/codesystems"
+                        data-serial-nr="59"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-codesystems-guide-country.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Land">Land</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/codesystems/guide-organizationType.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/codesystems/guide-organizationType.guide.md"
+                        data-parentId="Home/resources/terminologies/codesystems"
+                        data-serial-nr="60"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-codesystems-guide-organizationType.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Einrichtungsart">Einrichtungsart</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/codesystems/guide-postalCode.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/codesystems/guide-postalCode.guide.md"
+                        data-parentId="Home/resources/terminologies/codesystems"
+                        data-serial-nr="61"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-codesystems-guide-postalCode.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Postleitzahl">Postleitzahl</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/codesystems/guide-reportingSite.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/codesystems/guide-reportingSite.guide.md"
+                        data-parentId="Home/resources/terminologies/codesystems"
+                        data-serial-nr="62"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-codesystems-guide-reportingSite.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="&#xDC;bermittlungsstelle">&#xDC;bermittlungsstelle</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/codesystems/guide-salutation.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/codesystems/guide-salutation.guide.md"
+                        data-parentId="Home/resources/terminologies/codesystems"
+                        data-serial-nr="63"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-codesystems-guide-salutation.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Anrede">Anrede</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/codesystems/guide-transmissionCategory.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/codesystems/guide-transmissionCategory.guide.md"
+                        data-parentId="Home/resources/terminologies/codesystems"
+                        data-serial-nr="64"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-codesystems-guide-transmissionCategory.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="SurvNet-&#xDC;bermittlungskategorie">SurvNet-&#xDC;bermittlungskategorie</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/valuesets"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/terminologies/valuesets"
+                        data-parentId="Home/resources/terminologies"
+                        data-serial-nr="65"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-valuesets.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="ValueSets">ValueSets</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/valuesets/guide-addressUse.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/valuesets/guide-addressUse.guide.md"
+                        data-parentId="Home/resources/terminologies/valuesets"
+                        data-serial-nr="68"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-valuesets-guide-addressUse.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Adressnutzung">Adressnutzung</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/valuesets/guide-answerSetAddressUse.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/valuesets/guide-answerSetAddressUse.guide.md"
+                        data-parentId="Home/resources/terminologies/valuesets"
+                        data-serial-nr="69"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-valuesets-guide-answerSetAddressUse.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Antwortm&#xF6;glichkeiten Adressnutzung">Antwortm&#xF6;glichkeiten Adressnutzung</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/valuesets/guide-country.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/valuesets/guide-country.guide.md"
+                        data-parentId="Home/resources/terminologies/valuesets"
+                        data-serial-nr="70"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-valuesets-guide-country.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Land">Land</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/valuesets/guide-organizationType.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/valuesets/guide-organizationType.guide.md"
+                        data-parentId="Home/resources/terminologies/valuesets"
+                        data-serial-nr="71"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-valuesets-guide-organizationType.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Einrichtungsart">Einrichtungsart</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/valuesets/guide-postalCode.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/valuesets/guide-postalCode.guide.md"
+                        data-parentId="Home/resources/terminologies/valuesets"
+                        data-serial-nr="72"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-valuesets-guide-postalCode.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Postleitzahl">Postleitzahl</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/valuesets/guide-reportingSite.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/valuesets/guide-reportingSite.guide.md"
+                        data-parentId="Home/resources/terminologies/valuesets"
+                        data-serial-nr="73"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-valuesets-guide-reportingSite.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="&#xDC;bermittlungsstelle">&#xDC;bermittlungsstelle</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/valuesets/guide-salutation.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/valuesets/guide-salutation.guide.md"
+                        data-parentId="Home/resources/terminologies/valuesets"
+                        data-serial-nr="74"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-valuesets-guide-salutation.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Anrede">Anrede</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/valuesets/guide-transmissionCategory.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/valuesets/guide-transmissionCategory.guide.md"
+                        data-parentId="Home/resources/terminologies/valuesets"
+                        data-serial-nr="75"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-valuesets-guide-transmissionCategory.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="SurvNet-&#xDC;bermittlungskategorie">SurvNet-&#xDC;bermittlungskategorie</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/conceptmaps"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/terminologies/conceptmaps"
+                        data-parentId="Home/resources/terminologies"
+                        data-serial-nr="76"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-conceptmaps.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="ConceptMaps">ConceptMaps</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/conceptmaps/guide-ISO3166CountryCodes2DEMISCountryCodes.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/conceptmaps/guide-ISO3166CountryCodes2DEMISCountryCodes.guide.md"
+                        data-parentId="Home/resources/terminologies/conceptmaps"
+                        data-serial-nr="79"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-conceptmaps-guide-ISO3166CountryCodes2DEMISCountryCodes.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="ISO3166CountryCodes2DEMISCountryCodes">ISO3166CountryCodes2DEMISCountryCodes</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/namingsystems"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/terminologies/namingsystems"
+                        data-parentId="Home/resources/terminologies"
+                        data-serial-nr="80"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-namingsystems.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="NamingSystems">NamingSystems</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/namingsystems/guide-DemisLaboratoryId.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/namingsystems/guide-DemisLaboratoryId.guide.md"
+                        data-parentId="Home/resources/terminologies/namingsystems"
+                        data-serial-nr="83"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-namingsystems-guide-DemisLaboratoryId.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="DemisLaboratoryId">DemisLaboratoryId</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/namingsystems/guide-DemisParticipantId.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/namingsystems/guide-DemisParticipantId.guide.md"
+                        data-parentId="Home/resources/terminologies/namingsystems"
+                        data-serial-nr="84"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-namingsystems-guide-DemisParticipantId.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="DemisParticipantId">DemisParticipantId</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/namingsystems/guide-NotificationBundleId.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/namingsystems/guide-NotificationBundleId.guide.md"
+                        data-parentId="Home/resources/terminologies/namingsystems"
+                        data-serial-nr="85"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-namingsystems-guide-NotificationBundleId.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="NotificationBundleId">NotificationBundleId</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/namingsystems/guide-NotificationId.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/namingsystems/guide-NotificationId.guide.md"
+                        data-parentId="Home/resources/terminologies/namingsystems"
+                        data-serial-nr="86"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-namingsystems-guide-NotificationId.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="NotificationId">NotificationId</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/namingsystems/guide-SendingServiceProvider.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/namingsystems/guide-SendingServiceProvider.guide.md"
+                        data-parentId="Home/resources/terminologies/namingsystems"
+                        data-serial-nr="87"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-namingsystems-guide-SendingServiceProvider.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="SendingServiceProvider">SendingServiceProvider</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/extensions"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/extensions"
+                        data-parentId="Home/resources"
+                        data-serial-nr="88"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-extensions.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Extensions">Extensions</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/extensions/guide-AddressUse.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/extensions/guide-AddressUse.guide.md"
+                        data-parentId="Home/resources/extensions"
+                        data-serial-nr="91"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-extensions-guide-AddressUse.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Adressnutzung">Adressnutzung</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/extensions/guide-Comment.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/extensions/guide-Comment.guide.md"
+                        data-parentId="Home/resources/extensions"
+                        data-serial-nr="92"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-extensions-guide-Comment.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Kommentar">Kommentar</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/extensions/guide-FacilityAddressNotifiedPerson.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/extensions/guide-FacilityAddressNotifiedPerson.guide.md"
+                        data-parentId="Home/resources/extensions"
+                        data-serial-nr="93"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-extensions-guide-FacilityAddressNotifiedPerson.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Einrichtungsadresse der betroffenen Person">Einrichtungsadresse der betroffenen Person</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/extensions/guide-Salutation.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/extensions/guide-Salutation.guide.md"
+                        data-parentId="Home/resources/extensions"
+                        data-serial-nr="94"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-extensions-guide-Salutation.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Anrede">Anrede</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/extensions/guide-ReceivedNotification.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/extensions/guide-ReceivedNotification.guide.md"
+                        data-parentId="Home/resources/extensions"
+                        data-serial-nr="95"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-extensions-guide-ReceivedNotification.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Vorgangsnummer (Id des gesendeten Meldevorgangs)">Vorgangsnummer (Id des gesendeten Meldevorgangs)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/extensions/guide-ReceptionTimestampType.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/extensions/guide-ReceptionTimestampType.guide.md"
+                        data-parentId="Home/resources/extensions"
+                        data-serial-nr="96"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-extensions-guide-ReceptionTimestampType.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Zeitstempel des Meldungseingangs">Zeitstempel des Meldungseingangs</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/extensions/guide-PseudonymRecordType.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/extensions/guide-PseudonymRecordType.guide.md"
+                        data-parentId="Home/resources/extensions"
+                        data-serial-nr="97"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-extensions-guide-PseudonymRecordType.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Pseudonym des Patientendatensatzes">Pseudonym des Patientendatensatzes</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/operationdefinitions"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/operationdefinitions"
+                        data-parentId="Home/resources"
+                        data-serial-nr="98"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-operationdefinitions.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="OperationDefinitions">OperationDefinitions</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/operationdefinitions/guide-ProcessNotification.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/operationdefinitions/guide-ProcessNotification.guide.md"
+                        data-parentId="Home/resources/operationdefinitions"
+                        data-serial-nr="101"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-operationdefinitions-guide-ProcessNotification.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="ProcessNotification">ProcessNotification</span>
+                            </a>
+                        </td>
+                    </tr>
+
+        </table>
+    </div>
+</div>
+
+<script type="text/javascript">
+    window.addEventListener('DOMContentLoaded', (event) => {
+
+        var resourceTreeTable = new BaseTreeTable();
+        resourceTreeTable.init("treetable");
+
+        var tree = document.getElementById("treetable");
+        tree.classList.remove("hidden");
+
+    });
+</script>
+
+                            </div>
+                            <div id="preview-content" class="preview-panel full-width" role="main" aria-label="Main content">
+                                
+
+<h2 id="grundlagen-und-uberblick">Grundlagen und Überblick</h2>
+<p>Das rki.demis.common-Pakt enthält eine Reihe von DEMIS-Basis-Ressourcen, die von weiteren DEMIS-Paketen (z.b. rki.demis.laboratory oder rki.demis.disease), die jeweils einen spezifischen Meldungstyp gemäß Infektionsschutzgesetz abbilden, verwendet werden.
+Im Folgenden werden die einzelnen DEMIS-Basis-Ressourcen erläutert.</p>
+<p>Ein zentrale Aspekt ist, dass die Meldung an DEMIS als Meldevorgang übergeben wird. Damit bildet der Meldevorgang den Container für die Meldung und die darin referenzierten Ressourcen, wie Melder, Betroffene Person, etc.</p>
+<p>Die im Meldevorgang zu übermittelnden Ressourcen, unterscheiden sich je nach Meldungstyp, siehe dazu die Ressourcenmodelle der jeweiligen spezifischen DEMIS-Pakete.</p>
+<p>Der Meldevorgang bildet die Eingabe für die ProcessNotification-Operation, die diesen validiert und verarbeitet. Als Ergebnis liefert sie eine ProcessNotificationResponse und ein Quittungs-Bundle zurück. Ausnahme: Für rki.demis.igs wurde eine separate Operation definiert.
+
+
+<img src="data:image;base64, iVBORw0KGgoAAAANSUhEUgAAA/MAAADmCAYAAACZD9UWAAAMmXRFWHRteGZpbGUAJTNDbXhmaWxlJTIwaG9zdCUzRCUyMmFwcC5kaWFncmFtcy5uZXQlMjIlMjBtb2RpZmllZCUzRCUyMjIwMjEtMDMtMTZUMjAlM0ExNSUzQTQwLjkyNVolMjIlMjBhZ2VudCUzRCUyMjUuMCUyMChXaW5kb3dzKSUyMiUyMGV0YWclM0QlMjJKT2lNdk1IQ01ZcTJnYURsV2JjSCUyMiUyMHZlcnNpb24lM0QlMjIxNC40LjIlMjIlMjB0eXBlJTNEJTIyZGV2aWNlJTIyJTIwcGFnZXMlM0QlMjIyJTIyJTNFJTNDZGlhZ3JhbSUyMGlkJTNEJTIyQzVSQnM0M29EYS1LZHpaZU50dXklMjIlMjBuYW1lJTNEJTIyUGFnZS0xJTIyJTNFN1ZwYlU5czZFUDQxbWFFUFpueUpuZmlSY0N1OVFadTIwS2N6aXEwNEtvb1ZaRG1YJTJGdnBLdG55VklJU0REd3c1bmM0Z3JheVZkciUyRjlkaVZCenptZXI4OHBXTXclMkJreERpbm0yRzY1NXowck50eXpOOSUyRmtOSU5ybWtienE1SUtJb2xCOVZnakg2QTZYUWxOSVVoVEJwZk1nSXdRd3Rtc0tBeERFTVdFTUdLQ1dyNW1kVGdwdXJMa0FFRmNFNEFGaVZYcU9RelhMcDBCNVU4dmNRUmJOaVpjdVRCazlBY0J0UmtzWnl2WmpFTUIlMkJaZzBLTnRER1pnWkNzYWlMbnRPY2NVMEpZM3Bxdmp5RVdiaTA4ZG4yeHVjYWZicjN6RDElMkJUTyUyRkJqOVBIN2w1OUdydXhzbHltbGNSVEc3TW1xVDFMZyUyRlROd2Y4MnVmbHhjb3QlMkJoajhkam81JTJCclhnS2NTazlLVzltbWNHM21IQ2lVV0QxbnRKb2hCc2NMRUlqUkZROG1McHV4T1piRFV4SXpHUjBXZDlBb3dpQVIwSnE4blRCS2JrdDR4TmVsUjhVd3dDaUtlVHZnUmtJcWRDR01qd2ttTk51SEV3VFFuVTVMUGJVUngzTjhoMjl3SkkyQmxNRjFLeTYydU00cThlUVVnV1FPR2Qzd2VWS0xZWnN5QmlROUxGOHFYbFhCWnJ2eW0xazkwSW80QXpMQW8xSjVCUlZ2U0xSMkNBcDdGJTJCVE1Ka3ElMkZJV01iQ1JOSUdlRWlRdG1NUkNRRyUyQkJNaEN3MmFvZyUyRmo4RWlRbGZjbm1BUzN1ZWdNaVoxbmElMkZDZSUyRkg2NEhYQU1KaENQU3Y0VmdHWU01S3BDVG5CcFM3VzUwMG82Z212RWJvU3VROTkzWmY5WDF1OFgzWk4xc1RIUjJkUTZWNUFpRG9RSXRFeTJTNXh3SjVPVUJuQTdyeGlnRVh4SW41ZCUyRko0eXRCYXdhaUJSaXdOQ3ltZTJlUGFhY1Y1d05kZ05JeVFIM2M5dHltdHkyQjZiQ2JjdldjTnR6TzRMQlUyQzRvaVNBU2ZLRk1EUkZBWThFRXF2SXpNaDhraWJiVVduNFdVQjBCdVlJQyUyQnZmUTd5RWpDJTJCZ3dVNEJSQU1nWHhMRkVlOTVWZTk3bGswNElicUQwSEw5Sm9LbXJjbk9yaVk3MjglMkJRbmJYODN5azdkOHVrVmhtZFRxZDJFT2pLYU9oTlBOZnJzSXk2TGFaWkEwZkZhYWhobXQwWlRqdGx2TGRaUldQdVIxRkdEZlBRTkwxQ0lndXA2UmFDcXBSbXZYb3R2Wkg3cWdyd2x2b3JOT2dMY0tzUVBxMGlQNVJVNnhYNWZ1YiUyQml3SXNwMTRSeExkZGhuNVpWSW9VWmZjUFclMkJVanQwRE9xNSUyRmpXNnFjJTJGbFpWdVpHS3Fvd2hwVTFQSjgzZ01mWHBHN3hMWWNLdUFBVVp6SWxDTEo1ZFdKTlJTbzBST1lqcncwZHlZSTdDTUl0YUNoUDBCMHd5VlNKNkZzTFd6SHAzMUhOUGhDN095RVN5cnN1cmdUVnNGUjlMUFQ3WWppNnBtUjNsdEtFQ3owVzhTTmtqJTJGTjhzQ1RLRjFPdUhGRDBlSjExWmF5WlVJbzRKckVnTlhjRmt0UzV3SlNJMWxQciUyRkpVaSUyQkF0Smx5dllkcGI3N3lsQXF1THd0MVNVTEVpZHdwMXozZGxIMDNQWmppVk1VcUJmRDhmWGZiRHM0YnZ2REZwdjZDZ3BXMzFaaGVJNkxyUjRHM1hPamh3VXpRclJzd09IZHBlSmRkUlRrYkRnU1I3Qm9jc0FEaFAlMkZucTV1MTFqdlJGSDZzdmVZYXJZblolMkZVOU9hTGI3MVhTQnFyR1NuaEF6WTBMbkFEZkg4ME9GR0xYc3hib2N3eWlHeHF3MjElMkZMRWFHRUhiMFh5WjJWdlV5UzBpMFZBMEhSQmRTdSUyRlZ4dSUyRmE4ZmIzTWR2ZUdiMjczNDFFOXFXY0poejNZbzQzNjBpMXRqVmxyNTUzbm5OJTJGT2ZZbW11dTlrSHBHZExmQiUyQnNhbkFVZmpXdTRPRjk2RiUyQm5seldSanFGWHM0SlRmRUNZeDRwWEtETGszYlBNbnBJQk9JR0pwSEwzYjYlMkZxbDRPZHFucE4wJTJCRDFIJTJCZExpcDN0TmV1bWM4Y0E1YU5ma3NjZXgxajRyT1k2YUs3bzZLV2xEVFgxN1B2Z01jY2lUUW1KOFRSR1Q2ZUclMkJlaEdRRUdyd2JvcjNHVyUyQnJkY1B4QnBxenNmYlhEWjFCcnI0WGZJTUJSQXMyNHY3QmNMJTJGeGNxMG1YbjMlMkZaZm1wdVpGbUJJVkxRaU93NzZYYjhGdjA4bDhhTGt1QnExNHglMkYyZVlDdG1nTThoNHQlMkZwcm5md3h2UHByS09mMEx3JTNEJTNEJTNDJTJGZGlhZ3JhbSUzRSUzQ2RpYWdyYW0lMjBpZCUzRCUyMldTVGxhdFVOYzI2aWlfbXhuekdNJTIyJTIwbmFtZSUzRCUyMlBhZ2UtMiUyMiUzRTdWZmJqcHN3RVAwYUhpTnhTWUE4bHV5MjZhNTZVVGZTN3ZiTmhRR3NHcHNZcDdsOGZjZkJRQWlwMnExRVd5bDlTZXd6OXRnJTJCNXd3R3kxc1V1emVTbFBrN2tRQ3pYRHZaV2Q2TjVicEI2T0t2QnZZMTRNd0NnMlNTSmdicmdBZDZBQVBhQnQzUUJLcmVRQ1VFVTdUc2c3SGdIR0xWdzRpVVl0c2ZsZ3JXWDdVa0dReUFoNWl3SWZwSUU1WFhhT2dHSGI0RW11WE55bzQlMkZyeU1GYVFhYmsxUTVTY1QyQlBKdUxXOGhoVkIxcTlndGdHbnlHbDZlUCUyQjRpN3dDUGQlMkZlSHA5WG4xRiUyQnZsOXRKbmV6MVM2YTBSNURBMVclMkJuWGszdUpwVU03bVdjd2ZQVFhpeFhQREZUN0clMkJFYlF4ZjVxeHEzeEFveFlZbm9KTTRsaGR0YzZyZ29TU3hqbTdSTW9qbHFtQW1uQXF1akFjY0pDaktHS20wZ0RhMkt5WEYxMVlFUGJwbFZJY0pveG5IZG95SEJLbHpVY1lXZ2dsNTNJZVhFQWpUdU0xekV2SGpFTDZrR0RHSEFhbGdkNmIlMkJUNmh6V2oyeEVFQVVvT1FlNXpWWiUyRkxET1k0cGdhcnJiemxDdVo2ak1UOHprVFEyZHhKZzRhMU4zUW1IRGFQVUMzYVlYZFBPWjB1eVVoT3R5TXNRanZONW9oMFpZWU1nY29WeFZIWWl0VFAlMkIlMkZGNHFtTkNhS0N2NEpZcUNsYWhMaSUyRnVxYzljaXpkUlJWeGloTnlsVk9jUUViR0JTYWN6eUk3aDRIZDVqS1NSdENjWFJicEVjY3RQczJSVUUwUyUyQmZiJTJGT0dlJTJGaFhQanVWQTE3WjdEcHpiQXdjNiUyRmdVSHp1eVJERGdiR05EWUprTG1VWVp6UlpBUDFhZTlYOFpjY0RpcmVRTU5PTmJzb2xYWkt4TW9hS0pYdkt4ejV3U3RsOEFnVlh2VEcwMHN2eSUyRld4QjJxTmIwZ2xoT01wWlklMkZVT3VEekFpbmgyUEJYMSUyRjVPTFBoRSUyRnpQMWslMkZ3WDVHZUluaFolMkZtVkY1Z05GVGklMkZGJTJCckgyTnJrJTJCWmJ6Wkw5NDEzbGpLT01PMzFJaHlZakpmbFJodTZJOVdKdGp0UG1hT3NaTlBRdSUyRjJPdyUzRCUzRCUzQyUyRmRpYWdyYW0lM0UlM0MlMkZteGZpbGUlM0VWanTTAAAgAElEQVR4nO2de3gU9b3/10ulDzU9wdQollOeE0uf2GyjOVKpVCzKTRTMFoUCgWAwEAwCi&#x2B;CFVusF5e4GOPCTiiAoEkxIiUQjN7lEglsSIikxIcFAIEswsBATzJFLyPv3B2fC7GR29pKd/e7l/Xqe9yO7c/vMJeO89jvfGQMIIYQQQgghQc2FxqNoOLEd35WvxYmiOagtnouqL9JweNs4fLv7WZTnj2AYxgc5susZHN42DlVfpMF2YB5OFM3BdxUfoOHEDvzYeNSvf/cGvy6NEEIIIYQQ0mGutPyI72t3obZ4Dg5vTcbxr15CXck8nK14B&#x2B;drNuDi6W24bN&#x2B;FKw17gcYioKmYYRhfpLEIV87txWX7Llys34bzNRtgr/h/qPt6Hmr2vYjKbeNQWzwX39v2oLXlgq7nAco8IYQQQgghQcIPp79GbfF8HN46FvbyZWg6tgEt5/aJFxyGYYCmYrScK0TTsUyc&#x2B;eZ/cHjrWNQemI8fzhzU5XxAmSeEEEIIISTA&#x2B;f5kAar3TEX9ocVoOpYpXFgYhnEvTcfW47t/W1C9Zxoa6/b69LxAmSeEEEIIISRA&#x2B;cH&#x2B;b9QWz8XJA2/iwndbhYsJwzDe5cKpLThZ/CZqi&#x2B;ej2V7mk/MDZZ4QQgghhJBA48pF2EoW4fhXf8XF018IFxGGYXyTi6e/wPF9L8H29dsAWjp0mqDME0IIIYQQEkD8UL8fx/e9hMaj64SLB8Mw&#x2B;qSx&#x2B;kPUFL6AH04Xe32uoMwTQgghhBASINRXrMUJ6yzhosEwjH9y/KtZOF35kVfnC8o8IYQQQgghAcCJ/bNhL18uXC4YhvFvznyzDCeK3vT4nEGZJ4QQQgghRDBH9z6P8zUfC5cKhmHEpOlYJo4VvuTReYMyTwghhBBCiEBOfv02fqjdJFwmGIYRmx&#x2B;Ob8Sp0sVunzso84QQQgghhAji6N4X8MOJfwqXCIZhAiPnj290u4WeMk8IIYQQQogAThS9hfM1WcLlgWGYwMr5mg2oLZ7r8hxCmSeEEEIIIcTP1Fd8AHv5O8KlgWGYwMyZb5aj/vA6zfMIZZ4QQgghhBA/cv701zj&#x2B;1d&#x2B;EywLDMIGd41/Nwg/2fzs9l1DmCSGEEEII8RdXLlLkGYZxO8f3/RXAFdXTCWWeEEIIIYQQP2ErWYTG6o&#x2B;ECwLDMMGRxuoPcfLrDNXzCWWeEEIIIYQQP/CD/d84/tUs4XLAMExw5fi&#x2B;l9B8tqzdOcWnMn/k22/xz02f4PU35&#x2B;LpiemYmD4VD/UfDNOTo3Df/X0YhlHJ48P&#x2B;gocHPIpnpjyH1EnP4o0352FT7if4trral3&#x2B;ehBBCCBFMbdEcXDz9hXAxYBgmuHKxfjtsKk&#x2B;377DMl1ccxsJFGZiQPg1Pjn4Kby55H0s//BQbdpRix6EzKKhqwv4TLSg&#x2B;CYZhVLL/RAsKqpqw/d&#x2B;nsWHHQSz5IA&#x2B;zF7&#x2B;PJ0eNw6TJ07HIshgVhys7&#x2B;qdKCCGEEIE0nvwSJ4tnC5cChmGCM7ai19FYt8/hvOK1zBd8uRcpqc9gZHIqLKtysKeyUbgUMUyoZU9lE95&#x2B;byP&#x2B;MjYV456ehL1797n&#x2B;4ySEEEJIwFFdMA0XvtsqXAgYhgnO/Hjqc1QXTHc4r3gs80eqq2Ge&#x2B;TdMnPYSNu4uFy47DBMuydp5CBOmvojpz/8N1UeP&#x2B;ejSghBCCCF688OZr/FdqUW4DDAME9w5Vfo2fjhT2nZu8Ujm3121Fk&#x2B;Megqb9lYKFxuGCdfkFFRg2F&#x2B;S8d6adT6/2CCEEEKI76k9MB9NxzKFiwDDMMGdxqMfofbAwrZzi1sy39LSgqRxqVi6drNwkWEY5moWr8nF2JSJaG1t1e3igxBCCCEd40rLjzi8daxwCWAYJjRSsSUJrVcuAXBD5utPn0bSUxPxz4LDwuWFYRjHbNxdjlHJqbCfPav7xQghhBBCPOd72y6c&#x2B;Wa5cAFgGCY0crpsGRpP7gHgQuYvX76MQY&#x2B;ZhAsLwzDa6f/IULS0tPjlooQQQggh7nOieC6ajm0QLgAMw4RGGo&#x2B;uR&#x2B;2BBQA0ZP70mTMUeYYJogwY/DjOnjvnt4sTQgghhLjm8LZktJzbJ1wAGIYJjbSc24vK7U8BcCLzLS0tGJuSJlxOGIbxLKPHpbIPPSGEEBIg/Nh4FDX7XtT94t5gMLSLOX20cOlwp25lndada2AwGFxOKx/PdjgfBoMB1p1rgKZimIb0hcFgQGqyyeF7T6O1DF/uK4PBANvhfOH7w9f7NliOSXePuUDK8a9ewIXzNeoynzTuafzzS/aRZ5hgy8bd32Dc&#x2B;DR/X6sQQgghRIWGEztQVzLPL&#x2B;KklEzjb&#x2B;9E9gfzhUuHq7qVtXsj82rz9UV9ekiewWBot1/M6aNhGtJX&#x2B;P7w9XoGyzEZjDJfd2AOGmp3tpf591av5VPrGSaIs2TNJrz/AV9bR0gwUlBQgIceegh9&#x2B;/ZFQUGB6HIIIR2kvmItzh5eIUSczOmjYZk7vU1UpNZq&#x2B;TRqMq0c5ux7eUuyZe50h2FyYdMaJrXWGn97p6ZYqdUqfTb&#x2B;9k6HVnP5uJs/zmi3fmrrlv3BfNUWZGfL0KpLGs&#x2B;cPrptmGXudIdplELrap3d2dbScuXDlcvxpl6t/adVp9YxqbXN1Y5XZ&#x2B;NKy5HXaE4f7TC&#x2B;fF2c1Svfz1rjqdXmavvoFXv5MtQf/tBR5r&#x2B;trsaTo8YJlxGGYTqWP48Yg2M1NaKuXQghHlJYWIj&#x2B;/fujT58&#x2B;2LlzJ3bt2oU&#x2B;ffqgX79&#x2B;KCwsFF0eIcRLaoveQlON/g&#x2B;/cybk1p1r2gRELhnG397ZTqokYZG3nlrmTm8TJ7Vp5DIozVv&#x2B;WWuYvEbTkL5t81aKrbNatW6Bl/6t/N7ZusnHcXcZzuqSy7FyWzmTeWXLfEe2tTQfqXb5fvW0Xlf7z1mdro5Jd7a58kcftXGlYcofApxte2f1unPMycdT/oDibPvomaZjmagtnuco88&#x2B;98Dds2lspXEQYhulYNu6pwMxZr4i6diGEuInVasWgQYPQu3dvbN&#x2B;&#x2B;vd3wHTt2oHfv3hg4cCCsVquACgkhHaG2eC4ufLfNLzKvjFKOJfmRhEPeiipJrloLsVJqldOozU8pN876gyul25lAu6rVHZl3tm7K2lzVoqzX1fZQflbbV/K6Orqt5QIt/Ujibb1ay9Oq09Ux6c42l9ejdUwp11n&#x2B;2dm&#x2B;1DqW3BlP62/JX7lQvxW1xXOvyXzBl3uRNu0l4RLCMIxvkvrs8yjc95XIaxhCiBOKiorw6KOPolevXtiyZYvL8bdu3YpevXph8ODBKCoq8kOFhBBfcGRnGi6d2an7hb1aK6hSupS3CsvHkaTPWd9h5e3rzn4wULvVWGuYvG7L3OkwDenrUqzUavVW5qUob5V2JfNadbkj88qWXa3t5e62VhNLrf3qbr3OlueqTq1j0p1trtW1oCMyr1av2jGnNZ68Nq3jW89cOvMFjnyRdk3mn0p9Bht3lwsXEIZhfJOsnYcw4ZkpIq9hCCEKSkpKMHToUPTs2ROfffaZx9Pn5&#x2B;ejZ8&#x2B;eGDJkCEpKSnSokBDiSyq3jUPLub0BJfOetsxL85D3J9aKJy31yrqNv72zre&#x2B;2J7V2ROa1to9eLfNy4VPeNu7ttlZrmddq0Xe3XmfLc1Wnt8eksx&#x2B;ftLanuzLvrF6lzLsaz1lLvD9b6lvO7cXhbeOuynx5xWGMTJ4gXD4YhvFtho9OQVXVEbFXMoQQlJaWwmQyISEhAZs3b&#x2B;7w/PLy8pCQkIDExESUlpb6oEJCiB58u3syWhv3635h74k4SSLnrM&#x2B;8srVcEhv5LdTSPK071yD7g/kO8iPvN6w1TK1ueSunq1q96TOvtm5KyZcebuZqGa76oLsr89IylX3mPd3W0r&#x2B;V/cel5XpTr6v956xOd49JrW3u7E4S&#x2B;bhqy3Em81r1qvWZ1xpPmp&#x2B;r7aNrGovw7e7JV2V&#x2B;/qIMvP1ejnDxYBjGt1n4jywssiwVfS1DSNhSVlaGJ554AvHx8di0aZPP55&#x2B;bm4v4&#x2B;HgMGzYMZWVlPp8/IaRjlOeP8MuFvacyL00jRT6tJCRKqVZOIxdS&#x2B;ZPQlfPTGqZWt7xl3lWt0nfuyryzdZMEUVovtb7fai3fanV5I/PSOMqn3nuyreUyr7atvK1Xa/9p1al1TGptc7Xj1dX&#x2B;cVfmXdWr/KFJOZ5aba62j54pzx9xVeZTJ03Fnsom4eLBMIxvs7uiARMnTxd9LUNI2FFRUYERI0YgLi4OGzdu1H15OTk5iIuLw/Dhw1FRUaH78ggh7uEvmWcYkQ9jY8SkPH8EDEe&#x2B;/RZPjn5KuHQwDKNP/jxiDI4eqxF9PUNIWFBVVYVRo0YhNjYWH3/8sd&#x2B;Xn5WVhdjYWIwcORJVVVV&#x2B;Xz4hxBHKPOOvUObDL&#x2B;X5I2D4Z&#x2B;4neGPx&#x2B;8KFg2EYffJGxmp8svlT0dczhIQ01dXVGDNmDHr06IH169eLLgeZmZno0aMHkpKSUF1dLbocQsIWyjzDMHqlPH8EDK&#x2B;/ORdLP/xUuHAwDKNPFq/5BG/NWyj6eoaQkKSmpgbjxo1DTEwMPvzwQ9HltGPdunWIiYlBcnIyamp4hw4h/oYyzzCMXinPHwHD&#x2B;Inp2LCjVLhwMAyjT9ZvK&#x2B;Er6gjxMbW1tRg/fjy6d&#x2B;&#x2B;ONWvWiC7HJWvXrkX37t2RkpKC2tpa0eUQEjZQ5hmG0Svl&#x2B;SNgSE2fih2HzggXDoZh9Mm2g98hjQ/BI8Qn1NXVYcKECejWrRtWrVoluhyPWb16Nbp164bU1FTU1dWJLoeQkIcyzzCMXinPHwHDQ/0Ho6DqvHDhYBhGn&#x2B;w53Ih&#x2B;Ax8TfT1DSFBTX1&#x2B;PSZMmoWvXrnj33XdFl9NhVq5cia5duyItLQ319fWiyyEkZKHMMwyjV8rzR8CQ&#x2B;OQo7D/R0mFhkL9fT8roCWbhIuNO3co61&#x2B;RZYTAYXE4rHy&#x2B;/2AaDwYA1eVYUnwT6PmKCwWCAaXSqw/eeRmsZvtxXBoMB&#x2B;cU24ftDa/2D7Thz9zjSO/tPtMD05GjR1zOEBCV2ux2TJ09GdHQ03nnnHdHl&#x2B;JwVK1YgOjoa6enpsNvtosshJOSgzDMMo1fK80fAcN/9fXwiDGqSeWesEfP/kS1cZlzVrazdG5lXm2&#x2B;gCqHBYGi3X0ZPMKPvIybh&#x2B;8PV&#x2B;gfTcRYoMl98Erjv/j6ir2cICSoaGhowdepUREVFYdmyZaLL0Z3ly5cjKioKU6ZMQUNDg&#x2B;hyCAkZKPMMw&#x2B;gV3WV&#x2B;9AQzpr9qaZMaqbVaPo2aTCuHOfte3pI8/VWLwzC53GkNk1p274w1akqYWq3S5ztjjQ6t5vJxM9Zsbrd&#x2B;aus2/x/Zqq3NzpahVZc03ugJ5rZh01&#x2B;1OEyjlF9X6yzf1tL85dtu/j&#x2B;y276XxlV&#x2B;9mb/ydff1XGmtR3VjkFn40rLkdc0eoLZYXz59nS2XsranY2nVpvWMUuZJ0Q/mpqaMH36dERGRmLJkiWiy/E7S5cuRWRkJMxmM5qamkSXQ0jQQ5lnGEav6C7z0neSrMiF5M5YYzsBk&#x2B;RG3tI6/VVLm2SpTSOXRqVsuhomr7HvI6a2eSvF1lmtWrfAS/9Wfu9s3eTjuLsMZ3XJZV65rZzJvLJl3tm2Vg6TpNMdmfdm/7nTMq&#x2B;23Z1tR&#x2B;UPOWrjSsOUPwQ4257O1sud40g&#x2B;nlSbq2OWMk&#x2B;I72lubsbMmTMREREBi8UiuhzhZGRkICIiAjNmzEBzc7PocggJWijzDMPoFZ/LvDJKOdZqsZUkV62FWCm1ymnU5qcUIWf9wZXS7UygXdXqjsw7Wzdlba5qUdbransoP6vtK3ldWtvaWQu&#x2B;q&#x2B;V6u//c6TMvHWfubEd5bVrHifJHA/lnd9dLPsyd8bT&#x2B;Pjoayjwh6ly4cAEvvvgiOnfujIULF4ouJ&#x2B;BYtGgROnfujBdeeAEXLlwQXQ4hQQdlnmEYvaJ7y7xSyJS3FcvHkVrGnfUzVt6&#x2B;7uwHA7XbkrWGyeue/qoFfR8xuZQwtVq9lXkpytuqXcm8Vl3uyLyyFVhre8m3tSdSria9nu4/d1rmPdmOWrf2d0TmXW0rd8aT16Z1zFLmCek4ly9fxl//&#x2B;ld06tQJ8&#x2B;bNE11OwDN//nx06tQJs2bNwuXLl0WXQ0jQQJlnGEavCJN5T1vmpXnI&#x2B;x5rxZOWemXdd8Ya2/qae1JrR2Rea/vo1TIvl0PlLeZa27ojLfPe7D9PZN6d7aj8QUlrG7kr8&#x2B;5sK3fGc9YS74uWeso8IVdpbW3FK6&#x2B;8ghtvvBFvvfWW6HKCjjlz5uDGG2/Eyy&#x2B;/jNbWVtHlEBLwUOYZhtErwmReEk9nfeaVreWSBMn7m0vzXJNnxfx/ZDuIkryPsdYwtbrlLaKuavWmz7zauimFVXoQWkf7zLsr89IylX3m1ba1s&#x2B;XKH1gnfyaAfLne7D9vZF5rOzq7O0Q&#x2B;ricyr7Vean3mtcaT5ufqmKXME&#x2B;Idr732Gq677jq88cYboksJembPno3rrrsOr776quhSCAloKPMMw&#x2B;gVoTIvTSNFPq0kL0qpVk4jF1L5k9uV89Mapla3vGXeVa3y27PdkXln6ybJpLRecvFztgxndXkj89I4yqfeq21r&#x2B;bC&#x2B;j5gcalU&#x2B;8V25373Zf/JtpXWcaW1HtWPQ1TZ3V&#x2B;a11ku5n9XGU6tNa3tQ5gnxDIqnfvAHEkK0ocwzDKNXfCrzTPgmUN/zzlwLZZ6EI7wl3D&#x2B;w6wIhzqHMMwyjVyjzjE9CmQ/8UOZJOMGHtYmBDxUkpD2UeYZh9AplnmHCJJR5Eg7wNWqBAV/3R8g1KPMMw&#x2B;gVyjzDhEko8ySUycjIQEREBGbMmIHm5mbR5ZD/o7m5GTNnzkRERAQsFovocggRAmWeYRi9QplnmDAJZZ6EIkuXLkVkZCTMZjOamppEl0Oc0NTUhOnTpyMyMhJLliwRXQ4hfoUyzzCMXqHMM0yYhDJPQonly5cjKioKU6ZMQUNDg&#x2B;hyiJs0NDRg6tSpiIqKwrJly0SXQ4hfoMwzDKNXKPMMEyahzJNQYMWKFYiOjkZ6ejrsdrvocoiX2O12TJ48GdHR0XjnnXdEl0OIrlDmGYbRK5R5hgmTUOZJMLNy5Up07doVaWlpqK&#x2B;vF10O8RH19fWYNGkSunbtinfffVd0OYToAmWeYRi9QplnmDAJZZ4EI6tXr0a3bt2QmpqKuro60eUQnairq8OECRPQrVs3rFq1SnQ5hPgUyrx3aW0sEl4Dw/0c6KHMM0yYhDJPgom1a9eie/fuSElJQW1trehyiJ&#x2B;ora3F&#x2B;PHj0b17d6xdu1Z0OYT4BMq8e/ly63uYlj4aQx99CLfcEol77o6DwWBgQjz33B2HW26JxOOP9YN58mjs3bZK&#x2B;LEYTKHMM0yYhDJPgoF169YhJiYGycnJqKmpEV0OEURNTQ2Sk5MRExODdevWiS6HkA5BmddO7eHPMKj/A0gdn4zFixejqqoKZ8&#x2B;eFb3biB85e/YsKisrkZGRgadTxmLwwD6oq/pc&#x2B;LEZDKHMM0yYJBxk3mazwWAwwGaz6TJ/q9UKg8Ggy7zDnczMTPTo0QNJSUmorq4WXQ4JEKqrq5GUlIQePXogMzNTdDnk/8jOznZoWbNYLG5N54tzaDCehynzznOwcAMe6H0ftmzZIno3kQAiPz8ff7jvXhyybhB&#x2B;jAZ6KPMMEyahzHecYLyIDHSysrIQGxuLkSNHoqqqSnQ5JECpqqrCyJEjERsbi6ysLNHlhDWSyMvPswaDAWaz2eW0lHlGnoNf5WDQwAGidw8JYAYN7I9D&#x2B;zcJP1YDOZR5hgmThJvMS/82m83tWo&#x2B;kYRaLpW1YdnZ2u3koP0vjGo1GYesYKuTk5CAuLg7Dhw9HRUWF6HJIkFBRUYHhw4cjLi4OOTk5ossJSwwGA6xWq8N3audeV&#x2B;fQcDoPU&#x2B;bbp7biMzzwxz&#x2B;I3jUkCLj/D7/Hqaqtwo/ZQA1lnmHCJOEs88C11iT5eCaTCcC1lh5XF6LB2CIUaOTm5iI&#x2B;Ph7Dhg1DWVmZ6HJIkFJWVoZhw4YhPj4eubm5ossJG7TOgUajEdnZ2W6fQ8PpPEyZb59B/R/grfXELT7Ny8Njj/QVfswGaijzDBMmCVeZV7sYlP4tb10ymUywWCwhdxEZKOTl5SEhIQGJiYkoLS0VXQ4JEUpLS5GYmIiEhATk5eWJLifk0ToHenoODafzMGXeMV9ufQ&#x2B;p45NF7xYSRKQ8NQb7dqwWfuwGYijzDBMmocw7HwaE7kWkaPLz89GzZ08MGTIEJSUlosshIUpJSQmGDBmCnj17Ij8/X3Q5IYseLfPhcB6mzDtmWnoSFmdkiN4tJIhYtHAhZkwZK/zYDcRQ5hkmTEKZ126Z9/RClGizdetW9OrVC4MHD0ZRUZHockiYUFRUhMGDB6NXr17YunWr6HJCEnnfdgl3z72uWuZD9TxMmXfMkEcfRmVlpejdQoKI8vJyJA7tL/zYDcRQ5hkmTEKZd96fXt5XE3C8WJUezhSsF5H&#x2B;ZseOHejduzcGDhzY7iFZhPgLq9WKgQMHonfv3tixY4fockIKd55m7845NJzOw5R5x9xySyTfI088wm63Iyqqi/BjNxBDmWeYMAllXvtJ93LxlL9DWX4RCaDte&#x2B;LIrl270KdPH/Tr1w&#x2B;FhYWiyyEEAFBYWIh&#x2B;/fqhT58&#x2B;2LVrl&#x2B;hyQgZJqJ29Z96dc2g4nYcp89fS2liEe&#x2B;6OE71LSBCScLcRrY1Fwo/hQAtlnmHCJOEg8&#x2B;6i1leTeEdBQQH69u2Lvn37oqCgQHQ5hKjC4zTwCKfzMGXeMcH0QwwJHAwGg/BjNxBDmWeYMAll/hrhdBGpF2zxJMEI7yAJHMLpPEyZdwxlnngDZV49lHmGCZNQ5okvYF9kEgrw2Q7En1DmHUOZJ95AmVcPZZ5hwiSUedIR&#x2B;JRwEorwrQvEH1DmHUOZJ95AmVcPZZ5hwiSUeeINfH83CQfy8/PRs2dPDBkyBCUlJaLLISEGZd4xlHniDZR59VDmGSZMQpknnlBaWorExEQkJCQgLy9PdDmE&#x2B;IW8vDwkJCQgMTERpaWlosshIQJl3jGUeeINlHn1UOYZJkxCmSfuUFZWhmHDhiE&#x2B;Ph65ubmiyyFECLm5uYiPj8ewYcNQVlYmuhwS5FDmHUOZJ95AmVcPZZ5hwiSUeaJFRUUFhg8fjri4OOTk5Iguh5CAICcnB3FxcRg&#x2B;fDgqKipEl0OCFMq8YyjzxBso8&#x2B;qhzDNMmIQyT9SoqqrCyJEjERsbi6ysLNHlEBKQZGVlITY2FiNHjkRVVZXockiQQZl3DGWeeANlXj2UeYYJk1DmiZzq6mokJSWhR48eyMzMFF0OIUFBZmYmevTogaSkJFRXV4suhwQJlHnHUOaJN1Dm1UOZZ5gwCWWeAEBNTQ2Sk5MRExODdevWiS6HkKBk3bp1iImJQXJyMmpqakSXQwIcyrxjAkXmDQaDamw2my7Ls9lsMBgMsFqtmuNZrVaHbeSvGqXa3K3T31Dm1UOZZ5gwCWU&#x2B;vKmtrUVKSgq6d&#x2B;&#x2B;OtWvXii6HkJBg7dq16N69O1JSUlBbWyu6HBKgUOYdE0gyn52d7fCd2WyGyWQSVNFV1GReLtYWiwVGo9Hny6XMB2co8wwTJqHMhyd1dXVITU1Ft27dsHr1atHlEBKSrF69Gt26dUNqairq6upEl0MCDMq8YwJZ5pUiLY3nrEVcPszVNHJJlv5tsVjaxpNqkT5Lwq4Ua3mN0nyUy7DZbG3/NpvNbfO0WCxt85GGy8dxJvP&#x2B;uHPBFZR59VDmGSZMQpkPL&#x2B;rr65GWloauXbti5cqVosshJCxYuXIlunbtirS0NNTX14suhwQIlHnHBLLMK1vmjUZjmwBnZ2c71G40Gtumt1gsMJvNmtOoyby0LEnQbTabWy3z0nTuyryz&#x2B;pV1qsm81jbwJ5R59VDmGSZMQpkPD&#x2B;x2O9LT0xEdHY0VK1aILoeQsGTFihWIjo5Geno67Ha76HKIYCjzjgkkmVeLhForvSTwasPURFw&#x2B;jZrMyyXdZDLBYrF41GfeHZl3Z5i0HGVtWuvjbyjz6qHMM0yYhDIf2jQ0NGDKlCmIiorC8uXLRZdDCAGwfPlyREVFYcqUKWhoaBBdDhEEZd4xgSTzkpRKAiuXVElklVETbnemUZN5uUxrybzabfaeCrv8szNJdybzauvjbyjz6qHMM0yYhDIfmjQ1NcFsNiMyMhJLly4VXY4w1C42pFsLAxm1Op1dJCpR6zcpXfCZTCYYDAakpqZ26EFGWssg7rN06VJERkbCbDajqalJdDmkg2RlZWH//v1uj0&#x2B;Zd0wgyjxw7RZySX6tVqvTB81pybyzaVy1zDtr9Vc77ypb&#x2B;/VsmdfjYXveQJlXD2WeYcIklPnA4Ny5czCZTMjJyenQfJqbmzFjxgxEREQgIyPDR9UFL1oXO4GM9MODs4cbaaE1nq8ult2thbhHRkYGIiIiMGPGDDQ3N4suh3jJr371K/zud7/DoEGD8OWXX7ocnzLvmEA5p6j1mTeZTO36zEvjSOdD6Xwt/7f8CfPOplGTeenHXE/6zMvHVa6H9EA9VzIv1ansT&#x2B;&#x2B;sz7yzbeBPKPPqocwzTJiEMh8YlJeX49e//jWGDRuGu&#x2B;66C&#x2B;vXr/do&#x2B;gsXLuCFF15A586dsWjRIp2qDD7ULi7MZrPDLYtSa7V8GjWZVg5z9r28RUP&#x2B;RGLlBaLWMOliTt7y4eppyvILSYPh6hOP5Rdf8nE3b97cbv3U1k26kFPe1eBsGVp1uXqCMgEWLVqEzp0744UXXsCFCxdEl0M8pEePHqiqqsKWLVvwwAMP4MEHH8S2bducjk&#x2B;Zd0wgy7z8KfPy8dTO3/KnwWuds5W38itlXu3/Q/J5qt15pnZHgVS3uzIvn7f0I4Y7T7MX9SM5ZV49lHmGCZNQ5gODyspK/OY3vwFwVexHjRqFmJgYl6&#x2B;Nu3z5MmbNmoVOnTph/vz5/ig1qHAm5PI&#x2B;f/ILELWn88pbK7x5QrGE/LPWMHmNUl9JoL3MO6tV6xZ4d1pY5OsmH8fdZTiry9UTlMk15s&#x2B;fj06dOmHWrFm4fPmy6HKIm9x1110oLy9v&#x2B;3gbaPEAACAASURBVLxnzx4MGDAA9913Hz755JN241PmHcPzgbpYE20o8&#x2B;qhzDNMmIQyHxgcOXIEv/71rx2&#x2B;q66uRkpKCu644w688847DsNaW1vx8ssv48Ybb8ScOXP8WWpQodZyoZRjrdYJXzyhWO2izNUFm1K6nQm0q1rdkXln66aszVUtzh7e5E4fTqLOnDlzcOONN&#x2B;Lll19Ga2ur6HLCnpaWFly8eBHNzc1oamrCuXPncObMGZw6dQo2mw133XUXDh061G66f/3rX3j88cfxu9/9Drm5uW3fU&#x2B;YdQ5nnedEbKPPqocwzTJgk3GX&#x2B;ypUruHTpEn788ce2C7SGhgbY7XbU19e3XaQdP34cR48exZEjR1BZWYny8nIcOnQIBw8exIEDB1BUVASr1YrCwkIUFBRg9&#x2B;7d&#x2B;OKLL7Bt2zZ8/vnn&#x2B;PTTT7F582Zs2rQJGzduxMcff4z169dj3bp1WLt2LRYsWID//M//VK3x5MmTmDRpEqKiorBhwwYsWbIE1113HWbPnu3nrRV8qLXMSyhlXk1qnT1FWDkPVz8YqN2GqDVMXrf07mB5De7W6q3MSyi7AriSea26KPPeM3v2bFx33XV49tln8dprr4V8lixZgpdffhmzZs3C888/j&#x2B;eeew5Tp07F5MmTkZaWhtTUVDz11FMYO3YsRo0ahREjRuCJJ55AYmIihgwZgkceeQQDBgzAQw89hAcffBC9e/dGr169cO&#x2B;99&#x2B;Kee&#x2B;6B0WjEXXfdhd/85jeIiYlB9&#x2B;7d8ctf/hK33347fvGLX6BLly6IiIhA586dcdNNN&#x2B;GGG26AwWDADTfcgJtuugmdO3dGREQEunTpgl/84he4/fbb8ctf/hJRUVH4&#x2B;uuvVffh8ePHMXToUPzxj39s&#x2B;44y7xjKPPEGyrx6KPMMEwbp/fBgXH/9Dbj55pvbEhER0S4///nPHfIf//Ef7RIZGdkuXbp0ccgtt9zSLlFRUQ75xS9&#x2B;0S633npru0RHRzvktttua5fo6GhERUWhS5cu&#x2B;PnPf46f/exn&#x2B;OlPf4qf/OQnbRdn119/PX7yk5/gpz/9adsFWmRkJKKiohAdHd12kfarX/0K//Vf/4Vf//rX&#x2B;M1vfoO77roLRqMRd999N/77v/8bPXv2RK9evdC7d2/06dMHf/rTn/Dwww9jwIABeOSRR/DYY49h6NChMJlMeOKJJzBixAiMGjUKSUlJSE5OxogRI3Dbbbep/o/q0qVLePHFF3HzzTcjKysLGRkZlHk38UTmPW2Zl&#x2B;bh7hN9PWmpV9YtPZDIXy3zrrYPW&#x2B;b9iyTzkydPxquvvhryycjIwOzZszFnzhwsWLAAb7/9NpYsWYJly5ZhxYoVWLlyJd5//3188MEHWL9&#x2B;PT7&#x2B;&#x2B;GNs3LgRubm5yMvLw&#x2B;eff45t27Zh586d2LNnDwoLC2G1WlFcXIyvv/4ahw4dQnl5OSorK1FdXY2amhrYbDacOnUKZ86cwblz59DU1ITm5mZcvHgRLS0tbu2ne&#x2B;&#x2B;9F8XFxQ7fnT59GhMnTsSvfvUrfPDBBw7DKPOOocwTb6DMq4cyzzBhkL3f/i/uva83zp8/35ampqZ2aWxsdMj333/fLg0NDe1y7tw5h5w9e7Zd7Ha7Q86cOdMup0&#x2B;fbpf6&#x2B;nqHfPfdd&#x2B;1SX18Pu92Oc&#x2B;fOobGxET/88AN&#x2B;/PFHXLp0ye2LM39RW1uLbt26tfv&#x2B;73//O37yk59g3rx5Dt/zNnv38ETmAe0&#x2B;88rWcldPKM7OznYQfXm/eK1hanXLW/Fd1epNn3m1dVNKvvSgwI72mafMuw9vsw8uevXq1fZ3cP78eUybNg233nor/vGPf6iOT5l3DGWeeANlXj2UeR&#x2B;kyNYqvAaG&#x2B;8NVwv02&#x2B;0Chrq4OXbt2bfs8Z84cXH/99Xj99dc1p&#x2B;MD8LTxVOalaaTIp/X0CcUAHJ5IrJyf1jC1uuUt865qld8S747MO1s3SeCl9ZL/cOFsGc7qosy7Dx&#x2B;AF5z88Y9/REFBAV566SXcfPPNWLx4seb4lHnHUOaJN1Dm1UOZ9yLv5X6J0anT8NCgoYjscgvi4u9R7UvJiElc/D2I7HIL&#x2B;j3yOEZPMGNV7l7hx0wghDIfGNTX1yM6Ohpvv/02OnfujFmzZuHKlStuT89X0xES/PDVdMHN0KFDccMNN2Du3LlujU&#x2B;ZdwxlnngDZV49lHkP8llxLR54aBCSU1KxePFiVFVV4ezZs6KPbaLC2bNnUVlZiYyMDIxNeRp9&#x2B;g3G5yV1wo8hkaHMBwbnz59Hz5498dxzz6G5udnr&#x2B;TQ3N2PGjBmIiIhARkaGDyskhOhFRkYGIiIiMGPGjA79/ROxHDt2zKPxKfOOocwTb6DMq4cy72Y2bD&#x2B;I&#x2B;&#x2B;5/AFu2bBF9LBMvyM/Px72//wM2fHFI&#x2B;LEkKpT5wOF///d/fTavpqYmmM1mREZGYunSpT6bLyHEdyxduhSRkZEwm81oamoSXQ7xM5R5x1DmiTdQ5tVDmXcjOTsPYsDAQaKPYeID&#x2B;g8YhE27w1PoKfOhTUNDA6ZMmYKoqCgsX75cdDmEEADLly9HVFQUpkyZgoaGBtHlEEFQ5h1DmSfeQJlXD2XeRT4rqsUfej8g&#x2B;vglPuT3992PrV&#x2B;fEn5s&#x2B;TuU&#x2B;fDAbrcjPT0d0dHRWLFihehyCAlLVqxYgejoaKSnp8Nut4suhwiGMu8YX8m8xWKBxWJpe5uG2Wx2GC492NPZw1El1B7uKcedefgTaX2lSG8VcYWzV5U6e22pr7BarTCZTB2eD2VePZR5F3ng4UG8tT7EyMv7FH0HPCb82PJ3KPPhRX19PdLS0tC1a1esXLlSdDmEhAUrV65E165dkZaWhvr6etHlkACBMu8YX4ijzWZrE0TpDRzK&#x2B;RoMhrbXb7qaV7DIvMViUV1Pd4Vewp8yD1z74aUjUObVQ5nXyHubvkRySqqPDmMSSIxJTsHqT/YJP8Yo80Rv6urqkJqaim7dumH16tWiyyEkJFm9ejW6deuG1NRU1NXViS6HBBiUecf4QhzNZnPb6zMlmTeZTG3SLbUGK2Ve3qKtfH2m2is8pVeFyl/1qfbaTenf8leRyuVVEmbpe/l8pM9S5K89VaL2w4L89avu1CivRfoRRPq3Xuso1d4RKPPqocxrJGnCNGRkaL87lAQnCxcuwthJM4QfY5R54i9qa2uRkpKC7t27Y&#x2B;3ataLLISQkWLt2Lbp3746UlBTU1taKLocEKJR5x/hC5uXzkGRe3vor/Vsu89I40jTSPJQyrzaeJzKvnL9UryTpkgzLp5NQfpaj1YJuNBqRnZ3ttsw7a5nXYx0l5D&#x2B;2eANlXj2UeY08PGgIKisrvT7oSOBSXl6O/o8mCj/GKPPE39TU1CA5ORkxMTFYt26d6HIICUrWrVuHmJgYJCcno6amRnQ5JMChzDumozJvtVphNBrbPksyL&#x2B;&#x2B;bLYmj9L2aCCsFWE3YAXgk82rDlMvWmk4LaT3V8KfMe7qOEh291Z4yrx7KvEYiu9zC98iHKHa7HV1uiRJ&#x2B;jFHmiSiqq6uRlJSEHj16IDMzU3Q5hAQFmZmZ6NGjB5KSklBdXS26HBIkUOYdo5fMA9da7KX/KmVeGYvF4lRyJaR5eCu6ahIuH1dZm7J1W2oND5SWeW/WEbgq88qHFHoCZV49lHknKbK1Ii7&#x2B;Hq8POBL4GOMTUGRrFX6sUeaJSKqqqjBy5EjExsYiKytLdDmEBCRZWVmIjY3FyJEjUVVVJbocEmRQ5h3TUZm32WxOZd5kMsFisbS10Mtl3lmrtsiWeWe1OGupl3cHsFqtyM7O9ljG2TIfWqHMa8QXfXpI4GIwGIQfY5R5EihUVFRg&#x2B;PDhiIuLQ05OjuhyCAkIcnJyEBcXh&#x2B;HDh6OiokJ0OSRIocw7Rq8&#x2B;88C1h8lJ0qjsMy&#x2B;1ekvyKZd0&#x2B;XjKfuHSMHnLufwhb1qiq5xO3p9c2aKt1WdevkxpXOkBdvKH5rmq0dWr6Xy9jhLsM69PKPOU&#x2B;bCFMk9Ie8rKyjBs2DDEx8cjNzdXdDmECCE3Nxfx8fEYNmwYysrKRJdDghzKvGN8cX2t9jR7wFHSAWg&#x2B;zV6aXinz8vFMJpODhMrf8e6J6MpvpVeKrvx2emUdaqi9Z17&#x2B;A4arGuU/TMi7JUj/1mMdpWV0BMq8eijzlPmwhTJPiHNKS0uRmJiIhIQE5OXliS6HEL&#x2B;Ql5eHhIQEJCYmorS0VHQ5JESgzDvGF9fXNtu198wHG1oPsusI7jxEz18o15HvmdcvlHnKfNhCmSfENSUlJRgyZAh69uyJ/Px80eUQogv5&#x2B;fno2bMnhgwZgpKSEtHlkBCDMu8YX11f&#x2B;0IQ/YHUgi1PIIm3L9BaR63nFXgCZV49lHkfybx0S4kcradOOhtPeQuMyWSCwWBAamqqW7feeLMMb1H&#x2B;0ep1cnLWp8kX8xV9jFHmSbBQVFSEwYMHo1evXti6davocgjxCVu3bkWvXr0wePBgFBUViS6HhCiUecewsYx4A2VePZR5H8q8UjS9kXnVA9cHuFuLJyjX12Kx6HLbEGWeMk8CB6vVioEDB6J3797YsWOH6HII8YodO3agd&#x2B;/eGDhwoM/&#x2B;n0KIMyjzjqHME2&#x2B;gzKuHMu9DmTebzQ4yqybQag&#x2B;4kD4bjUYHYZWPu3nzZqcP55AvQ/lQDOluAWfL0KpLGk/&#x2B;YA757UxaP16482oLZ/OV36ojjeNM5jtyVwBlnhDvKSwsRL9&#x2B;/dCnTx/s2rVLdDmEuMWuXbvQp08f9OvXD4WFhaLLIWECZd4xlHniDZR59VDmNeKpzFut1rb3WwLtZd5oNLZ70qTy3YxqT5p09toM&#x2B;Wsj5NKufOKmq2U4q0su3fJhynWWkL/X012ZV5uvWj3OtoFyPE&#x2B;gzBPScQoKCtC3b1/07dsXBQUFosshRBUep0QklHnHUOaJN1Dm1UOZ97HMy6VVq6UauCbknsq8Wou/JMnK71zJvFZd7rxP0lmfeXdk3p1hnmwD&#x2B;Q8c7u4z0ccYZZ6ECmzxJIEI7yAhgQBl/lpaG4uQcLdR9C4hQcg9d8ehtbFI&#x2B;DEcaKHMa8QbmQeutVDLhVNNPqVWfF/IvIT0PkilYDtbhlZd7si82m32ngq7sx8dJKR3hKrVrYwnTzWlzBPie9gXmQQCfLYDCSQo84655ZZInD17VvRuIUGE3W5HVFQX4cduIIYyr4PMA1cFVOrvDejfMg84yrRymXq1zCsv1t2Z1lct8x192B5lnhD94FPCiQj41gUSiFDmHfP4kP6orKwUvVtIEFFeXo4/Jw4UfuwGYijzOsm8vOVYwpd95pV3Akit1/LlSa&#x2B;162ifeW9a5qXh8n797s5X&#x2B;iFEXo&#x2B;r5wZIy/akJZAyT4j&#x2B;8P3dxB&#x2B;UlJRgyJAh6NmzJ/Lz80WXQ4gDlHnHmCcnISMI3g9PAoeFCxZg5rRxwo/dQAxlXieZB&#x2B;DQMi8fT4raU9ndlXn5E9/VBF4SabnwOluGs7q86TMv77Muf7K&#x2B;JzIvn7fJZGrrsuCqbk/6y0vTij7GKPMkXMjLy0NCQgISExNRWloquhwSIpSWliIxMREJCQnIy8sTXQ4hqlDmHbN32yo8PT5Z9G4hQUTKU2Ng/WKN8GM3EEOZ95HMk&#x2B;CDMk&#x2B;I/8nNzUV8fDyGDRuGsrIy0eWQIKWsrAzDhg1DfHw8cnNzRZdDiCaU&#x2B;fYZPPBB3kVD3GLz5s0Y&#x2B;uhDwo/ZQA1lnjIftlDmCRFHTk4O4uLiMHz4cFRUVIguhwQJFRUVGD58OOLi4pCTkyO6HELcgjLfPnWVW9Cr172idw0JAn7fMwGnj24XfswGaijzlPmwhTJPiHiysrIQGxuLkSNHoqqqSnQ5JECpqqrCyJEjERsbi6ysLNHlEOIRlHn1HPpXFgYN7Cd695AAZuCAfigvyhF&#x2B;rAZyKPOU&#x2B;bCFMk9I4JCZmYkePXogKSkJ1dXVosshAUJ1dTWSkpLQo0cPZGZmii6HEK&#x2B;gzDvPIWsW7v9DT3z66aeidxMJIDZv3ozf97wH5UXZwo/RQA9lnjIftlDmCQk81q1bh5iYGCQnJ6OmpkZ0OUQQNTU1GDduHGJiYrBu3TrR5RDSISjz2jl1ZAsee&#x2B;RPSHlqDBYtWoTy8nLY7XbRu434EbvdjvLycixcuBAp48Zg6KMP4XT1NuHHZjCEMk&#x2B;ZD1so84QELmvXrkX37t2RkpKC2tpa0eUQP1FbW4vx48eje/fuWLNmjehyCPEJlHn3sm/7asyYOhaJQ/ojKqoL7rk7TvXNSUxoJeFuI6KiuuDPjw/AzGnJsH7xvvBjMZhCmafMhy2UeUICn9WrV6Nbt25ITU1FXV2d6HKITtTV1WHChAno1q0bVq1aJbocQnwKZd67tDYWCa&#x2B;B4X4O9FDmKfNhC2WekOBh5cqV6Nq1K9LS0lBfXy&#x2B;6HOIj6uvrMWnSJHTt2hXvvvuu6HII0QXKPMMweoUyT5kPWyjzhAQfK1asQHR0NNLT09mnMoix2&#x2B;2YPHkyoqOj8c4774guhxBdocwzDKNXKPOU&#x2B;bCFMk9I8LJ8&#x2B;XJERUVhypQpaGhoEF0OcZOGhgZMnToVUVFRWLZsmehyCPELlHmGYfQKZZ4yH7ZQ5gkJfpYuXYrIyEiYzWY0NTWJLoc4oampCdOnT0dkZCSWLFkiuhxC/AplnmEYvUKZ96PMWywWWCwWZGdnw2AwwGw2Oww3mUwwGAywWq2a87HZbJrjuTOPYMNqtcJkMvl0npR5QkKHjIwMREREYMaMGWhubhZdDvk/mpubMXPmTERERMBisYguhxAhUOYZhtErlHk/ybzNZmuT0ezsbBiNxnbzNxgMMBqNlHknSD&#x2B;G&#x2B;ArKPCGhx6JFi9C5c2e88MILuHDhguhywpYLFy7gxRdfROfOnbFw4ULR5RAiFMo8wzB6hTLvJ5k3m83Izs4GcE3mTSZTm3RLLc9KmZe/h9FmswFoL/PSZ6m1XynzavMwGo0O9cjXVT6&#x2B;vD6DwdB294D8O4PBAIvF4jB/aZ7yuuS1SnVK00pozVOqzVdQ5gkJXebPn49OnTph1qxZuHz5suhywobLly/jr3/9Kzp16oR58&#x2B;aJLoeQgIAyzzCMXqHM&#x2B;0nm5fOSZF7e0iz9Wy7z0jjSNNI8lDKvNp6reZjN5rbvzWZzm2yrjW&#x2B;z2dokW/oBQFon6bMk55J4y2uQz0cu88qaXM0TgMMPIB2FMk9I6DNnzhzceOONePnll9Ha2iq6nJCltbUVr7zyCm688Ua89dZbosshJKCgzDMMo1co8xrxlcxbrVYYjca2z5LMy/uBS5IqfS/JsxypNV0u89K/la3XruaRnZ3tIPDO5iWNL81LGqact3xa&#x2B;fRqw9TuMpD/YKA2nYQvb7WnzBMSPsyePRvXXXcdXn31VdGlhByvvfYarrvuOrzxxhuiSyEkIKHMMwyjVyjzAmUeuLYM6b9KmVfGYrE4yLwzYXdnHkajse2/Up3KeZlMJlgslnYyL18HCflw6RZ55S3&#x2B;WjLvap7SfJUPDvQWyjwh4QfF03fwBxJC3IMyzzCMXqHM&#x2B;0Hm5cIMOIqwJMtSC71cxJViK5&#x2B;fuy3zzuYhjSeXY1&#x2B;1zCvHZct8YIQyT8hVeEt4x2DXBUI8gzLPMIxeocxrRO8&#x2B;88C1FmxJUJV95qX&#x2B;45LoygVePp6yD7qreQDqr8Jz1Wde&#x2B;aOBWv92pZRLy3El81rzlM&#x2B;LfeYp84T4Aj6szTP4UEFCvIMyzzCMXqHM&#x2B;0nm1Z5mD7QXbK2n2UvTq72aThrHZDK1E161eQDXfkhQovU0e7lYy2/jV4q3JPDSMpX9/Z3JvNY8pdp8BWWeEALwNWqu4Ov&#x2B;COkYlHmGYfQKZd5PMi9/z3wootbf3dfz5HvmKfOE6ElzczNmzpyJiIgIn55rgpWMjAxERERgxowZaG5uFl0OIUELZZ5hGL1CmfeTzAO&#x2B;l1GRyN9tL3/AnV7zdNX/3xso84QQNZqamjB9&#x2B;nRERkZiyZIlosvxO0uXLkVkZCTMZjOamppEl0NI0EOZZxhGr1Dm/SjzJLCgzBNCtGhoaMDUqVMRFRWFZcuWiS5Hd5YvX46oqChMmTIFDQ0NosshJGSgzDMMo1co85T5sIUyTwhxB7vdjsmTJyM6OhrvvPOO6HJ8zooVKxAdHY309HTY7XbR5RASclDmGYbRK5R5ynzYQpknhHhCfX09Jk2ahK5du&#x2B;Ldd98VXU6HWblyJbp27Yq0tDTU19eLLoeQkIUyzzCMXqHMU&#x2B;bDFso8IcQb6urqMGHCBHTr1g2rVq0SXY7HrF69Gt26dUNqairq6upEl0NIyEOZZxhGr1DmKfNhC2WeENIRamtrMX78eHTv3h1r1qwRXY5L1q5di&#x2B;7duyMlJQW1tbWiyyEkbKDMMwyjVyjzlPmwhTJPCPEFNTU1GDduHGJiYvDhhx&#x2B;KLqcd69atQ0xMDJKTk1FTUyO6HELCDso8wzB6hTJPmQ9bKPOEEF9SXV2NMWPGoEePHli/fr3ocpCZmYkePXogKSkJ1dXVosshJGyhzDMMo1co85T5sIUyTwjRg6qqKowaNQqxsbH4&#x2B;OOP/b78rKwsxMbGYuTIkaiqqvL78gkhjgSSzF84sw8LZk/F6BGP4fbbb0XfB&#x2B;&#x2B;HwWBgGEYjfR&#x2B;8H7fffiuS/jIEC9&#x2B;chov2r4T/LVPmKfNhj8FAmSeE6EdFRQVGjBiBuLg4bNy4Uffl5eTkIC4uDsOHD0dFRYXuyyOEuEegyPzSBS/iZz/rjOefn4Hi4mKcOnVK9KYhJGg4deoU9u/fj5kzn8NNN92EZW&#x2B;/JPxvmjKvkSJbK4zxCaKPG6IjcfH3oMjWKvxYo8wTEtqUlZXhiSeeQHx8PDZt2uTz&#x2B;efm5iI&#x2B;Ph7Dhg1DWVmZz&#x2B;dPCOkYgSDzaU&#x2B;PgGXRAtGbgpCQYdHC&#x2B;ZgyabTwv23KvEYiu9yCs2fPij5WiA7Y7XZ0uSVK&#x2B;DFGmSckfCgtLYXJZEJCQgI2b97c4fnl5eUhISEBiYmJKC0t9UGFhBA9EC3zaU&#x2B;PwJy33hS9GQgJOV5/9e&#x2B;YPHEUZT5Q03/w46isrBR9nBAdKC8vx8AhfxZ&#x2B;jFHmCQk/SkpKMHToUPTs2ROfffaZx9Pn5&#x2B;ejZ8&#x2B;eGDJkCEpKSnSokBDiS0TK/NKFL7JFnhAdWbhgLpYLvOWeMq&#x2B;RpAlmWCwZoo8RogMLFizEuGdmCj/GKPOEhC9FRUV49NFH0atXL2zZssXl&#x2B;Fu3bkWvXr0wePBgFBUV&#x2B;aFCQogvECXzF87sw803/0z06hMS8nTq1AktDf&#x2B;izAdaVuXuRfJTT4s&#x2B;PogOjElOwZo8q/BjjDJPCLFarRg0aBB69&#x2B;6N7du3txu&#x2B;Y8cO9O7dGwMHDoTVahVQISGkI4iS&#x2B;QWzp&#x2B;H552eKXn1CQp7p082wzJ1OmQ/EPNhvMPLz80UfI8SHbN68GQ8NGir82PJ3KPOEBDaFhYXo378/&#x2B;vTpg507d2LXrl3o06cP&#x2B;vXrh8LCQtHlEUK8RJTMjx4xBMXFxaJXn5CQx2q1YsyooZT5QMyWkjrce18v0ccI8SEJ9/4e20tPCz&#x2B;2/B3KPCHBQUFBAR566CH07dsXBQUFosshhHQQUTJ/&#x2B;&#x2B;238vVzhPiBkydP4o47bqPMB2qydh5CvwGDRB8nxAf0GzAQOXvKhR9TIkKZJ4QQQvyPKJnv&#x2B;&#x2B;D9oledkLCh74P3U&#x2B;YDOVk7D6Hnfffj008/FX2sEC/YvHkz7vnv3yN7d3iKfPFJyjwhhBAiAlEybzAYRK86IWGDwWCgzAd6tnx9Cn8a8BjGjEvBokWLUF5eDrvdLvrYISrY7XaUl5dj4cKFGJOcgocGDcW2f4ffrfXyUOYJIYQQ/0OZJyT0ESrzQ4f9BftPtAiXjWDJ6s37MHbSDPQfnIgut0QhLv4eGAwGJkBijE9Al1uiMOCxPyP5mZl4P8yeWq&#x2B;W/Sda8Piwv4g&#x2B;zxFCCCFhB2WekNBHqMw/1H8wCqrOCxeOYE2RrVV4DQz3h1b2HG5Ev4GPiT7PEUIIIWEHZZ6Q0EeozKelm7HjUHjfgswwoZxtB7/DM1NmiD7PEUIIIWEHZZ6Q0EeozD&#x2B;dNhkbth8ULhwMw&#x2B;iTj7YewMT0qaLPc4QQQkjYQZknJPQRKvNvvDkPSz/IEy4cDMPok4z3c/Hm3IWiz3OEEEJI2BFOMq/2LCOz2ez3OjxFrU6r1erWNpSPZ7PZYDAYYLVaAQAmkwkGgwGpqakO33uK1jK8xdmzp2w2W4fmG64Ilfl/bvoEb2SsEi4cDMPok9ct7&#x2B;GTzXytIiGEEOJvwk3mlZJpNBqRnZ3t91o8QRJZee3eyLzafH2Bu7V4gsFgaLdfzGYzTCaTT5cTLgiV&#x2B;W&#x2B;rq/HEyHHChYNhGH1iGjEGx2pqRJ/nCCGEkLAj3GXebDbDYrG0CanUWi2fRk2mlcOcfS9vSbZYLA7D5LKqNUxqmTcajW3fqQm0Wq1tb1MyGh1azeXjbt68ud36qa1bdna26l0NzpahVZc0ntlsbhtmsVgcplHKvKt1dmdbS8uVD1cux5t6tfafVp3&#x2B;QqjMA8DEydOxp7JRuHQwDOPb7Cw/i7Qpz/n9pEYIIYQQyrz0nSSKcgkzGo1twiaJrCRi8hZ9i8XSJrZq0wDXZFBC/llrmLxGk8nUNm&#x2B;l2DqrVesWeOnfyu&#x2B;drZt8HHeX4awuuRwrt5W0LFct8x3Z1tJ8pNrl&#x2B;9XTel3tP2d1&#x2B;hPhMr/g7cVYtDJbuHgwDOPbzF&#x2B;xAZYly/x&#x2B;UiOEEEJI&#x2B;Mm8Mko5lqROEjJ5K6okuWotxEqpVU6jNj/5tFottkrpdibQrmp1R&#x2B;adrZuyNle1KOt1tT2Un9X2lbyujm5r&#x2B;Y860o8k3tartTytOv2JcJmvOFyJv4x9Wrh4MAzj2zw5OgVVR7716wmNEEIIIVcJN5l39mA2pcyrSZgkfc76iCtvX3f2g4Hardhaw&#x2B;R1WywWmEwmhxrcrdVbmZdQ3kruSua16nJH5pW3xmttL3e3tZp4a&#x2B;1Xd&#x2B;t1tjxXdfoL4TIPAOOenoSsnYeEywfDML7Jhh0H8XTaZL&#x2B;ezAghhBByDcr8VTraMi/NQ96vXQtPWuqVdRuNxra&#x2B;257U2hGZ19o&#x2B;erXM5t&#x2B;QygAADNRJREFUy&#x2B;Vd2c3B222t1jKv1aLvbr3OludJnXoSEDK/d&#x2B;8&#x2B;TJz6onABYRjGN3l68kx8Zf2XyHMbIYQQEtZQ5q&#x2B;ilFVAu8&#x2B;8srVcEjb5LdTSPK1WK7Kzsx2kTt6vWmuYWt3y1l5XtXrTZ15t3ZSSLz0osKN95t2VeWmZyj7znm5rZd93T/vMq9Xrav85q9OfBITMA8BzL76MnIIK4RLCMEzHsnH3N5j50it&#x2B;PZERQgghxBHK/FXUZF6aRop8WknYlFKtnEYupPInoSvnpzVMrW55y7yrWuW3xLsj887WTRJ4ab3kkupsGc7q8kbmpXGUT733ZFvLZV5tW3lbr9b&#x2B;06rTXwSMzB89egx//stY4SLCMEzHkvjkaBw/fsLvJzNCCCGEXCOcZJ4QVw8bDFUCRuYBYOXqD5Dxfq5wGWEYxrssem8jVq/9SMS5jBBCCCEyKPMknKDMB4DMA8DY8ROxcXe5cClhGMazZO08hKdSn/H3OYwQQgghKlDmCQl9Ak7mW1tbMSo5VbiYMAzjfopsrRg9boK/z1&#x2B;EEEIIcQJlnpDQJ&#x2B;BkHgDOnjuH/o88LlxQGIZxLw8PfAyNjY3&#x2B;PHcRQgghRAPKPCGhT0DKPABcutxCoWeYAE&#x2B;RrRUPDXgUl1uu&#x2B;OucRQghhBA3oMwTEvoErMwDV1voR4&#x2B;biOzd3wiXFoZhHJO18xBGJaeyRZ4QQggJQCjzhIQ&#x2B;AS3zwNU&#x2B;9GNTJiJj9Sbh8sIwzNW8/d5GjEudpPf5iRBCCCFeQpknJPQJeJmXWLVmHUzDx2DjHj7pnmFEZePub5D45Gi8/8F6vc5JhBBCCPEBlHlCQp&#x2B;gkXkAOFZTg&#x2B;defBlPP/s8snYeEi42DBMu2bDjIManz8RzL72C48dP6HEuIoQQQogPocwTEvoElcxLFO77Ck&#x2B;nPYvhSeOx4B9Z2F3eIFx2GCbUsvObc5i/YgOeHP0Uxk&#x2B;cjK&#x2B;s//LluYcQQgghOkKZv4bFYoHFYgFwVX7UYrVafbY8m80Gg8EAm83m1XQdraWj8zCbzTAajQ7fWa1W3fatL7aXnvUBV9ffZDLpNn9vCUqZl6iqOoIFlqVITZ&#x2B;OP48Yi9czVmHxmk&#x2B;wflsJth48hT2HG7H/RItwKWKYQM3&#x2B;Ey3Yc7gRWw9&#x2B;h4&#x2B;2HkDG&#x2B;7l47e33YBoxBhOffQ6LFv8Pqo5864tzDSGEEEL8CGX&#x2B;KjabzUHCfC3uzpbpjZz6io6uoyTG8votFgvMZrMvymuHL7aX3jIPOP4oFCgEtczLOXqsBp9s/hSz5y5E6jNTMSF9Oh4e&#x2B;CgSnxyF&#x2B;&#x2B;7vwzCMSoYOG4GHBz6Kic8&#x2B;h9RnpuLNuQvxyeZPcaymxpd/noQQQgjxM5T5q5jNZmRnZ7d91hJdSQhNJlPbekjfGQwGWCyWdtIpb92Xvpfk1Gw2tw2TalAbJgmismVeWp5yHkqk6eTzla&#x2B;jWo1q6yrHaDQ6iKvJZGpbvrvzy87OdhhX&#x2B;jFAOa7W9nJnO8v3kdFobPfjgPyz1vZ3d38HEiEj84QQQgghhJCrUOavoqzHHZlXyr/0WRJASe7kwiuJK3BNHqU7AuQt3XKZdDad1Wpt&#x2B;7eE8rMctTqkdXRWo9q6yjGbze3uaLDZbB7NT16HNK7NZms3rtb2cmc7K2&#x2B;zd1fmlfOTana2v4GrP2rofWeHJ1DmCSGEEEIICTEo81elUNn3W62/vDSOUiKVt27LpVDttm6j0Yjs7GzVvu8mkwkWi8Ut0ZTLvKtbz9XG0&#x2B;pHLtWodiu9ctvJRV2SWHfnp5yv2rZTa2FXbi93t7OnMq82TGt/SwTarfaUeUIIIYQQQkIMyrxzmXfVMi/JW3Z2tur0cvFTRk3YAc9lXl6P1m32zmRXLrhqNbqSeWk&#x2B;2dnZbQLr6fyU3QRcybza9nJnO/tK5rX2t3yd9Hp2gDdQ5gkhhBBCCAkxKPNouy1cjicy76plXjlv5Xjy5Shbk92RebV5arV4K9dRq0Z3ZF661d5kMrlcZ2fbTqsFXKtlXt7i7852Zss8ZZ4QQgghhJCQgDJ/FWU9nsi8NL5Wn3lpmDSt/BZ55QPfXMmkXE6VrcSu&#x2B;swr&#x2B;4DL&#x2B;8yr1eiOzEvjyOtwd35KMZY/7M6ZzKttL3e2s1qXAvl&#x2B;kz/ITmv7u9rf0nqwzzxlnhBCCCGEEN2gzF9F7Wn2anHWj1x&#x2B;m7ea3KndBi&#x2B;XU2mYJICetMzLp9f6EUJeh9SS7uxp9kopdtUnXy7Zns5PEnhpPK3&#x2B;9c62lzvbWRpXGg44PknfE5l3Z38HEpR5QgghhBBCQgzK/FVsNsf3zHcEtT7VJHRR7u9Au8UeoMwTQgghhBAScny76xm0Nu4Pe5kHvJcwqdVWHlct2SR40drfWn33RSJE5huLcGTnM5R5QgghhBBC9KBy21NoObeXMk9ICCNC5lvO7cXhbeMo84QQQgghhOjBkZ1puHRmJ2WekBBGhMxfOrMTR3ZOoswTQgghhBCiB7XFc3Hhu22UeUJCGBEyf7F&#x2B;G2oPzKXME0IIIYQQoge1RW&#x2B;hqWYDZZ6QEEaEzDcdy0RtMWWeEEIIIYQQXaivWAt7xf&#x2B;jzBMSwoiQeXvFctQfXkeZJ4QQQgghRA8aTuxA3YG3/H6h3/fB&#x2B;0WvOiFhQ98H7/f73/jJA2&#x2B;ioXYnZZ4QQgghhBA9uNB4FDWFz/v9Qv/222/FqVOnRK8&#x2B;ISHPyZMncccdt/n9b/zY3hm40FhDmSeEEEIIIUQvDm8di5ZzhX690B/9l6HYv3&#x2B;/6FUnJOTZt28fxo563K9/3y1nv0Tl9qcAgDJPCCGEEEKIXtQWz0XTsUy/XuwvfNOMmTNniF51QkIes3kaMuY959e/78ajH8F2YAEAyjwhhBBCCCG60WjbjTPfLPPrxf5F&#x2B;1e46aabRK86ISHP9ddfjyvf7/fr33f9oSX4/uQeAJR5QgghhBBCdKO15QIObx3r14t9NBVj2aKX8PbCeaJXn5CQZcG8OXhn8V/9/rddsWU0Wq9cAkCZJ4QQQgghRFdqi&#x2B;ej6dh6v1/0T5k0Gq&#x2B;/9qro1Sck5Hjllb9h&#x2B;rP&#x2B;/5Gu8eg61B5Y2FYHZZ4QQgghhBAd&#x2B;eHMQXxXavH7hT&#x2B;aijF54igsnM8WekJ8xYJ5czD92WQhf8/flb6NH&#x2B;wH22qhzBNCCCGEEKIz1QVmXDi1RYgALLfMwk9/2gnTp0&#x2B;D1WrFyZMnRW8OQoKGkydPYt&#x2B;&#x2B;fTBPm4Lrr78e72T4/9Z6NBXjx7p8HP3yOYfaKPOEEEIIIYToTGPdXpwsfkOIBKCpGC0N/4Jl7nSMHTUUd9xxG/o&#x2B;eD8MBgPDMBrp&#x2B;&#x2B;D9uOOO2zBm5FBkzHvO7w&#x2B;7k8e2/zU0nfrK4bxCmSeEEEIIIcQP1BbPw8XTXwiTAYZhgjMX6rfDdmB&#x2B;u3MKZZ4QQgghhBA/0Gwvw/F9LwoXA4Zhgis1hc&#x2B;j&#x2B;Vx5u3MKZZ4QQgghhBA/YStZhO&#x2B;rPxQuBwzDBEe&#x2B;/3YtTn6doXo&#x2B;ocwTQgghhBDiN1pQw9Z5hmHcTM2&#x2B;FwG0qp5NKPOEEEIIIYT4kR/OHMTxr2YJlwSGYQI7NfteQLP9kNNzCWWeEEIIIYQQP3O68iOc&#x2B;Wa5cFlgGCYwc/qbZThT9bHmeYQyTwghhBBCiABqi&#x2B;fifM0G4dLAMExgpenoethKFrg8h1DmCSGEEEIIEcSxwpdw/vhG4fLAMExg5PzxLNR89Te3zh&#x2B;UeUIIIYQQQgRSV7qEQs8wDJpqPsapfy9z&#x2B;9xBmSeEEEIIIUQwxwpfQtOxTOEywTCMmDQe/cjtFnkJyjwhhBBCCCEBQG3RHNj5UDyGCbuc&#x2B;WYZbAfme3zOoMwTQgghhBASIJw&#x2B;/CGO8z30DBM2qdn3As5UZXp1vqDME0IIIYQQEkD8cOYgava9iO&#x2B;//UC4aDAMo0&#x2B;&#x2B;/3YtjhVqv0feFZR5QgghhBBCAo4rsJW8jZrC53Ghfodw8WAYxje5WL8dNYUzcfJrC4DWDp0lKPOEEEIIIYQEKM1ny2A7MAe2otfw46nPhYsIwzDe5ce6fNTu/ztsB&#x2B;ag&#x2B;Vy5T84PlHlCCCGEEEICnMa6L1FdMA3fHVyAxqMfCRcThmHcS&#x2B;PRdTj19QIcLTCj6VShT88LlHlCCCGEEEKChB/OlKC2eB4Ob03C6bKlaDy6Hi3n9goXFoZhrqbl7JdoPPoRTh9agooto2E7MB/nT5focj6gzBNCCCGEEBJktF65hAbbLtQWz0PltnGoKZyJugOzYS9fjqZjmbhQvwWXznxxVfQbi4QLDsOETBqL0HJuLy6d2YmL9dvQdCwT9orlOHngDRzb&#x2B;xwqtz0F24H5aLTtQeuVS7qeByjzhBBCCCGEBDkXGo&#x2B;hoXYH6stXo7boTdQWzcaRLybi8PZx&#x2B;Hb3ZJTnj2AYxgf5duczOLx9HI7snATbgbdQW/QW6ivWoOHEDlw8f9yvf/f/H4qb4v/mY5mfAAAAAElFTkSuQmA=" alt="image-processnotification" class="img-responsive">
+</p>
+<p>Das Quittungs-Bundle enthält die Meldequittung und die darin referenzierten Ressourcen. Die Meldequittung umfasst die Angaben zum von DEMIS ermittelten zuständigen Gesundheitsamt und enthält eine Quittung in Form einer PDF-Datei.
+
+
+<img src="data:image;base64, iVBORw0KGgoAAAANSUhEUgAAAXEAAAGbCAYAAAAyWKBAAAAPY3RFWHRteGZpbGUAJTNDbXhmaWxlJTIwaG9zdCUzRCUyMmFwcC5kaWFncmFtcy5uZXQlMjIlMjBtb2RpZmllZCUzRCUyMjIwMjEtMDMtMjJUMjMlM0EwMiUzQTA4LjA2NFolMjIlMjBhZ2VudCUzRCUyMjUuMCUyMChXaW5kb3dzKSUyMiUyMGV0YWclM0QlMjJMaUx3c052TFB6NjBHZ1ZiQVFzUSUyMiUyMHZlcnNpb24lM0QlMjIxNC40LjIlMjIlMjB0eXBlJTNEJTIyZGV2aWNlJTIyJTIwcGFnZXMlM0QlMjIyJTIyJTNFJTNDZGlhZ3JhbSUyMGlkJTNEJTIyQzVSQnM0M29EYS1LZHpaZU50dXklMjIlMjBuYW1lJTNEJTIyUGFnZS0xJTIyJTNFN1ZwYlU5czZFUDQxbWFFUFpueUpuZmlSY0N1OVFadTIwS2N6aXEwNEtvb1ZaRG1YJTJGdnBLdG55VklJU0REd3c1bmM0Z3JheVZkciUyRjlkaVZCenptZXI4OHBXTXclMkJreERpbm0yRzY1NXowck50eXpOOSUyRmtOSU5ybWtienE1SUtJb2xCOVZnakg2QTZYUWxOSVVoVEJwZk1nSXdRd3Rtc0tBeERFTVdFTUdLQ1dyNW1kVGdwdXJMa0FFRmNFNEFGaVZYcU9RelhMcDBCNVU4dmNRUmJOaVpjdVRCazlBY0J0UmtzWnl2WmpFTUIlMkJaZzBLTnRER1pnWkNzYWlMbnRPY2NVMEpZM3Bxdmp5RVdiaTA4ZG4yeHVjYWZicjN6RDElMkJUTyUyRkJqOVBIN2w1OUdydXhzbHltbGNSVEc3TW1xVDFMZyUyRlROd2Y4MnVmbHhjb3QlMkJoajhkam81JTJCclhnS2NTazlLVzltbWNHM21IQ2lVV0QxbnRKb2hCc2NMRUlqUkZROG1McHV4T1piRFV4SXpHUjBXZDlBb3dpQVIwSnE4blRCS2JrdDR4TmVsUjhVd3dDaUtlVHZnUmtJcWRDR01qd2ttTk51SEV3VFFuVTVMUGJVUngzTjhoMjl3SkkyQmxNRjFLeTYydU00cThlUVVnV1FPR2Qzd2VWS0xZWnN5QmlROUxGOHFYbFhCWnJ2eW0xazkwSW80QXpMQW8xSjVCUlZ2U0xSMkNBcDdGJTJCVE1Ka3ElMkZJV01iQ1JOSUdlRWlRdG1NUkNRRyUyQkJNaEN3MmFvZyUyRmo4RWlRbGZjbm1BUzN1ZWdNaVoxbmElMkZDZSUyRkg2NEhYQU1KaENQU3Y0VmdHWU01S3BDVG5CcFM3VzUwMG82Z212RWJvU3VROTkzWmY5WDF1OFgzWk4xc1RIUjJkUTZWNUFpRG9RSXRFeTJTNXh3SjVPVUJuQTdyeGlnRVh4SW41ZCUyRko0eXRCYXdhaUJSaXdOQ3ltZTJlUGFhY1Y1d05kZ05JeVFIM2M5dHltdHkyQjZiQ2JjdldjTnR6TzRMQlUyQzRvaVNBU2ZLRk1EUkZBWThFRXF2SXpNaDhraWJiVVduNFdVQjBCdVlJQyUyQnZmUTd5RWpDJTJCZ3dVNEJSQU1nWHhMRkVlOTVWZTk3bGswNElicUQwSEw5Sm9LbXJjbk9yaVk3MjglMkJRbmJYODN5azdkOHVrVmhtZFRxZDJFT2pLYU9oTlBOZnJzSXk2TGFaWkEwZkZhYWhobXQwWlRqdGx2TGRaUldQdVIxRkdEZlBRTkwxQ0lndXA2UmFDcXBSbXZYb3R2Wkg3cWdyd2x2b3JOT2dMY0tzUVBxMGlQNVJVNnhYNWZ1YiUyQml3SXNwMTRSeExkZGhuNVpWSW9VWmZjUFclMkJVanQwRE9xNSUyRmpXNnFjJTJGbFpWdVpHS3Fvd2hwVTFQSjgzZ01mWHBHN3hMWWNLdUFBVVp6SWxDTEo1ZFdKTlJTbzBST1lqcncwZHlZSTdDTUl0YUNoUDBCMHd5VlNKNkZzTFd6SHAzMUhOUGhDN095RVN5cnN1cmdUVnNGUjlMUFQ3WWppNnBtUjNsdEtFQ3owVzhTTmtqJTJGTjhzQ1RLRjFPdUhGRDBlSjExWmF5WlVJbzRKckVnTlhjRmt0UzV3SlNJMWxQciUyRkpVaSUyQkF0Smx5dllkcGI3N3lsQXF1THd0MVNVTEVpZHdwMXozZGxIMDNQWmppVk1VcUJmRDhmWGZiRHM0YnZ2REZwdjZDZ3BXMzFaaGVJNkxyUjRHM1hPamh3VXpRclJzd09IZHBlSmRkUlRrYkRnU1I3Qm9jc0FEaFAlMkZucTV1MTFqdlJGSDZzdmVZYXJZblolMkZVOU9hTGI3MVhTQnFyR1NuaEF6WTBMbkFEZkg4ME9GR0xYc3hib2N3eWlHeHF3MjElMkZMRWFHRUhiMFh5WjJWdlV5UzBpMFZBMEhSQmRTdSUyRlZ4dSUyRmE4ZmIzTWR2ZUdiMjczNDFFOXFXY0poejNZbzQzNjBpMXRqVmxyNTUzbm5OJTJGT2ZZbW11dTlrSHBHZExmQiUyQnNhbkFVZmpXdTRPRjk2RiUyQm5seldSanFGWHM0SlRmRUNZeDRwWEtETGszYlBNbnBJQk9JR0pwSEwzYjYlMkZxbDRPZHFucE4wJTJCRDFIJTJCZExpcDN0TmV1bWM4Y0E1YU5ma3NjZXgxajRyT1k2YUs3bzZLV2xEVFgxN1B2aWFJaWF5UW1LTXVJTXczTyUyRnM0Rm10TzRvMzBKeHV0Yjh3NkF3MDljYiUyRkRRWVFMVmdPMkg3ajVWcE52UHIlMkJ5ekpNYzZjOCUyQkF4eENKZUVSbURmaTYlMkZodCUyQmpsdnpSY2xnSlh2ZWI5enpBVnNrRm5rUEZ1OWZjMiUyQlhOMjlmZE16dWxmJTNDJTJGZGlhZ3JhbSUzRSUzQ2RpYWdyYW0lMjBpZCUzRCUyMldTVGxhdFVOYzI2aWlfbXhuekdNJTIyJTIwbmFtZSUzRCUyMlBhZ2UtMiUyMiUzRTdWcGJjJTJCTW1GUDQxbWtrZXZDT0VMdmFqN1NTYlppZHQybmhtazMzcHNCS1dtRXJDd1RpMjglMkJzTEZycUJuTnRZbTA2ZGZjaWlBeHdkdnUlMkJEQTFnV25HYWJyd3d0a21zYTRkUnk3R2hqd1RQTGNZS2hJJTJGNUt3N1l3QUM5UWxwaVJTTmxxd3kxNXdzcG9LJTJCdUtSSGpaYXNncFRUbFp0STBoelhNYzhwWU5NVWJYN1daem1yYmZ1a0F4Tmd5M0lVcE42M2NTOGFTd0RwMmd0bDlpRWlmbG00RSUyRkttb3lWRFpXSTFrbUtLTHJoZ21lVzNES0tPVkZLZHRNY1NyQkszRzV2OWxNNEJQJTJCZnZYdDZXNzJZJTJCNCUyRlBGeXVCNFd6aTdkMHFZYkFjTTdmN1hvMnVCb3NXZkNOaFRHJTJCdjl2U3kxa2VxUzcySTBwWENpODFWcjR0QVdSMGxVZFlPZ0VXbkt3VHd2SHRBb1d5ZGkwa0kyd0p6MUpWUGFjNVZ4b0FBcUJKbktLbEpOQVc1U1ZuOUolMkJLQk5tNlFsUldvNVRFdVNpSFlwQ1lTVjhrVGFjMHBXd1hCNHdRSHM3RHlrJTJCanhnJTJCSCUyQk9kYzFLakJZTWJ4Um1QJTJGQmVoQXhhZVlDSmhtbUxPdDZGZDY4WWVGSHpVSlhQVzRyZ1hsUUFWbDBoQVRkQldjU0lrNHJselhSSW1DNHVvTnZMa2R2UGtwbCUyQmdzVUM2bmt3SmVtQjlXVXFFVE1jRUVjb2prZkZrYlJTbVclMkYlMkY5T09abVRFSEZDODc5d2lNbUNsdzVGZklYUG9xWDJIazY0RWtycGNwWVE4UUlicHppVG1JdUJ5TWRkNDlyR0UxUlZDWEprbWM1M2RpelZ0OG95SkZIU3c5d2IwMzlGczMwcDBMSHRsZ0pCJTJCZHlRSVBBN0pGamFEcTVBejFDZzBzMUVRQzk0MENrUmdQQTI3dTE1bk5NY2E1TmVtUXlRSmJ4Q3ElMkJsWVZXUWtrbSUyRnNKcnFXZ2lTTWlrckN0JTJCcXBON2I4TmxzRHgyVEw3U0FMQkgyeDVSdHMlMkZjRmlsSk9uM1l3JTJGd3ZrVHVLJTJCY1A3QW5Sb0pQUmxxTU9LNyUyRlNrYmNuaGdCNW1ab1FuS2tQQjhWR2JCandlb2t3enZBZ2pXNXozJTJCQ0t6cWxNNTR6U2pJUVh2emR1VEV0Y245RUh2ZnNSV3FHNmozUExwT01MVGtlYU8lMkYlMkJtYnVLa3o5WGhQTlZIaThIUmZJNmZXSHZJOHl0S0k0NTFXbktLVSUyQkhUZUY0amlrY3B5JTJGaEFFTTRKd2VTeVRWT0l6d290YkpmSTBlc0JqRHkybWtXQnFZY2dvNTFwRGM1d0k1MVJDTUk1OUZZWGpSSXBPWGFUTUkyWFhoRCUyQkowQ1RwYnZaZm1McDU3T05vMnFzemJBT0RMdUpsNERyNGlPcmxpSW44bFZiamNORFppOVoxWnJobE94eTNoc3g5WUZ2WHJERFNXN1U1dGlHUTYxMUswZk1vcndWYSUyRm1sWVRteU5pVmpVWnRSeHl4R0hQRGthQUxiUnZORnJRNDFlNExXSXNYUVB2WnNQVG0lMkZ0dWFxMEhVcWkzQ3JUVmNFZlolMkJXWnZuZjdUaWlWZzhqbm4xZ1JvUm5ybjRkSjI2ZWx0N3pDMyUyQkVvZWR1JTJGdGpZc25URmclMkZ3d1N3TlB5WkRDQWpaZHRmcGkyMzdwYUhvQ1VlZ05OU2RkMCUyQnQzamVZRVlHQnBQMFFTYWRZYko5Sk9zRkhKaDBqVjhBREpSM0gwMkk1VU5JQmV3TGVGNWZlM2dsQSUyRjNsa2RBRHhWMEp1aTloN1FjSjlxeFhZMXY5Q3JrRGZiUFVrVnoxN3ZpUlhyVDEwdmY3bDJuRkY4NWxTalIyb016S3YwbjVwU2dXT1FkUEoyZm4xYjdlblIwMlQlMkZyT0FtRU1mekpONU9qNzVzVnB5YXdxdHNadEhKTWJ5QjdxdjR5UG56WUZ0M29hZXdSdHdmaWx4JTJCMyUyRiUyRjdlRjY5T2Jzb3JyMjJuUHJkZnA1TldyS0JyUyUyRkdvRGwxcUlwbTY3UEJ0NGhHJTJGRllmNGhTWk52NmN4NTQlMkZpOCUzRCUzQyUyRmRpYWdyYW0lM0UlM0MlMkZteGZpbGUlM0Xf5tIAAAAgAElEQVR4nO2de5RU1Z3vK8xa0ghIekZodPHXvTOO8daseWYmc2nHYd38k2ja8jHJJBqNoyNqjFRiq8HrI210DIqlMgGVhzwColZEukE0ahQFmgqNqLz6YTeGphoq3oiItGaiM7/7B7OLfU6fU3Wquuvsffp8Pmt9l919Tu1zanvOpza79tk7IQAAEFkSpk8AAACqB4kDAEQYJA4AEGGQOABAhEHiAAARBokDAEQYJA4AEGGQOABAhEHiAAARBokDAEQYJA4AEGGQOABAhEHiAAARBokDAEQYJA4AEGGQOABAhEHiAAARBokDAEQYJA4AEGGQOABAhEHiAAARBokDAEQYJA4AEGGQOABAhEHiAAARBokDAEQYJA4AEGGQOABAhEHiAAARBokDAEQYJA4AEGGQOABAhEHiAAARBokDAEQYJA4AEGGQOABAhEHiAAARBokDAEQYJA4AEGGQOABAhEHiAAARBokDAEQYJA4AEGGQOABAhEHiAAARBokDAEQYJA4AEGGQOABAhEHiAAARBokDAEQYJA4AEGGQOABAhEHiAAARBokDAEQYJA4AEGGQOABAhEHiAAARBokDAEQYJA4AEGGQOABAhEHiAAARBokDAEQYJA4AEGGQOABAhEHiAAARBokDAEQYJA4AEGGQOFjHod8Oyq/2HJK1r/fJwtbdsmjdHrltUbvcNH&#x2B;TzHr4Nbk&#x2B;8yohRjPr4dfkpvmb5LZF7bJo3W5Z2LpbWjf1ya/2FuTQ&#x2B;4Oh3i9IHKxgR/d7smT9HvnhI1ukZek2WbS&#x2B;S1a/8q4831GQXPdR2d53THbu/0Q6B34vPYXPCDGazoHfy879n8j2vmOS6/5Qnu8oyOpX3pVF6zvlR4//Sn74yGZZsn6P7Oj&#x2B;Tc3vHSQOxngnf0SWbtgr12delWUvvCPrcgflrV9/bPwGJWS4eevdj2Vd7qA8/nzP8et7w17pzR&#x2B;pyX2ExCF0dvX9VuasekOWPNclbbmDxm84Qmqdtq0Dsvi5Lpmzarvs3vfbEb2fkDiExv7CUVmyfo88lN0pr&#x2B;8&#x2B;bPzGIiTsvLb7sDyU3SmPP7dXDvzmoxG5r5A4hMITL3XJPSs6ZGvXh8ZvJEJMp73rQ7lnRYc8&#x2B;XL3sO8tJA41ZX/hqNz/xBvy7Ja88RuHENuyZvMBuf&#x2B;JN6R/GK1yJA4145dvHJB/&#x2B;9l22cuIEkJ8s&#x2B;fA7&#x2B;SeFR3yyhsHqrrPkDjUhBUvdMrKl94xfoMQEpWseqlXVr7YVfG9hsRhxJm/Zqe0bR0wflMQErWs3ZKXR57dVdH9hsRhRPn5xj5Z/6tDxm8GQqKattxBWfP6u4HvOSQOI8ZPn9kp6xj3Tciw07b1oCwI2CJH4jAiLNvQKa3tdKEQMlJZuyUvP/tF&#x2B;T5yJA7D5qVt/bLixV7jF73pJBIJz2x6c39Njrfpzf2SSCQku2FLyf2yG7ZIIpEoeZ61OEd1bkHPkwzN8l/0yitv5Evef0gchsX&#x2B;wlG5e0WH8YvdhiQSCZm36CnH375z9Sz58lfON3peXhLXhTq7Za6ccWayJvWBxIefHy/bJgfe8x9HjsRhWNz/xA7Ggf93vCTuFqjaz68FrG8r9xpdjurn2S1zi/upc1G/K1G7haqfoyrHfYxNb&#x2B;4v/vydq2cVy5zdMrdYjtqu7&#x2B;Mn8TD&#x2B;pTJasufA72Tu6jd970EkDlXzxEvdPImpJUhL/Iwzk0XxzVv0lEPWZ5yZLL5&#x2B;dstc&#x2B;c7Vs0q&#x2B;xkvi6lhKzJve3B&#x2B;oJa5eF1TifufvPk8viZeqA&#x2B;Kdn7/eL0/&#x2B;ssfzPkTiUBX7C0flnhXbjV/cNsWvT1xt92qVK3F7bfMSsP4aL4nrcv7yV86X2S1zK&#x2B;oTDyLxINvUcdznVur9mP7/Z3vuWrZN8h7dKkgcqmLx&#x2B;r2ytZPJrPToLXElLl1OSmDueIk2yGu8JK5LtJTEvbpTKhW1/rufnP0k7vV&#x2B;TP//sz1bOo/IkvV7h9yLSBwqZlffb&#x2B;XBp982flHbFre0VVeBkl52wxbfLxBLSdzvNeVa4n6tfK8vGd2t&#x2B;1q2xGvxJWpcknnqbdnz7vuO&#x2B;xGJQ8XMWbWd&#x2B;cA94tUn/uWvnD&#x2B;kT1zto&#x2B;SqhKr/rI8Y8XuNl8RVf3UlfeL6vu73ob4oLSdxdZ7u/nK/PnG/OiCls3HX&#x2B;3L/6h2O&#x2B;xGJQ0W8c&#x2B;CILF7fZfxitjFeEtdHjej7uUeQ6Pu6&#x2B;9L9XuMncbWf12gQd1le56EErM47qMT1stWHV5DRKfSHV5ZF67ukT1vqDYlDRSzbsJcl1SyMl1DJ6Exr&#x2B;4Asf76zeE8icaiI6zOvGr&#x2B;IydAg8fik6&#x2B;CncsODG4v3JBKHwLzR/Z4se4E5wgkxncef75YdPe&#x2B;JCBKHCnh8/R5mKSTEgrRtHZBlG453qSBxCMwtCzbLW7/&#x2B;2PgFTEjcs2PfoNz6WLuIIHEIyKHfDkrL0m3GL15CyPHcueRX8pvDHyNxCEZuzyFZuK7T&#x2B;IVLCDmex1o7paOzgMQhGGtf75PVr/za&#x2B;IVLCDmeVS/vk3Wb9yFxCMaja3fJ8x0F4xdurTO7Za7jwRz9wZdK5vjwm/TJ7/F6Uyk1GdZIH6eSucWzG7YYn4fd9mzYVpBFbbuROARj4bo9kuse3RNebXpzv0Mc6mlFfZ9qJmuyXeK2LhDh/kAlzmztPioL2/YgcQjGbYu2yva&#x2B;Y8Yv3FrmO1fPcjwC7iWbSmf802ftO&#x2B;PMpOPn4SzAoJerPxrfU/jMsTBEucfa/eZRcZ9Ppec3UgtE2PSBZ1u29w7KHYu2InEIxk3zN8nO/Z8Yv3BrGV0YpVrMlcz4V6o7ZTgLMOhyVpLUX6f2c//u9Z5tXiBCzb9i&#x2B;tqwMW/v/0Runr8ZiUMwZj38mnSO4mXY3FOkzlv0lG&#x2B;3QpgSDzJ3d7kpYUulVJ&#x2B;4DQtE0KXin86Dn8oND21E4hCM0T5nilvitrTEvbZ5fcDo&#x2B;7oXXnC32PUWtF93SqWiLvUho&#x2B;qsmgUi9GXqyNBcn3kViUMwRrvEN72531OMSnDZDVuGLLBgY0vc632Vapl79fvbtEAELfHSQeIQmNEu8Z7C0C/R9NEpSvLuLwr1373m3i43xLDc6/26Nvz6xN2t9Er7xG1bIII&#x2B;8dJB4hCYOEjcPTqlp&#x2B;A9Tlz/J3&#x2B;5BRT0VXuUTPWfq12AQe&#x2B;K0CWu3od&#x2B;zqUk6NWdYdMCEaU&#x2B;gAgShwqIg8Q3vbk/8AMmQb84DCOlvoSNcuhKKR8kDoGJg8SjIg7VmvUaUTJawoLKwYLEITBxkTghUQoSh8AgcULsCxKHwCBxQuwLEofAIHFC7AsSh8AgcULsCxKHwCBxQuwLEofAIHFC7AsSh8AgcULsCxKHwCBxQuwLEofAIHFC7AsSh8AgcULsCxKHwNgo8d37B&#x2B;Xm238i51/0TZnSMFWmn32O56x8hJTK9LPPkSkNUyV18bfkljvmyO7&#x2B;j41f20gcRhzbJH7Hvz0o48ePlxubb5Lt27fLoUOHTFcRRJhDhw7Jtm3b5Ac3NstJJ50kd947z/g1jsRhRLFJ4pdcfrXcP/cB01UCo5g598&#x2B;Vy6&#x2B;63vi1jsRhxLBF4pdcfrXcffc9pqsDYsCdd/5ILrvyOuPXPBKHEcEGid9xz0NyHy1wCJF759wnP/rJvxu/9pE4DBvTEt&#x2B;9f1DGT5hguhoghowdO1Y6B/7DuLCROAwL0xK/&#x2B;fafSHPzTaarAWJIOv19a1d7QuIQGNMST138Tdm&#x2B;fbvpaoAYksvl5MKvX2pc2EgchoVpiU9pmMowQjDCwMCATD3tdOPCRuIwLExLfPrZ55iuAogx088&#x2B;x7iwkTgMC9MSTyS4VMEciUTCuLCROAwLJA5xBolD5EHiEGeQOEQeJA5xBolD5EHiEGeQOEQeJA5xBolD5EHiEGeQOEQeJA5xBolD5EHiEGeQOEQeJA5xBolD5EHiEGeQOEQeJA5xBolD5EHiEGeQOEQeJA5xBolD5EHiEGeQOEQeJA5xBolD5ImrxBOJhKTTacffcrlcoPPR98vn85JIJCSXy4mISCqVkkQiIVdddZXj75VS6hjVkkgkPJPP54dVrh9BzztovdcCJA6RJ84SdwumGol7lTsS1EJsiURCstms42/pdFpSqdSIHqdSkDgSh2EQZ4mn02lJJpPFv3nJRG&#x2B;xKuGr35PJpKO1qe/b1tY25ENC367IZrOOv6t/Hfgdo9R5qf3S6XRxWyaTcbzGLfFy79ndSvd6D36v0c9b/ZzJZIr7qXPR32vYIHGIPHGWeC6Xk1QqVRSdW2jJZLK4Tck2n8&#x2B;X7OpwS0v9PZlMFqWVyWQcslb7BD2G33npEte36e&#x2B;5XEvcq2x9m9d78HuNl8TVsdT7c7/XsEHihigUCpLJZKSpqUkaGxulvr5eZsyY4dvnR&#x2B;yOCdxy8ROn3hJVEqtU4l6SUtJ1/63UubjP131e7m3u38vVv9d5er1n/XxLvcbrvPV/TagPUCQeM4k3NzdLQ0ODtLS0SGtrq/T398vhw4etKc/247qJe0tc5HirMpVKOWTiJRYv6VQrcYXevaBSSuKlziuIxFVLWm3TW&#x2B;buLiGVUqIt9ZpyHz5IPIYSnzZtmqxZs8ba8mw/rhdI/DjJZLLYlyxS&#x2B;5a4iLNLwX3MWrXEdWnrXTHqfPz6pUu9B7/XlGuJl2rlhwUSD5Fp06ZJR0eHteXZflw/kPhx9BalYiT7xN0t/2QyOUReanjicPvEg0pcHdPdJ672UedQ6j2Ueo2XxFU/On3iMZN4c3PziLZcR7o8249bCiR&#x2B;Ar0lru&#x2B;n4jU6JKjE1e/uDwolbiVYXYh&#x2B;x/A7r2okro8a8Spb39/vPfi9xk/ipeozbJB4CBQKBWloaLC2PNuPW464ShzCxasbyAaQeAhkMhlpaWmxtjzbj1sOJA5hgMRjLPGmpiZpbW21tjzbj1sOJA5xBomHQGNjo/T391tbnu3HLQcShziDxEOgvr5&#x2B;RMdPj3R5th&#x2B;3HEgc4gwSD4EZM2ZYXZ7txy0HEoc4g8RDYKRvcpND2mwEiUOcQeIhgMRrCxKHOIPEQwCJ1xYkPpRMJiOZTKb4NKR78Qj1gE65xQ7KLYoQpAw/3FPY6g/rBD2ncnPFjCRqxkjbQOIhgMRrCxJ3ks/ni7JRT1B6PZ2oHpsvV1YtJK4mzXKXFVTkijAlLnLiw9EmkHgIIPHagsSdpNPp4mPjSuJqhkOREy1Kt8T1VrHXogj67/rj5&#x2B;XK8MJL/vpcJKUev/daxEJ9UKmfg7zeb&#x2B;EJvVz1YaO/F9v&#x2B;fyPxEEDitQWJO9HPR0lcb0Gqn3WJB1kUwW&#x2B;/cmW4KdViDjKbYZDulKAS9zpXfe4UJXr39LPVdiHVAiQeAki8tiDxE7inVVUS1/tzlYTU3ytdFMHdKi1Xhht1Tl6EKfFy0&#x2B;d6lSNiX5cKEg8BJF5bkPgJ/CQucuL/n/qvW&#x2B;LuuBdF8BN1uTL0bot0Om1NS9xrm9cHjJfE3V8UmwSJhwASry1I/AT5fN5X4moVGtUi1wVcyaIIfi3xShYJ1rthcrmc70IVtMTLg8RDYKSfdETiTpC4E68&#x2B;cZETI0KUgNx94uUWRVD7ufuSy5XhhT46RX3w6H3R6n3oixpXIvEgrw8yZzl94khcRGiJ1xrTEp9&#x2B;9jmmq8CB1&#x2B;gUkaFiLTU6xWtRBPd&#x2B;akWdcmX44TVOXP&#x2B;Q0bf7SVw/pvvncq/3k7jeNeQlcdvug&#x2B;lnn2Nc2EjccHm2H7ccpiU&#x2B;pWGqHDp0yHQ1FNHHiUcRm&#x2B;brdveR29aVMjAwIFNPO924sJG44fJsP245TEv8gou/Jdu2bTNdDQ5sk01UcC/f5m6hV9LvHwbt7e1y4dcvNS5sJG64PNuPWw7TEr/ljjly443NpqsBYsisWWm59a4HjAsbiRsuz/bjlsO0xHf3fywnnXSS6WqAGDJmzBjpOvh748JG4obLs/245TAt8Z7CZ/Kje&#x2B;fJfffNNV0VECPu/ckcueu&#x2B;&#x2B;cavfSRuQXm2H7ccNki8p/CZXH7V9XLnnfYtJA2jj9tuu12uvCZt/JpH4paUZ/txy2GLxHsKn8llV14nc&#x2B;bcZ7pKYBRz70/myJXX2i1wJB5yebYftxw2Sbyn8Jn86CfzpK6uTmalvy&#x2B;5XE4GBgZMVxFEmIGBAWlvb5cbZqVlzJgxVnehIHFD5dl&#x2B;3HLYJvGewmfSOfAfMrtlrlzw9Utl6mmny/Szz/GcW4SQUpl&#x2B;9jky9bTT5YJ/ukRuvesBa7/EROKGy7P9uOWwUeKExD1IPMTybD9uOZA4IfZlxCReamazsEDitQWJE2JfkHiI5dl&#x2B;3HIgcULsi6fE3bOeqSkxS81KpvbV191TM5qpn3X08vX5jhOJRHGF8EpB4rUFiRNiXzwlrotVCb2SSd7Lra3ntUagXka5qTX9QOK1BYkTYl&#x2B;GSNzdBVLNSh2VrPYhcmKSe30V7mpA4rUFiRNiXzxb4no3iMpISdxr3T&#x2B;1nBUSN3vcciBxQuzLEIm7RUpLPHyQOCEkaHwlrlBfMnqti6cvxRRU4iLl&#x2B;8SrlThrbNYWJE6IffHsTlHiVsLWF2b1W09P5MSIk3IS1/f1Gp1CSxyJE0KChSc2QyzP9uOWA4kTYl&#x2B;QeIjl2X7cciBxQuwLEg&#x2B;xPNuPWw5bJf7vi5&#x2B;Wpou&#x2B;KWf86VkyderpgWatI0TP5MlT5AtnJeX8i78lP13ytPFrGolbWp7txy2HbRJf8cxL8j//&#x2B;Az57ne/J6tWrZK&#x2B;vj4ZHBw0XU0QQQYHB6Wvr09Wrlwp113/PfmTM86Ulc&#x2B;&#x2B;YvwaR&#x2B;KWlWf7ccthk8QfWfaMXPEvV0p3d7fpaoFRSGdnp1x2&#x2B;RWy6Getxq91JG5RebYftxy2SPyx5c/IRRf/k&#x2B;nqgBhw4UUXyaKVa41f80jckvJsP245bJD4imdelsuvuMp0VUCM&#x2B;PZlV8iqZ81f&#x2B;0jcgvJsP245bJD4//jjM&#x2B;hCgVDZs2ePnHHmWcavfSRuQXm2H7ccpiX&#x2B;74ufkuuu/57paoAYcs2118mCZc8YFzYSN1ye7ccth2mJn3/RN2XVqlWmqwFiyPLly&#x2B;XCb3zbuLCRuOHybD9uOUxL/E/&#x2B;9AvS19dnuhoghvT09MgXzvoz48JG4obLs/245TAt8alTT2ccOBhhcHBQGqaeZlzYSNxwebYftxymJW5rvUA8SCQSxoWNxA2XZ/txy4HEIc4g8RBA4rUFiUOcQeIhgMRrCxKHOIPEQwCJ1xYkDnEGiYcAy7PVFiQOcQaJh0B9fb0cPnx4xMpD4k6QOMQZJB4CjY2N0t/fP2LlIXEnSBziDBIPgaamJmltbR2x8pC4EyQOcQaJh0Amk5GWlpYRKw&#x2B;JO0HiEGeQeAgUCgVpaGgYsfKQuBMkDnEGiYdEc3OzrFmzZkTKQuJOai3xpU&#x2B;9gMTBWpB4iEybNk06OjqGXQ4Sd1JriU&#x2B;YeIqMHVsnt9xxHxIH60DiITNt2rRht8iRuJNaS/zeh5bIyeMnyLhxJ0td3bghMre1XiAeIHEDNDc3S0NDg7S0tEhra6v09/dXNI4ciTsJo0&#x2B;8/g9PlUQiIYlEwiHzPQc&#x2B;sbZeIB4gcUMUCgXJZDLS1NQkjY2NUl9fLzNmzCiKgtiXMWPGOH4/aexY&#x2B;folVyJxMAoSjyC0xJ2YaImPrauTm&#x2B;&#x2B;YI7v7P7a2XiAeIPEIgsSdhNknruStb7e1XiAeIPEIgsSd1FriEydOkpPGjh0i79Ei8Ww26&#x2B;gmymQyoR4/n89LIpGQXC5X8WtzuVyx/odTTpRB4hEEiTuptcQff/L5ktttrZcgKIHn8/ni3xKJhKTTaYNnFRxd4nEFiUcQJO6EJzarx6vlqlq0&#x2B;Xy&#x2B;KMlUKlV8n&#x2B;pvqtWufwi4W/Xqw0CVmU6nh7T49Ra0vl1/vV&#x2B;56vdkMunZEtdfo/5e6lyiCBKPIEjcCRKvjlKt2GQyKdlstrhPNpstbtN/VyJUEtdlqbfydXHq20T8u0FSqVRRrn7llupOSSaTxdcHPZcogsQjCBJ3gsSro5TElUDVPkrS7tforXa9S8Zrm16O1zZd4plMRlKpVHFfv3L9JO4&#x2B;nsiJD6ZS5xJFkHgEQeJOkHh1VNIS17tLksmkY199u&#x2B;pe0VOpxL3Oy69cP4l7laE&#x2B;mJA4EjcOEneCxKvH3VUi4t3SDdISd&#x2B;9bbUvc3SovVS4tcSQeSZC4EyRePeVGp7gFqrZ79Ym7Ba&#x2B;&#x2B;DK1E4no/uKJUucPpE0fiSNwYSNwJEh8e&#x2B;mgT90gNL4nr&#x2B;7u/2FSCVaIP0vrV5ZtMJod0m6j&#x2B;ca9yRU6MQKl0dAoSR&#x2B;LGQOJOkLg5vPrIIVyQeARB4k6QeHioVqv7C0YwBxKPIEjcCRKHOIPEIwgSd4LEIc4g8QiCxJ0gcYgzSDyCIHEnSBziDBKPIEjcCRKHOIPEIwgSd4LEIc4g8QiCxJ0g8XDJZDKO2QXdcc9F7rWPevhGPUnpfo16uMfvEXp3WQr11GecQOIRBIk7QeLhkc/nHZLUH8FXJJNJh5TdT1HqqIeF3HWYSByfI9xL4vrj9CInJsfSf4/y/OCVgsQjCBJ3gsTDI51O&#x2B;84trnA/qh9E4qlUyjGLYSqV8pS43yPy7vOI0/8TJB5BkLgTJB4eXi1mt8TV3/1mJdRREtdbz&#x2B;pnv5a46mrxOq5C/1AY7SDxYWBqkVYk7gSJh4OaoErHT6ZeE1TpUeUoiet92UrAfhJXr9PLc59DnLpUkPgwMLVIKxJ3gsTDoRKJV9oSV/vp/y0lcfd5uY&#x2B;RyWQis9jzcImdxN0rhLgvwFIT&#x2B;7i/DddbFWEu0orEnSDxcMjn84Ek7m7cBJW4mktctci9JJ7NZj1Hn&#x2B;gtfxFa4jakJhJXF4Pf716TyOvb1EWiPuVNLdKKxJ0g8fAI0ifuHj0SVOKqgaVe69cSdx/Ta2EL&#x2B;sTNp6YS9/pnmVfXiHudQXdZppaGQuJOkHh4eI1OccfdAvbaR4lYl7i7W6RUd4q7LK9/NceFWElcZOgqJuqCdP9dvyD9&#x2B;r5NLdKKxJ2Ylvipk6fI4OCg6WoIBfc4cRuJU1fKsWPHZPKUBuPCDlXiOu4FV/1WKKlU4rTEw8W0xL9w1p9JX1&#x2B;f6WoIDZslWeo&#x2B;Ho309PRIMvnnxoUdmsTdS0l59Ym7W&#x2B;Ze37DrY1ir7RNH4iOHaYmnLv6WrFy50nQ1QAxZtmyZXPTPlxkXdmgSFxHHqBCvL1z8Rq64l6Vy7x/mIq1I3Ilpif90SVa&#x2B;e/33TFcDxJCZ114nC5atMS7sUCU&#x2B;GkDiTkxLvKfwmfzxGWdKZ2en6aqAGLFr1y4586yk8WsfiVcBEndig8RXrnlFLr3sCtNVATHiW5deJqvbXjd&#x2B;7SPxKkDiTmyQeE/hM1m4slUuvOgi09UBMeCCCy&#x2B;SJU&#x2B;sN37NI/EqQeJObJF4T&#x2B;EzeWzFWrnksu/Inj17TFcLjEJ27dol37zkMusFjsTLgMSd2CTxnsJnsmrtq3LGmWfJzGuuk&#x2B;XLl0tPT09sxpHDyHLs2DHp6emRZcuWyTXXXidnfiEpq9teM36NI/FhgsSd2CZxlflLn5ELv/FtOfMLSZk69XTfJxcJ8cvkKVPkf/3ZX8iF37jM2lEoSLwKEgkkrmOrxAmJc5B4CZC4EyROiH1B4iVA4k6QOCH2BYmXAIk7QeKE2BckXgIk7gSJE2JfkHgJkLgTJE6IfUHiJUDiTpA4IfYFiZcAiTtB4oTYFyReAiTuxFaJL37iOfnGpVfKl6b/g0w85RSZPHmy8YdHSHTSMPU0OWXSJPnfjf8o//ztq2TJ6ueMX9NIfIRIJJC4jm0Sf/bFbfLnf/lFufqa62TRokXS29srH374oelqgghy5MgR6e3tlYULF8rVM6&#x2B;Vv/zrv5O1L283fo0j8WGCxJ3YJPHVbRvl/Asulm3btpmuFhiF5HI5Oa8pJU8/t8n4tY7EhwESd2KLxH&#x2B;&#x2B;fqOc97Wvma4OiAFfPfc8WfO83SJH4iVA4k5skPizL26T1IUXm64KiBFfa7pA2n65w/i1j8SrAIk7sUHif/FXX6QLBUKlvb1d/vqLf2/82kfiVYDEnZiW&#x2B;OIn1svMa641XQ0QQ666eqYsfeoF48JG4hWCxJ2Ylvg3Lr1SFi5caLoaIIYsWLBALrl8pnFhI/EKQeJOTEv8S9P/QXp7e01XA8SQ7u5umX72DOPCRuIVgsSdmJb4xFNOYRw4GOHIkSNyyqRJxoWNxCsEiTsxLfHJkyebrgKIMZMnTzEubCReIUjciWmJ21ovEA8SiYRxYSPxCkHiTpA4xBkkHkGQuBMkDnEGiUcQJO4EiUOcQeIRZMaMGUaOa6uskDjEGSQeQerr6&#x2B;Xw4cOhH9dWWSFxiDNIPII0NjZKf39/6Me1VVZIHOIMEo8gTU1N0traGvpxbZUVEoc4g8QjSCaTkZaWltCPa6uskDjEGSQeQQqFgjQ0NIR&#x2B;XFtlhcQhziDxiNLc3Cxr1qwJ9Zi2yioMiS/LvojEwUqQeISZNm2adHR0hHY8W2UVhsTH1tXJhImnyI/mzEfiYBVIPOJMmzYttBa5rbIKQ&#x2B;KzWx6Quro6GTfuZJl4yiSHzG2tF4gHSHwU0NzcLA0NDdLS0iKtra3S399fk3HktsoqrD7xcSefLIlEQhKJhEPmttYLxAMkPkooFAqSyWSkqalJGhsbpb6&#x2B;XmbMmFGUzkjmc5/73IhnzJgxVedzn/P&#x2B;&#x2B;x/8wR&#x2B;MaLzqYuzYOiQORkHiEBglq//6r/8a8fznf/5n1fnu3F9K18HfD0nnwH&#x2B;MaMZPmHiiJX7yeKkbd7LMbpmLxMEoSBwCY6uswuhOuf2eh6WubpxD3mqbrfUC8QCJQ2BslVUYEq&#x2B;rGydj68Y55D1aJJ7NZh1dRJlMJtTj5/N5SSQSksvlKn5tLpcr1v9wyokySBwCY6usai3x7kOfymM/a/Pdbmu9BEEJPJ/PF/&#x2B;WSCQknU4bPKvg6BKPK0gcAmPrzcITm9Xj1XJVLdp8Pl&#x2B;UZCqVKr5P9TfVatc/BNytevVhoMpMp9NDWvx6C1rfrr/er1z1ezKZ9GyJ669Rfy91LlEEiUNgbJUVEq&#x2B;OUq3YZDIp2fM1cbAAABAiSURBVGy2uE82my1u039XIlQS12Wpt/J1cerbRPy7QVKpVFGufuWW6k5JJpPF1wc9lyiCxCEwtl7oSLw6SklcCVTtoyTtfo3eate7ZLy26eV4bdMlnslkJJVKFff1K9dP4u7jiZz4YCp1LlEEiUNgbJUVEq&#x2B;OSlriendJMpl07KtvV90reiqVuNd5&#x2B;ZXrJ3GvMtQHExJH4rHFVlkh8epxd5WIeLd0g7TE3ftW2xJ3t8pLlUtLHIlDBdgqKyRePeVGp7gFqrZ79Ym7Ba&#x2B;&#x2B;DK1E4no/uKJUucPpE0fiSDx22CorJD489NEm7pEaXhLX93d/sakEq0QfpPWryzeZTA7pNlH9417lipwYgVLp6BQkjsRjh62yQuLm8Oojh3BB4hAYW2WFxMNDtVrdXzCCOZA4BMZWWSFxiDNIHAJjq6yQOMQZJA6BsVVWSBziDBKHwNgqKyQOcQaJQ2BslRUShziDxCEwtsoKiUOcQeIQGFtlhcSHkslkHBNYeT1AUy3uJyjVQzoiMqwhh&#x2B;5H5sNc3MFdT15j39V56dMUqKdMTYLEITA2ykoEibvJ5/MlxaLm3q6WWi3EELa4FV5TD6TT6SF1qJ4cdS&#x2B;YoT4wTYHEITC2yUqBxJ2k0&#x2B;khk1p5bSv3&#x2B;Ll75kD3Y&#x2B;6qtVrNQhD6dn0fr5Z4qUUo9PNx/93v/N3oj/DruP&#x2B;/6gtPlNs3TJA4BMY2WSmQuBO/88lms47WZZD5TNz7igxtievCrWTxBa8JqrwkrgvYPVeLVxnu8/X63a8O/ND/deP1IZlKpYyt7YnEITC2yUqBxE&#x2B;g90/reEksiMS95OaeOdCvzErL95J4kKlvdfwm3CpVX&#x2B;7&#x2B;fa9Js/Quk2w2a1WXChKHwNgkKx0kfgI/iSeTyZJraXr97haaan26xVfNQhB&#x2B;AnZLvNQiFOW&#x2B;tPU7/1J14D6OqjN9FkUVnUwmY2xxaSQOgbFJVjpI/AT5fH6I9NLptKdgKpmS1U/Aw10IYrgt8aAzKJZ6b6X6xMstMKGgJY7EI4FNstJB4k708yk3VazeQtW/NHS/zq9PvNqFIESOi9DdX15Nn7j7XwheLXi/PnH3sRX6F636ep/6dv2DkT5xJB4JbJOVAok70b948&#x2B;oG8PqyUXVD6ILUR5W4Jad3KVSzEIS7nFQqVRRhqdEpbonrZbi7TEqdvxv3FLv6B4D&#x2B;5anC/SWtyWsAiUNgbJOVwrTEp049zXQVOCg3TjzK2LgIhelx4g1TT5PuQ58alzYSjwBI3DunTJokR44cMV0NDkyLZaSwfRGKSvrla8EHH3wgkz7/eePCRuIVUmpx2FqCxL0z/ex/lN7eXtPVADGkq6tLzj7n/xgXNhKvkFo99lwOJO6df/72VbJw4ULT1QAxZMGCBXLpFdcYF3YsJF7uEeBS/1x0j03Vv3ypdIVvv0egg4DEvbNk9QaZec21pqsBYshVV8&#x2B;U5dkXjQt71Eu83CPAfo8Oq236ELB0Ol2yO8WrrCCPQAcBifvnr/7m74wNMYN4snnzZvnil6Ybv/ZjJfFyjzArlLi9trkfttAlXuqhhEoe7PADiftn7cvb5WtNF5iuCogRXz2vSdZvfNv4tR8LiYuUf4TZHX0uaL&#x2B;yRJwS99o/lUpJJpNB4iHk6ec2yVfPPdd0dUAM&#x2B;MpXz5WfP99u/JqPlcR1gj46XKnEaYmbT/a5TXJ&#x2B;6kJpb283XS0wCtm8ebOce16TPGO5wEedxMs9Auz36LCIcxKeTCZTnCSo2j5xJF77tP1yh/zN3/69/Ou/zpRHHnlEuru7rRtHDtHggw8&#x2B;kK6uLlmwYIFc9a8z5W&#x2B;/NF3Wb3zL&#x2B;DUeO4mLlH8E2G/kivthB/f&#x2B;lY5OQeLhZenTL8ilV8yUs/9hhpwyaZJMnjzZs&#x2B;uMEK9MnXqaTPr85&#x2B;WcGV&#x2B;Wb//LNdaOQomNxEcDiYSd/0tslTghw4mNj9JXEiRuIUicEBI0SNxCkDghJGiQuIUgcUJI0CBxC0HihJCgQeIWgsQJIUGDxC0EiRNCggaJWwgSJ4QEDRK3ECROCAkaJG4hSDxYNr3VLzNvuFm&#x2B;8rUL5eTx440/&#x2B;Uein/ETJshXmy6Sa2fdIlt25o1f40g8oiQSdv4vsUnit951v5x2&#x2B;ukyb9482bdvnxw7dsx09cAo4KOPPpLe3l6ZN2&#x2B;eNEydKrffnTF&#x2B;rSPxCILES&#x2B;eB&#x2B;cvklltmm64OiAE33niTPPToSuPXPBKPGEjcP7feNVduueWHpqsCYkTzTTfLbT&#x2B;2t0WOxC0EiXtn01v9ctrpp5uuBoghk6dMka27DxoXNhKPCEjcOzO/d7M8/PDDpqsBYkgmk5Hr0rONCxuJRwQk7p2vfu1C2bdvn&#x2B;lqgBjS09Mj551/sXFhI/GIgMS9c/L48YxCASMcPXpUJkycaFzYSDwiIHHv2FovEA8SiYRxYSPxiGCrrJA4xBkkDoGxVVZIHOIMEofA2CorJA5xBolDYGyVFRKHOIPEITC2ygqJQ5xB4hAYW2WFxCHOIHEIzIwZM0yfgidIHOIMEofA1NfXy&#x2B;HDh02fxhCQOMQZJA6BaWxslP7&#x2B;ftOnMQQkDnEGiUNgmpqapLW11fRpDAGJQ5xB4hCYTCYjLS0tpk9jCEgc4gwSh8AUCgVpaGgwfRpDQOIQZ5A4VERzc7OsWbPG9Gk4qLXElz71AhIvgdfCvvl8XkRE8vm8JBIJyeVyhs9y9ILEoWKmTZsmHR0dpk&#x2B;jSK0lPmHiKTJ2bJ3ccsd9SNwDt6QzmYwkk0mDZxQvkDhUxbRp06xpkdda4vc&#x2B;tEROHj9Bxo07Werqxg2RORJ3SjyXyxXrRG&#x2B;Jq5/T6XSxxZ7JZIqvy2azjtZ8Op12lJdKpSSRSEgymSweL5vNFveLK0gcqqa5uVkaGhqkpaVFWltbpb&#x2B;/38g48jD6xOv/8NSiXHSZ7znwCRL3aImnUikR8Ze4yAlpe5WjtuXz&#x2B;aLEs9lssXwl/3Q6Xfx7XEHiMCwKhYJkMhlpamqSxsZGqa&#x2B;vlxkzZnj2k0Y9Y8aMcfx&#x2B;0tix8vVLrkTiAfvE1c/ubfl8vvg3hb5NSVztk8vlih8SdNsgcRgFmGiJj62rk5vvmCO7&#x2B;z9G4j7dKUrOQSQucryF7fVh4Ja4OmY&#x2B;ny/KPM4gcYg8YfaJK3nr25H40NEnyWRSstlsYIm7RV1qm8jxbpR0Ou3oU48rSBwiT60lPnHiJDlp7Ngh8kbixxmJlrj&#x2B;ZaiIFL/E9JO46jNn6CISh1FArSX&#x2B;&#x2B;JPPl9yOxIf2iasvGyvpTlHiVq9XrXkviefzefrD/xskDpGHJzbjB0MLT4DEIfIg8XihDz8EJA6jACQOcQaJQ&#x2B;RB4hBnkDhEHiQOcQaJQ&#x2B;RB4hBnkDhEnlkPvyadA79H4gHR5x7xGh6oj/oot10NE/QbYuiFe6KroA/s6MMV9XHl7jHmI43&#x2B;mL&#x2B;N2CjxzoOfyg0PbUTiEIyb5m&#x2B;Snfs/QeIBcD&#x2B;qXuppS7XdLeRkMlkUuXusdznUo/U6lYhcEabERZwffLZho8Tf3v&#x2B;J3Dx/MxKHYNy2aKts7zuGxAPgnvXPS&#x2B;L64&#x2B;xeEvd6IjOoxL2OV6o89yRZ6vWqFZ9MJh0/B3m931S4ernqw8Y9X4uN2Cjxjt5BuX3xViQOwVjYtltyXUeReAC8WsFuqep/8&#x2B;sa8XsKsxSlWszuuVbKSdyvJR5U4iLeU&#x2B;Gq96pEr7&#x2B;vVCpl5WP&#x2B;Nkp8a9dRWbxuLxKHYDy6dpc831FA4mXI5XJDHlX36s/WW6d&#x2B;EndLV49f/7F6lN6LMCUeZO4Wrw8nW7tUbJT4hm0FWdS2G4lDMNZu6pMnXnkXiZfBT&#x2B;KlWpfDaYnr3RbpdNqalrjXNq8PGC&#x2B;J2/iov40SX/nyPlm3ZR8Sh2Bs21uQhes6kXgZvCaNqkbipaRZDv14uVzOMcGVV3m0xMtjo8QfbeuUjq4CEodgHHp/UO5c8itjF&#x2B;z4CRPko48&#x2B;Ml0NgQjSJ&#x2B;7e7jU6RclsOKNT1IeK&#x2B;xj67/oXjEGHGJZ7vd8silHsEz969KhMmDjRuLTduWNxTt774GMkDsH54SNb5K13PzZywZ7bdJH09vaaroJABBmdolOuz7xSiYt4jxPXy9W3&#x2B;0lcPzf3z&#x2B;Ve7ydxfXSKl8Rt/BdXT0&#x2B;PnHf&#x2B;xcalrWfHvkGZ/dgWEREkDsF5/Lm9si530MhFe&#x2B;2sH8q8efNMV0Eg3OPEbcKmWQndfeS2dqVkMhn57vdvNS5uPa3tA7Jsw14RQeJQATu635PHN/QYuWi37MxLw9SppqsgMLYKySReo2z0FrqtC1D80amnSm6PuZFZXlmyoVve7HlPRJA4VIjJOVRuu/sBubH5JtNVADEi/f0fyJ33Pmxc2nq6Dn4qNzz4avEckThUxLINndK2dcDYBfzwoyul&#x2B;aZbTFcDxID0938gP130pHFpu7O2fUBWvNBZPE8kDhXRN3DE6FDDnsJncvvdGZk8ZYpkMhnp6emRo0ePmq4WGAUcPXpUenp65MEHH5Q/OvVUufPf7GqBqyxc1yn7Bj4snjcSh4q5b9Ub8truw0Yv5K27D8p16dly3vkXy4SJEz1HeBBSSSZMnCjnnn&#x2B;xXP&#x2B;D/2tdH7jKxp3vy9zVOxz3IxKHitm977eSeept4xc0IXHL3Cffkr2/ft9xPyJxqIrF6/ZIe&#x2B;cR4xc1IXHJ5r0fyJLn9g65F5E4VMWB33wkdy/vMH5hExKX3LVsmwz8v2ND7kUkDlWz&#x2B;uUeWbP5gPGLm5DRnuzr&#x2B;&#x2B;XpV97xvA&#x2B;ROAyL&#x2B;5/YIXsO/M74RU7IaM2u/t8N&#x2B;TJTB4nDsKBbhZDa5q6l3t0oCiQOw&#x2B;aVN/Ky/BfvGL/YCRltWfrCO/Lqm6Xnu0HiMCL87BddsnZL3vhFT8hoyZrNB2Tli91l7z0kDiPG/DU7pW2rmVkOCRlNWduel0fX7g503yFxGFGe3bRPWtvNza1CSNTz7Ja8tG5&#x2B;N/A9h8RhxHlk7S66VgipIs9uyctjrcFa4AokDjVh5S&#x2B;65Gcv8mUnIUGz4hfvyBMvle8Dd4PEoWa88sYBuXt5B&#x2B;PICSmRXf2/kx8v2yavvVXdqktIHGrKgfc&#x2B;krmrd8gzm3iykxB3ntnUL3NX7yg5DrwcSBxC4clf9siPl3fIFibNIkQ2dx6RHy/bJk&#x2B;/0jPsewuJQ2jk3/tIHn9ur2Seels27nrf&#x2B;I1ESNjZuPN9eeCpt2Tpc3uH1frWQeIQOnvefV/mrn5DFq/vlLXtA9J18FPjNxchtUrXwU9l7Za8LFzXKQ&#x2B;s3jFkPvDhgsTBGL35I7L8&#x2B;U654cGN8viGHmnbOiA79g0av&#x2B;kIGW527BuU1vYBeXxDt9zw4EZZ8UKn9GlLqo0kSBys4M2e92Tphr0y&#x2B;9EtcueSnDzWuldWvbxPNmwrSK77qGzvHZS3938inbTaiQXpPPipvL3/E&#x2B;noHZStXUdlw7aCrHx5nzzW1il3LsnJrY&#x2B;1y9INe&#x2B;XNnvdqfu8gcbCO3xz&#x2B;WDo6C7Ju8z5Z3LZbFq/fK7cv2io3z98sNzy0Ua7PvEqI0dzw0Ea5ef5muX3xVlm8fq8sbtst67bsk46u38h7H3wc6v3y/wHuufXphBAKnwAAAABJRU5ErkJg" alt="image-receiptbundle" class="img-responsive">
+</p>
+<p>Die ProcessNotificationResponse liefert das Ergebnis der Validierung des gesendeten Meldevorgangs.</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="ig-view-footer" role="contentinfo" aria-label="Footer">
+                
+<div class="container">
+    <div class="row">
+        <p>Powered by <b>SIMPLIFIER.NET</b></p>
+        <div>
+            HL7<sup>&reg;</sup> and FHIR<sup>&reg;</sup> are the registered trademarks of Health Level Seven International
+        </div>
+    </div>
+</div>
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>

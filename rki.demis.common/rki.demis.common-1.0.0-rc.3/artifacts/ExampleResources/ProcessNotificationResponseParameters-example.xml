@@ -1,0 +1,138 @@
+<Parameters xmlns="http://hl7.org/fhir">
+  <id value="ProcessNotificationResponseParameters-example" />
+  <meta>
+    <profile value="https://demis.rki.de/fhir/StructureDefinition/ProcessNotificationResponseParameters" />
+  </meta>
+  <parameter>
+    <name value="bundle" />
+    <resource>
+      <Bundle>
+        <meta>
+          <profile value="https://demis.rki.de/fhir/StructureDefinition/ReceiptBundle" />
+        </meta>
+        <type value="collection" />
+        <entry>
+          <fullUrl value="https://demis.rki.de/fhir/Composition/548081b3-4de7-4329-a8d4-525453915c68" />
+          <resource>
+            <Composition>
+              <id value="548081b3-4de7-4329-a8d4-525453915c68" />
+              <meta>
+                <profile value="https://demis.rki.de/fhir/StructureDefinition/NotificationReceipt" />
+              </meta>
+              <extension url="https://demis.rki.de/fhir/StructureDefinition/ReceivedNotification">
+                <valueIdentifier>
+                  <system value="https://demis.rki.de/fhir/NamingSystem/NotificationBundleId" />
+                  <value value="8e879be5-37cb-4ea4-885a-1f4bb30e360a" />
+                </valueIdentifier>
+              </extension>
+              <status value="final" />
+              <type>
+                <coding>
+                  <system value="http://loinc.org" />
+                  <code value="77999-1" />
+                  <display value="Case notification comment" />
+                </coding>
+              </type>
+              <date value="2021-03-11T08:34:03+00:00" />
+              <author>
+                <reference value="Organization/DEMIS" />
+              </author>
+              <title value="Meldevorgangsquittung" />
+              <section>
+                <title value="Zuständiges Gesundheitsamt" />
+                <code>
+                  <text value="Zuständiges Gesundheitsamt" />
+                </code>
+                <entry>
+                  <reference value="Organization/1.11.0.11.01." />
+                </entry>
+              </section>
+              <section>
+                <title value="PDF Quittung" />
+                <code>
+                  <text value="PDF Quittung" />
+                </code>
+                <entry>
+                  <reference value="Binary/a8364648-7431-43e0-b454-a930de5e101e" />
+                </entry>
+              </section>
+            </Composition>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="https://demis.rki.de/fhir/Organization/DEMIS" />
+          <resource>
+            <Organization>
+              <id value="DEMIS" />
+              <name value="DEMIS" />
+              <contact>
+                <telecom>
+                  <system value="email" />
+                  <value value="demis-support@rki.de" />
+                </telecom>
+              </contact>
+            </Organization>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="https://demis.rki.de/fhir/Organization/1.11.0.11.01." />
+          <resource>
+            <Organization>
+              <id value="1.11.0.11.01." />
+              <identifier>
+                <system value="https://demis.rki.de/fhir/CodeSystem/reportingSite" />
+                <value value="1.11.0.11.01." />
+              </identifier>
+              <name value="Bezirksamt Lichtenberg von Berlin | Gesundheitsamt" />
+              <telecom>
+                <system value="phone" />
+                <value value="+49 30 90296-7507" />
+              </telecom>
+              <telecom>
+                <system value="fax" />
+                <value value="+49 30 90 296-7553" />
+              </telecom>
+              <telecom>
+                <system value="email" />
+                <value value="ute.geuss-fosu@lichtenberg.berlin.de" />
+              </telecom>
+              <address>
+                <line value="Alfred-Kowalke-Straße 24" />
+                <city value="Berlin" />
+                <postalCode value="10360" />
+                <country value="DE" />
+              </address>
+            </Organization>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="https://demis.rki.de/fhir/Binary/a8364648-7431-43e0-b454-a930de5e101e" />
+          <resource>
+            <Binary>
+              <id value="a8364648-7431-43e0-b454-a930de5e101e" />
+              <contentType value="application/pdf" />
+              <data value="JVBERi0xLjQKJfbkJSVFT0YK" />
+            </Binary>
+          </resource>
+        </entry>
+      </Bundle>
+    </resource>
+  </parameter>
+  <parameter>
+    <name value="operationOutcome" />
+    <resource>
+      <OperationOutcome>
+        <meta>
+          <profile value="https://demis.rki.de/fhir/StructureDefinition/ProcessNotificationResponse" />
+        </meta>
+        <issue>
+          <severity value="information" />
+          <code value="informational" />
+          <details>
+            <text value="All OK" />
+          </details>
+        </issue>
+      </OperationOutcome>
+    </resource>
+  </parameter>
+</Parameters>

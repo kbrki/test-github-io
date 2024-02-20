@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vaccineBAND_SNOMED"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/vaccineBAND_SNOMED"/>
+  <version value="1.0.0"/>
+  <name value="VaccineBAND_SNOMED"/>
+  <title value="Milzbrand-Impfstoff als SNOMED-Code"/>
+  <status value="active"/>
+  <date value="2022-11-30"/>
+  <description value="Das ValueSet VaccineBAND_SNOMED enthält die Codes der Milzbrand-Impfstoffe als SNOMED-Code."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="860818003"/>
+        <display value="Anthrax Impfstoff (Milzbrand Immunprophylaxe)"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="860818003 |Vaccine product containing only Bacillus anthracis antigen (medicinal product)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="74964007"/>
+        <display value="Anderer"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="74964007 |Other (qualifier value)|"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

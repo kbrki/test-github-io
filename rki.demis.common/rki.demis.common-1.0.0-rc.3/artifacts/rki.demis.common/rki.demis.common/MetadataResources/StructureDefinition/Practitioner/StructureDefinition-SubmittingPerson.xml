@@ -1,0 +1,221 @@
+<?xml version='1.0' encoding='utf-8'?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="SubmittingPerson" />
+  <url value="https://demis.rki.de/fhir/StructureDefinition/SubmittingPerson" />
+  <version value="1.4.0" />
+  <name value="SubmittingPerson" />
+  <title value="Einsender" />
+  <status value="active" />
+  <date value="2024-01-08" />
+  <description value="Der Einsender umfasst die Informationen zur Person, die die Probe einsendet. Er muss in der Meldung enthalten sein, wenn die Einsender-Einrichtung nicht enthalten ist." />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="servd" />
+    <uri value="http://www.omg.org/spec/ServD/1.0/" />
+    <name value="ServD" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Practitioner" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Practitioner">
+      <path value="Practitioner" />
+      <constraint>
+        <key value="noNumbersInName" />
+        <severity value="error" />
+        <human value="Vorname und Nachname des Einsenders dürfen keine Zahlen enthalten." />
+        <expression value="(name.family.matches('.*\\d.*')=false) and (name.given.matches('.*\\d.*')=false)" />
+      </constraint>
+    </element>
+    <element id="Practitioner.meta">
+      <path value="Practitioner.meta" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Practitioner.meta.profile">
+      <path value="Practitioner.meta.profile" />
+      <min value="1" />
+      <max value="1" />
+      <fixedCanonical value="https://demis.rki.de/fhir/StructureDefinition/SubmittingPerson" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Practitioner.name">
+      <path value="Practitioner.name" />
+      <short value="Name der Einsendenden Person" />
+      <definition value="Name der Einsendenden Person. Mindestens ein Vorname und der Nachname müssen angegeben werden." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="HumanName" />
+        <profile value="http://fhir.de/StructureDefinition/humanname-de-basis" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Practitioner.name.family">
+      <path value="Practitioner.name.family" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Practitioner.name.given">
+      <path value="Practitioner.name.given" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Practitioner.telecom">
+      <path value="Practitioner.telecom" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <short value="Kontaktangaben der Einsendenden Person" />
+      <definition value="Kontaktangaben der Einsendenden Person. Telefonnummern oder E-Mailadressen können angegeben werden." />
+      <mustSupport value="true" />
+    </element>
+    <element id="Practitioner.telecom:Email">
+      <path value="Practitioner.telecom" />
+      <sliceName value="Email" />
+    </element>
+    <element id="Practitioner.telecom:Email.system">
+      <path value="Practitioner.telecom.system" />
+      <min value="1" />
+      <fixedCode value="email" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Practitioner.telecom:Email.value">
+      <path value="Practitioner.telecom.value" />
+      <min value="1" />
+      <constraint>
+        <key value="validEmailAddress" />
+        <severity value="warning" />
+        <human value="Die E-Mail-Adresse muss valide sein." />
+        <expression value="$this.matches('^[a-zA-Z0-9._%+-]+@(?:[a-zA-Z0-9-]+[.])+[a-zA-Z0-9]{2,63}$')" />
+      </constraint>
+      <mustSupport value="true" />
+    </element>
+    <element id="Practitioner.telecom:Phone">
+      <path value="Practitioner.telecom" />
+      <sliceName value="Phone" />
+    </element>
+    <element id="Practitioner.telecom:Phone.extension">
+      <path value="Practitioner.telecom.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Practitioner.telecom:Phone.extension:comment">
+      <path value="Practitioner.telecom.extension" />
+      <sliceName value="comment" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://demis.rki.de/fhir/StructureDefinition/Comment" />
+      </type>
+    </element>
+    <element id="Practitioner.telecom:Phone.system">
+      <path value="Practitioner.telecom.system" />
+      <min value="1" />
+      <fixedCode value="phone" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Practitioner.telecom:Phone.value">
+      <path value="Practitioner.telecom.value" />
+      <min value="1" />
+      <constraint>
+        <key value="validPhoneNumber" />
+        <severity value="warning" />
+        <human value="Die Telefonnummer muss valide sein." />
+        <expression value="$this.matches('^[0+][0-9 \\-\\(\\)]{6,50}$')" />
+      </constraint>
+      <mustSupport value="true" />
+    </element>
+    <element id="Practitioner.address">
+      <path value="Practitioner.address" />
+      <short value="Adresse der Einsendenden Person" />
+      <definition value="Adresse der Einsendenden Person" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Address" />
+        <profile value="http://fhir.de/StructureDefinition/address-de-basis" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Practitioner.address.use">
+      <path value="Practitioner.address.use" />
+      <fixedCode value="home" />
+    </element>
+    <element id="Practitioner.address.line">
+      <path value="Practitioner.address.line" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Practitioner.address.line.extension">
+      <path value="Practitioner.address.line.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Practitioner.address.line.extension:Postfach">
+      <path value="Practitioner.address.line.extension" />
+      <sliceName value="Postfach" />
+      <max value="0" />
+    </element>
+    <element id="Practitioner.address.city">
+      <path value="Practitioner.address.city" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Practitioner.address.postalCode">
+      <path value="Practitioner.address.postalCode" />
+      <min value="1" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="https://demis.rki.de/fhir/ValueSet/postalCode" />
+      </binding>
+    </element>
+    <element id="Practitioner.address.country">
+      <path value="Practitioner.address.country" />
+      <min value="1" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/iso3166-1-2" />
+      </binding>
+    </element>
+    <element id="Practitioner.gender">
+      <path value="Practitioner.gender" />
+      <max value="0" />
+    </element>
+    <element id="Practitioner.birthDate">
+      <path value="Practitioner.birthDate" />
+      <max value="0" />
+    </element>
+    <element id="Practitioner.photo">
+      <path value="Practitioner.photo" />
+      <max value="0" />
+    </element>
+    <element id="Practitioner.qualification">
+      <path value="Practitioner.qualification" />
+      <max value="0" />
+    </element>
+    <element id="Practitioner.communication">
+      <path value="Practitioner.communication" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

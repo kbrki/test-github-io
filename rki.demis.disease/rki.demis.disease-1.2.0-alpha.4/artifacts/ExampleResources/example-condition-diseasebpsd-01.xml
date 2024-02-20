@@ -1,0 +1,45 @@
+<Condition xmlns="http://hl7.org/fhir">
+   <id value="4677f3d9-9bfa-3b53-adc8-360adb76754e"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseBPSD"></profile>
+   </meta>
+   <verificationStatus>
+      <coding>
+         <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"></system>
+         <code value="confirmed"></code>
+      </coding>
+   </verificationStatus>
+   <code>
+      <coding>
+         <system value="https://demis.rki.de/fhir/CodeSystem/notificationDiseaseCategory"></system>
+         <code value="bpsd"></code>
+         <display value="Keuchhusten"></display>
+      </coding>
+   </code>
+   <subject>
+      <reference value="Patient/caea6c7b-a29c-33a3-8f91-a0f78847f041"></reference>
+   </subject>
+   <onsetDateTime value="2022-12-05"></onsetDateTime>
+   <recordedDate value="2022-12-07"></recordedDate>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="58596002"></code>
+            <display value="Atemgeräusch, inspiratorisches Stridor"></display>
+         </coding>
+      </code>
+   </evidence>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="284523002"></code>
+            <display value="Husten von mehr als 14 Tagen Dauer"></display>
+         </coding>
+      </code>
+   </evidence>
+   <note>
+      <text value="Textueller Hinweis"></text>
+   </note>
+</Condition>

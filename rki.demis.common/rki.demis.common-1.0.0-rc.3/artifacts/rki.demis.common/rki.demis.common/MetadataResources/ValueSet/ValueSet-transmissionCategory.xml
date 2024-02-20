@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="transmissionCategory"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/transmissionCategory"/>
+  <version value="1.1.0"/>
+  <name value="TransmissionCategory"/>
+  <title value="SurvNet-Übermittlungskategorie"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-10-10"/>
+  <publisher value="Robert Koch-Institut"/>
+  <description value="Das ValueSet TransmissionCategory enthält die 3-Buchstaben-Codes der Übermittlungskategorien aus SurvNet."/>
+  <compose>
+    <include>
+      <system value="https://demis.rki.de/fhir/CodeSystem/transmissionCategory"/>
+      <version value="1.1.0"/>
+    </include>
+  </compose>
+</ValueSet>

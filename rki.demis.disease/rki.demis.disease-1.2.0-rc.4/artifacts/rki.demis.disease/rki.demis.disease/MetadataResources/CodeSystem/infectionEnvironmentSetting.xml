@@ -1,0 +1,374 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="infectionEnvironmentSetting" />
+  <url value="https://demis.rki.de/fhir/CodeSystem/infectionEnvironmentSetting" />
+  <version value="1.0.0" />
+  <name value="InfectionEnvironmentSetting" />
+  <title value="Infektionsumfeld" />
+  <status value="active" />
+  <date value="2022-01-18" />
+  <description value="Das CodeSystem InfectionEnvironmentSetting enthält die Codes zur Angabe des Infektionsumfeldes." />
+  <caseSensitive value="false" />
+  <valueSet value="https://demis.rki.de/fhir/ValueSet/infectionEnvironmentSetting" />
+  <content value="complete" />
+  <count value="90" />
+  <concept xmlns="http://hl7.org/fhir">
+    <code value="1" />
+    <display value="Arbeitsplatz, andere" />
+    <concept xmlns="http://hl7.org/fhir">
+      <code value="110" />
+      <display value="Großraumbüro" />
+    </concept>
+    <concept xmlns="http://hl7.org/fhir">
+      <code value="111" />
+      <display value="Lebensmittelbereich" />
+    </concept>
+    <concept xmlns="http://hl7.org/fhir">
+      <code value="112" />
+      <display value="Baugewerbe" />
+    </concept>
+    <concept xmlns="http://hl7.org/fhir">
+      <code value="113" />
+      <display value="Logistikzentrum" />
+    </concept>
+  </concept>
+  <concept xmlns="http://hl7.org/fhir">
+    <code value="2" />
+    <display value="Bildungs-/Betreuungseinrichtung" />
+    <concept xmlns="http://hl7.org/fhir">
+      <code value="101" />
+      <display value="Kita" />
+      <concept xmlns="http://hl7.org/fhir">
+        <code value="300" />
+        <display value="Betreute/-r" />
+      </concept>
+      <concept xmlns="http://hl7.org/fhir">
+        <code value="302" />
+        <display value="Eltern" />
+      </concept>
+      <concept xmlns="http://hl7.org/fhir">
+        <code value="301" />
+        <display value="Erzieher/-in, Betreuer/-in" />
+      </concept>
+      <concept xmlns="http://hl7.org/fhir">
+        <code value="303" />
+        <display value="sonstiges Personal" />
+      </concept>
+    </concept>
+    <concept xmlns="http://hl7.org/fhir">
+      <code value="102" />
+      <display value="Schule" />
+      <concept xmlns="http://hl7.org/fhir">
+        <code value="310" />
+        <display value="Schüler/-in" />
+      </concept>
+      <concept xmlns="http://hl7.org/fhir">
+        <code value="312" />
+        <display value="Eltern" />
+      </concept>
+      <concept xmlns="http://hl7.org/fhir">
+        <code value="311" />
+        <display value="Lehrkraft" />
+      </concept>
+      <concept xmlns="http://hl7.org/fhir">
+        <code value="313" />
+        <display value="sonstiges Personal" />
+      </concept>
+    </concept>
+    <concept xmlns="http://hl7.org/fhir">
+      <code value="104" />
+      <display value="Universität" />
+    </concept>
+    <concept xmlns="http://hl7.org/fhir">
+      <code value="103" />
+      <display value="sonstige Bildungs-/Betreuungseinrichtung" />
+      <concept xmlns="http://hl7.org/fhir">
+        <code value="320" />
+        <display value="Betreute/-r" />
+      </concept>
+      <concept xmlns="http://hl7.org/fhir">
+        <code value="321" />
+        <display value="Erzieher/-in, Ausbilder/-in, Betreuer/-in" />
+      </concept>
+      <concept xmlns="http://hl7.org/fhir">
+        <code value="322" />
+        <display value="sonstiges Personal" />
+      </concept>
+    </concept>
+  </concept>
+  <concept xmlns="http://hl7.org/fhir">
+    <code value="3" />
+    <display value="Gesundheitseinrichtung" />
+    <concept xmlns="http://hl7.org/fhir">
+      <code value="120" />
+      <display value="medizinische Einrichtung" />
+      <concept xmlns="http://hl7.org/fhir">
+        <code value="200" />
+        <display value="Patient/-in" />
+      </concept>
+      <concept xmlns="http://hl7.org/fhir">
+        <code value="204" />
+        <display value="Besucher/-in" />
+      </concept>
+      <concept xmlns="http://hl7.org/fhir">
+        <code value="201" />
+        <display value="medizinisches Personal" />
+      </concept>
+      <concept xmlns="http://hl7.org/fhir">
+        <code value="202" />
+        <display value="Pflegepersonal" />
+      </concept>
+      <concept xmlns="http://hl7.org/fhir">
+        <code value="203" />
+        <display value="sonstiges Personal" />
+      </concept>
+    </concept>
+    <concept xmlns="http://hl7.org/fhir">
+      <code value="121" />
+      <display value="Pflegeeinrichtung" />
+      <concept xmlns="http://hl7.org/fhir">
+        <code value="220" />
+        <display value="Betreute/-r" />
+      </concept>
+      <concept xmlns="http://hl7.org/fhir">
+        <code value="223" />
+        <display value="Besucher/-in" />
+      </concept>
+      <concept xmlns="http://hl7.org/fhir">
+        <code value="221" />
+        <display value="Pflegepersonal" />
+      </concept>
+      <concept xmlns="http://hl7.org/fhir">
+        <code value="222" />
+        <display value="sonstiges Personal" />
+      </concept>
+    </concept>
+    <concept xmlns="http://hl7.org/fhir">
+      <code value="122" />
+      <display value="ambulanter Pflegedienst" />
+      <concept xmlns="http://hl7.org/fhir">
+        <code value="143" />
+        <display value="Betreute/-r" />
+      </concept>
+      <concept xmlns="http://hl7.org/fhir">
+        <code value="240" />
+        <display value="Pflegepersonal" />
+      </concept>
+      <concept xmlns="http://hl7.org/fhir">
+        <code value="241" />
+        <display value="sonstiges Personal" />
+      </concept>
+    </concept>
+    <concept xmlns="http://hl7.org/fhir">
+      <code value="124" />
+      <display value="Reha-Einrichtung" />
+      <concept xmlns="http://hl7.org/fhir">
+        <code value="362" />
+        <display value="Patient/-in" />
+      </concept>
+      <concept xmlns="http://hl7.org/fhir">
+        <code value="363" />
+        <display value="Besucher/-in" />
+      </concept>
+      <concept xmlns="http://hl7.org/fhir">
+        <code value="364" />
+        <display value="medizinisches Personal" />
+      </concept>
+      <concept xmlns="http://hl7.org/fhir">
+        <code value="365" />
+        <display value="Pflegepersonal" />
+      </concept>
+      <concept xmlns="http://hl7.org/fhir">
+        <code value="366" />
+        <display value="sonstiges Personal" />
+      </concept>
+    </concept>
+    <concept xmlns="http://hl7.org/fhir">
+      <code value="123" />
+      <display value="Labor" />
+    </concept>
+  </concept>
+  <concept xmlns="http://hl7.org/fhir">
+    <code value="4" />
+    <display value="privater Haushalt" />
+  </concept>
+  <concept xmlns="http://hl7.org/fhir">
+    <code value="5" />
+    <display value="Einzelhandel" />
+    <concept xmlns="http://hl7.org/fhir">
+      <code value="150" />
+      <display value="als Kunde" />
+    </concept>
+    <concept xmlns="http://hl7.org/fhir">
+      <code value="151" />
+      <display value="als Personal" />
+    </concept>
+  </concept>
+  <concept xmlns="http://hl7.org/fhir">
+    <code value="6" />
+    <display value="Freizeit" />
+    <concept xmlns="http://hl7.org/fhir">
+      <code value="161" />
+      <display value="Chor" />
+    </concept>
+    <concept xmlns="http://hl7.org/fhir">
+      <code value="160" />
+      <display value="Sport" />
+    </concept>
+    <concept xmlns="http://hl7.org/fhir">
+      <code value="162" />
+      <display value="Verein" />
+    </concept>
+  </concept>
+  <concept xmlns="http://hl7.org/fhir">
+    <code value="7" />
+    <display value="Gastronomie" />
+    <concept xmlns="http://hl7.org/fhir">
+      <code value="170" />
+      <display value="als Gast" />
+    </concept>
+    <concept xmlns="http://hl7.org/fhir">
+      <code value="171" />
+      <display value="als Personal" />
+    </concept>
+  </concept>
+  <concept xmlns="http://hl7.org/fhir">
+    <code value="8" />
+    <display value="Veranstaltung" />
+    <concept xmlns="http://hl7.org/fhir">
+      <code value="184" />
+      <display value="Demonstration/Kundgebung" />
+    </concept>
+    <concept xmlns="http://hl7.org/fhir">
+      <code value="185" />
+      <display value="Karneval" />
+    </concept>
+    <concept xmlns="http://hl7.org/fhir">
+      <code value="186" />
+      <display value="Messe" />
+    </concept>
+    <concept xmlns="http://hl7.org/fhir">
+      <code value="182" />
+      <display value="Musikveranstaltung/Konzert" />
+    </concept>
+    <concept xmlns="http://hl7.org/fhir">
+      <code value="180" />
+      <display value="private Feier/Treffen" />
+    </concept>
+    <concept xmlns="http://hl7.org/fhir">
+      <code value="183" />
+      <display value="religiöse Veranstaltung (z.B. Gottesdienst)" />
+    </concept>
+    <concept xmlns="http://hl7.org/fhir">
+      <code value="181" />
+      <display value="Sportveranstaltung" />
+    </concept>
+  </concept>
+  <concept xmlns="http://hl7.org/fhir">
+    <code value="9" />
+    <display value="Transportmittel" />
+    <concept xmlns="http://hl7.org/fhir">
+      <code value="190" />
+      <display value="Flugzeug/Flughafen" />
+      <concept xmlns="http://hl7.org/fhir">
+        <code value="323" />
+        <display value="Passagier/-in" />
+      </concept>
+      <concept xmlns="http://hl7.org/fhir">
+        <code value="324" />
+        <display value="Personal" />
+      </concept>
+    </concept>
+    <concept xmlns="http://hl7.org/fhir">
+      <code value="191" />
+      <display value="Schiff/Hafen" />
+      <concept xmlns="http://hl7.org/fhir">
+        <code value="330" />
+        <display value="Passagier/-in" />
+      </concept>
+      <concept xmlns="http://hl7.org/fhir">
+        <code value="331" />
+        <display value="Personal" />
+      </concept>
+    </concept>
+    <concept xmlns="http://hl7.org/fhir">
+      <code value="192" />
+      <display value="Zug/Bahnhof" />
+      <concept xmlns="http://hl7.org/fhir">
+        <code value="340" />
+        <display value="Passagier/-in" />
+      </concept>
+      <concept xmlns="http://hl7.org/fhir">
+        <code value="341" />
+        <display value="Personal" />
+      </concept>
+    </concept>
+    <concept xmlns="http://hl7.org/fhir">
+      <code value="193" />
+      <display value="Fernbus" />
+      <concept xmlns="http://hl7.org/fhir">
+        <code value="350" />
+        <display value="Passagier/-in" />
+      </concept>
+      <concept xmlns="http://hl7.org/fhir">
+        <code value="351" />
+        <display value="Personal" />
+      </concept>
+    </concept>
+    <concept xmlns="http://hl7.org/fhir">
+      <code value="194" />
+      <display value="öffentlicher Nahverkehr" />
+      <concept xmlns="http://hl7.org/fhir">
+        <code value="360" />
+        <display value="Passagier/-in" />
+      </concept>
+      <concept xmlns="http://hl7.org/fhir">
+        <code value="361" />
+        <display value="Personal" />
+      </concept>
+    </concept>
+  </concept>
+  <concept xmlns="http://hl7.org/fhir">
+    <code value="260" />
+    <display value="Übernachtung" />
+    <concept xmlns="http://hl7.org/fhir">
+      <code value="261" />
+      <display value="Hotel, Pension, Herberge" />
+    </concept>
+    <concept xmlns="http://hl7.org/fhir">
+      <code value="262" />
+      <display value="Kreuzfahrtschiff" />
+    </concept>
+    <concept xmlns="http://hl7.org/fhir">
+      <code value="263" />
+      <display value="Zeltplatz, Campingplatz" />
+    </concept>
+  </concept>
+  <concept xmlns="http://hl7.org/fhir">
+    <code value="250" />
+    <display value="Wohnstätten" />
+    <concept xmlns="http://hl7.org/fhir">
+      <code value="251" />
+      <display value="Alten-/Pflegeheim" />
+    </concept>
+    <concept xmlns="http://hl7.org/fhir">
+      <code value="252" />
+      <display value="Wohnheim (Kinder-, Jugend-, Studierenden-)" />
+    </concept>
+    <concept xmlns="http://hl7.org/fhir">
+      <code value="253" />
+      <display value="Kaserne" />
+    </concept>
+    <concept xmlns="http://hl7.org/fhir">
+      <code value="254" />
+      <display value="Justizvollzugsanstalt" />
+    </concept>
+    <concept xmlns="http://hl7.org/fhir">
+      <code value="255" />
+      <display value="Flüchtlings-, Asylbewerberheim" />
+    </concept>
+  </concept>
+  <concept xmlns="http://hl7.org/fhir">
+    <code value="10" />
+    <display value="sonstiges" />
+  </concept>
+</CodeSystem>

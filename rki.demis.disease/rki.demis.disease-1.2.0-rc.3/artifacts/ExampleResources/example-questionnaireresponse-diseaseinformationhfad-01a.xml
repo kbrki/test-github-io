@@ -1,0 +1,31 @@
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+   <id value="15e3e86d-842e-3098-b570-3daad166b9ad"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseInformationHFAD"></profile>
+   </meta>
+   <questionnaire value="https://demis.rki.de/fhir/Questionnaire/DiseaseQuestionsHFAD"></questionnaire>
+   <status value="completed"></status>
+   <subject>
+      <reference value="Patient/4842f7c3-eecd-3b59-b890-482708e3528b"></reference>
+   </subject>
+   <item>
+      <linkId value="pathogen"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"></system>
+            <code value="NASK"></code>
+            <display value="not asked"></display>
+         </valueCoding>
+      </answer>
+   </item>
+   <item>
+      <linkId value="outbreak"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"></system>
+            <code value="ASKU"></code>
+            <display value="asked but unknown"></display>
+         </valueCoding>
+      </answer>
+   </item>
+</QuestionnaireResponse>

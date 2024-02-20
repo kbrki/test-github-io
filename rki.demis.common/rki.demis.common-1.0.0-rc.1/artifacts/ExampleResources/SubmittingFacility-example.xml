@@ -1,0 +1,25 @@
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="SubmittingFacility-example" />
+  <meta>
+    <profile value="https://demis.rki.de/fhir/StructureDefinition/SubmittingFacility" />
+  </meta>
+  <type>
+    <coding>
+      <system value="https://demis.rki.de/fhir/CodeSystem/organizationType" />
+      <code value="holidayCamp" />
+    </coding>
+  </type>
+  <name value="Einsendende Einrichtung" />
+  <telecom>
+    <system value="phone" />
+    <value value="+49 (0)12345 - 123456" />
+    <use value="work" />
+  </telecom>
+  <address>
+    <line value="Schneller Weg 12" />
+    <city value="Berlin" />
+    <state value="DE-BE" />
+    <postalCode value="10117" />
+    <country value="DE" />
+  </address>
+</Organization>

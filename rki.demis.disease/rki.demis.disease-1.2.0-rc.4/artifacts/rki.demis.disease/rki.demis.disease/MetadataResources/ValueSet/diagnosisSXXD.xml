@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="diagnosisSXXD"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/diagnosisSXXD"/>
+  <version value="1.2.0"/>
+  <name value="DiagnosisSXXD"/>
+  <title value="Anwort diagnostizierte Krankheit Paratyphus oder Typhus"/>
+  <status value="active"/>
+  <date value="2024-02-05"/>
+  <description value="Das ValueSet DiagnosisSXXD enthält die Codes der Antwortmöglichkeiten für die diagnostizierte Krankheit Paratyphus oder Typhus."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230901"/>
+      <concept>
+        <code value="4834000"/>
+        <display value="Typhus"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Typhoid fever (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="85904008"/>
+        <display value="Paratyphus"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Paratyphoid fever (disorder)"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vaccineMSVD"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/vaccineMSVD"/>
+  <version value="1.0.0"/>
+  <name value="VaccineMSVD"/>
+  <title value="Masern-Impfstoff als SNOMED-Code"/>
+  <status value="active"/>
+  <date value="2023-03-23"/>
+  <description value="Das ValueSet VaccineMSVD enthält die Codes der Masern-Impfstoffe als SNOMED-Code."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+	  <concept>
+		<code value="871766009"/>
+		<display value="monovalenter Masern-Impfstoff (Ma)"/>
+		<designation>
+		  <language value="en-US"/>
+		  <use>
+		    <system value="http://snomed.info/sct"/>
+			<code value="900000000000003001"/>
+		  </use>
+		  <value value="Vaccine product containing only live attenuated Measles morbillivirus antigen (medicinal product)"/>
+		</designation>
+	  </concept>
+      <concept>
+        <code value="836382004"/>
+        <display value="Masern-Totimpfstoff"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Vaccine product containing Measles morbillivirus antigen (medicinal product)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1252703004"/>
+        <display value="MM: Masern-Kombinationsimpfstoff mit Mumps"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Vaccine product containing only Measles morbillivirus and Mumps orthorubulavirus (medicinal product)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="2241000221103"/>
+        <display value="Masern, Mumps, Röteln- Lebendvirusimpfstoff (Priorix,M-M-RVAXPRO)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Vaccine product containing only live attenuated Measles morbillivirus and Mumps orthorubulavirus and Rubella virus antigens (medicinal product)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="2251000221101"/>
+        <display value="Masern- Mumps-Röteln- Varizellen Lebendvirusimpfstoff (Priorix-Tetra, ProQuad)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Vaccine product containing only live attenuated Measles morbillivirus and Mumps orthorubulavirus and Rubella virus and Human alphaherpesvirus 3 antigens (medicinal product)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="74964007"/>
+        <display value="-andere/sonstige-"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Other (qualifier value)"/>
+        </designation>
+      </concept>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+      <version value="2.1.0"/>
+      <concept>
+        <code value="ASKU"/>
+        <display value="asked but unknown"/>
+      </concept>
+      <concept>
+        <code value="NASK"/>
+        <display value="not asked"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

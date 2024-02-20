@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetInfectionEnvironmentSettingCVDD"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetInfectionEnvironmentSettingCVDD"/>
+  <version value="1.2.0"/>
+  <name value="AnswerSetInfectionEnvironmentSettingCVDD"/>
+  <title value="Covid-19-Infektionsumfeld"/>
+  <status value="active"/>
+  <date value="2023-12-11"/>
+  <description value="Das ValueSet AnswerSetInfectionEnvironmentSettingCVDD enthält die Codes zur Angabe des Covid-19-Infektionsumfeldes."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230901"/>
+      <concept>
+        <code value="285141008"/>
+        <display value="Arbeitsplatz"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Work environment (environment)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="413817003"/>
+        <display value="Kita"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Child day care center (environment)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="257698009"/>
+        <display value="Schule"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="School (environment)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="224871002"/>
+        <display value="Universität"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="University (environment)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="257603009"/>
+        <display value="sonstige Bildungs-/Betreuungseinrichtung"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Educational establishment (environment)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="22232009"/>
+        <display value="Krankenhaus"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Hospital (environment)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="257622000"/>
+        <display value="medizinische Einrichtung (außer Krankenhaus)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Healthcare facility (environment)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="42665001"/>
+        <display value="vollstationäre Einrichtung für älterer, behinderter oder pflegebedürftiger Menschen (z.B. Alten-/Pflegeheim)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Nursing home (environment)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="394777002"/>
+        <display value="Ambulante Behandlungseinrichtung (Praxis, andere)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Health encounter sites (environment)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1348009"/>
+        <display value="teilstationäre Einrichtung für älterer, behinderter oder pflegebedürftiger Menschen (z.B. Seniorentagesstätte)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Day care center (environment)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="108344006"/>
+        <display value="ambulanter Pflegedienst"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Nursing home AND/OR ambulatory care site (environment)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="702916001"/>
+        <display value="Reha-Einrichtung"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Rehabilitation clinic (environment)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="261904005"/>
+        <display value="Labor"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Laboratory (environment)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="257701001"/>
+        <display value="Einzelhandel"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Shop (environment)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="405081003"/>
+        <display value="Freizeitaktivitäten"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Leisure behavior (observable entity)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="14468000"/>
+        <display value="Sport"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Sports activity (observable entity)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="284555002"/>
+        <display value="Tiergarten, Zoo, Tierpark"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Zoo - place (environment)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="257689006"/>
+        <display value="Gastronomie (Speisegaststätte/Kantine/Imbiss/Restaurant)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Restaurant (environment)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="257658007"/>
+        <display value="Musikveranstaltung/Konzert"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Entertainment establishment (environment)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="257659004"/>
+        <display value="religiöse Veranstaltung (z.B. Gottesdienst)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Place of worship (environment)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="702703009"/>
+        <display value="Demonstration/Kundgebung"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Outdoor public site (environment)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="21753002"/>
+        <display value="Flugzeug"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Aircraft, device (physical object)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="257562009"/>
+        <display value="Flughafen"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Airport (environment)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="224673002"/>
+        <display value="Schiff"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Ship (physical object)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="257621007"/>
+        <display value="Hafen"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Harbor (environment)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="62193008"/>
+        <display value="Zug"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Railway train, device (physical object)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="22674006"/>
+        <display value="Fernbus"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Motor bus, device (physical object)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="716367000"/>
+        <display value="öffentlicher Nahverkehr"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Transportation by public transport (procedure)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="257629009"/>
+        <display value="Hotel"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Hotel (environment)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="257628001"/>
+        <display value="Pension, Herberge"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Hostel (environment)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="262044003"/>
+        <display value="Kreuzfahrtschiff"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Passenger vessel (physical object)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="161093007"/>
+        <display value="Zeltplatz, Campingplatz"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Camping vacation (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="257692005"/>
+        <display value="Wohnheim (Kinder-, Jugend-, Studierenden-)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Rooming house (environment)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="310205006"/>
+        <display value="privater Haushalt"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Private residential home (environment)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="224683003"/>
+        <display value="Kaserne"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Military accommodation (environment)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="257656006"/>
+        <display value="Justizvollzugsanstalt"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Penal institution (environment)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="5549007"/>
+        <display value="Gemeinschaftsunterkünfte (z.B. Flüchtlings-, Asylbewerberheim)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Living in temporary quarters (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="74964007"/>
+        <display value="-andere/sonstige-"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Other (qualifier value)"/>
+        </designation>
+      </concept>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+      <version value="2.1.0"/>
+      <concept>
+        <code value="ASKU"/>
+        <display value="asked but unknown"/>
+      </concept>
+      <concept>
+        <code value="NASK"/>
+        <display value="not asked"/>
+      </concept>
+    </include>
+    <include>
+      <valueSet value="https://demis.rki.de/fhir/ValueSet/infectionEnvironmentSettingCVDD"/>
+    </include>
+  </compose>
+</ValueSet>

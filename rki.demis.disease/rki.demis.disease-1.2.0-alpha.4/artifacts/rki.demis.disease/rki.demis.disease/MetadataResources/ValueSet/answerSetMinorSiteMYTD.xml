@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetMinorSiteMYTD"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetMinorSiteMYTD"/>
+  <version value="1.0.0"/>
+  <name value="AnswerSetMinorSiteMYTD"/>
+  <title value="Anwort weitere betroffens Organ bei Tuberkulose"/>
+  <status value="active"/>
+  <date value="2023-04-25"/>
+  <description value="Das ValueSet AnswerSetMinorSiteMYTD enthält die Codes der Antwortmöglichkeiten für weitere betroffens Organ bei Tuberkulose."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <code value="260413007"/>
+        <display value="kein weiteres Organ betroffen"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="None (qualifier value)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="186182003"/>
+        <display value="Pleura"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Tuberculosis of pleura (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="78436002"/>
+        <display value="Lymphknoten, intrathorakal"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Tuberculosis of intrathoracic lymph nodes (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="82495004"/>
+        <display value="Lymphknoten, extrathorakal"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Tuberculosis of mediastinal lymph nodes (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="35984006"/>
+        <display value="Wirbelsäule"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Tuberculosis of vertebral column (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="17653001"/>
+        <display value="sonstige Knochen und Gelenke"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Tuberculosis of bones and/or joints (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="90302003"/>
+        <display value="Hirnhaut"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Tuberculosis of cerebral meninges (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="10706006"/>
+        <display value="sonstiges ZNS"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Tuberculosis of central nervous system (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="4445009"/>
+        <display value="Urogenitaltrakt"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Tuberculosis of genitourinary system (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="186225008"/>
+        <display value="Peritoneum, Verdauungstrakt"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Tuberculosis of intestines, peritoneum and mesenteric glands (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="182159002"/>
+        <display value="Disseminierte Tuberkulose"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Disseminated tuberculosis (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="74964007"/>
+        <display value="-andere/sonstige-"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Other (qualifier value)"/>
+        </designation>
+      </concept>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+      <version value="2.1.0"/>
+      <concept>
+        <code value="ASKU"/>
+        <display value="asked but unknown"/>
+      </concept>
+      <concept>
+        <code value="NASK"/>
+        <display value="not asked"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

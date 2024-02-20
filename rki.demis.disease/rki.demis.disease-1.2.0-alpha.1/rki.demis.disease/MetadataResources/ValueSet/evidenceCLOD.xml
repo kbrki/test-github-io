@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="evidenceCLOD"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/evidenceCLOD"/>
+  <version value="1.0.0"/>
+  <name value="EvidenceCLOD"/>
+  <title value="Botulismus-Symptom und -Manifestation"/>
+  <status value="active"/>
+  <date value="2022-11-30"/>
+  <description value="Das ValueSet EvidenceCLOD enthält die Codes der Botulismus-Symptome und -Manifestationen."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="267036007"/>
+        <display value="Atemstörung (Dyspnoe)"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="267036007 |Dyspnea (finding)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="54840006"/>
+        <display value="Gedeihstörung"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="54840006 |Failure to thrive (disorder)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="73013002:263502005=424124008"/>
+        <display value="Hirnnervenstörung, akut entstanden"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="73013002 |Cranial nerve disorder (disorder)| : 263502005 |Clinical course (attribute)| = 424124008 |Sudden onset AND/OR short duration (qualifier value)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="698293005+255473004"/>
+        <display value="Lähmung (schnell fortschreitend, symmetrisch, absteigend, schlaff)"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="698293005 |Acute flaccid paralysis (finding)| + 255473004 |Symmetrical (qualifier value)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="39157001"/>
+        <display value="Lähmung, schlaff"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="39157001 |Flaccid paralysis (finding)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="26544005"/>
+        <display value="Muskelschwäche"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="26544005 |Muscle weakness (finding)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="111360009"/>
+        <display value="Verstopfung (Obstipation)"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="111360009 |Obstipation (disorder)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="11934000"/>
+        <display value="Herabhängen des Oberlids (Ptosis)"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="11934000 |Ptosis of eyelid (disorder)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="40739000"/>
+        <display value="Schluckstörung"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="40739000 |Dysphagia (disorder)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="397540003"/>
+        <display value="Sehstörung"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="397540003 |Visual impairment (disorder)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="289155006"/>
+        <display value="Trinkschwäche"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="289155006 |Problem with drinking fluid (finding)|"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

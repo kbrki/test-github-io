@@ -1,0 +1,31 @@
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+   <id value="e8ab050d-76c9-3aec-a9cb-713276ccb91a"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseInformationEBVD"></profile>
+   </meta>
+   <questionnaire value="https://demis.rki.de/fhir/Questionnaire/DiseaseQuestionsEBVD"></questionnaire>
+   <status value="completed"></status>
+   <subject>
+      <reference value="Patient/ce85d93a-1169-3140-9bfd-3dc3587ea5c7"></reference>
+   </subject>
+   <item>
+      <linkId value="immunization"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+            <code value="no"></code>
+            <display value="Nein"></display>
+         </valueCoding>
+      </answer>
+   </item>
+   <item>
+      <linkId value="outbreak"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+            <code value="no"></code>
+            <display value="Nein"></display>
+         </valueCoding>
+      </answer>
+   </item>
+</QuestionnaireResponse>

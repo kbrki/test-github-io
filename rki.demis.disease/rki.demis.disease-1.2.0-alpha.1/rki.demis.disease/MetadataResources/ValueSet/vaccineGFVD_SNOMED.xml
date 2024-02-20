@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vaccineGFVD_SNOMED"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/vaccineGFVD_SNOMED"/>
+  <version value="1.0.0"/>
+  <name value="VaccineGFVD_SNOMED"/>
+  <title value="Gelbfieber-Impfstoff als SNOMED-Code"/>
+  <status value="active"/>
+  <date value="2022-11-30"/>
+  <description value="Das ValueSet VaccineGFVD_SNOMED enthält die Codes der Gelbfieber-Impfstoffe als SNOMED-Code."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="1121000221106"/>
+        <display value="Gelbfieber Imfpstoff (Lebendvirusimpfstoff) (Stamaril)"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="1121000221106 |Vaccine product containing only live attenuated Yellow fever virus antigen (medicinal product)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="74964007"/>
+        <display value="Anderer"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="74964007 |Other (qualifier value)|"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

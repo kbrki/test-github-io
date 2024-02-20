@@ -1,0 +1,1436 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <title>Implementierungsleitfaden für DEMIS Common (Basismeldeinhalte)</title>
+
+        <link rel="icon" href="static/styles/common/favicon.ico" />
+
+        <script src="static/styles/common/jquery/jquery.min.js"></script>
+        <script src="static/styles/common/bootstrap/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="static/styles/common/main.min.css" />
+        <link rel="stylesheet" href="static/styles/common/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="static/styles/common/rendering/rendering.min.css" />
+
+        <script src="static/styles/common/rendering/stu3TreeTable.min.js"></script>
+        <script src="static/styles/common/rendering/baseTreetable.min.js"></script>
+
+        <link rel="stylesheet" href="static/styles/treetable/style.css?v=1da2f727d8cab00" />
+
+    </head>
+
+    <body>
+
+        <div id="ig-viewer">
+
+            <div class="ig-view-content">
+
+                <div id="ig-view-treetable">
+
+                    <div class="segment-default-header" role="banner" aria-label="Header">
+                        <div class="row">
+                            <header class="col-md-12" aria-hidden="true">
+                                <h1 class="title">
+                                    <b>Implementierungsleitfaden für DEMIS Common (Basismeldeinhalte)</b>
+                                </h1>
+                            </header>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid">
+                        <div id="guide-panel">
+                            <div class="tree-panel" role="navigation" aria-label="Main menu">
+                                
+
+<div class="tree-content">
+    <div>
+
+        <input data-val="true" data-val-required="The Id field is required." id="GuideId" name="Guide.Id" type="hidden" value="5113" />
+
+        <table id="treetable" class="treetable ig-treetable hidden">
+
+                    <tr data-id="Home"
+                        data-filepath="Home"
+                        data-serial-nr="2"
+                        data-is-folder="True"
+                        class="rootnode treenode">
+                        <td>
+                            <a href="Home.html">
+                                <span class="baseIcon resource"></span>
+                                <span title="Home">Home</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/guide-overIG.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/guide-overIG.guide.md"
+                        data-parentId="Home"
+                        data-serial-nr="6"
+                        class="treenode">
+                        <td>
+                            <a href="Home-guide-overIG.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="&#xDC;ber diesen Leitfaden">&#xDC;ber diesen Leitfaden</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/guide-overview.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/guide-overview.guide.md"
+                        data-parentId="Home"
+                        data-serial-nr="7"
+                        class="treenode">
+                        <td>
+                            <a href="Home-guide-overview.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Grundlagen und &#xDC;berblick">Grundlagen und &#xDC;berblick</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/guide-changelog.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/guide-changelog.guide.md"
+                        data-parentId="Home"
+                        data-serial-nr="8"
+                        class="treenode">
+                        <td>
+                            <a href="Home-guide-changelog.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="&#xC4;nderungshistorie">&#xC4;nderungshistorie</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/guide-hints.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/guide-hints.guide.md"
+                        data-parentId="Home"
+                        data-serial-nr="9"
+                        class="treenode">
+                        <td>
+                            <a href="Home-guide-hints.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Erg&#xE4;nzende Hinweise">Erg&#xE4;nzende Hinweise</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/guide-knownissues.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/guide-knownissues.guide.md"
+                        data-parentId="Home"
+                        data-serial-nr="10"
+                        class="treenode">
+                        <td>
+                            <a href="Home-guide-knownissues.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Known Issues">Known Issues</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/guide-links.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/guide-links.guide.md"
+                        data-parentId="Home"
+                        data-serial-nr="11"
+                        class="treenode">
+                        <td>
+                            <a href="Home-guide-links.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Weiterf&#xFC;hrende Informationen">Weiterf&#xFC;hrende Informationen</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources"
+                        data-is-folder="True"
+                        data-filepath="Home/resources"
+                        data-parentId="Home"
+                        data-serial-nr="12"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Ressourcen">Ressourcen</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/structuredefinitions"
+                        data-parentId="Home/resources"
+                        data-serial-nr="15"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="StructureDefinitions">StructureDefinitions</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Bundle"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/structuredefinitions/Bundle"
+                        data-parentId="Home/resources/structuredefinitions"
+                        data-serial-nr="18"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Bundle.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Meldevorgang (Bundle)">Meldevorgang (Bundle)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Bundle/guide-NotificationBundle.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Bundle/guide-NotificationBundle.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Bundle"
+                        data-serial-nr="20"
+                        class="treenode selected">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Bundle-guide-NotificationBundle.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Meldevorgang (NotificationBundle)">Meldevorgang (NotificationBundle)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Bundle/guide-ReceiptBundle.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Bundle/guide-ReceiptBundle.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Bundle"
+                        data-serial-nr="21"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Bundle-guide-ReceiptBundle.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Quittungs-Bundle (ReceiptBundle)">Quittungs-Bundle (ReceiptBundle)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Composition"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/structuredefinitions/Composition"
+                        data-parentId="Home/resources/structuredefinitions"
+                        data-serial-nr="22"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Composition.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Meldung (Notification)">Meldung (Notification)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Composition/guide-Notification.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Composition/guide-Notification.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Composition"
+                        data-serial-nr="24"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Composition-guide-Notification.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Meldung (Notification)">Meldung (Notification)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Composition/guide-NotificationReceipt.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Composition/guide-NotificationReceipt.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Composition"
+                        data-serial-nr="25"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Composition-guide-NotificationReceipt.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Meldequittung (NotificationReceipt)">Meldequittung (NotificationReceipt)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Organization"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/structuredefinitions/Organization"
+                        data-parentId="Home/resources/structuredefinitions"
+                        data-serial-nr="26"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Organization.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Einrichtung (Organization)">Einrichtung (Organization)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Organization/guide-NotifiedPersonFacility.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Organization/guide-NotifiedPersonFacility.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Organization"
+                        data-serial-nr="28"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Organization-guide-NotifiedPersonFacility.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Betroffenen-Einrichtung (NotifiedPersonFacility)">Betroffenen-Einrichtung (NotifiedPersonFacility)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Organization/guide-NotifierFacility.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Organization/guide-NotifierFacility.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Organization"
+                        data-serial-nr="29"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Organization-guide-NotifierFacility.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Melder-Einrichtung (NotifierFacility)">Melder-Einrichtung (NotifierFacility)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Organization/guide-SubmittingFacility.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Organization/guide-SubmittingFacility.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Organization"
+                        data-serial-nr="30"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Organization-guide-SubmittingFacility.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Einsender-Einrichtung (SubmittingFacility)">Einsender-Einrichtung (SubmittingFacility)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Organization/guide-TransmittingSite.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Organization/guide-TransmittingSite.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Organization"
+                        data-serial-nr="31"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Organization-guide-TransmittingSite.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="&#xDC;bermittlungsstelle (TransmittingSite)">&#xDC;bermittlungsstelle (TransmittingSite)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Patient"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/structuredefinitions/Patient"
+                        data-parentId="Home/resources/structuredefinitions"
+                        data-serial-nr="32"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Patient.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Betroffene Person (NotifedPerson)">Betroffene Person (NotifedPerson)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Patient/guide-NotifiedPerson.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Patient/guide-NotifiedPerson.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Patient"
+                        data-serial-nr="34"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Patient-guide-NotifiedPerson.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Betroffene Person (NotifiedPerson)">Betroffene Person (NotifiedPerson)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Patient/guide-NotifiedPersonNotByName.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Patient/guide-NotifiedPersonNotByName.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Patient"
+                        data-serial-nr="35"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Patient-guide-NotifiedPersonNotByName.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Betroffene Person nichtnamentlich (NotifiedPersonNotByName)">Betroffene Person nichtnamentlich (NotifiedPersonNotByName)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Practitioner"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/structuredefinitions/Practitioner"
+                        data-parentId="Home/resources/structuredefinitions"
+                        data-serial-nr="36"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Practitioner.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Person des Gesundheitsprozesses (Practitioner)">Person des Gesundheitsprozesses (Practitioner)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Practitioner/guide-Notifier.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Practitioner/guide-Notifier.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Practitioner"
+                        data-serial-nr="38"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Practitioner-guide-Notifier.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Melder (Notifier)">Melder (Notifier)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Practitioner/guide-SubmittingPerson.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Practitioner/guide-SubmittingPerson.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Practitioner"
+                        data-serial-nr="39"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Practitioner-guide-SubmittingPerson.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Einsender (SubmittingPerson)">Einsender (SubmittingPerson)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/PractitionerRole"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/structuredefinitions/PractitionerRole"
+                        data-parentId="Home/resources/structuredefinitions"
+                        data-serial-nr="40"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-PractitionerRole.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Rolle (PractitionerRole)">Rolle (PractitionerRole)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/PractitionerRole/guide-NotifierRole.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/PractitionerRole/guide-NotifierRole.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/PractitionerRole"
+                        data-serial-nr="42"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-PractitionerRole-guide-NotifierRole.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Melder-Rolle (NotifierRole)">Melder-Rolle (NotifierRole)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/PractitionerRole/guide-SubmittingRole.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/PractitionerRole/guide-SubmittingRole.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/PractitionerRole"
+                        data-serial-nr="43"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-PractitionerRole-guide-SubmittingRole.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Einsender-Rolle (SubmittingRole)">Einsender-Rolle (SubmittingRole)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/OperationOutcome"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/structuredefinitions/OperationOutcome"
+                        data-parentId="Home/resources/structuredefinitions"
+                        data-serial-nr="44"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-OperationOutcome.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Verarbeitungsergebnis (OperationOutcome)">Verarbeitungsergebnis (OperationOutcome)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/OperationOutcome/guide-ProcessNotificationResponse.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/OperationOutcome/guide-ProcessNotificationResponse.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/OperationOutcome"
+                        data-serial-nr="46"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-OperationOutcome-guide-ProcessNotificationResponse.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Response f&#xFC;r $process-notification (ProcessNotificationResponse)">Response f&#xFC;r $process-notification (ProcessNotificationResponse)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Parameters"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/structuredefinitions/Parameters"
+                        data-parentId="Home/resources/structuredefinitions"
+                        data-serial-nr="47"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Parameters.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Parameter (Parameters)">Parameter (Parameters)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Parameters/guide-processnotificationrequestparameters.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Parameters/guide-processnotificationrequestparameters.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Parameters"
+                        data-serial-nr="50"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Parameters-guide-processnotificationrequestparameters.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="ProcessNotificationRequestParameters">ProcessNotificationRequestParameters</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Parameters/guide-processnotificationresponseparameters.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Parameters/guide-processnotificationresponseparameters.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Parameters"
+                        data-serial-nr="51"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Parameters-guide-processnotificationresponseparameters.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="ProcessNotificationResponseParameters">ProcessNotificationResponseParameters</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/terminologies"
+                        data-parentId="Home/resources"
+                        data-serial-nr="52"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Terminologien">Terminologien</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/codesystems"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/terminologies/codesystems"
+                        data-parentId="Home/resources/terminologies"
+                        data-serial-nr="55"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-codesystems.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="CodeSystems">CodeSystems</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/codesystems/guide-addressUse.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/codesystems/guide-addressUse.guide.md"
+                        data-parentId="Home/resources/terminologies/codesystems"
+                        data-serial-nr="58"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-codesystems-guide-addressUse.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Adressnutzung">Adressnutzung</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/codesystems/guide-country.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/codesystems/guide-country.guide.md"
+                        data-parentId="Home/resources/terminologies/codesystems"
+                        data-serial-nr="59"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-codesystems-guide-country.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Land">Land</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/codesystems/guide-organizationType.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/codesystems/guide-organizationType.guide.md"
+                        data-parentId="Home/resources/terminologies/codesystems"
+                        data-serial-nr="60"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-codesystems-guide-organizationType.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Einrichtungsart">Einrichtungsart</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/codesystems/guide-postalCode.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/codesystems/guide-postalCode.guide.md"
+                        data-parentId="Home/resources/terminologies/codesystems"
+                        data-serial-nr="61"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-codesystems-guide-postalCode.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Postleitzahl">Postleitzahl</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/codesystems/guide-geographicregion.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/codesystems/guide-geographicregion.guide.md"
+                        data-parentId="Home/resources/terminologies/codesystems"
+                        data-serial-nr="62"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-codesystems-guide-geographicregion.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Geografische Region">Geografische Region</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/codesystems/guide-reportingSite.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/codesystems/guide-reportingSite.guide.md"
+                        data-parentId="Home/resources/terminologies/codesystems"
+                        data-serial-nr="63"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-codesystems-guide-reportingSite.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="&#xDC;bermittlungsstelle">&#xDC;bermittlungsstelle</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/codesystems/guide-salutation.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/codesystems/guide-salutation.guide.md"
+                        data-parentId="Home/resources/terminologies/codesystems"
+                        data-serial-nr="64"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-codesystems-guide-salutation.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Anrede">Anrede</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/codesystems/guide-transmissionCategory.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/codesystems/guide-transmissionCategory.guide.md"
+                        data-parentId="Home/resources/terminologies/codesystems"
+                        data-serial-nr="65"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-codesystems-guide-transmissionCategory.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="SurvNet-&#xDC;bermittlungskategorie">SurvNet-&#xDC;bermittlungskategorie</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/valuesets"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/terminologies/valuesets"
+                        data-parentId="Home/resources/terminologies"
+                        data-serial-nr="66"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-valuesets.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="ValueSets">ValueSets</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/valuesets/guide-addressUse.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/valuesets/guide-addressUse.guide.md"
+                        data-parentId="Home/resources/terminologies/valuesets"
+                        data-serial-nr="69"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-valuesets-guide-addressUse.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Adressnutzung">Adressnutzung</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/valuesets/guide-answerSetAddressUse.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/valuesets/guide-answerSetAddressUse.guide.md"
+                        data-parentId="Home/resources/terminologies/valuesets"
+                        data-serial-nr="70"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-valuesets-guide-answerSetAddressUse.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Antwortm&#xF6;glichkeiten Adressnutzung">Antwortm&#xF6;glichkeiten Adressnutzung</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/valuesets/guide-country.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/valuesets/guide-country.guide.md"
+                        data-parentId="Home/resources/terminologies/valuesets"
+                        data-serial-nr="71"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-valuesets-guide-country.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Land">Land</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/valuesets/guide-county.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/valuesets/guide-county.guide.md"
+                        data-parentId="Home/resources/terminologies/valuesets"
+                        data-serial-nr="72"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-valuesets-guide-county.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Landkreis">Landkreis</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/valuesets/guide-organizationType.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/valuesets/guide-organizationType.guide.md"
+                        data-parentId="Home/resources/terminologies/valuesets"
+                        data-serial-nr="73"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-valuesets-guide-organizationType.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Einrichtungsart">Einrichtungsart</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/valuesets/guide-postalCode.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/valuesets/guide-postalCode.guide.md"
+                        data-parentId="Home/resources/terminologies/valuesets"
+                        data-serial-nr="74"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-valuesets-guide-postalCode.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Postleitzahl">Postleitzahl</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/valuesets/guide-geographicregion.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/valuesets/guide-geographicregion.guide.md"
+                        data-parentId="Home/resources/terminologies/valuesets"
+                        data-serial-nr="75"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-valuesets-guide-geographicregion.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Geografische Region">Geografische Region</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/valuesets/guide-reportingSite.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/valuesets/guide-reportingSite.guide.md"
+                        data-parentId="Home/resources/terminologies/valuesets"
+                        data-serial-nr="76"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-valuesets-guide-reportingSite.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="&#xDC;bermittlungsstelle">&#xDC;bermittlungsstelle</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/valuesets/guide-salutation.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/valuesets/guide-salutation.guide.md"
+                        data-parentId="Home/resources/terminologies/valuesets"
+                        data-serial-nr="77"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-valuesets-guide-salutation.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Anrede">Anrede</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/valuesets/guide-transmissionCategory.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/valuesets/guide-transmissionCategory.guide.md"
+                        data-parentId="Home/resources/terminologies/valuesets"
+                        data-serial-nr="78"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-valuesets-guide-transmissionCategory.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="SurvNet-&#xDC;bermittlungskategorie">SurvNet-&#xDC;bermittlungskategorie</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/conceptmaps"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/terminologies/conceptmaps"
+                        data-parentId="Home/resources/terminologies"
+                        data-serial-nr="79"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-conceptmaps.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="ConceptMaps">ConceptMaps</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/conceptmaps/guide-ISO3166CountryCodes2DEMISCountryCodes.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/conceptmaps/guide-ISO3166CountryCodes2DEMISCountryCodes.guide.md"
+                        data-parentId="Home/resources/terminologies/conceptmaps"
+                        data-serial-nr="82"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-conceptmaps-guide-ISO3166CountryCodes2DEMISCountryCodes.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="ISO3166CountryCodes2DEMISCountryCodes">ISO3166CountryCodes2DEMISCountryCodes</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/namingsystems"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/terminologies/namingsystems"
+                        data-parentId="Home/resources/terminologies"
+                        data-serial-nr="83"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-namingsystems.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="NamingSystems">NamingSystems</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/namingsystems/guide-DemisLaboratoryId.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/namingsystems/guide-DemisLaboratoryId.guide.md"
+                        data-parentId="Home/resources/terminologies/namingsystems"
+                        data-serial-nr="86"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-namingsystems-guide-DemisLaboratoryId.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="DemisLaboratoryId">DemisLaboratoryId</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/namingsystems/guide-DemisParticipantId.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/namingsystems/guide-DemisParticipantId.guide.md"
+                        data-parentId="Home/resources/terminologies/namingsystems"
+                        data-serial-nr="87"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-namingsystems-guide-DemisParticipantId.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="DemisParticipantId">DemisParticipantId</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/namingsystems/guide-NotificationBundleId.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/namingsystems/guide-NotificationBundleId.guide.md"
+                        data-parentId="Home/resources/terminologies/namingsystems"
+                        data-serial-nr="88"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-namingsystems-guide-NotificationBundleId.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="NotificationBundleId">NotificationBundleId</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/namingsystems/guide-NotificationId.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/namingsystems/guide-NotificationId.guide.md"
+                        data-parentId="Home/resources/terminologies/namingsystems"
+                        data-serial-nr="89"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-namingsystems-guide-NotificationId.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="NotificationId">NotificationId</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/namingsystems/guide-SendingServiceProvider.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/namingsystems/guide-SendingServiceProvider.guide.md"
+                        data-parentId="Home/resources/terminologies/namingsystems"
+                        data-serial-nr="90"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-namingsystems-guide-SendingServiceProvider.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="SendingServiceProvider">SendingServiceProvider</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/extensions"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/extensions"
+                        data-parentId="Home/resources"
+                        data-serial-nr="91"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-extensions.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Extensions">Extensions</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/extensions/guide-AddressUse.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/extensions/guide-AddressUse.guide.md"
+                        data-parentId="Home/resources/extensions"
+                        data-serial-nr="94"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-extensions-guide-AddressUse.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Adressnutzung">Adressnutzung</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/extensions/guide-Comment.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/extensions/guide-Comment.guide.md"
+                        data-parentId="Home/resources/extensions"
+                        data-serial-nr="95"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-extensions-guide-Comment.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Kommentar">Kommentar</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/extensions/guide-FacilityAddressNotifiedPerson.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/extensions/guide-FacilityAddressNotifiedPerson.guide.md"
+                        data-parentId="Home/resources/extensions"
+                        data-serial-nr="96"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-extensions-guide-FacilityAddressNotifiedPerson.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Einrichtungsadresse der betroffenen Person">Einrichtungsadresse der betroffenen Person</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/extensions/guide-Salutation.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/extensions/guide-Salutation.guide.md"
+                        data-parentId="Home/resources/extensions"
+                        data-serial-nr="97"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-extensions-guide-Salutation.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Anrede">Anrede</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/extensions/guide-ReceivedNotification.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/extensions/guide-ReceivedNotification.guide.md"
+                        data-parentId="Home/resources/extensions"
+                        data-serial-nr="98"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-extensions-guide-ReceivedNotification.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Vorgangsnummer (Id des gesendeten Meldevorgangs)">Vorgangsnummer (Id des gesendeten Meldevorgangs)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/extensions/guide-ReceptionTimestampType.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/extensions/guide-ReceptionTimestampType.guide.md"
+                        data-parentId="Home/resources/extensions"
+                        data-serial-nr="99"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-extensions-guide-ReceptionTimestampType.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Zeitstempel des Meldungseingangs">Zeitstempel des Meldungseingangs</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/extensions/guide-PseudonymRecordType.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/extensions/guide-PseudonymRecordType.guide.md"
+                        data-parentId="Home/resources/extensions"
+                        data-serial-nr="100"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-extensions-guide-PseudonymRecordType.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Pseudonym des Patientendatensatzes">Pseudonym des Patientendatensatzes</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/extensions/guide-County.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/extensions/guide-County.guide.md"
+                        data-parentId="Home/resources/extensions"
+                        data-serial-nr="101"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-extensions-guide-County.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Landkreis">Landkreis</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/operationdefinitions"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/operationdefinitions"
+                        data-parentId="Home/resources"
+                        data-serial-nr="102"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-operationdefinitions.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="OperationDefinitions">OperationDefinitions</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/operationdefinitions/guide-ProcessNotification.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/operationdefinitions/guide-ProcessNotification.guide.md"
+                        data-parentId="Home/resources/operationdefinitions"
+                        data-serial-nr="105"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-operationdefinitions-guide-ProcessNotification.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="ProcessNotification">ProcessNotification</span>
+                            </a>
+                        </td>
+                    </tr>
+
+        </table>
+    </div>
+</div>
+
+<script type="text/javascript">
+    window.addEventListener('DOMContentLoaded', (event) => {
+
+        var resourceTreeTable = new BaseTreeTable();
+        resourceTreeTable.init("treetable");
+
+        var tree = document.getElementById("treetable");
+        tree.classList.remove("hidden");
+
+    });
+</script>
+
+                            </div>
+                            <div id="preview-content" class="preview-panel full-width" role="main" aria-label="Main content">
+                                
+
+<h4 id="meldevorgang">Meldevorgang</h4>
+<p><a href="https://simplifier.net/rki.demis.common/notificationbundle">https://demis.rki.de/fhir/StructureDefinition/NotificationBundle</a></p>
+<p>Der Meldevorgang bildet den Container für Meldungen und die darin referenzierten Ressourcen.
+In davon abgeleiteten Profilen wird die Anzahl und der Typ der enthaltenen Meldungen spezifiziert.</p>
+<p>Informationen zur Bildung und Anwendung des Identifiers des Meldevorgangs (<strong>Meldevorgangs-Id</strong>) finden sich <a href="https://simplifier.net/guide/rki.demis.laboratory/Home/guide-lifecyclemanagement.guide.md?version=current">in den Grundlagen des Meldungs-Lifecyclemanagement</a>.</p>
+<p><div id="1604a82d2b1845cd88923ddaa01a51ca" data-level="1" class="stu3-treetable"><div class="treetable-wrapper hybrid"><div class="treetable-left-panel"><table class="treetable"><tr data-id="e2e43db9-96c9-4c59-bf5b-72fe520e24a8" class="collapsed constraints"><td class="profile"><span class="baseIcon resource"></span><span class="constraints">Bundle</span></td><td class="profile"><span title="This element has or is affected by some invariants" class="constraints">I</span></td><td></td><td class="profile"><a title="Bundle
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Bundle.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Bundle.json" >Bundle</a></td><td class="details hidden"><span class="pin-control"></span><span><b>Element Id</b></span><div><p><pre>Bundle</pre></p></div><span><b>Short description </b></span><p><span>Contains a collection of resources</span></p><span><b>Definition </b></span><div class="markdown"><p>A container for a collection of resources.</p>
+</div><span><b>Data Type </b></span><p><a title="Bundle
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Bundle.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Bundle.json" >Bundle</a></p><span class="constraints"><b>Constraints</b></span><div><ul><li class=""><b>bdl-7:</b>FullUrl must be unique in a bundle, or else entries with the same fullUrl must have different meta.versionId (except in history bundles)<br/><code>(type = 'history') or entry.where(fullUrl.exists()).select(fullUrl&resource.meta.versionId).isDistinct()</code></li><li class=""><b>bdl-9:</b>A document must have an identifier with a system and a value<br/><code>type = 'document' implies (identifier.system.exists() and identifier.value.exists())</code></li><li class=""><b>bdl-3:</b>entry.request mandatory for batch/transaction/history, otherwise prohibited<br/><code>entry.all(request.exists() = (%resource.type = 'batch' or %resource.type = 'transaction' or %resource.type = 'history'))</code></li><li class=""><b>bdl-4:</b>entry.response mandatory for batch-response/transaction-response/history, otherwise prohibited<br/><code>entry.all(response.exists() = (%resource.type = 'batch-response' or %resource.type = 'transaction-response' or %resource.type = 'history'))</code></li><li class=""><b>bdl-12:</b>A message must have a MessageHeader as the first resource<br/><code>type = 'message' implies entry.first().resource.is(MessageHeader)</code></li><li class=""><b>bdl-1:</b>total only when a search or history<br/><code>total.empty() or (type = 'searchset') or (type = 'history')</code></li><li class=""><b>bdl-2:</b>entry.search only when a search<br/><code>entry.search.empty() or (type = 'searchset')</code></li><li class=""><b>bdl-11:</b>A document must have a Composition as the first resource<br/><code>type = 'document' implies entry.first().resource.is(Composition)</code></li><li class=""><b>bdl-10:</b>A document must have a date<br/><code>type = 'document' implies (timestamp.hasValue())</code></li><li class="constraints"><b>exactlyOneMetaProfile:</b>Es muss genau ein meta.profile angegeben werden.<br/><code>entry.all(resource.meta.profile.count()=1)</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>Entity. Role, or Act</li><li class=""><b>v2:</b>N/A</li><li class=""><b>rim:</b>N/A</li><li class=""><b>cda:</b>ClinicalDocument, if bundle.type = document</li></ul></td></tr><tr id="Bundle.identifier" data-id="f845a678-aa4e-40c7-a5b8-14e266907973" data-parentId="e2e43db9-96c9-4c59-bf5b-72fe520e24a8" class="collapsed constraints"><td class="profile"><span class="baseIcon datatype"></span><span class="constraints">identifier</span></td><td class="profile"><span class="mustsupport constraints" title="This element is an element that must be supported">S</span> <span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span class="constraints">1</span><span class="constraints">..</span><span>1</span></td><td class="profile"><a title="Identifier
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Identifier.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Identifier.json" >Identifier</a></td><td class="details hidden"><span class="pin-control"></span><span><b>Element Id</b></span><div><p><pre>Bundle.identifier</pre></p></div><span class="constraints"><b>Short description </b></span><p><span class="constraints">Identifier f&#252;r den Meldevorgang</span></p><span class="constraints"><b>Definition </b></span><div class="markdown constraints"><p>Der Identifier für den Meldevorgang ist als uuidv4 in value und unter der Verwendung der NotificationBundleId (https://demis.rki.de/fhir/NamingSystem/NotificationBundleId) in system anzugeben.
+Dabei ist zu beachten, dass der gesetzte Wert durch die Infrastruktur verworfen und neu generiert wird.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Persistent identity generally only matters for batches of type Document, Message, and Collection. It would not normally be populated for search and history results and servers ignore Bundle.identifier when processing batches and transactions. For Documents  the .identifier SHALL be populated such that the .identifier is globally unique.</p>
+</div><span><b>Data Type </b></span><p><a title="Identifier
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Identifier.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Identifier.json" >Identifier</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>CX / EI (occasionally, more often EI maps to a resource id or a URL)</li><li class=""><b>rim:</b>II - The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT]</li><li class=""><b>servd:</b>Identifier</li><li class=""><b>w5:</b>FiveWs.identifier</li><li class=""><b>cda:</b>ClinicalDocument.id</li></ul></td></tr><tr id="Bundle.identifier.use" data-id="940ff20b-5849-40f6-8601-a75914c2c466" data-parentId="f845a678-aa4e-40c7-a5b8-14e266907973" class=""><td class="profile"><span class="baseIcon primitive"></span><span>use</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span> <span title="This element is a modifying element">?!</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="code
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-code.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-code.json" >code</a><span class="binding-label">Binding</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Bundle.identifier.use</pre></p></div><span><b>Short description </b></span><p><span>usual | official | temp | secondary | old (If known)</span></p><span><b>Definition </b></span><div class="markdown"><p>The purpose of this identifier.</p>
+</div><span><b>Requirements </b></span><div class="markdown"><p>Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Applications can assume that an identifier is permanent unless it explicitly says that it is temporary.</p>
+</div><span><b>Data Type </b></span><p><a title="code
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-code.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-code.json" >code</a></p><span><b>Binding </b></span><p><p><span>Identifies the purpose for this identifier, if known .</span></p><a title="IdentifierUse
+hl7.fhir.r4.core 4.0.1
+ValueSet-identifier-use.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/ValueSet-identifier-use.json" >IdentifierUse</a><span> (</span><a title="To be conformant, instances of this element SHALL include a code from the specified valueset" href="http://hl7.org/fhir/r4/terminologies.html#required" >required</a><span>)</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>N/A</li><li class=""><b>rim:</b>Role.code or implied by context</li></ul></td></tr><tr id="Bundle.identifier.type" data-id="629ad707-9ee4-4650-b799-f917dde6c672" data-parentId="f845a678-aa4e-40c7-a5b8-14e266907973" class=""><td class="profile"><span class="baseIcon datatype"></span><span>type</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="CodeableConcept
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-CodeableConcept.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-CodeableConcept.json" >CodeableConcept</a><span class="binding-label">Binding</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Bundle.identifier.type</pre></p></div><span><b>Short description </b></span><p><span>Description of identifier</span></p><span><b>Definition </b></span><div class="markdown"><p>A coded type for the identifier that can be used to determine which identifier to use for a specific purpose.</p>
+</div><span><b>Requirements </b></span><div class="markdown"><p>Allows users to make use of identifiers when the identifier system is not known.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.</p>
+</div><span><b>Data Type </b></span><p><a title="CodeableConcept
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-CodeableConcept.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-CodeableConcept.json" >CodeableConcept</a></p><span><b>Binding </b></span><p><p><span>A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.</span></p><a title="Identifier Type Codes
+hl7.fhir.r4.core 4.0.1
+ValueSet-identifier-type.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/ValueSet-identifier-type.json" >Identifier Type Codes</a><span> (</span><a title="To be conformant, instances of this element SHALL include a code from the specified value set if any of the codes within the value set can apply to the concept being communicated. If the valueset does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." href="http://hl7.org/fhir/r4/terminologies.html#extensible" >extensible</a><span>)</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>CE/CNE/CWE</li><li class=""><b>rim:</b>CD</li><li class=""><b>orim:</b>fhir:CodeableConcept rdfs:subClassOf dt:CD</li><li class=""><b>v2:</b>CX.5</li><li class=""><b>rim:</b>Role.code or implied by context</li></ul></td></tr><tr id="Bundle.identifier.system" data-id="d828df5f-48c5-4958-97c4-7d0016cb6371" data-parentId="f845a678-aa4e-40c7-a5b8-14e266907973" class="constraints"><td class="profile"><span class="baseIcon primitive"></span><span class="constraints">system</span></td><td class="profile"><span class="mustsupport constraints" title="This element is an element that must be supported">S</span> <span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span class="constraints">1</span><span class="constraints">..</span><span>1</span></td><td class="profile"><a title="uri
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-uri.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-uri.json" >uri</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Bundle.identifier.system</pre></p></div><span><b>Short description </b></span><p><span>The namespace for the identifier value</span></p><span><b>Definition </b></span><div class="markdown"><p>Establishes the namespace for the value - that is, a URL that describes a set values that are unique.</p>
+</div><span><b>Requirements </b></span><div class="markdown"><p>There are many sets  of identifiers.  To perform matching of two identifiers, we need to know what set we're dealing with. The system identifies a particular set of unique identifiers.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Identifier.system is always case sensitive.</p>
+</div><span><b>Data Type </b></span><p><a title="uri
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-uri.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-uri.json" >uri</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Examples </b></span><div><span>General</span><p><pre class="">http://www.acme.com/identifiers/patient</pre></p></div><br/><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>CX.4 / EI-2-4</li><li class=""><b>rim:</b>II.root or Role.id.root</li><li class=""><b>servd:</b>./IdentifierType</li></ul></td></tr><tr id="Bundle.identifier.value" data-id="d00effe2-5eae-443a-b80f-1122ccddac01" data-parentId="f845a678-aa4e-40c7-a5b8-14e266907973" class="constraints"><td class="profile"><span class="baseIcon primitive"></span><span class="constraints">value</span></td><td class="profile"><span class="mustsupport constraints" title="This element is an element that must be supported">S</span> <span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span class="constraints">1</span><span class="constraints">..</span><span>1</span></td><td class="profile"><a title="string
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-string.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-string.json" >string</a></td><td class="details hidden"><span class="pin-control"></span><span><b>Element Id</b></span><div><p><pre>Bundle.identifier.value</pre></p></div><span class="constraints"><b>Short description </b></span><p><span class="constraints">uuidv4</span></p><span class="constraints"><b>Definition </b></span><div class="markdown constraints"><p>uuidv4</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value's primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the <a href="extension-rendered-value.html">Rendered Value extension</a>. Identifier.value is to be treated as case sensitive unless knowledge of the Identifier.system allows the processer to be confident that non-case-sensitive processing is safe.</p>
+</div><span><b>Data Type </b></span><p><a title="string
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-string.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-string.json" >string</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Examples </b></span><div><span>General</span><p><pre class="">123456</pre></p></div><br/><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>CX.1 / EI.1</li><li class=""><b>rim:</b>II.extension or II.root if system indicates OID or GUID (Or Role.id.extension or root)</li><li class=""><b>servd:</b>./Value</li></ul></td></tr><tr id="Bundle.identifier.period" data-id="e5347759-3d3a-482b-be59-cc6874558855" data-parentId="f845a678-aa4e-40c7-a5b8-14e266907973" class=""><td class="profile"><span class="baseIcon datatype"></span><span>period</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span> <span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="Period
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Period.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Period.json" >Period</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Bundle.identifier.period</pre></p></div><span><b>Short description </b></span><p><span>Time period when id is/was valid for use</span></p><span><b>Definition </b></span><div class="markdown"><p>Time period during which identifier is/was valid for use.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. &quot;the patient was an inpatient of the hospital for this time range&quot;) or one value from the range applies (e.g. &quot;give to the patient between these two times&quot;).</p>
+<p>Period is not used for a duration (a measure of elapsed time). See <a href="datatypes.html#Duration">Duration</a>.</p>
+</div><span><b>Data Type </b></span><p><a title="Period
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Period.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Period.json" >Period</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li><li class=""><b>per-1:</b>If present, start SHALL have a lower value than end<br/><code>start.hasValue().not() or end.hasValue().not() or (start <= end)</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>DR</li><li class=""><b>rim:</b>IVL&lt;TS&gt;[lowClosed=&quot;true&quot; and highClosed=&quot;true&quot;] or URG&lt;TS&gt;[lowClosed=&quot;true&quot; and highClosed=&quot;true&quot;]</li><li class=""><b>v2:</b>CX.7 + CX.8</li><li class=""><b>rim:</b>Role.effectiveTime or implied by context</li><li class=""><b>servd:</b>./StartDate and ./EndDate</li></ul></td></tr><tr id="Bundle.identifier.assigner" data-id="4e8a2436-12d5-4f4f-8e9b-c833334ed660" data-parentId="f845a678-aa4e-40c7-a5b8-14e266907973" class=""><td class="profile"><span class="baseIcon reference"></span><span>assigner</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span> <span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="Reference
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Reference.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Reference.json" >Reference</a><span>(</span><a title="Organization
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Organization.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Organization.json" >Organization</a><span>)</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Bundle.identifier.assigner</pre></p></div><span><b>Short description </b></span><p><span>Organization that issued id (may be just text)</span></p><span><b>Definition </b></span><div class="markdown"><p>Organization that issued/manages the identifier.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization.</p>
+</div><span><b>Data Type </b></span><p><a title="Reference
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Reference.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Reference.json" >Reference</a><span>(</span><a title="Organization
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Organization.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Organization.json" >Organization</a><span>)</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li><li class=""><b>ref-1:</b>SHALL have a contained resource if a local reference is provided<br/><code>reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>rim:</b>The target of a resource reference is a RIM entry point (Act, Role, or Entity)</li><li class=""><b>v2:</b>CX.4 / (CX.4,CX.9,CX.10)</li><li class=""><b>rim:</b>II.assigningAuthorityName but note that this is an improper use by the definition of the field.  Also Role.scoper</li><li class=""><b>servd:</b>./IdentifierIssuingAuthority</li></ul></td></tr><tr id="Bundle.type" data-id="55ffd222-9043-4090-b1e3-ed31db169a55" data-parentId="e2e43db9-96c9-4c59-bf5b-72fe520e24a8" class="constraints"><td class="profile"><span class="baseIcon primitive"></span><span class="constraints">type</span></td><td class="profile"><span class="mustsupport constraints" title="This element is an element that must be supported">S</span> <span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>1</span><span>..</span><span>1</span></td><td class="profile"><a title="code
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-code.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-code.json" >code</a><span class="binding-label">Binding</span><span class="fixed-label constraints">Fixed Value</span></td><td class="details hidden"><span class="pin-control"></span><span><b>Element Id</b></span><div><p><pre>Bundle.type</pre></p></div><span class="constraints"><b>Short description </b></span><p><span class="constraints">Typ der Bundle-Ressource.</span></p><span class="constraints"><b>Definition </b></span><div class="markdown constraints"><p>Typ der Bundle-Ressource. Für DEMIS ist der Typ grundsätzlich mit dem Wert „document“ aus dem referenzierten ValueSet (http://hl7.org/fhir/ValueSet/bundle-type|4.0.0) zu belegen.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>It's possible to use a bundle for other purposes (e.g. a document can be accepted as a transaction). This is primarily defined so that there can be specific rules for some of the bundle types.</p>
+</div><span><b>Data Type </b></span><p><a title="code
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-code.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-code.json" >code</a></p><span><b>Binding </b></span><p><p><span>Indicates the purpose of a bundle - how it is intended to be used.</span></p><a title="BundleType
+hl7.fhir.r4.core 4.0.1
+ValueSet-bundle-type.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/ValueSet-bundle-type.json" >BundleType</a><span> (</span><a title="To be conformant, instances of this element SHALL include a code from the specified valueset" href="http://hl7.org/fhir/r4/terminologies.html#required" >required</a><span>)</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span class="constraints"><b>Fixed Value </b></span><div>
+<p><pre class=" constraints">document</pre></p></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>w5:</b>FiveWs.class</li></ul></td></tr><tr id="Bundle.timestamp" data-id="96a6f3c8-29d6-4d69-82e8-a0e6179b6738" data-parentId="e2e43db9-96c9-4c59-bf5b-72fe520e24a8" class=""><td class="profile"><span class="baseIcon primitive"></span><span>timestamp</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="instant
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-instant.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-instant.json" >instant</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Bundle.timestamp</pre></p></div><span><b>Short description </b></span><p><span>When the bundle was assembled</span></p><span><b>Definition </b></span><div class="markdown"><p>The date/time that the bundle was assembled - i.e. when the resources were placed in the bundle.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>For many bundles, the timestamp is equal to .meta.lastUpdated, because they are not stored (e.g. search results). When a bundle is placed in a persistent store, .meta.lastUpdated will be usually be changed by the server. When the bundle is a message, a middleware agent altering the message (even if not stored) SHOULD update .meta.lastUpdated. .timestamp is used to track the original time of the Bundle, and SHOULD be populated.</p>
+<p>Usage:</p>
+<ul>
+<li>document : the date the document was created. Note: the composition may predate the document, or be associated with multiple documents. The date of the composition - the authoring time - may be earlier than the document assembly time</li>
+<li>message : the date that the content of the message was assembled. This date is not changed by middleware engines unless they add additional data that changes the meaning of the time of the message</li>
+<li>history : the date that the history was assembled. This time would be used as the _since time to ask for subsequent updates</li>
+<li>searchset : the time that the search set was assembled. Note that different pages MAY have different timestamps but need not. Having different timestamps does not imply that subsequent pages will represent or include changes made since the initial query</li>
+<li>transaction | transaction-response | batch | batch-response | collection : no particular assigned meaning</li>
+</ul>
+<p>The timestamp value should be greater than the lastUpdated and other timestamps in the resources in the bundle, and it should be equal or earlier than the .meta.lastUpdated on the Bundle itself.</p>
+</div><span><b>Data Type </b></span><p><a title="instant
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-instant.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-instant.json" >instant</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>w5:</b>FiveWs.init</li><li class=""><b>cda:</b>ClinicalDocument.effectiveTime</li></ul></td></tr><tr id="Bundle.total" data-id="13fc8798-817c-4820-abac-a98ca00915e0" data-parentId="e2e43db9-96c9-4c59-bf5b-72fe520e24a8" class=""><td class="profile"><span class="baseIcon primitive"></span><span>total</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span> <span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="unsignedInt
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-unsignedInt.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-unsignedInt.json" >unsignedInt</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Bundle.total</pre></p></div><span><b>Short description </b></span><p><span>If search, the total number of matches</span></p><span><b>Definition </b></span><div class="markdown"><p>If a set of search matches, this is the total number of entries of type 'match' across all pages in the search.  It does not include search.mode = 'include' or 'outcome' entries and it does not provide a count of the number of entries in the Bundle.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Only used if the bundle is a search result set. The total does not include resources such as OperationOutcome and included resources, only the total number of matching resources.</p>
+</div><span><b>Data Type </b></span><p><a title="unsignedInt
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-unsignedInt.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-unsignedInt.json" >unsignedInt</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li></ul></td></tr><tr id="Bundle.link" data-id="100c48c3-9573-44d4-848d-dfb6237707e2" data-parentId="e2e43db9-96c9-4c59-bf5b-72fe520e24a8" class="collapsed"><td class="profile"><span class="baseIcon backboneElement"></span><span>link</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>*</span></td><td class="profile"><a title="BackboneElement
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-BackboneElement.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-BackboneElement.json" >BackboneElement</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Bundle.link</pre></p></div><span><b>Short description </b></span><p><span>Links related to this Bundle</span></p><span><b>Definition </b></span><div class="markdown"><p>A series of links that provide context to this bundle.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Both Bundle.link and Bundle.entry.link are defined to support providing additional context when Bundles are used (e.g. <a href="http://en.wikipedia.org/wiki/HATEOAS">HATEOAS</a>).</p>
+<p>Bundle.entry.link corresponds to links found in the HTTP header if the resource in the entry was <a href="http.html#read">read</a> directly.</p>
+<p>This specification defines some specific uses of Bundle.link for <a href="search.html#conformance">searching</a> and <a href="http.html#paging">paging</a>, but no specific uses for Bundle.entry.link, and no defined function in a transaction - the meaning is implementation specific.</p>
+</div><span><b>Data Type </b></span><p><a title="BackboneElement
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-BackboneElement.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-BackboneElement.json" >BackboneElement</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li></ul></td></tr><tr id="Bundle.link.relation" data-id="0d623d10-ae17-45e1-b3cd-a8bcbd09f2f1" data-parentId="100c48c3-9573-44d4-848d-dfb6237707e2" class=""><td class="profile"><span class="baseIcon primitive"></span><span>relation</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>1</span><span>..</span><span>1</span></td><td class="profile"><a title="string
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-string.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-string.json" >string</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Bundle.link.relation</pre></p></div><span><b>Short description </b></span><p><span>See http://www.iana.org/assignments/link-relations/link-relations.xhtml#link-relations-1</span></p><span><b>Definition </b></span><div class="markdown"><p>A name which details the functional use for this link - see <a href="http://www.iana.org/assignments/link-relations/link-relations.xhtml#link-relations-1">http://www.iana.org/assignments/link-relations/link-relations.xhtml#link-relations-1</a>.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Note that FHIR strings SHALL NOT exceed 1MB in size</p>
+</div><span><b>Data Type </b></span><p><a title="string
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-string.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-string.json" >string</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li></ul></td></tr><tr id="Bundle.link.url" data-id="32410f5d-410b-4e91-a059-27a60ac29ea0" data-parentId="100c48c3-9573-44d4-848d-dfb6237707e2" class=""><td class="profile"><span class="baseIcon primitive"></span><span>url</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>1</span><span>..</span><span>1</span></td><td class="profile"><a title="uri
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-uri.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-uri.json" >uri</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Bundle.link.url</pre></p></div><span><b>Short description </b></span><p><span>Reference details for the link</span></p><span><b>Definition </b></span><div class="markdown"><p>The reference details for the link.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>see http://en.wikipedia.org/wiki/Uniform_resource_identifier</p>
+</div><span><b>Data Type </b></span><p><a title="uri
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-uri.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-uri.json" >uri</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li></ul></td></tr><tr id="Bundle.entry" data-id="9741686a-255b-4fdd-a080-d718b16f8af8" data-parentId="e2e43db9-96c9-4c59-bf5b-72fe520e24a8" class="collapsed sliced constraints"><td class="profile"><span class="baseIcon slice"></span><span class="constraints">entry</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span> <span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span>0</span><span>..</span><span>*</span></td><td class="profile"><a title="BackboneElement
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-BackboneElement.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-BackboneElement.json" >BackboneElement</a></td><td class="details hidden"><span class="pin-control"></span><span><b>Element Id</b></span><div><p><pre>Bundle.entry</pre></p></div><span><b>Short description </b></span><p><span>Entry in the bundle - will have a resource or information</span></p><span><b>Definition </b></span><div class="markdown"><p>An entry in a bundle resource - will either contain a resource or information about a resource (transactions and history only).</p>
+</div><span><b>Data Type </b></span><p><a title="BackboneElement
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-BackboneElement.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-BackboneElement.json" >BackboneElement</a></p><span class="constraints"><b>Sliced: </b></span><p><span class="constraints">Unordered, Open, by resource(Type)</span></p><p><span></span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li><li class=""><b>bdl-8:</b>fullUrl cannot be a version specific reference<br/><code>fullUrl.contains('/_history/').not()</code></li><li class=""><b>bdl-5:</b>must be a resource unless there&#39;s a request or response<br/><code>resource.exists() or request.exists() or response.exists()</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li></ul></td></tr><tr id="Bundle.entry.link" data-id="baf2d8d4-da7e-4cb4-bb47-701bd4a935dc" data-parentId="9741686a-255b-4fdd-a080-d718b16f8af8" class=""><td class="profile"><span class="baseIcon nameReference"></span><span>link</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>*</span></td><td class="profile">see (<a  href="#Bundle.link" >link</a>)</td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Bundle.entry.link</pre></p></div><span><b>Short description </b></span><p><span>Links related to this entry</span></p><span><b>Definition </b></span><div class="markdown"><p>A series of links that provide context to this entry.</p>
+</div></td></tr><tr id="Bundle.entry.fullUrl" data-id="51c139ea-51e8-4801-86eb-2b034e296936" data-parentId="9741686a-255b-4fdd-a080-d718b16f8af8" class=""><td class="profile"><span class="baseIcon primitive"></span><span>fullUrl</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="uri
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-uri.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-uri.json" >uri</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Bundle.entry.fullUrl</pre></p></div><span><b>Short description </b></span><p><span>URI for resource (Absolute URL server address or URI for UUID/OID)</span></p><span><b>Definition </b></span><div class="markdown"><p>The Absolute URL for the resource.  The fullUrl SHALL NOT disagree with the id in the resource - i.e. if the fullUrl is not a urn:uuid, the URL shall be version-independent URL consistent with the Resource.id. The fullUrl is a version independent reference to the resource. The fullUrl element SHALL have a value except that:</p>
+<ul>
+<li>fullUrl can be empty on a POST (although it does not need to when specifying a temporary id for reference in the bundle)</li>
+<li>Results from operations might involve resources that are not identified.</li>
+</ul>
+</div><span><b>Comments </b></span><div class="markdown"><p>fullUrl might not be <a href="bundle.html#bundle-unique">unique in the context of a resource</a>. Note that since <a href="references.html">FHIR resources do not need to be served through the FHIR API</a>, the fullURL might be a URN or an absolute URL that does not end with the logical id of the resource (Resource.id). However, but if the fullUrl does look like a RESTful server URL (e.g. meets the <a href="references.html#regex">regex</a>, then the 'id' portion of the fullUrl SHALL end with the Resource.id.</p>
+<p>Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).</p>
+</div><span><b>Data Type </b></span><p><a title="uri
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-uri.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-uri.json" >uri</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li></ul></td></tr><tr id="Bundle.entry.resource" data-id="56d75999-8a4d-4fa0-ac9f-d128e8196b89" data-parentId="9741686a-255b-4fdd-a080-d718b16f8af8" class=""><td class="profile"><span class="baseIcon resource"></span><span>resource</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="Resource
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Resource.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Resource.json" >Resource</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Bundle.entry.resource</pre></p></div><span><b>Short description </b></span><p><span>A resource in the bundle</span></p><span><b>Definition </b></span><div class="markdown"><p>The Resource for the entry. The purpose/meaning of the resource is determined by the Bundle.type.</p>
+</div><span><b>Data Type </b></span><p><a title="Resource
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Resource.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Resource.json" >Resource</a></p><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>Entity. Role, or Act</li></ul></td></tr><tr id="Bundle.entry.search" data-id="59198acc-f501-4a08-9c91-3d3916db58ef" data-parentId="9741686a-255b-4fdd-a080-d718b16f8af8" class="collapsed"><td class="profile"><span class="baseIcon backboneElement"></span><span>search</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span> <span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="BackboneElement
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-BackboneElement.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-BackboneElement.json" >BackboneElement</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Bundle.entry.search</pre></p></div><span><b>Short description </b></span><p><span>Search related information</span></p><span><b>Definition </b></span><div class="markdown"><p>Information about the search process that lead to the creation of this entry.</p>
+</div><span><b>Data Type </b></span><p><a title="BackboneElement
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-BackboneElement.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-BackboneElement.json" >BackboneElement</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li></ul></td></tr><tr id="Bundle.entry.search.mode" data-id="3c9820d4-35ed-4f14-a0c9-54c8ee7b287f" data-parentId="59198acc-f501-4a08-9c91-3d3916db58ef" class=""><td class="profile"><span class="baseIcon primitive"></span><span>mode</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="code
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-code.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-code.json" >code</a><span class="binding-label">Binding</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Bundle.entry.search.mode</pre></p></div><span><b>Short description </b></span><p><span>match | include | outcome - why this is in the result set</span></p><span><b>Definition </b></span><div class="markdown"><p>Why this entry is in the result set - whether it's included as a match or because of an _include requirement, or to convey information or warning information about the search process.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>There is only one mode. In some corner cases, a resource may be included because it is both a match and an include. In these circumstances, 'match' takes precedence.</p>
+</div><span><b>Data Type </b></span><p><a title="code
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-code.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-code.json" >code</a></p><span><b>Binding </b></span><p><p><span>Why an entry is in the result set - whether it&#39;s included as a match or because of an _include requirement, or to convey information or warning information about the search process.</span></p><a title="SearchEntryMode
+hl7.fhir.r4.core 4.0.1
+ValueSet-search-entry-mode.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/ValueSet-search-entry-mode.json" >SearchEntryMode</a><span> (</span><a title="To be conformant, instances of this element SHALL include a code from the specified valueset" href="http://hl7.org/fhir/r4/terminologies.html#required" >required</a><span>)</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li></ul></td></tr><tr id="Bundle.entry.search.score" data-id="6736f0fe-2eb9-467b-9701-468d97522d61" data-parentId="59198acc-f501-4a08-9c91-3d3916db58ef" class=""><td class="profile"><span class="baseIcon primitive"></span><span>score</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="decimal
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-decimal.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-decimal.json" >decimal</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Bundle.entry.search.score</pre></p></div><span><b>Short description </b></span><p><span>Search ranking (between 0 and 1)</span></p><span><b>Definition </b></span><div class="markdown"><p>When searching, the server's search ranking score for the entry.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Servers are not required to return a ranking score. 1 is most relevant, and 0 is least relevant. Often, search results are sorted by score, but the client may specify a different sort order.</p>
+<p>See <a href="patient-operation-match.html">Patient Match</a> for the EMPI search which relates to this element.</p>
+</div><span><b>Data Type </b></span><p><a title="decimal
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-decimal.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-decimal.json" >decimal</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li></ul></td></tr><tr id="Bundle.entry.request" data-id="6e67db79-9f7d-4b86-bf89-2cea64446b41" data-parentId="9741686a-255b-4fdd-a080-d718b16f8af8" class="collapsed"><td class="profile"><span class="baseIcon backboneElement"></span><span>request</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span> <span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="BackboneElement
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-BackboneElement.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-BackboneElement.json" >BackboneElement</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Bundle.entry.request</pre></p></div><span><b>Short description </b></span><p><span>Additional execution information (transaction/batch/history)</span></p><span><b>Definition </b></span><div class="markdown"><p>Additional information about how this entry should be processed as part of a transaction or batch.  For history, it shows how the entry was processed to create the version contained in the entry.</p>
+</div><span><b>Data Type </b></span><p><a title="BackboneElement
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-BackboneElement.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-BackboneElement.json" >BackboneElement</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li></ul></td></tr><tr id="Bundle.entry.request.method" data-id="6dd1361c-e147-467c-ac15-e839658d111d" data-parentId="6e67db79-9f7d-4b86-bf89-2cea64446b41" class=""><td class="profile"><span class="baseIcon primitive"></span><span>method</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>1</span><span>..</span><span>1</span></td><td class="profile"><a title="code
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-code.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-code.json" >code</a><span class="binding-label">Binding</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Bundle.entry.request.method</pre></p></div><span><b>Short description </b></span><p><span>GET | HEAD | POST | PUT | DELETE | PATCH</span></p><span><b>Definition </b></span><div class="markdown"><p>In a transaction or batch, this is the HTTP action to be executed for this entry. In a history bundle, this indicates the HTTP action that occurred.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Note that FHIR strings SHALL NOT exceed 1MB in size</p>
+</div><span><b>Data Type </b></span><p><a title="code
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-code.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-code.json" >code</a></p><span><b>Binding </b></span><p><p><span>HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.</span></p><a title="HTTPVerb
+hl7.fhir.r4.core 4.0.1
+ValueSet-http-verb.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/ValueSet-http-verb.json" >HTTPVerb</a><span> (</span><a title="To be conformant, instances of this element SHALL include a code from the specified valueset" href="http://hl7.org/fhir/r4/terminologies.html#required" >required</a><span>)</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li></ul></td></tr><tr id="Bundle.entry.request.url" data-id="d0307912-26a2-4300-8945-a5219dfc6484" data-parentId="6e67db79-9f7d-4b86-bf89-2cea64446b41" class=""><td class="profile"><span class="baseIcon primitive"></span><span>url</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>1</span><span>..</span><span>1</span></td><td class="profile"><a title="uri
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-uri.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-uri.json" >uri</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Bundle.entry.request.url</pre></p></div><span><b>Short description </b></span><p><span>URL for HTTP equivalent of this entry</span></p><span><b>Definition </b></span><div class="markdown"><p>The URL for this entry, relative to the root (the address to which the request is posted).</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>E.g. for a Patient Create, the method would be &quot;POST&quot; and the URL would be &quot;Patient&quot;. For a Patient Update, the method would be PUT and the URL would be &quot;Patient/[id]&quot;.</p>
+</div><span><b>Data Type </b></span><p><a title="uri
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-uri.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-uri.json" >uri</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li></ul></td></tr><tr id="Bundle.entry.request.ifNoneMatch" data-id="f9f8651e-5cdb-406e-a7c9-660bfca64289" data-parentId="6e67db79-9f7d-4b86-bf89-2cea64446b41" class=""><td class="profile"><span class="baseIcon primitive"></span><span>ifNoneMatch</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="string
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-string.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-string.json" >string</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Bundle.entry.request.ifNoneMatch</pre></p></div><span><b>Short description </b></span><p><span>For managing cache currency</span></p><span><b>Definition </b></span><div class="markdown"><p>If the ETag values match, return a 304 Not Modified status. See the API documentation for <a href="http.html#cread">&quot;Conditional Read&quot;</a>.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Note that FHIR strings SHALL NOT exceed 1MB in size</p>
+</div><span><b>Data Type </b></span><p><a title="string
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-string.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-string.json" >string</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li></ul></td></tr><tr id="Bundle.entry.request.ifModifiedSince" data-id="a552bd59-c4e0-44e2-bdcc-3f9b08968d44" data-parentId="6e67db79-9f7d-4b86-bf89-2cea64446b41" class=""><td class="profile"><span class="baseIcon primitive"></span><span>ifModifiedSince</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="instant
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-instant.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-instant.json" >instant</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Bundle.entry.request.ifModifiedSince</pre></p></div><span><b>Short description </b></span><p><span>For managing cache currency</span></p><span><b>Definition </b></span><div class="markdown"><p>Only perform the operation if the last updated date matches. See the API documentation for <a href="http.html#cread">&quot;Conditional Read&quot;</a>.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Note: This is intended for where precisely observed times are required, typically system logs etc., and not human-reported times - for them, see date and dateTime (which can be as precise as instant, but is not required to be) below. Time zone is always required</p>
+</div><span><b>Data Type </b></span><p><a title="instant
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-instant.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-instant.json" >instant</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li></ul></td></tr><tr id="Bundle.entry.request.ifMatch" data-id="0fdb4168-a51c-4db1-a376-e50f74cc2b37" data-parentId="6e67db79-9f7d-4b86-bf89-2cea64446b41" class=""><td class="profile"><span class="baseIcon primitive"></span><span>ifMatch</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="string
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-string.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-string.json" >string</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Bundle.entry.request.ifMatch</pre></p></div><span><b>Short description </b></span><p><span>For managing update contention</span></p><span><b>Definition </b></span><div class="markdown"><p>Only perform the operation if the Etag value matches. For more information, see the API section <a href="http.html#concurrency">&quot;Managing Resource Contention&quot;</a>.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Note that FHIR strings SHALL NOT exceed 1MB in size</p>
+</div><span><b>Data Type </b></span><p><a title="string
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-string.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-string.json" >string</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li></ul></td></tr><tr id="Bundle.entry.request.ifNoneExist" data-id="f54e479f-8ab1-40ba-bbb0-f434182d2412" data-parentId="6e67db79-9f7d-4b86-bf89-2cea64446b41" class=""><td class="profile"><span class="baseIcon primitive"></span><span>ifNoneExist</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="string
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-string.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-string.json" >string</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Bundle.entry.request.ifNoneExist</pre></p></div><span><b>Short description </b></span><p><span>For conditional creates</span></p><span><b>Definition </b></span><div class="markdown"><p>Instruct the server not to perform the create if a specified resource already exists. For further information, see the API documentation for <a href="http.html#ccreate">&quot;Conditional Create&quot;</a>. This is just the query portion of the URL - what follows the &quot;?&quot; (not including the &quot;?&quot;).</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Note that FHIR strings SHALL NOT exceed 1MB in size</p>
+</div><span><b>Data Type </b></span><p><a title="string
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-string.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-string.json" >string</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li></ul></td></tr><tr id="Bundle.entry.response" data-id="e22310b3-b536-47f3-9bc9-c73c4474aaf4" data-parentId="9741686a-255b-4fdd-a080-d718b16f8af8" class="collapsed"><td class="profile"><span class="baseIcon backboneElement"></span><span>response</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span> <span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="BackboneElement
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-BackboneElement.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-BackboneElement.json" >BackboneElement</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Bundle.entry.response</pre></p></div><span><b>Short description </b></span><p><span>Results of execution (transaction/batch/history)</span></p><span><b>Definition </b></span><div class="markdown"><p>Indicates the results of processing the corresponding 'request' entry in the batch or transaction being responded to or what the results of an operation where when returning history.</p>
+</div><span><b>Data Type </b></span><p><a title="BackboneElement
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-BackboneElement.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-BackboneElement.json" >BackboneElement</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li></ul></td></tr><tr id="Bundle.entry.response.status" data-id="09f307e7-c297-4e0c-b30d-30b910f906d9" data-parentId="e22310b3-b536-47f3-9bc9-c73c4474aaf4" class=""><td class="profile"><span class="baseIcon primitive"></span><span>status</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>1</span><span>..</span><span>1</span></td><td class="profile"><a title="string
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-string.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-string.json" >string</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Bundle.entry.response.status</pre></p></div><span><b>Short description </b></span><p><span>Status response code (text optional)</span></p><span><b>Definition </b></span><div class="markdown"><p>The status code returned by processing this entry. The status SHALL start with a 3 digit HTTP code (e.g. 404) and may contain the standard HTTP description associated with the status code.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Note that FHIR strings SHALL NOT exceed 1MB in size</p>
+</div><span><b>Data Type </b></span><p><a title="string
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-string.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-string.json" >string</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li></ul></td></tr><tr id="Bundle.entry.response.location" data-id="2b90c72a-5b55-4739-9b29-af001e61f20f" data-parentId="e22310b3-b536-47f3-9bc9-c73c4474aaf4" class=""><td class="profile"><span class="baseIcon primitive"></span><span>location</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="uri
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-uri.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-uri.json" >uri</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Bundle.entry.response.location</pre></p></div><span><b>Short description </b></span><p><span>The location (if the operation returns a location)</span></p><span><b>Definition </b></span><div class="markdown"><p>The location header created by processing this operation, populated if the operation returns a location.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>see http://en.wikipedia.org/wiki/Uniform_resource_identifier</p>
+</div><span><b>Data Type </b></span><p><a title="uri
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-uri.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-uri.json" >uri</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li></ul></td></tr><tr id="Bundle.entry.response.etag" data-id="ed0942bb-0a46-413e-a51d-1fea0419409d" data-parentId="e22310b3-b536-47f3-9bc9-c73c4474aaf4" class=""><td class="profile"><span class="baseIcon primitive"></span><span>etag</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="string
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-string.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-string.json" >string</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Bundle.entry.response.etag</pre></p></div><span><b>Short description </b></span><p><span>The Etag for the resource (if relevant)</span></p><span><b>Definition </b></span><div class="markdown"><p>The Etag for the resource, if the operation for the entry produced a versioned resource (see <a href="http.html#versioning">Resource Metadata and Versioning</a> and <a href="http.html#concurrency">Managing Resource Contention</a>).</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Etags match the Resource.meta.versionId. The ETag has to match the version id in the header if a resource is included.</p>
+</div><span><b>Data Type </b></span><p><a title="string
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-string.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-string.json" >string</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li></ul></td></tr><tr id="Bundle.entry.response.lastModified" data-id="7c556190-8712-4dc9-96e2-fc773ff00875" data-parentId="e22310b3-b536-47f3-9bc9-c73c4474aaf4" class=""><td class="profile"><span class="baseIcon primitive"></span><span>lastModified</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="instant
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-instant.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-instant.json" >instant</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Bundle.entry.response.lastModified</pre></p></div><span><b>Short description </b></span><p><span>Server&#39;s date time modified</span></p><span><b>Definition </b></span><div class="markdown"><p>The date/time that the resource was modified on the server.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>This has to match the same time in the meta header (meta.lastUpdated) if a resource is included.</p>
+</div><span><b>Data Type </b></span><p><a title="instant
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-instant.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-instant.json" >instant</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li></ul></td></tr><tr id="Bundle.entry.response.outcome" data-id="5cdd8e11-70da-44f0-abec-73a403c32157" data-parentId="e22310b3-b536-47f3-9bc9-c73c4474aaf4" class=""><td class="profile"><span class="baseIcon resource"></span><span>outcome</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="Resource
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Resource.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Resource.json" >Resource</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Bundle.entry.response.outcome</pre></p></div><span><b>Short description </b></span><p><span>OperationOutcome with hints and warnings (for batch/transaction)</span></p><span><b>Definition </b></span><div class="markdown"><p>An OperationOutcome containing hints and warnings produced as part of processing this entry in a batch or transaction.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>For a POST/PUT operation, this is the equivalent outcome that would be returned for prefer = operationoutcome - except that the resource is always returned whether or not the outcome is returned.</p>
+<p>This outcome is not used for error responses in batch/transaction, only for hints and warnings. In a batch operation, the error will be in Bundle.entry.response, and for transaction, there will be a single OperationOutcome instead of a bundle in the case of an error.</p>
+</div><span><b>Data Type </b></span><p><a title="Resource
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Resource.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Resource.json" >Resource</a></p><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>Entity. Role, or Act</li></ul></td></tr><tr id="Bundle.entry:notification" data-id="bead5fb8-4554-4903-99d1-c2a43197698d" data-parentId="9741686a-255b-4fdd-a080-d718b16f8af8" class="collapsed constraints"><td class="profile"><span class="baseIcon individualSlice"></span><span class="constraints">notification</span></td><td class="profile"><span class="mustsupport constraints" title="This element is an element that must be supported">S</span> <span title="This element is an element that is part of the summary">Σ</span> <span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span class="constraints">1</span><span class="constraints">..</span><span>*</span></td><td class="profile"><a title="BackboneElement
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-BackboneElement.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-BackboneElement.json" >BackboneElement</a></td><td class="details hidden"><span class="pin-control"></span><span><b>Element Id</b></span><div><p><pre>Bundle.entry:notification</pre></p></div><span class="constraints"><b>Short description </b></span><p><span class="constraints">Enthaltene Meldungen.</span></p><span class="constraints"><b>Definition </b></span><div class="markdown constraints"><p>Enthaltene Meldungen. In einem Meldevorgang können mehrere Meldungen übermittelt werden. Dies trifft nicht auf jede Art von Meldevorgang zu und wird in abgeleiteten Profilen ggf. eingeschränkt. Ebenso wird der Typ der zu übermittelnden Meldung in den abgeleiteten Profilen vorgegeben.</p>
+</div><span><b>Data Type </b></span><p><a title="BackboneElement
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-BackboneElement.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-BackboneElement.json" >BackboneElement</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li><li class=""><b>bdl-8:</b>fullUrl cannot be a version specific reference<br/><code>fullUrl.contains('/_history/').not()</code></li><li class=""><b>bdl-5:</b>must be a resource unless there&#39;s a request or response<br/><code>resource.exists() or request.exists() or response.exists()</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li></ul></td></tr><tr id="Bundle.entry:notification.link" data-id="726b9501-3d3e-482c-9d19-0ee3ff261f61" data-parentId="bead5fb8-4554-4903-99d1-c2a43197698d" class=""><td class="profile"><span class="baseIcon nameReference"></span><span>link</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>*</span></td><td class="profile">see (<a  href="#http://hl7.org/fhir/StructureDefinition/Bundle#Bundle.link" >link</a>)</td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Bundle.entry:notification.link</pre></p></div><span><b>Short description </b></span><p><span>Links related to this entry</span></p><span><b>Definition </b></span><div class="markdown"><p>A series of links that provide context to this entry.</p>
+</div></td></tr><tr id="Bundle.entry:notification.fullUrl" data-id="2453714c-3893-44bb-974d-fd000005ca59" data-parentId="bead5fb8-4554-4903-99d1-c2a43197698d" class=""><td class="profile"><span class="baseIcon primitive"></span><span>fullUrl</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="uri
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-uri.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-uri.json" >uri</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Bundle.entry:notification.fullUrl</pre></p></div><span><b>Short description </b></span><p><span>URI for resource (Absolute URL server address or URI for UUID/OID)</span></p><span><b>Definition </b></span><div class="markdown"><p>The Absolute URL for the resource.  The fullUrl SHALL NOT disagree with the id in the resource - i.e. if the fullUrl is not a urn:uuid, the URL shall be version-independent URL consistent with the Resource.id. The fullUrl is a version independent reference to the resource. The fullUrl element SHALL have a value except that:</p>
+<ul>
+<li>fullUrl can be empty on a POST (although it does not need to when specifying a temporary id for reference in the bundle)</li>
+<li>Results from operations might involve resources that are not identified.</li>
+</ul>
+</div><span><b>Comments </b></span><div class="markdown"><p>fullUrl might not be <a href="bundle.html#bundle-unique">unique in the context of a resource</a>. Note that since <a href="references.html">FHIR resources do not need to be served through the FHIR API</a>, the fullURL might be a URN or an absolute URL that does not end with the logical id of the resource (Resource.id). However, but if the fullUrl does look like a RESTful server URL (e.g. meets the <a href="references.html#regex">regex</a>, then the 'id' portion of the fullUrl SHALL end with the Resource.id.</p>
+<p>Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).</p>
+</div><span><b>Data Type </b></span><p><a title="uri
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-uri.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-uri.json" >uri</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li></ul></td></tr><tr id="Bundle.entry:notification.resource" data-id="925e00ec-d334-422b-87f0-24ee300fdb85" data-parentId="bead5fb8-4554-4903-99d1-c2a43197698d" class="constraints"><td class="profile"><span class="baseIcon resource"></span><span class="constraints">resource</span></td><td class="profile"><span class="mustsupport constraints" title="This element is an element that must be supported">S</span> <span title="This element is an element that is part of the summary">Σ</span> <span title="This element has or is affected by some invariants" class="constraints">I</span></td><td class="profile"><span class="constraints">1</span><span class="constraints">..</span><span>1</span></td><td class="profile"><a title="Die Meldung ist ein abstraktes Profil und referenziert den Melder und die Diagnose. Spezifische Arten von Meldungen werden in abgeleiteten Profilen definiert. 
+Meldungen, die durch einen bestimmten Melder abgesetzt werden, k&#246;nnen nur durch diesen erg&#228;nzt oder korrigiert werden. Meldungen k&#246;nnen andere Meldungen referenzieren." href="artifacts/rki.demis.common/rki.demis.common/MetadataResources/StructureDefinition/Composition/StructureDefinition-Notification.xml"  class="constraints">Meldung</a></td><td class="details hidden"><span class="pin-control"></span><span><b>Element Id</b></span><div><p><pre>Bundle.entry:notification.resource</pre></p></div><span class="constraints"><b>Short description </b></span><p><span class="constraints">Enth&#228;lt die Meldung</span></p><span class="constraints"><b>Definition </b></span><div class="markdown constraints"><p>Enthält die Meldung. In davon abgeleiteten Profilen ist die Meldung vom erlaubten Typ enthalten.</p>
+</div><span class="constraints"><b>Comments </b></span><div class="markdown constraints"><p>While the focus of this specification is on patient-specific clinical statements, this resource can also apply to other healthcare-related statements such as study protocol designs, healthcare invoices and other activities that are not necessarily patient-specific or clinical.</p>
+</div><span class="constraints"><b>Data Type </b></span><p><a title="Die Meldung ist ein abstraktes Profil und referenziert den Melder und die Diagnose. Spezifische Arten von Meldungen werden in abgeleiteten Profilen definiert. 
+Meldungen, die durch einen bestimmten Melder abgesetzt werden, k&#246;nnen nur durch diesen erg&#228;nzt oder korrigiert werden. Meldungen k&#246;nnen andere Meldungen referenzieren." href="artifacts/rki.demis.common/rki.demis.common/MetadataResources/StructureDefinition/Composition/StructureDefinition-Notification.xml"  class="constraints">Meldung</a></p><span class="constraints"><b>Constraints</b></span><div><ul><li class="constraints"><b>dom-2:</b>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/><code>contained.contained.empty()</code></li><li class="constraints"><b>dom-4:</b>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/><code>contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</code></li><li class="constraints"><b>dom-3:</b>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/><code>contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</code></li><li class="constraints"><b>dom-6:</b>A resource should have narrative for robust management<br/><code>text.`div`.exists()</code></li><li class="constraints"><b>dom-5:</b>If a resource is contained in another resource, it SHALL NOT have a security label<br/><code>contained.meta.security.empty()</code></li></ul></div><span class="constraints"><b>Mappings</b></span><ul><li class="constraints"><b>rim:</b>Entity. Role, or Act</li><li class="constraints"><b>workflow:</b>Event</li><li class="constraints"><b>rim:</b>Document[classCode=&quot;DOC&quot; and moodCode=&quot;EVN&quot; and isNormalAct()]</li><li class="constraints"><b>cda:</b>ClinicalDocument</li><li class="constraints"><b>fhirdocumentreference:</b>when described by DocumentReference</li></ul></td></tr><tr id="Bundle.entry:notification.search" data-id="d0392924-935e-4c0a-bdad-a81c3323e302" data-parentId="bead5fb8-4554-4903-99d1-c2a43197698d" class="collapsed"><td class="profile"><span class="baseIcon backboneElement"></span><span>search</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span> <span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="BackboneElement
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-BackboneElement.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-BackboneElement.json" >BackboneElement</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Bundle.entry:notification.search</pre></p></div><span><b>Short description </b></span><p><span>Search related information</span></p><span><b>Definition </b></span><div class="markdown"><p>Information about the search process that lead to the creation of this entry.</p>
+</div><span><b>Data Type </b></span><p><a title="BackboneElement
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-BackboneElement.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-BackboneElement.json" >BackboneElement</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li></ul></td></tr><tr id="Bundle.entry:notification.search.mode" data-id="dee5f851-9e1c-4c21-9393-e5b14c10bb0c" data-parentId="d0392924-935e-4c0a-bdad-a81c3323e302" class=""><td class="profile"><span class="baseIcon primitive"></span><span>mode</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="code
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-code.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-code.json" >code</a><span class="binding-label">Binding</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Bundle.entry:notification.search.mode</pre></p></div><span><b>Short description </b></span><p><span>match | include | outcome - why this is in the result set</span></p><span><b>Definition </b></span><div class="markdown"><p>Why this entry is in the result set - whether it's included as a match or because of an _include requirement, or to convey information or warning information about the search process.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>There is only one mode. In some corner cases, a resource may be included because it is both a match and an include. In these circumstances, 'match' takes precedence.</p>
+</div><span><b>Data Type </b></span><p><a title="code
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-code.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-code.json" >code</a></p><span><b>Binding </b></span><p><p><span>Why an entry is in the result set - whether it&#39;s included as a match or because of an _include requirement, or to convey information or warning information about the search process.</span></p><a title="SearchEntryMode
+hl7.fhir.r4.core 4.0.1
+ValueSet-search-entry-mode.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/ValueSet-search-entry-mode.json" >SearchEntryMode</a><span> (</span><a title="To be conformant, instances of this element SHALL include a code from the specified valueset" href="http://hl7.org/fhir/r4/terminologies.html#required" >required</a><span>)</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li></ul></td></tr><tr id="Bundle.entry:notification.search.score" data-id="35fde50b-a9a3-497b-a3f0-eeedc45705a2" data-parentId="d0392924-935e-4c0a-bdad-a81c3323e302" class=""><td class="profile"><span class="baseIcon primitive"></span><span>score</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="decimal
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-decimal.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-decimal.json" >decimal</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Bundle.entry:notification.search.score</pre></p></div><span><b>Short description </b></span><p><span>Search ranking (between 0 and 1)</span></p><span><b>Definition </b></span><div class="markdown"><p>When searching, the server's search ranking score for the entry.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Servers are not required to return a ranking score. 1 is most relevant, and 0 is least relevant. Often, search results are sorted by score, but the client may specify a different sort order.</p>
+<p>See <a href="patient-operation-match.html">Patient Match</a> for the EMPI search which relates to this element.</p>
+</div><span><b>Data Type </b></span><p><a title="decimal
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-decimal.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-decimal.json" >decimal</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li></ul></td></tr><tr id="Bundle.entry:notification.request" data-id="3d749c5b-0210-41ff-b61f-48dc6fa020bf" data-parentId="bead5fb8-4554-4903-99d1-c2a43197698d" class="collapsed"><td class="profile"><span class="baseIcon backboneElement"></span><span>request</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span> <span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="BackboneElement
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-BackboneElement.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-BackboneElement.json" >BackboneElement</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Bundle.entry:notification.request</pre></p></div><span><b>Short description </b></span><p><span>Additional execution information (transaction/batch/history)</span></p><span><b>Definition </b></span><div class="markdown"><p>Additional information about how this entry should be processed as part of a transaction or batch.  For history, it shows how the entry was processed to create the version contained in the entry.</p>
+</div><span><b>Data Type </b></span><p><a title="BackboneElement
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-BackboneElement.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-BackboneElement.json" >BackboneElement</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li></ul></td></tr><tr id="Bundle.entry:notification.request.method" data-id="ddc2f8e3-978f-48f4-aebb-793c80762bfa" data-parentId="3d749c5b-0210-41ff-b61f-48dc6fa020bf" class=""><td class="profile"><span class="baseIcon primitive"></span><span>method</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>1</span><span>..</span><span>1</span></td><td class="profile"><a title="code
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-code.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-code.json" >code</a><span class="binding-label">Binding</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Bundle.entry:notification.request.method</pre></p></div><span><b>Short description </b></span><p><span>GET | HEAD | POST | PUT | DELETE | PATCH</span></p><span><b>Definition </b></span><div class="markdown"><p>In a transaction or batch, this is the HTTP action to be executed for this entry. In a history bundle, this indicates the HTTP action that occurred.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Note that FHIR strings SHALL NOT exceed 1MB in size</p>
+</div><span><b>Data Type </b></span><p><a title="code
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-code.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-code.json" >code</a></p><span><b>Binding </b></span><p><p><span>HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.</span></p><a title="HTTPVerb
+hl7.fhir.r4.core 4.0.1
+ValueSet-http-verb.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/ValueSet-http-verb.json" >HTTPVerb</a><span> (</span><a title="To be conformant, instances of this element SHALL include a code from the specified valueset" href="http://hl7.org/fhir/r4/terminologies.html#required" >required</a><span>)</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li></ul></td></tr><tr id="Bundle.entry:notification.request.url" data-id="b025c9de-ffd3-4b63-851a-90d7942c5837" data-parentId="3d749c5b-0210-41ff-b61f-48dc6fa020bf" class=""><td class="profile"><span class="baseIcon primitive"></span><span>url</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>1</span><span>..</span><span>1</span></td><td class="profile"><a title="uri
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-uri.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-uri.json" >uri</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Bundle.entry:notification.request.url</pre></p></div><span><b>Short description </b></span><p><span>URL for HTTP equivalent of this entry</span></p><span><b>Definition </b></span><div class="markdown"><p>The URL for this entry, relative to the root (the address to which the request is posted).</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>E.g. for a Patient Create, the method would be &quot;POST&quot; and the URL would be &quot;Patient&quot;. For a Patient Update, the method would be PUT and the URL would be &quot;Patient/[id]&quot;.</p>
+</div><span><b>Data Type </b></span><p><a title="uri
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-uri.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-uri.json" >uri</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li></ul></td></tr><tr id="Bundle.entry:notification.request.ifNoneMatch" data-id="926ea29b-07f2-4df3-8350-a917cd90bacd" data-parentId="3d749c5b-0210-41ff-b61f-48dc6fa020bf" class=""><td class="profile"><span class="baseIcon primitive"></span><span>ifNoneMatch</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="string
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-string.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-string.json" >string</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Bundle.entry:notification.request.ifNoneMatch</pre></p></div><span><b>Short description </b></span><p><span>For managing cache currency</span></p><span><b>Definition </b></span><div class="markdown"><p>If the ETag values match, return a 304 Not Modified status. See the API documentation for <a href="http.html#cread">&quot;Conditional Read&quot;</a>.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Note that FHIR strings SHALL NOT exceed 1MB in size</p>
+</div><span><b>Data Type </b></span><p><a title="string
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-string.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-string.json" >string</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li></ul></td></tr><tr id="Bundle.entry:notification.request.ifModifiedSince" data-id="34cfc3d4-b3c8-491f-854a-72dac280b998" data-parentId="3d749c5b-0210-41ff-b61f-48dc6fa020bf" class=""><td class="profile"><span class="baseIcon primitive"></span><span>ifModifiedSince</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="instant
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-instant.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-instant.json" >instant</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Bundle.entry:notification.request.ifModifiedSince</pre></p></div><span><b>Short description </b></span><p><span>For managing cache currency</span></p><span><b>Definition </b></span><div class="markdown"><p>Only perform the operation if the last updated date matches. See the API documentation for <a href="http.html#cread">&quot;Conditional Read&quot;</a>.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Note: This is intended for where precisely observed times are required, typically system logs etc., and not human-reported times - for them, see date and dateTime (which can be as precise as instant, but is not required to be) below. Time zone is always required</p>
+</div><span><b>Data Type </b></span><p><a title="instant
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-instant.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-instant.json" >instant</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li></ul></td></tr><tr id="Bundle.entry:notification.request.ifMatch" data-id="b2643971-a218-44a9-934d-c8715acb0968" data-parentId="3d749c5b-0210-41ff-b61f-48dc6fa020bf" class=""><td class="profile"><span class="baseIcon primitive"></span><span>ifMatch</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="string
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-string.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-string.json" >string</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Bundle.entry:notification.request.ifMatch</pre></p></div><span><b>Short description </b></span><p><span>For managing update contention</span></p><span><b>Definition </b></span><div class="markdown"><p>Only perform the operation if the Etag value matches. For more information, see the API section <a href="http.html#concurrency">&quot;Managing Resource Contention&quot;</a>.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Note that FHIR strings SHALL NOT exceed 1MB in size</p>
+</div><span><b>Data Type </b></span><p><a title="string
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-string.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-string.json" >string</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li></ul></td></tr><tr id="Bundle.entry:notification.request.ifNoneExist" data-id="44e11a1d-a253-4888-9cd7-76f3770345a9" data-parentId="3d749c5b-0210-41ff-b61f-48dc6fa020bf" class=""><td class="profile"><span class="baseIcon primitive"></span><span>ifNoneExist</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="string
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-string.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-string.json" >string</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Bundle.entry:notification.request.ifNoneExist</pre></p></div><span><b>Short description </b></span><p><span>For conditional creates</span></p><span><b>Definition </b></span><div class="markdown"><p>Instruct the server not to perform the create if a specified resource already exists. For further information, see the API documentation for <a href="http.html#ccreate">&quot;Conditional Create&quot;</a>. This is just the query portion of the URL - what follows the &quot;?&quot; (not including the &quot;?&quot;).</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Note that FHIR strings SHALL NOT exceed 1MB in size</p>
+</div><span><b>Data Type </b></span><p><a title="string
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-string.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-string.json" >string</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li></ul></td></tr><tr id="Bundle.entry:notification.response" data-id="a1cb72c5-223c-4a3a-86a4-8cc92ac1f4e4" data-parentId="bead5fb8-4554-4903-99d1-c2a43197698d" class="collapsed"><td class="profile"><span class="baseIcon backboneElement"></span><span>response</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span> <span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="BackboneElement
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-BackboneElement.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-BackboneElement.json" >BackboneElement</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Bundle.entry:notification.response</pre></p></div><span><b>Short description </b></span><p><span>Results of execution (transaction/batch/history)</span></p><span><b>Definition </b></span><div class="markdown"><p>Indicates the results of processing the corresponding 'request' entry in the batch or transaction being responded to or what the results of an operation where when returning history.</p>
+</div><span><b>Data Type </b></span><p><a title="BackboneElement
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-BackboneElement.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-BackboneElement.json" >BackboneElement</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li></ul></td></tr><tr id="Bundle.entry:notification.response.status" data-id="5518afa0-33f4-4087-8d91-0ec47308e2d6" data-parentId="a1cb72c5-223c-4a3a-86a4-8cc92ac1f4e4" class=""><td class="profile"><span class="baseIcon primitive"></span><span>status</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>1</span><span>..</span><span>1</span></td><td class="profile"><a title="string
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-string.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-string.json" >string</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Bundle.entry:notification.response.status</pre></p></div><span><b>Short description </b></span><p><span>Status response code (text optional)</span></p><span><b>Definition </b></span><div class="markdown"><p>The status code returned by processing this entry. The status SHALL start with a 3 digit HTTP code (e.g. 404) and may contain the standard HTTP description associated with the status code.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Note that FHIR strings SHALL NOT exceed 1MB in size</p>
+</div><span><b>Data Type </b></span><p><a title="string
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-string.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-string.json" >string</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li></ul></td></tr><tr id="Bundle.entry:notification.response.location" data-id="672de411-94b5-4f94-a441-6d6e9a10d631" data-parentId="a1cb72c5-223c-4a3a-86a4-8cc92ac1f4e4" class=""><td class="profile"><span class="baseIcon primitive"></span><span>location</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="uri
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-uri.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-uri.json" >uri</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Bundle.entry:notification.response.location</pre></p></div><span><b>Short description </b></span><p><span>The location (if the operation returns a location)</span></p><span><b>Definition </b></span><div class="markdown"><p>The location header created by processing this operation, populated if the operation returns a location.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>see http://en.wikipedia.org/wiki/Uniform_resource_identifier</p>
+</div><span><b>Data Type </b></span><p><a title="uri
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-uri.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-uri.json" >uri</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li></ul></td></tr><tr id="Bundle.entry:notification.response.etag" data-id="cab751a9-064a-436f-b9da-34da6f386f42" data-parentId="a1cb72c5-223c-4a3a-86a4-8cc92ac1f4e4" class=""><td class="profile"><span class="baseIcon primitive"></span><span>etag</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="string
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-string.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-string.json" >string</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Bundle.entry:notification.response.etag</pre></p></div><span><b>Short description </b></span><p><span>The Etag for the resource (if relevant)</span></p><span><b>Definition </b></span><div class="markdown"><p>The Etag for the resource, if the operation for the entry produced a versioned resource (see <a href="http.html#versioning">Resource Metadata and Versioning</a> and <a href="http.html#concurrency">Managing Resource Contention</a>).</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Etags match the Resource.meta.versionId. The ETag has to match the version id in the header if a resource is included.</p>
+</div><span><b>Data Type </b></span><p><a title="string
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-string.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-string.json" >string</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li></ul></td></tr><tr id="Bundle.entry:notification.response.lastModified" data-id="de53066e-2f25-4251-bafe-6178d3a99e24" data-parentId="a1cb72c5-223c-4a3a-86a4-8cc92ac1f4e4" class=""><td class="profile"><span class="baseIcon primitive"></span><span>lastModified</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="instant
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-instant.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-instant.json" >instant</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Bundle.entry:notification.response.lastModified</pre></p></div><span><b>Short description </b></span><p><span>Server&#39;s date time modified</span></p><span><b>Definition </b></span><div class="markdown"><p>The date/time that the resource was modified on the server.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>This has to match the same time in the meta header (meta.lastUpdated) if a resource is included.</p>
+</div><span><b>Data Type </b></span><p><a title="instant
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-instant.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-instant.json" >instant</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li></ul></td></tr><tr id="Bundle.entry:notification.response.outcome" data-id="5705cd57-09b9-480f-8bcb-6bb0a93d1d41" data-parentId="a1cb72c5-223c-4a3a-86a4-8cc92ac1f4e4" class=""><td class="profile"><span class="baseIcon resource"></span><span>outcome</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="Resource
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Resource.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Resource.json" >Resource</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Bundle.entry:notification.response.outcome</pre></p></div><span><b>Short description </b></span><p><span>OperationOutcome with hints and warnings (for batch/transaction)</span></p><span><b>Definition </b></span><div class="markdown"><p>An OperationOutcome containing hints and warnings produced as part of processing this entry in a batch or transaction.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>For a POST/PUT operation, this is the equivalent outcome that would be returned for prefer = operationoutcome - except that the resource is always returned whether or not the outcome is returned.</p>
+<p>This outcome is not used for error responses in batch/transaction, only for hints and warnings. In a batch operation, the error will be in Bundle.entry.response, and for transaction, there will be a single OperationOutcome instead of a bundle in the case of an error.</p>
+</div><span><b>Data Type </b></span><p><a title="Resource
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Resource.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Resource.json" >Resource</a></p><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>Entity. Role, or Act</li></ul></td></tr><tr id="Bundle.signature" data-id="f8d3a10c-56b9-4f23-b0d5-359c10655366" data-parentId="e2e43db9-96c9-4c59-bf5b-72fe520e24a8" class=""><td class="profile"><span class="baseIcon datatype"></span><span>signature</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="Signature
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Signature.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Signature.json" >Signature</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Bundle.signature</pre></p></div><span><b>Short description </b></span><p><span>Digital Signature</span></p><span><b>Definition </b></span><div class="markdown"><p>Digital Signature - base64 encoded. XML-DSig or a JWT.</p>
+</div><span><b>Requirements </b></span><div class="markdown"><p>A Signature holds an electronic representation of a signature and its supporting context in a FHIR accessible form. The signature may either be a cryptographic type (XML DigSig or a JWS), which is able to provide non-repudiation proof, or it may be a graphical image that represents a signature or a signature process. This element allows capturing signatures on documents, messages, transactions or even search responses, to support content-authentication, non-repudiation or other business cases. This is primarily relevant where the bundle may travel through multiple hops or via other mechanisms where HTTPS non-repudiation is insufficient.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>The signature could be created by the &quot;author&quot; of the bundle or by the originating device.   Requirements around inclusion of a signature, verification of signatures and treatment of signed/non-signed bundles is implementation-environment specific.</p>
+</div><span><b>Data Type </b></span><p><a title="Signature
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Signature.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Signature.json" >Signature</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>rim:</b>N/A</li></ul></td></tr></table></div><div class="treetable-right-panel"></div></div></div><script type="text/javascript">
+(function() {
+var isTreetableVisible = document.querySelector(".treetable") != null;
+if (isTreetableVisible) {
+var resourceTreeTable1604a82d2b1845cd88923ddaa01a51ca = new Stu3TreeTable(false);
+resourceTreeTable1604a82d2b1845cd88923ddaa01a51ca.init("1604a82d2b1845cd88923ddaa01a51ca");
+}
+})();
+</script></p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="ig-view-footer" role="contentinfo" aria-label="Footer">
+                
+<div class="container">
+    <div class="row">
+        <p>Powered by <b>SIMPLIFIER.NET</b></p>
+        <div>
+            HL7<sup>&reg;</sup> and FHIR<sup>&reg;</sup> are the registered trademarks of Health Level Seven International
+        </div>
+    </div>
+</div>
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>

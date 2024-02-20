@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='utf-8'?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ProcessNotificationResponseParameters" />
+  <url value="https://demis.rki.de/fhir/StructureDefinition/ProcessNotificationResponseParameters" />
+  <version value="1.2.0" />
+  <name value="ProcessNotificationResponseParameters" />
+  <title value="ProcessNotification-Ausgabeparameter" />
+  <status value="active" />
+  <date value="2023-09-20" />
+  <description value="Der ProcessNotificationResponseParameter ist der Ausgabeparameter für die ProcessNotification-Operation. Er beinhaltet ein Quittungs-Bundle und eine ProcessNotificationResponse." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Parameters" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Parameters" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Parameters.meta">
+      <path value="Parameters.meta" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Parameters.meta.profile">
+      <path value="Parameters.meta.profile" />
+      <min value="1" />
+      <max value="1" />
+      <fixedCanonical value="https://demis.rki.de/fhir/StructureDefinition/ProcessNotificationResponseParameters" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Parameters.parameter">
+      <path value="Parameters.parameter" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="resource" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Parameters.parameter:bundle">
+      <path value="Parameters.parameter" />
+      <sliceName value="bundle" />
+      <max value="1" />
+    </element>
+    <element id="Parameters.parameter:bundle.name">
+      <path value="Parameters.parameter.name" />
+      <fixedString value="bundle" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Parameters.parameter:bundle.resource">
+      <path value="Parameters.parameter.resource" />
+      <min value="1" />
+      <type>
+        <code value="Bundle" />
+        <profile value="https://demis.rki.de/fhir/StructureDefinition/ReceiptBundle" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Parameters.parameter:operationOutcome">
+      <path value="Parameters.parameter" />
+      <sliceName value="operationOutcome" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Parameters.parameter:operationOutcome.name">
+      <path value="Parameters.parameter.name" />
+      <fixedString value="operationOutcome" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Parameters.parameter:operationOutcome.resource">
+      <path value="Parameters.parameter.resource" />
+      <min value="1" />
+      <type>
+        <code value="OperationOutcome" />
+        <profile value="https://demis.rki.de/fhir/StructureDefinition/ProcessNotificationResponse" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

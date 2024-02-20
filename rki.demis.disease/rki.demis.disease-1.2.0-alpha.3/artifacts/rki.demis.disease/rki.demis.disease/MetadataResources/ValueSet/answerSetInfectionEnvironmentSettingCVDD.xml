@@ -1,0 +1,511 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+	<id value="answerSetInfectionEnvironmentSettingCVDD"/>
+	<url value="https://demis.rki.de/fhir/ValueSet/answerSetInfectionEnvironmentSettingCVDD"/>
+	<version value="1.0.0"/>
+	<name value="AnswerSetInfectionEnvironmentSettingCVDD"/>
+	<title value="Covid-19-Infektionsumfeld"/>
+	<status value="active"/>
+	<date value="2023-06-14"/>
+	<description value="Das ValueSet AnswerSetInfectionEnvironmentSettingCVDD enthält die Codes zur Angabe desCovid-19-Infektionsumfeldes."/>
+	<compose>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+			<concept>
+				<code value="444107005+285141008"/>
+				<display value="Arbeitsplatz"/>
+				<designation>
+					<language value="en-US"/>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="1119454002"/>
+					</use>
+					<value value="444107005 | Exposure to communicable disease (navigational concept) | + 285141008 | Work environment (environment) |"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="444107005+413817003"/>
+				<display value="Kita"/>
+				<designation>
+					<language value="en-US"/>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="1119454002"/>
+					</use>
+					<value value="444107005 | Exposure to communicable disease (navigational concept) | + 413817003 | Child day care center (environment) |"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="444107005+257698009"/>
+				<display value="Schule"/>
+				<designation>
+					<language value="en-US"/>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="1119454002"/>
+					</use>
+					<value value="444107005 | Exposure to communicable disease (navigational concept) | + 257698009 | School (environment) |"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="444107005+224871002"/>
+				<display value="Universität"/>
+				<designation>
+					<language value="en-US"/>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="1119454002"/>
+					</use>
+					<value value="444107005 | Exposure to communicable disease (navigational concept) | + 224871002 | University (environment) |"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="444107005+257603009"/>
+				<display value="sonstige Bildungs-/Betreuungseinrichtung"/>
+				<designation>
+					<language value="en-US"/>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="1119454002"/>
+					</use>
+					<value value="444107005 | Exposure to communicable disease (navigational concept) | + 257603009 | Educational establishment (environment) |"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="444107005+22232009"/>
+				<display value="Krankenhaus"/>
+				<designation>
+					<language value="en-US"/>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="1119454002"/>
+					</use>
+					<value value="444107005 | Exposure to communicable disease (navigational concept) | + 22232009 | Hospital (environment) |"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="444107005+257622000"/>
+				<display value="medizinische Einrichtung (außer Krankenhaus)"/>
+				<designation>
+					<language value="en-US"/>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="1119454002"/>
+					</use>
+					<value value="444107005 | Exposure to communicable disease (navigational concept) | + 257622000 | Healthcare facility (environment) |"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="444107005+42665001"/>
+				<display value="vollstationäre Einrichtung für älterer, behinderter oder pflegebedürftiger Menschen (z.B. Alten-/Pflegeheim)"/>
+				<designation>
+					<language value="en-US"/>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="1119454002"/>
+					</use>
+					<value value="444107005 | Exposure to communicable disease (navigational concept) | + 42665001 | Nursing home (environment) |"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="444107005+394777002"/>
+				<display value="Ambulante Behandlungseinrichtung (Praxis, andere)"/>
+				<designation>
+					<language value="en-US"/>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="1119454002"/>
+					</use>
+					<value value="444107005 | Exposure to communicable disease (navigational concept) | + 394777002 | Health encounter sites (environment) |"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="444107005+1348009"/>
+				<display value="teilstationäre Einrichtung für älterer, behinderter oder pflegebedürftiger Menschen (z.B. Seniorentagesstätte)"/>
+				<designation>
+					<language value="en-US"/>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="1119454002"/>
+					</use>
+					<value value="444107005 | Exposure to communicable disease (navigational concept) | + 1348009 | Day care center (environment) |"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="444107005+108344006"/>
+				<display value="ambulanter Pflegedienst"/>
+				<designation>
+					<language value="en-US"/>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="1119454002"/>
+					</use>
+					<value value="444107005 | Exposure to communicable disease (navigational concept) | + 108344006 | Nursing home AND/OR ambulatory care site (environment) |"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="444107005+702916001"/>
+				<display value="Reha-Einrichtung"/>
+				<designation>
+					<language value="en-US"/>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="1119454002"/>
+					</use>
+					<value value="444107005 | Exposure to communicable disease (navigational concept) | + 702916001 | Rehabilitation clinic (environment) |"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="444107005+261904005"/>
+				<display value="Labor"/>
+				<designation>
+					<language value="en-US"/>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="1119454002"/>
+					</use>
+					<value value="444107005 | Exposure to communicable disease (navigational concept) | + 261904005 | Laboratory (environment) |"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="444107005+257701001"/>
+				<display value="Einzelhandel"/>
+				<designation>
+					<language value="en-US"/>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="1119454002"/>
+					</use>
+					<value value="444107005 | Exposure to communicable disease (navigational concept) | + 257701001 | Shop (environment) |"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="444107005+405081003"/>
+				<display value="Freizeitaktivitäten"/>
+				<designation>
+					<language value="en-US"/>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="1119454002"/>
+					</use>
+					<value value="444107005 | Exposure to communicable disease (navigational concept) | + 405081003 | Leisure behavior (observable entity) |"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="444107005+14468000"/>
+				<display value="Sport"/>
+				<designation>
+					<language value="en-US"/>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="1119454002"/>
+					</use>
+					<value value="444107005 | Exposure to communicable disease (navigational concept) | + 14468000 | Sports activity (observable entity) |"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="444107005+284555002"/>
+				<display value="Tiergarten, Zoo, Tierpark"/>
+				<designation>
+					<language value="en-US"/>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="1119454002"/>
+					</use>
+					<value value="444107005 | Exposure to communicable disease (navigational concept) | + 284555002 | Zoo - place (environment) |"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="444107005+257689006"/>
+				<display value="Gastronomie (Speisegaststätte/Kantine/Imbiss/Restaurant)"/>
+				<designation>
+					<language value="en-US"/>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="1119454002"/>
+					</use>
+					<value value="444107005 | Exposure to communicable disease (navigational concept) | + 257689006 | Restaurant (environment) |"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="444107005+264362003+160481000"/>
+				<display value="private Feier/Treffen"/>
+				<designation>
+					<language value="en-US"/>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="1119454002"/>
+					</use>
+					<value value="444107005 | Exposure to communicable disease (navigational concept) | + 264362003 | Home (environment) |+ 160481000 | Social group (observable entity) |"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="444107005+272379006+14468000"/>
+				<display value="Sportveranstaltung"/>
+				<designation>
+					<language value="en-US"/>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="1119454002"/>
+					</use>
+					<value value="444107005 | Exposure to communicable disease (navigational concept) | + 272379006 | Event (event) | + 14468000 | Sports activity (observable entity) |"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="444107005+257658007"/>
+				<display value="Musikveranstaltung/Konzert"/>
+				<designation>
+					<language value="en-US"/>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="1119454002"/>
+					</use>
+					<value value="444107005 | Exposure to communicable disease (navigational concept) | + 257658007 | Entertainment establishment (environment) |"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="444107005+257659004"/>
+				<display value="religiöse Veranstaltung (z.B. Gottesdienst)"/>
+				<designation>
+					<language value="en-US"/>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="1119454002"/>
+					</use>
+					<value value="444107005 | Exposure to communicable disease (navigational concept) | + 257659004 | Place of worship (environment) |"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="444107005+702703009"/>
+				<display value="Demonstration/Kundgebung"/>
+				<designation>
+					<language value="en-US"/>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="1119454002"/>
+					</use>
+					<value value="444107005 | Exposure to communicable disease (navigational concept) | + 702703009 | Outdoor public site (environment) |"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="444107005+21753002"/>
+				<display value="Flugzeug"/>
+				<designation>
+					<language value="en-US"/>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="1119454002"/>
+					</use>
+					<value value="444107005 | Exposure to communicable disease (navigational concept) | + 21753002 | Aircraft, device (physical object) |"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="444107005+257562009"/>
+				<display value="Flughafen"/>
+				<designation>
+					<language value="en-US"/>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="1119454002"/>
+					</use>
+					<value value="444107005 | Exposure to communicable disease (navigational concept) | + 257562009 | Airport (environment) |"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="444107005+224673002"/>
+				<display value="Schiff"/>
+				<designation>
+					<language value="en-US"/>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="1119454002"/>
+					</use>
+					<value value="444107005 | Exposure to communicable disease (navigational concept) | + 224673002 | Ship (physical object) |"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="444107005+257621007"/>
+				<display value="Hafen"/>
+				<designation>
+					<language value="en-US"/>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="1119454002"/>
+					</use>
+					<value value="444107005 | Exposure to communicable disease (navigational concept) | + 257621007 | Harbor (environment) |"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="444107005+62193008"/>
+				<display value="Zug"/>
+				<designation>
+					<language value="en-US"/>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="1119454002"/>
+					</use>
+					<value value="444107005 | Exposure to communicable disease (navigational concept) | + 62193008 | Railway train, device (physical object) |"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="444107005+22674006"/>
+				<display value="Fernbus"/>
+				<designation>
+					<language value="en-US"/>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="1119454002"/>
+					</use>
+					<value value="444107005 | Exposure to communicable disease (navigational concept) | + 22674006 | Motor bus, device (physical object) |"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="444107005+716367000"/>
+				<display value="öffentlicher Nahverkehr"/>
+				<designation>
+					<language value="en-US"/>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="1119454002"/>
+					</use>
+					<value value="444107005 | Exposure to communicable disease (navigational concept) | + 716367000 | Transportation by public transport (procedure) |"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="444107005+257629009"/>
+				<display value="Hotel"/>
+				<designation>
+					<language value="en-US"/>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="1119454002"/>
+					</use>
+					<value value="444107005 | Exposure to communicable disease (navigational concept) | + 257629009 | Hotel (environment) |"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="444107005+257628001"/>
+				<display value="Pension, Herberge"/>
+				<designation>
+					<language value="en-US"/>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="1119454002"/>
+					</use>
+					<value value="444107005 | Exposure to communicable disease (navigational concept) | + 257628001 | Hostel (environment) |"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="444107005+262044003"/>
+				<display value="Kreuzfahrtschiff"/>
+				<designation>
+					<language value="en-US"/>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="1119454002"/>
+					</use>
+					<value value="444107005 | Exposure to communicable disease (navigational concept) | + 262044003 | Passenger vessel (physical object) |"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="444107005+161093007"/>
+				<display value="Zeltplatz, Campingplatz"/>
+				<designation>
+					<language value="en-US"/>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="1119454002"/>
+					</use>
+					<value value="444107005 | Exposure to communicable disease (navigational concept) | + 161093007 | Camping vacation (finding) |"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="444107005+257692005"/>
+				<display value="Wohnheim (Kinder-, Jugend-, Studierenden-)"/>
+				<designation>
+					<language value="en-US"/>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="1119454002"/>
+					</use>
+					<value value="444107005 | Exposure to communicable disease (navigational concept) | + 257692005 | Rooming house (environment) |"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="444107005+310205006"/>
+				<display value="privater Haushalt"/>
+				<designation>
+					<language value="en-US"/>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="1119454002"/>
+					</use>
+					<value value="444107005 | Exposure to communicable disease (navigational concept) | + 310205006 | Private residential home (environment) |"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="444107005+224683003"/>
+				<display value="Kaserne"/>
+				<designation>
+					<language value="en-US"/>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="1119454002"/>
+					</use>
+					<value value="444107005 | Exposure to communicable disease (navigational concept) | + 224683003 | Military accommodation (environment) |"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="444107005+257656006"/>
+				<display value="Justizvollzugsanstalt"/>
+				<designation>
+					<language value="en-US"/>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="1119454002"/>
+					</use>
+					<value value="444107005 | Exposure to communicable disease (navigational concept) | + 257656006 | Penal institution (environment) |"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="444107005+5549007"/>
+				<display value="Gemeinschaftsunterkünfte (z.B. Flüchtlings-, Asylbewerberheim)"/>
+				<designation>
+					<language value="en-US"/>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="1119454002"/>
+					</use>
+					<value value="444107005 | Exposure to communicable disease (navigational concept) | + 5549007 | Living in temporary quarters (finding) |"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="74964007"/>
+				<display value="-andere/sonstige-"/>
+				<designation>
+					<language value="en-US"/>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+					</use>
+					<value value="Other (qualifier value)"/>
+				</designation>
+			</concept>
+		</include>
+		<include>
+			<system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+			<version value="2.1.0"/>
+			<concept>
+				<code value="ASKU"/>
+				<display value="asked but unknown"/>
+			</concept>
+			<concept>
+				<code value="NASK"/>
+				<display value="not asked"/>
+			</concept>
+		</include>
+		<include>
+			<valueSet value="https://demis.rki.de/fhir/ValueSet/infectionEnvironmentSettingCVDD"/>
+		</include>
+	</compose>
+</ValueSet>

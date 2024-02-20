@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="nullFlavor"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/nullFlavor"/>
+  <version value="1.0.0"/>
+  <name value="NullFlavor"/>
+  <title value="NullFlavor"/>
+  <status value="active"/>
+  <date value="2022-12-17"/>
+  <description value="Das ValueSet NullFlavor enthält die Codes der NullFlavors."/>
+  <compose>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+      <concept>
+        <code value="ASKU"/>
+        <display value="asked but unknown"/>
+      </concept>
+      <concept>
+        <code value="NASK"/>
+        <display value="not asked"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

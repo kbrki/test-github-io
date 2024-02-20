@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="evidenceCVDDv1"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/evidenceCVDDv1"/>
+  <version value="1.1.0"/>
+  <name value="EvidenceCVDDv1"/>
+  <title value="Covid-19-Symptom und -Manifestation Version 1"/>
+  <status value="retired"/>
+  <date value="2023-12-11"/>
+  <description value="Das ValueSet EvidenceCVDD enthält die Codes der Covid-19-Symptome und -Manifestationen die in dieser Version nicht mehr vorhanden sind."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230901"/>
+      <concept>
+        <code value="371820004"/>
+        <display value="atmungspflichtige Atemwegserkrankung"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Patient ventilated (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="62315008"/>
+        <display value="Durchfall, nicht näher bezeichnet"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Diarrhea (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="213257006"/>
+        <display value="schweres Krankheitsgefühl"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Generally unwell (finding)"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vaccinationIndication"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/vaccinationIndication"/>
+  <version value="1.1.0"/>
+  <name value="VaccinationIndication"/>
+  <title value="Impfindikation"/>
+  <status value="active"/>
+  <date value="2023-03-03"/>
+  <description value="Das ValueSet VaccinationIndication enthält die Codes für die Impfindikation."/>
+  <compose>
+    <include>
+      <system value="https://demis.rki.de/fhir/CodeSystem/vaccinationIndication"/>
+      <version value="1.0.0"/>
+    </include>
+  </compose>
+</ValueSet>

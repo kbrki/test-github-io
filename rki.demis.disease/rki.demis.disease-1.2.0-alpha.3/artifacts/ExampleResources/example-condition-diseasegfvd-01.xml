@@ -1,0 +1,63 @@
+<Condition xmlns="http://hl7.org/fhir">
+   <id value="404076f1-782c-353e-bf55-83ba925eb22a"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseGFVD"></profile>
+   </meta>
+   <verificationStatus>
+      <coding>
+         <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"></system>
+         <code value="confirmed"></code>
+      </coding>
+   </verificationStatus>
+   <code>
+      <coding>
+         <system value="https://demis.rki.de/fhir/CodeSystem/notificationDiseaseCategory"></system>
+         <code value="gfvd"></code>
+         <display value="Gelbfieber"></display>
+      </coding>
+   </code>
+   <subject>
+      <reference value="Patient/133f885e-30b4-3c30-8773-acc1ecba4168"></reference>
+   </subject>
+   <onsetDateTime value="2022-12-05"></onsetDateTime>
+   <recordedDate value="2022-12-07"></recordedDate>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="131148009"></code>
+            <display value="Blutung"></display>
+         </coding>
+      </code>
+   </evidence>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="74474003"></code>
+            <display value="Blutung gastrointestinal"></display>
+         </coding>
+      </code>
+   </evidence>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="95385002"></code>
+            <display value="Blutung aus Injektionsstelle"></display>
+         </coding>
+      </code>
+   </evidence>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="386661006"></code>
+            <display value="Fieber"></display>
+         </coding>
+      </code>
+   </evidence>
+   <note>
+      <text value="Erbrechen (zum Teil kaffeesatzartig), i.e. (Verdacht auf) Gastrointestinale Blutung, Nasenbluten, ungewöhnlich starke Nachblutung aus einer Injektionsstelle/Blutentnahme"></text>
+   </note>
+</Condition>

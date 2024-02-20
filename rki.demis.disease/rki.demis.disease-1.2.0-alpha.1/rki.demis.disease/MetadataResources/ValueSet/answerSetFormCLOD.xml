@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetFormCLOD"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetFormCLOD"/>
+  <version value="1.0.0"/>
+  <name value="AnswerSetFormCLOD"/>
+  <title value="Antwort Botulismus-Krankheitsform"/>
+  <status value="active"/>
+  <date value="2022-11-30"/>
+  <description value="Das ValueSet AnswerSetFormCLOD enthält die Codes der Antwortmöglichkeiten für die Botulismus-Krankheitsform."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="398523009"/>
+        <display value="Lebensmittelbedingter Botulismus"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="398523009 |Foodborne botulism (disorder)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="414488002"/>
+        <display value="Säuglingsbotulismus"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="414488002 |Infantile botulism (disorder)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="398530003"/>
+        <display value="Wundbotulismus"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="398530003 |Wound botulism (disorder)|"/>
+        </designation>
+      </concept>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+      <concept>
+        <code value="ASKU"/>
+        <display value="asked but unknown"/>
+      </concept>
+      <concept>
+        <code value="NASK"/>
+        <display value="not asked"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

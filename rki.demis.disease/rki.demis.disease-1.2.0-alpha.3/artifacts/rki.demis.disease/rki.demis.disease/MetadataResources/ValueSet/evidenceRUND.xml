@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="evidenceRUND"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/evidenceRUND"/>
+  <version value="1.0.0"/>
+  <name value="EvidenceRUND"/>
+  <title value="Röteln konnatal-Symptom und -Manifestation"/>
+  <status value="active"/>
+  <date value="2023-03-23"/>
+  <description value="Das ValueSet EvidenceRUND enthält die Codes der Röteln konnatal-Symptome und -Manifestationen."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <code value="7125002"/>
+        <display value="Meningoenzephalitis"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Meningoencephalitis (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="232297009+272033007"/>
+        <display value="Innenohrtaubheit"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="232297009 |Disorder of inner ear (disorder)| + 272033007 |Deafness symptom (disorder)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="13213009"/>
+        <display value="Herzfehler, kongenital"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Congenital heart disease (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="29555009"/>
+        <display value="Retinopathie"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Retinal disorder (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="193570009"/>
+        <display value="Katarakt"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Cataract (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="23986001"/>
+        <display value="Glaukom"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Glaucoma (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="16294009"/>
+        <display value="Splenomegalie"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Splenomegaly (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1148757008"/>
+        <display value="Mikrozephalus"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Microcephaly (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="423902002"/>
+        <display value="Purpura"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Purpura (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="248290002"/>
+        <display value="Entwicklungsverzögerung"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Developmental delay (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="387712008"/>
+        <display value="Ikterus (innerhalb 24h nach Geburt)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Neonatal jaundice (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="76069003:116676008=13331008"/>
+        <display value="Atrophie der Knochen mit vermehrter Strahlendurchlässigkeit"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="76069003 |Disorder of bone (disorder)| : 116676008 |Associated morphology (attribute)| = 13331008 |Atrophy (morphologic abnormality)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="237364002"/>
+        <display value="Totgeburt"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Stillbirth (finding)"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

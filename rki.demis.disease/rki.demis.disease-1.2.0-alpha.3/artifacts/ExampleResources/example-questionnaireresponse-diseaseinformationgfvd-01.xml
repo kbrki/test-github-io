@@ -1,0 +1,39 @@
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+   <id value="22d95ce4-d440-3b2b-a575-a06f15035184"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseInformationGFVD"></profile>
+   </meta>
+   <questionnaire value="https://demis.rki.de/fhir/Questionnaire/DiseaseQuestionsGFVD"></questionnaire>
+   <status value="completed"></status>
+   <subject>
+      <reference value="Patient/133f885e-30b4-3c30-8773-acc1ecba4168"></reference>
+   </subject>
+   <item>
+      <linkId value="immunization"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+            <code value="yes"></code>
+            <display value="Ja"></display>
+         </valueCoding>
+         <item>
+            <linkId value="immunizationRef"></linkId>
+            <answer>
+               <valueReference>
+                  <reference value="Immunization/e7e234d5-e9e6-3e63-86ac-745bbfcc31ff"></reference>
+               </valueReference>
+            </answer>
+         </item>
+      </answer>
+   </item>
+   <item>
+      <linkId value="outbreak"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"></system>
+            <code value="ASKU"></code>
+            <display value="asked but unknown"></display>
+         </valueCoding>
+      </answer>
+   </item>
+</QuestionnaireResponse>

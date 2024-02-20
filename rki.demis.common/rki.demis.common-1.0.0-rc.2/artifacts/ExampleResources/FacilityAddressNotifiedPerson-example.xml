@@ -1,0 +1,18 @@
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="FacilityAddressNotifiedPerson-example" />
+  <meta>
+    <profile value="https://demis.rki.de/fhir/StructureDefinition/NotifiedPerson" />
+  </meta>
+  <name>
+    <family value="Katar" />
+    <given value="Julie" />
+  </name>
+  <gender value="female" />
+  <address>
+    <extension url="https://demis.rki.de/fhir/StructureDefinition/FacilityAddressNotifiedPerson">
+      <valueReference>
+        <reference value="Organization/98cda07d-1fa7-47f6-ad79-e66de48d6078" />
+      </valueReference>
+    </extension>
+  </address>
+</Patient>

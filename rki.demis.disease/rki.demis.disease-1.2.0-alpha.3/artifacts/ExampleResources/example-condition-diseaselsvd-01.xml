@@ -1,0 +1,45 @@
+<Condition xmlns="http://hl7.org/fhir">
+   <id value="b89c6646-9bf3-389c-ad15-c97fe7da72fb"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseLSVD"></profile>
+   </meta>
+   <verificationStatus>
+      <coding>
+         <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"></system>
+         <code value="confirmed"></code>
+      </coding>
+   </verificationStatus>
+   <code>
+      <coding>
+         <system value="https://demis.rki.de/fhir/CodeSystem/notificationDiseaseCategory"></system>
+         <code value="lsvd"></code>
+         <display value="Lassafieber"></display>
+      </coding>
+   </code>
+   <subject>
+      <reference value="Patient/f9b043b1-478c-3a8a-9bd3-2031d144127c"></reference>
+   </subject>
+   <onsetDateTime value="2022-12-05"></onsetDateTime>
+   <recordedDate value="2022-12-07"></recordedDate>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="271813007"></code>
+            <display value="Hauteinblutung, Petechien"></display>
+         </coding>
+      </code>
+   </evidence>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="386661006"></code>
+            <display value="Fieber"></display>
+         </coding>
+      </code>
+   </evidence>
+   <note>
+      <text value="Textueller Hinweis"></text>
+   </note>
+</Condition>

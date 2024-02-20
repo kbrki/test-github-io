@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetInfectionPathIZVD"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetInfectionPathIZVD"/>
+  <version value="1.0.0"/>
+  <name value="AnswerSetInfectionPathIZVD"/>
+  <title value="Antwort zum Infektionsweg bei Zoonotische Influenza"/>
+  <status value="active"/>
+  <date value="2023-04-24"/>
+  <description value="Das ValueSet AnswerSetInfectionPathIZVD enthält die Codes der Antwortmöglichkeiten für den Infektionsweg bei Zoonotische Influenza."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <code value="409496000:{704319004=256363008,704326004=424681004}"/>
+        <display value="Direkter Kontakt zu Tieren mit möglicher oder bestätigter Influenza-Infektion oder deren Ausscheidungen (Geflügel, Wildvögel, Schweine)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="409496000 | Mode of transmission (observable entity) |: {704319004 |Inheres in (attribute)| = 256363008 | Animal material (substance) | , 704326004 |Precondition (attribute)|  = 424681004 | Environment contains infected animal (finding) | }"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="409496000:{704326004=(424681004:246090004=781249001)}"/>
+        <display value="Verzehr von rohen oder nicht vollständig erhitzten Tierprodukten aus einem Gebiet, in dem Tiere mit bestätigter zoonotischer Infektion innerhalb des letzten Monats nachgewiesen wurden"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="409496000 | Mode of transmission (observable entity) |: {704326004 |Precondition (attribute)|  = (424681004 | Environment contains infected animal (finding) | : 246090004 |Associated finding (attribute)| = 781249001 |Consumption of contaminated food (event)|)}"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="74964007"/>
+        <display value="-andere/sonstige-"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Other (qualifier value)"/>
+        </designation>
+      </concept>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+      <version value="2.1.0"/>
+      <concept>
+        <code value="ASKU"/>
+        <display value="asked but unknown"/>
+      </concept>
+      <concept>
+        <code value="NASK"/>
+        <display value="not asked"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

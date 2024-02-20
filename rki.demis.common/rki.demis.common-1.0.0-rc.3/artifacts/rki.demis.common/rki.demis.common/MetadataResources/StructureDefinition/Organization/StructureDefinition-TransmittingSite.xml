@@ -1,0 +1,312 @@
+<?xml version='1.0' encoding='utf-8'?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="TransmittingSite" />
+  <url value="https://demis.rki.de/fhir/StructureDefinition/TransmittingSite" />
+  <version value="1.4.0" />
+  <name value="TransmittingSite" />
+  <title value="Übermittlungsstelle" />
+  <status value="active" />
+  <date value="2024-01-08" />
+  <description value="Übermittlungsstelle" />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="servd" />
+    <uri value="http://www.omg.org/spec/ServD/1.0/" />
+    <name value="ServD" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Organization" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Organization" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Organization.meta">
+      <path value="Organization.meta" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.meta.profile">
+      <path value="Organization.meta.profile" />
+      <min value="1" />
+      <max value="1" />
+      <fixedCanonical value="https://demis.rki.de/fhir/StructureDefinition/TransmittingSite" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.identifier">
+      <path value="Organization.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Organization.identifier:reportingSite">
+      <path value="Organization.identifier" />
+      <sliceName value="reportingSite" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.identifier:reportingSite.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Organization.identifier.system" />
+      <min value="1" />
+      <fixedUri value="https://demis.rki.de/fhir/CodeSystem/reportingSite" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.identifier:reportingSite.value">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Organization.identifier.value" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.telecom">
+      <path value="Organization.telecom" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Organization.telecom:phone">
+      <path value="Organization.telecom" />
+      <sliceName value="phone" />
+    </element>
+    <element id="Organization.telecom:phone.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Organization.telecom.system" />
+      <min value="1" />
+      <fixedCode value="phone" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.telecom:phone.value">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Organization.telecom.value" />
+      <min value="1" />
+      <constraint>
+        <key value="validPhoneNumber" />
+        <severity value="warning" />
+        <human value="Die Telefonnummer muss valide sein." />
+        <expression value="$this.matches('^[0+][0-9 \\-\\(\\)]{6,50}$')" />
+      </constraint>
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.telecom:fax">
+      <path value="Organization.telecom" />
+      <sliceName value="fax" />
+    </element>
+    <element id="Organization.telecom:fax.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Organization.telecom.system" />
+      <min value="1" />
+      <fixedCode value="fax" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.telecom:fax.value">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Organization.telecom.value" />
+      <min value="1" />
+      <constraint>
+        <key value="validFaxNumber" />
+        <severity value="warning" />
+        <human value="Die Faxnummer muss valide sein." />
+        <expression value="$this.matches('^[0+][0-9 \\-\\(\\)]{6,50}$')" />
+      </constraint>
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.telecom:email">
+      <path value="Organization.telecom" />
+      <sliceName value="email" />
+    </element>
+    <element id="Organization.telecom:email.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Organization.telecom.system" />
+      <min value="1" />
+      <fixedCode value="email" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.telecom:email.value">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Organization.telecom.value" />
+      <min value="1" />
+      <constraint>
+        <key value="validEmailAddress" />
+        <severity value="warning" />
+        <human value="Die E-Mail-Adresse muss valide sein." />
+        <expression value="$this.matches('^[a-zA-Z0-9._%+-]+@(?:[a-zA-Z0-9-]+[.])+[a-zA-Z0-9]{2,63}$')" />
+      </constraint>
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.address">
+      <path value="Organization.address" />
+      <type>
+        <code value="Address" />
+        <profile value="http://fhir.de/StructureDefinition/address-de-basis" />
+      </type>
+    </element>
+    <element id="Organization.contact.telecom">
+      <path value="Organization.contact.telecom" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Organization.contact.telecom:phone">
+      <path value="Organization.contact.telecom" />
+      <sliceName value="phone" />
+    </element>
+    <element id="Organization.contact.telecom:phone.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Organization.contact.telecom.system" />
+      <min value="1" />
+      <fixedCode value="phone" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.contact.telecom:phone.value">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Organization.contact.telecom.value" />
+      <min value="1" />
+      <constraint>
+        <key value="validPhoneNumber" />
+        <severity value="warning" />
+        <human value="Die Telefonnummer muss valide sein." />
+        <expression value="$this.matches('^[0+][0-9 \\-\\(\\)]{6,50}$')" />
+      </constraint>
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.contact.telecom:fax">
+      <path value="Organization.contact.telecom" />
+      <sliceName value="fax" />
+    </element>
+    <element id="Organization.contact.telecom:fax.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Organization.contact.telecom.system" />
+      <min value="1" />
+      <fixedCode value="fax" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.contact.telecom:fax.value">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Organization.contact.telecom.value" />
+      <min value="1" />
+      <constraint>
+        <key value="validFaxNumber" />
+        <severity value="warning" />
+        <human value="Die Faxnummer muss valide sein." />
+        <expression value="$this.matches('^[0+][0-9 \\-\\(\\)]{6,50}$')" />
+      </constraint>
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.contact.telecom:email">
+      <path value="Organization.contact.telecom" />
+      <sliceName value="email" />
+    </element>
+    <element id="Organization.contact.telecom:email.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Organization.contact.telecom.system" />
+      <min value="1" />
+      <fixedCode value="email" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.contact.telecom:email.value">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Organization.contact.telecom.value" />
+      <min value="1" />
+      <constraint>
+        <key value="validEmailAddress" />
+        <severity value="warning" />
+        <human value="Die E-Mail-Adresse muss valide sein." />
+        <expression value="$this.matches('^[a-zA-Z0-9._%+-]+@(?:[a-zA-Z0-9-]+[.])+[a-zA-Z0-9]{2,63}$')" />
+      </constraint>
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.contact.address">
+      <path value="Organization.contact.address" />
+      <type>
+        <code value="Address" />
+        <profile value="http://fhir.de/StructureDefinition/address-de-basis" />
+      </type>
+    </element>
+    <element id="Organization.endpoint">
+      <path value="Organization.endpoint" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

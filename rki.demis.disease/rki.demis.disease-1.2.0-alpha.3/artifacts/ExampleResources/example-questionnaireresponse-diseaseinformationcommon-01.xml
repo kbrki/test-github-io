@@ -1,0 +1,135 @@
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+   <id value="831e367d-bea3-3e27-9fe9-c35c8d6ef120"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseInformationCommon"></profile>
+   </meta>
+   <questionnaire value="https://demis.rki.de/fhir/Questionnaire/DiseaseQuestionsCommon"></questionnaire>
+   <status value="completed"></status>
+   <subject>
+      <reference value="Patient/f05d4f31-e46a-370a-82f4-c065d13d46af"></reference>
+   </subject>
+   <item>
+      <linkId value="isDead"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+            <code value="yes"></code>
+            <display value="Ja"></display>
+         </valueCoding>
+         <item>
+            <linkId value="deathDate"></linkId>
+            <answer>
+               <valueDate value="2021-03-04"></valueDate>
+            </answer>
+         </item>
+      </answer>
+   </item>
+   <item>
+      <linkId value="militaryAffiliation"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/militaryAffiliation"></system>
+            <code value="noReferenceToBundeswehr"></code>
+            <display value="Kein Bezug zur BW"></display>
+         </valueCoding>
+      </answer>
+   </item>
+   <item>
+      <linkId value="labSpecimenTaken"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+            <code value="no"></code>
+            <display value="Nein"></display>
+         </valueCoding>
+      </answer>
+   </item>
+   <item>
+      <linkId value="hospitalized"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+            <code value="yes"></code>
+            <display value="Ja"></display>
+         </valueCoding>
+         <item>
+            <linkId value="hospitalizedGroup"></linkId>
+            <item>
+               <linkId value="hospitalizedEncounter"></linkId>
+               <answer>
+                  <valueReference>
+                     <reference value="Encounter/0ed9e51c-c24d-3d11-9ba0-555a90ec1d9a"></reference>
+                  </valueReference>
+               </answer>
+            </item>
+         </item>
+      </answer>
+   </item>
+   <item>
+      <linkId value="infectProtectFacility"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"></system>
+            <code value="NASK"></code>
+            <display value="not asked"></display>
+         </valueCoding>
+      </answer>
+   </item>
+   <item>
+      <linkId value="placeExposure"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+            <code value="yes"></code>
+            <display value="Ja"></display>
+         </valueCoding>
+         <item>
+            <linkId value="placeExposureGroup"></linkId>
+            <item>
+               <linkId value="placeExposureBegin"></linkId>
+               <answer>
+                  <valueDate value="2021-02-25"></valueDate>
+               </answer>
+            </item>
+            <item>
+               <linkId value="placeExposureEnd"></linkId>
+               <answer>
+                  <valueDate value="2021-02-27"></valueDate>
+               </answer>
+            </item>
+            <item>
+               <linkId value="placeExposureRegion"></linkId>
+               <answer>
+                  <valueCoding>
+                     <system value="https://demis.rki.de/fhir/CodeSystem/geographicRegion"></system>
+                     <code value="41161015"></code>
+                     <display value="Comunidad de Madrid"></display>
+                  </valueCoding>
+               </answer>
+            </item>
+            <item>
+               <linkId value="placeExposureHint"></linkId>
+               <answer>
+                  <valueString value="Urlaubsreise"></valueString>
+               </answer>
+            </item>
+         </item>
+      </answer>
+   </item>
+   <item>
+      <linkId value="organDonation"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+            <code value="yes"></code>
+            <display value="Ja"></display>
+         </valueCoding>
+      </answer>
+   </item>
+   <item>
+      <linkId value="additionalInformation"></linkId>
+      <answer>
+         <valueString value="Mehr habe ich nicht zu sagen."></valueString>
+      </answer>
+   </item>
+</QuestionnaireResponse>

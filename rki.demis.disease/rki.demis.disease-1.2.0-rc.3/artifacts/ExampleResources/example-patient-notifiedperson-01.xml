@@ -1,0 +1,46 @@
+<Patient xmlns="http://hl7.org/fhir">
+   <id value="51eddc9b-0ac4-360c-b89d-5478b696f6dc"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/NotifiedPerson"></profile>
+   </meta>
+   <name>
+      <use value="official"></use>
+      <family value="Fontane"></family>
+      <given value="Theodor"></given>
+   </name>
+   <telecom>
+      <system value="phone"></system>
+      <value value="030 123456"></value>
+   </telecom>
+   <telecom>
+      <system value="email"></system>
+      <value value="tf@hfksjfhdaksljdfhsakl.de"></value>
+   </telecom>
+   <gender value="male"></gender>
+   <birthDate value="1991-12-30"></birthDate>
+   <address>
+      <extension url="https://demis.rki.de/fhir/StructureDefinition/AddressUse">
+         <valueCoding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/addressUse"></system>
+            <code value="current"></code>
+         </valueCoding>
+      </extension>
+      <extension url="https://demis.rki.de/fhir/StructureDefinition/FacilityAddressNotifiedPerson">
+         <valueReference>
+            <reference value="Organization/e51f32e5-767f-32a1-99fd-1d2de606b5bc"></reference>
+         </valueReference>
+      </extension>
+   </address>
+   <address>
+      <extension url="https://demis.rki.de/fhir/StructureDefinition/AddressUse">
+         <valueCoding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/addressUse"></system>
+            <code value="primary"></code>
+         </valueCoding>
+      </extension>
+      <line value="Heerstr. 1"></line>
+      <city value="Berlin"></city>
+      <postalCode value="14052"></postalCode>
+      <country value="DE"></country>
+   </address>
+</Patient>

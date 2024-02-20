@@ -1,0 +1,54 @@
+<Condition xmlns="http://hl7.org/fhir">
+   <id value="56a2bbf8-f2ee-39af-8fd8-680a1310bb54"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseCVDD"></profile>
+   </meta>
+   <verificationStatus>
+      <coding>
+         <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"></system>
+         <code value="confirmed"></code>
+      </coding>
+   </verificationStatus>
+   <code>
+      <coding>
+         <system value="https://demis.rki.de/fhir/CodeSystem/notificationDiseaseCategory"></system>
+         <code value="cvdd"></code>
+         <display value="Coronavirus-Krankheit-2019 (COVID-19)"></display>
+      </coding>
+   </code>
+   <subject>
+      <reference value="Patient/51eddc9b-0ac4-360c-b89d-5478b696f6dc"></reference>
+   </subject>
+   <onsetDateTime value="2021-03-02"></onsetDateTime>
+   <recordedDate value="2021-03-04"></recordedDate>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="36955009"></code>
+            <display value="Loss of taste (finding)"></display>
+         </coding>
+      </code>
+   </evidence>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="44169009"></code>
+            <display value="Loss of sense of smell (finding)"></display>
+         </coding>
+      </code>
+   </evidence>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="248581005"></code>
+            <display value="Rapid shallow breathing (finding)"></display>
+         </coding>
+      </code>
+   </evidence>
+   <note>
+      <text value="Textueller Hinweis"></text>
+   </note>
+</Condition>

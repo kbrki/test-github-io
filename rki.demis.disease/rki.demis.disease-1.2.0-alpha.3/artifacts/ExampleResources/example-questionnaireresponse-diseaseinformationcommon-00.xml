@@ -1,0 +1,98 @@
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+   <id value="2f0c6b36-6421-35a8-8ea1-0e013db39410"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseInformationCommon"></profile>
+   </meta>
+   <questionnaire value="https://demis.rki.de/fhir/Questionnaire/DiseaseQuestionsCommon"></questionnaire>
+   <status value="completed"></status>
+   <subject>
+      <reference value="Patient/ac163863-fefa-3ce2-8511-7a4150d6ad43"></reference>
+   </subject>
+   <item>
+      <linkId value="isDead"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+            <code value="no"></code>
+            <display value="Nein"></display>
+         </valueCoding>
+      </answer>
+   </item>
+   <item>
+      <linkId value="militaryAffiliation"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"></system>
+            <code value="NASK"></code>
+            <display value="not asked"></display>
+         </valueCoding>
+      </answer>
+   </item>
+   <item>
+      <linkId value="labSpecimenTaken"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"></system>
+            <code value="NASK"></code>
+            <display value="not asked"></display>
+         </valueCoding>
+      </answer>
+   </item>
+   <item>
+      <linkId value="hospitalized"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+            <code value="yes"></code>
+            <display value="Ja"></display>
+         </valueCoding>
+         <item>
+            <linkId value="hospitalizedGroup"></linkId>
+            <item>
+               <linkId value="hospitalizedEncounter"></linkId>
+               <answer>
+                  <valueReference>
+                     <reference value="Encounter/cf424cfb-8809-3b51-8ab2-d8bf979cbe8d"></reference>
+                  </valueReference>
+               </answer>
+            </item>
+         </item>
+      </answer>
+   </item>
+   <item>
+      <linkId value="infectProtectFacility"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"></system>
+            <code value="NASK"></code>
+            <display value="not asked"></display>
+         </valueCoding>
+      </answer>
+   </item>
+   <item>
+      <linkId value="placeExposure"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"></system>
+            <code value="NASK"></code>
+            <display value="not asked"></display>
+         </valueCoding>
+      </answer>
+   </item>
+   <item>
+      <linkId value="organDonation"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"></system>
+            <code value="NASK"></code>
+            <display value="not asked"></display>
+         </valueCoding>
+      </answer>
+   </item>
+   <item>
+      <linkId value="additionalInformation"></linkId>
+      <answer>
+         <valueString value="Die Meldungsgenerierung erfolgte automatisch über den Aufnahmedatensatz gem. §301 SGB V. Nicht alle erforderlichen Informationen konnten daher erhoben werden."></valueString>
+      </answer>
+   </item>
+</QuestionnaireResponse>

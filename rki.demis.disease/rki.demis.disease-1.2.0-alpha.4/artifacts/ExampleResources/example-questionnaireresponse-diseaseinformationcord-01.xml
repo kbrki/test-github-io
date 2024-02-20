@@ -1,0 +1,89 @@
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+   <id value="00d58387-96ab-30b0-9a6a-f378b6d7027a"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseInformationCORD"></profile>
+   </meta>
+   <questionnaire value="https://demis.rki.de/fhir/Questionnaire/DiseaseQuestionsCORD"></questionnaire>
+   <status value="completed"></status>
+   <subject>
+      <reference value="Patient/a9a89245-c9df-32b1-bafa-c1a83994fa00"></reference>
+   </subject>
+   <item>
+      <linkId value="form"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="18901009"></code>
+            <display value="Hautdiphtherie"></display>
+         </valueCoding>
+      </answer>
+   </item>
+   <item>
+      <linkId value="immunization"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+            <code value="yes"></code>
+            <display value="Ja"></display>
+         </valueCoding>
+         <item>
+            <linkId value="immunizationRef"></linkId>
+            <answer>
+               <valueReference>
+                  <reference value="Immunization/38255407-e097-3e35-ac32-aab71057cebf"></reference>
+               </valueReference>
+            </answer>
+         </item>
+         <item>
+            <linkId value="immunizationRef"></linkId>
+            <answer>
+               <valueReference>
+                  <reference value="Immunization/9ee3d069-85b8-3dff-b254-e20918185d87"></reference>
+               </valueReference>
+            </answer>
+         </item>
+         <item>
+            <linkId value="immunizationRef"></linkId>
+            <answer>
+               <valueReference>
+                  <reference value="Immunization/6bac10ca-fd2e-3e2a-ad7c-3b37926a0567"></reference>
+               </valueReference>
+            </answer>
+         </item>
+         <item>
+            <linkId value="immunizationRef"></linkId>
+            <answer>
+               <valueReference>
+                  <reference value="Immunization/8c12ac35-98c0-3978-b318-952f6d5ab649"></reference>
+               </valueReference>
+            </answer>
+         </item>
+         <item>
+            <linkId value="immunizationRef"></linkId>
+            <answer>
+               <valueReference>
+                  <reference value="Immunization/35e0bc1e-9398-36c8-9993-8b63e9769f15"></reference>
+               </valueReference>
+            </answer>
+         </item>
+         <item>
+            <linkId value="immunizationRef"></linkId>
+            <answer>
+               <valueReference>
+                  <reference value="Immunization/0c367a74-e2c8-374d-b6a6-9c2dfa80debc"></reference>
+               </valueReference>
+            </answer>
+         </item>
+      </answer>
+   </item>
+   <item>
+      <linkId value="outbreak"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+            <code value="no"></code>
+            <display value="Nein"></display>
+         </valueCoding>
+      </answer>
+   </item>
+</QuestionnaireResponse>

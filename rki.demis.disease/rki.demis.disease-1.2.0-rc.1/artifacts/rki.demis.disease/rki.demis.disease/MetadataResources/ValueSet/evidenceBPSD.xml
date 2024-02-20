@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="evidenceBPSD"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/evidenceBPSD"/>
+  <version value="1.1.0"/>
+  <name value="EvidenceBPSD"/>
+  <title value="Keuchhusten-Symptom und -Manifestation"/>
+  <status value="active"/>
+  <date value="2023-03-23"/>
+  <description value="Das ValueSet EvidenceBPSD enthält die Codes der Keuchhusten-Symptome und -Manifestationen."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <code value="43025008"/>
+        <display value="anfallsweise auftretender Husten"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Paroxysmal cough (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="13094009"/>
+        <display value="Atemstillstand (Apnoe) bei Säuglingen"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Apnea in newborn (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="424580008"/>
+        <display value="Erbrechen nach den Hustenanfällen"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Post-tussive vomiting (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="49727002"/>
+        <display value="Husten"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Cough (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="284523002"/>
+        <display value="Husten von mehr als 14 Tagen Dauer"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Persistent cough (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="58596002"/>
+        <display value="Atemgeräusch, inspiratorisches Stridor"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Inspiratory stridor (finding)"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

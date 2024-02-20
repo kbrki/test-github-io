@@ -1,0 +1,28 @@
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="NotifiedPersonFacility-example" />
+  <meta>
+    <profile value="https://demis.rki.de/fhir/StructureDefinition/NotifiedPersonFacility" />
+  </meta>
+  <type>
+    <coding>
+      <system value="https://demis.rki.de/fhir/CodeSystem/organizationType" />
+      <code value="hospital" />
+    </coding>
+  </type>
+  <name value="Krankenhaus am See" />
+  <telecom>
+    <system value="phone" />
+    <value value="+49 (0)12345 - 123456" />
+    <use value="work" />
+  </telecom>
+  <address>
+    <line value="Kurzer Weg 15" />
+    <city value="Berlin" />
+    <state value="DE-BE" />
+    <postalCode value="10117" />
+    <country value="DE" />
+  </address>
+  <partOf>
+    <reference value="Organization/d3539a4c-9093-467a-a3e8-050594afbd59" />
+  </partOf>
+</Organization>

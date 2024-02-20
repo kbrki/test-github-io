@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="SubmittingRole" />
+  <url value="https://demis.rki.de/fhir/StructureDefinition/SubmittingRole" />
+  <version value="1.3.0" />
+  <name value="SubmittingRole" />
+  <title value="Einsender-Rolle" />
+  <status value="active" />
+  <date value="2023-11-23" />
+  <description value="Die Einsender-Rolle ist erforderlich, um eine Unterscheidung zwischen Einsender und Einsender-Einrichtung vornehmen zu können. Sie beinhaltet lediglich Verweise auf die Einsendende Person oder die Einsendende Einrichtung." />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="servd" />
+    <uri value="http://www.omg.org/spec/ServD/1.0/" />
+    <name value="ServD" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="PractitionerRole" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/PractitionerRole" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="PractitionerRole">
+      <path value="PractitionerRole" />
+      <constraint>
+        <key value="personOrFacilityCount" />
+        <severity value="error" />
+        <human value="Es muss mindestens eine Einsendende Person oder eine Einsendende Einrichtung angegeben werden." />
+        <expression value="practitioner.count()=1 or organization.count()=1" />
+        <source value="https://demis.rki.de/fhir/StructureDefinition/SubmittingRole" />
+      </constraint>
+      <constraint>
+        <key value="personOrFacilityNotEmpty" />
+        <severity value="error" />
+        <human value="Der Einsender ist entweder eine Einsendende Person oder eine Einsendende Einrichtung." />
+        <expression value="practitioner.empty() or organization.empty()" />
+        <source value="https://demis.rki.de/fhir/StructureDefinition/SubmittingRole" />
+      </constraint>
+    </element>
+    <element id="PractitionerRole.meta">
+      <path value="PractitionerRole.meta" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="PractitionerRole.meta.profile">
+      <path value="PractitionerRole.meta.profile" />
+      <min value="1" />
+      <max value="1" />
+      <fixedCanonical value="https://demis.rki.de/fhir/StructureDefinition/SubmittingRole" />
+      <mustSupport value="true" />
+    </element>
+    <element id="PractitionerRole.practitioner">
+      <path value="PractitionerRole.practitioner" />
+      <short value="Verweis auf die Einsendende Person" />
+      <definition value="Verweis auf die Einsendende Person" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/SubmittingPerson" />
+        <aggregation value="bundled" />
+      </type>
+    </element>
+    <element id="PractitionerRole.practitioner.reference">
+      <path value="PractitionerRole.practitioner.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="PractitionerRole.organization">
+      <path value="PractitionerRole.organization" />
+      <short value="Verweis auf die Einsendende Einrichtung" />
+      <definition value="Verweis auf die Einsendende Einrichtung" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/SubmittingFacility" />
+        <aggregation value="bundled" />
+      </type>
+    </element>
+    <element id="PractitionerRole.organization.reference">
+      <path value="PractitionerRole.organization.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

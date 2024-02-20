@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ProcessNotificationResponse" />
+  <url value="https://demis.rki.de/fhir/StructureDefinition/ProcessNotificationResponse" />
+  <version value="1.3.0" />
+  <name value="ProcessNotificationResponse" />
+  <title value="Response für $process-notification" />
+  <status value="active" />
+  <date value="2023-10-10" />
+  <description value="Response für $process-notification" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="OperationOutcome" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/OperationOutcome" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="OperationOutcome.meta">
+      <path value="OperationOutcome.meta" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="OperationOutcome.meta.profile">
+      <path value="OperationOutcome.meta.profile" />
+      <min value="1" />
+      <max value="1" />
+      <fixedCanonical value="https://demis.rki.de/fhir/StructureDefinition/ProcessNotificationResponse" />
+      <mustSupport value="true" />
+    </element>
+    <element id="OperationOutcome.issue">
+      <path value="OperationOutcome.issue" />
+      <mustSupport value="true" />
+    </element>
+    <element id="OperationOutcome.issue.severity">
+      <path value="OperationOutcome.issue.severity" />
+      <mustSupport value="true" />
+    </element>
+    <element id="OperationOutcome.issue.code">
+      <path value="OperationOutcome.issue.code" />
+      <mustSupport value="true" />
+    </element>
+    <element id="OperationOutcome.issue.location">
+      <path value="OperationOutcome.issue.location" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

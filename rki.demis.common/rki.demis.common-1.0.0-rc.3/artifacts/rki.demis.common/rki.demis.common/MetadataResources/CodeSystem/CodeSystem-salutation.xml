@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="salutation" />
+  <url value="https://demis.rki.de/fhir/CodeSystem/salutation" />
+  <version value="1.2.0" />
+  <name value="Salutation" />
+  <title value="Anrede" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2023-09-19" />
+  <publisher value="Robert Koch-Institut" />
+  <description value="Das CodeSystem Salutation enthält die Codes der Anreden." />
+  <caseSensitive value="false" />
+  <valueSet value="https://demis.rki.de/fhir/ValueSet/salutation" />
+  <content value="complete" />
+  <count value="2" />
+  <concept>
+    <code value="mrs" />
+    <display value="Frau" />
+    <designation>
+      <language value="en-US" />
+      <use>
+        <system value="http://snomed.info/sct" />
+        <code value="900000000000003001" />
+      </use>
+      <value value="Mrs." />
+    </designation>
+  </concept>
+  <concept>
+    <code value="mr" />
+    <display value="Herr" />
+    <designation>
+      <language value="en-US" />
+      <use>
+        <system value="http://snomed.info/sct" />
+        <code value="900000000000003001" />
+      </use>
+      <value value="Mr." />
+    </designation>
+  </concept>
+</CodeSystem>

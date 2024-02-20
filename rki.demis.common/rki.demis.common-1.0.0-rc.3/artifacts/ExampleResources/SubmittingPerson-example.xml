@@ -1,0 +1,29 @@
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="SubmittingPerson-example" />
+  <meta>
+    <profile value="https://demis.rki.de/fhir/StructureDefinition/SubmittingPerson" />
+  </meta>
+  <name>
+    <use value="official" />
+    <family value="Mantle" />
+    <given value="Karl-Heinz" />
+  </name>
+  <telecom>
+    <system value="phone" />
+    <value value="+49 (0)12345 - 123456" />
+    <use value="work" />
+  </telecom>
+  <telecom>
+    <system value="phone" />
+    <value value="+49 (0)12345 - 123567" />
+    <use value="home" />
+  </telecom>
+  <address>
+    <use value="home" />
+    <line value="Erster Weg 1" />
+    <city value="Berlin" />
+    <state value="DE-BE" />
+    <postalCode value="10117" />
+    <country value="DE" />
+  </address>
+</Practitioner>

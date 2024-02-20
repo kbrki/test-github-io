@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="verificationStatus"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/verificationStatus"/>
+  <version value="1.2.0"/>
+  <name value="VerificationStatus"/>
+  <title value="Verifikationsstatus der Diagnose"/>
+  <status value="active"/>
+  <date value="2023-06-22"/>
+  <description value="Das ValueSet VerificationStatus enthält die Codes für den Verifikationsstatus der Diagnose."/>
+  <compose>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+      <version value="0.5.0"/>
+      <concept>
+        <code value="confirmed"/>
+        <display value="Confirmed"/>
+      </concept>
+      <concept>
+        <code value="unconfirmed"/>
+        <display value="Unconfirmed"/>
+      </concept>
+      <concept>
+        <code value="refuted"/>
+        <display value="Refuted"/>
+      </concept>
+      <concept>
+        <code value="entered-in-error"/>
+        <display value="Entered in Error"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

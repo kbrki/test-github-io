@@ -1,0 +1,37 @@
+<Encounter xmlns="http://hl7.org/fhir">
+   <id value="0ed9e51c-c24d-3d11-9ba0-555a90ec1d9a"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/Hospitalization"></profile>
+   </meta>
+   <extension url="https://demis.rki.de/fhir/StructureDefinition/HospitalizationRegion">
+      <valueCodeableConcept>
+         <coding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/geographicRegion"></system>
+            <code value="13000011"></code>
+         </coding>
+      </valueCodeableConcept>
+   </extension>
+   <status value="in-progress"></status>
+   <class>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"></system>
+      <code value="IMP"></code>
+      <display value="inpatient encounter"></display>
+   </class>
+   <serviceType>
+      <coding>
+         <system value="https://demis.rki.de/fhir/CodeSystem/hospitalizationServiceType"></system>
+         <code value="0800"></code>
+         <display value="Pneumologie"></display>
+      </coding>
+   </serviceType>
+   <subject>
+      <reference value="Patient/f05d4f31-e46a-370a-82f4-c065d13d46af"></reference>
+   </subject>
+   <period>
+      <start value="2021-03-04"></start>
+      <end value="2021-03-04"></end>
+   </period>
+   <serviceProvider>
+      <reference value="Organization/ac163863-fefa-3ce2-8511-7a4150d6ad43"></reference>
+   </serviceProvider>
+</Encounter>

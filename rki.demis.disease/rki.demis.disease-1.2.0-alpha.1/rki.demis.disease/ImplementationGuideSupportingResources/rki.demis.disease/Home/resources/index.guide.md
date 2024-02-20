@@ -1,0 +1,8 @@
+# {{page-title}}
+
+Die folgenden Abschnitte geben einen detaillierteren Einblick in die innerhalb des Implementierungsleitfadens genutzten Ressourcen. Dabei wird in der Struktur grob zwischen den folgenden Kategorien unterschieden:
+
+- **StructureDefinitions** - In diesem Abschnitt werden die in Form von FHIR [StructureDefinitions](http://www.hl7.org/FHIR/structuredefinition.html) erstellten Ressourcenprofile vorgestellt. Diese bilden den groben inhaltlichen und strukturellen Rahmen der spezifizierten Meldungen.
+- **Questionnaires** - Unterhalb der Questionnaire-Überschrift erfolgt sowohl die nähere Erläuterung des meldetatbestandsübergreifend genutzten Fragebogens (**[DiseaseQuestionsCommon](https://simplifier.net/demisarztmeldung/~resources?canonical=https://demis.rki.de/fhir/questionnaire/diseasequestionscommon)**) als auch des für COVID-19 spezifischen Fragebogens (**[DiseaseQuestionsCVDD](https://simplifier.net/demisarztmeldung/~resources?canonical=https://demis.rki.de/fhir/questionnaire/diseasequestionscvdd)**). In den Unterabschnitten wird jeweils auf Struktur und Inhalt der jeweiligen Questionnaire Ressourcen eingegangen.
+- **Terminologies** - Der Abschnitt "Terminologies" beschreibt primär die innerhalb des Implementierungsleitfadens genutzten CodeSystems und ValueSets.
+- **Extensions** - Im "Extension"-Abschnitt wird auf die neu hinzukommenden Erweiterungen und deren Einsatzgebiet eingegangen.

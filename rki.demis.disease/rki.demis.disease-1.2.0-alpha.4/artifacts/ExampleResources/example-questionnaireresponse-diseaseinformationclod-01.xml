@@ -1,0 +1,99 @@
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+   <id value="e3ef77f5-cc54-3cb4-a509-dc9184b878c2"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseInformationCLOD"></profile>
+   </meta>
+   <questionnaire value="https://demis.rki.de/fhir/Questionnaire/DiseaseQuestionsCLOD"></questionnaire>
+   <status value="completed"></status>
+   <subject>
+      <reference value="Patient/eb14bc48-e720-36b9-b1b5-eca7f78e64bf"></reference>
+   </subject>
+   <item>
+      <linkId value="form"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="398523009"></code>
+            <display value="Lebensmittelbedingter Botulismus"></display>
+         </valueCoding>
+      </answer>
+   </item>
+   <item>
+      <linkId value="infectionPathKindGroup"></linkId>
+      <item>
+         <linkId value="foodGroup"></linkId>
+         <item>
+            <linkId value="food"></linkId>
+            <answer>
+               <valueCoding>
+                  <system value="http://snomed.info/sct"></system>
+                  <code value="346602001"></code>
+                  <display value="anderes Lebensmittel"></display>
+               </valueCoding>
+               <item>
+                  <linkId value="otherfood"></linkId>
+                  <answer>
+                     <valueString value="Eingeweckte Steinpilze"></valueString>
+                  </answer>
+               </item>
+            </answer>
+         </item>
+         <item>
+            <linkId value="consumptionWhen"></linkId>
+            <answer>
+               <valueDate value="2012-12-04"></valueDate>
+            </answer>
+         </item>
+         <item>
+            <linkId value="consumptionWhere"></linkId>
+            <answer>
+               <valueCoding>
+                  <system value="http://snomed.info/sct"></system>
+                  <code value="310205006"></code>
+                  <display value="Haushalt"></display>
+               </valueCoding>
+            </answer>
+         </item>
+         <item>
+            <linkId value="conservation"></linkId>
+            <answer>
+               <valueCoding>
+                  <system value="http://snomed.info/sct"></system>
+                  <code value="229982008"></code>
+                  <display value="Sauer eingelegt"></display>
+               </valueCoding>
+            </answer>
+         </item>
+         <item>
+            <linkId value="manufacturing"></linkId>
+            <answer>
+               <valueCoding>
+                  <system value="http://snomed.info/sct"></system>
+                  <code value="162542007"></code>
+                  <display value="eigene (private)"></display>
+               </valueCoding>
+            </answer>
+         </item>
+         <item>
+            <linkId value="toxinInFood"></linkId>
+            <answer>
+               <valueCoding>
+                  <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+                  <code value="yes"></code>
+                  <display value="Ja"></display>
+               </valueCoding>
+            </answer>
+         </item>
+      </item>
+   </item>
+   <item>
+      <linkId value="outbreak"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+            <code value="no"></code>
+            <display value="Nein"></display>
+         </valueCoding>
+      </answer>
+   </item>
+</QuestionnaireResponse>

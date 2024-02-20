@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetFoodCLOD"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetFoodCLOD"/>
+  <version value="1.1.0"/>
+  <name value="AnswerSetFoodCLOD"/>
+  <title value="Antwort zum verzehrten Lebensmittel bei Botulismus"/>
+  <status value="active"/>
+  <date value="2023-03-23"/>
+  <description value="Das ValueSet AnswerSetFoodCLOD enthält die Codes der Antwortmöglichkeiten für die verzehrten Lebensmittel bei Botulismus."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <code value="227020009"/>
+        <display value="Wurst"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Sausage (substance)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="226932004"/>
+        <display value="Schinken"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Gammon (substance)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="735971005"/>
+        <display value="Fisch"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Fish (substance)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="256354006"/>
+        <display value="Bohnen"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Bean (substance)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="346602001"/>
+        <display value="anderes Lebensmittel"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Other foods (product)"/>
+        </designation>
+      </concept>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+      <version value="2.1.0"/>
+      <concept>
+        <code value="ASKU"/>
+        <display value="asked but unknown"/>
+      </concept>
+      <concept>
+        <code value="NASK"/>
+        <display value="not asked"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

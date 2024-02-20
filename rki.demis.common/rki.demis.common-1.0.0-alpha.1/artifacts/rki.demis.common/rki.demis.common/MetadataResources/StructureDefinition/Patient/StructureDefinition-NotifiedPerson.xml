@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="NotifiedPerson" />
+  <url value="https://demis.rki.de/fhir/StructureDefinition/NotifiedPerson" />
+  <version value="1.5.0" />
+  <name value="NotifiedPerson" />
+  <title value="Betroffene Person" />
+  <status value="active" />
+  <date value="2023-09-20" />
+  <description value="Die betroffene Person enthält relevante Angaben zum Patienten, die entsprechend der aktuellen Planung aus den Auftragsdaten extrahiert werden, die der Einsender dem jeweiligen Labor übermittelt hat. Dies werden in der Mehrzahl der Fälle die Angaben von der eGK der betroffenen Person sein (Versichertenstammdaten)." />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="cda" />
+    <uri value="http://hl7.org/v3/cda" />
+    <name value="CDA (R2)" />
+  </mapping>
+  <mapping>
+    <identity value="loinc" />
+    <uri value="http://loinc.org" />
+    <name value="LOINC code for the element" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Patient" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Patient" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Patient">
+      <path value="Patient" />
+      <constraint>
+        <key value="noNumbersInFamilyName" />
+        <severity value="error" />
+        <human value="Der Nachname der betroffenen Person darf keine Zahlen enthalten." />
+        <expression value="name.family.matches('.*\\d.*')=false" />
+      </constraint>
+      <constraint>
+        <key value="noNumbersInGivenName" />
+        <severity value="error" />
+        <human value="Die Vornamen der betroffenen Person dürfen keine Zahlen enthalten." />
+        <expression value="name.given.all(matches('.*\\d.*')=false)" />
+      </constraint>
+    </element>
+    <element id="Patient.meta">
+      <path value="Patient.meta" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.meta.profile">
+      <path value="Patient.meta.profile" />
+      <min value="1" />
+      <max value="1" />
+      <fixedCanonical value="https://demis.rki.de/fhir/StructureDefinition/NotifiedPerson" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.name">
+      <path value="Patient.name" />
+      <short value="Name" />
+      <definition value="Name der betroffenen Person. Mindestens ein Vorname und der Nachname müssen angegeben werden." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="HumanName" />
+        <profile value="http://fhir.de/StructureDefinition/humanname-de-basis" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.name.family">
+      <path value="Patient.name.family" />
+      <short value="Nachname" />
+      <definition value="Nachname der betroffenen Person. Es muss genau ein Nachname angegeben werden." />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.name.given">
+      <path value="Patient.name.given" />
+      <short value="Vorname" />
+      <definition value="Vorname der betroffenen Person. Es muss mindestens ein Vorname angegeben werden." />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.telecom">
+      <path value="Patient.telecom" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <short value="Kontaktangaben" />
+      <definition value="Kontaktangaben der betroffenen Person. Telefonnummern oder E-Mailadressen können angegeben werden." />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.telecom:Email">
+      <path value="Patient.telecom" />
+      <sliceName value="Email" />
+    </element>
+    <element id="Patient.telecom:Email.system">
+      <path value="Patient.telecom.system" />
+      <min value="1" />
+      <fixedCode value="email" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.telecom:Email.value">
+      <path value="Patient.telecom.value" />
+      <min value="1" />
+      <constraint>
+        <key value="validEmailAddress" />
+        <severity value="warning" />
+        <human value="Die E-Mail-Adresse muss valide sein." />
+        <expression value="$this.matches('^[a-zA-Z0-9._%+-]+@(?:[a-zA-Z0-9-]+[.])+[a-zA-Z0-9]{2,63}$')" />
+      </constraint>
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.telecom:Phone">
+      <path value="Patient.telecom" />
+      <sliceName value="Phone" />
+    </element>
+    <element id="Patient.telecom:Phone.extension">
+      <path value="Patient.telecom.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Patient.telecom:Phone.extension:comment">
+      <path value="Patient.telecom.extension" />
+      <sliceName value="comment" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://demis.rki.de/fhir/StructureDefinition/Comment" />
+      </type>
+    </element>
+    <element id="Patient.telecom:Phone.system">
+      <path value="Patient.telecom.system" />
+      <min value="1" />
+      <fixedCode value="phone" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.telecom:Phone.value">
+      <path value="Patient.telecom.value" />
+      <min value="1" />
+      <constraint>
+        <key value="validPhoneNumber" />
+        <severity value="warning" />
+        <human value="Die Telefonnummer muss valide sein." />
+        <expression value="$this.matches('^(?:\\+?\\d{1,3}[-.\\s]?)?(?:\\(?\\d{1,6}\\))?(?:\\s?-?\\s?\\d{1,10}){1,5}$')" />
+      </constraint>
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.gender">
+      <path value="Patient.gender" />
+      <short value="Geschlecht" />
+      <definition value="Geschlecht der betroffenen Person" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.birthDate">
+      <path value="Patient.birthDate" />
+      <short value="Geburtsdatum" />
+      <definition value="Geburtsdatum der betroffenen Person" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.deceased[x]">
+      <path value="Patient.deceased[x]" />
+      <short value="Verstorben" />
+      <definition value="Angabe ob die betroffene Person verstorben ist" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.address">
+      <path value="Patient.address" />
+      <short value="Adresse" />
+      <definition value="Adresse der betroffenen Person. Über die Extension &quot;addressUse&quot; kann angegeben werden, um welche Art von Adresse es sich handelt. Ist die betroffene Person in einer Einrichtung untergebracht, kann über die Extension die Einrichtung angegeben werden." />
+      <type>
+        <code value="Address" />
+        <profile value="http://fhir.de/StructureDefinition/address-de-basis" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.address.extension">
+      <path value="Patient.address.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Patient.address.extension:addressUse">
+      <path value="Patient.address.extension" />
+      <sliceName value="addressUse" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://demis.rki.de/fhir/StructureDefinition/AddressUse" />
+      </type>
+    </element>
+    <element id="Patient.address.extension:facility">
+      <path value="Patient.address.extension" />
+      <sliceName value="facility" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://demis.rki.de/fhir/StructureDefinition/FacilityAddressNotifiedPerson" />
+      </type>
+    </element>
+    <element id="Patient.address.use">
+      <path value="Patient.address.use" />
+      <max value="0" />
+    </element>
+    <element id="Patient.address.line">
+      <path value="Patient.address.line" />
+      <short value="Anschriftenzeile" />
+      <definition value="Anschriftenzeile. Die Angabe eines Postfaches ist nicht erlaubt." />
+      <max value="1" />
+    </element>
+    <element id="Patient.address.line.extension">
+      <path value="Patient.address.line.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Patient.address.line.extension:Postfach">
+      <path value="Patient.address.line.extension" />
+      <sliceName value="Postfach" />
+      <max value="0" />
+    </element>
+    <element id="Patient.address.city">
+      <path value="Patient.address.city" />
+      <short value="Stadt" />
+      <definition value="Stadt" />
+    </element>
+    <element id="Patient.address.postalCode">
+      <path value="Patient.address.postalCode" />
+      <definition value="Postleitzahl. Der Wert muss entsprechend des vom RKI definierten ValueSets (https://demis.rki.de/fhir/ValueSet/postalCode) im coding Element dargestellt werden." />
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="https://demis.rki.de/fhir/ValueSet/postalCode" />
+      </binding>
+    </element>
+    <element id="Patient.address.country">
+      <path value="Patient.address.country" />
+      <short value="Land" />
+      <definition value="Land" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/iso3166-1-2" />
+      </binding>
+    </element>
+    <element id="Patient.maritalStatus">
+      <path value="Patient.maritalStatus" />
+      <max value="0" />
+    </element>
+    <element id="Patient.multipleBirth[x]">
+      <path value="Patient.multipleBirth[x]" />
+      <max value="0" />
+    </element>
+    <element id="Patient.photo">
+      <path value="Patient.photo" />
+      <max value="0" />
+    </element>
+    <element id="Patient.contact">
+      <path value="Patient.contact" />
+      <short value="Kontaktperson" />
+      <definition value="Kontaktperson der betroffenen Person" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.communication">
+      <path value="Patient.communication" />
+      <max value="0" />
+    </element>
+    <element id="Patient.managingOrganization">
+      <path value="Patient.managingOrganization" />
+      <max value="0" />
+    </element>
+    <element id="Patient.link">
+      <path value="Patient.link" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

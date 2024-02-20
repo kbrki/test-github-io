@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="evidenceSTYD"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/evidenceSTYD"/>
+  <version value="1.0.0"/>
+  <name value="EvidenceSTYD"/>
+  <title value="Typhus-Symptom und -Manifestation"/>
+  <status value="active"/>
+  <date value="2023-03-23"/>
+  <description value="Das ValueSet EvidenceSTYD enthält die Codes der Typhus-Symptome und -Manifestationen."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <code value="21522001"/>
+        <display value="Bauchschmerzen"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Abdominal pain (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="409966000"/>
+        <display value="Durchfall, akut"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Acute diarrhea (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="386661006"/>
+        <display value="Fieber"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Fever (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="49727002"/>
+        <display value="Husten"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Cough (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="25064002"/>
+        <display value="Kopfschmerzen"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Headache (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="111360009"/>
+        <display value="Verstopfung (Obstipation)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Obstipation (disorder)"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

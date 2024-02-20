@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Salutation" />
+  <url value="https://demis.rki.de/fhir/StructureDefinition/Salutation" />
+  <version value="1.2.0" />
+  <name value="Salutation" />
+  <title value="Anrede" />
+  <status value="active" />
+  <date value="2023-10-16" />
+  <description value="Für den Melder kann eine Anrede angegeben werden. Diese wird bei Anschreiben verwendet." />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Practitioner" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="https://demis.rki.de/fhir/StructureDefinition/Salutation" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <short value="Anrede des Melders" />
+      <definition value="Anrede des Melders. Der Wert muss entsprechend des vom RKI definierten ValueSets (https://demis.rki.de/fhir/ValueSet/salutation) im coding Element dargestellt werden." />
+      <min value="1" />
+      <type>
+        <code value="Coding" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://demis.rki.de/fhir/ValueSet/salutation" />
+      </binding>
+    </element>
+    <element id="Extension.value[x].system">
+      <path value="Extension.value[x].system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Extension.value[x].code">
+      <path value="Extension.value[x].code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="reportingSite"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/reportingSite"/>
+  <version value="1.2.0"/>
+  <name value="ReportingSite"/>
+  <title value="Übermittlungsstelle"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-09-19"/>
+  <publisher value="Robert Koch-Institut"/>
+  <description value="Das ValueSet ReportingSite enthält die Codes der Übermittlungsstellen."/>
+  <compose>
+    <include>
+      <system value="https://demis.rki.de/fhir/CodeSystem/reportingSite"/>
+      <version value="1.1.1"/>
+    </include>
+  </compose>
+</ValueSet>

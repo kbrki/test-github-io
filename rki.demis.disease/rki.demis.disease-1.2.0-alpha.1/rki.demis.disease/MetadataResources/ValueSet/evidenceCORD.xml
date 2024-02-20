@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="evidenceCORD"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/evidenceCORD"/>
+  <version value="1.0.0"/>
+  <name value="EvidenceCORD"/>
+  <title value="Diphtherie-Symptom und -Manifestation"/>
+  <status value="active"/>
+  <date value="2022-11-30"/>
+  <description value="Das ValueSet EvidenceCORD enthält die Codes der Diphtherie-Symptome und -Manifestationen."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="64531003"/>
+        <display value="Ausfluss, nasal"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="64531003 |Nasal discharge (finding)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="112401000119106"/>
+        <display value="Bindehautläsion"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="112401000119106 |Lesion of conjunctiva (disorder)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="162397003"/>
+        <display value="Halsschmerzen/-entzündung"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="162397003 |Pain in throat (finding)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="95324001"/>
+        <display value="Hautläsion"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="95324001 |Skin lesion (disorder)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="276320009:{363698007=58675001,116676008=399016005}"/>
+        <display value="Pseudomembränöse Beläge im oberen Respirationstrakt"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="276320009 |Lesion of mucosa (disorder)| : { 363698007 |Finding site (attribute)| = 58675001 |Upper respiratory tract structure (body structure)|, 116676008 |Associated morphology (attribute)| = 399016005 |Pseudomembrane (morphologic abnormality)| }"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="276320009:{363698007=71836000,116676008=399016005}"/>
+        <display value="Pseudomembränöse Beläge des Pharynx"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="276320009 |Lesion of mucosa (disorder)| : { 363698007 |Finding site (attribute)| = 71836000 |Nasopharyngeal structure (body structure)|, 116676008 |Associated morphology (attribute)| = 399016005 |Pseudomembrane (morphologic abnormality)| }"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="276320009:{363698007=4596009,116676008=399016005}"/>
+        <display value="Pseudomembränöse Beläge des Larynx"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="276320009 |Lesion of mucosa (disorder)| : { 363698007 |Finding site (attribute)| = 4596009 |Laryngeal structure (body structure)|, 116676008 |Associated morphology (attribute)| = 399016005 |Pseudomembrane (morphologic abnormality)| }"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="hospitalizationReason"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/hospitalizationReason"/>
+  <version value="1.1.0"/>
+  <name value="HospitalizationReason"/>
+  <title value="Grund der Hospitalisierung"/>
+  <status value="active"/>
+  <date value="2023-03-03"/>
+  <description value="Das ValueSet HospitalizationReason enthält die Codes für den Hospitalisierungsgrund."/>
+  <compose>
+    <include>
+      <system value="https://demis.rki.de/fhir/CodeSystem/hospitalizationReason"/>
+      <version value="1.0.0"/>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ImmunizationInformationHXXD"/>
+  <url value="https://demis.rki.de/fhir/StructureDefinition/ImmunizationInformationHXXD"/>
+  <version value="1.1.0"/>
+  <name value="ImmunizationInformationHXXD"/>
+  <title value="Akute Virushepatitis-Impfung"/>
+  <status value="active"/>
+  <date value="2023-11-28"/>
+  <description value="Die akute Virushepatitis-Impfung spezifiziert die Angaben zum Impfstoff hinsichtlich akute Virushepatitis."/>
+  <fhirVersion value="4.0.1"/>
+  <mapping>
+    <identity value="cda"/>
+    <uri value="http://hl7.org/v3/cda"/>
+    <name value="CDA (R2)"/>
+  </mapping>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="Immunization"/>
+  <baseDefinition value="https://demis.rki.de/fhir/StructureDefinition/ImmunizationInformation"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Immunization.vaccineCode">
+      <path value="Immunization.vaccineCode"/>
+      <short value="Verabreichter akute Virushepatitis-Impfstoff"/>
+      <definition value="Verabreichter akute Virushepatitis-Impfstoff"/>
+    </element>
+    <element id="Immunization.vaccineCode.coding">
+      <path value="Immunization.vaccineCode.coding"/>
+      <slicing>
+        <description value="Slicing based on system"/>
+        <rules value="closed"/>
+      </slicing>
+    </element>
+    <element id="Immunization.vaccineCode.coding:snomed_CT">
+      <path value="Immunization.vaccineCode.coding"/>
+      <sliceName value="snomed_CT"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://demis.rki.de/fhir/ValueSet/vaccineHXXD"/>
+      </binding>
+    </element>
+    <element id="Immunization.vaccineCode.coding:snomed_CT.system">
+      <path value="Immunization.vaccineCode.coding.system"/>
+      <fixedUri value="http://snomed.info/sct"/>
+    </element>
+    <element id="Immunization.doseQuantity">
+      <path value="Immunization.doseQuantity"/>
+      <mustSupport value="false"/>
+    </element>
+    <element id="Immunization.protocolApplied">
+      <path value="Immunization.protocolApplied"/>
+      <max value="0"/>
+    </element>
+  </differential>
+</StructureDefinition>

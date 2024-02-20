@@ -1,0 +1,36 @@
+<Condition xmlns="http://hl7.org/fhir">
+   <id value="2709dc2d-a1b0-35fd-8a27-0c26a51d7804"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseCORD"></profile>
+   </meta>
+   <verificationStatus>
+      <coding>
+         <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"></system>
+         <code value="confirmed"></code>
+      </coding>
+   </verificationStatus>
+   <code>
+      <coding>
+         <system value="https://demis.rki.de/fhir/CodeSystem/notificationDiseaseCategory"></system>
+         <code value="cord"></code>
+         <display value="Diphtherie"></display>
+      </coding>
+   </code>
+   <subject>
+      <reference value="Patient/a9a89245-c9df-32b1-bafa-c1a83994fa00"></reference>
+   </subject>
+   <onsetDateTime value="2022-12-05"></onsetDateTime>
+   <recordedDate value="2022-12-07"></recordedDate>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="95324001"></code>
+            <display value="Hautläsion"></display>
+         </coding>
+      </code>
+   </evidence>
+   <note>
+      <text value="Textueller Hinweis"></text>
+   </note>
+</Condition>

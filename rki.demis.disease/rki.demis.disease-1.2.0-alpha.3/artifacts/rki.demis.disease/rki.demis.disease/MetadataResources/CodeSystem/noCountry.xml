@@ -1,0 +1,22 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<id value="noCountry" />
+	<url value="https://demis.rki.de/fhir/CodeSystem/noCountry" />
+	<version value="1.0.0" />
+	<name value="NoCountry" />
+	<title value="Staatenlos oder Ausland" />
+	<status value="active" />
+	<date value="2023-04-25" />
+	<description value="Das CodeSystem NoCountry enthält die Codes zur Angabe für staatenlos und Ausland." />
+	<caseSensitive value="false" />
+	<valueSet value="https://demis.rki.de/fhir/ValueSet/noCountry" />
+	<content value="complete" />
+	<count value="2" />
+	<concept>
+		<code value="31099997" />
+		<display value="staatenlos" />
+	</concept>
+	<concept>
+		<code value="31099999" />
+		<display value="Ausland (Land unbekannt)" />
+	</concept>
+</CodeSystem>

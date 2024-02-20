@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+	<id value="DiseaseRUND" />
+	<url value="https://demis.rki.de/fhir/StructureDefinition/DiseaseRUND" />
+	<version value="1.0.0" />
+	<name value="DiseaseRUND" />
+	<title value="Röteln konnatal -Erkrankung" />
+	<status value="active" />
+	<date value="2023-02-02" />
+	<description value="Die Erkrankung enthält klinische Informationen wie Diagnose, Behandlungsergebnis, usw. hinsichtlich Röteln konnatal." />
+	<fhirVersion value="4.0.1" />
+	<mapping>
+		<identity value="sct-concept" />
+		<uri value="http://snomed.info/conceptdomain" />
+		<name value="SNOMED CT Concept Domain Binding" />
+	</mapping>
+	<mapping>
+		<identity value="sct-attr" />
+		<uri value="http://snomed.org/attributebinding" />
+		<name value="SNOMED CT Attribute Binding" />
+	</mapping>
+	<kind value="resource" />
+	<abstract value="false" />
+	<type value="Condition" />
+	<baseDefinition value="https://demis.rki.de/fhir/StructureDefinition/Disease" />
+	<derivation value="constraint" />
+	<differential>
+		<element id="Condition.code">
+			<path value="Condition.code" />
+			<short value="Meldetatbestand Röteln konnatal" />
+			<definition value="Bei Meldetatbestand Röteln konnatal ist Condition.code.coding.code mit &quot;rund&quot; zu belegen." />
+		</element>
+		<element id="Condition.code.coding.system">
+			<path value="Condition.code.coding.system" />
+			<fixedUri value="https://demis.rki.de/fhir/CodeSystem/notificationDiseaseCategory" />
+		</element>
+		<element id="Condition.code.coding.code">
+			<path value="Condition.code.coding.code" />
+			<fixedCode value="rund" />
+		</element>
+		<element id="Condition.evidence">
+			<path value="Condition.evidence" />
+			<short value="Röteln konnatal  -Symptome und -Manifestationen" />
+			<definition value="Der Wert muss als SNOMED-Code - entsprechend des vom RKI definierten und in regelmäßigen Abständen aktualisierten ValueSets (https://demis.rki.de/fhir/ValueSet/evidenceRUND) – im code.coding Element dargestellt werden." />
+		</element>
+		<element id="Condition.evidence.code">
+			<path value="Condition.evidence.code" />
+			<min value="1" />
+			<max value="1" />
+		</element>
+		<element id="Condition.evidence.code.coding">
+			<path value="Condition.evidence.code.coding" />
+			<min value="1" />
+			<max value="1" />
+			<binding>
+				<strength value="extensible" />
+				<description value="Röteln konnatal -Symptome und -Manifestationen" />
+				<valueSet value="https://demis.rki.de/fhir/ValueSet/evidenceRUND" />
+			</binding>
+		</element>
+		<element id="Condition.evidence.code.coding.system">
+			<path value="Condition.evidence.code.coding.system" />
+			<min value="1" />
+		</element>
+		<element id="Condition.evidence.code.coding.code">
+			<path value="Condition.evidence.code.coding.code" />
+			<min value="1" />
+		</element>
+	</differential>
+</StructureDefinition>

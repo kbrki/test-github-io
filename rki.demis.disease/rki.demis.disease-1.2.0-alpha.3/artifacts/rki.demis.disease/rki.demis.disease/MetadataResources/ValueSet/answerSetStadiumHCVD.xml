@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetStadiumHCVD"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetStadiumHCVD"/>
+  <version value="1.0.0"/>
+  <name value="AnswerSetStadiumHCVD"/>
+  <title value="Anwort Stadium der Infektion bei Hepatitis C"/>
+  <status value="active"/>
+  <date value="2023-04-24"/>
+  <description value="Das ValueSet AnswerSetStadiumHCVD enthält die Codes der Antwortmöglichkeiten für das Stadium der Infektion bei Hepatitis C."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <code value="473130003+37871000"/>
+        <display value="Verdacht auf akute Infektion"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="473130003 | Suspected infectious disease (situation) |+ 37871000 | Acute hepatitis (disorder) |"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="473130003+76783007"/>
+        <display value="Verdacht auf chronische Infektion"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="473130003 | Suspected infectious disease (situation) |+ 76783007 | Chronic hepatitis (disorder) |"/>
+        </designation>
+      </concept>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+      <version value="2.1.0"/>
+      <concept>
+        <code value="ASKU"/>
+        <display value="asked but unknown"/>
+      </concept>
+      <concept>
+        <code value="NASK"/>
+        <display value="not asked"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

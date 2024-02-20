@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OperationDefinition xmlns="http://hl7.org/fhir">
+  <id value="ProcessNotification"/>
+  <url value="https://demis.rki.de/fhir/OperationDefinition/ProcessNotification"/>
+  <version value="1.2.0"/>
+  <name value="ProcessNotification"/>
+  <title value="ProcessNotification"/>
+  <status value="active"/>
+  <kind value="operation"/>
+  <date value="2024-02-10"/>
+  <publisher value="Robert Koch-Institut (RKI)"/>
+  <contact>
+    <name value="DEMIS"/>
+    <telecom>
+      <system value="email"/>
+      <value value="demis-support@rki.de"/>
+    </telecom>
+  </contact>
+  <description value="Operation zum Absetzen von Meldungen gemäß Infektionsschutzgesetz"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+    </coding>
+  </jurisdiction>
+  <affectsState value="true"/>
+  <code value="process-notification"/>
+  <system value="true"/>
+  <type value="false"/>
+  <instance value="false"/>
+  <inputProfile value="https://demis.rki.de/fhir/StructureDefinition/ProcessNotificationRequestParameters"/>
+  <outputProfile value="https://demis.rki.de/fhir/StructureDefinition/ProcessNotificationResponseParameters"/>
+  <parameter>
+    <name value="content"/>
+    <use value="in"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="Meldevorgang"/>
+    <type value="Bundle"/>
+  </parameter>
+  <parameter>
+    <name value="operationOutcome"/>
+    <use value="out"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="Ergebnis der Verarbeitung"/>
+    <type value="OperationOutcome"/>
+  </parameter>
+  <parameter>
+    <name value="bundle"/>
+    <use value="out"/>
+    <min value="0"/>
+    <max value="1"/>
+    <documentation value="Meldungsquittung"/>
+    <type value="Bundle"/>
+  </parameter>
+</OperationDefinition>

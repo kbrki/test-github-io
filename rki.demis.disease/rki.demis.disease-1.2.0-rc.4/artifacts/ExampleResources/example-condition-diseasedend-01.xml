@@ -1,0 +1,72 @@
+<Condition xmlns="http://hl7.org/fhir">
+   <id value="3a4c40c9-91a9-38e1-bbd3-6088c625de66"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseDEND"></profile>
+   </meta>
+   <verificationStatus>
+      <coding>
+         <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"></system>
+         <code value="confirmed"></code>
+      </coding>
+   </verificationStatus>
+   <code>
+      <coding>
+         <system value="https://demis.rki.de/fhir/CodeSystem/notificationDiseaseCategory"></system>
+         <code value="dend"></code>
+         <display value="Denguefieber"></display>
+      </coding>
+   </code>
+   <subject>
+      <reference value="Patient/f3746628-1021-321c-a322-500bdd3c1fb8"></reference>
+   </subject>
+   <onsetDateTime value="2023-03-08"></onsetDateTime>
+   <recordedDate value="2023-03-10"></recordedDate>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="386661006"></code>
+            <display value="Fieber"></display>
+         </coding>
+      </code>
+   </evidence>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="271813007"></code>
+            <display value="Hauteinblutung, Petechien"></display>
+         </coding>
+      </code>
+   </evidence>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="387778001"></code>
+            <display value="Hauteinblutung, Purpura"></display>
+         </coding>
+      </code>
+   </evidence>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="60046008:42752001=166778002"></code>
+            <display value="Anzeichen für Plasmaaustritt (Pleuraerguss)"></display>
+         </coding>
+      </code>
+   </evidence>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="389026000:42752001=166778002"></code>
+            <display value="Anzeichen für Plasmaaustritt (Aszites)"></display>
+         </coding>
+      </code>
+   </evidence>
+   <note>
+      <text value="-"></text>
+   </note>
+</Condition>

@@ -1,0 +1,3141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="reportingSite" />
+  <url value="https://demis.rki.de/fhir/CodeSystem/reportingSite" />
+  <version value="1.1.1" />
+  <name value="ReportingSite" />
+  <title value="Übermittlungsstelle" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2023-09-19" />
+  <publisher value="Robert Koch-Institut" />
+  <description value="Das CodeSystem ReportingSite enthält die Codes der Übermittlungsstellen im Meldesystem für den Infektionsschutz in einer Punktnotation. Die Codes sind hierarchisch aufgebaut und beginnen mit &quot;1.&quot;, gefolgt von numerischen Codes für das Bundesland (von Nord nach Süd, West nach Ost), ggf. für den Regierungsbezirk (alternativ &quot;0.&quot;), für den Kreis bzw. die kreisfreie Stadt und ggf. für die Nebenstelle." />
+  <caseSensitive value="false" />
+  <valueSet value="https://demis.rki.de/fhir/ValueSet/reportingSite" />
+  <content value="complete" />
+  <count value="781" />
+  <concept>
+    <code value="0." />
+    <display value="-kein-" />
+  </concept>
+  <concept>
+    <code value="1." />
+    <display value="Robert Koch-Institut" />
+  </concept>
+  <concept>
+    <code value="1.01." />
+    <display value="Universitätsklinikum Schleswig Holstein (Campus Kiel / Inst. f. Infektionsmedizin)" />
+  </concept>
+  <concept>
+    <code value="1.01.0.01." />
+    <display value="Stadt Flensburg (Fachbereich 2 / Gesundheitsdienste)" />
+  </concept>
+  <concept>
+    <code value="1.01.0.02." />
+    <display value="Landeshauptstadt Kiel (Amt für Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.01.0.03." />
+    <display value="Hansestadt Lübeck (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.01.0.04." />
+    <display value="Stadt Neumünster (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.01.0.51." />
+    <display value="Kreis Dithmarschen (Fachdienst Gesundheitsschutz)" />
+  </concept>
+  <concept>
+    <code value="1.01.0.53." />
+    <display value="Kreis Herzogtum Lauenburg (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.01.0.54." />
+    <display value="Kreis Nordfriesland (Fachdienst Gesundheit(Gesundheitsamt))" />
+  </concept>
+  <concept>
+    <code value="1.01.0.55." />
+    <display value="Kreis Ostholstein (Fachdienst Gesundheit(Gesundheitsamt))" />
+  </concept>
+  <concept>
+    <code value="1.01.0.56." />
+    <display value="Kreisverwaltung Pinneberg (Fachdienst Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.01.0.57." />
+    <display value="Kreis Plön (Amt für Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.01.0.58." />
+    <display value="Kreis Rendsburg-Eckernförde (Fachdienst 4.3 Gesundheitsdienste)" />
+  </concept>
+  <concept>
+    <code value="1.01.0.59." />
+    <display value="Kreis Schleswig-Flensburg (Fachdienst Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.01.0.60." />
+    <display value="Landkreis Segeberg (Fachbereich Gesundheit für Mensch und Tier)" />
+  </concept>
+  <concept>
+    <code value="1.01.0.61." />
+    <display value="Landkreis Steinburg (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.01.0.62." />
+    <display value="Landkreis Stormarn (Fachdienst Gesundheit/ Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.02." />
+    <display value="Zentrum für Infektionsepidemiologie (Institut für Hygiene und Umwelt)" />
+  </concept>
+  <concept>
+    <code value="1.02.0.01." />
+    <display value="Bezirksamt Hamburg-Altona (Bezirksamt Altona)" />
+  </concept>
+  <concept>
+    <code value="1.02.0.02." />
+    <display value="Bezirksamt Hamburg-Bergedorf (Fachamt Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.02.0.03." />
+    <display value="Bezirksamt Hamburg-Eimsbüttel (Gesundheits- und Umweltamt)" />
+  </concept>
+  <concept>
+    <code value="1.02.0.04." />
+    <display value="Bezirksamt Hamburg-Mitte (Gesundheits- und Umweltamt)" />
+  </concept>
+  <concept>
+    <code value="1.02.0.05." />
+    <display value="Bezirksamt Hamburg-Nord (Fachamt Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.02.0.06." />
+    <display value="Bezirksamt Hamburg-Harburg (Bezirksamt Harburg)" />
+  </concept>
+  <concept>
+    <code value="1.02.0.07." />
+    <display value="Bezirksamt Hamburg-Wandsbek (Gesundheits- und Umweltamt)" />
+  </concept>
+  <concept>
+    <code value="1.02.0.08." />
+    <display value="HPHC (Hafenärztlicher Dienst)" />
+  </concept>
+  <concept>
+    <code value="1.03." />
+    <display value="Niedersächsisches Landesgesundheitsamt (Abt. Infektionsepidemiologie)" />
+  </concept>
+  <concept>
+    <code value="1.03.1.01." />
+    <display value="Stadt Braunschweig (Fachbereich Soziales und Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.03.1.02." />
+    <display value="Stadt Salzgitter (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.03.1.03." />
+    <display value="Stadt Wolfsburg (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.03.1.51." />
+    <display value="Landkreis Gifhorn (Fachbereich Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.03.1.53." />
+    <display value="Landkreis Goslar (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.03.1.54." />
+    <display value="Landkreis Helmstedt (Geschäftsbereich Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.03.1.55.03." />
+    <display value="Landkreis Northeim (Gesundheitswesen)" />
+  </concept>
+  <concept>
+    <code value="1.03.1.57." />
+    <display value="Landkreis Peine (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.03.1.58." />
+    <display value="Landkreis Wolfenbüttel (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.03.1.59." />
+    <display value="Stadt und Landkreis Göttingen (Fachbereich 53 Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.03.2.41." />
+    <display value="Region Hannover (Fachbereich Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.03.2.51." />
+    <display value="Landkreis Diepholz (Fachdienst 53 Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.03.2.52." />
+    <display value="Landkreis Hameln-Pyrmont (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.03.2.54." />
+    <display value="Landkreis Hildesheim (FD 409 Fachdienst Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.03.2.55." />
+    <display value="Landkreis Holzminden (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.03.2.56." />
+    <display value="Landkreis Nienburg (Weser) (FD 414 Sozialmedizin, Hygiene und Umwelt)" />
+  </concept>
+  <concept>
+    <code value="1.03.2.57.01." />
+    <display value="Landkreis Schaumburg (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.03.3.51." />
+    <display value="Landkreis Celle (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.03.3.52." />
+    <display value="Landkreis Cuxhaven (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.03.3.53." />
+    <display value="Landkreis Harburg (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.03.3.54." />
+    <display value="Landkreis Lüchow-Dannenberg (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.03.3.55." />
+    <display value="Landkreis Lüneburg (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.03.3.56." />
+    <display value="Landkreis Osterholz (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.03.3.57." />
+    <display value="Landkreis Rotenburg (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.03.3.58." />
+    <display value="Landkreis Heidekreis (Fachbereich Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.03.3.59." />
+    <display value="Landkreis Stade (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.03.3.60." />
+    <display value="Landkreis Uelzen (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.03.3.61.02." />
+    <display value="Landkreis Verden (Fachdienst Gesundheit und Umweltmedizin)" />
+  </concept>
+  <concept>
+    <code value="1.03.4.01." />
+    <display value="Stadt Delmenhorst (Städt. Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.03.4.02." />
+    <display value="Stadt Emden (Fachdienst 553 - Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.03.4.03." />
+    <display value="Stadt Oldenburg (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.03.4.05." />
+    <display value="Stadt Wilhelmshaven (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.03.4.51." />
+    <display value="Landkreis Ammerland (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.03.4.52." />
+    <display value="Landkreis Aurich (Amt für Gesundheitswesen)" />
+  </concept>
+  <concept>
+    <code value="1.03.4.53." />
+    <display value="Landkreis Cloppenburg (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.03.4.54." />
+    <display value="Landkreis Emsland (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.03.4.55." />
+    <display value="Landkreis Friesland (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.03.4.56." />
+    <display value="Landkreis Grafschaft Bentheim (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.03.4.57." />
+    <display value="Landkreis Leer (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.03.4.58." />
+    <display value="Landkreis Oldenburg (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.03.4.59." />
+    <display value="Landkreis Osnabrück (Fachdienst Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.03.4.60." />
+    <display value="Landkreis Vechta (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.03.4.61." />
+    <display value="Landkreis Wesermarsch (Fachdienst Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.03.4.62." />
+    <display value="Landkreis Wittmund (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.04." />
+    <display value="GA Bremen, Abteilung 3" />
+  </concept>
+  <concept>
+    <code value="1.04.0.11." />
+    <display value="Stadt Bremen (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.04.0.12." />
+    <display value="Stadt Bremerhaven (Magistrat/Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.05." />
+    <display value="Landeszentrum Gesundheit NRW (Infektiologie und Hygiene)" />
+  </concept>
+  <concept>
+    <code value="1.05.1.11." />
+    <display value="Stadt Düsseldorf (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.05.1.12." />
+    <display value="Stadt Duisburg (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.05.1.13." />
+    <display value="Stadt Essen (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.05.1.14." />
+    <display value="Stadt Krefeld (Fachbereich 53 Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.05.1.16." />
+    <display value="Stadt Mönchengladbach (Fachbereich 53 Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.05.1.17." />
+    <display value="Stadt Mülheim (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.05.1.19." />
+    <display value="Stadt Oberhausen (städtischer Bereich Gesundheitswesen)" />
+  </concept>
+  <concept>
+    <code value="1.05.1.20." />
+    <display value="Stadt Remscheid (Gesundheitswesen)" />
+  </concept>
+  <concept>
+    <code value="1.05.1.22." />
+    <display value="Stadt Solingen (Stadtdienst Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.05.1.24." />
+    <display value="Stadt Wuppertal (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.05.1.54." />
+    <display value="Landkreis Kleve (Kreisgesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.05.1.58." />
+    <display value="Landkreis Mettmann (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.05.1.62." />
+    <display value="Landkreis Rheinkreis Neuss (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.05.1.66." />
+    <display value="Landkreis Viersen (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.05.1.70." />
+    <display value="Landkreis Wesel (Fachbereich Gesundheitswesen)" />
+  </concept>
+  <concept>
+    <code value="1.05.3.14." />
+    <display value="Stadt Bonn (Amt 53 Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.05.3.15." />
+    <display value="Stadt Köln (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.05.3.16." />
+    <display value="Stadt Leverkusen (Fachbereich 53 Medizinischer Dienst(MediLev))" />
+  </concept>
+  <concept>
+    <code value="1.05.3.34." />
+    <display value="StädteRegion Aachen (Gesundheitsamt (A53))" />
+  </concept>
+  <concept>
+    <code value="1.05.3.58." />
+    <display value="Kreis Düren (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.05.3.62." />
+    <display value="Kreisverwaltung Rhein-Erft-Kreis (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.05.3.66." />
+    <display value="Kreis Euskirchen (Abteilung Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.05.3.70." />
+    <display value="Kreis Heinsberg (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.05.3.74." />
+    <display value="Oberbergischer Kreis (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.05.3.78." />
+    <display value="Rheinisch-Bergischer Kreis (Der Landrat)" />
+  </concept>
+  <concept>
+    <code value="1.05.3.82." />
+    <display value="Rhein-Sieg-Kreis (Der Landrat/Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.05.5.12." />
+    <display value="Stadt Bottrop (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.05.5.13." />
+    <display value="Stadt Gelsenkirchen (Referat Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.05.5.15." />
+    <display value="Stadt Münster (Amt für Gesundheit, Veterinär- und Lebensmittelangelegenheiten)" />
+  </concept>
+  <concept>
+    <code value="1.05.5.54." />
+    <display value="Kreis Borken (Fachbereich Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.05.5.58." />
+    <display value="Kreis Coesfeld (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.05.5.62." />
+    <display value="Kreis Recklinghausen (Fachdienst 53 Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.05.5.66." />
+    <display value="Kreis Steinfurt (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.05.5.70." />
+    <display value="Kreis-Warendorf (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.05.7.11." />
+    <display value="Stadt Bielefeld (Gesundheits-, Veterinär- u. Lebensmittelüberwachungsamt)" />
+  </concept>
+  <concept>
+    <code value="1.05.7.54." />
+    <display value="Kreis Gütersloh (Abteilung Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.05.7.58." />
+    <display value="Kreis Herford (53.3 Abt. Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.05.7.62." />
+    <display value="Kreisverwaltung Höxter (Gesundheits- und Veterinärwesen)" />
+  </concept>
+  <concept>
+    <code value="1.05.7.66." />
+    <display value="Gesundheitsamt Kreis Lippe (FG 530 Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.05.7.70." />
+    <display value="Kreis Minden-Lübbecke (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.05.7.74." />
+    <display value="Kreis Paderborn (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.05.9.11." />
+    <display value="Stadt Bochum (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.05.9.13." />
+    <display value="Stadt Dortmund (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.05.9.14." />
+    <display value="Stadt Hagen (Gesundheitsamt Rathaus II)" />
+  </concept>
+  <concept>
+    <code value="1.05.9.15." />
+    <display value="Stadt Hamm (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.05.9.16." />
+    <display value="Stadt Herne (Fachbereich Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.05.9.54." />
+    <display value="Landkreis Ennepe-Ruhr-Kreis (Fachbereich Soziales und Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.05.9.58." />
+    <display value="Hochsauerlandkreis (Gesundheitsamt Fachdienst 37)" />
+  </concept>
+  <concept>
+    <code value="1.05.9.62." />
+    <display value="Märkischer Kreis (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.05.9.66." />
+    <display value="Kreis Olpe (Fachdienst Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.05.9.70." />
+    <display value="Kreis Siegen-Wittgenstein (Gesundheit und Verbraucherschutz)" />
+  </concept>
+  <concept>
+    <code value="1.05.9.74." />
+    <display value="Kreis Soest (Ordnung, Gesundheits- und Verbraucherschutz)" />
+  </concept>
+  <concept>
+    <code value="1.05.9.78." />
+    <display value="Kreis Unna (Gesundheit und Verbraucherschutz)" />
+  </concept>
+  <concept>
+    <code value="1.06." />
+    <display value="Hessisches Landesprüfungs- und Untersuchungsamt im Gesundheitswesen" />
+  </concept>
+  <concept>
+    <code value="1.06.4.12." />
+    <display value="Stadt Frankfurt am Main (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.06.4.13." />
+    <display value="Stadt Offenbach (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.06.4.14." />
+    <display value="Landeshauptstadt Wiesbaden (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.06.4.31." />
+    <display value="Kreisausschuss Kreis Bergstraße (Fachdienst Gesundheitswesen)" />
+  </concept>
+  <concept>
+    <code value="1.06.4.32." />
+    <display value="Landkreis Darmstadt-Dieburg (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.06.4.33." />
+    <display value="Kreis Groß-Gerau (Der Kreisausschuß)" />
+  </concept>
+  <concept>
+    <code value="1.06.4.34." />
+    <display value="Kreisausschuss Hochtaunuskreis (Fachbereich Gesundheitsdienste)" />
+  </concept>
+  <concept>
+    <code value="1.06.4.35." />
+    <display value="Kreis Main-Kinzig (Gesundheitsamt Hygiene u. Umwelzmedizin)" />
+  </concept>
+  <concept>
+    <code value="1.06.4.36." />
+    <display value="Kreis Main-Taunus (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.06.4.37." />
+    <display value="Kreisausschuss Odenwaldkreis (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.06.4.38." />
+    <display value="Kreis Offenbach (FD Gefahrenabwehr- und Gesundheitszentrum)" />
+  </concept>
+  <concept>
+    <code value="1.06.4.39." />
+    <display value="Kreisausschuss Rheingau-Taunus (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.06.4.40." />
+    <display value="Wetteraukreis (Fachdienstes Gesundheit und Gefahrenabwehr)" />
+  </concept>
+  <concept>
+    <code value="1.06.5.31." />
+    <display value="Landkreis Gießen (Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.06.5.32." />
+    <display value="Kreisausschuß des Lahn-Dill-Kreises (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.06.5.33." />
+    <display value="Kreisausschuss Limburg-Weilburg (Gesundheitsamt Dienststelle Limburg)" />
+  </concept>
+  <concept>
+    <code value="1.06.5.33.01." />
+    <display value="Kreisausschuss Limburg-Weilburg (Gesundheitsamt Dienststelle Weilburg)" />
+  </concept>
+  <concept>
+    <code value="1.06.5.34." />
+    <display value="Kreisausschuss Marburg-Biedenkopf (Fachbereich Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.06.5.35." />
+    <display value="Landkreis Vogelsbergkreis (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.06.6.11." />
+    <display value="Region Kassel (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.06.6.31." />
+    <display value="Kreisausschuss Fulda (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.06.6.32." />
+    <display value="Kreisausschuss Hersfeld-Rotenburg (Fachdienst Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.06.6.34." />
+    <display value="Kreisausschuss des Schwalm-Eder-Kreises (Fachbereich 53 - Gesundheit, Verbraucherschutz und Veterinärwesen)" />
+  </concept>
+  <concept>
+    <code value="1.06.6.35." />
+    <display value="Kreisausschuss des Landkreises Waldeck-Frankenberg (Fachdienst 5.1 Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.06.6.36." />
+    <display value="Kreisausschuss Werra-Meißner (Fachbereich Gesundheit, Verbraucherschutz und Veterinärwesen)" />
+  </concept>
+  <concept>
+    <code value="1.07." />
+    <display value="LUA-Rheinland-Pfalz (Institut für Hygiene und Infektionsschutz)" />
+  </concept>
+  <concept>
+    <code value="1.07.0.52." />
+    <display value="Kreisverwaltung Mayen-Koblenz (Gesundheitsamt Nebenstelle)" />
+  </concept>
+  <concept>
+    <code value="1.07.0.53." />
+    <display value="Kreisverwaltung Rhein-Lahn Kreis (Abt. 7 Gesundheitswesen)" />
+  </concept>
+  <concept>
+    <code value="1.07.0.54." />
+    <display value="Kreisverwaltung Bad Kreuznach (Amt 7: Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.07.0.56." />
+    <display value="Kreisverwaltung Ahrweiler (Abt. 2.6 - Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.07.0.58." />
+    <display value="Kreisverwaltung  Eifelkreis Bitburg-Prüm (Amt 14 Gesundheitswesen)" />
+  </concept>
+  <concept>
+    <code value="1.07.0.59." />
+    <display value="Kreisverwaltung Cochem-Zell (Abt. Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.07.0.60." />
+    <display value="Kreisverwaltung Vulkaneifel (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.07.0.63." />
+    <display value="Kreisverwaltung Germersheim (FB 43 Gesundheit, Verbraucherschutz)" />
+  </concept>
+  <concept>
+    <code value="1.07.0.64." />
+    <display value="Kreisverwaltung Birkenfeld (Gesundheitsamt - Abt. 5)" />
+  </concept>
+  <concept>
+    <code value="1.07.0.65." />
+    <display value="Kreisverwaltung Kaiserslautern (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.07.0.66." />
+    <display value="Kreisverwaltung Donnersbergkreis (Abt. 7 Umweltschutz, Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.07.0.67." />
+    <display value="Kreisverwaltung Mayen-Koblenz (Abt. Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.07.0.68." />
+    <display value="Kreisverwaltung Kusel (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.07.0.69." />
+    <display value="Landkreis Südliche Weinstraße / Landau (Amt für Gesundheit und Soziales)" />
+  </concept>
+  <concept>
+    <code value="1.07.0.70." />
+    <display value="Kreisverwaltung Rhein-Pfalz-Kreis (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.07.0.71." />
+    <display value="Kreisverwaltung Mainz-Bingen (Amt für Veterinär- und Gesundheitswesen)" />
+  </concept>
+  <concept>
+    <code value="1.07.0.72." />
+    <display value="Kreisverwaltung Mayen-Koblenz (Gesundheitsamt Nebenstelle)" />
+  </concept>
+  <concept>
+    <code value="1.07.0.73." />
+    <display value="Kreisverwaltung Westerwaldkreises (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.07.0.74." />
+    <display value="Kreisverwaltung Bad Dürkheim/Neustadt (Abteilung 7: Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.07.0.75." />
+    <display value="Kreisverwaltung Neuwied (Abt. 11 Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.07.0.76." />
+    <display value="Kreisverwaltung Südwestpfalz/Pirmasens (Abt. Gesundheitswesen)" />
+  </concept>
+  <concept>
+    <code value="1.07.0.80." />
+    <display value="Kreisverwaltung Rhein-Hunsrück-Kreis/Simmern (Fachbereich Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.07.0.82." />
+    <display value="Kreisverwaltung Trier-Saarburg (Abt. Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.07.0.83." />
+    <display value="Kreisverwaltung Bernkastel-Wittlich (FB33 Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.07.0.84." />
+    <display value="Kreisverwaltung Alzey-Worms (Abt 7 - Referat Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.07.1.32." />
+    <display value="Kreisverwaltung Altenkirchen (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.08." />
+    <display value="Regierungspräsidium Stuttgart (Referat 95 - Epidemiologie und Gesundheitsberichterstattung)" />
+  </concept>
+  <concept>
+    <code value="1.08.1.11." />
+    <display value="Landeshauptstadt Stuttgart (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.08.1.15." />
+    <display value="Landratsamt Böblingen (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.08.1.16." />
+    <display value="Landratsamt Esslingen (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.08.1.17." />
+    <display value="Landratsamt Göppingen (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.08.1.18." />
+    <display value="Landratsamt Ludwigsburg (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.08.1.19." />
+    <display value="Landratsamt Rems-Murr-Kreis (Geschäftsbereich Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.08.1.21." />
+    <display value="Stadt Heilbronn (Städtisches Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.08.1.25." />
+    <display value="Landratsamt Heilbronn (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.08.1.26." />
+    <display value="Landratsamt Hohenlohekreis (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.08.1.27." />
+    <display value="Landratsamt Schwäbisch Hall (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.08.1.28." />
+    <display value="Landratsamt Main-Tauber-Kreis (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.08.1.35." />
+    <display value="Landratsamt Heidenheim (Fachbereich Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.08.1.36." />
+    <display value="Landratsamt Ostalbkreis (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.08.2.15." />
+    <display value="Landratsamt Karlsruhe (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.08.2.16." />
+    <display value="Landratsamt Rastatt (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.08.2.22." />
+    <display value="Stadt Mannheim (Fachbereich Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.08.2.25." />
+    <display value="Landratsamt Neckar-Odenwald-Kreis (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.08.2.26." />
+    <display value="Landratsamt Rhein-Neckar-Kreis (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.08.2.35." />
+    <display value="Landratsamt Calw (Abt. 42 Gesundheit und Versorgung)" />
+  </concept>
+  <concept>
+    <code value="1.08.2.36." />
+    <display value="Landratsamt Enzkreis (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.08.2.37." />
+    <display value="Landratsamt Freudenstadt (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.08.3.15." />
+    <display value="Landratsamt Breisgau-Hochschwarzwald (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.08.3.16." />
+    <display value="Landratsamt Emmendingen (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.08.3.17." />
+    <display value="Landratsamt Ortenaukreis (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.08.3.25." />
+    <display value="Landratsamt Rottweil (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.08.3.26." />
+    <display value="Landratsamt Schwarzwald-Baar-Kreis (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.08.3.27." />
+    <display value="Landratsamt Tuttlingen (Gesundheitsamt (Amt 42))" />
+  </concept>
+  <concept>
+    <code value="1.08.3.35." />
+    <display value="Landratsamt Konstanz (Amt für Gesundheit und Versorgung)" />
+  </concept>
+  <concept>
+    <code value="1.08.3.36." />
+    <display value="Landratsamt Lörrach (Fachbereich Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.08.3.37." />
+    <display value="Landratsamt Waldshut (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.08.4.15." />
+    <display value="Landratsamt Reutlingen (Kreisgesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.08.4.16." />
+    <display value="Landratsamt Tübingen (Abteilung 33 Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.08.4.17." />
+    <display value="Landratsamt Zollernalbkreis (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.08.4.25." />
+    <display value="Landratsamt Alb-Donau-Kreis (Fachdienst Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.08.4.26." />
+    <display value="Landratsamt Biberach (Kreisgesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.08.4.35." />
+    <display value="Landratsamt Bodenseekreis (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.08.4.36." />
+    <display value="Landratsamt Ravensburg (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.08.4.37." />
+    <display value="Landratsamt Sigmaringen (Fachbereich Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.09." />
+    <display value="Bayerisches Landesamt für Gesundheit und Lebensmittelsicherheit" />
+  </concept>
+  <concept>
+    <code value="1.09.1.61." />
+    <display value="Stadt Ingolstadt (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.09.1.62." />
+    <display value="Landeshauptstadt München (Referat für Gesundheit und Umwelt)" />
+  </concept>
+  <concept>
+    <code value="1.09.1.71." />
+    <display value="Landratsamt Altötting (Gesundheits- und Veterinärwesen)" />
+  </concept>
+  <concept>
+    <code value="1.09.1.72." />
+    <display value="Landratsamt Berchtesgadener Land (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.09.1.73.02." />
+    <display value="Landkreis Bad Tölz - Wolfratshausen (Landratsamt)" />
+  </concept>
+  <concept>
+    <code value="1.09.1.74." />
+    <display value="Landratsamt Dachau (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.09.1.75." />
+    <display value="Landratsamt Ebersberg (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.09.1.76." />
+    <display value="Landratsamt Eichstätt (Gesundheitswesen)" />
+  </concept>
+  <concept>
+    <code value="1.09.1.77." />
+    <display value="Landratsamt Erding (Abteilung 5 - Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.09.1.78." />
+    <display value="Landratsamt Freising (Gesundheitsamt Freising)" />
+  </concept>
+  <concept>
+    <code value="1.09.1.79." />
+    <display value="Landratsamt Fürstenfeldbruck (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.09.1.80." />
+    <display value="Landratsamt Garmisch-Partenkirchen (Gesundheitsamt Garmisch-Partenkirchen)" />
+  </concept>
+  <concept>
+    <code value="1.09.1.81." />
+    <display value="Landkreis Landsberg a.Lech (Landratsamt Landsberg am Lech - Außenstelle 2)" />
+  </concept>
+  <concept>
+    <code value="1.09.1.82." />
+    <display value="Landratsamt Miesbach (Fachbereich 43 Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.09.1.83." />
+    <display value="Landratsamt Mühldorf am Inn (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.09.1.84." />
+    <display value="Landratsamt München (Abteilung 4 - Öffentliches Gesundheits- und Veterinärwesen)" />
+  </concept>
+  <concept>
+    <code value="1.09.1.85.01." />
+    <display value="Landratsamt Neuburg-Schrobenhausen (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.09.1.86." />
+    <display value="Landratsamt Pfaffenhofen (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.09.1.87." />
+    <display value="Landratsamt Rosenheim (Staatliches Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.09.1.88." />
+    <display value="Landratsamt Starnberg (Fachbereich 32 Gesundheitswesen)" />
+  </concept>
+  <concept>
+    <code value="1.09.1.89." />
+    <display value="Landratsamt Traunstein (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.09.1.90." />
+    <display value="Landratsamt Weilheim-Schongau (Abteilung 6 - Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.09.2.71." />
+    <display value="Landratsamt Deggendorf (Gesundheitswesen)" />
+  </concept>
+  <concept>
+    <code value="1.09.2.72." />
+    <display value="Landratsamt Freyung-Grafenau (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.09.2.73." />
+    <display value="Landratsamt Kelheim (Gesundheitsabteilung)" />
+  </concept>
+  <concept>
+    <code value="1.09.2.74." />
+    <display value="Landratsamt Landshut (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.09.2.75." />
+    <display value="Landratsamt Passau (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.09.2.76." />
+    <display value="Landratsamt Regen (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.09.2.77." />
+    <display value="Landratsamt Rottal-Inn (Abt. 4 Gesundheits-und Veterinärwesen)" />
+  </concept>
+  <concept>
+    <code value="1.09.2.78." />
+    <display value="Landratsamt Straubing-Bogen (Abteilung Gesundheitswesen)" />
+  </concept>
+  <concept>
+    <code value="1.09.2.79." />
+    <display value="Landratsamt Dingolfing-Landau (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.09.3.61.01." />
+    <display value="Landratsamt Amberg-Sulzbach (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.09.3.72." />
+    <display value="Landratsamt Cham (Gesundheitswesen)" />
+  </concept>
+  <concept>
+    <code value="1.09.3.73." />
+    <display value="Landratsamt Neumarkt i.d.Oberpfalz (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.09.3.74." />
+    <display value="Landratsamt Neustadt a. d. Waldnaab/ Weiden (Abteilung Gesundheitswesen)" />
+  </concept>
+  <concept>
+    <code value="1.09.3.75." />
+    <display value="Landratsamt Regensburg (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.09.3.76.01." />
+    <display value="Landratsamt Schwandorf (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.09.3.77." />
+    <display value="Landratsamt Tirschenreuth (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.09.4.71." />
+    <display value="Landratsamt Bamberg (Fachbereich 23 Gesundheitswesen)" />
+  </concept>
+  <concept>
+    <code value="1.09.4.72." />
+    <display value="Landratsamt Bayreuth (Abteilung Gesundheitswesen)" />
+  </concept>
+  <concept>
+    <code value="1.09.4.73." />
+    <display value="Landratsamt Coburg (FB 32 Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.09.4.74." />
+    <display value="Landratsamt Forchheim (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.09.4.75." />
+    <display value="Landratsamt Hof (Abt. 7 Gesundheitswesen)" />
+  </concept>
+  <concept>
+    <code value="1.09.4.76." />
+    <display value="Landratsamt Kronach (Sachgebiet 36 - Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.09.4.77." />
+    <display value="Landratsamt Kulmbach (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.09.4.78." />
+    <display value="Landratsamt Lichtenfels (Abt. Gesundheitswesen)" />
+  </concept>
+  <concept>
+    <code value="1.09.4.79." />
+    <display value="Landratsamt Wunsiedel i.Fichtelgeb. (Fachbereich Gesundheitswesen)" />
+  </concept>
+  <concept>
+    <code value="1.09.5.61." />
+    <display value="Landratsamt Ansbach (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.09.5.64." />
+    <display value="Stadt Nürnberg (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.09.5.72.01." />
+    <display value="Landratsamt Erlangen-Höchstadt (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.09.5.73." />
+    <display value="Landratsamt Fürth (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.09.5.74." />
+    <display value="Landratsamt Nürnberger Land (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.09.5.75." />
+    <display value="Landratsamt Neustadt a.d.Aisch-Bad Windsheim (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.09.5.76." />
+    <display value="Landratsamt Roth (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.09.5.77." />
+    <display value="Landratsamt Weißenburg-Gunzenhausen (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.09.6.71." />
+    <display value="Landratsamt Aschaffenburg (Abteilung 5 - Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.09.6.72." />
+    <display value="Landkreis Bad Kissingen (Staatliches Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.09.6.73." />
+    <display value="Landkreis Rhön-Grabfeld (3.4 Gesundheitswesen)" />
+  </concept>
+  <concept>
+    <code value="1.09.6.74." />
+    <display value="Landratsamt Hassberge (Fachabteilung II/A)" />
+  </concept>
+  <concept>
+    <code value="1.09.6.75." />
+    <display value="Landratsamt Kitzingen (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.09.6.76." />
+    <display value="Landratsamt Miltenberg (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.09.6.77." />
+    <display value="Landratsamt Main-Spessart (Staatliches Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.09.6.78." />
+    <display value="Landratsamt Schweinfurt (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.09.6.79." />
+    <display value="Landratsamt Würzburg (Fachbereich 34)" />
+  </concept>
+  <concept>
+    <code value="1.09.7.61." />
+    <display value="Stadt Augsburg (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.09.7.64." />
+    <display value="Stadt Memmingen (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.09.7.71." />
+    <display value="Landratsamt Aichach-Friedberg (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.09.7.72." />
+    <display value="Landratsamt Augsburg (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.09.7.73." />
+    <display value="Landratsamt Dillingen (Fachbereich Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.09.7.74." />
+    <display value="Landratsamt Günzburg (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.09.7.75." />
+    <display value="Landratsamt Neu-Ulm (Öffentlicher Gesundheitsdienst)" />
+  </concept>
+  <concept>
+    <code value="1.09.7.76." />
+    <display value="Landratsamt Lindau (Fachbereich Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.09.7.77." />
+    <display value="Landkreis Ostallgäu (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.09.7.78." />
+    <display value="Landratsamt Unterallgäu (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.09.7.79.01." />
+    <display value="Landratsamt Donau-Ries (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.09.7.80." />
+    <display value="Landratsamt Oberallgäu (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.10." />
+    <display value="Ministerium für Soziales, (Abteilung E Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.10.0.41." />
+    <display value="Regionalverbandes Saarbrücken (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.10.0.42." />
+    <display value="Landkreis Merzig-Wadern (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.10.0.43." />
+    <display value="Landkreis Neunkirchen (Kreisgesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.10.0.44." />
+    <display value="Landkreis Saarlouis (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.10.0.45." />
+    <display value="Saarpfalz-Kreis (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.10.0.46." />
+    <display value="Landkreis St. Wendel (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.11." />
+    <display value="Landesamt Berlin (Gesundheit und Soziales)" />
+  </concept>
+  <concept>
+    <code value="1.11.0.01.01." />
+    <display value="Bezirksamt Mitte von Berlin , Abt. Gesundheit (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.11.0.02.01." />
+    <display value="Bezirksamt Friedrichshain-Kreuzberg von Berlin (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.11.0.03.01." />
+    <display value="Bezirksamt Pankow von Berlin (Abt. Gesundheit und Soziales)" />
+  </concept>
+  <concept>
+    <code value="1.11.0.04.01." />
+    <display value="Bezirksamt Charlottenburg-Wilmersdorf von Berlin (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.11.0.05.01." />
+    <display value="Bezirksamt Spandau von Berlin (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.11.0.06.01." />
+    <display value="Bezirksamt Steglitz-Zehlendorf von Berlin (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.11.0.07.01." />
+    <display value="Bezirksamt Tempelhof-Schöneberg von Berlin (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.11.0.08.01." />
+    <display value="Bezirksamt Neukölln von Berlin (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.11.0.09.01." />
+    <display value="Bezirksamt Treptow-Köpenick von Berlin (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.11.0.10.01." />
+    <display value="Bezirksamt Marzahn-Hellersdorf von Berlin (Abteilung Gesundheit und Soziales)" />
+  </concept>
+  <concept>
+    <code value="1.11.0.11.01." />
+    <display value="Bezirksamt Lichtenberg von Berlin (Abt. Umwelt und Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.11.0.11.09." />
+    <display value="Bezirksamt Lichtenberg von Berlin (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.11.0.12.01." />
+    <display value="Bezirksamt Reinickendorf von Berlin (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.12." />
+    <display value="Landesamt für Umwelt, Gesundheit und Verbraucherschutz (Abteilung Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.12.0.51." />
+    <display value="Stadtverwaltung Brandenburg (Gesundheits-, Veterinär- und Lebensmittelüberwachungsamt)" />
+  </concept>
+  <concept>
+    <code value="1.12.0.52." />
+    <display value="Stadt Cottbus/S (Fachbereich 53 Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.12.0.53." />
+    <display value="Stadt Frankfurt/Oder (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.12.0.54." />
+    <display value="Landeshauptstadt Potsdam (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.12.0.60." />
+    <display value="Landkreis Barnim (Dienstleistungs- und Verwaltungszentrum/ Paul Wunderlich Haus)" />
+  </concept>
+  <concept>
+    <code value="1.12.0.61." />
+    <display value="Landkreis Dahme- Spreewald (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.12.0.62." />
+    <display value="Landkreis Elbe-Elster (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.12.0.63." />
+    <display value="Landkreis Havelland (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.12.0.64." />
+    <display value="Landkreis Märkisch- Oderland (Gesundheitsamt FB II)" />
+  </concept>
+  <concept>
+    <code value="1.12.0.65." />
+    <display value="Landkreis Oberhavel (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.12.0.66." />
+    <display value="Landkreis Oberspreewald- Lausitz (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.12.0.67." />
+    <display value="Landkreis Oder- Spree (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.12.0.68." />
+    <display value="Kreisverwaltung Ostprignitz- Ruppin (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.12.0.69." />
+    <display value="Landkreis Potsdam-Mittelmark (Fachdienst Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.12.0.70." />
+    <display value="Landkreis Prignitz (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.12.0.71." />
+    <display value="Landkreis Spree-Neiße (Fachbereich Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.12.0.72." />
+    <display value="Landkreis Teltow-Fläming (Dezernat II Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.12.0.73." />
+    <display value="Landkreis Uckermark (Gesundheits- und Veterinäramt)" />
+  </concept>
+  <concept>
+    <code value="1.13." />
+    <display value="Landesamt für Gesundheit und Soziales M-V (Abteilung Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.13.0.03." />
+    <display value="Stadt Rostock (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.13.0.04." />
+    <display value="Landeshauptstadt Schwerin (Fachdienst Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.13.0.71." />
+    <display value="Landkreis Mecklenburgische Seenplatte (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.13.0.72." />
+    <display value="Landkreis Rostock (Gesundheitsamt Güstrow)" />
+  </concept>
+  <concept>
+    <code value="1.13.0.73." />
+    <display value="Landkreis Vorpommern-Rügen (Fachdienst Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.13.0.74." />
+    <display value="Landkreis Nordwestmecklenburg (Fachdienst Öffentlicher Gesundheitsdienst)" />
+  </concept>
+  <concept>
+    <code value="1.13.0.75." />
+    <display value="Landkreis Vorpommern–Greifswald (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.13.0.76." />
+    <display value="Landkreis Ludwigslust-Parchim (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.14." />
+    <display value="Landesuntersuchungsanstalt für das Gesundheits- und Veterinärwesen Sachsen" />
+  </concept>
+  <concept>
+    <code value="1.14.5.11." />
+    <display value="Stadt Chemnitz (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.14.5.21.02." />
+    <display value="Landkreis Erzgebirgskreis (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.14.5.22.01." />
+    <display value="Landkreis Mittelsachsen (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.14.5.23.02." />
+    <display value="Landkreis Vogtlandkreis (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.14.5.24.01." />
+    <display value="Landkreis Zwickau (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.14.6.12." />
+    <display value="Landeshauptstadt Dresden (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.14.6.25.03." />
+    <display value="Landratsamt Bautzen (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.14.6.26.01." />
+    <display value="Landkreis Görlitz (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.14.6.27.01." />
+    <display value="Landkreis Meißen (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.14.6.28.01." />
+    <display value="Landkreis Sächsische Schweiz - Osterzgebirge (Abteilung Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.14.7.13." />
+    <display value="Stadt Leipzig (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.14.7.29.01." />
+    <display value="Landratsamt Leipzig (Gesundheitsamt (Hauptsitz))" />
+  </concept>
+  <concept>
+    <code value="1.14.7.30.01." />
+    <display value="Landratsamt Nordsachsen (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.15." />
+    <display value="Landesamt für Verbraucherschutz (Sachsen-Anhalt)" />
+  </concept>
+  <concept>
+    <code value="1.15.0.01." />
+    <display value="Stadt Dessau-Roßlau (Gesundheitsamt/Veterinärwesen und Verbaucherschutz)" />
+  </concept>
+  <concept>
+    <code value="1.15.0.02." />
+    <display value="Stadt Halle (Saale) (Fachbereich Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.15.0.03." />
+    <display value="Landeshauptstadt Magdeburg (Gesundheits- und Veterinäramt)" />
+  </concept>
+  <concept>
+    <code value="1.15.0.81." />
+    <display value="Altmarkkreis Salzwedel (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.15.0.82.02." />
+    <display value="Landkreis Anhalt- Bitterfeld (Gesundheitsamt - Köthen (Anhalt))" />
+  </concept>
+  <concept>
+    <code value="1.15.0.83.01." />
+    <display value="Landkreis Börde (Fachdienst Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.15.0.84.02." />
+    <display value="Burgenlandkreis (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.15.0.85.03." />
+    <display value="Landkreis Harz (Gesundheitsamt - Wernigerode)" />
+  </concept>
+  <concept>
+    <code value="1.15.0.86." />
+    <display value="Landkreis Jerichower Land (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.15.0.87.02." />
+    <display value="Landkreis Mansfeld-Südharz (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.15.0.88.02." />
+    <display value="Landkreis Saalekreis (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.15.0.89.01." />
+    <display value="Salzlandkreis (34 Fachdienst Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.15.0.90." />
+    <display value="Landkreis Stendal (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.15.0.91." />
+    <display value="Landkreis Wittenberg (Fachdienst Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.16." />
+    <display value="Thüringer Landesamt (Lebensmittelsicherheit und Verbraucherschutz (TLLV))" />
+  </concept>
+  <concept>
+    <code value="1.16.0.51." />
+    <display value="Landeshauptstadt Erfurt (Amt für Soziales und Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.16.0.52." />
+    <display value="Stadt Gera (Fachdienst Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.16.0.53." />
+    <display value="Stadtverwaltung Jena (Fachdienst Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.16.0.54." />
+    <display value="Stadtverwaltung Suhl (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.16.0.55." />
+    <display value="Stadtverwaltung Weimar (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.16.0.61." />
+    <display value="Landkreis Eichsfeld (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.16.0.62." />
+    <display value="Landratsamt Nordhausen (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.16.0.63." />
+    <display value="Landratsamt Wartburgkreis (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.16.0.64.01." />
+    <display value="Landratsamt Unstrut-Hainich-Kreis (FD Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.16.0.65.01." />
+    <display value="Landratsamt Kyffhäuserkreis (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.16.0.66." />
+    <display value="Landratsamt Schmalkalden-Meiningen (Fachbereich Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.16.0.67." />
+    <display value="Landratsamt Gotha (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.16.0.68." />
+    <display value="Landratsamt Sömmerda (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.16.0.69." />
+    <display value="Landratsamt Hildburghausen (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.16.0.70.02." />
+    <display value="Landratsamt Ilm-Kreis (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.16.0.71." />
+    <display value="Landratsamt Weimarer Land (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.16.0.72." />
+    <display value="Landratsamt Sonneberg (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.16.0.73.02." />
+    <display value="Landratsamt Saalfeld-Rudolstadt (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.16.0.74." />
+    <display value="Landratsamt Saale-Holzland-Kreis (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.16.0.75.03." />
+    <display value="Landratsamt Saale-Orla-Kreis (Fachdienst Amtsärztlicher Dienst)" />
+  </concept>
+  <concept>
+    <code value="1.16.0.76." />
+    <display value="Landratsamt Greiz (Gesundheitsamt)" />
+  </concept>
+  <concept>
+    <code value="1.16.0.77." />
+    <display value="Landratsamt Altenburger Land (Fachdienst Gesundheit)" />
+  </concept>
+  <concept>
+    <code value="1.17." />
+    <display value="Kommando Sanitätsdienst der Bundeswehr" />
+  </concept>
+  <concept>
+    <code value="1.17.0.01." />
+    <display value="ÜbwSt ÖRA Nord (für HB, HH, MV, NI, SH)" />
+  </concept>
+  <concept>
+    <code value="1.17.0.02." />
+    <display value="ÜbwSt ÖRA Ost (für BB, BE, SN, ST, TH)" />
+  </concept>
+  <concept>
+    <code value="1.17.0.03." />
+    <display value="ÜbwSt ÖRA Süd (für BW, BY)" />
+  </concept>
+  <concept>
+    <code value="1.17.0.04." />
+    <display value="ÜbwSt ÖRA West (für HE, NW, RP, SL)" />
+  </concept>
+  <concept>
+    <code value="2." />
+    <display value="SORMAS" />
+  </concept>
+  <concept>
+    <code value="2.01.0.01." />
+    <display value="Stadt Flensburg" />
+  </concept>
+  <concept>
+    <code value="2.01.0.02." />
+    <display value="Landeshauptstadt Kiel" />
+  </concept>
+  <concept>
+    <code value="2.01.0.03." />
+    <display value="Hansestadt Lübeck" />
+  </concept>
+  <concept>
+    <code value="2.01.0.04." />
+    <display value="Stadt Neumünster" />
+  </concept>
+  <concept>
+    <code value="2.01.0.51." />
+    <display value="Kreis Dithmarschen" />
+  </concept>
+  <concept>
+    <code value="2.01.0.53." />
+    <display value="Kreis Herzogtum Lauenburg" />
+  </concept>
+  <concept>
+    <code value="2.01.0.54." />
+    <display value="Kreis Nordfriesland" />
+  </concept>
+  <concept>
+    <code value="2.01.0.55." />
+    <display value="Kreis Ostholstein" />
+  </concept>
+  <concept>
+    <code value="2.01.0.56." />
+    <display value="Kreisverwaltung Pinneberg" />
+  </concept>
+  <concept>
+    <code value="2.01.0.57." />
+    <display value="Kreis Plön" />
+  </concept>
+  <concept>
+    <code value="2.01.0.58." />
+    <display value="Kreis Rendsburg-Eckernförde" />
+  </concept>
+  <concept>
+    <code value="2.01.0.59." />
+    <display value="Kreis Schleswig-Flensburg" />
+  </concept>
+  <concept>
+    <code value="2.01.0.60." />
+    <display value="Landkreis Segeberg" />
+  </concept>
+  <concept>
+    <code value="2.01.0.61." />
+    <display value="Landkreis Steinburg" />
+  </concept>
+  <concept>
+    <code value="2.01.0.62." />
+    <display value="Landkreis Stormarn" />
+  </concept>
+  <concept>
+    <code value="2.02.0.01." />
+    <display value="Bezirksamt Hamburg-Altona" />
+  </concept>
+  <concept>
+    <code value="2.02.0.02." />
+    <display value="Bezirksamt Hamburg-Bergedorf" />
+  </concept>
+  <concept>
+    <code value="2.02.0.03." />
+    <display value="Bezirksamt Hamburg-Eimsbüttel" />
+  </concept>
+  <concept>
+    <code value="2.02.0.04." />
+    <display value="Bezirksamt Hamburg-Mitte" />
+  </concept>
+  <concept>
+    <code value="2.02.0.05." />
+    <display value="Bezirksamt Hamburg-Nord" />
+  </concept>
+  <concept>
+    <code value="2.02.0.06." />
+    <display value="Bezirksamt Hamburg-Harburg" />
+  </concept>
+  <concept>
+    <code value="2.02.0.07." />
+    <display value="Bezirksamt Hamburg-Wandsbek" />
+  </concept>
+  <concept>
+    <code value="2.02.0.08." />
+    <display value="HPHC" />
+  </concept>
+  <concept>
+    <code value="2.03.1.01." />
+    <display value="Stadt Braunschweig" />
+  </concept>
+  <concept>
+    <code value="2.03.1.02." />
+    <display value="Stadt Salzgitter" />
+  </concept>
+  <concept>
+    <code value="2.03.1.03." />
+    <display value="Stadt Wolfsburg" />
+  </concept>
+  <concept>
+    <code value="2.03.1.51." />
+    <display value="Landkreis Gifhorn" />
+  </concept>
+  <concept>
+    <code value="2.03.1.53." />
+    <display value="Landkreis Goslar" />
+  </concept>
+  <concept>
+    <code value="2.03.1.54." />
+    <display value="Landkreis Helmstedt" />
+  </concept>
+  <concept>
+    <code value="2.03.1.55.03." />
+    <display value="Landkreis Northeim" />
+  </concept>
+  <concept>
+    <code value="2.03.1.57." />
+    <display value="Landkreis Peine" />
+  </concept>
+  <concept>
+    <code value="2.03.1.58." />
+    <display value="Landkreis Wolfenbüttel" />
+  </concept>
+  <concept>
+    <code value="2.03.1.59." />
+    <display value="Stadt und Landkreis Göttingen" />
+  </concept>
+  <concept>
+    <code value="2.03.2.41." />
+    <display value="Region Hannover" />
+  </concept>
+  <concept>
+    <code value="2.03.2.51." />
+    <display value="Landkreis Diepholz" />
+  </concept>
+  <concept>
+    <code value="2.03.2.52." />
+    <display value="Landkreis Hameln-Pyrmont" />
+  </concept>
+  <concept>
+    <code value="2.03.2.54." />
+    <display value="Landkreis Hildesheim" />
+  </concept>
+  <concept>
+    <code value="2.03.2.55." />
+    <display value="Landkreis Holzminden" />
+  </concept>
+  <concept>
+    <code value="2.03.2.56." />
+    <display value="Landkreis Nienburg (Weser)" />
+  </concept>
+  <concept>
+    <code value="2.03.2.57.01." />
+    <display value="Landkreis Schaumburg" />
+  </concept>
+  <concept>
+    <code value="2.03.3.51." />
+    <display value="Landkreis Celle" />
+  </concept>
+  <concept>
+    <code value="2.03.3.52." />
+    <display value="Landkreis Cuxhaven" />
+  </concept>
+  <concept>
+    <code value="2.03.3.53." />
+    <display value="Landkreis Harburg" />
+  </concept>
+  <concept>
+    <code value="2.03.3.55." />
+    <display value="Landkreis Lüneburg" />
+  </concept>
+  <concept>
+    <code value="2.03.3.56." />
+    <display value="Landkreis Osterholz" />
+  </concept>
+  <concept>
+    <code value="2.03.3.57." />
+    <display value="Landkreis Rotenburg" />
+  </concept>
+  <concept>
+    <code value="2.03.3.58." />
+    <display value="Landkreis Heidekreis" />
+  </concept>
+  <concept>
+    <code value="2.03.3.59." />
+    <display value="Landkreis Stade" />
+  </concept>
+  <concept>
+    <code value="2.03.3.60." />
+    <display value="Landkreis Uelzen" />
+  </concept>
+  <concept>
+    <code value="2.03.3.61.02." />
+    <display value="Landkreis Verden" />
+  </concept>
+  <concept>
+    <code value="2.03.4.01." />
+    <display value="Stadt Delmenhorst" />
+  </concept>
+  <concept>
+    <code value="2.03.4.02." />
+    <display value="Stadt Emden" />
+  </concept>
+  <concept>
+    <code value="2.03.4.03." />
+    <display value="Stadt Oldenburg" />
+  </concept>
+  <concept>
+    <code value="2.03.4.05." />
+    <display value="Stadt Wilhelmshaven" />
+  </concept>
+  <concept>
+    <code value="2.03.4.51." />
+    <display value="Landkreis Ammerland" />
+  </concept>
+  <concept>
+    <code value="2.03.4.52." />
+    <display value="Landkreis Aurich" />
+  </concept>
+  <concept>
+    <code value="2.03.4.53." />
+    <display value="Landkreis Cloppenburg" />
+  </concept>
+  <concept>
+    <code value="2.03.4.54." />
+    <display value="Landkreis Emsland" />
+  </concept>
+  <concept>
+    <code value="2.03.4.55." />
+    <display value="Landkreis Friesland" />
+  </concept>
+  <concept>
+    <code value="2.03.4.56." />
+    <display value="Landkreis Grafschaft Bentheim" />
+  </concept>
+  <concept>
+    <code value="2.03.4.57." />
+    <display value="Landkreis Leer" />
+  </concept>
+  <concept>
+    <code value="2.03.4.58." />
+    <display value="Landkreis Oldenburg" />
+  </concept>
+  <concept>
+    <code value="2.03.4.59." />
+    <display value="Landkreis Osnabrück" />
+  </concept>
+  <concept>
+    <code value="2.03.4.60." />
+    <display value="Landkreis Vechta" />
+  </concept>
+  <concept>
+    <code value="2.03.4.61." />
+    <display value="Landkreis Wesermarsch" />
+  </concept>
+  <concept>
+    <code value="2.03.4.62." />
+    <display value="Landkreis Wittmund" />
+  </concept>
+  <concept>
+    <code value="2.04.0.11." />
+    <display value="Stadt Bremen" />
+  </concept>
+  <concept>
+    <code value="2.04.0.12." />
+    <display value="Stadt Bremerhaven" />
+  </concept>
+  <concept>
+    <code value="2.05.1.11." />
+    <display value="Stadt Düsseldorf" />
+  </concept>
+  <concept>
+    <code value="2.05.1.12." />
+    <display value="Stadt Duisburg" />
+  </concept>
+  <concept>
+    <code value="2.05.1.13." />
+    <display value="Stadt Essen" />
+  </concept>
+  <concept>
+    <code value="2.05.1.14." />
+    <display value="Stadt Krefeld" />
+  </concept>
+  <concept>
+    <code value="2.05.1.16." />
+    <display value="Stadt Mönchengladbach" />
+  </concept>
+  <concept>
+    <code value="2.05.1.17." />
+    <display value="Stadt Mülheim" />
+  </concept>
+  <concept>
+    <code value="2.05.1.19." />
+    <display value="Stadt Oberhausen" />
+  </concept>
+  <concept>
+    <code value="2.05.1.20." />
+    <display value="Stadt Remscheid" />
+  </concept>
+  <concept>
+    <code value="2.05.1.22." />
+    <display value="Stadt Solingen" />
+  </concept>
+  <concept>
+    <code value="2.05.1.24." />
+    <display value="Stadt Wuppertal" />
+  </concept>
+  <concept>
+    <code value="2.05.1.54." />
+    <display value="Landkreis Kleve" />
+  </concept>
+  <concept>
+    <code value="2.05.1.58." />
+    <display value="Landkreis Mettmann" />
+  </concept>
+  <concept>
+    <code value="2.05.1.62." />
+    <display value="Landkreis Rheinkreis Neuss" />
+  </concept>
+  <concept>
+    <code value="2.05.1.66." />
+    <display value="Landkreis Viersen" />
+  </concept>
+  <concept>
+    <code value="2.05.1.70." />
+    <display value="Landkreis Wesel" />
+  </concept>
+  <concept>
+    <code value="2.05.3.14." />
+    <display value="Stadt Bonn" />
+  </concept>
+  <concept>
+    <code value="2.05.3.15." />
+    <display value="Stadt Köln" />
+  </concept>
+  <concept>
+    <code value="2.05.3.16." />
+    <display value="Stadt Leverkusen" />
+  </concept>
+  <concept>
+    <code value="2.05.3.34." />
+    <display value="StädteRegion Aachen" />
+  </concept>
+  <concept>
+    <code value="2.05.3.58." />
+    <display value="Kreis Düren" />
+  </concept>
+  <concept>
+    <code value="2.05.3.62." />
+    <display value="Kreisverwaltung Rhein-Erft-Kreis" />
+  </concept>
+  <concept>
+    <code value="2.05.3.66." />
+    <display value="Kreis Euskirchen" />
+  </concept>
+  <concept>
+    <code value="2.05.3.70." />
+    <display value="Kreis Heinsberg" />
+  </concept>
+  <concept>
+    <code value="2.05.3.74." />
+    <display value="Oberbergischer Kreis" />
+  </concept>
+  <concept>
+    <code value="2.05.3.78." />
+    <display value="Rheinisch-Bergischer Kreis" />
+  </concept>
+  <concept>
+    <code value="2.05.3.82." />
+    <display value="Rhein-Sieg-Kreis" />
+  </concept>
+  <concept>
+    <code value="2.05.5.12." />
+    <display value="Stadt Bottrop" />
+  </concept>
+  <concept>
+    <code value="2.05.5.13." />
+    <display value="Stadt Gelsenkirchen" />
+  </concept>
+  <concept>
+    <code value="2.05.5.15." />
+    <display value="Stadt Münster" />
+  </concept>
+  <concept>
+    <code value="2.05.5.54." />
+    <display value="Kreis Borken" />
+  </concept>
+  <concept>
+    <code value="2.05.5.58." />
+    <display value="Kreis Coesfeld" />
+  </concept>
+  <concept>
+    <code value="2.05.5.62." />
+    <display value="Kreis Recklinghausen" />
+  </concept>
+  <concept>
+    <code value="2.05.5.66." />
+    <display value="Kreis Steinfurt" />
+  </concept>
+  <concept>
+    <code value="2.05.5.70." />
+    <display value="Kreis-Warendorf" />
+  </concept>
+  <concept>
+    <code value="2.05.7.11." />
+    <display value="Stadt Bielefeld" />
+  </concept>
+  <concept>
+    <code value="2.05.7.54." />
+    <display value="Kreis Gütersloh" />
+  </concept>
+  <concept>
+    <code value="2.05.7.58." />
+    <display value="Kreis Herford" />
+  </concept>
+  <concept>
+    <code value="2.05.7.62." />
+    <display value="Kreisverwaltung Höxter" />
+  </concept>
+  <concept>
+    <code value="2.05.7.66." />
+    <display value="Gesundheitsamt Kreis Lippe" />
+  </concept>
+  <concept>
+    <code value="2.05.7.70." />
+    <display value="Kreis Minden-Lübbecke" />
+  </concept>
+  <concept>
+    <code value="2.05.7.74." />
+    <display value="Kreis Paderborn" />
+  </concept>
+  <concept>
+    <code value="2.05.9.11." />
+    <display value="Stadt Bochum" />
+  </concept>
+  <concept>
+    <code value="2.05.9.13." />
+    <display value="Stadt Dortmund" />
+  </concept>
+  <concept>
+    <code value="2.05.9.14." />
+    <display value="Stadt Hagen" />
+  </concept>
+  <concept>
+    <code value="2.05.9.15." />
+    <display value="Stadt Hamm" />
+  </concept>
+  <concept>
+    <code value="2.05.9.16." />
+    <display value="Stadt Herne" />
+  </concept>
+  <concept>
+    <code value="2.05.9.54." />
+    <display value="Landkreis Ennepe-Ruhr-Kreis" />
+  </concept>
+  <concept>
+    <code value="2.05.9.58." />
+    <display value="Hochsauerlandkreis" />
+  </concept>
+  <concept>
+    <code value="2.05.9.62." />
+    <display value="Märkischer Kreis" />
+  </concept>
+  <concept>
+    <code value="2.05.9.66." />
+    <display value="Kreis Olpe" />
+  </concept>
+  <concept>
+    <code value="2.05.9.70." />
+    <display value="Kreis Siegen-Wittgenstein" />
+  </concept>
+  <concept>
+    <code value="2.05.9.74." />
+    <display value="Kreis Soest" />
+  </concept>
+  <concept>
+    <code value="2.05.9.78." />
+    <display value="Kreis Unna" />
+  </concept>
+  <concept>
+    <code value="2.06.4.12." />
+    <display value="Stadt Frankfurt am Main" />
+  </concept>
+  <concept>
+    <code value="2.06.4.13." />
+    <display value="Stadt Offenbach" />
+  </concept>
+  <concept>
+    <code value="2.06.4.14." />
+    <display value="Landeshauptstadt Wiesbaden" />
+  </concept>
+  <concept>
+    <code value="2.06.4.31." />
+    <display value="Kreisausschuss Kreis Bergstraße" />
+  </concept>
+  <concept>
+    <code value="2.06.4.32." />
+    <display value="Landkreis Darmstadt-Dieburg" />
+  </concept>
+  <concept>
+    <code value="2.06.4.33." />
+    <display value="Kreis Groß-Gerau" />
+  </concept>
+  <concept>
+    <code value="2.06.4.34." />
+    <display value="Kreisausschuss Hochtaunuskreis" />
+  </concept>
+  <concept>
+    <code value="2.06.4.35." />
+    <display value="Kreis Main-Kinzig" />
+  </concept>
+  <concept>
+    <code value="2.06.4.36." />
+    <display value="Kreis Main-Taunus" />
+  </concept>
+  <concept>
+    <code value="2.06.4.37." />
+    <display value="Kreisausschuss Odenwaldkreis" />
+  </concept>
+  <concept>
+    <code value="2.06.4.38." />
+    <display value="Kreis Offenbach" />
+  </concept>
+  <concept>
+    <code value="2.06.4.39." />
+    <display value="Kreisausschuss Rheingau-Taunus" />
+  </concept>
+  <concept>
+    <code value="2.06.4.40." />
+    <display value="Wetteraukreis" />
+  </concept>
+  <concept>
+    <code value="2.06.5.31." />
+    <display value="Landkreis Gießen" />
+  </concept>
+  <concept>
+    <code value="2.06.5.32." />
+    <display value="Kreisausschuß des Lahn-Dill-Kreises" />
+  </concept>
+  <concept>
+    <code value="2.06.5.33." />
+    <display value="Kreisausschuss Limburg-Weilburg" />
+  </concept>
+  <concept>
+    <code value="2.06.5.34." />
+    <display value="Kreisausschuss Marburg-Biedenkopf" />
+  </concept>
+  <concept>
+    <code value="2.06.5.35." />
+    <display value="Landkreis Vogelsbergkreis" />
+  </concept>
+  <concept>
+    <code value="2.06.6.11." />
+    <display value="Region Kassel" />
+  </concept>
+  <concept>
+    <code value="2.06.6.31." />
+    <display value="Kreisausschuss Fulda" />
+  </concept>
+  <concept>
+    <code value="2.06.6.32." />
+    <display value="Kreisausschuss Hersfeld-Rotenburg" />
+  </concept>
+  <concept>
+    <code value="2.06.6.34." />
+    <display value="Kreisausschuss des Schwalm-Eder-Kreises" />
+  </concept>
+  <concept>
+    <code value="2.06.6.35." />
+    <display value="Kreisausschuss des Landkreises Waldeck-Frankenberg" />
+  </concept>
+  <concept>
+    <code value="2.06.6.36." />
+    <display value="Kreisausschuss Werra-Meißner" />
+  </concept>
+  <concept>
+    <code value="2.07.0.53." />
+    <display value="Kreisverwaltung Rhein-Lahn Kreis" />
+  </concept>
+  <concept>
+    <code value="2.07.0.54." />
+    <display value="Kreisverwaltung Bad Kreuznach" />
+  </concept>
+  <concept>
+    <code value="2.07.0.56." />
+    <display value="Kreisverwaltung Ahrweiler" />
+  </concept>
+  <concept>
+    <code value="2.07.0.58." />
+    <display value="Kreisverwaltung  Eifelkreis Bitburg-Prüm" />
+  </concept>
+  <concept>
+    <code value="2.07.0.59." />
+    <display value="Kreisverwaltung Cochem-Zell" />
+  </concept>
+  <concept>
+    <code value="2.07.0.60." />
+    <display value="Kreisverwaltung Vulkaneifel" />
+  </concept>
+  <concept>
+    <code value="2.07.0.63." />
+    <display value="Kreisverwaltung Germersheim" />
+  </concept>
+  <concept>
+    <code value="2.07.0.64." />
+    <display value="Kreisverwaltung Birkenfeld" />
+  </concept>
+  <concept>
+    <code value="2.07.0.65." />
+    <display value="Kreisverwaltung Kaiserslautern" />
+  </concept>
+  <concept>
+    <code value="2.07.0.66." />
+    <display value="Kreisverwaltung Donnersbergkreis" />
+  </concept>
+  <concept>
+    <code value="2.07.0.67." />
+    <display value="Kreisverwaltung Mayen-Koblenz" />
+  </concept>
+  <concept>
+    <code value="2.07.0.68." />
+    <display value="Kreisverwaltung Kusel" />
+  </concept>
+  <concept>
+    <code value="2.07.0.69." />
+    <display value="Landkreis Südliche Weinstraße / Landau" />
+  </concept>
+  <concept>
+    <code value="2.07.0.70." />
+    <display value="Kreisverwaltung Rhein-Pfalz-Kreis" />
+  </concept>
+  <concept>
+    <code value="2.07.0.71." />
+    <display value="Kreisverwaltung Mainz-Bingen" />
+  </concept>
+  <concept>
+    <code value="2.07.0.73." />
+    <display value="Kreisverwaltung Westerwaldkreises" />
+  </concept>
+  <concept>
+    <code value="2.07.0.74." />
+    <display value="Kreisverwaltung Bad Dürkheim/Neustadt" />
+  </concept>
+  <concept>
+    <code value="2.07.0.75." />
+    <display value="Kreisverwaltung Neuwied" />
+  </concept>
+  <concept>
+    <code value="2.07.0.76." />
+    <display value="Kreisverwaltung Südwestpfalz/Pirmasens" />
+  </concept>
+  <concept>
+    <code value="2.07.0.80." />
+    <display value="Kreisverwaltung Rhein-Hunsrück-Kreis/Simmern" />
+  </concept>
+  <concept>
+    <code value="2.07.0.82." />
+    <display value="Kreisverwaltung Trier-Saarburg" />
+  </concept>
+  <concept>
+    <code value="2.07.0.83." />
+    <display value="Kreisverwaltung Bernkastel-Wittlich" />
+  </concept>
+  <concept>
+    <code value="2.07.0.84." />
+    <display value="Kreisverwaltung Alzey-Worms" />
+  </concept>
+  <concept>
+    <code value="2.07.1.32." />
+    <display value="Kreisverwaltung Altenkirchen" />
+  </concept>
+  <concept>
+    <code value="2.08.1.11." />
+    <display value="Landeshauptstadt Stuttgart" />
+  </concept>
+  <concept>
+    <code value="2.08.1.15." />
+    <display value="Landratsamt Böblingen" />
+  </concept>
+  <concept>
+    <code value="2.08.1.16." />
+    <display value="Landratsamt Esslingen" />
+  </concept>
+  <concept>
+    <code value="2.08.1.17." />
+    <display value="Landratsamt Göppingen" />
+  </concept>
+  <concept>
+    <code value="2.08.1.18." />
+    <display value="Landratsamt Ludwigsburg" />
+  </concept>
+  <concept>
+    <code value="2.08.1.19." />
+    <display value="Landratsamt Rems-Murr-Kreis" />
+  </concept>
+  <concept>
+    <code value="2.08.1.21." />
+    <display value="Stadt Heilbronn" />
+  </concept>
+  <concept>
+    <code value="2.08.1.25." />
+    <display value="Landratsamt Heilbronn" />
+  </concept>
+  <concept>
+    <code value="2.08.1.26." />
+    <display value="Landratsamt Hohenlohekreis" />
+  </concept>
+  <concept>
+    <code value="2.08.1.27." />
+    <display value="Landratsamt Schwäbisch Hall" />
+  </concept>
+  <concept>
+    <code value="2.08.1.28." />
+    <display value="Landratsamt Main-Tauber-Kreis" />
+  </concept>
+  <concept>
+    <code value="2.08.1.35." />
+    <display value="Landratsamt Heidenheim" />
+  </concept>
+  <concept>
+    <code value="2.08.1.36." />
+    <display value="Landratsamt Ostalbkreis" />
+  </concept>
+  <concept>
+    <code value="2.08.2.15." />
+    <display value="Landratsamt Karlsruhe" />
+  </concept>
+  <concept>
+    <code value="2.08.2.16." />
+    <display value="Landratsamt Rastatt" />
+  </concept>
+  <concept>
+    <code value="2.08.2.22." />
+    <display value="Stadt Mannheim" />
+  </concept>
+  <concept>
+    <code value="2.08.2.25." />
+    <display value="Landratsamt Neckar-Odenwald-Kreis" />
+  </concept>
+  <concept>
+    <code value="2.08.2.26." />
+    <display value="Landratsamt Rhein-Neckar-Kreis" />
+  </concept>
+  <concept>
+    <code value="2.08.2.35." />
+    <display value="Landratsamt Calw" />
+  </concept>
+  <concept>
+    <code value="2.08.2.36." />
+    <display value="Landratsamt Enzkreis" />
+  </concept>
+  <concept>
+    <code value="2.08.2.37." />
+    <display value="Landratsamt Freudenstadt" />
+  </concept>
+  <concept>
+    <code value="2.08.3.15." />
+    <display value="Landratsamt Breisgau-Hochschwarzwald" />
+  </concept>
+  <concept>
+    <code value="2.08.3.16." />
+    <display value="Landratsamt Emmendingen" />
+  </concept>
+  <concept>
+    <code value="2.08.3.17." />
+    <display value="Landratsamt Ortenaukreis" />
+  </concept>
+  <concept>
+    <code value="2.08.3.25." />
+    <display value="Landratsamt Rottweil" />
+  </concept>
+  <concept>
+    <code value="2.08.3.26." />
+    <display value="Landratsamt Schwarzwald-Baar-Kreis" />
+  </concept>
+  <concept>
+    <code value="2.08.3.27." />
+    <display value="Landratsamt Tuttlingen" />
+  </concept>
+  <concept>
+    <code value="2.08.3.35." />
+    <display value="Landratsamt Konstanz" />
+  </concept>
+  <concept>
+    <code value="2.08.3.36." />
+    <display value="Landratsamt Lörrach" />
+  </concept>
+  <concept>
+    <code value="2.08.3.37." />
+    <display value="Landratsamt Waldshut" />
+  </concept>
+  <concept>
+    <code value="2.08.4.15." />
+    <display value="Landratsamt Reutlingen" />
+  </concept>
+  <concept>
+    <code value="2.08.4.16." />
+    <display value="Landratsamt Tübingen" />
+  </concept>
+  <concept>
+    <code value="2.08.4.17." />
+    <display value="Landratsamt Zollernalbkreis" />
+  </concept>
+  <concept>
+    <code value="2.08.4.25." />
+    <display value="Landratsamt Alb-Donau-Kreis" />
+  </concept>
+  <concept>
+    <code value="2.08.4.26." />
+    <display value="Landratsamt Biberach" />
+  </concept>
+  <concept>
+    <code value="2.08.4.35." />
+    <display value="Landratsamt Bodenseekreis" />
+  </concept>
+  <concept>
+    <code value="2.08.4.36." />
+    <display value="Landratsamt Ravensburg" />
+  </concept>
+  <concept>
+    <code value="2.08.4.37." />
+    <display value="Landratsamt Sigmaringen" />
+  </concept>
+  <concept>
+    <code value="2.09.1.61." />
+    <display value="Stadt Ingolstadt" />
+  </concept>
+  <concept>
+    <code value="2.09.1.62." />
+    <display value="Landeshauptstadt München" />
+  </concept>
+  <concept>
+    <code value="2.09.1.71." />
+    <display value="Landratsamt Altötting" />
+  </concept>
+  <concept>
+    <code value="2.09.1.72." />
+    <display value="Landratsamt Berchtesgadener Land" />
+  </concept>
+  <concept>
+    <code value="2.09.1.73.02." />
+    <display value="Landkreis Bad Tölz - Wolfratshausen" />
+  </concept>
+  <concept>
+    <code value="2.09.1.74." />
+    <display value="Landratsamt Dachau" />
+  </concept>
+  <concept>
+    <code value="2.09.1.75." />
+    <display value="Landratsamt Ebersberg" />
+  </concept>
+  <concept>
+    <code value="2.09.1.76." />
+    <display value="Landratsamt Eichstätt" />
+  </concept>
+  <concept>
+    <code value="2.09.1.77." />
+    <display value="Landratsamt Erding" />
+  </concept>
+  <concept>
+    <code value="2.09.1.78." />
+    <display value="Landratsamt Freising" />
+  </concept>
+  <concept>
+    <code value="2.09.1.79." />
+    <display value="Landratsamt Fürstenfeldbruck" />
+  </concept>
+  <concept>
+    <code value="2.09.1.80." />
+    <display value="Landratsamt Garmisch-Partenkirchen" />
+  </concept>
+  <concept>
+    <code value="2.09.1.81." />
+    <display value="Landkreis Landsberg a.Lech" />
+  </concept>
+  <concept>
+    <code value="2.09.1.82." />
+    <display value="Landratsamt Miesbach" />
+  </concept>
+  <concept>
+    <code value="2.09.1.83." />
+    <display value="Landratsamt Mühldorf am Inn" />
+  </concept>
+  <concept>
+    <code value="2.09.1.84." />
+    <display value="Landratsamt München" />
+  </concept>
+  <concept>
+    <code value="2.09.1.85.01." />
+    <display value="Landratsamt Neuburg-Schrobenhausen" />
+  </concept>
+  <concept>
+    <code value="2.09.1.86." />
+    <display value="Landratsamt Pfaffenhofen" />
+  </concept>
+  <concept>
+    <code value="2.09.1.87." />
+    <display value="Landratsamt Rosenheim" />
+  </concept>
+  <concept>
+    <code value="2.09.1.88." />
+    <display value="Landratsamt Starnberg" />
+  </concept>
+  <concept>
+    <code value="2.09.1.89." />
+    <display value="Landratsamt Traunstein" />
+  </concept>
+  <concept>
+    <code value="2.09.1.90." />
+    <display value="Landratsamt Weilheim-Schongau" />
+  </concept>
+  <concept>
+    <code value="2.09.2.71." />
+    <display value="Landratsamt Deggendorf" />
+  </concept>
+  <concept>
+    <code value="2.09.2.72." />
+    <display value="Landratsamt Freyung-Grafenau" />
+  </concept>
+  <concept>
+    <code value="2.09.2.73." />
+    <display value="Landratsamt Kelheim" />
+  </concept>
+  <concept>
+    <code value="2.09.2.74." />
+    <display value="Landratsamt Landshut" />
+  </concept>
+  <concept>
+    <code value="2.09.2.75." />
+    <display value="Landratsamt Passau" />
+  </concept>
+  <concept>
+    <code value="2.09.2.76." />
+    <display value="Landratsamt Regen" />
+  </concept>
+  <concept>
+    <code value="2.09.2.77." />
+    <display value="Landratsamt Rottal-Inn" />
+  </concept>
+  <concept>
+    <code value="2.09.2.78." />
+    <display value="Landratsamt Straubing-Bogen" />
+  </concept>
+  <concept>
+    <code value="2.09.2.79." />
+    <display value="Landratsamt Dingolfing-Landau" />
+  </concept>
+  <concept>
+    <code value="2.09.3.61.01." />
+    <display value="Landratsamt Amberg-Sulzbach" />
+  </concept>
+  <concept>
+    <code value="2.09.3.72." />
+    <display value="Landratsamt Cham" />
+  </concept>
+  <concept>
+    <code value="2.09.3.73." />
+    <display value="Landratsamt Neumarkt i.d.Oberpfalz" />
+  </concept>
+  <concept>
+    <code value="2.09.3.74." />
+    <display value="Landratsamt Neustadt a. d. Waldnaab/ Weiden" />
+  </concept>
+  <concept>
+    <code value="2.09.3.75." />
+    <display value="Landratsamt Regensburg" />
+  </concept>
+  <concept>
+    <code value="2.09.3.76.01." />
+    <display value="Landratsamt Schwandorf" />
+  </concept>
+  <concept>
+    <code value="2.09.3.77." />
+    <display value="Landratsamt Tirschenreuth" />
+  </concept>
+  <concept>
+    <code value="2.09.4.71." />
+    <display value="Landratsamt Bamberg" />
+  </concept>
+  <concept>
+    <code value="2.09.4.72." />
+    <display value="Landratsamt Bayreuth" />
+  </concept>
+  <concept>
+    <code value="2.09.4.73." />
+    <display value="Landratsamt Coburg" />
+  </concept>
+  <concept>
+    <code value="2.09.4.74." />
+    <display value="Landratsamt Forchheim" />
+  </concept>
+  <concept>
+    <code value="2.09.4.75." />
+    <display value="Landratsamt Hof" />
+  </concept>
+  <concept>
+    <code value="2.09.4.76." />
+    <display value="Landratsamt Kronach" />
+  </concept>
+  <concept>
+    <code value="2.09.4.77." />
+    <display value="Landratsamt Kulmbach" />
+  </concept>
+  <concept>
+    <code value="2.09.4.78." />
+    <display value="Landratsamt Lichtenfels" />
+  </concept>
+  <concept>
+    <code value="2.09.4.79." />
+    <display value="Landratsamt Wunsiedel i.Fichtelgeb." />
+  </concept>
+  <concept>
+    <code value="2.09.5.61." />
+    <display value="Landratsamt Ansbach" />
+  </concept>
+  <concept>
+    <code value="2.09.5.64." />
+    <display value="Stadt Nürnberg" />
+  </concept>
+  <concept>
+    <code value="2.09.5.72.01." />
+    <display value="Landratsamt Erlangen-Höchstadt" />
+  </concept>
+  <concept>
+    <code value="2.09.5.73." />
+    <display value="Landratsamt Fürth" />
+  </concept>
+  <concept>
+    <code value="2.09.5.74." />
+    <display value="Landratsamt Nürnberger Land" />
+  </concept>
+  <concept>
+    <code value="2.09.5.75." />
+    <display value="Landratsamt Neustadt a.d.Aisch-Bad Windsheim" />
+  </concept>
+  <concept>
+    <code value="2.09.5.76." />
+    <display value="Landratsamt Roth" />
+  </concept>
+  <concept>
+    <code value="2.09.5.77." />
+    <display value="Landratsamt Weißenburg-Gunzenhausen" />
+  </concept>
+  <concept>
+    <code value="2.09.6.71." />
+    <display value="Landratsamt Aschaffenburg" />
+  </concept>
+  <concept>
+    <code value="2.09.6.72." />
+    <display value="Landkreis Bad Kissingen" />
+  </concept>
+  <concept>
+    <code value="2.09.6.73." />
+    <display value="Landkreis Rhön-Grabfeld" />
+  </concept>
+  <concept>
+    <code value="2.09.6.74." />
+    <display value="Landratsamt Hassberge" />
+  </concept>
+  <concept>
+    <code value="2.09.6.75." />
+    <display value="Landratsamt Kitzingen" />
+  </concept>
+  <concept>
+    <code value="2.09.6.76." />
+    <display value="Landratsamt Miltenberg" />
+  </concept>
+  <concept>
+    <code value="2.09.6.77." />
+    <display value="Landratsamt Main-Spessart" />
+  </concept>
+  <concept>
+    <code value="2.09.6.78." />
+    <display value="Landratsamt Schweinfurt" />
+  </concept>
+  <concept>
+    <code value="2.09.6.79." />
+    <display value="Landratsamt Würzburg" />
+  </concept>
+  <concept>
+    <code value="2.09.7.61." />
+    <display value="Stadt Augsburg" />
+  </concept>
+  <concept>
+    <code value="2.09.7.64." />
+    <display value="Stadt Memmingen" />
+  </concept>
+  <concept>
+    <code value="2.09.7.71." />
+    <display value="Landratsamt Aichach-Friedberg" />
+  </concept>
+  <concept>
+    <code value="2.09.7.72." />
+    <display value="Landratsamt Augsburg" />
+  </concept>
+  <concept>
+    <code value="2.09.7.73." />
+    <display value="Landratsamt Dillingen" />
+  </concept>
+  <concept>
+    <code value="2.09.7.74." />
+    <display value="Landratsamt Günzburg" />
+  </concept>
+  <concept>
+    <code value="2.09.7.75." />
+    <display value="Landratsamt Neu-Ulm" />
+  </concept>
+  <concept>
+    <code value="2.09.7.76." />
+    <display value="Landratsamt Lindau" />
+  </concept>
+  <concept>
+    <code value="2.09.7.77." />
+    <display value="Landkreis Ostallgäu" />
+  </concept>
+  <concept>
+    <code value="2.09.7.78." />
+    <display value="Landratsamt Unterallgäu" />
+  </concept>
+  <concept>
+    <code value="2.09.7.79.01." />
+    <display value="Landratsamt Donau-Ries" />
+  </concept>
+  <concept>
+    <code value="2.09.7.80." />
+    <display value="Landratsamt Oberallgäu" />
+  </concept>
+  <concept>
+    <code value="2.10.0.41." />
+    <display value="Regionalverbandes Saarbrücken" />
+  </concept>
+  <concept>
+    <code value="2.10.0.42." />
+    <display value="Landkreis Merzig-Wadern" />
+  </concept>
+  <concept>
+    <code value="2.10.0.43." />
+    <display value="Landkreis Neunkirchen" />
+  </concept>
+  <concept>
+    <code value="2.10.0.44." />
+    <display value="Landkreis Saarlouis" />
+  </concept>
+  <concept>
+    <code value="2.10.0.45." />
+    <display value="Saarpfalz-Kreis" />
+  </concept>
+  <concept>
+    <code value="2.10.0.46." />
+    <display value="Landkreis St. Wendel" />
+  </concept>
+  <concept>
+    <code value="2.11.0.01.01." />
+    <display value="Bezirksamt Mitte von Berlin , Abt. Gesundheit" />
+  </concept>
+  <concept>
+    <code value="2.11.0.02.01." />
+    <display value="Bezirksamt Friedrichshain-Kreuzberg von Berlin" />
+  </concept>
+  <concept>
+    <code value="2.11.0.03.01." />
+    <display value="Bezirksamt Pankow von Berlin" />
+  </concept>
+  <concept>
+    <code value="2.11.0.04.01." />
+    <display value="Bezirksamt Charlottenburg-Wilmersdorf von Berlin" />
+  </concept>
+  <concept>
+    <code value="2.11.0.05.01." />
+    <display value="Bezirksamt Spandau von Berlin" />
+  </concept>
+  <concept>
+    <code value="2.11.0.06.01." />
+    <display value="Bezirksamt Steglitz-Zehlendorf von Berlin" />
+  </concept>
+  <concept>
+    <code value="2.11.0.07.01." />
+    <display value="Bezirksamt Tempelhof-Schöneberg von Berlin" />
+  </concept>
+  <concept>
+    <code value="2.11.0.08.01." />
+    <display value="Bezirksamt Neukölln von Berlin" />
+  </concept>
+  <concept>
+    <code value="2.11.0.09.01." />
+    <display value="Bezirksamt Treptow-Köpenick von Berlin" />
+  </concept>
+  <concept>
+    <code value="2.11.0.10.01." />
+    <display value="Bezirksamt Marzahn-Hellersdorf von Berlin" />
+  </concept>
+  <concept>
+    <code value="2.11.0.11.01." />
+    <display value="Bezirksamt Lichtenberg von Berlin" />
+  </concept>
+  <concept>
+    <code value="2.11.0.12.01." />
+    <display value="Bezirksamt Reinickendorf von Berlin" />
+  </concept>
+  <concept>
+    <code value="2.12.0.51." />
+    <display value="Stadtverwaltung Brandenburg" />
+  </concept>
+  <concept>
+    <code value="2.12.0.52." />
+    <display value="Stadt Cottbus/S" />
+  </concept>
+  <concept>
+    <code value="2.12.0.53." />
+    <display value="Stadt Frankfurt/Oder" />
+  </concept>
+  <concept>
+    <code value="2.12.0.54." />
+    <display value="Landeshauptstadt Potsdam" />
+  </concept>
+  <concept>
+    <code value="2.12.0.60." />
+    <display value="Landkreis Barnim" />
+  </concept>
+  <concept>
+    <code value="2.12.0.61." />
+    <display value="Landkreis Dahme- Spreewald" />
+  </concept>
+  <concept>
+    <code value="2.12.0.62." />
+    <display value="Landkreis Elbe-Elster" />
+  </concept>
+  <concept>
+    <code value="2.12.0.63." />
+    <display value="Landkreis Havelland" />
+  </concept>
+  <concept>
+    <code value="2.12.0.64." />
+    <display value="Landkreis Märkisch- Oderland" />
+  </concept>
+  <concept>
+    <code value="2.12.0.65." />
+    <display value="Landkreis Oberhavel" />
+  </concept>
+  <concept>
+    <code value="2.12.0.66." />
+    <display value="Landkreis Oberspreewald- Lausitz" />
+  </concept>
+  <concept>
+    <code value="2.12.0.67." />
+    <display value="Landkreis Oder- Spree" />
+  </concept>
+  <concept>
+    <code value="2.12.0.68." />
+    <display value="Kreisverwaltung Ostprignitz- Ruppin" />
+  </concept>
+  <concept>
+    <code value="2.12.0.69." />
+    <display value="Landkreis Potsdam-Mittelmark" />
+  </concept>
+  <concept>
+    <code value="2.12.0.70." />
+    <display value="Landkreis Prignitz" />
+  </concept>
+  <concept>
+    <code value="2.12.0.71." />
+    <display value="Landkreis Spree-Neiße" />
+  </concept>
+  <concept>
+    <code value="2.12.0.72." />
+    <display value="Landkreis Teltow-Fläming" />
+  </concept>
+  <concept>
+    <code value="2.12.0.73." />
+    <display value="Landkreis Uckermark" />
+  </concept>
+  <concept>
+    <code value="2.13.0.03." />
+    <display value="Stadt Rostock" />
+  </concept>
+  <concept>
+    <code value="2.13.0.04." />
+    <display value="Landeshauptstadt Schwerin" />
+  </concept>
+  <concept>
+    <code value="2.13.0.71." />
+    <display value="Landkreis Mecklenburgische Seenplatte" />
+  </concept>
+  <concept>
+    <code value="2.13.0.72." />
+    <display value="Landkreis Rostock" />
+  </concept>
+  <concept>
+    <code value="2.13.0.73." />
+    <display value="Landkreis Vorpommern-Rügen" />
+  </concept>
+  <concept>
+    <code value="2.13.0.74." />
+    <display value="Landkreis Nordwestmecklenburg" />
+  </concept>
+  <concept>
+    <code value="2.13.0.75." />
+    <display value="Landkreis Vorpommern–Greifswald" />
+  </concept>
+  <concept>
+    <code value="2.13.0.76." />
+    <display value="Landkreis Ludwigslust-Parchim" />
+  </concept>
+  <concept>
+    <code value="2.14.5.11." />
+    <display value="Stadt Chemnitz" />
+  </concept>
+  <concept>
+    <code value="2.14.5.21.02." />
+    <display value="Landkreis Erzgebirgskreis" />
+  </concept>
+  <concept>
+    <code value="2.14.5.22.01." />
+    <display value="Landkreis Mittelsachsen" />
+  </concept>
+  <concept>
+    <code value="2.14.5.23.02." />
+    <display value="Landkreis Vogtlandkreis" />
+  </concept>
+  <concept>
+    <code value="2.14.5.24.01." />
+    <display value="Landkreis Zwickau" />
+  </concept>
+  <concept>
+    <code value="2.14.6.12." />
+    <display value="Landeshauptstadt Dresden" />
+  </concept>
+  <concept>
+    <code value="2.14.6.25.03." />
+    <display value="Landratsamt Bautzen" />
+  </concept>
+  <concept>
+    <code value="2.14.6.26.01." />
+    <display value="Landkreis Görlitz" />
+  </concept>
+  <concept>
+    <code value="2.14.6.27.01." />
+    <display value="Landkreis Meißen" />
+  </concept>
+  <concept>
+    <code value="2.14.6.28.01." />
+    <display value="Landkreis Sächsische Schweiz - Osterzgebirge" />
+  </concept>
+  <concept>
+    <code value="2.14.7.13." />
+    <display value="Stadt Leipzig" />
+  </concept>
+  <concept>
+    <code value="2.14.7.29.01." />
+    <display value="Landratsamt Leipzig" />
+  </concept>
+  <concept>
+    <code value="2.14.7.30.01." />
+    <display value="Landratsamt Nordsachsen" />
+  </concept>
+  <concept>
+    <code value="2.15.0.01." />
+    <display value="Stadt Dessau-Roßlau" />
+  </concept>
+  <concept>
+    <code value="2.15.0.02." />
+    <display value="Stadt Halle (Saale)" />
+  </concept>
+  <concept>
+    <code value="2.15.0.03." />
+    <display value="Landeshauptstadt Magdeburg" />
+  </concept>
+  <concept>
+    <code value="2.15.0.81." />
+    <display value="Altmarkkreis Salzwedel" />
+  </concept>
+  <concept>
+    <code value="2.15.0.82.02." />
+    <display value="Landkreis Anhalt- Bitterfeld" />
+  </concept>
+  <concept>
+    <code value="2.15.0.83.01." />
+    <display value="Landkreis Börde" />
+  </concept>
+  <concept>
+    <code value="2.15.0.84.02." />
+    <display value="Burgenlandkreis" />
+  </concept>
+  <concept>
+    <code value="2.15.0.85.03." />
+    <display value="Landkreis Harz" />
+  </concept>
+  <concept>
+    <code value="2.15.0.86." />
+    <display value="Landkreis Jerichower Land" />
+  </concept>
+  <concept>
+    <code value="2.15.0.87.02." />
+    <display value="Landkreis Mansfeld-Südharz" />
+  </concept>
+  <concept>
+    <code value="2.15.0.88.02." />
+    <display value="Landkreis Saalekreis" />
+  </concept>
+  <concept>
+    <code value="2.15.0.89.01." />
+    <display value="Salzlandkreis" />
+  </concept>
+  <concept>
+    <code value="2.15.0.90." />
+    <display value="Landkreis Stendal" />
+  </concept>
+  <concept>
+    <code value="2.15.0.91." />
+    <display value="Landkreis Wittenberg" />
+  </concept>
+  <concept>
+    <code value="2.16.0.51." />
+    <display value="Landeshauptstadt Erfurt" />
+  </concept>
+  <concept>
+    <code value="2.16.0.52." />
+    <display value="Stadt Gera" />
+  </concept>
+  <concept>
+    <code value="2.16.0.53." />
+    <display value="Stadtverwaltung Jena" />
+  </concept>
+  <concept>
+    <code value="2.16.0.54." />
+    <display value="Stadtverwaltung Suhl" />
+  </concept>
+  <concept>
+    <code value="2.16.0.55." />
+    <display value="Stadtverwaltung Weimar" />
+  </concept>
+  <concept>
+    <code value="2.16.0.61." />
+    <display value="Landkreis Eichsfeld" />
+  </concept>
+  <concept>
+    <code value="2.16.0.62." />
+    <display value="Landratsamt Nordhausen" />
+  </concept>
+  <concept>
+    <code value="2.16.0.63." />
+    <display value="Landratsamt Wartburgkreis" />
+  </concept>
+  <concept>
+    <code value="2.16.0.64.01." />
+    <display value="Landratsamt Unstrut-Hainich-Kreis" />
+  </concept>
+  <concept>
+    <code value="2.16.0.65.01." />
+    <display value="Landratsamt Kyffhäuserkreis" />
+  </concept>
+  <concept>
+    <code value="2.16.0.66." />
+    <display value="Landratsamt Schmalkalden-Meiningen" />
+  </concept>
+  <concept>
+    <code value="2.16.0.67." />
+    <display value="Landratsamt Gotha" />
+  </concept>
+  <concept>
+    <code value="2.16.0.68." />
+    <display value="Landratsamt Sömmerda" />
+  </concept>
+  <concept>
+    <code value="2.16.0.69." />
+    <display value="Landratsamt Hildburghausen" />
+  </concept>
+  <concept>
+    <code value="2.16.0.70.02." />
+    <display value="Landratsamt Ilm-Kreis" />
+  </concept>
+  <concept>
+    <code value="2.16.0.71." />
+    <display value="Landratsamt Weimarer Land" />
+  </concept>
+  <concept>
+    <code value="2.16.0.72." />
+    <display value="Landratsamt Sonneberg" />
+  </concept>
+  <concept>
+    <code value="2.16.0.73.02." />
+    <display value="Landratsamt Saalfeld-Rudolstadt" />
+  </concept>
+  <concept>
+    <code value="2.16.0.74." />
+    <display value="Landratsamt Saale-Holzland-Kreis" />
+  </concept>
+  <concept>
+    <code value="2.16.0.75.03." />
+    <display value="Landratsamt Saale-Orla-Kreis" />
+  </concept>
+  <concept>
+    <code value="2.16.0.76." />
+    <display value="Landratsamt Greiz" />
+  </concept>
+  <concept>
+    <code value="2.16.0.77." />
+    <display value="Landratsamt Altenburger Land" />
+  </concept>
+</CodeSystem>

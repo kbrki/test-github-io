@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ReceivedNotification" />
+  <url value="https://demis.rki.de/fhir/StructureDefinition/ReceivedNotification" />
+  <version value="1.2.0" />
+  <name value="ReceivedNotification" />
+  <title value="Vorgangsnummer" />
+  <status value="active" />
+  <date value="2023-10-16" />
+  <description value="Vorgangsnummer" />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Composition" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="https://demis.rki.de/fhir/StructureDefinition/ReceivedNotification" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="Identifier" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Extension.value[x].system">
+      <path value="Extension.value[x].system" />
+      <min value="1" />
+      <fixedUri value="https://demis.rki.de/fhir/NamingSystem/NotificationBundleId" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Extension.value[x].value">
+      <path value="Extension.value[x].value" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

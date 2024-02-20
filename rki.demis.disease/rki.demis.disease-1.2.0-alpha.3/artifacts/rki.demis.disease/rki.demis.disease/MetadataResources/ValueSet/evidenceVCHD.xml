@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="evidenceVCHD"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/evidenceVCHD"/>
+  <version value="1.0.0"/>
+  <name value="EvidenceVCHD"/>
+  <title value="Cholera-Symptom und -Manifestation"/>
+  <status value="active"/>
+  <date value="2023-04-25"/>
+  <description value="Das ValueSet EvidenceVCHD enthält die Codes der Cholera-Symptome und -Manifestationen."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <code value="409966000"/>
+        <display value="Durchfall, akut"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Acute diarrhea (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="422400008"/>
+        <display value="Erbrechen"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Vomiting (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="18425006"/>
+        <display value="Reiswasserstuhl"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Passage of rice water stools (finding)"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

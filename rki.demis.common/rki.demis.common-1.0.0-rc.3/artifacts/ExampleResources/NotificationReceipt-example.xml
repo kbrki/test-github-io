@@ -1,0 +1,43 @@
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="NotificationReceipt-example" />
+  <meta>
+    <profile value="https://demis.rki.de/fhir/StructureDefinition/NotificationReceipt" />
+  </meta>
+  <extension url="https://demis.rki.de/fhir/StructureDefinition/ReceivedNotification">
+    <valueIdentifier>
+      <system value="https://demis.rki.de/fhir/NamingSystem/NotificationBundleId" />
+      <value value="8e879be5-37cb-4ea4-885a-1f4bb30e360a" />
+    </valueIdentifier>
+  </extension>
+  <status value="final" />
+  <type>
+    <coding>
+      <system value="http://loinc.org" />
+      <code value="77999-1" />
+      <display value="Case notification comment" />
+    </coding>
+  </type>
+  <date value="2021-03-11T08:34:03+00:00" />
+  <author>
+    <reference value="Organization/DEMIS" />
+  </author>
+  <title value="Meldevorgangsquittung" />
+  <section>
+    <title value="Zuständiges Gesundheitsamt" />
+    <code>
+      <text value="Zuständiges Gesundheitsamt" />
+    </code>
+    <entry>
+      <reference value="Organization/1.11.0.11.01." />
+    </entry>
+  </section>
+  <section>
+    <title value="PDF Quittung" />
+    <code>
+      <text value="PDF Quittung" />
+    </code>
+    <entry>
+      <reference value="Binary/a8364648-7431-43e0-b454-a930de5e101e" />
+    </entry>
+  </section>
+</Composition>

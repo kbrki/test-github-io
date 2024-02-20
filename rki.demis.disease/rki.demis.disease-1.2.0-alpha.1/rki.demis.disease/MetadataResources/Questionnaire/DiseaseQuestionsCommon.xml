@@ -1,0 +1,409 @@
+<Questionnaire xmlns="http://hl7.org/fhir">
+   <id value="DiseaseQuestionsCommon"></id>
+   <url value="https://demis.rki.de/fhir/Questionnaire/DiseaseQuestionsCommon"></url>
+   <version value="1.0.0"></version>
+   <name value="DiseaseQuestionsCommon"></name>
+   <title value="Meldetatbestandsübergreifende klinische und epidemiologische Angaben"></title>
+   <status value="active" />
+   <date value="2022-01-28" />
+   <description value="Fragen, die meldetatbestandsübergreifend von Interesse sind, werden in diesem allgemeinen Fragebogen abgebildet. Dieser Fragebogen ist für sämtliche Meldungen gemäß §6 Absatz 1, 2 IfSG auszufüllen und somit als spezifische QuestionnaireResponse integraler Bestandteil einer jeden Meldung." />
+   <item>
+      <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+         <valueCodeableConcept>
+            <coding>
+               <system value="http://hl7.org/fhir/questionnaire-item-control"></system>
+               <code value="drop-down"></code>
+               <display value="Drop down"></display>
+            </coding>
+         </valueCodeableConcept>
+      </extension>
+      <linkId value="isDead"></linkId>
+      <text value="Verstorben"></text>
+      <type value="choice"></type>
+      <required value="true"></required>
+      <answerValueSet value="https://demis.rki.de/fhir/ValueSet/yesOrNoOrNoInformation"></answerValueSet>
+      <initial>
+         <valueCoding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"></system>
+            <code value="NASK"></code>
+            <display value="not asked"></display>
+         </valueCoding>
+      </initial>
+      <item>
+         <linkId value="deathDate"></linkId>
+         <text value="Datum des Todes"></text>
+         <type value="date"></type>
+         <enableWhen>
+            <question value="isDead"></question>
+            <operator value="="></operator>
+            <answerCoding>
+               <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+               <code value="yes"></code>
+            </answerCoding>
+         </enableWhen>
+      </item>
+   </item>
+   <item>
+      <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+         <valueCodeableConcept>
+            <coding>
+               <system value="http://hl7.org/fhir/questionnaire-item-control"></system>
+               <code value="drop-down"></code>
+               <display value="Drop down"></display>
+            </coding>
+         </valueCodeableConcept>
+      </extension>
+      <linkId value="militaryAffiliation"></linkId>
+      <text value="Zugehörigkeit zur Bundeswehr"></text>
+      <type value="choice"></type>
+      <required value="true"></required>
+      <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetMilitaryAffiliation"></answerValueSet>
+      <initial>
+         <valueCoding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"></system>
+            <code value="NASK"></code>
+            <display value="not asked"></display>
+         </valueCoding>
+      </initial>
+   </item>
+   <item>
+      <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+         <valueCodeableConcept>
+            <coding>
+               <system value="http://hl7.org/fhir/questionnaire-item-control"></system>
+               <code value="drop-down"></code>
+               <display value="Drop down"></display>
+            </coding>
+         </valueCodeableConcept>
+      </extension>
+      <linkId value="labSpecimenTaken"></linkId>
+      <text value="Laborbeauftragung"></text>
+      <type value="choice"></type>
+      <required value="true"></required>
+      <answerValueSet value="https://demis.rki.de/fhir/ValueSet/yesOrNoOrNoInformation"></answerValueSet>
+      <initial>
+         <valueCoding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"></system>
+            <code value="NASK"></code>
+            <display value="not asked"></display>
+         </valueCoding>
+      </initial>
+      <item>
+         <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-referenceResource">
+           <valueCode value="Organization"/> 
+         </extension>
+         <linkId value="labSpecimenLab"></linkId>
+         <text value="Beauftragtes Labor"></text>
+         <type value="reference"></type>
+         <enableWhen>
+            <question value="labSpecimenTaken"></question>
+            <operator value="="></operator>
+            <answerCoding>
+               <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+               <code value="yes"></code>
+            </answerCoding>
+         </enableWhen>
+         <required value="true"></required>
+      </item>
+   </item>
+   <item>
+      <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+         <valueCodeableConcept>
+            <coding>
+               <system value="http://hl7.org/fhir/questionnaire-item-control"></system>
+               <code value="drop-down"></code>
+               <display value="Drop down"></display>
+            </coding>
+         </valueCodeableConcept>
+      </extension>
+      <linkId value="hospitalized"></linkId>
+      <text value="Aufnahme in ein Krankenhaus"></text>
+      <type value="choice"></type>
+      <required value="true"></required>
+      <answerValueSet value="https://demis.rki.de/fhir/ValueSet/yesOrNoOrNoInformation"></answerValueSet>
+      <initial>
+         <valueCoding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"></system>
+            <code value="NASK"></code>
+            <display value="not asked"></display>
+         </valueCoding>
+      </initial>
+      <item>
+         <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+            <valueCodeableConcept>
+               <coding>
+                  <system value="http://hl7.org/fhir/questionnaire-item-control"></system>
+                  <code value="gtable"></code>
+                  <display value="Group Table"></display>
+               </coding>
+            </valueCodeableConcept>
+         </extension>
+         <linkId value="hospitalizedGroup"></linkId>
+         <type value="group"></type>
+         <enableWhen>
+            <question value="hospitalized"></question>
+            <operator value="="></operator>
+            <answerCoding>
+               <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+               <code value="yes"></code>
+            </answerCoding>
+         </enableWhen>
+         <required value="true"></required>
+         <repeats value="true"></repeats>
+         <item>
+            <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-referenceProfile">
+               <valueCanonical value="https://demis.rki.de/fhir/StructureDefinition/Hospitalization"></valueCanonical>
+            </extension>
+            <linkId value="hospitalizedEncounter"></linkId>
+            <type value="reference"></type>
+            <enableWhen>
+               <question value="hospitalized"></question>
+               <operator value="="></operator>
+               <answerCoding>
+                  <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+                  <code value="yes"></code>
+               </answerCoding>
+            </enableWhen>
+         </item>
+      </item>
+   </item>
+   <item>
+      <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+         <valueCodeableConcept>
+            <coding>
+               <system value="http://hl7.org/fhir/questionnaire-item-control"></system>
+               <code value="drop-down"></code>
+               <display value="Drop down"></display>
+            </coding>
+         </valueCodeableConcept>
+      </extension>
+      <linkId value="infectProtectFacility"></linkId>
+      <text value="Tätigkeit, Betreuung oder Unterbringung in Einrichtungen mit Relevanz für den Infektionsschutz (siehe § 23 Abs. 3 IfSG oder § 36 Abs. 1 oder 2 IfSG)"></text>
+      <type value="choice"></type>
+      <required value="true"></required>
+      <answerValueSet value="https://demis.rki.de/fhir/ValueSet/yesOrNoOrNoInformation"></answerValueSet>
+      <initial>
+         <valueCoding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"></system>
+            <code value="NASK"></code>
+            <display value="not asked"></display>
+         </valueCoding>
+      </initial>
+      <item>
+         <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+            <valueCodeableConcept>
+               <coding>
+                  <system value="http://hl7.org/fhir/questionnaire-item-control"></system>
+                  <code value="gtable"></code>
+                  <display value="Group Table"></display>
+               </coding>
+            </valueCodeableConcept>
+         </extension>
+         <linkId value="infectProtectFacilityGroup"></linkId>
+         <type value="group"></type>
+         <enableWhen>
+            <question value="infectProtectFacility"></question>
+            <operator value="="></operator>
+            <answerCoding>
+               <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+               <code value="yes"></code>
+            </answerCoding>
+         </enableWhen>
+         <required value="true"></required>
+         <repeats value="true"></repeats>
+         <item>
+            <linkId value="infectProtectFacilityBegin"></linkId>
+            <text value="Beginn der Tätigkeit/Betreuung/Unterbringung"></text>
+            <type value="date"></type>
+            <enableWhen>
+               <question value="infectProtectFacility"></question>
+               <operator value="="></operator>
+               <answerCoding>
+                  <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+                  <code value="yes"></code>
+               </answerCoding>
+            </enableWhen>
+         </item>
+         <item>
+            <linkId value="infectProtectFacilityEnd"></linkId>
+            <text value="Ende der Tätigkeit/Betreuung/Unterbringung"></text>
+            <type value="date"></type>
+            <enableWhen>
+               <question value="infectProtectFacility"></question>
+               <operator value="="></operator>
+               <answerCoding>
+                  <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+                  <code value="yes"></code>
+               </answerCoding>
+            </enableWhen>
+         </item>
+         <item>
+            <linkId value="infectProtectFacilityRole"></linkId>
+            <text value="Rolle"></text>
+            <type value="choice"></type>
+            <enableWhen>
+               <question value="infectProtectFacility"></question>
+               <operator value="="></operator>
+               <answerCoding>
+                  <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+                  <code value="yes"></code>
+               </answerCoding>
+            </enableWhen>
+            <required value="true"></required>
+            <answerValueSet value="https://demis.rki.de/fhir/ValueSet/organizationAssociation"></answerValueSet>
+         </item>
+         <item>
+            <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-referenceResource">
+              <valueCode value="Organization"/> 
+            </extension>
+            <linkId value="infectProtectFacilityOrganization"></linkId>
+            <text value="Einrichtung"></text>
+            <type value="reference"></type>
+            <enableWhen>
+               <question value="infectProtectFacility"></question>
+               <operator value="="></operator>
+               <answerCoding>
+                  <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+                  <code value="yes"></code>
+               </answerCoding>
+            </enableWhen>
+            <required value="true"></required>
+         </item>
+      </item>
+   </item>
+   <item>
+      <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+         <valueCodeableConcept>
+            <coding>
+               <system value="http://hl7.org/fhir/questionnaire-item-control"></system>
+               <code value="drop-down"></code>
+               <display value="Drop down"></display>
+            </coding>
+         </valueCodeableConcept>
+      </extension>
+      <linkId value="placeExposure"></linkId>
+      <text value="Wahrscheinlicher Expositionsort bekannt"></text>
+      <type value="choice"></type>
+      <required value="true"></required>
+      <answerValueSet value="https://demis.rki.de/fhir/ValueSet/yesOrNoOrNoInformation"></answerValueSet>
+      <initial>
+         <valueCoding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"></system>
+            <code value="NASK"></code>
+            <display value="not asked"></display>
+         </valueCoding>
+      </initial>
+      <item>
+         <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+            <valueCodeableConcept>
+               <coding>
+                  <system value="http://hl7.org/fhir/questionnaire-item-control"></system>
+                  <code value="gtable"></code>
+                  <display value="Group Table"></display>
+               </coding>
+            </valueCodeableConcept>
+         </extension>
+         <linkId value="placeExposureGroup"></linkId>
+         <type value="group"></type>
+         <enableWhen>
+            <question value="placeExposure"></question>
+            <operator value="="></operator>
+            <answerCoding>
+               <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+               <code value="yes"></code>
+            </answerCoding>
+         </enableWhen>
+         <required value="true"></required>
+         <repeats value="true"></repeats>
+         <item>
+            <linkId value="placeExposureBegin"></linkId>
+            <text value="Beginn des Aufenthalts am wahrscheinlichen Expositionsort/Datum des Aufenthalts"></text>
+            <type value="date"></type>
+            <enableWhen>
+               <question value="placeExposure"></question>
+               <operator value="="></operator>
+               <answerCoding>
+                  <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+                  <code value="yes"></code>
+               </answerCoding>
+            </enableWhen>
+         </item>
+         <item>
+            <linkId value="placeExposureEnd"></linkId>
+            <text value="Ende des Aufenthalts am wahrscheinlichen Expositionsort"></text>
+            <type value="date"></type>
+            <enableWhen>
+               <question value="placeExposure"></question>
+               <operator value="="></operator>
+               <answerCoding>
+                  <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+                  <code value="yes"></code>
+               </answerCoding>
+            </enableWhen>
+         </item>
+         <item>
+            <linkId value="placeExposureRegion"></linkId>
+            <text value="Wahrscheinlicher Expositionsort"></text>
+            <type value="choice"></type>
+            <enableWhen>
+               <question value="placeExposure"></question>
+               <operator value="="></operator>
+               <answerCoding>
+                  <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+                  <code value="yes"></code>
+               </answerCoding>
+            </enableWhen>
+            <required value="true"></required>
+            <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetGeographicRegion"></answerValueSet>
+            <initial>
+               <valueCoding>
+                  <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"></system>
+                  <code value="NASK"></code>
+                  <display value="not asked"></display>
+               </valueCoding>
+            </initial>
+         </item>
+         <item>
+            <linkId value="placeExposureHint"></linkId>
+            <text value="Anmerkungen zum Expositonsort"></text>
+            <type value="text"></type>
+            <enableWhen>
+               <question value="placeExposure"></question>
+               <operator value="="></operator>
+               <answerCoding>
+                  <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+                  <code value="yes"></code>
+               </answerCoding>
+            </enableWhen>
+         </item>
+      </item>
+   </item>
+   <item>
+      <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+         <valueCodeableConcept>
+            <coding>
+               <system value="http://hl7.org/fhir/questionnaire-item-control"></system>
+               <code value="drop-down"></code>
+               <display value="Drop down"></display>
+            </coding>
+         </valueCodeableConcept>
+      </extension>
+      <linkId value="organDonation"></linkId>
+      <text value="Spender für eine Blut-, Organ-, Gewebe- oder Zellspende in den letzten 6 Monaten"></text>
+      <type value="choice"></type>
+      <required value="true"></required>
+      <answerValueSet value="https://demis.rki.de/fhir/ValueSet/yesOrNoOrNoInformation"></answerValueSet>
+      <initial>
+         <valueCoding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"></system>
+            <code value="NASK"></code>
+            <display value="not asked"></display>
+         </valueCoding>
+      </initial>
+   </item>
+   <item>
+      <linkId value="additionalInformation"></linkId>
+      <text value="Wichtige Zusatzinformationen"></text>
+      <type value="text"></type>
+   </item>
+</Questionnaire>

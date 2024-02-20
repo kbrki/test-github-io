@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="evidencePOVD"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/evidencePOVD"/>
+  <version value="1.0.0"/>
+  <name value="EvidencePOVD"/>
+  <title value="Poliomyelitis-Symptom und -Manifestation"/>
+  <status value="active"/>
+  <date value="2022-11-30"/>
+  <description value="Das ValueSet EvidencePOVD enthält die Codes der Poliomyelitis-Symptome und -Manifestationen."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="698293005:363698007=66019005"/>
+        <display value="akute schlaffe Lähmung einer oder mehrerer Extremitäten"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="698293005 |Acute flaccid paralysis (finding)| : 363698007 |Finding site (attribute)| = 66019005 |Limb structure (body structure)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="386661006"/>
+        <display value="Fieber"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="386661006 |Fever (finding)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="25064002"/>
+        <display value="Kopfschmerzen"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="25064002 |Headache (finding)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="70784009"/>
+        <display value="meningeale Zeichen"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="70784009 |Meningeal irritation (disorder)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="161882006"/>
+        <display value="Nackensteifigkeit"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="161882006 |Stiff neck (finding)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="405946002"/>
+        <display value="verminderte Sehnenreflexe"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="405946002 |Decreased tendon reflex (finding)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="349006"/>
+        <display value="fehlende Sehnenrefelxe"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="349006 |Absent tendon reflex (finding)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="3006004"/>
+        <display value="veränderte Bewusstseinslage"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="3006004 |Disturbance of consciousness (finding)|"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

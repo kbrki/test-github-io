@@ -1,0 +1,45 @@
+<Condition xmlns="http://hl7.org/fhir">
+   <id value="68dba2be-6910-30ab-87ce-7e873f7e3b21"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseEBVD"></profile>
+   </meta>
+   <verificationStatus>
+      <coding>
+         <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"></system>
+         <code value="confirmed"></code>
+      </coding>
+   </verificationStatus>
+   <code>
+      <coding>
+         <system value="https://demis.rki.de/fhir/CodeSystem/notificationDiseaseCategory"></system>
+         <code value="ebvd"></code>
+         <display value="Ebolafieber"></display>
+      </coding>
+   </code>
+   <subject>
+      <reference value="Patient/ce85d93a-1169-3140-9bfd-3dc3587ea5c7"></reference>
+   </subject>
+   <onsetDateTime value="2022-12-05"></onsetDateTime>
+   <recordedDate value="2022-12-07"></recordedDate>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="66857006"></code>
+            <display value="Bluthusten (Hämoptysen)"></display>
+         </coding>
+      </code>
+   </evidence>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="2901004"></code>
+            <display value="Blutstuhl, Melaena"></display>
+         </coding>
+      </code>
+   </evidence>
+   <note>
+      <text value="Textueller Hinweis"></text>
+   </note>
+</Condition>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="addressUse" />
+  <url value="https://demis.rki.de/fhir/CodeSystem/addressUse" />
+  <version value="1.2.0" />
+  <name value="AddressUse" />
+  <title value="Adressnutzung" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2023-09-19" />
+  <publisher value="Robert Koch-Institut" />
+  <description value="Das CodeSystem AddressUse enthält die Codes für die Adressnutzung." />
+  <caseSensitive value="false" />
+  <valueSet value="https://demis.rki.de/fhir/ValueSet/addressUse" />
+  <content value="complete" />
+  <count value="3" />
+  <concept>
+    <code value="current" />
+    <display value="Derzeitiger Aufenthaltsort" />
+    <designation>
+      <language value="en-US" />
+      <use>
+        <system value="http://snomed.info/sct" />
+        <code value="900000000000003001" />
+      </use>
+      <value value="Current Residence" />
+    </designation>
+  </concept>
+  <concept>
+    <code value="ordinary" />
+    <display value="Gewöhnlicher Aufenthaltsort" />
+    <designation>
+      <language value="en-US" />
+      <use>
+        <system value="http://snomed.info/sct" />
+        <code value="900000000000003001" />
+      </use>
+      <value value="Ordinary Residence" />
+    </designation>
+  </concept>
+  <concept>
+    <code value="primary" />
+    <display value="Hauptwohnsitz" />
+    <designation>
+      <language value="en-US" />
+      <use>
+        <system value="http://snomed.info/sct" />
+        <code value="900000000000003001" />
+      </use>
+      <value value="Primary Residence" />
+    </designation>
+  </concept>
+</CodeSystem>

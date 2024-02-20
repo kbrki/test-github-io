@@ -1,0 +1,63 @@
+<Condition xmlns="http://hl7.org/fhir">
+   <id value="4f6887e6-8673-3882-b6c6-e71fa4a50869"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseHFAD"></profile>
+   </meta>
+   <verificationStatus>
+      <coding>
+         <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"></system>
+         <code value="confirmed"></code>
+      </coding>
+   </verificationStatus>
+   <code>
+      <coding>
+         <system value="https://demis.rki.de/fhir/CodeSystem/notificationDiseaseCategory"></system>
+         <code value="hfad"></code>
+         <display value="Hämorrhagisches Fieber"></display>
+      </coding>
+   </code>
+   <subject>
+      <reference value="Patient/4842f7c3-eecd-3b59-b890-482708e3528b"></reference>
+   </subject>
+   <onsetDateTime value="2022-12-05"></onsetDateTime>
+   <recordedDate value="2022-12-07"></recordedDate>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="131148009:{363698007=414781009}"></code>
+            <display value="Blutung der Schleimhäute"></display>
+         </coding>
+      </code>
+   </evidence>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="386661006"></code>
+            <display value="Fieber"></display>
+         </coding>
+      </code>
+   </evidence>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="240523007+131148009"></code>
+            <display value="hämorrhagischer Verlauf"></display>
+         </coding>
+      </code>
+   </evidence>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="302215000"></code>
+            <display value="Thrombozytopenie (&lt;= 150.000 Zellen/cmm)"></display>
+         </coding>
+      </code>
+   </evidence>
+   <note>
+      <text value="Textueller Hinweis"></text>
+   </note>
+</Condition>

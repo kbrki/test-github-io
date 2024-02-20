@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetInfectionRiskAnimalHEVD"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetInfectionRiskAnimalHEVD"/>
+  <version value="1.0.0"/>
+  <name value="AnswerSetInfectionRiskAnimalHEVD"/>
+  <title value="Antwort zu Tierkontakt bei Hepatitis E"/>
+  <status value="active"/>
+  <date value="2023-03-23"/>
+  <description value="Das ValueSet AnswerSetInfectionRiskAnimalHEVD enthält die Codes der Antwortmöglichkeiten für Tierkontakt bei Hepatitis E."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <code value="107007004"/>
+        <display value="Rind"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Subfamily Bovinae (organism)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="125099002"/>
+        <display value="Schaf"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Ovis aries (organism)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="125097000"/>
+        <display value="Ziege"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Capra hircus (organism)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="36571002"/>
+        <display value="Kaninchen"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Oryctolagus cuniculus (organism)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="371564000"/>
+        <display value="Ratte"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Genus Rattus (organism)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="59171001"/>
+        <display value="Damwild"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Dama dama (organism)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1464002"/>
+        <display value="Hase"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Genus Lepus (organism)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="48289008"/>
+        <display value="Hirschwild"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Cervus elaphus (organism)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="88680004"/>
+        <display value="Rehwild"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Capreolus capreolus (organism)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="388077003"/>
+        <display value="Wildnagetiere"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Order Rodentia (organism)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="78678003"/>
+        <display value="Wildschwein"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Sus scrofa (organism)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="74964007"/>
+        <display value="-andere/sonstige-"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Other (qualifier value)"/>
+        </designation>
+      </concept>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+      <version value="2.1.0"/>
+      <concept>
+        <code value="ASKU"/>
+        <display value="asked but unknown"/>
+      </concept>
+      <concept>
+        <code value="NASK"/>
+        <display value="not asked"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

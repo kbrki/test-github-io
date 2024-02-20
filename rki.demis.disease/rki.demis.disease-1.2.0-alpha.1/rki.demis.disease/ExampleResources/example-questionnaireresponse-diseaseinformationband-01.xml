@@ -1,0 +1,41 @@
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+   <id value="5b500d63-513f-3af2-9c7d-c5d23ee55a20"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseInformationBAND"></profile>
+   </meta>
+   <questionnaire value="https://demis.rki.de/fhir/Questionnaire/DiseaseQuestionsBAND"></questionnaire>
+   <status value="completed"></status>
+   <subject>
+      <reference value="Patient/ae2582e3-8376-3b7a-b4ae-4390b6a45ae8"></reference>
+   </subject>
+   <item>
+      <linkId value="form"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="84980006"></code>
+            <display value="Hautmilzbrand"></display>
+         </valueCoding>
+      </answer>
+   </item>
+   <item>
+      <linkId value="immunization"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+            <code value="no"></code>
+            <display value="Nein"></display>
+         </valueCoding>
+      </answer>
+   </item>
+   <item>
+      <linkId value="outbreak"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+            <code value="no"></code>
+            <display value="Nein"></display>
+         </valueCoding>
+      </answer>
+   </item>
+</QuestionnaireResponse>

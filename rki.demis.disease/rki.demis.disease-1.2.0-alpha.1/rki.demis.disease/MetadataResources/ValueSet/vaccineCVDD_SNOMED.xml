@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vaccineCVDD_SNOMED"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/vaccineCVDD_SNOMED"/>
+  <version value="1.0.0"/>
+  <name value="VaccineCVDD_SNOMED"/>
+  <title value="Covid-19-Impfstoff als SNOMED-Code"/>
+  <status value="active"/>
+  <date value="2022-12-17"/>
+  <description value="Das ValueSet VaccineCVDD_SNOMED enthält die Codes der Covid-19-Impfstoffe als SNOMED-Code."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="74964007"/>
+        <display value="Anderer"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="74964007 |Other (qualifier value)|"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

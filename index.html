@@ -34,18 +34,34 @@
 			<p>Das Paket rki.demis.common beinhaltet eine Reihe an DEMIS-Basis-Ressourcen, welche bisher Bestandteil des rki.demis.r4.core-Paketes waren. Es handelt sich dabei um sogenannte Basis-Ressourcen wie betroffene Person oder Melder, die von spezifischen DEMIS-Paketen (z.B. rki.demis.laboratory oder rki.demis.disease) verwendet werden. Diese Ressourcen sind jetzt im separaten rki.demis.common-Paket gebündelt.</p>
 			<blockquote>
 				<p class="link">
-					<a class="package-link" href="./rki.demis.common-1.0.0-alpha.1/index.html">Version rki.demis.common-1.0.0-rc.2 (15.12.2023)</a>
-					<dl>
-						<dt>Change log (gegenüber rki.demis.common-1.0.0-rc.1):</dt>
-							<dd>- CodeSystem und ValueSet geographicRegion hinzugefügt (diese waren bisher Bestandteil des disease-Paketes)</dd>
-					</dl><br/> 
-					<a class="package-link" href="./rki.demis.common-1.0.0-alpha.1/index.html">Version rki.demis.common-1.0.0-rc.1 (01.12.2023)</a><br/>
-					<dl>
-						<dt>Change log (gegenüber rki.demis.common-1.0.0-alpha.1):</dt>
-							<dd>- Übernahme als Release Candidate</dd>
-							<dd>- patternCoding mit LOINC-Code 34782-3 in Composition.type entfernt; es ist jetzt in den spezifischen Meldungs-Profilen NotificationLaboratory (rki.demis.laboratory) und NotificationDisease (rki.demis.disease) gesetzt</dd>
-					</dl><br/> 
-					<a class="package-link" href="./rki.demis.common-1.0.0-alpha.1/index.html">Version rki.demis.common-1.0.0-alpha.1 (13.11.2023)</a>
+					<h3>Version rki.demis.common-1.0.0-rc.3 (16.02.2024)</h3>
+					<a class="package-link" href="./rki.demis.common/rki.demis.common-1.0.0-rc.3/Home.html">Leitfaden</a>
+					<a href="./rki.demis.common/rki.demis.common-1.0.0-rc.3/Vorab Implementierungsleitfaden für DEMIS-Common@current.zip">Download ZIP</a>
+					<br/>Change log (gegenüber rki.demis.common-1.0.0-rc.2):
+					<ul>
+						<li>    fix: Warning-Constraints zur Validierung von Telefon- und Faxnummern wurden aktualisiert</li>
+							<li>	feat: Warning-Constraints zur Validierung des Vor- und Nachnamens der betroffenen Person wurden hinzugefügt</li>
+								<li>	feat: Warning-Constraints zur Validierung des Geburtsdatums der betroffenen Person (namentlich und nicht namentlich) wurden hinzugefügt</li>
+									<li>	doc: neue Supporteingangskanäle hinterlegt: E-Mail: demis-support@rki.de, Hotline: 0800 - 000 3041 (Mo.-Fr., 09-17 Uhr)</li>
+					</ul><br/>
+					<h3>Version rki.demis.common-1.0.0-rc.2 (15.12.2023)</h3>
+					<a class="package-link" href="./rki.demis.common/rki.demis.common-1.0.0-rc.2/Home.html">Leitfaden</a>
+					<a href="./rki.demis.common/rki.demis.common-1.0.0-rc.2/Vorab Implementierungsleitfaden für DEMIS Common@current.zip">Download ZIP</a>
+					<br/>Change log (gegenüber rki.demis.common-1.0.0-rc.1):
+					<ul>
+							<li>CodeSystem und ValueSet geographicRegion hinzugefügt (diese waren bisher Bestandteil des disease-Paketes)</li>
+						</ul><br/>
+					<h3>Version rki.demis.common-1.0.0-rc.1 (01.12.2023)</h3>
+					<a class="package-link" href="./rki.demis.common/rki.demis.common-1.0.0-rc.1/Home.html">Leitfaden</a>
+					<a href="./rki.demis.common/rki.demis.common-1.0.0-rc.1/Implementierungsleitfaden DEMIS Common (Basismeldeinhalte)@current.zip">Download ZIP</a>
+					<br/>Change log (gegenüber rki.demis.common-1.0.0-alpha.1):
+						<ul>
+							<li>Übernahme als Release Candidate</li>
+							<li>patternCoding mit LOINC-Code 34782-3 in Composition.type entfernt; es ist jetzt in den spezifischen Meldungs-Profilen NotificationLaboratory (rki.demis.laboratory) und NotificationDisease (rki.demis.disease) gesetzt</li>
+						</ul><br/> 
+					<h3>Version rki.demis.common-1.0.0-alpha.1  (13.11.2023)</h3>
+					<a class="package-link" href="./rki.demis.common/rki.demis.common-1.0.0-alpha.1/Home.html">Leitfaden</a>
+					<a href="./rki.demis.common/rki.demis.common-1.0.0-alpha.1/Vorabveröffentlichung DEMIS Common@current.zip">Download ZIP</a>
 					<dl>
 						<dt>Inhaltlich wurden an diesen Ressourcen gegenüber der Version rki.demis.r4.core 1.24.0-alpha.2 folgende Änderungen vorgenommen:</dt>
 							<dd>- Plausibilitätsprüfung von Kontaktdaten: Warning-Constraints wurden zur Validierung von Email, Telefonnummer, Faxnummer und URL hinzugefügt</dd>
@@ -71,9 +87,29 @@
 			<h2>FHIR-Profile Erkrankungsmeldung (rki.demis.disease)</h2>
 			<blockquote>
 				<p class="link">
-					<a class="package-link" href="./rki.demis.disease-1.2.0-alpha.1/index.html">rki.demis.disease-1.2.0-alpha.1</a><br/>
-					<a class="package-link" href="./rki.demis.disease-1.2.0-alpha.2/index.html">rki.demis.disease-1.2.0-alpha.2</a><br/>
-					<a class="package-link" href="./rki.demis.disease-1.2.0-rc.1/index.html">rki.demis.disease-1.2.0-rc.1</a>
+					<h3>Version rki.demis.disease-1.2.0-rc.4 (16.02.2024)</h3>
+					<a class="package-link" href="./rki.demis.disease/rki.demis.disease-1.2.0-rc.4/Home.html">Leitfaden</a>
+					<a href="./rki.demis.disease/rki.demis.disease-1.2.0-rc.4/Vorab Implementierungsleitfaden für DEMIS-Arztmeldung@current.zip">Download ZIP</a>
+					<h3>Version rki.demis.disease-1.2.0-rc.3 (26.01.2024)</h3>
+					<a class="package-link" href="./rki.demis.disease/rki.demis.disease-1.2.0-rc.3/Home.html">Leitfaden</a>
+					<a href="./rki.demis.disease/rki.demis.disease-1.2.0-rc.3/Vorab Implementierungsleitfaden für DEMIS Arztmeldung@current.zip">Download ZIP</a>
+					<h3>Version rki.demis.disease-1.2.0-rc.2 (15.12.2023)</h3>
+					<a class="package-link" href="./rki.demis.disease/rki.demis.disease-1.2.0-rc.2/Home.html">Leitfaden</a>
+					<a href="./rki.demis.disease/rki.demis.disease-1.2.0-rc.2/Vorab Implementierungsleitfaden für DEMIS Arztmeldung@current.zip">Download ZIP</a>
+					<h3>Version rki.demis.disease-1.2.0-rc.1 (04.12.2023)</h3>
+					<a class="package-link" href="./rki.demis.disease/rki.demis.disease-1.2.0-rc.1/Home.html">Leitfaden</a>
+					<a href="./rki.demis.disease/rki.demis.disease-1.2.0-rc.1/Implementierungsleitfaden für DEMIS Arztmeldungen rc.1@current.zip">Download ZIP</a>
+					<h3>Version rki.demis.disease-1.2.0-alpha.4 (13.11.2023)</h3>
+					<a class="package-link" href="./rki.demis.disease/rki.demis.disease-1.2.0-alpha.4/Home.html">Leitfaden</a>
+					<a href="./rki.demis.disease/rki.demis.disease-1.2.0-alpha.4/Implementierungsleitfaden für DEMIS Arztmeldung alpha4@current.zip">Download ZIP</a>
+					<h3>Version rki.demis.disease-1.2.0-alpha.3 (14.07.2023)</h3>
+					<a class="package-link" href="./rki.demis.disease/rki.demis.disease-1.2.0-alpha.3/Home.html">Leitfaden</a>
+					<a href="./rki.demis.disease/rki.demis.disease-1.2.0-alpha.3/Implementierungsleitfaden für DEMIS Arztmeldung Vorab@current.zip">Download ZIP</a>
+					<h3>Version rki.demis.disease-1.2.0-alpha.2 (28.04.2023)</h3>
+					<a class="package-link" href="./rki.demis.disease/rki.demis.disease-1.2.0-alpha.2/Home.html">Leitfaden</a>
+					<a href="./rki.demis.disease/rki.demis.disease-1.2.0-alpha.2/Vorveröffentlichung Arztmeldung 1.2.0-alpha.2@current.zip">Download ZIP</a>
+					<h3>Version rki.demis.disease-1.2.0-alpha.1 (23.12.2022)</h3>
+					<a href="./rki.demis.disease/rki.demis.disease-1.2.0-alpha.1/rki.demis.disease-1.2.0-alpha.1.zip">Download ZIP</a>
 				</p>
 			</blockquote>
 			<h2>FHIR-Profile Bettenbelegungsstatistik (rki.demis.statistic)</h2>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="evidenceMPVD"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/evidenceMPVD"/>
+  <version value="1.0.0"/>
+  <name value="EvidenceMPVD"/>
+  <title value="Mumps-Symptom und -Manifestation"/>
+  <status value="active"/>
+  <date value="2023-03-23"/>
+  <description value="Das ValueSet EvidenceMPVD enthält die Codes der Mumps-Symptome und -Manifestationen."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <code value="45170000"/>
+        <display value="Gehirnentzündung (Enzephalitis)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Encephalitis (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="386661006"/>
+        <display value="Fieber"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Fever (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="271613005:{363714003=162442009,363713009=260384008}"/>
+        <display value="geschwollene Speicheldrüse (2 oder mehr Tage)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+		  <value value="271613005 |Parotid swelling (finding)|: {363714003 |Interprets (attribute)| = 162442009 | Time symptom lasts (observable entity) | ,  363713009 |Has interpretation (attribute)| = 260384008 | Long duration (qualifier value) |}"/>
+		</designation>
+      </concept>
+      <concept>
+        <code value="15188001"/>
+        <display value="Hörverlust"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Hearing loss (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="7180009"/>
+        <display value="Hirnhautentzündung (Meningitis )"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Meningitis (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="76047005"/>
+        <display value="Eierstockentzündung (Oophoritis)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Oophoritis (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="274718005"/>
+        <display value="Hodenentzündung (Orchitis)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Orchitis (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="75694006"/>
+        <display value="Entzündung der Bauchspeicheldrüse (Pankreatitis)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Pancreatitis (disorder)"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

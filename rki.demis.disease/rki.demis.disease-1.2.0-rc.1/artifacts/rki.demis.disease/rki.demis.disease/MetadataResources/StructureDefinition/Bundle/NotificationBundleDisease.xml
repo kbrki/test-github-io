@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="NotificationBundleDisease" />
+  <url value="https://demis.rki.de/fhir/StructureDefinition/NotificationBundleDisease" />
+  <version value="1.0.1" />
+  <name value="NotificationBundleDisease" />
+  <title value="Erkrankungsmeldevorgang" />
+  <status value="active" />
+  <date value="2023-02-22" />
+  <description value="Der Erkrankungsmeldevorgang ist vom Meldevorgang abgeleitet und bildet den Container für eine meldetatbestandsspezifische Erkrankungsmeldung und die darin referenzierten Ressourcen." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Bundle" />
+  <baseDefinition value="https://demis.rki.de/fhir/StructureDefinition/NotificationBundle" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Bundle">
+      <path value="Bundle" />
+      <constraint>
+        <key value="maxOneNotifiedPerson" />
+        <severity value="error" />
+        <human value="Im NotificationBundle darf maximal eine betroffene Person enthalten sein." />
+        <expression value="entry.where(resource.meta.profile='https://demis.rki.de/fhir/StructureDefinition/NotifiedPerson').count()&lt;=1" />
+      </constraint>
+    </element>
+    <element id="Bundle.entry:notification">
+      <path value="Bundle.entry" />
+      <sliceName value="notification" />
+      <short value="Erkrankungsmeldung" />
+      <definition value="In einem Erkrankungsmeldevorgang muss genau eine meldetatbestandsspezifische Erkrankungsmeldung enthalten sein." />
+      <max value="1" />
+    </element>
+    <element id="Bundle.entry:notification.resource">
+      <path value="Bundle.entry.resource" />
+      <short value="Enthält die meldetatbestandsspezifische Erkrankungsmeldung" />
+      <definition value="Enthält die meldetatbestandsspezifische Erkrankungsmeldung" />
+      <min value="1" />
+      <type>
+        <code value="Composition" />
+        <profile value="https://demis.rki.de/fhir/StructureDefinition/NotificationDisease" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

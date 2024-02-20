@@ -1,0 +1,1016 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <title>Implementierungsleitfaden für DEMIS Common (Basismeldeinhalte)</title>
+
+        <link rel="icon" href="static/styles/common/favicon.ico" />
+
+        <script src="static/styles/common/jquery/jquery.min.js"></script>
+        <script src="static/styles/common/bootstrap/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="static/styles/common/main.min.css" />
+        <link rel="stylesheet" href="static/styles/common/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="static/styles/common/rendering/rendering.min.css" />
+
+        <script src="static/styles/common/rendering/stu3TreeTable.min.js"></script>
+        <script src="static/styles/common/rendering/baseTreetable.min.js"></script>
+
+        <link rel="stylesheet" href="static/styles/treetable/style.css?v=1da167c05358000" />
+
+    </head>
+
+    <body>
+
+        <div id="ig-viewer">
+
+            <div class="ig-view-content">
+
+                <div id="ig-view-treetable">
+
+                    <div class="segment-default-header" role="banner" aria-label="Header">
+                        <div class="row">
+                            <header class="col-md-12" aria-hidden="true">
+                                <h1 class="title">
+                                    <b>Implementierungsleitfaden für DEMIS Common (Basismeldeinhalte)</b>
+                                </h1>
+                            </header>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid">
+                        <div id="guide-panel">
+                            <div class="tree-panel" role="navigation" aria-label="Main menu">
+                                
+
+<div class="tree-content">
+    <div>
+
+        <input data-val="true" data-val-required="The Id field is required." id="GuideId" name="Guide.Id" type="hidden" value="5033" />
+
+        <table id="treetable" class="treetable ig-treetable hidden">
+
+                    <tr data-id="Home"
+                        data-filepath="Home"
+                        data-serial-nr="2"
+                        data-is-folder="True"
+                        class="rootnode treenode">
+                        <td>
+                            <a href="Home.html">
+                                <span class="baseIcon resource"></span>
+                                <span title="Home">Home</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/guide-overIG.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/guide-overIG.guide.md"
+                        data-parentId="Home"
+                        data-serial-nr="6"
+                        class="treenode">
+                        <td>
+                            <a href="Home-guide-overIG.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="&#xDC;ber diesen Leitfaden">&#xDC;ber diesen Leitfaden</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/guide-overview.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/guide-overview.guide.md"
+                        data-parentId="Home"
+                        data-serial-nr="7"
+                        class="treenode">
+                        <td>
+                            <a href="Home-guide-overview.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Grundlagen und &#xDC;berblick">Grundlagen und &#xDC;berblick</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/guide-changelog.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/guide-changelog.guide.md"
+                        data-parentId="Home"
+                        data-serial-nr="8"
+                        class="treenode">
+                        <td>
+                            <a href="Home-guide-changelog.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="&#xC4;nderungshistorie">&#xC4;nderungshistorie</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/guide-hints.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/guide-hints.guide.md"
+                        data-parentId="Home"
+                        data-serial-nr="9"
+                        class="treenode">
+                        <td>
+                            <a href="Home-guide-hints.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Erg&#xE4;nzende Hinweise">Erg&#xE4;nzende Hinweise</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/guide-knownissues.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/guide-knownissues.guide.md"
+                        data-parentId="Home"
+                        data-serial-nr="10"
+                        class="treenode">
+                        <td>
+                            <a href="Home-guide-knownissues.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Known Issues">Known Issues</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/guide-links.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/guide-links.guide.md"
+                        data-parentId="Home"
+                        data-serial-nr="11"
+                        class="treenode">
+                        <td>
+                            <a href="Home-guide-links.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Weiterf&#xFC;hrende Informationen">Weiterf&#xFC;hrende Informationen</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources"
+                        data-is-folder="True"
+                        data-filepath="Home/resources"
+                        data-parentId="Home"
+                        data-serial-nr="12"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Ressourcen">Ressourcen</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/structuredefinitions"
+                        data-parentId="Home/resources"
+                        data-serial-nr="15"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="StructureDefinitions">StructureDefinitions</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Bundle"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/structuredefinitions/Bundle"
+                        data-parentId="Home/resources/structuredefinitions"
+                        data-serial-nr="18"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Bundle.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Meldevorgang (Bundle)">Meldevorgang (Bundle)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Bundle/guide-NotificationBundle.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Bundle/guide-NotificationBundle.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Bundle"
+                        data-serial-nr="20"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Bundle-guide-NotificationBundle.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Meldevorgang (NotificationBundle)">Meldevorgang (NotificationBundle)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Bundle/guide-ReceiptBundle.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Bundle/guide-ReceiptBundle.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Bundle"
+                        data-serial-nr="21"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Bundle-guide-ReceiptBundle.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Quittungs-Bundle (ReceiptBundle)">Quittungs-Bundle (ReceiptBundle)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Composition"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/structuredefinitions/Composition"
+                        data-parentId="Home/resources/structuredefinitions"
+                        data-serial-nr="22"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Composition.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Meldung (Notification)">Meldung (Notification)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Composition/guide-Notification.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Composition/guide-Notification.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Composition"
+                        data-serial-nr="24"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Composition-guide-Notification.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Meldung (Notification)">Meldung (Notification)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Composition/guide-NotificationReceipt.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Composition/guide-NotificationReceipt.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Composition"
+                        data-serial-nr="25"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Composition-guide-NotificationReceipt.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Meldequittung (NotificationReceipt)">Meldequittung (NotificationReceipt)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Organization"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/structuredefinitions/Organization"
+                        data-parentId="Home/resources/structuredefinitions"
+                        data-serial-nr="26"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Organization.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Einrichtung (Organization)">Einrichtung (Organization)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Organization/guide-NotifiedPersonFacility.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Organization/guide-NotifiedPersonFacility.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Organization"
+                        data-serial-nr="28"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Organization-guide-NotifiedPersonFacility.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Betroffenen-Einrichtung (NotifiedPersonFacility)">Betroffenen-Einrichtung (NotifiedPersonFacility)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Organization/guide-NotifierFacility.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Organization/guide-NotifierFacility.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Organization"
+                        data-serial-nr="29"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Organization-guide-NotifierFacility.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Melder-Einrichtung (NotifierFacility)">Melder-Einrichtung (NotifierFacility)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Organization/guide-SubmittingFacility.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Organization/guide-SubmittingFacility.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Organization"
+                        data-serial-nr="30"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Organization-guide-SubmittingFacility.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Einsender-Einrichtung (SubmittingFacility)">Einsender-Einrichtung (SubmittingFacility)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Organization/guide-TransmittingSite.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Organization/guide-TransmittingSite.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Organization"
+                        data-serial-nr="31"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Organization-guide-TransmittingSite.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="&#xDC;bermittlungsstelle (TransmittingSite)">&#xDC;bermittlungsstelle (TransmittingSite)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Patient"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/structuredefinitions/Patient"
+                        data-parentId="Home/resources/structuredefinitions"
+                        data-serial-nr="32"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Patient.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Betroffene Person (NotifedPerson)">Betroffene Person (NotifedPerson)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Patient/guide-NotifiedPerson.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Patient/guide-NotifiedPerson.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Patient"
+                        data-serial-nr="34"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Patient-guide-NotifiedPerson.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Betroffene Person (NotifiedPerson)">Betroffene Person (NotifiedPerson)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Patient/guide-NotifiedPersonNotByName.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Patient/guide-NotifiedPersonNotByName.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Patient"
+                        data-serial-nr="35"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Patient-guide-NotifiedPersonNotByName.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Betroffene Person nichtnamentlich (NotifiedPersonNotByName)">Betroffene Person nichtnamentlich (NotifiedPersonNotByName)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Practitioner"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/structuredefinitions/Practitioner"
+                        data-parentId="Home/resources/structuredefinitions"
+                        data-serial-nr="36"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Practitioner.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Person des Gesundheitsprozesses (Practitioner)">Person des Gesundheitsprozesses (Practitioner)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Practitioner/guide-Notifier.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Practitioner/guide-Notifier.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Practitioner"
+                        data-serial-nr="38"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Practitioner-guide-Notifier.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Melder (Notifier)">Melder (Notifier)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Practitioner/guide-SubmittingPerson.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Practitioner/guide-SubmittingPerson.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Practitioner"
+                        data-serial-nr="39"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Practitioner-guide-SubmittingPerson.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Einsender (SubmittingPerson)">Einsender (SubmittingPerson)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/PractitionerRole"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/structuredefinitions/PractitionerRole"
+                        data-parentId="Home/resources/structuredefinitions"
+                        data-serial-nr="40"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-PractitionerRole.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Rolle (PractitionerRole)">Rolle (PractitionerRole)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/PractitionerRole/guide-NotifierRole.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/PractitionerRole/guide-NotifierRole.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/PractitionerRole"
+                        data-serial-nr="42"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-PractitionerRole-guide-NotifierRole.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Melder-Rolle (NotifierRole)">Melder-Rolle (NotifierRole)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/PractitionerRole/guide-SubmittingRole.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/PractitionerRole/guide-SubmittingRole.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/PractitionerRole"
+                        data-serial-nr="43"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-PractitionerRole-guide-SubmittingRole.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Einsender-Rolle (SubmittingRole)">Einsender-Rolle (SubmittingRole)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/OperationOutcome"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/structuredefinitions/OperationOutcome"
+                        data-parentId="Home/resources/structuredefinitions"
+                        data-serial-nr="44"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-OperationOutcome.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Verarbeitungsergebnis (OperationOutcome)">Verarbeitungsergebnis (OperationOutcome)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/OperationOutcome/guide-ProcessNotificationResponse.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/OperationOutcome/guide-ProcessNotificationResponse.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/OperationOutcome"
+                        data-serial-nr="46"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-OperationOutcome-guide-ProcessNotificationResponse.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Response f&#xFC;r $process-notification (ProcessNotificationResponse)">Response f&#xFC;r $process-notification (ProcessNotificationResponse)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Parameters"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/structuredefinitions/Parameters"
+                        data-parentId="Home/resources/structuredefinitions"
+                        data-serial-nr="47"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Parameters.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Parameter (Parameters)">Parameter (Parameters)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Parameters/guide-processnotificationrequestparameters.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Parameters/guide-processnotificationrequestparameters.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Parameters"
+                        data-serial-nr="50"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Parameters-guide-processnotificationrequestparameters.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="ProcessNotificationRequestParameters">ProcessNotificationRequestParameters</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Parameters/guide-processnotificationresponseparameters.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Parameters/guide-processnotificationresponseparameters.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Parameters"
+                        data-serial-nr="51"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Parameters-guide-processnotificationresponseparameters.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="ProcessNotificationResponseParameters">ProcessNotificationResponseParameters</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/terminologies"
+                        data-parentId="Home/resources"
+                        data-serial-nr="52"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Terminologien">Terminologien</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/codesystems"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/terminologies/codesystems"
+                        data-parentId="Home/resources/terminologies"
+                        data-serial-nr="55"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-codesystems.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="CodeSystems">CodeSystems</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/codesystems/guide-addressUse.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/codesystems/guide-addressUse.guide.md"
+                        data-parentId="Home/resources/terminologies/codesystems"
+                        data-serial-nr="58"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-codesystems-guide-addressUse.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Adressnutzung">Adressnutzung</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/codesystems/guide-country.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/codesystems/guide-country.guide.md"
+                        data-parentId="Home/resources/terminologies/codesystems"
+                        data-serial-nr="59"
+                        class="treenode selected">
+                        <td>
+                            <a href="Home-resources-terminologies-codesystems-guide-country.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Land">Land</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/codesystems/guide-organizationType.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/codesystems/guide-organizationType.guide.md"
+                        data-parentId="Home/resources/terminologies/codesystems"
+                        data-serial-nr="60"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-codesystems-guide-organizationType.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Einrichtungsart">Einrichtungsart</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/codesystems/guide-postalCode.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/codesystems/guide-postalCode.guide.md"
+                        data-parentId="Home/resources/terminologies/codesystems"
+                        data-serial-nr="61"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-codesystems-guide-postalCode.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Postleitzahl">Postleitzahl</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/codesystems/guide-reportingSite.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/codesystems/guide-reportingSite.guide.md"
+                        data-parentId="Home/resources/terminologies/codesystems"
+                        data-serial-nr="62"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-codesystems-guide-reportingSite.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="&#xDC;bermittlungsstelle">&#xDC;bermittlungsstelle</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/codesystems/guide-salutation.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/codesystems/guide-salutation.guide.md"
+                        data-parentId="Home/resources/terminologies/codesystems"
+                        data-serial-nr="63"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-codesystems-guide-salutation.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Anrede">Anrede</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/codesystems/guide-transmissionCategory.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/codesystems/guide-transmissionCategory.guide.md"
+                        data-parentId="Home/resources/terminologies/codesystems"
+                        data-serial-nr="64"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-codesystems-guide-transmissionCategory.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="SurvNet-&#xDC;bermittlungskategorie">SurvNet-&#xDC;bermittlungskategorie</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/valuesets"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/terminologies/valuesets"
+                        data-parentId="Home/resources/terminologies"
+                        data-serial-nr="65"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-valuesets.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="ValueSets">ValueSets</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/valuesets/guide-addressUse.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/valuesets/guide-addressUse.guide.md"
+                        data-parentId="Home/resources/terminologies/valuesets"
+                        data-serial-nr="68"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-valuesets-guide-addressUse.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Adressnutzung">Adressnutzung</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/valuesets/guide-answerSetAddressUse.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/valuesets/guide-answerSetAddressUse.guide.md"
+                        data-parentId="Home/resources/terminologies/valuesets"
+                        data-serial-nr="69"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-valuesets-guide-answerSetAddressUse.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Antwortm&#xF6;glichkeiten Adressnutzung">Antwortm&#xF6;glichkeiten Adressnutzung</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/valuesets/guide-country.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/valuesets/guide-country.guide.md"
+                        data-parentId="Home/resources/terminologies/valuesets"
+                        data-serial-nr="70"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-valuesets-guide-country.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Land">Land</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/valuesets/guide-organizationType.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/valuesets/guide-organizationType.guide.md"
+                        data-parentId="Home/resources/terminologies/valuesets"
+                        data-serial-nr="71"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-valuesets-guide-organizationType.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Einrichtungsart">Einrichtungsart</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/valuesets/guide-postalCode.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/valuesets/guide-postalCode.guide.md"
+                        data-parentId="Home/resources/terminologies/valuesets"
+                        data-serial-nr="72"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-valuesets-guide-postalCode.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Postleitzahl">Postleitzahl</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/valuesets/guide-reportingSite.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/valuesets/guide-reportingSite.guide.md"
+                        data-parentId="Home/resources/terminologies/valuesets"
+                        data-serial-nr="73"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-valuesets-guide-reportingSite.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="&#xDC;bermittlungsstelle">&#xDC;bermittlungsstelle</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/valuesets/guide-salutation.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/valuesets/guide-salutation.guide.md"
+                        data-parentId="Home/resources/terminologies/valuesets"
+                        data-serial-nr="74"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-valuesets-guide-salutation.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Anrede">Anrede</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/valuesets/guide-transmissionCategory.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/valuesets/guide-transmissionCategory.guide.md"
+                        data-parentId="Home/resources/terminologies/valuesets"
+                        data-serial-nr="75"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-valuesets-guide-transmissionCategory.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="SurvNet-&#xDC;bermittlungskategorie">SurvNet-&#xDC;bermittlungskategorie</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/conceptmaps"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/terminologies/conceptmaps"
+                        data-parentId="Home/resources/terminologies"
+                        data-serial-nr="76"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-conceptmaps.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="ConceptMaps">ConceptMaps</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/conceptmaps/guide-ISO3166CountryCodes2DEMISCountryCodes.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/conceptmaps/guide-ISO3166CountryCodes2DEMISCountryCodes.guide.md"
+                        data-parentId="Home/resources/terminologies/conceptmaps"
+                        data-serial-nr="79"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-conceptmaps-guide-ISO3166CountryCodes2DEMISCountryCodes.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="ISO3166CountryCodes2DEMISCountryCodes">ISO3166CountryCodes2DEMISCountryCodes</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/namingsystems"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/terminologies/namingsystems"
+                        data-parentId="Home/resources/terminologies"
+                        data-serial-nr="80"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-namingsystems.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="NamingSystems">NamingSystems</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/namingsystems/guide-DemisLaboratoryId.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/namingsystems/guide-DemisLaboratoryId.guide.md"
+                        data-parentId="Home/resources/terminologies/namingsystems"
+                        data-serial-nr="83"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-namingsystems-guide-DemisLaboratoryId.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="DemisLaboratoryId">DemisLaboratoryId</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/namingsystems/guide-DemisParticipantId.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/namingsystems/guide-DemisParticipantId.guide.md"
+                        data-parentId="Home/resources/terminologies/namingsystems"
+                        data-serial-nr="84"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-namingsystems-guide-DemisParticipantId.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="DemisParticipantId">DemisParticipantId</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/namingsystems/guide-NotificationBundleId.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/namingsystems/guide-NotificationBundleId.guide.md"
+                        data-parentId="Home/resources/terminologies/namingsystems"
+                        data-serial-nr="85"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-namingsystems-guide-NotificationBundleId.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="NotificationBundleId">NotificationBundleId</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/namingsystems/guide-NotificationId.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/namingsystems/guide-NotificationId.guide.md"
+                        data-parentId="Home/resources/terminologies/namingsystems"
+                        data-serial-nr="86"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-namingsystems-guide-NotificationId.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="NotificationId">NotificationId</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/namingsystems/guide-SendingServiceProvider.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/namingsystems/guide-SendingServiceProvider.guide.md"
+                        data-parentId="Home/resources/terminologies/namingsystems"
+                        data-serial-nr="87"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-namingsystems-guide-SendingServiceProvider.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="SendingServiceProvider">SendingServiceProvider</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/extensions"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/extensions"
+                        data-parentId="Home/resources"
+                        data-serial-nr="88"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-extensions.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Extensions">Extensions</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/extensions/guide-AddressUse.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/extensions/guide-AddressUse.guide.md"
+                        data-parentId="Home/resources/extensions"
+                        data-serial-nr="91"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-extensions-guide-AddressUse.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Adressnutzung">Adressnutzung</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/extensions/guide-Comment.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/extensions/guide-Comment.guide.md"
+                        data-parentId="Home/resources/extensions"
+                        data-serial-nr="92"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-extensions-guide-Comment.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Kommentar">Kommentar</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/extensions/guide-FacilityAddressNotifiedPerson.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/extensions/guide-FacilityAddressNotifiedPerson.guide.md"
+                        data-parentId="Home/resources/extensions"
+                        data-serial-nr="93"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-extensions-guide-FacilityAddressNotifiedPerson.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Einrichtungsadresse der betroffenen Person">Einrichtungsadresse der betroffenen Person</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/extensions/guide-Salutation.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/extensions/guide-Salutation.guide.md"
+                        data-parentId="Home/resources/extensions"
+                        data-serial-nr="94"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-extensions-guide-Salutation.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Anrede">Anrede</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/extensions/guide-ReceivedNotification.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/extensions/guide-ReceivedNotification.guide.md"
+                        data-parentId="Home/resources/extensions"
+                        data-serial-nr="95"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-extensions-guide-ReceivedNotification.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Vorgangsnummer (Id des gesendeten Meldevorgangs)">Vorgangsnummer (Id des gesendeten Meldevorgangs)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/extensions/guide-ReceptionTimestampType.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/extensions/guide-ReceptionTimestampType.guide.md"
+                        data-parentId="Home/resources/extensions"
+                        data-serial-nr="96"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-extensions-guide-ReceptionTimestampType.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Zeitstempel des Meldungseingangs">Zeitstempel des Meldungseingangs</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/extensions/guide-PseudonymRecordType.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/extensions/guide-PseudonymRecordType.guide.md"
+                        data-parentId="Home/resources/extensions"
+                        data-serial-nr="97"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-extensions-guide-PseudonymRecordType.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Pseudonym des Patientendatensatzes">Pseudonym des Patientendatensatzes</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/operationdefinitions"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/operationdefinitions"
+                        data-parentId="Home/resources"
+                        data-serial-nr="98"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-operationdefinitions.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="OperationDefinitions">OperationDefinitions</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/operationdefinitions/guide-ProcessNotification.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/operationdefinitions/guide-ProcessNotification.guide.md"
+                        data-parentId="Home/resources/operationdefinitions"
+                        data-serial-nr="101"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-operationdefinitions-guide-ProcessNotification.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="ProcessNotification">ProcessNotification</span>
+                            </a>
+                        </td>
+                    </tr>
+
+        </table>
+    </div>
+</div>
+
+<script type="text/javascript">
+    window.addEventListener('DOMContentLoaded', (event) => {
+
+        var resourceTreeTable = new BaseTreeTable();
+        resourceTreeTable.init("treetable");
+
+        var tree = document.getElementById("treetable");
+        tree.classList.remove("hidden");
+
+    });
+</script>
+
+                            </div>
+                            <div id="preview-content" class="preview-panel full-width" role="main" aria-label="Main content">
+                                
+
+<h4 id="land">Land</h4>
+<p><a href="https://simplifier.net/rki.demis.common/%7Eresources?canonical=https://demis.rki.de/fhir/CodeSystem/country">https://demis.rki.de/fhir/CodeSystem/country</a></p>
+<p>Das CodeSystem enthält die Liste der Länder.</p>
+<p><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system https://demis.rki.de/fhir/CodeSystem/country defines the following codes:</p><table class="codes"><tr><td><b>Code</b></td><td><b>Display</b></td></tr><tr><td>20422<a name="country-20422" /></td><td>Deutschland</td><td /></tr><tr><td>17213<a name="country-17213" /></td><td>Slowenien</td><td /></tr><tr><td>17363<a name="country-17363" /></td><td>Liechtenstein</td><td /></tr><tr><td>17516<a name="country-17516" /></td><td>Österreich</td><td /></tr><tr><td>17604<a name="country-17604" /></td><td>Slowakei</td><td /></tr><tr><td>17637<a name="country-17637" /></td><td>Schweiz</td><td /></tr><tr><td>17856<a name="country-17856" /></td><td>Tschechische Republik</td><td /></tr><tr><td>17865<a name="country-17865" /></td><td>Ungarn</td><td /></tr><tr><td>17114<a name="country-17114" /></td><td>Dänemark</td><td /></tr><tr><td>17132<a name="country-17132" /></td><td>Estland</td><td /></tr><tr><td>17148<a name="country-17148" /></td><td>Finnland</td><td /></tr><tr><td>17240<a name="country-17240" /></td><td>Irland</td><td /></tr><tr><td>17268<a name="country-17268" /></td><td>Island</td><td /></tr><tr><td>17314<a name="country-17314" /></td><td>Lettland</td><td /></tr><tr><td>17375<a name="country-17375" /></td><td>Litauen</td><td /></tr><tr><td>17491<a name="country-17491" /></td><td>Norwegen</td><td /></tr><tr><td>17615<a name="country-17615" /></td><td>Schweden</td><td /></tr><tr><td>17914<a name="country-17914" /></td><td>Vereinigtes Königreich</td><td /></tr><tr><td>17664<a name="country-17664" /></td><td>Russische Föderation</td><td /></tr><tr><td>17526<a name="country-17526" /></td><td>Polen</td><td /></tr><tr><td>17886<a name="country-17886" /></td><td>Ukraine</td><td /></tr><tr><td>17937<a name="country-17937" /></td><td>Weißrussland</td><td /></tr><tr><td>17191<a name="country-17191" /></td><td>Kroatien</td><td /></tr><tr><td>17293<a name="country-17293" /></td><td>Italien</td><td /></tr><tr><td>17392<a name="country-17392" /></td><td>Malta</td><td /></tr><tr><td>17472<a name="country-17472" /></td><td>Monaco</td><td /></tr><tr><td>17613<a name="country-17613" /></td><td>San Marino</td><td /></tr><tr><td>17754<a name="country-17754" /></td><td>Spanien</td><td /></tr><tr><td>17912<a name="country-17912" /></td><td>Vatikanstadt</td><td /></tr><tr><td>17033<a name="country-17033" /></td><td>Albanien</td><td /></tr><tr><td>17070<a name="country-17070" /></td><td>Bosnien und Herzegowina</td><td /></tr><tr><td>17085<a name="country-17085" /></td><td>Bulgarien</td><td /></tr><tr><td>17226<a name="country-17226" /></td><td>Griechenland</td><td /></tr><tr><td>17341<a name="country-17341" /></td><td>Montenegro</td><td /></tr><tr><td>17390<a name="country-17390" /></td><td>Mazedonien</td><td /></tr><tr><td>17460<a name="country-17460" /></td><td>Moldau</td><td /></tr><tr><td>17514<a name="country-17514" /></td><td>Kosovo</td><td /></tr><tr><td>17562<a name="country-17562" /></td><td>Rumänien</td><td /></tr><tr><td>17945<a name="country-17945" /></td><td>Serbien</td><td /></tr><tr><td>17976<a name="country-17976" /></td><td>Zypern</td><td /></tr><tr><td>17073<a name="country-17073" /></td><td>Andorra</td><td /></tr><tr><td>17081<a name="country-17081" /></td><td>Belgien</td><td /></tr><tr><td>17155<a name="country-17155" /></td><td>Frankreich</td><td /></tr><tr><td>17386<a name="country-17386" /></td><td>Luxemburg</td><td /></tr><tr><td>17474<a name="country-17474" /></td><td>Niederlande</td><td /></tr><tr><td>17543<a name="country-17543" /></td><td>Portugal</td><td /></tr><tr><td>18285<a name="country-18285" /></td><td>Libyen</td><td /></tr><tr><td>18689<a name="country-18689" /></td><td>Tunesien</td><td /></tr><tr><td>18051<a name="country-18051" /></td><td>Eritrea</td><td /></tr><tr><td>18591<a name="country-18591" /></td><td>Sudan</td><td /></tr><tr><td>18826<a name="country-18826" /></td><td>Ägypten</td><td /></tr><tr><td>17983<a name="country-17983" /></td><td>Algerien</td><td /></tr><tr><td>18204<a name="country-18204" /></td><td>Mauretanien</td><td /></tr><tr><td>18344<a name="country-18344" /></td><td>Marokko</td><td /></tr><tr><td>18059<a name="country-18059" /></td><td>Äthiopien</td><td /></tr><tr><td>18106<a name="country-18106" /></td><td>Dschibuti</td><td /></tr><tr><td>18233<a name="country-18233" /></td><td>Kenia</td><td /></tr><tr><td>18242<a name="country-18242" /></td><td>Komoren</td><td /></tr><tr><td>18460<a name="country-18460" /></td><td>Ruanda</td><td /></tr><tr><td>18498<a name="country-18498" /></td><td>Seychellen</td><td /></tr><tr><td>18564<a name="country-18564" /></td><td>Somalia</td><td /></tr><tr><td>18623<a name="country-18623" /></td><td>Tansania</td><td /></tr><tr><td>18714<a name="country-18714" /></td><td>Uganda</td><td /></tr><tr><td>18872<a name="country-18872" /></td><td>Burundi</td><td /></tr><tr><td>18071<a name="country-18071" /></td><td>Lesotho</td><td /></tr><tr><td>18082<a name="country-18082" /></td><td>Botsuana</td><td /></tr><tr><td>18165<a name="country-18165" /></td><td>Simbabwe</td><td /></tr><tr><td>18396<a name="country-18396" /></td><td>Sambia</td><td /></tr><tr><td>18450<a name="country-18450" /></td><td>Südafrika (Staat)</td><td /></tr><tr><td>18466<a name="country-18466" /></td><td>Namibia</td><td /></tr><tr><td>18618<a name="country-18618" /></td><td>Swasiland</td><td /></tr><tr><td>18311<a name="country-18311" /></td><td>Madagaskar</td><td /></tr><tr><td>18361<a name="country-18361" /></td><td>Mauritius</td><td /></tr><tr><td>18371<a name="country-18371" /></td><td>Mosambik</td><td /></tr><tr><td>18392<a name="country-18392" /></td><td>Malawi</td><td /></tr><tr><td>18032<a name="country-18032" /></td><td>Angola</td><td /></tr><tr><td>18480<a name="country-18480" /></td><td>São Tomé und Príncipe</td><td /></tr><tr><td>18093<a name="country-18093" /></td><td>Benin</td><td /></tr><tr><td>18112<a name="country-18112" /></td><td>Elfenbeinküste (Côte d'Ivoire)</td><td /></tr><tr><td>18127<a name="country-18127" /></td><td>Nigeria</td><td /></tr><tr><td>18186<a name="country-18186" /></td><td>Gambia</td><td /></tr><tr><td>18193<a name="country-18193" /></td><td>Ghana</td><td /></tr><tr><td>18218<a name="country-18218" /></td><td>Kap Verde</td><td /></tr><tr><td>18269<a name="country-18269" /></td><td>Liberia</td><td /></tr><tr><td>18334<a name="country-18334" /></td><td>Mali</td><td /></tr><tr><td>18383<a name="country-18383" /></td><td>Niger</td><td /></tr><tr><td>18406<a name="country-18406" /></td><td>Burkina Faso</td><td /></tr><tr><td>18420<a name="country-18420" /></td><td>Guinea-Bissau</td><td /></tr><tr><td>18430<a name="country-18430" /></td><td>Guinea</td><td /></tr><tr><td>18483<a name="country-18483" /></td><td>Senegal</td><td /></tr><tr><td>18559<a name="country-18559" /></td><td>Sierra Leone</td><td /></tr><tr><td>18654<a name="country-18654" /></td><td>Togo</td><td /></tr><tr><td>18176<a name="country-18176" /></td><td>Gabun</td><td /></tr><tr><td>18246<a name="country-18246" /></td><td>Kongo</td><td /></tr><tr><td>18257<a name="country-18257" /></td><td>Kongo, Demokratische Republik</td><td /></tr><tr><td>18439<a name="country-18439" /></td><td>Kamerun</td><td /></tr><tr><td>18583<a name="country-18583" /></td><td>Äquatorialguinea</td><td /></tr><tr><td>18607<a name="country-18607" /></td><td>Südsudan</td><td /></tr><tr><td>18660<a name="country-18660" /></td><td>Tschad</td><td /></tr><tr><td>18854<a name="country-18854" /></td><td>Zentralafrikanische Republik</td><td /></tr><tr><td>20329<a name="country-20329" /></td><td>Australien (Land)</td><td /></tr><tr><td>20347<a name="country-20347" /></td><td>Salomonen</td><td /></tr><tr><td>20349<a name="country-20349" /></td><td>Fidschi</td><td /></tr><tr><td>20354<a name="country-20354" /></td><td>Cookinseln</td><td /></tr><tr><td>20356<a name="country-20356" /></td><td>Kiribati</td><td /></tr><tr><td>20358<a name="country-20358" /></td><td>Nauru</td><td /></tr><tr><td>20360<a name="country-20360" /></td><td>Vanuatu</td><td /></tr><tr><td>20367<a name="country-20367" /></td><td>Niue</td><td /></tr><tr><td>20369<a name="country-20369" /></td><td>Neuseeland</td><td /></tr><tr><td>20386<a name="country-20386" /></td><td>Palau</td><td /></tr><tr><td>20388<a name="country-20388" /></td><td>Papua-Neuguinea</td><td /></tr><tr><td>20409<a name="country-20409" /></td><td>Tuvalu</td><td /></tr><tr><td>20411<a name="country-20411" /></td><td>Tonga</td><td /></tr><tr><td>20413<a name="country-20413" /></td><td>Samoa</td><td /></tr><tr><td>20415<a name="country-20415" /></td><td>Marshallinseln</td><td /></tr><tr><td>20417<a name="country-20417" /></td><td>Mikronesien</td><td /></tr><tr><td>19715<a name="country-19715" /></td><td>Korea, Demokratische Volksrepublik</td><td /></tr><tr><td>19851<a name="country-19851" /></td><td>Japan</td><td /></tr><tr><td>20096<a name="country-20096" /></td><td>Korea, Republik</td><td /></tr><tr><td>20264<a name="country-20264" /></td><td>China</td><td /></tr><tr><td>19524<a name="country-19524" /></td><td>Afghanistan</td><td /></tr><tr><td>19583<a name="country-19583" /></td><td>Bhutan</td><td /></tr><tr><td>19622<a name="country-19622" /></td><td>Brunei Darussalam</td><td /></tr><tr><td>19640<a name="country-19640" /></td><td>Sri Lanka</td><td /></tr><tr><td>19953<a name="country-19953" /></td><td>Katar</td><td /></tr><tr><td>20002<a name="country-20002" /></td><td>Malediven</td><td /></tr><tr><td>20055<a name="country-20055" /></td><td>Nepal</td><td /></tr><tr><td>20063<a name="country-20063" /></td><td>Bangladesch</td><td /></tr><tr><td>20071<a name="country-20071" /></td><td>Pakistan</td><td /></tr><tr><td>19604<a name="country-19604" /></td><td>Myanmar</td><td /></tr><tr><td>19650<a name="country-19650" /></td><td>Vietnam</td><td /></tr><tr><td>19762<a name="country-19762" /></td><td>Indonesien</td><td /></tr><tr><td>19928<a name="country-19928" /></td><td>Kambodscha</td><td /></tr><tr><td>19969<a name="country-19969" /></td><td>Laos</td><td /></tr><tr><td>20078<a name="country-20078" /></td><td>Philippinen</td><td /></tr><tr><td>20147<a name="country-20147" /></td><td>Singapur</td><td /></tr><tr><td>20172<a name="country-20172" /></td><td>Thailand</td><td /></tr><tr><td>20299<a name="country-20299" /></td><td>Malaysia</td><td /></tr><tr><td>20315<a name="country-20315" /></td><td>Timor-Leste</td><td /></tr><tr><td>19559<a name="country-19559" /></td><td>Bahrain</td><td /></tr><tr><td>20023<a name="country-20023" /></td><td>Oman</td><td /></tr><tr><td>20112<a name="country-20112" /></td><td>Vereinigte Arabische Emirate</td><td /></tr><tr><td>17775<a name="country-17775" /></td><td>Türkei</td><td /></tr><tr><td>19490<a name="country-19490" /></td><td>Jemen</td><td /></tr><tr><td>19512<a name="country-19512" /></td><td>Armenien</td><td /></tr><tr><td>19572<a name="country-19572" /></td><td>Aserbaidschan</td><td /></tr><tr><td>19627<a name="country-19627" /></td><td>Georgien</td><td /></tr><tr><td>19727<a name="country-19727" /></td><td>Indien</td><td /></tr><tr><td>19796<a name="country-19796" /></td><td>Irak</td><td /></tr><tr><td>19815<a name="country-19815" /></td><td>Iran</td><td /></tr><tr><td>19844<a name="country-19844" /></td><td>Israel</td><td /></tr><tr><td>19915<a name="country-19915" /></td><td>Jordanien</td><td /></tr><tr><td>19963<a name="country-19963" /></td><td>Kuwait</td><td /></tr><tr><td>19995<a name="country-19995" /></td><td>Libanon</td><td /></tr><tr><td>20061<a name="country-20061" /></td><td>Palästinensische Gebiete</td><td /></tr><tr><td>20133<a name="country-20133" /></td><td>Saudi-Arabien</td><td /></tr><tr><td>20157<a name="country-20157" /></td><td>Syrien</td><td /></tr><tr><td>19899<a name="country-19899" /></td><td>Kasachstan</td><td /></tr><tr><td>19987<a name="country-19987" /></td><td>Kirgisistan</td><td /></tr><tr><td>20032<a name="country-20032" /></td><td>Mongolei</td><td /></tr><tr><td>20122<a name="country-20122" /></td><td>Tadschikistan</td><td /></tr><tr><td>20127<a name="country-20127" /></td><td>Turkmenistan</td><td /></tr><tr><td>20249<a name="country-20249" /></td><td>Usbekistan</td><td /></tr><tr><td>18890<a name="country-18890" /></td><td>Antigua und Barbuda</td><td /></tr><tr><td>18899<a name="country-18899" /></td><td>Barbados</td><td /></tr><tr><td>18937<a name="country-18937" /></td><td>Bahamas</td><td /></tr><tr><td>18988<a name="country-18988" /></td><td>Belize</td><td /></tr><tr><td>19013<a name="country-19013" /></td><td>Dominica</td><td /></tr><tr><td>19024<a name="country-19024" /></td><td>Costa Rica</td><td /></tr><tr><td>19032<a name="country-19032" /></td><td>Dominikanische Republik</td><td /></tr><tr><td>19091<a name="country-19091" /></td><td>El Salvador</td><td /></tr><tr><td>19106<a name="country-19106" /></td><td>Grenada</td><td /></tr><tr><td>19113<a name="country-19113" /></td><td>Guatemala</td><td /></tr><tr><td>19136<a name="country-19136" /></td><td>Haiti</td><td /></tr><tr><td>19147<a name="country-19147" /></td><td>Honduras</td><td /></tr><tr><td>19214<a name="country-19214" /></td><td>Kuba</td><td /></tr><tr><td>19263<a name="country-19263" /></td><td>Nicaragua</td><td /></tr><tr><td>19281<a name="country-19281" /></td><td>Jamaika</td><td /></tr><tr><td>19295<a name="country-19295" /></td><td>Panama</td><td /></tr><tr><td>19383<a name="country-19383" /></td><td>St. Lucia</td><td /></tr><tr><td>19470<a name="country-19470" /></td><td>St. Vincent und die Grenadinen</td><td /></tr><tr><td>19472<a name="country-19472" /></td><td>St. Kitts und Nevis</td><td /></tr><tr><td>19474<a name="country-19474" /></td><td>Trinidad und Tobago</td><td /></tr><tr><td>19166<a name="country-19166" /></td><td>Kanada</td><td /></tr><tr><td>19230<a name="country-19230" /></td><td>Mexiko</td><td /></tr><tr><td>19411<a name="country-19411" /></td><td>Vereinigte Staaten</td><td /></tr><tr><td>18911<a name="country-18911" /></td><td>Argentinien</td><td /></tr><tr><td>18939<a name="country-18939" /></td><td>Bolivien</td><td /></tr><tr><td>18949<a name="country-18949" /></td><td>Brasilien</td><td /></tr><tr><td>18977<a name="country-18977" /></td><td>Guyana</td><td /></tr><tr><td>18995<a name="country-18995" /></td><td>Chile</td><td /></tr><tr><td>19065<a name="country-19065" /></td><td>Ecuador</td><td /></tr><tr><td>19180<a name="country-19180" /></td><td>Kolumbien</td><td /></tr><tr><td>19308<a name="country-19308" /></td><td>Paraguay</td><td /></tr><tr><td>19326<a name="country-19326" /></td><td>Peru</td><td /></tr><tr><td>19352<a name="country-19352" /></td><td>Suriname</td><td /></tr><tr><td>19363<a name="country-19363" /></td><td>Uruguay</td><td /></tr><tr><td>19385<a name="country-19385" /></td><td>Venezuela</td><td /></tr></table></div></p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="ig-view-footer" role="contentinfo" aria-label="Footer">
+                
+<div class="container">
+    <div class="row">
+        <p>Powered by <b>SIMPLIFIER.NET</b></p>
+        <div>
+            HL7<sup>&reg;</sup> and FHIR<sup>&reg;</sup> are the registered trademarks of Health Level Seven International
+        </div>
+    </div>
+</div>
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>

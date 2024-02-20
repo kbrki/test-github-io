@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetConservationCLOD"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetConservationCLOD"/>
+  <version value="1.0.0"/>
+  <name value="AnswerSetConservationCLOD"/>
+  <title value="Antwort zur Art der Lebensmittelkonservierung bei Botulismus"/>
+  <status value="active"/>
+  <date value="2022-11-30"/>
+  <description value="Das ValueSet AnswerSetConservationCLOD enthält die Codes der Antwortmöglichkeiten für die Art der Lebensmittelkonservierung bei Botulismus."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="227989005"/>
+        <display value="Konserve"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="227989005 |Canned food (substance)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="229982008"/>
+        <display value="Sauer eingelegt"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="229982008 |Pickled food (substance)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="423252004"/>
+        <display value="Eingekocht/eingeweckt"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="423252004 |Home-canned food (substance)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="228008004"/>
+        <display value="getrocknet/gedarrt"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="228008004 |Dried food (substance)|"/>
+        </designation>
+      </concept>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+      <concept>
+        <code value="ASKU"/>
+        <display value="asked but unknown"/>
+      </concept>
+      <concept>
+        <code value="NASK"/>
+        <display value="not asked"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

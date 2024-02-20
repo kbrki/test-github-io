@@ -1,0 +1,25 @@
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="Notifier-example" />
+  <meta>
+    <profile value="https://demis.rki.de/fhir/StructureDefinition/Notifier" />
+  </meta>
+  <extension url="https://demis.rki.de/fhir/StructureDefinition/Salutation">
+    <valueCoding>
+      <system value="https://demis.rki.de/fhir/CodeSystem/salutation" />
+      <code value="mrs" />
+    </valueCoding>
+  </extension>
+  <name>
+    <use value="official" />
+    <family value="Bonheure" />
+    <given value="Julie" />
+  </name>
+  <telecom>
+    <extension url="https://demis.rki.de/fhir/StructureDefinition/Comment">
+      <valueString value="Ab 14 Uhr" />
+    </extension>
+    <system value="phone" />
+    <value value="+49 (0)12345 - 123456" />
+    <use value="work" />
+  </telecom>
+</Practitioner>

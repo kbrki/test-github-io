@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ProcessNotificationRequestParameters" />
+  <url value="https://demis.rki.de/fhir/StructureDefinition/ProcessNotificationRequestParameters" />
+  <version value="1.2.0" />
+  <name value="ProcessNotificationRequestParameters" />
+  <title value="ProcessNotification-Eingabeparameter" />
+  <status value="active" />
+  <date value="2023-09-20" />
+  <description value="Der ProcessNotificationRequestParameter ist der Eingabeparameter für die ProcessNotification-Operation. Er enthält den an DEMIS übermittelten Meldevorgang." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Parameters" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Parameters" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Parameters.meta">
+      <path value="Parameters.meta" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Parameters.meta.profile">
+      <path value="Parameters.meta.profile" />
+      <min value="1" />
+      <max value="1" />
+      <fixedCanonical value="https://demis.rki.de/fhir/StructureDefinition/ProcessNotificationRequestParameters" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Parameters.parameter">
+      <path value="Parameters.parameter" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Parameters.parameter.resource">
+      <path value="Parameters.parameter.resource" />
+      <min value="1" />
+      <type>
+        <code value="Resource" />
+        <profile value="https://demis.rki.de/fhir/StructureDefinition/NotificationBundle" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetTrimester"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetTrimester"/>
+  <version value="1.0.0"/>
+  <name value="AnswerSetTrimester"/>
+  <title value="Antwort zum Trimester"/>
+  <status value="active"/>
+  <date value="2023-04-14"/>
+  <description value="Das ValueSet AnswerSetTrimester enthält die Codes der Antwortmöglichkeiten für das Trimester."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <code value="255246003"/>
+        <display value="1. Trimester"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="First trimester (qualifier value)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="255247007"/>
+        <display value="2. Trimester"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Second trimester (qualifier value)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="255248002"/>
+        <display value="3. Trimester"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Third trimester (qualifier value)"/>
+        </designation>
+      </concept>
+    </include>
+	<include>
+		<system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+		<version value="2.1.0"/>
+		<concept>
+			<code value="ASKU"/>
+			<display value="asked but unknown"/>
+		</concept>
+		<concept>
+			<code value="NASK"/>
+			<display value="not asked"/>
+		</concept>
+	</include>
+  </compose>
+</ValueSet>

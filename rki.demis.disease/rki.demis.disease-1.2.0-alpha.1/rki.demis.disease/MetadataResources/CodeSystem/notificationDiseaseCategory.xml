@@ -1,0 +1,115 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="notificationDiseaseCategory" />
+  <url value="https://demis.rki.de/fhir/CodeSystem/notificationDiseaseCategory" />
+  <version value="1.2.0" />
+  <name value="NotificationDiseaseCategory" />
+  <title value="Meldetatbestand" />
+  <status value="active" />
+  <date value="2022-11-14" />
+  <description value="Das CodeSystem NotificationDiseaseCategory enthält die Codes der Meldetatbestände." />
+  <caseSensitive value="false" />
+  <valueSet value="https://demis.rki.de/fhir/ValueSet/notificationDiseaseCategory" />
+  <content value="fragment" />
+  <count value="12" />
+  <property>
+    <code value="usage-status"/>
+    <description value="Nutzungsstatus"/>
+    <type value="code"/>
+  </property>
+  <concept>
+    <code value="band"/>
+    <display value="Milzbrand"/>
+	<property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="bpsd"/>
+    <display value="Keuchusten"/>
+  <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="clod"/>
+    <display value="Botulismus"/>
+  <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="cord"/>
+    <display value="Diphtherie"/>
+  <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="cvdd"/>
+    <display value="Coronavirus-Krankheit-2019 (COVID-19)"/>
+  <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="hfad"/>
+    <display value="Hämorrhagisches Fieber"/>
+  <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="dend"/>
+    <display value="Denguefieber"/>
+  <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="ebvd"/>
+    <display value="Ebolafieber"/>
+  <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="gfvd"/>
+    <display value="Gelbfieber"/>
+  <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="lsvd"/>
+    <display value="Lassafieber"/>
+  <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="mbvd"/>
+    <display value="Marburgfieber"/>
+  <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="povd"/>
+    <display value="Poliomyelitis"/>
+  <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+  </concept>
+</CodeSystem>

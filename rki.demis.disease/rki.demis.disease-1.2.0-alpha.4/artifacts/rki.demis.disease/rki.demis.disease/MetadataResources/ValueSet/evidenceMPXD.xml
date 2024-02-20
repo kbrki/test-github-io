@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="evidenceMPXD"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/evidenceMPXD"/>
+  <version value="1.0.0"/>
+  <name value="EvidenceMPXD"/>
+  <title value="Mpox-Symptom und -Manifestation"/>
+  <status value="active"/>
+  <date value="2023-04-25"/>
+  <description value="Das ValueSet EvidenceMPXD enthält die Codes der Mpox-Symptome und -Manifestationen."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <code value="386661006"/>
+        <display value="Fieber"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Fever (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="271807003"/>
+        <display value="Hautausschlag"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Eruption of skin (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="95324001"/>
+        <display value="Hautläsion"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Skin lesion (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="276320009"/>
+        <display value="Schleimhautläsion"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Lesion of mucosa (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="30746006"/>
+        <display value="Lymphknotenschwellung"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Lymphadenopathy (disorder)"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

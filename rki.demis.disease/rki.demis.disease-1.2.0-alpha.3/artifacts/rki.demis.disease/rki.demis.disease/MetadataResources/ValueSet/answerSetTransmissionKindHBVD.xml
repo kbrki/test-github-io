@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetTransmissionKindHBVD"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetTransmissionKindHBVD"/>
+  <version value="1.0.0"/>
+  <name value="AnswerSetTransmissionKindHBVD"/>
+  <title value="Antwort zur nosokomialen Übertragung bei Hepatitis B"/>
+  <status value="active"/>
+  <date value="2023-04-24"/>
+  <description value="Das ValueSet AnswerSetTransmissionKindHBVD enthält die Codes der Antwortmöglichkeiten für die nosokomiale Übertragung bei Hepatitis B."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <code value="409496000:704326004=387713003"/>
+        <display value="operativ-diagnostischer Eingriff"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="409496000 | Mode of transmission (observable entity) |:   704326004 |Precondition (attribute)| = 387713003 | Surgical procedure (procedure) |"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="409496000:704326004=5447007"/>
+        <display value="Erhalt von Blutprodukten"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="409496000 | Mode of transmission (observable entity) |:  704326004 |Precondition (attribute)| =   5447007 | Transfusion (procedure) |"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="409496000:704326004=108241001"/>
+        <display value="Dialyse"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="409496000 | Mode of transmission (observable entity) |: 704326004 |Precondition (attribute)| =  108241001 | Dialysis procedure (procedure) |"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="409496000:704326004=77465005"/>
+        <display value="Organtransplantation"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="409496000 | Mode of transmission (observable entity) |: 704326004 |Precondition (attribute)| =   77465005 | Transplantation (procedure) |"/>
+        </designation>
+      </concept>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+      <version value="2.1.0"/>
+      <concept>
+        <code value="ASKU"/>
+        <display value="asked but unknown"/>
+      </concept>
+      <concept>
+        <code value="NASK"/>
+        <display value="not asked"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

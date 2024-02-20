@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetAddressUse"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetAddressUse"/>
+  <version value="1.3.0"/>
+  <name value="AnswerSetAddressUse"/>
+  <title value="Antwortenmöglichkeiten Adressnutzung"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-09-19"/>
+  <publisher value="Robert Koch-Institut"/>
+  <description value="Das ValueSet AddressUse enthält die Codes für die Antwortenmöglichkeiten für die Adressnutzung."/>
+  <compose>
+    <include>
+      <system value="https://demis.rki.de/fhir/CodeSystem/addressUse"/>
+      <version value="1.2.0"/>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+      <version value="2.1.0"/>
+      <concept>
+        <code value="ASKU"/>
+        <display value="asked but unknown"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

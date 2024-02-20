@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vaccineNEID"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/vaccineNEID"/>
+  <version value="1.0.0"/>
+  <name value="VaccineNEID"/>
+  <title value="Meningokokken-Impfstoff als SNOMED-Code"/>
+  <status value="active"/>
+  <date value="2023-04-25"/>
+  <description value="Das ValueSet VaccineNEID enthält die Codes der Meningokokken-Impfstoffe als SNOMED-Code."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <code value="951000221102"/>
+        <display value="Meningokokken-C-Konjugat-Impfstoff (Konjugat C) (Menjugate 10 Mikrogramm, NeisVac-C,MENJUGATE KIT)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Vaccine product containing only Neisseria meningitidis serogroup C capsular polysaccharide conjugated antigen (medicinal product)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="871866001"/>
+        <display value="Meningokokken-C-Polysaccharid-Impfstoff"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Vaccine product containing only Neisseria meningitidis serogroup C antigen (medicinal product)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="871871008"/>
+        <display value="Meningokokken-Polysaccharid-Impfstoff A+C"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Vaccine product containing only Neisseria meningitidis serogroup A and C antigens (medicinal product)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="871873006"/>
+        <display value="Meningokokken-Polysaccharid-Impfstoff A+C+W135+Y (Mencevax ACWY)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Vaccine product containing only Neisseria meningitidis serogroup A, C, W135 and Y antigens (medicinal product)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1971000221105"/>
+        <display value="Meningokokken-Konjugat-Impfstoff A+C+W135+Y (MenQuadfi, Menveo, Nimenrix)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Vaccine product containing only Neisseria meningitidis serogroup A, C, W135 and Y capsular polysaccharide conjugated antigens (medicinal product)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1981000221108"/>
+        <display value="Meningokokken-B-Impfstoff (Bexsero, Trumenba)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Vaccine product containing only Neisseria meningitidis serogroup B antigen (medicinal product)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="74964007"/>
+        <display value="-andere/sonstige-"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Other (qualifier value)"/>
+        </designation>
+      </concept>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+      <version value="2.1.0"/>
+      <concept>
+        <code value="ASKU"/>
+        <display value="asked but unknown"/>
+      </concept>
+      <concept>
+        <code value="NASK"/>
+        <display value="not asked"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

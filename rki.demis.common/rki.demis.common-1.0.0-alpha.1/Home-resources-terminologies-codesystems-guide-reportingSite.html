@@ -1,0 +1,1016 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <title>Implementierungsleitfaden für DEMIS Common (Basismeldeinhalte)</title>
+
+        <link rel="icon" href="static/styles/common/favicon.ico" />
+
+        <script src="static/styles/common/jquery/jquery.min.js"></script>
+        <script src="static/styles/common/bootstrap/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="static/styles/common/main.min.css" />
+        <link rel="stylesheet" href="static/styles/common/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="static/styles/common/rendering/rendering.min.css" />
+
+        <script src="static/styles/common/rendering/stu3TreeTable.min.js"></script>
+        <script src="static/styles/common/rendering/baseTreetable.min.js"></script>
+
+        <link rel="stylesheet" href="static/styles/treetable/style.css?v=1da167c05358000" />
+
+    </head>
+
+    <body>
+
+        <div id="ig-viewer">
+
+            <div class="ig-view-content">
+
+                <div id="ig-view-treetable">
+
+                    <div class="segment-default-header" role="banner" aria-label="Header">
+                        <div class="row">
+                            <header class="col-md-12" aria-hidden="true">
+                                <h1 class="title">
+                                    <b>Implementierungsleitfaden für DEMIS Common (Basismeldeinhalte)</b>
+                                </h1>
+                            </header>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid">
+                        <div id="guide-panel">
+                            <div class="tree-panel" role="navigation" aria-label="Main menu">
+                                
+
+<div class="tree-content">
+    <div>
+
+        <input data-val="true" data-val-required="The Id field is required." id="GuideId" name="Guide.Id" type="hidden" value="5033" />
+
+        <table id="treetable" class="treetable ig-treetable hidden">
+
+                    <tr data-id="Home"
+                        data-filepath="Home"
+                        data-serial-nr="2"
+                        data-is-folder="True"
+                        class="rootnode treenode">
+                        <td>
+                            <a href="Home.html">
+                                <span class="baseIcon resource"></span>
+                                <span title="Home">Home</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/guide-overIG.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/guide-overIG.guide.md"
+                        data-parentId="Home"
+                        data-serial-nr="6"
+                        class="treenode">
+                        <td>
+                            <a href="Home-guide-overIG.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="&#xDC;ber diesen Leitfaden">&#xDC;ber diesen Leitfaden</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/guide-overview.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/guide-overview.guide.md"
+                        data-parentId="Home"
+                        data-serial-nr="7"
+                        class="treenode">
+                        <td>
+                            <a href="Home-guide-overview.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Grundlagen und &#xDC;berblick">Grundlagen und &#xDC;berblick</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/guide-changelog.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/guide-changelog.guide.md"
+                        data-parentId="Home"
+                        data-serial-nr="8"
+                        class="treenode">
+                        <td>
+                            <a href="Home-guide-changelog.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="&#xC4;nderungshistorie">&#xC4;nderungshistorie</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/guide-hints.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/guide-hints.guide.md"
+                        data-parentId="Home"
+                        data-serial-nr="9"
+                        class="treenode">
+                        <td>
+                            <a href="Home-guide-hints.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Erg&#xE4;nzende Hinweise">Erg&#xE4;nzende Hinweise</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/guide-knownissues.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/guide-knownissues.guide.md"
+                        data-parentId="Home"
+                        data-serial-nr="10"
+                        class="treenode">
+                        <td>
+                            <a href="Home-guide-knownissues.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Known Issues">Known Issues</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/guide-links.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/guide-links.guide.md"
+                        data-parentId="Home"
+                        data-serial-nr="11"
+                        class="treenode">
+                        <td>
+                            <a href="Home-guide-links.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Weiterf&#xFC;hrende Informationen">Weiterf&#xFC;hrende Informationen</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources"
+                        data-is-folder="True"
+                        data-filepath="Home/resources"
+                        data-parentId="Home"
+                        data-serial-nr="12"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Ressourcen">Ressourcen</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/structuredefinitions"
+                        data-parentId="Home/resources"
+                        data-serial-nr="15"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="StructureDefinitions">StructureDefinitions</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Bundle"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/structuredefinitions/Bundle"
+                        data-parentId="Home/resources/structuredefinitions"
+                        data-serial-nr="18"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Bundle.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Meldevorgang (Bundle)">Meldevorgang (Bundle)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Bundle/guide-NotificationBundle.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Bundle/guide-NotificationBundle.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Bundle"
+                        data-serial-nr="20"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Bundle-guide-NotificationBundle.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Meldevorgang (NotificationBundle)">Meldevorgang (NotificationBundle)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Bundle/guide-ReceiptBundle.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Bundle/guide-ReceiptBundle.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Bundle"
+                        data-serial-nr="21"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Bundle-guide-ReceiptBundle.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Quittungs-Bundle (ReceiptBundle)">Quittungs-Bundle (ReceiptBundle)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Composition"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/structuredefinitions/Composition"
+                        data-parentId="Home/resources/structuredefinitions"
+                        data-serial-nr="22"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Composition.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Meldung (Notification)">Meldung (Notification)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Composition/guide-Notification.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Composition/guide-Notification.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Composition"
+                        data-serial-nr="24"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Composition-guide-Notification.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Meldung (Notification)">Meldung (Notification)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Composition/guide-NotificationReceipt.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Composition/guide-NotificationReceipt.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Composition"
+                        data-serial-nr="25"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Composition-guide-NotificationReceipt.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Meldequittung (NotificationReceipt)">Meldequittung (NotificationReceipt)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Organization"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/structuredefinitions/Organization"
+                        data-parentId="Home/resources/structuredefinitions"
+                        data-serial-nr="26"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Organization.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Einrichtung (Organization)">Einrichtung (Organization)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Organization/guide-NotifiedPersonFacility.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Organization/guide-NotifiedPersonFacility.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Organization"
+                        data-serial-nr="28"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Organization-guide-NotifiedPersonFacility.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Betroffenen-Einrichtung (NotifiedPersonFacility)">Betroffenen-Einrichtung (NotifiedPersonFacility)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Organization/guide-NotifierFacility.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Organization/guide-NotifierFacility.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Organization"
+                        data-serial-nr="29"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Organization-guide-NotifierFacility.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Melder-Einrichtung (NotifierFacility)">Melder-Einrichtung (NotifierFacility)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Organization/guide-SubmittingFacility.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Organization/guide-SubmittingFacility.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Organization"
+                        data-serial-nr="30"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Organization-guide-SubmittingFacility.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Einsender-Einrichtung (SubmittingFacility)">Einsender-Einrichtung (SubmittingFacility)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Organization/guide-TransmittingSite.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Organization/guide-TransmittingSite.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Organization"
+                        data-serial-nr="31"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Organization-guide-TransmittingSite.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="&#xDC;bermittlungsstelle (TransmittingSite)">&#xDC;bermittlungsstelle (TransmittingSite)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Patient"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/structuredefinitions/Patient"
+                        data-parentId="Home/resources/structuredefinitions"
+                        data-serial-nr="32"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Patient.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Betroffene Person (NotifedPerson)">Betroffene Person (NotifedPerson)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Patient/guide-NotifiedPerson.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Patient/guide-NotifiedPerson.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Patient"
+                        data-serial-nr="34"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Patient-guide-NotifiedPerson.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Betroffene Person (NotifiedPerson)">Betroffene Person (NotifiedPerson)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Patient/guide-NotifiedPersonNotByName.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Patient/guide-NotifiedPersonNotByName.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Patient"
+                        data-serial-nr="35"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Patient-guide-NotifiedPersonNotByName.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Betroffene Person nichtnamentlich (NotifiedPersonNotByName)">Betroffene Person nichtnamentlich (NotifiedPersonNotByName)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Practitioner"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/structuredefinitions/Practitioner"
+                        data-parentId="Home/resources/structuredefinitions"
+                        data-serial-nr="36"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Practitioner.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Person des Gesundheitsprozesses (Practitioner)">Person des Gesundheitsprozesses (Practitioner)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Practitioner/guide-Notifier.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Practitioner/guide-Notifier.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Practitioner"
+                        data-serial-nr="38"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Practitioner-guide-Notifier.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Melder (Notifier)">Melder (Notifier)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Practitioner/guide-SubmittingPerson.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Practitioner/guide-SubmittingPerson.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Practitioner"
+                        data-serial-nr="39"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Practitioner-guide-SubmittingPerson.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Einsender (SubmittingPerson)">Einsender (SubmittingPerson)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/PractitionerRole"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/structuredefinitions/PractitionerRole"
+                        data-parentId="Home/resources/structuredefinitions"
+                        data-serial-nr="40"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-PractitionerRole.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Rolle (PractitionerRole)">Rolle (PractitionerRole)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/PractitionerRole/guide-NotifierRole.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/PractitionerRole/guide-NotifierRole.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/PractitionerRole"
+                        data-serial-nr="42"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-PractitionerRole-guide-NotifierRole.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Melder-Rolle (NotifierRole)">Melder-Rolle (NotifierRole)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/PractitionerRole/guide-SubmittingRole.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/PractitionerRole/guide-SubmittingRole.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/PractitionerRole"
+                        data-serial-nr="43"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-PractitionerRole-guide-SubmittingRole.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Einsender-Rolle (SubmittingRole)">Einsender-Rolle (SubmittingRole)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/OperationOutcome"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/structuredefinitions/OperationOutcome"
+                        data-parentId="Home/resources/structuredefinitions"
+                        data-serial-nr="44"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-OperationOutcome.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Verarbeitungsergebnis (OperationOutcome)">Verarbeitungsergebnis (OperationOutcome)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/OperationOutcome/guide-ProcessNotificationResponse.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/OperationOutcome/guide-ProcessNotificationResponse.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/OperationOutcome"
+                        data-serial-nr="46"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-OperationOutcome-guide-ProcessNotificationResponse.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Response f&#xFC;r $process-notification (ProcessNotificationResponse)">Response f&#xFC;r $process-notification (ProcessNotificationResponse)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Parameters"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/structuredefinitions/Parameters"
+                        data-parentId="Home/resources/structuredefinitions"
+                        data-serial-nr="47"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Parameters.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Parameter (Parameters)">Parameter (Parameters)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Parameters/guide-processnotificationrequestparameters.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Parameters/guide-processnotificationrequestparameters.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Parameters"
+                        data-serial-nr="50"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Parameters-guide-processnotificationrequestparameters.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="ProcessNotificationRequestParameters">ProcessNotificationRequestParameters</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/structuredefinitions/Parameters/guide-processnotificationresponseparameters.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/structuredefinitions/Parameters/guide-processnotificationresponseparameters.guide.md"
+                        data-parentId="Home/resources/structuredefinitions/Parameters"
+                        data-serial-nr="51"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-structuredefinitions-Parameters-guide-processnotificationresponseparameters.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="ProcessNotificationResponseParameters">ProcessNotificationResponseParameters</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/terminologies"
+                        data-parentId="Home/resources"
+                        data-serial-nr="52"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Terminologien">Terminologien</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/codesystems"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/terminologies/codesystems"
+                        data-parentId="Home/resources/terminologies"
+                        data-serial-nr="55"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-codesystems.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="CodeSystems">CodeSystems</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/codesystems/guide-addressUse.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/codesystems/guide-addressUse.guide.md"
+                        data-parentId="Home/resources/terminologies/codesystems"
+                        data-serial-nr="58"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-codesystems-guide-addressUse.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Adressnutzung">Adressnutzung</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/codesystems/guide-country.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/codesystems/guide-country.guide.md"
+                        data-parentId="Home/resources/terminologies/codesystems"
+                        data-serial-nr="59"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-codesystems-guide-country.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Land">Land</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/codesystems/guide-organizationType.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/codesystems/guide-organizationType.guide.md"
+                        data-parentId="Home/resources/terminologies/codesystems"
+                        data-serial-nr="60"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-codesystems-guide-organizationType.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Einrichtungsart">Einrichtungsart</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/codesystems/guide-postalCode.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/codesystems/guide-postalCode.guide.md"
+                        data-parentId="Home/resources/terminologies/codesystems"
+                        data-serial-nr="61"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-codesystems-guide-postalCode.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Postleitzahl">Postleitzahl</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/codesystems/guide-reportingSite.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/codesystems/guide-reportingSite.guide.md"
+                        data-parentId="Home/resources/terminologies/codesystems"
+                        data-serial-nr="62"
+                        class="treenode selected">
+                        <td>
+                            <a href="Home-resources-terminologies-codesystems-guide-reportingSite.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="&#xDC;bermittlungsstelle">&#xDC;bermittlungsstelle</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/codesystems/guide-salutation.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/codesystems/guide-salutation.guide.md"
+                        data-parentId="Home/resources/terminologies/codesystems"
+                        data-serial-nr="63"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-codesystems-guide-salutation.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Anrede">Anrede</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/codesystems/guide-transmissionCategory.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/codesystems/guide-transmissionCategory.guide.md"
+                        data-parentId="Home/resources/terminologies/codesystems"
+                        data-serial-nr="64"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-codesystems-guide-transmissionCategory.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="SurvNet-&#xDC;bermittlungskategorie">SurvNet-&#xDC;bermittlungskategorie</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/valuesets"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/terminologies/valuesets"
+                        data-parentId="Home/resources/terminologies"
+                        data-serial-nr="65"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-valuesets.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="ValueSets">ValueSets</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/valuesets/guide-addressUse.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/valuesets/guide-addressUse.guide.md"
+                        data-parentId="Home/resources/terminologies/valuesets"
+                        data-serial-nr="68"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-valuesets-guide-addressUse.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Adressnutzung">Adressnutzung</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/valuesets/guide-answerSetAddressUse.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/valuesets/guide-answerSetAddressUse.guide.md"
+                        data-parentId="Home/resources/terminologies/valuesets"
+                        data-serial-nr="69"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-valuesets-guide-answerSetAddressUse.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Antwortm&#xF6;glichkeiten Adressnutzung">Antwortm&#xF6;glichkeiten Adressnutzung</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/valuesets/guide-country.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/valuesets/guide-country.guide.md"
+                        data-parentId="Home/resources/terminologies/valuesets"
+                        data-serial-nr="70"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-valuesets-guide-country.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Land">Land</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/valuesets/guide-organizationType.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/valuesets/guide-organizationType.guide.md"
+                        data-parentId="Home/resources/terminologies/valuesets"
+                        data-serial-nr="71"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-valuesets-guide-organizationType.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Einrichtungsart">Einrichtungsart</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/valuesets/guide-postalCode.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/valuesets/guide-postalCode.guide.md"
+                        data-parentId="Home/resources/terminologies/valuesets"
+                        data-serial-nr="72"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-valuesets-guide-postalCode.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Postleitzahl">Postleitzahl</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/valuesets/guide-reportingSite.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/valuesets/guide-reportingSite.guide.md"
+                        data-parentId="Home/resources/terminologies/valuesets"
+                        data-serial-nr="73"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-valuesets-guide-reportingSite.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="&#xDC;bermittlungsstelle">&#xDC;bermittlungsstelle</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/valuesets/guide-salutation.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/valuesets/guide-salutation.guide.md"
+                        data-parentId="Home/resources/terminologies/valuesets"
+                        data-serial-nr="74"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-valuesets-guide-salutation.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Anrede">Anrede</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/valuesets/guide-transmissionCategory.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/valuesets/guide-transmissionCategory.guide.md"
+                        data-parentId="Home/resources/terminologies/valuesets"
+                        data-serial-nr="75"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-valuesets-guide-transmissionCategory.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="SurvNet-&#xDC;bermittlungskategorie">SurvNet-&#xDC;bermittlungskategorie</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/conceptmaps"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/terminologies/conceptmaps"
+                        data-parentId="Home/resources/terminologies"
+                        data-serial-nr="76"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-conceptmaps.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="ConceptMaps">ConceptMaps</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/conceptmaps/guide-ISO3166CountryCodes2DEMISCountryCodes.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/conceptmaps/guide-ISO3166CountryCodes2DEMISCountryCodes.guide.md"
+                        data-parentId="Home/resources/terminologies/conceptmaps"
+                        data-serial-nr="79"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-conceptmaps-guide-ISO3166CountryCodes2DEMISCountryCodes.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="ISO3166CountryCodes2DEMISCountryCodes">ISO3166CountryCodes2DEMISCountryCodes</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/namingsystems"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/terminologies/namingsystems"
+                        data-parentId="Home/resources/terminologies"
+                        data-serial-nr="80"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-namingsystems.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="NamingSystems">NamingSystems</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/namingsystems/guide-DemisLaboratoryId.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/namingsystems/guide-DemisLaboratoryId.guide.md"
+                        data-parentId="Home/resources/terminologies/namingsystems"
+                        data-serial-nr="83"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-namingsystems-guide-DemisLaboratoryId.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="DemisLaboratoryId">DemisLaboratoryId</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/namingsystems/guide-DemisParticipantId.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/namingsystems/guide-DemisParticipantId.guide.md"
+                        data-parentId="Home/resources/terminologies/namingsystems"
+                        data-serial-nr="84"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-namingsystems-guide-DemisParticipantId.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="DemisParticipantId">DemisParticipantId</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/namingsystems/guide-NotificationBundleId.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/namingsystems/guide-NotificationBundleId.guide.md"
+                        data-parentId="Home/resources/terminologies/namingsystems"
+                        data-serial-nr="85"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-namingsystems-guide-NotificationBundleId.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="NotificationBundleId">NotificationBundleId</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/namingsystems/guide-NotificationId.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/namingsystems/guide-NotificationId.guide.md"
+                        data-parentId="Home/resources/terminologies/namingsystems"
+                        data-serial-nr="86"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-namingsystems-guide-NotificationId.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="NotificationId">NotificationId</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologies/namingsystems/guide-SendingServiceProvider.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologies/namingsystems/guide-SendingServiceProvider.guide.md"
+                        data-parentId="Home/resources/terminologies/namingsystems"
+                        data-serial-nr="87"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologies-namingsystems-guide-SendingServiceProvider.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="SendingServiceProvider">SendingServiceProvider</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/extensions"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/extensions"
+                        data-parentId="Home/resources"
+                        data-serial-nr="88"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-extensions.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Extensions">Extensions</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/extensions/guide-AddressUse.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/extensions/guide-AddressUse.guide.md"
+                        data-parentId="Home/resources/extensions"
+                        data-serial-nr="91"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-extensions-guide-AddressUse.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Adressnutzung">Adressnutzung</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/extensions/guide-Comment.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/extensions/guide-Comment.guide.md"
+                        data-parentId="Home/resources/extensions"
+                        data-serial-nr="92"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-extensions-guide-Comment.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Kommentar">Kommentar</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/extensions/guide-FacilityAddressNotifiedPerson.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/extensions/guide-FacilityAddressNotifiedPerson.guide.md"
+                        data-parentId="Home/resources/extensions"
+                        data-serial-nr="93"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-extensions-guide-FacilityAddressNotifiedPerson.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Einrichtungsadresse der betroffenen Person">Einrichtungsadresse der betroffenen Person</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/extensions/guide-Salutation.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/extensions/guide-Salutation.guide.md"
+                        data-parentId="Home/resources/extensions"
+                        data-serial-nr="94"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-extensions-guide-Salutation.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Anrede">Anrede</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/extensions/guide-ReceivedNotification.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/extensions/guide-ReceivedNotification.guide.md"
+                        data-parentId="Home/resources/extensions"
+                        data-serial-nr="95"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-extensions-guide-ReceivedNotification.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Vorgangsnummer (Id des gesendeten Meldevorgangs)">Vorgangsnummer (Id des gesendeten Meldevorgangs)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/extensions/guide-ReceptionTimestampType.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/extensions/guide-ReceptionTimestampType.guide.md"
+                        data-parentId="Home/resources/extensions"
+                        data-serial-nr="96"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-extensions-guide-ReceptionTimestampType.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Zeitstempel des Meldungseingangs">Zeitstempel des Meldungseingangs</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/extensions/guide-PseudonymRecordType.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/extensions/guide-PseudonymRecordType.guide.md"
+                        data-parentId="Home/resources/extensions"
+                        data-serial-nr="97"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-extensions-guide-PseudonymRecordType.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Pseudonym des Patientendatensatzes">Pseudonym des Patientendatensatzes</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/operationdefinitions"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/operationdefinitions"
+                        data-parentId="Home/resources"
+                        data-serial-nr="98"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-operationdefinitions.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="OperationDefinitions">OperationDefinitions</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/operationdefinitions/guide-ProcessNotification.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/operationdefinitions/guide-ProcessNotification.guide.md"
+                        data-parentId="Home/resources/operationdefinitions"
+                        data-serial-nr="101"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-operationdefinitions-guide-ProcessNotification.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="ProcessNotification">ProcessNotification</span>
+                            </a>
+                        </td>
+                    </tr>
+
+        </table>
+    </div>
+</div>
+
+<script type="text/javascript">
+    window.addEventListener('DOMContentLoaded', (event) => {
+
+        var resourceTreeTable = new BaseTreeTable();
+        resourceTreeTable.init("treetable");
+
+        var tree = document.getElementById("treetable");
+        tree.classList.remove("hidden");
+
+    });
+</script>
+
+                            </div>
+                            <div id="preview-content" class="preview-panel full-width" role="main" aria-label="Main content">
+                                
+
+<h4 id="ubermittlungsstelle">Übermittlungsstelle</h4>
+<p><a href="https://simplifier.net/rki.demis.common/%7Eresources?canonical=https://demis.rki.de/fhir/CodeSystem/reportingSite">https://demis.rki.de/fhir/CodeSystem/reportingSite</a></p>
+<p>Das CodeSystem enthält die Liste der Übermittlungsstellen.</p>
+<p><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system https://demis.rki.de/fhir/CodeSystem/reportingSite defines the following codes:</p><table class="codes"><tr><td><b>Code</b></td><td><b>Display</b></td></tr><tr><td>0.<a name="reportingSite-0.." /></td><td>-kein-</td><td /></tr><tr><td>1.<a name="reportingSite-1.." /></td><td>Robert Koch-Institut</td><td /></tr><tr><td>1.01.<a name="reportingSite-1..01.." /></td><td>Universitätsklinikum Schleswig Holstein (Campus Kiel / Inst. f. Infektionsmedizin)</td><td /></tr><tr><td>1.01.0.01.<a name="reportingSite-1..01..0..01.." /></td><td>Stadt Flensburg (Fachbereich 2 / Gesundheitsdienste)</td><td /></tr><tr><td>1.01.0.02.<a name="reportingSite-1..01..0..02.." /></td><td>Landeshauptstadt Kiel (Amt für Gesundheit)</td><td /></tr><tr><td>1.01.0.03.<a name="reportingSite-1..01..0..03.." /></td><td>Hansestadt Lübeck (Gesundheitsamt)</td><td /></tr><tr><td>1.01.0.04.<a name="reportingSite-1..01..0..04.." /></td><td>Stadt Neumünster (Gesundheitsamt)</td><td /></tr><tr><td>1.01.0.51.<a name="reportingSite-1..01..0..51.." /></td><td>Kreis Dithmarschen (Fachdienst Gesundheitsschutz)</td><td /></tr><tr><td>1.01.0.53.<a name="reportingSite-1..01..0..53.." /></td><td>Kreis Herzogtum Lauenburg (Gesundheitsamt)</td><td /></tr><tr><td>1.01.0.54.<a name="reportingSite-1..01..0..54.." /></td><td>Kreis Nordfriesland (Fachdienst Gesundheit(Gesundheitsamt))</td><td /></tr><tr><td>1.01.0.55.<a name="reportingSite-1..01..0..55.." /></td><td>Kreis Ostholstein (Fachdienst Gesundheit(Gesundheitsamt))</td><td /></tr><tr><td>1.01.0.56.<a name="reportingSite-1..01..0..56.." /></td><td>Kreisverwaltung Pinneberg (Fachdienst Gesundheit)</td><td /></tr><tr><td>1.01.0.57.<a name="reportingSite-1..01..0..57.." /></td><td>Kreis Plön (Amt für Gesundheit)</td><td /></tr><tr><td>1.01.0.58.<a name="reportingSite-1..01..0..58.." /></td><td>Kreis Rendsburg-Eckernförde (Fachdienst 4.3 Gesundheitsdienste)</td><td /></tr><tr><td>1.01.0.59.<a name="reportingSite-1..01..0..59.." /></td><td>Kreis Schleswig-Flensburg (Fachdienst Gesundheit)</td><td /></tr><tr><td>1.01.0.60.<a name="reportingSite-1..01..0..60.." /></td><td>Landkreis Segeberg (Fachbereich Gesundheit für Mensch und Tier)</td><td /></tr><tr><td>1.01.0.61.<a name="reportingSite-1..01..0..61.." /></td><td>Landkreis Steinburg (Gesundheitsamt)</td><td /></tr><tr><td>1.01.0.62.<a name="reportingSite-1..01..0..62.." /></td><td>Landkreis Stormarn (Fachdienst Gesundheit/ Gesundheitsamt)</td><td /></tr><tr><td>1.02.<a name="reportingSite-1..02.." /></td><td>Zentrum für Infektionsepidemiologie (Institut für Hygiene und Umwelt)</td><td /></tr><tr><td>1.02.0.01.<a name="reportingSite-1..02..0..01.." /></td><td>Bezirksamt Hamburg-Altona (Bezirksamt Altona)</td><td /></tr><tr><td>1.02.0.02.<a name="reportingSite-1..02..0..02.." /></td><td>Bezirksamt Hamburg-Bergedorf (Fachamt Gesundheit)</td><td /></tr><tr><td>1.02.0.03.<a name="reportingSite-1..02..0..03.." /></td><td>Bezirksamt Hamburg-Eimsbüttel (Gesundheits- und Umweltamt)</td><td /></tr><tr><td>1.02.0.04.<a name="reportingSite-1..02..0..04.." /></td><td>Bezirksamt Hamburg-Mitte (Gesundheits- und Umweltamt)</td><td /></tr><tr><td>1.02.0.05.<a name="reportingSite-1..02..0..05.." /></td><td>Bezirksamt Hamburg-Nord (Fachamt Gesundheit)</td><td /></tr><tr><td>1.02.0.06.<a name="reportingSite-1..02..0..06.." /></td><td>Bezirksamt Hamburg-Harburg (Bezirksamt Harburg)</td><td /></tr><tr><td>1.02.0.07.<a name="reportingSite-1..02..0..07.." /></td><td>Bezirksamt Hamburg-Wandsbek (Gesundheits- und Umweltamt)</td><td /></tr><tr><td>1.02.0.08.<a name="reportingSite-1..02..0..08.." /></td><td>HPHC (Hafenärztlicher Dienst)</td><td /></tr><tr><td>1.03.<a name="reportingSite-1..03.." /></td><td>Niedersächsisches Landesgesundheitsamt (Abt. Infektionsepidemiologie)</td><td /></tr><tr><td>1.03.1.01.<a name="reportingSite-1..03..1..01.." /></td><td>Stadt Braunschweig (Fachbereich Soziales und Gesundheit)</td><td /></tr><tr><td>1.03.1.02.<a name="reportingSite-1..03..1..02.." /></td><td>Stadt Salzgitter (Gesundheitsamt)</td><td /></tr><tr><td>1.03.1.03.<a name="reportingSite-1..03..1..03.." /></td><td>Stadt Wolfsburg (Gesundheitsamt)</td><td /></tr><tr><td>1.03.1.51.<a name="reportingSite-1..03..1..51.." /></td><td>Landkreis Gifhorn (Fachbereich Gesundheit)</td><td /></tr><tr><td>1.03.1.53.<a name="reportingSite-1..03..1..53.." /></td><td>Landkreis Goslar (Gesundheitsamt)</td><td /></tr><tr><td>1.03.1.54.<a name="reportingSite-1..03..1..54.." /></td><td>Landkreis Helmstedt (Geschäftsbereich Gesundheit)</td><td /></tr><tr><td>1.03.1.55.03.<a name="reportingSite-1..03..1..55..03.." /></td><td>Landkreis Northeim (Gesundheitswesen)</td><td /></tr><tr><td>1.03.1.57.<a name="reportingSite-1..03..1..57.." /></td><td>Landkreis Peine (Gesundheitsamt)</td><td /></tr><tr><td>1.03.1.58.<a name="reportingSite-1..03..1..58.." /></td><td>Landkreis Wolfenbüttel (Gesundheitsamt)</td><td /></tr><tr><td>1.03.1.59.<a name="reportingSite-1..03..1..59.." /></td><td>Stadt und Landkreis Göttingen (Fachbereich 53 Gesundheitsamt)</td><td /></tr><tr><td>1.03.2.41.<a name="reportingSite-1..03..2..41.." /></td><td>Region Hannover (Fachbereich Gesundheit)</td><td /></tr><tr><td>1.03.2.51.<a name="reportingSite-1..03..2..51.." /></td><td>Landkreis Diepholz (Fachdienst 53 Gesundheitsamt)</td><td /></tr><tr><td>1.03.2.52.<a name="reportingSite-1..03..2..52.." /></td><td>Landkreis Hameln-Pyrmont (Gesundheitsamt)</td><td /></tr><tr><td>1.03.2.54.<a name="reportingSite-1..03..2..54.." /></td><td>Landkreis Hildesheim (FD 409 Fachdienst Gesundheit)</td><td /></tr><tr><td>1.03.2.55.<a name="reportingSite-1..03..2..55.." /></td><td>Landkreis Holzminden (Gesundheitsamt)</td><td /></tr><tr><td>1.03.2.56.<a name="reportingSite-1..03..2..56.." /></td><td>Landkreis Nienburg (Weser) (FD 414 Sozialmedizin, Hygiene und Umwelt)</td><td /></tr><tr><td>1.03.2.57.01.<a name="reportingSite-1..03..2..57..01.." /></td><td>Landkreis Schaumburg (Gesundheitsamt)</td><td /></tr><tr><td>1.03.3.51.<a name="reportingSite-1..03..3..51.." /></td><td>Landkreis Celle (Gesundheitsamt)</td><td /></tr><tr><td>1.03.3.52.<a name="reportingSite-1..03..3..52.." /></td><td>Landkreis Cuxhaven (Gesundheitsamt)</td><td /></tr><tr><td>1.03.3.53.<a name="reportingSite-1..03..3..53.." /></td><td>Landkreis Harburg (Gesundheitsamt)</td><td /></tr><tr><td>1.03.3.54.<a name="reportingSite-1..03..3..54.." /></td><td>Landkreis Lüchow-Dannenberg (Gesundheitsamt)</td><td /></tr><tr><td>1.03.3.55.<a name="reportingSite-1..03..3..55.." /></td><td>Landkreis Lüneburg (Gesundheitsamt)</td><td /></tr><tr><td>1.03.3.56.<a name="reportingSite-1..03..3..56.." /></td><td>Landkreis Osterholz (Gesundheitsamt)</td><td /></tr><tr><td>1.03.3.57.<a name="reportingSite-1..03..3..57.." /></td><td>Landkreis Rotenburg (Gesundheitsamt)</td><td /></tr><tr><td>1.03.3.58.<a name="reportingSite-1..03..3..58.." /></td><td>Landkreis Heidekreis (Fachbereich Gesundheit)</td><td /></tr><tr><td>1.03.3.59.<a name="reportingSite-1..03..3..59.." /></td><td>Landkreis Stade (Gesundheitsamt)</td><td /></tr><tr><td>1.03.3.60.<a name="reportingSite-1..03..3..60.." /></td><td>Landkreis Uelzen (Gesundheitsamt)</td><td /></tr><tr><td>1.03.3.61.02.<a name="reportingSite-1..03..3..61..02.." /></td><td>Landkreis Verden (Fachdienst Gesundheit und Umweltmedizin)</td><td /></tr><tr><td>1.03.4.01.<a name="reportingSite-1..03..4..01.." /></td><td>Stadt Delmenhorst (Städt. Gesundheitsamt)</td><td /></tr><tr><td>1.03.4.02.<a name="reportingSite-1..03..4..02.." /></td><td>Stadt Emden (Fachdienst 553 - Gesundheit)</td><td /></tr><tr><td>1.03.4.03.<a name="reportingSite-1..03..4..03.." /></td><td>Stadt Oldenburg (Gesundheitsamt)</td><td /></tr><tr><td>1.03.4.05.<a name="reportingSite-1..03..4..05.." /></td><td>Stadt Wilhelmshaven (Gesundheitsamt)</td><td /></tr><tr><td>1.03.4.51.<a name="reportingSite-1..03..4..51.." /></td><td>Landkreis Ammerland (Gesundheitsamt)</td><td /></tr><tr><td>1.03.4.52.<a name="reportingSite-1..03..4..52.." /></td><td>Landkreis Aurich (Amt für Gesundheitswesen)</td><td /></tr><tr><td>1.03.4.53.<a name="reportingSite-1..03..4..53.." /></td><td>Landkreis Cloppenburg (Gesundheitsamt)</td><td /></tr><tr><td>1.03.4.54.<a name="reportingSite-1..03..4..54.." /></td><td>Landkreis Emsland (Gesundheitsamt)</td><td /></tr><tr><td>1.03.4.55.<a name="reportingSite-1..03..4..55.." /></td><td>Landkreis Friesland (Gesundheitsamt)</td><td /></tr><tr><td>1.03.4.56.<a name="reportingSite-1..03..4..56.." /></td><td>Landkreis Grafschaft Bentheim (Gesundheitsamt)</td><td /></tr><tr><td>1.03.4.57.<a name="reportingSite-1..03..4..57.." /></td><td>Landkreis Leer (Gesundheitsamt)</td><td /></tr><tr><td>1.03.4.58.<a name="reportingSite-1..03..4..58.." /></td><td>Landkreis Oldenburg (Gesundheitsamt)</td><td /></tr><tr><td>1.03.4.59.<a name="reportingSite-1..03..4..59.." /></td><td>Landkreis Osnabrück (Fachdienst Gesundheit)</td><td /></tr><tr><td>1.03.4.60.<a name="reportingSite-1..03..4..60.." /></td><td>Landkreis Vechta (Gesundheitsamt)</td><td /></tr><tr><td>1.03.4.61.<a name="reportingSite-1..03..4..61.." /></td><td>Landkreis Wesermarsch (Fachdienst Gesundheit)</td><td /></tr><tr><td>1.03.4.62.<a name="reportingSite-1..03..4..62.." /></td><td>Landkreis Wittmund (Gesundheitsamt)</td><td /></tr><tr><td>1.04.<a name="reportingSite-1..04.." /></td><td>GA Bremen, Abteilung 3</td><td /></tr><tr><td>1.04.0.11.<a name="reportingSite-1..04..0..11.." /></td><td>Stadt Bremen (Gesundheitsamt)</td><td /></tr><tr><td>1.04.0.12.<a name="reportingSite-1..04..0..12.." /></td><td>Stadt Bremerhaven (Magistrat/Gesundheitsamt)</td><td /></tr><tr><td>1.05.<a name="reportingSite-1..05.." /></td><td>Landeszentrum Gesundheit NRW (Infektiologie und Hygiene)</td><td /></tr><tr><td>1.05.1.11.<a name="reportingSite-1..05..1..11.." /></td><td>Stadt Düsseldorf (Gesundheitsamt)</td><td /></tr><tr><td>1.05.1.12.<a name="reportingSite-1..05..1..12.." /></td><td>Stadt Duisburg (Gesundheitsamt)</td><td /></tr><tr><td>1.05.1.13.<a name="reportingSite-1..05..1..13.." /></td><td>Stadt Essen (Gesundheitsamt)</td><td /></tr><tr><td>1.05.1.14.<a name="reportingSite-1..05..1..14.." /></td><td>Stadt Krefeld (Fachbereich 53 Gesundheit)</td><td /></tr><tr><td>1.05.1.16.<a name="reportingSite-1..05..1..16.." /></td><td>Stadt Mönchengladbach (Fachbereich 53 Gesundheitsamt)</td><td /></tr><tr><td>1.05.1.17.<a name="reportingSite-1..05..1..17.." /></td><td>Stadt Mülheim (Gesundheitsamt)</td><td /></tr><tr><td>1.05.1.19.<a name="reportingSite-1..05..1..19.." /></td><td>Stadt Oberhausen (städtischer Bereich Gesundheitswesen)</td><td /></tr><tr><td>1.05.1.20.<a name="reportingSite-1..05..1..20.." /></td><td>Stadt Remscheid (Gesundheitswesen)</td><td /></tr><tr><td>1.05.1.22.<a name="reportingSite-1..05..1..22.." /></td><td>Stadt Solingen (Stadtdienst Gesundheit)</td><td /></tr><tr><td>1.05.1.24.<a name="reportingSite-1..05..1..24.." /></td><td>Stadt Wuppertal (Gesundheitsamt)</td><td /></tr><tr><td>1.05.1.54.<a name="reportingSite-1..05..1..54.." /></td><td>Landkreis Kleve (Kreisgesundheitsamt)</td><td /></tr><tr><td>1.05.1.58.<a name="reportingSite-1..05..1..58.." /></td><td>Landkreis Mettmann (Gesundheitsamt)</td><td /></tr><tr><td>1.05.1.62.<a name="reportingSite-1..05..1..62.." /></td><td>Landkreis Rheinkreis Neuss (Gesundheitsamt)</td><td /></tr><tr><td>1.05.1.66.<a name="reportingSite-1..05..1..66.." /></td><td>Landkreis Viersen (Gesundheitsamt)</td><td /></tr><tr><td>1.05.1.70.<a name="reportingSite-1..05..1..70.." /></td><td>Landkreis Wesel (Fachbereich Gesundheitswesen)</td><td /></tr><tr><td>1.05.3.14.<a name="reportingSite-1..05..3..14.." /></td><td>Stadt Bonn (Amt 53 Gesundheitsamt)</td><td /></tr><tr><td>1.05.3.15.<a name="reportingSite-1..05..3..15.." /></td><td>Stadt Köln (Gesundheitsamt)</td><td /></tr><tr><td>1.05.3.16.<a name="reportingSite-1..05..3..16.." /></td><td>Stadt Leverkusen (Fachbereich 53 Medizinischer Dienst(MediLev))</td><td /></tr><tr><td>1.05.3.34.<a name="reportingSite-1..05..3..34.." /></td><td>StädteRegion Aachen (Gesundheitsamt (A53))</td><td /></tr><tr><td>1.05.3.58.<a name="reportingSite-1..05..3..58.." /></td><td>Kreis Düren (Gesundheitsamt)</td><td /></tr><tr><td>1.05.3.62.<a name="reportingSite-1..05..3..62.." /></td><td>Kreisverwaltung Rhein-Erft-Kreis (Gesundheitsamt)</td><td /></tr><tr><td>1.05.3.66.<a name="reportingSite-1..05..3..66.." /></td><td>Kreis Euskirchen (Abteilung Gesundheit)</td><td /></tr><tr><td>1.05.3.70.<a name="reportingSite-1..05..3..70.." /></td><td>Kreis Heinsberg (Gesundheitsamt)</td><td /></tr><tr><td>1.05.3.74.<a name="reportingSite-1..05..3..74.." /></td><td>Oberbergischer Kreis (Gesundheitsamt)</td><td /></tr><tr><td>1.05.3.78.<a name="reportingSite-1..05..3..78.." /></td><td>Rheinisch-Bergischer Kreis (Der Landrat)</td><td /></tr><tr><td>1.05.3.82.<a name="reportingSite-1..05..3..82.." /></td><td>Rhein-Sieg-Kreis (Der Landrat/Gesundheitsamt)</td><td /></tr><tr><td>1.05.5.12.<a name="reportingSite-1..05..5..12.." /></td><td>Stadt Bottrop (Gesundheitsamt)</td><td /></tr><tr><td>1.05.5.13.<a name="reportingSite-1..05..5..13.." /></td><td>Stadt Gelsenkirchen (Referat Gesundheit)</td><td /></tr><tr><td>1.05.5.15.<a name="reportingSite-1..05..5..15.." /></td><td>Stadt Münster (Amt für Gesundheit, Veterinär- und Lebensmittelangelegenheiten)</td><td /></tr><tr><td>1.05.5.54.<a name="reportingSite-1..05..5..54.." /></td><td>Kreis Borken (Fachbereich Gesundheit)</td><td /></tr><tr><td>1.05.5.58.<a name="reportingSite-1..05..5..58.." /></td><td>Kreis Coesfeld (Gesundheitsamt)</td><td /></tr><tr><td>1.05.5.62.<a name="reportingSite-1..05..5..62.." /></td><td>Kreis Recklinghausen (Fachdienst 53 Gesundheit)</td><td /></tr><tr><td>1.05.5.66.<a name="reportingSite-1..05..5..66.." /></td><td>Kreis Steinfurt (Gesundheitsamt)</td><td /></tr><tr><td>1.05.5.70.<a name="reportingSite-1..05..5..70.." /></td><td>Kreis-Warendorf (Gesundheitsamt)</td><td /></tr><tr><td>1.05.7.11.<a name="reportingSite-1..05..7..11.." /></td><td>Stadt Bielefeld (Gesundheits-, Veterinär- u. Lebensmittelüberwachungsamt)</td><td /></tr><tr><td>1.05.7.54.<a name="reportingSite-1..05..7..54.." /></td><td>Kreis Gütersloh (Abteilung Gesundheit)</td><td /></tr><tr><td>1.05.7.58.<a name="reportingSite-1..05..7..58.." /></td><td>Kreis Herford (53.3 Abt. Gesundheit)</td><td /></tr><tr><td>1.05.7.62.<a name="reportingSite-1..05..7..62.." /></td><td>Kreisverwaltung Höxter (Gesundheits- und Veterinärwesen)</td><td /></tr><tr><td>1.05.7.66.<a name="reportingSite-1..05..7..66.." /></td><td>Gesundheitsamt Kreis Lippe (FG 530 Gesundheit)</td><td /></tr><tr><td>1.05.7.70.<a name="reportingSite-1..05..7..70.." /></td><td>Kreis Minden-Lübbecke (Gesundheitsamt)</td><td /></tr><tr><td>1.05.7.74.<a name="reportingSite-1..05..7..74.." /></td><td>Kreis Paderborn (Gesundheitsamt)</td><td /></tr><tr><td>1.05.9.11.<a name="reportingSite-1..05..9..11.." /></td><td>Stadt Bochum (Gesundheitsamt)</td><td /></tr><tr><td>1.05.9.13.<a name="reportingSite-1..05..9..13.." /></td><td>Stadt Dortmund (Gesundheitsamt)</td><td /></tr><tr><td>1.05.9.14.<a name="reportingSite-1..05..9..14.." /></td><td>Stadt Hagen (Gesundheitsamt Rathaus II)</td><td /></tr><tr><td>1.05.9.15.<a name="reportingSite-1..05..9..15.." /></td><td>Stadt Hamm (Gesundheitsamt)</td><td /></tr><tr><td>1.05.9.16.<a name="reportingSite-1..05..9..16.." /></td><td>Stadt Herne (Fachbereich Gesundheit)</td><td /></tr><tr><td>1.05.9.54.<a name="reportingSite-1..05..9..54.." /></td><td>Landkreis Ennepe-Ruhr-Kreis (Fachbereich Soziales und Gesundheit)</td><td /></tr><tr><td>1.05.9.58.<a name="reportingSite-1..05..9..58.." /></td><td>Hochsauerlandkreis (Gesundheitsamt Fachdienst 37)</td><td /></tr><tr><td>1.05.9.62.<a name="reportingSite-1..05..9..62.." /></td><td>Märkischer Kreis (Gesundheitsamt)</td><td /></tr><tr><td>1.05.9.66.<a name="reportingSite-1..05..9..66.." /></td><td>Kreis Olpe (Fachdienst Gesundheit)</td><td /></tr><tr><td>1.05.9.70.<a name="reportingSite-1..05..9..70.." /></td><td>Kreis Siegen-Wittgenstein (Gesundheit und Verbraucherschutz)</td><td /></tr><tr><td>1.05.9.74.<a name="reportingSite-1..05..9..74.." /></td><td>Kreis Soest (Ordnung, Gesundheits- und Verbraucherschutz)</td><td /></tr><tr><td>1.05.9.78.<a name="reportingSite-1..05..9..78.." /></td><td>Kreis Unna (Gesundheit und Verbraucherschutz)</td><td /></tr><tr><td>1.06.<a name="reportingSite-1..06.." /></td><td>Hessisches Landesprüfungs- und Untersuchungsamt im Gesundheitswesen</td><td /></tr><tr><td>1.06.4.12.<a name="reportingSite-1..06..4..12.." /></td><td>Stadt Frankfurt am Main (Gesundheitsamt)</td><td /></tr><tr><td>1.06.4.13.<a name="reportingSite-1..06..4..13.." /></td><td>Stadt Offenbach (Gesundheitsamt)</td><td /></tr><tr><td>1.06.4.14.<a name="reportingSite-1..06..4..14.." /></td><td>Landeshauptstadt Wiesbaden (Gesundheitsamt)</td><td /></tr><tr><td>1.06.4.31.<a name="reportingSite-1..06..4..31.." /></td><td>Kreisausschuss Kreis Bergstraße (Fachdienst Gesundheitswesen)</td><td /></tr><tr><td>1.06.4.32.<a name="reportingSite-1..06..4..32.." /></td><td>Landkreis Darmstadt-Dieburg (Gesundheitsamt)</td><td /></tr><tr><td>1.06.4.33.<a name="reportingSite-1..06..4..33.." /></td><td>Kreis Groß-Gerau (Der Kreisausschuß)</td><td /></tr><tr><td>1.06.4.34.<a name="reportingSite-1..06..4..34.." /></td><td>Kreisausschuss Hochtaunuskreis (Fachbereich Gesundheitsdienste)</td><td /></tr><tr><td>1.06.4.35.<a name="reportingSite-1..06..4..35.." /></td><td>Kreis Main-Kinzig (Gesundheitsamt Hygiene u. Umwelzmedizin)</td><td /></tr><tr><td>1.06.4.36.<a name="reportingSite-1..06..4..36.." /></td><td>Kreis Main-Taunus (Gesundheitsamt)</td><td /></tr><tr><td>1.06.4.37.<a name="reportingSite-1..06..4..37.." /></td><td>Kreisausschuss Odenwaldkreis (Gesundheitsamt)</td><td /></tr><tr><td>1.06.4.38.<a name="reportingSite-1..06..4..38.." /></td><td>Kreis Offenbach (FD Gefahrenabwehr- und Gesundheitszentrum)</td><td /></tr><tr><td>1.06.4.39.<a name="reportingSite-1..06..4..39.." /></td><td>Kreisausschuss Rheingau-Taunus (Gesundheitsamt)</td><td /></tr><tr><td>1.06.4.40.<a name="reportingSite-1..06..4..40.." /></td><td>Wetteraukreis (Fachdienstes Gesundheit und Gefahrenabwehr)</td><td /></tr><tr><td>1.06.5.31.<a name="reportingSite-1..06..5..31.." /></td><td>Landkreis Gießen (Gesundheit)</td><td /></tr><tr><td>1.06.5.32.<a name="reportingSite-1..06..5..32.." /></td><td>Kreisausschuß des Lahn-Dill-Kreises (Gesundheitsamt)</td><td /></tr><tr><td>1.06.5.33.<a name="reportingSite-1..06..5..33.." /></td><td>Kreisausschuss Limburg-Weilburg (Gesundheitsamt Dienststelle Limburg)</td><td /></tr><tr><td>1.06.5.33.01.<a name="reportingSite-1..06..5..33..01.." /></td><td>Kreisausschuss Limburg-Weilburg (Gesundheitsamt Dienststelle Weilburg)</td><td /></tr><tr><td>1.06.5.34.<a name="reportingSite-1..06..5..34.." /></td><td>Kreisausschuss Marburg-Biedenkopf (Fachbereich Gesundheitsamt)</td><td /></tr><tr><td>1.06.5.35.<a name="reportingSite-1..06..5..35.." /></td><td>Landkreis Vogelsbergkreis (Gesundheitsamt)</td><td /></tr><tr><td>1.06.6.11.<a name="reportingSite-1..06..6..11.." /></td><td>Region Kassel (Gesundheitsamt)</td><td /></tr><tr><td>1.06.6.31.<a name="reportingSite-1..06..6..31.." /></td><td>Kreisausschuss Fulda (Gesundheitsamt)</td><td /></tr><tr><td>1.06.6.32.<a name="reportingSite-1..06..6..32.." /></td><td>Kreisausschuss Hersfeld-Rotenburg (Fachdienst Gesundheit)</td><td /></tr><tr><td>1.06.6.34.<a name="reportingSite-1..06..6..34.." /></td><td>Kreisausschuss des Schwalm-Eder-Kreises (Fachbereich 53 - Gesundheit, Verbraucherschutz und Veterinärwesen)</td><td /></tr><tr><td>1.06.6.35.<a name="reportingSite-1..06..6..35.." /></td><td>Kreisausschuss des Landkreises Waldeck-Frankenberg (Fachdienst 5.1 Gesundheit)</td><td /></tr><tr><td>1.06.6.36.<a name="reportingSite-1..06..6..36.." /></td><td>Kreisausschuss Werra-Meißner (Fachbereich Gesundheit, Verbraucherschutz und Veterinärwesen)</td><td /></tr><tr><td>1.07.<a name="reportingSite-1..07.." /></td><td>LUA-Rheinland-Pfalz (Institut für Hygiene und Infektionsschutz)</td><td /></tr><tr><td>1.07.0.52.<a name="reportingSite-1..07..0..52.." /></td><td>Kreisverwaltung Mayen-Koblenz (Gesundheitsamt Nebenstelle)</td><td /></tr><tr><td>1.07.0.53.<a name="reportingSite-1..07..0..53.." /></td><td>Kreisverwaltung Rhein-Lahn Kreis (Abt. 7 Gesundheitswesen)</td><td /></tr><tr><td>1.07.0.54.<a name="reportingSite-1..07..0..54.." /></td><td>Kreisverwaltung Bad Kreuznach (Amt 7: Gesundheitsamt)</td><td /></tr><tr><td>1.07.0.56.<a name="reportingSite-1..07..0..56.." /></td><td>Kreisverwaltung Ahrweiler (Abt. 2.6 - Gesundheitsamt)</td><td /></tr><tr><td>1.07.0.58.<a name="reportingSite-1..07..0..58.." /></td><td>Kreisverwaltung  Eifelkreis Bitburg-Prüm (Amt 14 Gesundheitswesen)</td><td /></tr><tr><td>1.07.0.59.<a name="reportingSite-1..07..0..59.." /></td><td>Kreisverwaltung Cochem-Zell (Abt. Gesundheitsamt)</td><td /></tr><tr><td>1.07.0.60.<a name="reportingSite-1..07..0..60.." /></td><td>Kreisverwaltung Vulkaneifel (Gesundheitsamt)</td><td /></tr><tr><td>1.07.0.63.<a name="reportingSite-1..07..0..63.." /></td><td>Kreisverwaltung Germersheim (FB 43 Gesundheit, Verbraucherschutz)</td><td /></tr><tr><td>1.07.0.64.<a name="reportingSite-1..07..0..64.." /></td><td>Kreisverwaltung Birkenfeld (Gesundheitsamt - Abt. 5)</td><td /></tr><tr><td>1.07.0.65.<a name="reportingSite-1..07..0..65.." /></td><td>Kreisverwaltung Kaiserslautern (Gesundheitsamt)</td><td /></tr><tr><td>1.07.0.66.<a name="reportingSite-1..07..0..66.." /></td><td>Kreisverwaltung Donnersbergkreis (Abt. 7 Umweltschutz, Gesundheit)</td><td /></tr><tr><td>1.07.0.67.<a name="reportingSite-1..07..0..67.." /></td><td>Kreisverwaltung Mayen-Koblenz (Abt. Gesundheitsamt)</td><td /></tr><tr><td>1.07.0.68.<a name="reportingSite-1..07..0..68.." /></td><td>Kreisverwaltung Kusel (Gesundheitsamt)</td><td /></tr><tr><td>1.07.0.69.<a name="reportingSite-1..07..0..69.." /></td><td>Landkreis Südliche Weinstraße / Landau (Amt für Gesundheit und Soziales)</td><td /></tr><tr><td>1.07.0.70.<a name="reportingSite-1..07..0..70.." /></td><td>Kreisverwaltung Rhein-Pfalz-Kreis (Gesundheitsamt)</td><td /></tr><tr><td>1.07.0.71.<a name="reportingSite-1..07..0..71.." /></td><td>Kreisverwaltung Mainz-Bingen (Amt für Veterinär- und Gesundheitswesen)</td><td /></tr><tr><td>1.07.0.72.<a name="reportingSite-1..07..0..72.." /></td><td>Kreisverwaltung Mayen-Koblenz (Gesundheitsamt Nebenstelle)</td><td /></tr><tr><td>1.07.0.73.<a name="reportingSite-1..07..0..73.." /></td><td>Kreisverwaltung Westerwaldkreises (Gesundheitsamt)</td><td /></tr><tr><td>1.07.0.74.<a name="reportingSite-1..07..0..74.." /></td><td>Kreisverwaltung Bad Dürkheim/Neustadt (Abteilung 7: Gesundheitsamt)</td><td /></tr><tr><td>1.07.0.75.<a name="reportingSite-1..07..0..75.." /></td><td>Kreisverwaltung Neuwied (Abt. 11 Gesundheitsamt)</td><td /></tr><tr><td>1.07.0.76.<a name="reportingSite-1..07..0..76.." /></td><td>Kreisverwaltung Südwestpfalz/Pirmasens (Abt. Gesundheitswesen)</td><td /></tr><tr><td>1.07.0.80.<a name="reportingSite-1..07..0..80.." /></td><td>Kreisverwaltung Rhein-Hunsrück-Kreis/Simmern (Fachbereich Gesundheitsamt)</td><td /></tr><tr><td>1.07.0.82.<a name="reportingSite-1..07..0..82.." /></td><td>Kreisverwaltung Trier-Saarburg (Abt. Gesundheitsamt)</td><td /></tr><tr><td>1.07.0.83.<a name="reportingSite-1..07..0..83.." /></td><td>Kreisverwaltung Bernkastel-Wittlich (FB33 Gesundheit)</td><td /></tr><tr><td>1.07.0.84.<a name="reportingSite-1..07..0..84.." /></td><td>Kreisverwaltung Alzey-Worms (Abt 7 - Referat Gesundheitsamt)</td><td /></tr><tr><td>1.07.1.32.<a name="reportingSite-1..07..1..32.." /></td><td>Kreisverwaltung Altenkirchen (Gesundheitsamt)</td><td /></tr><tr><td>1.08.<a name="reportingSite-1..08.." /></td><td>Regierungspräsidium Stuttgart (Referat 95 - Epidemiologie und Gesundheitsberichterstattung)</td><td /></tr><tr><td>1.08.1.11.<a name="reportingSite-1..08..1..11.." /></td><td>Landeshauptstadt Stuttgart (Gesundheitsamt)</td><td /></tr><tr><td>1.08.1.15.<a name="reportingSite-1..08..1..15.." /></td><td>Landratsamt Böblingen (Gesundheitsamt)</td><td /></tr><tr><td>1.08.1.16.<a name="reportingSite-1..08..1..16.." /></td><td>Landratsamt Esslingen (Gesundheitsamt)</td><td /></tr><tr><td>1.08.1.17.<a name="reportingSite-1..08..1..17.." /></td><td>Landratsamt Göppingen (Gesundheitsamt)</td><td /></tr><tr><td>1.08.1.18.<a name="reportingSite-1..08..1..18.." /></td><td>Landratsamt Ludwigsburg (Gesundheitsamt)</td><td /></tr><tr><td>1.08.1.19.<a name="reportingSite-1..08..1..19.." /></td><td>Landratsamt Rems-Murr-Kreis (Geschäftsbereich Gesundheit)</td><td /></tr><tr><td>1.08.1.21.<a name="reportingSite-1..08..1..21.." /></td><td>Stadt Heilbronn (Städtisches Gesundheitsamt)</td><td /></tr><tr><td>1.08.1.25.<a name="reportingSite-1..08..1..25.." /></td><td>Landratsamt Heilbronn (Gesundheitsamt)</td><td /></tr><tr><td>1.08.1.26.<a name="reportingSite-1..08..1..26.." /></td><td>Landratsamt Hohenlohekreis (Gesundheitsamt)</td><td /></tr><tr><td>1.08.1.27.<a name="reportingSite-1..08..1..27.." /></td><td>Landratsamt Schwäbisch Hall (Gesundheitsamt)</td><td /></tr><tr><td>1.08.1.28.<a name="reportingSite-1..08..1..28.." /></td><td>Landratsamt Main-Tauber-Kreis (Gesundheitsamt)</td><td /></tr><tr><td>1.08.1.35.<a name="reportingSite-1..08..1..35.." /></td><td>Landratsamt Heidenheim (Fachbereich Gesundheit)</td><td /></tr><tr><td>1.08.1.36.<a name="reportingSite-1..08..1..36.." /></td><td>Landratsamt Ostalbkreis (Gesundheitsamt)</td><td /></tr><tr><td>1.08.2.15.<a name="reportingSite-1..08..2..15.." /></td><td>Landratsamt Karlsruhe (Gesundheitsamt)</td><td /></tr><tr><td>1.08.2.16.<a name="reportingSite-1..08..2..16.." /></td><td>Landratsamt Rastatt (Gesundheitsamt)</td><td /></tr><tr><td>1.08.2.22.<a name="reportingSite-1..08..2..22.." /></td><td>Stadt Mannheim (Fachbereich Gesundheit)</td><td /></tr><tr><td>1.08.2.25.<a name="reportingSite-1..08..2..25.." /></td><td>Landratsamt Neckar-Odenwald-Kreis (Gesundheitsamt)</td><td /></tr><tr><td>1.08.2.26.<a name="reportingSite-1..08..2..26.." /></td><td>Landratsamt Rhein-Neckar-Kreis (Gesundheitsamt)</td><td /></tr><tr><td>1.08.2.35.<a name="reportingSite-1..08..2..35.." /></td><td>Landratsamt Calw (Abt. 42 Gesundheit und Versorgung)</td><td /></tr><tr><td>1.08.2.36.<a name="reportingSite-1..08..2..36.." /></td><td>Landratsamt Enzkreis (Gesundheitsamt)</td><td /></tr><tr><td>1.08.2.37.<a name="reportingSite-1..08..2..37.." /></td><td>Landratsamt Freudenstadt (Gesundheitsamt)</td><td /></tr><tr><td>1.08.3.15.<a name="reportingSite-1..08..3..15.." /></td><td>Landratsamt Breisgau-Hochschwarzwald (Gesundheitsamt)</td><td /></tr><tr><td>1.08.3.16.<a name="reportingSite-1..08..3..16.." /></td><td>Landratsamt Emmendingen (Gesundheitsamt)</td><td /></tr><tr><td>1.08.3.17.<a name="reportingSite-1..08..3..17.." /></td><td>Landratsamt Ortenaukreis (Gesundheitsamt)</td><td /></tr><tr><td>1.08.3.25.<a name="reportingSite-1..08..3..25.." /></td><td>Landratsamt Rottweil (Gesundheitsamt)</td><td /></tr><tr><td>1.08.3.26.<a name="reportingSite-1..08..3..26.." /></td><td>Landratsamt Schwarzwald-Baar-Kreis (Gesundheitsamt)</td><td /></tr><tr><td>1.08.3.27.<a name="reportingSite-1..08..3..27.." /></td><td>Landratsamt Tuttlingen (Gesundheitsamt (Amt 42))</td><td /></tr><tr><td>1.08.3.35.<a name="reportingSite-1..08..3..35.." /></td><td>Landratsamt Konstanz (Amt für Gesundheit und Versorgung)</td><td /></tr><tr><td>1.08.3.36.<a name="reportingSite-1..08..3..36.." /></td><td>Landratsamt Lörrach (Fachbereich Gesundheit)</td><td /></tr><tr><td>1.08.3.37.<a name="reportingSite-1..08..3..37.." /></td><td>Landratsamt Waldshut (Gesundheitsamt)</td><td /></tr><tr><td>1.08.4.15.<a name="reportingSite-1..08..4..15.." /></td><td>Landratsamt Reutlingen (Kreisgesundheitsamt)</td><td /></tr><tr><td>1.08.4.16.<a name="reportingSite-1..08..4..16.." /></td><td>Landratsamt Tübingen (Abteilung 33 Gesundheit)</td><td /></tr><tr><td>1.08.4.17.<a name="reportingSite-1..08..4..17.." /></td><td>Landratsamt Zollernalbkreis (Gesundheitsamt)</td><td /></tr><tr><td>1.08.4.25.<a name="reportingSite-1..08..4..25.." /></td><td>Landratsamt Alb-Donau-Kreis (Fachdienst Gesundheit)</td><td /></tr><tr><td>1.08.4.26.<a name="reportingSite-1..08..4..26.." /></td><td>Landratsamt Biberach (Kreisgesundheitsamt)</td><td /></tr><tr><td>1.08.4.35.<a name="reportingSite-1..08..4..35.." /></td><td>Landratsamt Bodenseekreis (Gesundheitsamt)</td><td /></tr><tr><td>1.08.4.36.<a name="reportingSite-1..08..4..36.." /></td><td>Landratsamt Ravensburg (Gesundheitsamt)</td><td /></tr><tr><td>1.08.4.37.<a name="reportingSite-1..08..4..37.." /></td><td>Landratsamt Sigmaringen (Fachbereich Gesundheit)</td><td /></tr><tr><td>1.09.<a name="reportingSite-1..09.." /></td><td>Bayerisches Landesamt für Gesundheit und Lebensmittelsicherheit</td><td /></tr><tr><td>1.09.1.61.<a name="reportingSite-1..09..1..61.." /></td><td>Stadt Ingolstadt (Gesundheitsamt)</td><td /></tr><tr><td>1.09.1.62.<a name="reportingSite-1..09..1..62.." /></td><td>Landeshauptstadt München (Referat für Gesundheit und Umwelt)</td><td /></tr><tr><td>1.09.1.71.<a name="reportingSite-1..09..1..71.." /></td><td>Landratsamt Altötting (Gesundheits- und Veterinärwesen)</td><td /></tr><tr><td>1.09.1.72.<a name="reportingSite-1..09..1..72.." /></td><td>Landratsamt Berchtesgadener Land (Gesundheitsamt)</td><td /></tr><tr><td>1.09.1.73.02.<a name="reportingSite-1..09..1..73..02.." /></td><td>Landkreis Bad Tölz - Wolfratshausen (Landratsamt)</td><td /></tr><tr><td>1.09.1.74.<a name="reportingSite-1..09..1..74.." /></td><td>Landratsamt Dachau (Gesundheitsamt)</td><td /></tr><tr><td>1.09.1.75.<a name="reportingSite-1..09..1..75.." /></td><td>Landratsamt Ebersberg (Gesundheitsamt)</td><td /></tr><tr><td>1.09.1.76.<a name="reportingSite-1..09..1..76.." /></td><td>Landratsamt Eichstätt (Gesundheitswesen)</td><td /></tr><tr><td>1.09.1.77.<a name="reportingSite-1..09..1..77.." /></td><td>Landratsamt Erding (Abteilung 5 - Gesundheitsamt)</td><td /></tr><tr><td>1.09.1.78.<a name="reportingSite-1..09..1..78.." /></td><td>Landratsamt Freising (Gesundheitsamt Freising)</td><td /></tr><tr><td>1.09.1.79.<a name="reportingSite-1..09..1..79.." /></td><td>Landratsamt Fürstenfeldbruck (Gesundheitsamt)</td><td /></tr><tr><td>1.09.1.80.<a name="reportingSite-1..09..1..80.." /></td><td>Landratsamt Garmisch-Partenkirchen (Gesundheitsamt Garmisch-Partenkirchen)</td><td /></tr><tr><td>1.09.1.81.<a name="reportingSite-1..09..1..81.." /></td><td>Landkreis Landsberg a.Lech (Landratsamt Landsberg am Lech - Außenstelle 2)</td><td /></tr><tr><td>1.09.1.82.<a name="reportingSite-1..09..1..82.." /></td><td>Landratsamt Miesbach (Fachbereich 43 Gesundheitsamt)</td><td /></tr><tr><td>1.09.1.83.<a name="reportingSite-1..09..1..83.." /></td><td>Landratsamt Mühldorf am Inn (Gesundheitsamt)</td><td /></tr><tr><td>1.09.1.84.<a name="reportingSite-1..09..1..84.." /></td><td>Landratsamt München (Abteilung 4 - Öffentliches Gesundheits- und Veterinärwesen)</td><td /></tr><tr><td>1.09.1.85.01.<a name="reportingSite-1..09..1..85..01.." /></td><td>Landratsamt Neuburg-Schrobenhausen (Gesundheitsamt)</td><td /></tr><tr><td>1.09.1.86.<a name="reportingSite-1..09..1..86.." /></td><td>Landratsamt Pfaffenhofen (Gesundheitsamt)</td><td /></tr><tr><td>1.09.1.87.<a name="reportingSite-1..09..1..87.." /></td><td>Landratsamt Rosenheim (Staatliches Gesundheitsamt)</td><td /></tr><tr><td>1.09.1.88.<a name="reportingSite-1..09..1..88.." /></td><td>Landratsamt Starnberg (Fachbereich 32 Gesundheitswesen)</td><td /></tr><tr><td>1.09.1.89.<a name="reportingSite-1..09..1..89.." /></td><td>Landratsamt Traunstein (Gesundheitsamt)</td><td /></tr><tr><td>1.09.1.90.<a name="reportingSite-1..09..1..90.." /></td><td>Landratsamt Weilheim-Schongau (Abteilung 6 - Gesundheitsamt)</td><td /></tr><tr><td>1.09.2.71.<a name="reportingSite-1..09..2..71.." /></td><td>Landratsamt Deggendorf (Gesundheitswesen)</td><td /></tr><tr><td>1.09.2.72.<a name="reportingSite-1..09..2..72.." /></td><td>Landratsamt Freyung-Grafenau (Gesundheitsamt)</td><td /></tr><tr><td>1.09.2.73.<a name="reportingSite-1..09..2..73.." /></td><td>Landratsamt Kelheim (Gesundheitsabteilung)</td><td /></tr><tr><td>1.09.2.74.<a name="reportingSite-1..09..2..74.." /></td><td>Landratsamt Landshut (Gesundheitsamt)</td><td /></tr><tr><td>1.09.2.75.<a name="reportingSite-1..09..2..75.." /></td><td>Landratsamt Passau (Gesundheitsamt)</td><td /></tr><tr><td>1.09.2.76.<a name="reportingSite-1..09..2..76.." /></td><td>Landratsamt Regen (Gesundheitsamt)</td><td /></tr><tr><td>1.09.2.77.<a name="reportingSite-1..09..2..77.." /></td><td>Landratsamt Rottal-Inn (Abt. 4 Gesundheits-und Veterinärwesen)</td><td /></tr><tr><td>1.09.2.78.<a name="reportingSite-1..09..2..78.." /></td><td>Landratsamt Straubing-Bogen (Abteilung Gesundheitswesen)</td><td /></tr><tr><td>1.09.2.79.<a name="reportingSite-1..09..2..79.." /></td><td>Landratsamt Dingolfing-Landau (Gesundheitsamt)</td><td /></tr><tr><td>1.09.3.61.01.<a name="reportingSite-1..09..3..61..01.." /></td><td>Landratsamt Amberg-Sulzbach (Gesundheitsamt)</td><td /></tr><tr><td>1.09.3.72.<a name="reportingSite-1..09..3..72.." /></td><td>Landratsamt Cham (Gesundheitswesen)</td><td /></tr><tr><td>1.09.3.73.<a name="reportingSite-1..09..3..73.." /></td><td>Landratsamt Neumarkt i.d.Oberpfalz (Gesundheitsamt)</td><td /></tr><tr><td>1.09.3.74.<a name="reportingSite-1..09..3..74.." /></td><td>Landratsamt Neustadt a. d. Waldnaab/ Weiden (Abteilung Gesundheitswesen)</td><td /></tr><tr><td>1.09.3.75.<a name="reportingSite-1..09..3..75.." /></td><td>Landratsamt Regensburg (Gesundheitsamt)</td><td /></tr><tr><td>1.09.3.76.01.<a name="reportingSite-1..09..3..76..01.." /></td><td>Landratsamt Schwandorf (Gesundheitsamt)</td><td /></tr><tr><td>1.09.3.77.<a name="reportingSite-1..09..3..77.." /></td><td>Landratsamt Tirschenreuth (Gesundheitsamt)</td><td /></tr><tr><td>1.09.4.71.<a name="reportingSite-1..09..4..71.." /></td><td>Landratsamt Bamberg (Fachbereich 23 Gesundheitswesen)</td><td /></tr><tr><td>1.09.4.72.<a name="reportingSite-1..09..4..72.." /></td><td>Landratsamt Bayreuth (Abteilung Gesundheitswesen)</td><td /></tr><tr><td>1.09.4.73.<a name="reportingSite-1..09..4..73.." /></td><td>Landratsamt Coburg (FB 32 Gesundheit)</td><td /></tr><tr><td>1.09.4.74.<a name="reportingSite-1..09..4..74.." /></td><td>Landratsamt Forchheim (Gesundheitsamt)</td><td /></tr><tr><td>1.09.4.75.<a name="reportingSite-1..09..4..75.." /></td><td>Landratsamt Hof (Abt. 7 Gesundheitswesen)</td><td /></tr><tr><td>1.09.4.76.<a name="reportingSite-1..09..4..76.." /></td><td>Landratsamt Kronach (Sachgebiet 36 - Gesundheitsamt)</td><td /></tr><tr><td>1.09.4.77.<a name="reportingSite-1..09..4..77.." /></td><td>Landratsamt Kulmbach (Gesundheitsamt)</td><td /></tr><tr><td>1.09.4.78.<a name="reportingSite-1..09..4..78.." /></td><td>Landratsamt Lichtenfels (Abt. Gesundheitswesen)</td><td /></tr><tr><td>1.09.4.79.<a name="reportingSite-1..09..4..79.." /></td><td>Landratsamt Wunsiedel i.Fichtelgeb. (Fachbereich Gesundheitswesen)</td><td /></tr><tr><td>1.09.5.61.<a name="reportingSite-1..09..5..61.." /></td><td>Landratsamt Ansbach (Gesundheitsamt)</td><td /></tr><tr><td>1.09.5.64.<a name="reportingSite-1..09..5..64.." /></td><td>Stadt Nürnberg (Gesundheitsamt)</td><td /></tr><tr><td>1.09.5.72.01.<a name="reportingSite-1..09..5..72..01.." /></td><td>Landratsamt Erlangen-Höchstadt (Gesundheitsamt)</td><td /></tr><tr><td>1.09.5.73.<a name="reportingSite-1..09..5..73.." /></td><td>Landratsamt Fürth (Gesundheitsamt)</td><td /></tr><tr><td>1.09.5.74.<a name="reportingSite-1..09..5..74.." /></td><td>Landratsamt Nürnberger Land (Gesundheitsamt)</td><td /></tr><tr><td>1.09.5.75.<a name="reportingSite-1..09..5..75.." /></td><td>Landratsamt Neustadt a.d.Aisch-Bad Windsheim (Gesundheitsamt)</td><td /></tr><tr><td>1.09.5.76.<a name="reportingSite-1..09..5..76.." /></td><td>Landratsamt Roth (Gesundheitsamt)</td><td /></tr><tr><td>1.09.5.77.<a name="reportingSite-1..09..5..77.." /></td><td>Landratsamt Weißenburg-Gunzenhausen (Gesundheitsamt)</td><td /></tr><tr><td>1.09.6.71.<a name="reportingSite-1..09..6..71.." /></td><td>Landratsamt Aschaffenburg (Abteilung 5 - Gesundheitsamt)</td><td /></tr><tr><td>1.09.6.72.<a name="reportingSite-1..09..6..72.." /></td><td>Landkreis Bad Kissingen (Staatliches Gesundheitsamt)</td><td /></tr><tr><td>1.09.6.73.<a name="reportingSite-1..09..6..73.." /></td><td>Landkreis Rhön-Grabfeld (3.4 Gesundheitswesen)</td><td /></tr><tr><td>1.09.6.74.<a name="reportingSite-1..09..6..74.." /></td><td>Landratsamt Hassberge (Fachabteilung II/A)</td><td /></tr><tr><td>1.09.6.75.<a name="reportingSite-1..09..6..75.." /></td><td>Landratsamt Kitzingen (Gesundheitsamt)</td><td /></tr><tr><td>1.09.6.76.<a name="reportingSite-1..09..6..76.." /></td><td>Landratsamt Miltenberg (Gesundheitsamt)</td><td /></tr><tr><td>1.09.6.77.<a name="reportingSite-1..09..6..77.." /></td><td>Landratsamt Main-Spessart (Staatliches Gesundheitsamt)</td><td /></tr><tr><td>1.09.6.78.<a name="reportingSite-1..09..6..78.." /></td><td>Landratsamt Schweinfurt (Gesundheitsamt)</td><td /></tr><tr><td>1.09.6.79.<a name="reportingSite-1..09..6..79.." /></td><td>Landratsamt Würzburg (Fachbereich 34)</td><td /></tr><tr><td>1.09.7.61.<a name="reportingSite-1..09..7..61.." /></td><td>Stadt Augsburg (Gesundheitsamt)</td><td /></tr><tr><td>1.09.7.64.<a name="reportingSite-1..09..7..64.." /></td><td>Stadt Memmingen (Gesundheitsamt)</td><td /></tr><tr><td>1.09.7.71.<a name="reportingSite-1..09..7..71.." /></td><td>Landratsamt Aichach-Friedberg (Gesundheitsamt)</td><td /></tr><tr><td>1.09.7.72.<a name="reportingSite-1..09..7..72.." /></td><td>Landratsamt Augsburg (Gesundheitsamt)</td><td /></tr><tr><td>1.09.7.73.<a name="reportingSite-1..09..7..73.." /></td><td>Landratsamt Dillingen (Fachbereich Gesundheit)</td><td /></tr><tr><td>1.09.7.74.<a name="reportingSite-1..09..7..74.." /></td><td>Landratsamt Günzburg (Gesundheitsamt)</td><td /></tr><tr><td>1.09.7.75.<a name="reportingSite-1..09..7..75.." /></td><td>Landratsamt Neu-Ulm (Öffentlicher Gesundheitsdienst)</td><td /></tr><tr><td>1.09.7.76.<a name="reportingSite-1..09..7..76.." /></td><td>Landratsamt Lindau (Fachbereich Gesundheit)</td><td /></tr><tr><td>1.09.7.77.<a name="reportingSite-1..09..7..77.." /></td><td>Landkreis Ostallgäu (Gesundheitsamt)</td><td /></tr><tr><td>1.09.7.78.<a name="reportingSite-1..09..7..78.." /></td><td>Landratsamt Unterallgäu (Gesundheitsamt)</td><td /></tr><tr><td>1.09.7.79.01.<a name="reportingSite-1..09..7..79..01.." /></td><td>Landratsamt Donau-Ries (Gesundheitsamt)</td><td /></tr><tr><td>1.09.7.80.<a name="reportingSite-1..09..7..80.." /></td><td>Landratsamt Oberallgäu (Gesundheitsamt)</td><td /></tr><tr><td>1.10.<a name="reportingSite-1..10.." /></td><td>Ministerium für Soziales, (Abteilung E Gesundheit)</td><td /></tr><tr><td>1.10.0.41.<a name="reportingSite-1..10..0..41.." /></td><td>Regionalverbandes Saarbrücken (Gesundheitsamt)</td><td /></tr><tr><td>1.10.0.42.<a name="reportingSite-1..10..0..42.." /></td><td>Landkreis Merzig-Wadern (Gesundheitsamt)</td><td /></tr><tr><td>1.10.0.43.<a name="reportingSite-1..10..0..43.." /></td><td>Landkreis Neunkirchen (Kreisgesundheitsamt)</td><td /></tr><tr><td>1.10.0.44.<a name="reportingSite-1..10..0..44.." /></td><td>Landkreis Saarlouis (Gesundheitsamt)</td><td /></tr><tr><td>1.10.0.45.<a name="reportingSite-1..10..0..45.." /></td><td>Saarpfalz-Kreis (Gesundheitsamt)</td><td /></tr><tr><td>1.10.0.46.<a name="reportingSite-1..10..0..46.." /></td><td>Landkreis St. Wendel (Gesundheitsamt)</td><td /></tr><tr><td>1.11.<a name="reportingSite-1..11.." /></td><td>Landesamt Berlin (Gesundheit und Soziales)</td><td /></tr><tr><td>1.11.0.01.01.<a name="reportingSite-1..11..0..01..01.." /></td><td>Bezirksamt Mitte von Berlin , Abt. Gesundheit (Gesundheitsamt)</td><td /></tr><tr><td>1.11.0.02.01.<a name="reportingSite-1..11..0..02..01.." /></td><td>Bezirksamt Friedrichshain-Kreuzberg von Berlin (Gesundheitsamt)</td><td /></tr><tr><td>1.11.0.03.01.<a name="reportingSite-1..11..0..03..01.." /></td><td>Bezirksamt Pankow von Berlin (Abt. Gesundheit und Soziales)</td><td /></tr><tr><td>1.11.0.04.01.<a name="reportingSite-1..11..0..04..01.." /></td><td>Bezirksamt Charlottenburg-Wilmersdorf von Berlin (Gesundheitsamt)</td><td /></tr><tr><td>1.11.0.05.01.<a name="reportingSite-1..11..0..05..01.." /></td><td>Bezirksamt Spandau von Berlin (Gesundheitsamt)</td><td /></tr><tr><td>1.11.0.06.01.<a name="reportingSite-1..11..0..06..01.." /></td><td>Bezirksamt Steglitz-Zehlendorf von Berlin (Gesundheitsamt)</td><td /></tr><tr><td>1.11.0.07.01.<a name="reportingSite-1..11..0..07..01.." /></td><td>Bezirksamt Tempelhof-Schöneberg von Berlin (Gesundheitsamt)</td><td /></tr><tr><td>1.11.0.08.01.<a name="reportingSite-1..11..0..08..01.." /></td><td>Bezirksamt Neukölln von Berlin (Gesundheitsamt)</td><td /></tr><tr><td>1.11.0.09.01.<a name="reportingSite-1..11..0..09..01.." /></td><td>Bezirksamt Treptow-Köpenick von Berlin (Gesundheitsamt)</td><td /></tr><tr><td>1.11.0.10.01.<a name="reportingSite-1..11..0..10..01.." /></td><td>Bezirksamt Marzahn-Hellersdorf von Berlin (Abteilung Gesundheit und Soziales)</td><td /></tr><tr><td>1.11.0.11.01.<a name="reportingSite-1..11..0..11..01.." /></td><td>Bezirksamt Lichtenberg von Berlin (Abt. Umwelt und Gesundheit)</td><td /></tr><tr><td>1.11.0.11.09.<a name="reportingSite-1..11..0..11..09.." /></td><td>Bezirksamt Lichtenberg von Berlin (Gesundheitsamt)</td><td /></tr><tr><td>1.11.0.12.01.<a name="reportingSite-1..11..0..12..01.." /></td><td>Bezirksamt Reinickendorf von Berlin (Gesundheitsamt)</td><td /></tr><tr><td>1.12.<a name="reportingSite-1..12.." /></td><td>Landesamt für Umwelt, Gesundheit und Verbraucherschutz (Abteilung Gesundheit)</td><td /></tr><tr><td>1.12.0.51.<a name="reportingSite-1..12..0..51.." /></td><td>Stadtverwaltung Brandenburg (Gesundheits-, Veterinär- und Lebensmittelüberwachungsamt)</td><td /></tr><tr><td>1.12.0.52.<a name="reportingSite-1..12..0..52.." /></td><td>Stadt Cottbus/S (Fachbereich 53 Gesundheit)</td><td /></tr><tr><td>1.12.0.53.<a name="reportingSite-1..12..0..53.." /></td><td>Stadt Frankfurt/Oder (Gesundheitsamt)</td><td /></tr><tr><td>1.12.0.54.<a name="reportingSite-1..12..0..54.." /></td><td>Landeshauptstadt Potsdam (Gesundheitsamt)</td><td /></tr><tr><td>1.12.0.60.<a name="reportingSite-1..12..0..60.." /></td><td>Landkreis Barnim (Dienstleistungs- und Verwaltungszentrum/ Paul Wunderlich Haus)</td><td /></tr><tr><td>1.12.0.61.<a name="reportingSite-1..12..0..61.." /></td><td>Landkreis Dahme- Spreewald (Gesundheitsamt)</td><td /></tr><tr><td>1.12.0.62.<a name="reportingSite-1..12..0..62.." /></td><td>Landkreis Elbe-Elster (Gesundheitsamt)</td><td /></tr><tr><td>1.12.0.63.<a name="reportingSite-1..12..0..63.." /></td><td>Landkreis Havelland (Gesundheitsamt)</td><td /></tr><tr><td>1.12.0.64.<a name="reportingSite-1..12..0..64.." /></td><td>Landkreis Märkisch- Oderland (Gesundheitsamt FB II)</td><td /></tr><tr><td>1.12.0.65.<a name="reportingSite-1..12..0..65.." /></td><td>Landkreis Oberhavel (Gesundheitsamt)</td><td /></tr><tr><td>1.12.0.66.<a name="reportingSite-1..12..0..66.." /></td><td>Landkreis Oberspreewald- Lausitz (Gesundheitsamt)</td><td /></tr><tr><td>1.12.0.67.<a name="reportingSite-1..12..0..67.." /></td><td>Landkreis Oder- Spree (Gesundheitsamt)</td><td /></tr><tr><td>1.12.0.68.<a name="reportingSite-1..12..0..68.." /></td><td>Kreisverwaltung Ostprignitz- Ruppin (Gesundheitsamt)</td><td /></tr><tr><td>1.12.0.69.<a name="reportingSite-1..12..0..69.." /></td><td>Landkreis Potsdam-Mittelmark (Fachdienst Gesundheit)</td><td /></tr><tr><td>1.12.0.70.<a name="reportingSite-1..12..0..70.." /></td><td>Landkreis Prignitz (Gesundheitsamt)</td><td /></tr><tr><td>1.12.0.71.<a name="reportingSite-1..12..0..71.." /></td><td>Landkreis Spree-Neiße (Fachbereich Gesundheit)</td><td /></tr><tr><td>1.12.0.72.<a name="reportingSite-1..12..0..72.." /></td><td>Landkreis Teltow-Fläming (Dezernat II Gesundheitsamt)</td><td /></tr><tr><td>1.12.0.73.<a name="reportingSite-1..12..0..73.." /></td><td>Landkreis Uckermark (Gesundheits- und Veterinäramt)</td><td /></tr><tr><td>1.13.<a name="reportingSite-1..13.." /></td><td>Landesamt für Gesundheit und Soziales M-V (Abteilung Gesundheit)</td><td /></tr><tr><td>1.13.0.03.<a name="reportingSite-1..13..0..03.." /></td><td>Stadt Rostock (Gesundheitsamt)</td><td /></tr><tr><td>1.13.0.04.<a name="reportingSite-1..13..0..04.." /></td><td>Landeshauptstadt Schwerin (Fachdienst Gesundheit)</td><td /></tr><tr><td>1.13.0.71.<a name="reportingSite-1..13..0..71.." /></td><td>Landkreis Mecklenburgische Seenplatte (Gesundheitsamt)</td><td /></tr><tr><td>1.13.0.72.<a name="reportingSite-1..13..0..72.." /></td><td>Landkreis Rostock (Gesundheitsamt Güstrow)</td><td /></tr><tr><td>1.13.0.73.<a name="reportingSite-1..13..0..73.." /></td><td>Landkreis Vorpommern-Rügen (Fachdienst Gesundheit)</td><td /></tr><tr><td>1.13.0.74.<a name="reportingSite-1..13..0..74.." /></td><td>Landkreis Nordwestmecklenburg (Fachdienst Öffentlicher Gesundheitsdienst)</td><td /></tr><tr><td>1.13.0.75.<a name="reportingSite-1..13..0..75.." /></td><td>Landkreis Vorpommern–Greifswald (Gesundheitsamt)</td><td /></tr><tr><td>1.13.0.76.<a name="reportingSite-1..13..0..76.." /></td><td>Landkreis Ludwigslust-Parchim (Gesundheitsamt)</td><td /></tr><tr><td>1.14.<a name="reportingSite-1..14.." /></td><td>Landesuntersuchungsanstalt für das Gesundheits- und Veterinärwesen Sachsen</td><td /></tr><tr><td>1.14.5.11.<a name="reportingSite-1..14..5..11.." /></td><td>Stadt Chemnitz (Gesundheitsamt)</td><td /></tr><tr><td>1.14.5.21.02.<a name="reportingSite-1..14..5..21..02.." /></td><td>Landkreis Erzgebirgskreis (Gesundheitsamt)</td><td /></tr><tr><td>1.14.5.22.01.<a name="reportingSite-1..14..5..22..01.." /></td><td>Landkreis Mittelsachsen (Gesundheitsamt)</td><td /></tr><tr><td>1.14.5.23.02.<a name="reportingSite-1..14..5..23..02.." /></td><td>Landkreis Vogtlandkreis (Gesundheitsamt)</td><td /></tr><tr><td>1.14.5.24.01.<a name="reportingSite-1..14..5..24..01.." /></td><td>Landkreis Zwickau (Gesundheitsamt)</td><td /></tr><tr><td>1.14.6.12.<a name="reportingSite-1..14..6..12.." /></td><td>Landeshauptstadt Dresden (Gesundheitsamt)</td><td /></tr><tr><td>1.14.6.25.03.<a name="reportingSite-1..14..6..25..03.." /></td><td>Landratsamt Bautzen (Gesundheitsamt)</td><td /></tr><tr><td>1.14.6.26.01.<a name="reportingSite-1..14..6..26..01.." /></td><td>Landkreis Görlitz (Gesundheitsamt)</td><td /></tr><tr><td>1.14.6.27.01.<a name="reportingSite-1..14..6..27..01.." /></td><td>Landkreis Meißen (Gesundheitsamt)</td><td /></tr><tr><td>1.14.6.28.01.<a name="reportingSite-1..14..6..28..01.." /></td><td>Landkreis Sächsische Schweiz - Osterzgebirge (Abteilung Gesundheit)</td><td /></tr><tr><td>1.14.7.13.<a name="reportingSite-1..14..7..13.." /></td><td>Stadt Leipzig (Gesundheitsamt)</td><td /></tr><tr><td>1.14.7.29.01.<a name="reportingSite-1..14..7..29..01.." /></td><td>Landratsamt Leipzig (Gesundheitsamt (Hauptsitz))</td><td /></tr><tr><td>1.14.7.30.01.<a name="reportingSite-1..14..7..30..01.." /></td><td>Landratsamt Nordsachsen (Gesundheitsamt)</td><td /></tr><tr><td>1.15.<a name="reportingSite-1..15.." /></td><td>Landesamt für Verbraucherschutz (Sachsen-Anhalt)</td><td /></tr><tr><td>1.15.0.01.<a name="reportingSite-1..15..0..01.." /></td><td>Stadt Dessau-Roßlau (Gesundheitsamt/Veterinärwesen und Verbaucherschutz)</td><td /></tr><tr><td>1.15.0.02.<a name="reportingSite-1..15..0..02.." /></td><td>Stadt Halle (Saale) (Fachbereich Gesundheit)</td><td /></tr><tr><td>1.15.0.03.<a name="reportingSite-1..15..0..03.." /></td><td>Landeshauptstadt Magdeburg (Gesundheits- und Veterinäramt)</td><td /></tr><tr><td>1.15.0.81.<a name="reportingSite-1..15..0..81.." /></td><td>Altmarkkreis Salzwedel (Gesundheitsamt)</td><td /></tr><tr><td>1.15.0.82.02.<a name="reportingSite-1..15..0..82..02.." /></td><td>Landkreis Anhalt- Bitterfeld (Gesundheitsamt - Köthen (Anhalt))</td><td /></tr><tr><td>1.15.0.83.01.<a name="reportingSite-1..15..0..83..01.." /></td><td>Landkreis Börde (Fachdienst Gesundheit)</td><td /></tr><tr><td>1.15.0.84.02.<a name="reportingSite-1..15..0..84..02.." /></td><td>Burgenlandkreis (Gesundheitsamt)</td><td /></tr><tr><td>1.15.0.85.03.<a name="reportingSite-1..15..0..85..03.." /></td><td>Landkreis Harz (Gesundheitsamt - Wernigerode)</td><td /></tr><tr><td>1.15.0.86.<a name="reportingSite-1..15..0..86.." /></td><td>Landkreis Jerichower Land (Gesundheitsamt)</td><td /></tr><tr><td>1.15.0.87.02.<a name="reportingSite-1..15..0..87..02.." /></td><td>Landkreis Mansfeld-Südharz (Gesundheitsamt)</td><td /></tr><tr><td>1.15.0.88.02.<a name="reportingSite-1..15..0..88..02.." /></td><td>Landkreis Saalekreis (Gesundheitsamt)</td><td /></tr><tr><td>1.15.0.89.01.<a name="reportingSite-1..15..0..89..01.." /></td><td>Salzlandkreis (34 Fachdienst Gesundheit)</td><td /></tr><tr><td>1.15.0.90.<a name="reportingSite-1..15..0..90.." /></td><td>Landkreis Stendal (Gesundheitsamt)</td><td /></tr><tr><td>1.15.0.91.<a name="reportingSite-1..15..0..91.." /></td><td>Landkreis Wittenberg (Fachdienst Gesundheit)</td><td /></tr><tr><td>1.16.<a name="reportingSite-1..16.." /></td><td>Thüringer Landesamt (Lebensmittelsicherheit und Verbraucherschutz (TLLV))</td><td /></tr><tr><td>1.16.0.51.<a name="reportingSite-1..16..0..51.." /></td><td>Landeshauptstadt Erfurt (Amt für Soziales und Gesundheit)</td><td /></tr><tr><td>1.16.0.52.<a name="reportingSite-1..16..0..52.." /></td><td>Stadt Gera (Fachdienst Gesundheit)</td><td /></tr><tr><td>1.16.0.53.<a name="reportingSite-1..16..0..53.." /></td><td>Stadtverwaltung Jena (Fachdienst Gesundheit)</td><td /></tr><tr><td>1.16.0.54.<a name="reportingSite-1..16..0..54.." /></td><td>Stadtverwaltung Suhl (Gesundheitsamt)</td><td /></tr><tr><td>1.16.0.55.<a name="reportingSite-1..16..0..55.." /></td><td>Stadtverwaltung Weimar (Gesundheitsamt)</td><td /></tr><tr><td>1.16.0.61.<a name="reportingSite-1..16..0..61.." /></td><td>Landkreis Eichsfeld (Gesundheitsamt)</td><td /></tr><tr><td>1.16.0.62.<a name="reportingSite-1..16..0..62.." /></td><td>Landratsamt Nordhausen (Gesundheitsamt)</td><td /></tr><tr><td>1.16.0.63.<a name="reportingSite-1..16..0..63.." /></td><td>Landratsamt Wartburgkreis (Gesundheitsamt)</td><td /></tr><tr><td>1.16.0.64.01.<a name="reportingSite-1..16..0..64..01.." /></td><td>Landratsamt Unstrut-Hainich-Kreis (FD Gesundheit)</td><td /></tr><tr><td>1.16.0.65.01.<a name="reportingSite-1..16..0..65..01.." /></td><td>Landratsamt Kyffhäuserkreis (Gesundheitsamt)</td><td /></tr><tr><td>1.16.0.66.<a name="reportingSite-1..16..0..66.." /></td><td>Landratsamt Schmalkalden-Meiningen (Fachbereich Gesundheit)</td><td /></tr><tr><td>1.16.0.67.<a name="reportingSite-1..16..0..67.." /></td><td>Landratsamt Gotha (Gesundheitsamt)</td><td /></tr><tr><td>1.16.0.68.<a name="reportingSite-1..16..0..68.." /></td><td>Landratsamt Sömmerda (Gesundheitsamt)</td><td /></tr><tr><td>1.16.0.69.<a name="reportingSite-1..16..0..69.." /></td><td>Landratsamt Hildburghausen (Gesundheitsamt)</td><td /></tr><tr><td>1.16.0.70.02.<a name="reportingSite-1..16..0..70..02.." /></td><td>Landratsamt Ilm-Kreis (Gesundheitsamt)</td><td /></tr><tr><td>1.16.0.71.<a name="reportingSite-1..16..0..71.." /></td><td>Landratsamt Weimarer Land (Gesundheitsamt)</td><td /></tr><tr><td>1.16.0.72.<a name="reportingSite-1..16..0..72.." /></td><td>Landratsamt Sonneberg (Gesundheitsamt)</td><td /></tr><tr><td>1.16.0.73.02.<a name="reportingSite-1..16..0..73..02.." /></td><td>Landratsamt Saalfeld-Rudolstadt (Gesundheitsamt)</td><td /></tr><tr><td>1.16.0.74.<a name="reportingSite-1..16..0..74.." /></td><td>Landratsamt Saale-Holzland-Kreis (Gesundheitsamt)</td><td /></tr><tr><td>1.16.0.75.03.<a name="reportingSite-1..16..0..75..03.." /></td><td>Landratsamt Saale-Orla-Kreis (Fachdienst Amtsärztlicher Dienst)</td><td /></tr><tr><td>1.16.0.76.<a name="reportingSite-1..16..0..76.." /></td><td>Landratsamt Greiz (Gesundheitsamt)</td><td /></tr><tr><td>1.16.0.77.<a name="reportingSite-1..16..0..77.." /></td><td>Landratsamt Altenburger Land (Fachdienst Gesundheit)</td><td /></tr><tr><td>1.17.<a name="reportingSite-1..17.." /></td><td>Kommando Sanitätsdienst der Bundeswehr</td><td /></tr><tr><td>1.17.0.01.<a name="reportingSite-1..17..0..01.." /></td><td>ÜbwSt ÖRA Nord (für HB, HH, MV, NI, SH)</td><td /></tr><tr><td>1.17.0.02.<a name="reportingSite-1..17..0..02.." /></td><td>ÜbwSt ÖRA Ost (für BB, BE, SN, ST, TH)</td><td /></tr><tr><td>1.17.0.03.<a name="reportingSite-1..17..0..03.." /></td><td>ÜbwSt ÖRA Süd (für BW, BY)</td><td /></tr><tr><td>1.17.0.04.<a name="reportingSite-1..17..0..04.." /></td><td>ÜbwSt ÖRA West (für HE, NW, RP, SL)</td><td /></tr><tr><td>2.<a name="reportingSite-2.." /></td><td>SORMAS</td><td /></tr><tr><td>2.01.0.01.<a name="reportingSite-2..01..0..01.." /></td><td>Stadt Flensburg</td><td /></tr><tr><td>2.01.0.02.<a name="reportingSite-2..01..0..02.." /></td><td>Landeshauptstadt Kiel</td><td /></tr><tr><td>2.01.0.03.<a name="reportingSite-2..01..0..03.." /></td><td>Hansestadt Lübeck</td><td /></tr><tr><td>2.01.0.04.<a name="reportingSite-2..01..0..04.." /></td><td>Stadt Neumünster</td><td /></tr><tr><td>2.01.0.51.<a name="reportingSite-2..01..0..51.." /></td><td>Kreis Dithmarschen</td><td /></tr><tr><td>2.01.0.53.<a name="reportingSite-2..01..0..53.." /></td><td>Kreis Herzogtum Lauenburg</td><td /></tr><tr><td>2.01.0.54.<a name="reportingSite-2..01..0..54.." /></td><td>Kreis Nordfriesland</td><td /></tr><tr><td>2.01.0.55.<a name="reportingSite-2..01..0..55.." /></td><td>Kreis Ostholstein</td><td /></tr><tr><td>2.01.0.56.<a name="reportingSite-2..01..0..56.." /></td><td>Kreisverwaltung Pinneberg</td><td /></tr><tr><td>2.01.0.57.<a name="reportingSite-2..01..0..57.." /></td><td>Kreis Plön</td><td /></tr><tr><td>2.01.0.58.<a name="reportingSite-2..01..0..58.." /></td><td>Kreis Rendsburg-Eckernförde</td><td /></tr><tr><td>2.01.0.59.<a name="reportingSite-2..01..0..59.." /></td><td>Kreis Schleswig-Flensburg</td><td /></tr><tr><td>2.01.0.60.<a name="reportingSite-2..01..0..60.." /></td><td>Landkreis Segeberg</td><td /></tr><tr><td>2.01.0.61.<a name="reportingSite-2..01..0..61.." /></td><td>Landkreis Steinburg</td><td /></tr><tr><td>2.01.0.62.<a name="reportingSite-2..01..0..62.." /></td><td>Landkreis Stormarn</td><td /></tr><tr><td>2.02.0.01.<a name="reportingSite-2..02..0..01.." /></td><td>Bezirksamt Hamburg-Altona</td><td /></tr><tr><td>2.02.0.02.<a name="reportingSite-2..02..0..02.." /></td><td>Bezirksamt Hamburg-Bergedorf</td><td /></tr><tr><td>2.02.0.03.<a name="reportingSite-2..02..0..03.." /></td><td>Bezirksamt Hamburg-Eimsbüttel</td><td /></tr><tr><td>2.02.0.04.<a name="reportingSite-2..02..0..04.." /></td><td>Bezirksamt Hamburg-Mitte</td><td /></tr><tr><td>2.02.0.05.<a name="reportingSite-2..02..0..05.." /></td><td>Bezirksamt Hamburg-Nord</td><td /></tr><tr><td>2.02.0.06.<a name="reportingSite-2..02..0..06.." /></td><td>Bezirksamt Hamburg-Harburg</td><td /></tr><tr><td>2.02.0.07.<a name="reportingSite-2..02..0..07.." /></td><td>Bezirksamt Hamburg-Wandsbek</td><td /></tr><tr><td>2.02.0.08.<a name="reportingSite-2..02..0..08.." /></td><td>HPHC</td><td /></tr><tr><td>2.03.1.01.<a name="reportingSite-2..03..1..01.." /></td><td>Stadt Braunschweig</td><td /></tr><tr><td>2.03.1.02.<a name="reportingSite-2..03..1..02.." /></td><td>Stadt Salzgitter</td><td /></tr><tr><td>2.03.1.03.<a name="reportingSite-2..03..1..03.." /></td><td>Stadt Wolfsburg</td><td /></tr><tr><td>2.03.1.51.<a name="reportingSite-2..03..1..51.." /></td><td>Landkreis Gifhorn</td><td /></tr><tr><td>2.03.1.53.<a name="reportingSite-2..03..1..53.." /></td><td>Landkreis Goslar</td><td /></tr><tr><td>2.03.1.54.<a name="reportingSite-2..03..1..54.." /></td><td>Landkreis Helmstedt</td><td /></tr><tr><td>2.03.1.55.03.<a name="reportingSite-2..03..1..55..03.." /></td><td>Landkreis Northeim</td><td /></tr><tr><td>2.03.1.57.<a name="reportingSite-2..03..1..57.." /></td><td>Landkreis Peine</td><td /></tr><tr><td>2.03.1.58.<a name="reportingSite-2..03..1..58.." /></td><td>Landkreis Wolfenbüttel</td><td /></tr><tr><td>2.03.1.59.<a name="reportingSite-2..03..1..59.." /></td><td>Stadt und Landkreis Göttingen</td><td /></tr><tr><td>2.03.2.41.<a name="reportingSite-2..03..2..41.." /></td><td>Region Hannover</td><td /></tr><tr><td>2.03.2.51.<a name="reportingSite-2..03..2..51.." /></td><td>Landkreis Diepholz</td><td /></tr><tr><td>2.03.2.52.<a name="reportingSite-2..03..2..52.." /></td><td>Landkreis Hameln-Pyrmont</td><td /></tr><tr><td>2.03.2.54.<a name="reportingSite-2..03..2..54.." /></td><td>Landkreis Hildesheim</td><td /></tr><tr><td>2.03.2.55.<a name="reportingSite-2..03..2..55.." /></td><td>Landkreis Holzminden</td><td /></tr><tr><td>2.03.2.56.<a name="reportingSite-2..03..2..56.." /></td><td>Landkreis Nienburg (Weser)</td><td /></tr><tr><td>2.03.2.57.01.<a name="reportingSite-2..03..2..57..01.." /></td><td>Landkreis Schaumburg</td><td /></tr><tr><td>2.03.3.51.<a name="reportingSite-2..03..3..51.." /></td><td>Landkreis Celle</td><td /></tr><tr><td>2.03.3.52.<a name="reportingSite-2..03..3..52.." /></td><td>Landkreis Cuxhaven</td><td /></tr><tr><td>2.03.3.53.<a name="reportingSite-2..03..3..53.." /></td><td>Landkreis Harburg</td><td /></tr><tr><td>2.03.3.55.<a name="reportingSite-2..03..3..55.." /></td><td>Landkreis Lüneburg</td><td /></tr><tr><td>2.03.3.56.<a name="reportingSite-2..03..3..56.." /></td><td>Landkreis Osterholz</td><td /></tr><tr><td>2.03.3.57.<a name="reportingSite-2..03..3..57.." /></td><td>Landkreis Rotenburg</td><td /></tr><tr><td>2.03.3.58.<a name="reportingSite-2..03..3..58.." /></td><td>Landkreis Heidekreis</td><td /></tr><tr><td>2.03.3.59.<a name="reportingSite-2..03..3..59.." /></td><td>Landkreis Stade</td><td /></tr><tr><td>2.03.3.60.<a name="reportingSite-2..03..3..60.." /></td><td>Landkreis Uelzen</td><td /></tr><tr><td>2.03.3.61.02.<a name="reportingSite-2..03..3..61..02.." /></td><td>Landkreis Verden</td><td /></tr><tr><td>2.03.4.01.<a name="reportingSite-2..03..4..01.." /></td><td>Stadt Delmenhorst</td><td /></tr><tr><td>2.03.4.02.<a name="reportingSite-2..03..4..02.." /></td><td>Stadt Emden</td><td /></tr><tr><td>2.03.4.03.<a name="reportingSite-2..03..4..03.." /></td><td>Stadt Oldenburg</td><td /></tr><tr><td>2.03.4.05.<a name="reportingSite-2..03..4..05.." /></td><td>Stadt Wilhelmshaven</td><td /></tr><tr><td>2.03.4.51.<a name="reportingSite-2..03..4..51.." /></td><td>Landkreis Ammerland</td><td /></tr><tr><td>2.03.4.52.<a name="reportingSite-2..03..4..52.." /></td><td>Landkreis Aurich</td><td /></tr><tr><td>2.03.4.53.<a name="reportingSite-2..03..4..53.." /></td><td>Landkreis Cloppenburg</td><td /></tr><tr><td>2.03.4.54.<a name="reportingSite-2..03..4..54.." /></td><td>Landkreis Emsland</td><td /></tr><tr><td>2.03.4.55.<a name="reportingSite-2..03..4..55.." /></td><td>Landkreis Friesland</td><td /></tr><tr><td>2.03.4.56.<a name="reportingSite-2..03..4..56.." /></td><td>Landkreis Grafschaft Bentheim</td><td /></tr><tr><td>2.03.4.57.<a name="reportingSite-2..03..4..57.." /></td><td>Landkreis Leer</td><td /></tr><tr><td>2.03.4.58.<a name="reportingSite-2..03..4..58.." /></td><td>Landkreis Oldenburg</td><td /></tr><tr><td>2.03.4.59.<a name="reportingSite-2..03..4..59.." /></td><td>Landkreis Osnabrück</td><td /></tr><tr><td>2.03.4.60.<a name="reportingSite-2..03..4..60.." /></td><td>Landkreis Vechta</td><td /></tr><tr><td>2.03.4.61.<a name="reportingSite-2..03..4..61.." /></td><td>Landkreis Wesermarsch</td><td /></tr><tr><td>2.03.4.62.<a name="reportingSite-2..03..4..62.." /></td><td>Landkreis Wittmund</td><td /></tr><tr><td>2.04.0.11.<a name="reportingSite-2..04..0..11.." /></td><td>Stadt Bremen</td><td /></tr><tr><td>2.04.0.12.<a name="reportingSite-2..04..0..12.." /></td><td>Stadt Bremerhaven</td><td /></tr><tr><td>2.05.1.11.<a name="reportingSite-2..05..1..11.." /></td><td>Stadt Düsseldorf</td><td /></tr><tr><td>2.05.1.12.<a name="reportingSite-2..05..1..12.." /></td><td>Stadt Duisburg</td><td /></tr><tr><td>2.05.1.13.<a name="reportingSite-2..05..1..13.." /></td><td>Stadt Essen</td><td /></tr><tr><td>2.05.1.14.<a name="reportingSite-2..05..1..14.." /></td><td>Stadt Krefeld</td><td /></tr><tr><td>2.05.1.16.<a name="reportingSite-2..05..1..16.." /></td><td>Stadt Mönchengladbach</td><td /></tr><tr><td>2.05.1.17.<a name="reportingSite-2..05..1..17.." /></td><td>Stadt Mülheim</td><td /></tr><tr><td>2.05.1.19.<a name="reportingSite-2..05..1..19.." /></td><td>Stadt Oberhausen</td><td /></tr><tr><td>2.05.1.20.<a name="reportingSite-2..05..1..20.." /></td><td>Stadt Remscheid</td><td /></tr><tr><td>2.05.1.22.<a name="reportingSite-2..05..1..22.." /></td><td>Stadt Solingen</td><td /></tr><tr><td>2.05.1.24.<a name="reportingSite-2..05..1..24.." /></td><td>Stadt Wuppertal</td><td /></tr><tr><td>2.05.1.54.<a name="reportingSite-2..05..1..54.." /></td><td>Landkreis Kleve</td><td /></tr><tr><td>2.05.1.58.<a name="reportingSite-2..05..1..58.." /></td><td>Landkreis Mettmann</td><td /></tr><tr><td>2.05.1.62.<a name="reportingSite-2..05..1..62.." /></td><td>Landkreis Rheinkreis Neuss</td><td /></tr><tr><td>2.05.1.66.<a name="reportingSite-2..05..1..66.." /></td><td>Landkreis Viersen</td><td /></tr><tr><td>2.05.1.70.<a name="reportingSite-2..05..1..70.." /></td><td>Landkreis Wesel</td><td /></tr><tr><td>2.05.3.14.<a name="reportingSite-2..05..3..14.." /></td><td>Stadt Bonn</td><td /></tr><tr><td>2.05.3.15.<a name="reportingSite-2..05..3..15.." /></td><td>Stadt Köln</td><td /></tr><tr><td>2.05.3.16.<a name="reportingSite-2..05..3..16.." /></td><td>Stadt Leverkusen</td><td /></tr><tr><td>2.05.3.34.<a name="reportingSite-2..05..3..34.." /></td><td>StädteRegion Aachen</td><td /></tr><tr><td>2.05.3.58.<a name="reportingSite-2..05..3..58.." /></td><td>Kreis Düren</td><td /></tr><tr><td>2.05.3.62.<a name="reportingSite-2..05..3..62.." /></td><td>Kreisverwaltung Rhein-Erft-Kreis</td><td /></tr><tr><td>2.05.3.66.<a name="reportingSite-2..05..3..66.." /></td><td>Kreis Euskirchen</td><td /></tr><tr><td>2.05.3.70.<a name="reportingSite-2..05..3..70.." /></td><td>Kreis Heinsberg</td><td /></tr><tr><td>2.05.3.74.<a name="reportingSite-2..05..3..74.." /></td><td>Oberbergischer Kreis</td><td /></tr><tr><td>2.05.3.78.<a name="reportingSite-2..05..3..78.." /></td><td>Rheinisch-Bergischer Kreis</td><td /></tr><tr><td>2.05.3.82.<a name="reportingSite-2..05..3..82.." /></td><td>Rhein-Sieg-Kreis</td><td /></tr><tr><td>2.05.5.12.<a name="reportingSite-2..05..5..12.." /></td><td>Stadt Bottrop</td><td /></tr><tr><td>2.05.5.13.<a name="reportingSite-2..05..5..13.." /></td><td>Stadt Gelsenkirchen</td><td /></tr><tr><td>2.05.5.15.<a name="reportingSite-2..05..5..15.." /></td><td>Stadt Münster</td><td /></tr><tr><td>2.05.5.54.<a name="reportingSite-2..05..5..54.." /></td><td>Kreis Borken</td><td /></tr><tr><td>2.05.5.58.<a name="reportingSite-2..05..5..58.." /></td><td>Kreis Coesfeld</td><td /></tr><tr><td>2.05.5.62.<a name="reportingSite-2..05..5..62.." /></td><td>Kreis Recklinghausen</td><td /></tr><tr><td>2.05.5.66.<a name="reportingSite-2..05..5..66.." /></td><td>Kreis Steinfurt</td><td /></tr><tr><td>2.05.5.70.<a name="reportingSite-2..05..5..70.." /></td><td>Kreis-Warendorf</td><td /></tr><tr><td>2.05.7.11.<a name="reportingSite-2..05..7..11.." /></td><td>Stadt Bielefeld</td><td /></tr><tr><td>2.05.7.54.<a name="reportingSite-2..05..7..54.." /></td><td>Kreis Gütersloh</td><td /></tr><tr><td>2.05.7.58.<a name="reportingSite-2..05..7..58.." /></td><td>Kreis Herford</td><td /></tr><tr><td>2.05.7.62.<a name="reportingSite-2..05..7..62.." /></td><td>Kreisverwaltung Höxter</td><td /></tr><tr><td>2.05.7.66.<a name="reportingSite-2..05..7..66.." /></td><td>Gesundheitsamt Kreis Lippe</td><td /></tr><tr><td>2.05.7.70.<a name="reportingSite-2..05..7..70.." /></td><td>Kreis Minden-Lübbecke</td><td /></tr><tr><td>2.05.7.74.<a name="reportingSite-2..05..7..74.." /></td><td>Kreis Paderborn</td><td /></tr><tr><td>2.05.9.11.<a name="reportingSite-2..05..9..11.." /></td><td>Stadt Bochum</td><td /></tr><tr><td>2.05.9.13.<a name="reportingSite-2..05..9..13.." /></td><td>Stadt Dortmund</td><td /></tr><tr><td>2.05.9.14.<a name="reportingSite-2..05..9..14.." /></td><td>Stadt Hagen</td><td /></tr><tr><td>2.05.9.15.<a name="reportingSite-2..05..9..15.." /></td><td>Stadt Hamm</td><td /></tr><tr><td>2.05.9.16.<a name="reportingSite-2..05..9..16.." /></td><td>Stadt Herne</td><td /></tr><tr><td>2.05.9.54.<a name="reportingSite-2..05..9..54.." /></td><td>Landkreis Ennepe-Ruhr-Kreis</td><td /></tr><tr><td>2.05.9.58.<a name="reportingSite-2..05..9..58.." /></td><td>Hochsauerlandkreis</td><td /></tr><tr><td>2.05.9.62.<a name="reportingSite-2..05..9..62.." /></td><td>Märkischer Kreis</td><td /></tr><tr><td>2.05.9.66.<a name="reportingSite-2..05..9..66.." /></td><td>Kreis Olpe</td><td /></tr><tr><td>2.05.9.70.<a name="reportingSite-2..05..9..70.." /></td><td>Kreis Siegen-Wittgenstein</td><td /></tr><tr><td>2.05.9.74.<a name="reportingSite-2..05..9..74.." /></td><td>Kreis Soest</td><td /></tr><tr><td>2.05.9.78.<a name="reportingSite-2..05..9..78.." /></td><td>Kreis Unna</td><td /></tr><tr><td>2.06.4.12.<a name="reportingSite-2..06..4..12.." /></td><td>Stadt Frankfurt am Main</td><td /></tr><tr><td>2.06.4.13.<a name="reportingSite-2..06..4..13.." /></td><td>Stadt Offenbach</td><td /></tr><tr><td>2.06.4.14.<a name="reportingSite-2..06..4..14.." /></td><td>Landeshauptstadt Wiesbaden</td><td /></tr><tr><td>2.06.4.31.<a name="reportingSite-2..06..4..31.." /></td><td>Kreisausschuss Kreis Bergstraße</td><td /></tr><tr><td>2.06.4.32.<a name="reportingSite-2..06..4..32.." /></td><td>Landkreis Darmstadt-Dieburg</td><td /></tr><tr><td>2.06.4.33.<a name="reportingSite-2..06..4..33.." /></td><td>Kreis Groß-Gerau</td><td /></tr><tr><td>2.06.4.34.<a name="reportingSite-2..06..4..34.." /></td><td>Kreisausschuss Hochtaunuskreis</td><td /></tr><tr><td>2.06.4.35.<a name="reportingSite-2..06..4..35.." /></td><td>Kreis Main-Kinzig</td><td /></tr><tr><td>2.06.4.36.<a name="reportingSite-2..06..4..36.." /></td><td>Kreis Main-Taunus</td><td /></tr><tr><td>2.06.4.37.<a name="reportingSite-2..06..4..37.." /></td><td>Kreisausschuss Odenwaldkreis</td><td /></tr><tr><td>2.06.4.38.<a name="reportingSite-2..06..4..38.." /></td><td>Kreis Offenbach</td><td /></tr><tr><td>2.06.4.39.<a name="reportingSite-2..06..4..39.." /></td><td>Kreisausschuss Rheingau-Taunus</td><td /></tr><tr><td>2.06.4.40.<a name="reportingSite-2..06..4..40.." /></td><td>Wetteraukreis</td><td /></tr><tr><td>2.06.5.31.<a name="reportingSite-2..06..5..31.." /></td><td>Landkreis Gießen</td><td /></tr><tr><td>2.06.5.32.<a name="reportingSite-2..06..5..32.." /></td><td>Kreisausschuß des Lahn-Dill-Kreises</td><td /></tr><tr><td>2.06.5.33.<a name="reportingSite-2..06..5..33.." /></td><td>Kreisausschuss Limburg-Weilburg</td><td /></tr><tr><td>2.06.5.34.<a name="reportingSite-2..06..5..34.." /></td><td>Kreisausschuss Marburg-Biedenkopf</td><td /></tr><tr><td>2.06.5.35.<a name="reportingSite-2..06..5..35.." /></td><td>Landkreis Vogelsbergkreis</td><td /></tr><tr><td>2.06.6.11.<a name="reportingSite-2..06..6..11.." /></td><td>Region Kassel</td><td /></tr><tr><td>2.06.6.31.<a name="reportingSite-2..06..6..31.." /></td><td>Kreisausschuss Fulda</td><td /></tr><tr><td>2.06.6.32.<a name="reportingSite-2..06..6..32.." /></td><td>Kreisausschuss Hersfeld-Rotenburg</td><td /></tr><tr><td>2.06.6.34.<a name="reportingSite-2..06..6..34.." /></td><td>Kreisausschuss des Schwalm-Eder-Kreises</td><td /></tr><tr><td>2.06.6.35.<a name="reportingSite-2..06..6..35.." /></td><td>Kreisausschuss des Landkreises Waldeck-Frankenberg</td><td /></tr><tr><td>2.06.6.36.<a name="reportingSite-2..06..6..36.." /></td><td>Kreisausschuss Werra-Meißner</td><td /></tr><tr><td>2.07.0.53.<a name="reportingSite-2..07..0..53.." /></td><td>Kreisverwaltung Rhein-Lahn Kreis</td><td /></tr><tr><td>2.07.0.54.<a name="reportingSite-2..07..0..54.." /></td><td>Kreisverwaltung Bad Kreuznach</td><td /></tr><tr><td>2.07.0.56.<a name="reportingSite-2..07..0..56.." /></td><td>Kreisverwaltung Ahrweiler</td><td /></tr><tr><td>2.07.0.58.<a name="reportingSite-2..07..0..58.." /></td><td>Kreisverwaltung  Eifelkreis Bitburg-Prüm</td><td /></tr><tr><td>2.07.0.59.<a name="reportingSite-2..07..0..59.." /></td><td>Kreisverwaltung Cochem-Zell</td><td /></tr><tr><td>2.07.0.60.<a name="reportingSite-2..07..0..60.." /></td><td>Kreisverwaltung Vulkaneifel</td><td /></tr><tr><td>2.07.0.63.<a name="reportingSite-2..07..0..63.." /></td><td>Kreisverwaltung Germersheim</td><td /></tr><tr><td>2.07.0.64.<a name="reportingSite-2..07..0..64.." /></td><td>Kreisverwaltung Birkenfeld</td><td /></tr><tr><td>2.07.0.65.<a name="reportingSite-2..07..0..65.." /></td><td>Kreisverwaltung Kaiserslautern</td><td /></tr><tr><td>2.07.0.66.<a name="reportingSite-2..07..0..66.." /></td><td>Kreisverwaltung Donnersbergkreis</td><td /></tr><tr><td>2.07.0.67.<a name="reportingSite-2..07..0..67.." /></td><td>Kreisverwaltung Mayen-Koblenz</td><td /></tr><tr><td>2.07.0.68.<a name="reportingSite-2..07..0..68.." /></td><td>Kreisverwaltung Kusel</td><td /></tr><tr><td>2.07.0.69.<a name="reportingSite-2..07..0..69.." /></td><td>Landkreis Südliche Weinstraße / Landau</td><td /></tr><tr><td>2.07.0.70.<a name="reportingSite-2..07..0..70.." /></td><td>Kreisverwaltung Rhein-Pfalz-Kreis</td><td /></tr><tr><td>2.07.0.71.<a name="reportingSite-2..07..0..71.." /></td><td>Kreisverwaltung Mainz-Bingen</td><td /></tr><tr><td>2.07.0.73.<a name="reportingSite-2..07..0..73.." /></td><td>Kreisverwaltung Westerwaldkreises</td><td /></tr><tr><td>2.07.0.74.<a name="reportingSite-2..07..0..74.." /></td><td>Kreisverwaltung Bad Dürkheim/Neustadt</td><td /></tr><tr><td>2.07.0.75.<a name="reportingSite-2..07..0..75.." /></td><td>Kreisverwaltung Neuwied</td><td /></tr><tr><td>2.07.0.76.<a name="reportingSite-2..07..0..76.." /></td><td>Kreisverwaltung Südwestpfalz/Pirmasens</td><td /></tr><tr><td>2.07.0.80.<a name="reportingSite-2..07..0..80.." /></td><td>Kreisverwaltung Rhein-Hunsrück-Kreis/Simmern</td><td /></tr><tr><td>2.07.0.82.<a name="reportingSite-2..07..0..82.." /></td><td>Kreisverwaltung Trier-Saarburg</td><td /></tr><tr><td>2.07.0.83.<a name="reportingSite-2..07..0..83.." /></td><td>Kreisverwaltung Bernkastel-Wittlich</td><td /></tr><tr><td>2.07.0.84.<a name="reportingSite-2..07..0..84.." /></td><td>Kreisverwaltung Alzey-Worms</td><td /></tr><tr><td>2.07.1.32.<a name="reportingSite-2..07..1..32.." /></td><td>Kreisverwaltung Altenkirchen</td><td /></tr><tr><td>2.08.1.11.<a name="reportingSite-2..08..1..11.." /></td><td>Landeshauptstadt Stuttgart</td><td /></tr><tr><td>2.08.1.15.<a name="reportingSite-2..08..1..15.." /></td><td>Landratsamt Böblingen</td><td /></tr><tr><td>2.08.1.16.<a name="reportingSite-2..08..1..16.." /></td><td>Landratsamt Esslingen</td><td /></tr><tr><td>2.08.1.17.<a name="reportingSite-2..08..1..17.." /></td><td>Landratsamt Göppingen</td><td /></tr><tr><td>2.08.1.18.<a name="reportingSite-2..08..1..18.." /></td><td>Landratsamt Ludwigsburg</td><td /></tr><tr><td>2.08.1.19.<a name="reportingSite-2..08..1..19.." /></td><td>Landratsamt Rems-Murr-Kreis</td><td /></tr><tr><td>2.08.1.21.<a name="reportingSite-2..08..1..21.." /></td><td>Stadt Heilbronn</td><td /></tr><tr><td>2.08.1.25.<a name="reportingSite-2..08..1..25.." /></td><td>Landratsamt Heilbronn</td><td /></tr><tr><td>2.08.1.26.<a name="reportingSite-2..08..1..26.." /></td><td>Landratsamt Hohenlohekreis</td><td /></tr><tr><td>2.08.1.27.<a name="reportingSite-2..08..1..27.." /></td><td>Landratsamt Schwäbisch Hall</td><td /></tr><tr><td>2.08.1.28.<a name="reportingSite-2..08..1..28.." /></td><td>Landratsamt Main-Tauber-Kreis</td><td /></tr><tr><td>2.08.1.35.<a name="reportingSite-2..08..1..35.." /></td><td>Landratsamt Heidenheim</td><td /></tr><tr><td>2.08.1.36.<a name="reportingSite-2..08..1..36.." /></td><td>Landratsamt Ostalbkreis</td><td /></tr><tr><td>2.08.2.15.<a name="reportingSite-2..08..2..15.." /></td><td>Landratsamt Karlsruhe</td><td /></tr><tr><td>2.08.2.16.<a name="reportingSite-2..08..2..16.." /></td><td>Landratsamt Rastatt</td><td /></tr><tr><td>2.08.2.22.<a name="reportingSite-2..08..2..22.." /></td><td>Stadt Mannheim</td><td /></tr><tr><td>2.08.2.25.<a name="reportingSite-2..08..2..25.." /></td><td>Landratsamt Neckar-Odenwald-Kreis</td><td /></tr><tr><td>2.08.2.26.<a name="reportingSite-2..08..2..26.." /></td><td>Landratsamt Rhein-Neckar-Kreis</td><td /></tr><tr><td>2.08.2.35.<a name="reportingSite-2..08..2..35.." /></td><td>Landratsamt Calw</td><td /></tr><tr><td>2.08.2.36.<a name="reportingSite-2..08..2..36.." /></td><td>Landratsamt Enzkreis</td><td /></tr><tr><td>2.08.2.37.<a name="reportingSite-2..08..2..37.." /></td><td>Landratsamt Freudenstadt</td><td /></tr><tr><td>2.08.3.15.<a name="reportingSite-2..08..3..15.." /></td><td>Landratsamt Breisgau-Hochschwarzwald</td><td /></tr><tr><td>2.08.3.16.<a name="reportingSite-2..08..3..16.." /></td><td>Landratsamt Emmendingen</td><td /></tr><tr><td>2.08.3.17.<a name="reportingSite-2..08..3..17.." /></td><td>Landratsamt Ortenaukreis</td><td /></tr><tr><td>2.08.3.25.<a name="reportingSite-2..08..3..25.." /></td><td>Landratsamt Rottweil</td><td /></tr><tr><td>2.08.3.26.<a name="reportingSite-2..08..3..26.." /></td><td>Landratsamt Schwarzwald-Baar-Kreis</td><td /></tr><tr><td>2.08.3.27.<a name="reportingSite-2..08..3..27.." /></td><td>Landratsamt Tuttlingen</td><td /></tr><tr><td>2.08.3.35.<a name="reportingSite-2..08..3..35.." /></td><td>Landratsamt Konstanz</td><td /></tr><tr><td>2.08.3.36.<a name="reportingSite-2..08..3..36.." /></td><td>Landratsamt Lörrach</td><td /></tr><tr><td>2.08.3.37.<a name="reportingSite-2..08..3..37.." /></td><td>Landratsamt Waldshut</td><td /></tr><tr><td>2.08.4.15.<a name="reportingSite-2..08..4..15.." /></td><td>Landratsamt Reutlingen</td><td /></tr><tr><td>2.08.4.16.<a name="reportingSite-2..08..4..16.." /></td><td>Landratsamt Tübingen</td><td /></tr><tr><td>2.08.4.17.<a name="reportingSite-2..08..4..17.." /></td><td>Landratsamt Zollernalbkreis</td><td /></tr><tr><td>2.08.4.25.<a name="reportingSite-2..08..4..25.." /></td><td>Landratsamt Alb-Donau-Kreis</td><td /></tr><tr><td>2.08.4.26.<a name="reportingSite-2..08..4..26.." /></td><td>Landratsamt Biberach</td><td /></tr><tr><td>2.08.4.35.<a name="reportingSite-2..08..4..35.." /></td><td>Landratsamt Bodenseekreis</td><td /></tr><tr><td>2.08.4.36.<a name="reportingSite-2..08..4..36.." /></td><td>Landratsamt Ravensburg</td><td /></tr><tr><td>2.08.4.37.<a name="reportingSite-2..08..4..37.." /></td><td>Landratsamt Sigmaringen</td><td /></tr><tr><td>2.09.1.61.<a name="reportingSite-2..09..1..61.." /></td><td>Stadt Ingolstadt</td><td /></tr><tr><td>2.09.1.62.<a name="reportingSite-2..09..1..62.." /></td><td>Landeshauptstadt München</td><td /></tr><tr><td>2.09.1.71.<a name="reportingSite-2..09..1..71.." /></td><td>Landratsamt Altötting</td><td /></tr><tr><td>2.09.1.72.<a name="reportingSite-2..09..1..72.." /></td><td>Landratsamt Berchtesgadener Land</td><td /></tr><tr><td>2.09.1.73.02.<a name="reportingSite-2..09..1..73..02.." /></td><td>Landkreis Bad Tölz - Wolfratshausen</td><td /></tr><tr><td>2.09.1.74.<a name="reportingSite-2..09..1..74.." /></td><td>Landratsamt Dachau</td><td /></tr><tr><td>2.09.1.75.<a name="reportingSite-2..09..1..75.." /></td><td>Landratsamt Ebersberg</td><td /></tr><tr><td>2.09.1.76.<a name="reportingSite-2..09..1..76.." /></td><td>Landratsamt Eichstätt</td><td /></tr><tr><td>2.09.1.77.<a name="reportingSite-2..09..1..77.." /></td><td>Landratsamt Erding</td><td /></tr><tr><td>2.09.1.78.<a name="reportingSite-2..09..1..78.." /></td><td>Landratsamt Freising</td><td /></tr><tr><td>2.09.1.79.<a name="reportingSite-2..09..1..79.." /></td><td>Landratsamt Fürstenfeldbruck</td><td /></tr><tr><td>2.09.1.80.<a name="reportingSite-2..09..1..80.." /></td><td>Landratsamt Garmisch-Partenkirchen</td><td /></tr><tr><td>2.09.1.81.<a name="reportingSite-2..09..1..81.." /></td><td>Landkreis Landsberg a.Lech</td><td /></tr><tr><td>2.09.1.82.<a name="reportingSite-2..09..1..82.." /></td><td>Landratsamt Miesbach</td><td /></tr><tr><td>2.09.1.83.<a name="reportingSite-2..09..1..83.." /></td><td>Landratsamt Mühldorf am Inn</td><td /></tr><tr><td>2.09.1.84.<a name="reportingSite-2..09..1..84.." /></td><td>Landratsamt München</td><td /></tr><tr><td>2.09.1.85.01.<a name="reportingSite-2..09..1..85..01.." /></td><td>Landratsamt Neuburg-Schrobenhausen</td><td /></tr><tr><td>2.09.1.86.<a name="reportingSite-2..09..1..86.." /></td><td>Landratsamt Pfaffenhofen</td><td /></tr><tr><td>2.09.1.87.<a name="reportingSite-2..09..1..87.." /></td><td>Landratsamt Rosenheim</td><td /></tr><tr><td>2.09.1.88.<a name="reportingSite-2..09..1..88.." /></td><td>Landratsamt Starnberg</td><td /></tr><tr><td>2.09.1.89.<a name="reportingSite-2..09..1..89.." /></td><td>Landratsamt Traunstein</td><td /></tr><tr><td>2.09.1.90.<a name="reportingSite-2..09..1..90.." /></td><td>Landratsamt Weilheim-Schongau</td><td /></tr><tr><td>2.09.2.71.<a name="reportingSite-2..09..2..71.." /></td><td>Landratsamt Deggendorf</td><td /></tr><tr><td>2.09.2.72.<a name="reportingSite-2..09..2..72.." /></td><td>Landratsamt Freyung-Grafenau</td><td /></tr><tr><td>2.09.2.73.<a name="reportingSite-2..09..2..73.." /></td><td>Landratsamt Kelheim</td><td /></tr><tr><td>2.09.2.74.<a name="reportingSite-2..09..2..74.." /></td><td>Landratsamt Landshut</td><td /></tr><tr><td>2.09.2.75.<a name="reportingSite-2..09..2..75.." /></td><td>Landratsamt Passau</td><td /></tr><tr><td>2.09.2.76.<a name="reportingSite-2..09..2..76.." /></td><td>Landratsamt Regen</td><td /></tr><tr><td>2.09.2.77.<a name="reportingSite-2..09..2..77.." /></td><td>Landratsamt Rottal-Inn</td><td /></tr><tr><td>2.09.2.78.<a name="reportingSite-2..09..2..78.." /></td><td>Landratsamt Straubing-Bogen</td><td /></tr><tr><td>2.09.2.79.<a name="reportingSite-2..09..2..79.." /></td><td>Landratsamt Dingolfing-Landau</td><td /></tr><tr><td>2.09.3.61.01.<a name="reportingSite-2..09..3..61..01.." /></td><td>Landratsamt Amberg-Sulzbach</td><td /></tr><tr><td>2.09.3.72.<a name="reportingSite-2..09..3..72.." /></td><td>Landratsamt Cham</td><td /></tr><tr><td>2.09.3.73.<a name="reportingSite-2..09..3..73.." /></td><td>Landratsamt Neumarkt i.d.Oberpfalz</td><td /></tr><tr><td>2.09.3.74.<a name="reportingSite-2..09..3..74.." /></td><td>Landratsamt Neustadt a. d. Waldnaab/ Weiden</td><td /></tr><tr><td>2.09.3.75.<a name="reportingSite-2..09..3..75.." /></td><td>Landratsamt Regensburg</td><td /></tr><tr><td>2.09.3.76.01.<a name="reportingSite-2..09..3..76..01.." /></td><td>Landratsamt Schwandorf</td><td /></tr><tr><td>2.09.3.77.<a name="reportingSite-2..09..3..77.." /></td><td>Landratsamt Tirschenreuth</td><td /></tr><tr><td>2.09.4.71.<a name="reportingSite-2..09..4..71.." /></td><td>Landratsamt Bamberg</td><td /></tr><tr><td>2.09.4.72.<a name="reportingSite-2..09..4..72.." /></td><td>Landratsamt Bayreuth</td><td /></tr><tr><td>2.09.4.73.<a name="reportingSite-2..09..4..73.." /></td><td>Landratsamt Coburg</td><td /></tr><tr><td>2.09.4.74.<a name="reportingSite-2..09..4..74.." /></td><td>Landratsamt Forchheim</td><td /></tr><tr><td>2.09.4.75.<a name="reportingSite-2..09..4..75.." /></td><td>Landratsamt Hof</td><td /></tr><tr><td>2.09.4.76.<a name="reportingSite-2..09..4..76.." /></td><td>Landratsamt Kronach</td><td /></tr><tr><td>2.09.4.77.<a name="reportingSite-2..09..4..77.." /></td><td>Landratsamt Kulmbach</td><td /></tr><tr><td>2.09.4.78.<a name="reportingSite-2..09..4..78.." /></td><td>Landratsamt Lichtenfels</td><td /></tr><tr><td>2.09.4.79.<a name="reportingSite-2..09..4..79.." /></td><td>Landratsamt Wunsiedel i.Fichtelgeb.</td><td /></tr><tr><td>2.09.5.61.<a name="reportingSite-2..09..5..61.." /></td><td>Landratsamt Ansbach</td><td /></tr><tr><td>2.09.5.64.<a name="reportingSite-2..09..5..64.." /></td><td>Stadt Nürnberg</td><td /></tr><tr><td>2.09.5.72.01.<a name="reportingSite-2..09..5..72..01.." /></td><td>Landratsamt Erlangen-Höchstadt</td><td /></tr><tr><td>2.09.5.73.<a name="reportingSite-2..09..5..73.." /></td><td>Landratsamt Fürth</td><td /></tr><tr><td>2.09.5.74.<a name="reportingSite-2..09..5..74.." /></td><td>Landratsamt Nürnberger Land</td><td /></tr><tr><td>2.09.5.75.<a name="reportingSite-2..09..5..75.." /></td><td>Landratsamt Neustadt a.d.Aisch-Bad Windsheim</td><td /></tr><tr><td>2.09.5.76.<a name="reportingSite-2..09..5..76.." /></td><td>Landratsamt Roth</td><td /></tr><tr><td>2.09.5.77.<a name="reportingSite-2..09..5..77.." /></td><td>Landratsamt Weißenburg-Gunzenhausen</td><td /></tr><tr><td>2.09.6.71.<a name="reportingSite-2..09..6..71.." /></td><td>Landratsamt Aschaffenburg</td><td /></tr><tr><td>2.09.6.72.<a name="reportingSite-2..09..6..72.." /></td><td>Landkreis Bad Kissingen</td><td /></tr><tr><td>2.09.6.73.<a name="reportingSite-2..09..6..73.." /></td><td>Landkreis Rhön-Grabfeld</td><td /></tr><tr><td>2.09.6.74.<a name="reportingSite-2..09..6..74.." /></td><td>Landratsamt Hassberge</td><td /></tr><tr><td>2.09.6.75.<a name="reportingSite-2..09..6..75.." /></td><td>Landratsamt Kitzingen</td><td /></tr><tr><td>2.09.6.76.<a name="reportingSite-2..09..6..76.." /></td><td>Landratsamt Miltenberg</td><td /></tr><tr><td>2.09.6.77.<a name="reportingSite-2..09..6..77.." /></td><td>Landratsamt Main-Spessart</td><td /></tr><tr><td>2.09.6.78.<a name="reportingSite-2..09..6..78.." /></td><td>Landratsamt Schweinfurt</td><td /></tr><tr><td>2.09.6.79.<a name="reportingSite-2..09..6..79.." /></td><td>Landratsamt Würzburg</td><td /></tr><tr><td>2.09.7.61.<a name="reportingSite-2..09..7..61.." /></td><td>Stadt Augsburg</td><td /></tr><tr><td>2.09.7.64.<a name="reportingSite-2..09..7..64.." /></td><td>Stadt Memmingen</td><td /></tr><tr><td>2.09.7.71.<a name="reportingSite-2..09..7..71.." /></td><td>Landratsamt Aichach-Friedberg</td><td /></tr><tr><td>2.09.7.72.<a name="reportingSite-2..09..7..72.." /></td><td>Landratsamt Augsburg</td><td /></tr><tr><td>2.09.7.73.<a name="reportingSite-2..09..7..73.." /></td><td>Landratsamt Dillingen</td><td /></tr><tr><td>2.09.7.74.<a name="reportingSite-2..09..7..74.." /></td><td>Landratsamt Günzburg</td><td /></tr><tr><td>2.09.7.75.<a name="reportingSite-2..09..7..75.." /></td><td>Landratsamt Neu-Ulm</td><td /></tr><tr><td>2.09.7.76.<a name="reportingSite-2..09..7..76.." /></td><td>Landratsamt Lindau</td><td /></tr><tr><td>2.09.7.77.<a name="reportingSite-2..09..7..77.." /></td><td>Landkreis Ostallgäu</td><td /></tr><tr><td>2.09.7.78.<a name="reportingSite-2..09..7..78.." /></td><td>Landratsamt Unterallgäu</td><td /></tr><tr><td>2.09.7.79.01.<a name="reportingSite-2..09..7..79..01.." /></td><td>Landratsamt Donau-Ries</td><td /></tr><tr><td>2.09.7.80.<a name="reportingSite-2..09..7..80.." /></td><td>Landratsamt Oberallgäu</td><td /></tr><tr><td>2.10.0.41.<a name="reportingSite-2..10..0..41.." /></td><td>Regionalverbandes Saarbrücken</td><td /></tr><tr><td>2.10.0.42.<a name="reportingSite-2..10..0..42.." /></td><td>Landkreis Merzig-Wadern</td><td /></tr><tr><td>2.10.0.43.<a name="reportingSite-2..10..0..43.." /></td><td>Landkreis Neunkirchen</td><td /></tr><tr><td>2.10.0.44.<a name="reportingSite-2..10..0..44.." /></td><td>Landkreis Saarlouis</td><td /></tr><tr><td>2.10.0.45.<a name="reportingSite-2..10..0..45.." /></td><td>Saarpfalz-Kreis</td><td /></tr><tr><td>2.10.0.46.<a name="reportingSite-2..10..0..46.." /></td><td>Landkreis St. Wendel</td><td /></tr><tr><td>2.11.0.01.01.<a name="reportingSite-2..11..0..01..01.." /></td><td>Bezirksamt Mitte von Berlin , Abt. Gesundheit</td><td /></tr><tr><td>2.11.0.02.01.<a name="reportingSite-2..11..0..02..01.." /></td><td>Bezirksamt Friedrichshain-Kreuzberg von Berlin</td><td /></tr><tr><td>2.11.0.03.01.<a name="reportingSite-2..11..0..03..01.." /></td><td>Bezirksamt Pankow von Berlin</td><td /></tr><tr><td>2.11.0.04.01.<a name="reportingSite-2..11..0..04..01.." /></td><td>Bezirksamt Charlottenburg-Wilmersdorf von Berlin</td><td /></tr><tr><td>2.11.0.05.01.<a name="reportingSite-2..11..0..05..01.." /></td><td>Bezirksamt Spandau von Berlin</td><td /></tr><tr><td>2.11.0.06.01.<a name="reportingSite-2..11..0..06..01.." /></td><td>Bezirksamt Steglitz-Zehlendorf von Berlin</td><td /></tr><tr><td>2.11.0.07.01.<a name="reportingSite-2..11..0..07..01.." /></td><td>Bezirksamt Tempelhof-Schöneberg von Berlin</td><td /></tr><tr><td>2.11.0.08.01.<a name="reportingSite-2..11..0..08..01.." /></td><td>Bezirksamt Neukölln von Berlin</td><td /></tr><tr><td>2.11.0.09.01.<a name="reportingSite-2..11..0..09..01.." /></td><td>Bezirksamt Treptow-Köpenick von Berlin</td><td /></tr><tr><td>2.11.0.10.01.<a name="reportingSite-2..11..0..10..01.." /></td><td>Bezirksamt Marzahn-Hellersdorf von Berlin</td><td /></tr><tr><td>2.11.0.11.01.<a name="reportingSite-2..11..0..11..01.." /></td><td>Bezirksamt Lichtenberg von Berlin</td><td /></tr><tr><td>2.11.0.12.01.<a name="reportingSite-2..11..0..12..01.." /></td><td>Bezirksamt Reinickendorf von Berlin</td><td /></tr><tr><td>2.12.0.51.<a name="reportingSite-2..12..0..51.." /></td><td>Stadtverwaltung Brandenburg</td><td /></tr><tr><td>2.12.0.52.<a name="reportingSite-2..12..0..52.." /></td><td>Stadt Cottbus/S</td><td /></tr><tr><td>2.12.0.53.<a name="reportingSite-2..12..0..53.." /></td><td>Stadt Frankfurt/Oder</td><td /></tr><tr><td>2.12.0.54.<a name="reportingSite-2..12..0..54.." /></td><td>Landeshauptstadt Potsdam</td><td /></tr><tr><td>2.12.0.60.<a name="reportingSite-2..12..0..60.." /></td><td>Landkreis Barnim</td><td /></tr><tr><td>2.12.0.61.<a name="reportingSite-2..12..0..61.." /></td><td>Landkreis Dahme- Spreewald</td><td /></tr><tr><td>2.12.0.62.<a name="reportingSite-2..12..0..62.." /></td><td>Landkreis Elbe-Elster</td><td /></tr><tr><td>2.12.0.63.<a name="reportingSite-2..12..0..63.." /></td><td>Landkreis Havelland</td><td /></tr><tr><td>2.12.0.64.<a name="reportingSite-2..12..0..64.." /></td><td>Landkreis Märkisch- Oderland</td><td /></tr><tr><td>2.12.0.65.<a name="reportingSite-2..12..0..65.." /></td><td>Landkreis Oberhavel</td><td /></tr><tr><td>2.12.0.66.<a name="reportingSite-2..12..0..66.." /></td><td>Landkreis Oberspreewald- Lausitz</td><td /></tr><tr><td>2.12.0.67.<a name="reportingSite-2..12..0..67.." /></td><td>Landkreis Oder- Spree</td><td /></tr><tr><td>2.12.0.68.<a name="reportingSite-2..12..0..68.." /></td><td>Kreisverwaltung Ostprignitz- Ruppin</td><td /></tr><tr><td>2.12.0.69.<a name="reportingSite-2..12..0..69.." /></td><td>Landkreis Potsdam-Mittelmark</td><td /></tr><tr><td>2.12.0.70.<a name="reportingSite-2..12..0..70.." /></td><td>Landkreis Prignitz</td><td /></tr><tr><td>2.12.0.71.<a name="reportingSite-2..12..0..71.." /></td><td>Landkreis Spree-Neiße</td><td /></tr><tr><td>2.12.0.72.<a name="reportingSite-2..12..0..72.." /></td><td>Landkreis Teltow-Fläming</td><td /></tr><tr><td>2.12.0.73.<a name="reportingSite-2..12..0..73.." /></td><td>Landkreis Uckermark</td><td /></tr><tr><td>2.13.0.03.<a name="reportingSite-2..13..0..03.." /></td><td>Stadt Rostock</td><td /></tr><tr><td>2.13.0.04.<a name="reportingSite-2..13..0..04.." /></td><td>Landeshauptstadt Schwerin</td><td /></tr><tr><td>2.13.0.71.<a name="reportingSite-2..13..0..71.." /></td><td>Landkreis Mecklenburgische Seenplatte</td><td /></tr><tr><td>2.13.0.72.<a name="reportingSite-2..13..0..72.." /></td><td>Landkreis Rostock</td><td /></tr><tr><td>2.13.0.73.<a name="reportingSite-2..13..0..73.." /></td><td>Landkreis Vorpommern-Rügen</td><td /></tr><tr><td>2.13.0.74.<a name="reportingSite-2..13..0..74.." /></td><td>Landkreis Nordwestmecklenburg</td><td /></tr><tr><td>2.13.0.75.<a name="reportingSite-2..13..0..75.." /></td><td>Landkreis Vorpommern–Greifswald</td><td /></tr><tr><td>2.13.0.76.<a name="reportingSite-2..13..0..76.." /></td><td>Landkreis Ludwigslust-Parchim</td><td /></tr><tr><td>2.14.5.11.<a name="reportingSite-2..14..5..11.." /></td><td>Stadt Chemnitz</td><td /></tr><tr><td>2.14.5.21.02.<a name="reportingSite-2..14..5..21..02.." /></td><td>Landkreis Erzgebirgskreis</td><td /></tr><tr><td>2.14.5.22.01.<a name="reportingSite-2..14..5..22..01.." /></td><td>Landkreis Mittelsachsen</td><td /></tr><tr><td>2.14.5.23.02.<a name="reportingSite-2..14..5..23..02.." /></td><td>Landkreis Vogtlandkreis</td><td /></tr><tr><td>2.14.5.24.01.<a name="reportingSite-2..14..5..24..01.." /></td><td>Landkreis Zwickau</td><td /></tr><tr><td>2.14.6.12.<a name="reportingSite-2..14..6..12.." /></td><td>Landeshauptstadt Dresden</td><td /></tr><tr><td>2.14.6.25.03.<a name="reportingSite-2..14..6..25..03.." /></td><td>Landratsamt Bautzen</td><td /></tr><tr><td>2.14.6.26.01.<a name="reportingSite-2..14..6..26..01.." /></td><td>Landkreis Görlitz</td><td /></tr><tr><td>2.14.6.27.01.<a name="reportingSite-2..14..6..27..01.." /></td><td>Landkreis Meißen</td><td /></tr><tr><td>2.14.6.28.01.<a name="reportingSite-2..14..6..28..01.." /></td><td>Landkreis Sächsische Schweiz - Osterzgebirge</td><td /></tr><tr><td>2.14.7.13.<a name="reportingSite-2..14..7..13.." /></td><td>Stadt Leipzig</td><td /></tr><tr><td>2.14.7.29.01.<a name="reportingSite-2..14..7..29..01.." /></td><td>Landratsamt Leipzig</td><td /></tr><tr><td>2.14.7.30.01.<a name="reportingSite-2..14..7..30..01.." /></td><td>Landratsamt Nordsachsen</td><td /></tr><tr><td>2.15.0.01.<a name="reportingSite-2..15..0..01.." /></td><td>Stadt Dessau-Roßlau</td><td /></tr><tr><td>2.15.0.02.<a name="reportingSite-2..15..0..02.." /></td><td>Stadt Halle (Saale)</td><td /></tr><tr><td>2.15.0.03.<a name="reportingSite-2..15..0..03.." /></td><td>Landeshauptstadt Magdeburg</td><td /></tr><tr><td>2.15.0.81.<a name="reportingSite-2..15..0..81.." /></td><td>Altmarkkreis Salzwedel</td><td /></tr><tr><td>2.15.0.82.02.<a name="reportingSite-2..15..0..82..02.." /></td><td>Landkreis Anhalt- Bitterfeld</td><td /></tr><tr><td>2.15.0.83.01.<a name="reportingSite-2..15..0..83..01.." /></td><td>Landkreis Börde</td><td /></tr><tr><td>2.15.0.84.02.<a name="reportingSite-2..15..0..84..02.." /></td><td>Burgenlandkreis</td><td /></tr><tr><td>2.15.0.85.03.<a name="reportingSite-2..15..0..85..03.." /></td><td>Landkreis Harz</td><td /></tr><tr><td>2.15.0.86.<a name="reportingSite-2..15..0..86.." /></td><td>Landkreis Jerichower Land</td><td /></tr><tr><td>2.15.0.87.02.<a name="reportingSite-2..15..0..87..02.." /></td><td>Landkreis Mansfeld-Südharz</td><td /></tr><tr><td>2.15.0.88.02.<a name="reportingSite-2..15..0..88..02.." /></td><td>Landkreis Saalekreis</td><td /></tr><tr><td>2.15.0.89.01.<a name="reportingSite-2..15..0..89..01.." /></td><td>Salzlandkreis</td><td /></tr><tr><td>2.15.0.90.<a name="reportingSite-2..15..0..90.." /></td><td>Landkreis Stendal</td><td /></tr><tr><td>2.15.0.91.<a name="reportingSite-2..15..0..91.." /></td><td>Landkreis Wittenberg</td><td /></tr><tr><td>2.16.0.51.<a name="reportingSite-2..16..0..51.." /></td><td>Landeshauptstadt Erfurt</td><td /></tr><tr><td>2.16.0.52.<a name="reportingSite-2..16..0..52.." /></td><td>Stadt Gera</td><td /></tr><tr><td>2.16.0.53.<a name="reportingSite-2..16..0..53.." /></td><td>Stadtverwaltung Jena</td><td /></tr><tr><td>2.16.0.54.<a name="reportingSite-2..16..0..54.." /></td><td>Stadtverwaltung Suhl</td><td /></tr><tr><td>2.16.0.55.<a name="reportingSite-2..16..0..55.." /></td><td>Stadtverwaltung Weimar</td><td /></tr><tr><td>2.16.0.61.<a name="reportingSite-2..16..0..61.." /></td><td>Landkreis Eichsfeld</td><td /></tr><tr><td>2.16.0.62.<a name="reportingSite-2..16..0..62.." /></td><td>Landratsamt Nordhausen</td><td /></tr><tr><td>2.16.0.63.<a name="reportingSite-2..16..0..63.." /></td><td>Landratsamt Wartburgkreis</td><td /></tr><tr><td>2.16.0.64.01.<a name="reportingSite-2..16..0..64..01.." /></td><td>Landratsamt Unstrut-Hainich-Kreis</td><td /></tr><tr><td>2.16.0.65.01.<a name="reportingSite-2..16..0..65..01.." /></td><td>Landratsamt Kyffhäuserkreis</td><td /></tr><tr><td>2.16.0.66.<a name="reportingSite-2..16..0..66.." /></td><td>Landratsamt Schmalkalden-Meiningen</td><td /></tr><tr><td>2.16.0.67.<a name="reportingSite-2..16..0..67.." /></td><td>Landratsamt Gotha</td><td /></tr><tr><td>2.16.0.68.<a name="reportingSite-2..16..0..68.." /></td><td>Landratsamt Sömmerda</td><td /></tr><tr><td>2.16.0.69.<a name="reportingSite-2..16..0..69.." /></td><td>Landratsamt Hildburghausen</td><td /></tr><tr><td>2.16.0.70.02.<a name="reportingSite-2..16..0..70..02.." /></td><td>Landratsamt Ilm-Kreis</td><td /></tr><tr><td>2.16.0.71.<a name="reportingSite-2..16..0..71.." /></td><td>Landratsamt Weimarer Land</td><td /></tr><tr><td>2.16.0.72.<a name="reportingSite-2..16..0..72.." /></td><td>Landratsamt Sonneberg</td><td /></tr><tr><td>2.16.0.73.02.<a name="reportingSite-2..16..0..73..02.." /></td><td>Landratsamt Saalfeld-Rudolstadt</td><td /></tr><tr><td>2.16.0.74.<a name="reportingSite-2..16..0..74.." /></td><td>Landratsamt Saale-Holzland-Kreis</td><td /></tr><tr><td>2.16.0.75.03.<a name="reportingSite-2..16..0..75..03.." /></td><td>Landratsamt Saale-Orla-Kreis</td><td /></tr><tr><td>2.16.0.76.<a name="reportingSite-2..16..0..76.." /></td><td>Landratsamt Greiz</td><td /></tr><tr><td>2.16.0.77.<a name="reportingSite-2..16..0..77.." /></td><td>Landratsamt Altenburger Land</td><td /></tr></table></div></p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="ig-view-footer" role="contentinfo" aria-label="Footer">
+                
+<div class="container">
+    <div class="row">
+        <p>Powered by <b>SIMPLIFIER.NET</b></p>
+        <div>
+            HL7<sup>&reg;</sup> and FHIR<sup>&reg;</sup> are the registered trademarks of Health Level Seven International
+        </div>
+    </div>
+</div>
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>

@@ -1,0 +1,26 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="hospitalizationReason" />
+  <url value="https://demis.rki.de/fhir/CodeSystem/hospitalizationReason" />
+  <version value="1.0.0" />
+  <name value="HospitalizationReason" />
+  <title value="Hospitalisierungsgrund" />
+  <status value="active" />
+  <date value="2022-08-12" />
+  <description value="Das CodeSystem HospitalizationReason enthält die Codes zur Angabe des Hospitalisierungsgrundes." />
+  <caseSensitive value="false" />
+  <valueSet value="https://demis.rki.de/fhir/ValueSet/hospitalizationReason" />
+  <content value="complete" />
+  <count value="3" />
+  <concept>
+    <code value="becauseOfDisease" />
+    <display value="Hospitalisiert aufgrund der gemeldeten Krankheit" />
+  </concept>
+  <concept>
+    <code value="becauseOfOtherReason" />
+    <display value="Hospitalisiert aufgrund einer anderen Ursache als der gemeldeten Krankheit" />
+  </concept>
+  <concept>
+    <code value="forIsolation" />
+    <display value="Hospitalisiert zur Isolierung" />
+  </concept>
+</CodeSystem>

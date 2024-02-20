@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="HospitalizationRegion" />
+  <url value="https://demis.rki.de/fhir/StructureDefinition/HospitalizationRegion" />
+  <version value="1.0.0" />
+  <name value="HospitalizationRegion" />
+  <title value="Region der Hospitalisierung" />
+  <status value="active" />
+  <date value="2022-01-18" />
+  <description value="Die HospitalizationRegion dient der Angabe der geografischen Region der Hospitalisierung." />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Encounter" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="https://demis.rki.de/fhir/StructureDefinition/HospitalizationRegion" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.value[x].coding">
+      <path value="Extension.value[x].coding" />
+      <min value="1" />
+      <max value="1" />
+      <binding>
+        <strength value="extensible" />
+        <description value="Geografischen Region" />
+        <valueSet value="https://demis.rki.de/fhir/ValueSet/geographicRegion" />
+      </binding>
+    </element>
+    <element id="Extension.value[x].coding.system">
+      <path value="Extension.value[x].coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Extension.value[x].coding.code">
+      <path value="Extension.value[x].coding.code" />
+      <min value="1" />
+    </element>
+  </differential>
+</StructureDefinition>

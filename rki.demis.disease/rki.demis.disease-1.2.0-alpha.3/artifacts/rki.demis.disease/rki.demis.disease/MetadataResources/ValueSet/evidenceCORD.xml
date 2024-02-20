@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="evidenceCORD"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/evidenceCORD"/>
+  <version value="1.1.0"/>
+  <name value="EvidenceCORD"/>
+  <title value="Diphtherie-Symptom und -Manifestation"/>
+  <status value="active"/>
+  <date value="2023-03-23"/>
+  <description value="Das ValueSet EvidenceCORD enthält die Codes der Diphtherie-Symptome und -Manifestationen."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <code value="64531003"/>
+        <display value="Ausfluss, nasal"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Nasal discharge (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="112401000119106"/>
+        <display value="Bindehautläsion"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Lesion of conjunctiva (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="162397003"/>
+        <display value="Halsschmerzen/-entzündung"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Pain in throat (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="95324001"/>
+        <display value="Hautläsion"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Skin lesion (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="276320009:{363698007=58675001,116676008=399016005}"/>
+        <display value="Pseudomembränöse Beläge im oberen Respirationstrakt"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="276320009 |Lesion of mucosa (disorder)| : { 363698007 |Finding site (attribute)| = 58675001 |Upper respiratory tract structure (body structure)|, 116676008 |Associated morphology (attribute)| = 399016005 |Pseudomembrane (morphologic abnormality)| }"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="276320009:{363698007=71836000,116676008=399016005}"/>
+        <display value="Pseudomembränöse Beläge des Pharynx"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="276320009 |Lesion of mucosa (disorder)| : { 363698007 |Finding site (attribute)| = 71836000 |Nasopharyngeal structure (body structure)|, 116676008 |Associated morphology (attribute)| = 399016005 |Pseudomembrane (morphologic abnormality)| }"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="276320009:{363698007=4596009,116676008=399016005}"/>
+        <display value="Pseudomembränöse Beläge des Larynx"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="276320009 |Lesion of mucosa (disorder)| : { 363698007 |Finding site (attribute)| = 4596009 |Laryngeal structure (body structure)|, 116676008 |Associated morphology (attribute)| = 399016005 |Pseudomembrane (morphologic abnormality)| }"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

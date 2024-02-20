@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetConsumptionCLOD"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetConsumptionCLOD"/>
+  <version value="1.0.0"/>
+  <name value="AnswerSetConsumptionCLOD"/>
+  <title value="Antwort zum Ort des Verzehrs bei Botulismus"/>
+  <status value="active"/>
+  <date value="2022-11-30"/>
+  <description value="Das ValueSet AnswerSetConsumptionCLOD enthält die Codes der Antwortmöglichkeiten für den Ort des Verzehrs bei Botulismus."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="310205006"/>
+        <display value="Haushalt"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="310205006 |Private residential home (environment)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="257689006"/>
+        <display value="Restaurant"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="257689006 |Restaurant (environment)|"/>
+        </designation>
+      </concept>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+      <concept>
+        <code value="ASKU"/>
+        <display value="asked but unknown"/>
+      </concept>
+      <concept>
+        <code value="NASK"/>
+        <display value="not asked"/>
+      </concept>
+      <concept>
+        <code value="OTH"/>
+        <display value="other"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

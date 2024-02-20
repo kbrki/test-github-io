@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='utf-8'?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Notification" />
+  <url value="https://demis.rki.de/fhir/StructureDefinition/Notification" />
+  <version value="1.3.0" />
+  <name value="Notification" />
+  <title value="Meldung" />
+  <status value="active" />
+  <date value="2023-11-28" />
+  <description value="Die Meldung ist ein abstraktes Profil und referenziert den Melder und die Diagnose. Spezifische Arten von Meldungen werden in abgeleiteten Profilen definiert. &#xD;&#xA;Meldungen, die durch einen bestimmten Melder abgesetzt werden, können nur durch diesen ergänzt oder korrigiert werden. Meldungen können andere Meldungen referenzieren." />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="cda" />
+    <uri value="http://hl7.org/v3/cda" />
+    <name value="CDA (R2)" />
+  </mapping>
+  <mapping>
+    <identity value="fhirdocumentreference" />
+    <uri value="http://hl7.org/fhir/documentreference" />
+    <name value="FHIR DocumentReference" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="true" />
+  <type value="Composition" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Composition.status">
+      <path value="Composition.status" />
+      <short value="Status der Meldungsinhalte" />
+      <definition value="Der Status gibt, ob die Meldungsinhalte verbindlich oder vorläufig sind. Oder ob es sich um eine Korrektur-bzw. Ergänzungsmeldung handelt." />
+      <comment value="Der Status ist szenarienspezifisch folgendermaßen zu belegen:&#xD;&#xA;final - wenn keine weiteren Untersuchungen notwendig sind und der Meldetatbestand erfüllt ist&#xD;&#xA;preliminary - wenn ein Bestätigungstest notwendig ist&#xD;&#xA;amended - wenn die Meldung korrigiert oder um einen weiteren Erregernachweis ergänzt wird" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.type">
+      <path value="Composition.type" />
+      <short value="Typ der Composition" />
+      <definition value="Typ der Composition" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.date">
+      <path value="Composition.date" />
+      <short value="Zeitpunkt der Erstellung/Bearbeitung der aktuellen Version der Meldung" />
+      <definition value="Zeitpunkt der Erstellung/Bearbeitung der aktuellen Version der Meldung" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.author">
+      <path value="Composition.author" />
+      <short value="Verweis auf die Melder-Rolle." />
+      <definition value="Verweis auf die Melder-Rolle. Über die Melder-Rolle kann eine Person oder eine Organisation als Melder referenziert werden." />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/NotifierRole" />
+        <aggregation value="bundled" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.author.reference">
+      <path value="Composition.author.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.title">
+      <path value="Composition.title" />
+      <short value="Titel der Meldung" />
+      <definition value="Titel der Meldung" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.confidentiality">
+      <path value="Composition.confidentiality" />
+      <max value="0" />
+    </element>
+    <element id="Composition.attester">
+      <path value="Composition.attester" />
+      <max value="0" />
+    </element>
+    <element id="Composition.custodian">
+      <path value="Composition.custodian" />
+      <max value="0" />
+    </element>
+    <element id="Composition.relatesTo">
+      <path value="Composition.relatesTo" />
+      <short value="Verweis auf eine Meldung" />
+      <definition value="Es kann eine Meldung referenziert werden, z.B. eine vorangegangene Meldung eines Primärlabors. Dazu wird die NotificationId der Meldung, auf die verwiesen werden soll, im relatesTo-Identifier angegeben." />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.relatesTo.code">
+      <path value="Composition.relatesTo.code" />
+      <fixedCode value="appends" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.relatesTo.target[x]">
+      <path value="Composition.relatesTo.target[x]" />
+      <type>
+        <code value="Reference" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.relatesTo.target[x].type">
+      <path value="Composition.relatesTo.target[x].type" />
+      <min value="1" />
+      <fixedUri value="Composition" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.relatesTo.target[x].identifier">
+      <path value="Composition.relatesTo.target[x].identifier" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.relatesTo.target[x].identifier.system">
+      <path value="Composition.relatesTo.target[x].identifier.system" />
+      <min value="1" />
+      <fixedUri value="https://demis.rki.de/fhir/NamingSystem/NotificationId" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.relatesTo.target[x].identifier.value">
+      <path value="Composition.relatesTo.target[x].identifier.value" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.event">
+      <path value="Composition.event" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,28 @@
+<Encounter xmlns="http://hl7.org/fhir">
+   <id value="cf424cfb-8809-3b51-8ab2-d8bf979cbe8d"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/Hospitalization"></profile>
+   </meta>
+   <status value="in-progress"></status>
+   <class>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"></system>
+      <code value="IMP"></code>
+      <display value="inpatient encounter"></display>
+   </class>
+   <serviceType>
+      <coding>
+         <system value="https://demis.rki.de/fhir/CodeSystem/hospitalizationServiceType"></system>
+         <code value="0800"></code>
+         <display value="Pneumologie"></display>
+      </coding>
+   </serviceType>
+   <subject>
+      <reference value="Patient/ac163863-fefa-3ce2-8511-7a4150d6ad43"></reference>
+   </subject>
+   <period>
+      <start value="2021-03-04"></start>
+   </period>
+   <serviceProvider>
+      <reference value="Organization/7b1cb8d3-f4bb-3cf6-8c0e-01e6657a13ea"></reference>
+   </serviceProvider>
+</Encounter>

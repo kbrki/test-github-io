@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Disease" />
+  <url value="https://demis.rki.de/fhir/StructureDefinition/Disease" />
+  <version value="1.1.1" />
+  <name value="Disease" />
+  <title value="Erkrankung" />
+  <status value="active" />
+  <date value="2023-02-22" />
+  <description value="Die Erkrankung enthält klinische Informationen wie Diagnose, Symtome und usw." />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="sct-concept" />
+    <uri value="http://snomed.info/conceptdomain" />
+    <name value="SNOMED CT Concept Domain Binding" />
+  </mapping>
+  <mapping>
+    <identity value="sct-attr" />
+    <uri value="http://snomed.org/attributebinding" />
+    <name value="SNOMED CT Attribute Binding" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="true" />
+  <type value="Condition" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Condition" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Condition.verificationStatus">
+      <path value="Condition.verificationStatus" />
+      <short value="Verifikationsstatus der Diagnose" />
+      <definition value="Verifikationsstatus der Diagnose" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.verificationStatus.coding">
+      <path value="Condition.verificationStatus.coding" />
+      <min value="1" />
+      <max value="1" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://demis.rki.de/fhir/ValueSet/verificationStatus" />
+      </binding>
+    </element>
+    <element id="Condition.verificationStatus.coding.system">
+      <path value="Condition.verificationStatus.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Condition.verificationStatus.coding.code">
+      <path value="Condition.verificationStatus.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Condition.category">
+      <path value="Condition.category" />
+      <max value="0" />
+    </element>
+    <element id="Condition.code">
+      <path value="Condition.code" />
+      <short value="Meldetatbestand der Erkrankung" />
+      <definition value="Angabe des Meldetatbestandes. Der jeweils zutreffende Meldetatbestand ist in abgeleiteten erregerspezifischen Profilen vorgegeben." />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.code.coding">
+      <path value="Condition.code.coding" />
+      <min value="1" />
+      <max value="1" />
+      <binding>
+        <strength value="extensible" />
+        <description value="Meldetatbestand" />
+        <valueSet value="https://demis.rki.de/fhir/ValueSet/notificationDiseaseCategory" />
+      </binding>
+    </element>
+    <element id="Condition.code.coding.system">
+      <path value="Condition.code.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Condition.code.coding.code">
+      <path value="Condition.code.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Condition.bodySite">
+      <path value="Condition.bodySite" />
+      <max value="0" />
+    </element>
+    <element id="Condition.subject">
+      <path value="Condition.subject" />
+      <short value="Verweis auf die in der Meldung benannte betroffene Person (namentlich oder nichtnamentlich)." />
+      <definition value="Verweis auf die in der Meldung benannte betroffene Person (namentlich oder nichtnamentlich). Hierbei handelt es sich grundsätzlich um den Verweis auf die in der Meldung als „subject“ referenzierte Patient Ressource." />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/NotifiedPerson" />
+        <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/NotifiedPersonNotByName" />
+        <aggregation value="bundled" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.subject.reference">
+      <path value="Condition.subject.reference" />
+      <min value="1" />
+    </element>
+    <element id="Condition.encounter">
+      <path value="Condition.encounter" />
+      <max value="0" />
+    </element>
+    <element id="Condition.onset[x]">
+      <path value="Condition.onset[x]" />
+      <short value="Erkrankungsbeginn" />
+      <definition value="Erkrankungsbeginn" />
+      <type>
+        <code value="dateTime" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.abatement[x]">
+      <path value="Condition.abatement[x]" />
+      <max value="0" />
+    </element>
+    <element id="Condition.recordedDate">
+      <path value="Condition.recordedDate" />
+      <short value="Datum der Diagnosestellung" />
+      <definition value="Datum der Diagnosestellung" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.recorder">
+      <path value="Condition.recorder" />
+      <max value="0" />
+    </element>
+    <element id="Condition.asserter">
+      <path value="Condition.asserter" />
+      <max value="0" />
+    </element>
+    <element id="Condition.stage">
+      <path value="Condition.stage" />
+      <max value="0" />
+    </element>
+    <element id="Condition.note">
+      <path value="Condition.note" />
+      <short value="Diagnosehinweise" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>
