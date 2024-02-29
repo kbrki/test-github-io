@@ -1,0 +1,28 @@
+<Encounter xmlns="http://hl7.org/fhir">
+   <id value="1a0e5fe7-dfca-3322-a2d0-57e801eb694d"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/Hospitalization"></profile>
+   </meta>
+   <status value="in-progress"></status>
+   <class>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"></system>
+      <code value="IMP"></code>
+      <display value="inpatient encounter"></display>
+   </class>
+   <serviceType>
+      <coding>
+         <system value="https://demis.rki.de/fhir/CodeSystem/hospitalizationServiceType"></system>
+         <code value="3600"></code>
+         <display value="Intensivmedizin"></display>
+      </coding>
+   </serviceType>
+   <subject>
+      <reference value="Patient/314b3907-1ee6-3f5f-8319-fce7d5aa2050"></reference>
+   </subject>
+   <period>
+      <start value="2022-02-07"></start>
+   </period>
+   <serviceProvider>
+      <reference value="Organization/54da7381-727b-3e1a-bbe5-ff37b64d7152"></reference>
+   </serviceProvider>
+</Encounter>

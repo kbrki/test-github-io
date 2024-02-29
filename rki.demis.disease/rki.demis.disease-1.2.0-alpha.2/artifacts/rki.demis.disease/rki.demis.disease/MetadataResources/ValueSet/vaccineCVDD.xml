@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vaccineCVDD"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/vaccineCVDD"/>
+  <version value="1.3.0"/>
+  <name value="VaccineCVDD"/>
+  <title value="Covid-19-Impfstoff als EMA-Code"/>
+  <status value="active"/>
+  <date value="2023-03-03"/>
+  <description value="Das ValueSet VaccineCVDD enthält die Codes der Covid-19-Impfstoffe als EMA-Code."/>
+  <compose>
+    <include>
+      <system value="https://ec.europa.eu/health/documents/community-register/html/"/>
+      <version value="1.0.0"/>
+      <concept>
+        <code value="EU/1/20/1507"/>
+        <display value="Spikevax (COVID-19 Vaccine Moderna)"/>
+      </concept>
+      <concept>
+        <code value="EU/1/20/1525"/>
+        <display value="COVID-19 Vaccine Janssen"/>
+      </concept>
+      <concept>
+        <code value="EU/1/20/1528"/>
+        <display value="Comirnaty"/>
+      </concept>
+      <concept>
+        <code value="EU/1/21/1529"/>
+        <display value="Vaxzevria (COVID-19 Vaccine AstraZeneca)"/>
+      </concept>
+      <concept>
+        <code value="EU/1/21/1618"/>
+        <display value="Nuvaxovid (NVX-CoV2373)"/>
+      </concept>
+      <concept>
+        <code value="EU/1/21/1624"/>
+        <display value="Valneva"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

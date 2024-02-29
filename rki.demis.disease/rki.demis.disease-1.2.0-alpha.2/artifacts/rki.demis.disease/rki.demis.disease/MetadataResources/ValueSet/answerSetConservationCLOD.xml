@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetConservationCLOD"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetConservationCLOD"/>
+  <version value="1.1.0"/>
+  <name value="AnswerSetConservationCLOD"/>
+  <title value="Antwort zur Art der Lebensmittelkonservierung bei Botulismus"/>
+  <status value="active"/>
+  <date value="2023-03-23"/>
+  <description value="Das ValueSet AnswerSetConservationCLOD enthält die Codes der Antwortmöglichkeiten für die Art der Lebensmittelkonservierung bei Botulismus."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <code value="227989005"/>
+        <display value="Konserve"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Canned food (substance)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="229982008"/>
+        <display value="Sauer eingelegt"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Pickled food (substance)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="423252004"/>
+        <display value="Eingekocht/eingeweckt"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Home-canned food (substance)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="228008004"/>
+        <display value="getrocknet/gedarrt"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Dried food (substance)"/>
+        </designation>
+      </concept>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+      <version value="2.1.0"/>
+      <concept>
+        <code value="ASKU"/>
+        <display value="asked but unknown"/>
+      </concept>
+      <concept>
+        <code value="NASK"/>
+        <display value="not asked"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

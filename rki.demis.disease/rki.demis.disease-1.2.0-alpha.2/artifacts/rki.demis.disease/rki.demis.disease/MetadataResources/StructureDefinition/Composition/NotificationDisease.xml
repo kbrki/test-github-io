@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="NotificationDisease" />
+  <url value="https://demis.rki.de/fhir/StructureDefinition/NotificationDisease" />
+  <version value="1.2.1" />
+  <name value="NotificationDisease" />
+  <title value="Erkrankungsmeldung" />
+  <status value="active" />
+  <date value="2023-02-22" />
+  <description value="Die Erkrankungsmeldung definiert die Meldeinhalte, die von einer/einem Ärztin/Arzt und/oder einer Praxis übermittelt werden müssen. Meldetatbestandsspezifische Inhalte werden über Subprofile von NotificationDisease definiert." />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="cda" />
+    <uri value="http://hl7.org/v3/cda" />
+    <name value="CDA (R2)" />
+  </mapping>
+  <mapping>
+    <identity value="fhirdocumentreference" />
+    <uri value="http://hl7.org/fhir/documentreference" />
+    <name value="FHIR DocumentReference" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="true" />
+  <type value="Composition" />
+  <baseDefinition value="https://demis.rki.de/fhir/StructureDefinition/Notification" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Composition.identifier">
+        <path value="Composition.identifier" />
+        <short value="Eindeutige ID der Meldung" />
+        <definition value="Eindeutige ID der Meldung, die vom Melder bei Erstellung generiert wird. Es handelt sich um eine UUID im NamingSystem https://demis.rki.de/fhir/NamingSystem/NotificationId." />
+        <comment value="Bei einer Ergänzungs- bzw. einer Korrekturmeldung ist die gleiche NotificationId der Meldung anzugegeben." />
+        <min value="1" />
+        <mustSupport value="true" />
+    </element>
+    <element id="Composition.identifier.system">
+        <path value="Composition.identifier.system" />
+        <min value="1" />
+        <fixedUri value="https://demis.rki.de/fhir/NamingSystem/NotificationId" />
+    </element>
+    <element id="Composition.identifier.value">
+        <path value="Composition.identifier.value" />
+        <min value="1" />
+    </element>
+    <element id="Composition.category">
+      <path value="Composition.category" />
+      <short value="Typ der Erkrankungsmeldung" />
+      <definition value="Typ der Erkrankungsmeldung. Für die Erkrankungsmeldung muss der Typ der Meldung entsprechend des vom RKI definierten ValueSets https://demis.rki.de/fhir/ValueSet/notificationType im coding Element dargestellt werden." />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.category.coding">
+      <path value="Composition.category.coding" />
+      <min value="1" />
+      <max value="1" />
+      <binding>
+        <strength value="extensible" />
+        <description value="Typ der Erkrankungsmeldung" />
+        <valueSet value="https://demis.rki.de/fhir/ValueSet/notificationType" />
+      </binding>
+    </element>
+    <element id="Composition.category.coding.system">
+      <path value="Composition.category.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Composition.category.coding.code">
+      <path value="Composition.category.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Composition.subject">
+      <path value="Composition.subject" />
+      <short value="Verweis auf die betroffene Person (namentlich)." />
+      <definition value="Verweis auf die betroffene Person (namentlich)." />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/NotifiedPerson" />
+        <aggregation value="bundled" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.subject.reference">
+      <path value="Composition.subject.reference" />
+      <min value="1" />
+    </element>
+    <element id="Composition.author">
+      <path value="Composition.author" />
+      <definition value="Verweis auf die Melder-Rolle. Über die Melder-Rolle kann eine Person oder eine Organisation als Melder - hier Ärztin/Arzt, Praxis, Krankenhaus - referenziert werden." />
+    </element>
+    <element id="Composition.section">
+      <path value="Composition.section" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="code.coding.code" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Composition.section:disease">
+      <path value="Composition.section" />
+      <sliceName value="disease" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:disease.code">
+      <path value="Composition.section.code" />
+      <min value="1" />
+    </element>
+    <element id="Composition.section:disease.code.coding">
+      <path value="Composition.section.code.coding" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Composition.section:disease.code.coding.system">
+      <path value="Composition.section.code.coding.system" />
+      <min value="1" />
+      <fixedUri value="https://demis.rki.de/fhir/CodeSystem/sectionCode" />
+    </element>
+    <element id="Composition.section:disease.code.coding.code">
+      <path value="Composition.section.code.coding.code" />
+      <min value="1" />
+      <fixedCode value="diagnosis" />
+    </element>
+    <element id="Composition.section:disease.code.coding.display">
+      <path value="Composition.section.code.coding.display" />
+      <fixedString value="Diagnose" />
+    </element>
+    <element id="Composition.section:disease.entry">
+      <path value="Composition.section.entry" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/Disease" />
+        <aggregation value="bundled" />
+      </type>
+    </element>
+    <element id="Composition.section:disease.entry.reference">
+      <path value="Composition.section.entry.reference" />
+      <min value="1" />
+    </element>
+    <element id="Composition.section:diseaseInformationCommon">
+      <path value="Composition.section" />
+      <sliceName value="diseaseInformationCommon" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:diseaseInformationCommon.code">
+      <path value="Composition.section.code" />
+      <min value="1" />
+    </element>
+    <element id="Composition.section:diseaseInformationCommon.code.coding">
+      <path value="Composition.section.code.coding" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Composition.section:diseaseInformationCommon.code.coding.system">
+      <path value="Composition.section.code.coding.system" />
+      <min value="1" />
+      <fixedUri value="https://demis.rki.de/fhir/CodeSystem/sectionCode" />
+    </element>
+    <element id="Composition.section:diseaseInformationCommon.code.coding.code">
+      <path value="Composition.section.code.coding.code" />
+      <min value="1" />
+      <fixedCode value="generalClinAndEpiInformation" />
+    </element>
+    <element id="Composition.section:diseaseInformationCommon.code.coding.display">
+      <path value="Composition.section.code.coding.display" />
+      <fixedString value="Meldetatbestandsübergreifende klinische und epidemiologische Angaben" />
+    </element>
+    <element id="Composition.section:diseaseInformationCommon.entry">
+      <path value="Composition.section.entry" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseInformationCommon" />
+        <aggregation value="bundled" />
+      </type>
+    </element>
+    <element id="Composition.section:diseaseInformationCommon.entry.reference">
+      <path value="Composition.section.entry.reference" />
+      <min value="1" />
+    </element>
+    <element id="Composition.section:diseaseInformation">
+      <path value="Composition.section" />
+      <sliceName value="diseaseInformation" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:diseaseInformation.code">
+      <path value="Composition.section.code" />
+      <min value="1" />
+    </element>
+    <element id="Composition.section:diseaseInformation.code.coding">
+      <path value="Composition.section.code.coding" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Composition.section:diseaseInformation.code.coding.system">
+      <path value="Composition.section.code.coding.system" />
+      <min value="1" />
+      <fixedUri value="https://demis.rki.de/fhir/CodeSystem/sectionCode" />
+    </element>
+    <element id="Composition.section:diseaseInformation.code.coding.code">
+      <path value="Composition.section.code.coding.code" />
+      <min value="1" />
+      <fixedCode value="specificClinAndEpiInformation" />
+    </element>
+    <element id="Composition.section:diseaseInformation.code.coding.display">
+      <path value="Composition.section.code.coding.display" />
+      <fixedString value="Meldetatbestandsspezifische klinische und epidemiologische Angaben" />
+    </element>
+    <element id="Composition.section:diseaseInformation.entry">
+      <path value="Composition.section.entry" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseInformation" />
+        <aggregation value="bundled" />
+      </type>
+    </element>
+    <element id="Composition.section:diseaseInformation.entry.reference">
+      <path value="Composition.section.entry.reference" />
+      <min value="1" />
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Questionnaire xmlns="http://hl7.org/fhir">
+  <id value="DiseaseQuestionsCLOD" />
+  <url value="https://demis.rki.de/fhir/Questionnaire/DiseaseQuestionsCLOD" />
+  <version value="1.1.0" />
+  <name value="DiseaseQuestionsCLOD" />
+  <title value="Botulismus-spezifische klinische und epidemiologische Angaben" />
+  <status value="active" />
+  <date value="2023-04-25" />
+  <description value="Botulismus spezifische Informationsbedarfe werden in diesem meldetatbestandsspezifischen Fragebogen zusammengestellt. Dieser manifestiert sich als entsprechende QuestionnaireResponse innerhalb der Meldung." />
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control" />
+          <code value="drop-down" />
+          <display value="Drop down" />
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="form" />
+    <text value="Welche Krankheitsform liegt vor?" />
+    <type value="choice" />
+    <required value="true" />
+    <repeats value="false" />
+    <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetFormCLOD" />
+    <initial>
+      <valueCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" />
+        <code value="NASK" />
+        <display value="not asked" />
+      </valueCoding>
+    </initial>
+  </item>
+  <item>
+    <linkId value="infectionPathKindGroup" />
+    <text value="Auf welchem Weg hat sich die betroffene Person wahrscheinlich infiziert?" />
+    <type value="group" />
+    <enableWhen>
+      <question value="form" />
+      <operator value="=" />
+      <answerCoding>
+        <system value="http://snomed.info/sct" />
+        <code value="414488002" />
+      </answerCoding>
+    </enableWhen>
+    <enableWhen>
+      <question value="form" />
+      <operator value="=" />
+      <answerCoding>
+        <system value="http://snomed.info/sct"/>
+        <code value="398530003"/>
+      </answerCoding>
+    </enableWhen>
+    <enableWhen>
+      <question value="form"/>
+      <operator value="="/>
+      <answerCoding>
+        <system value="http://snomed.info/sct"/>
+        <code value="398523009"/>
+      </answerCoding>
+    </enableWhen>
+    <enableBehavior value="any" />
+	<required value="true" />
+	<repeats value="false" />
+    <item>
+      <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://hl7.org/fhir/questionnaire-item-control" />
+            <code value="drop-down" />
+            <display value="Drop down" />
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <linkId value="honey" />
+      <text value="Hat der Säugling Honig verzehrt?" />
+      <type value="choice" />
+      <enableWhen>
+        <question value="form"/>
+        <operator value="="/>
+        <answerCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="414488002"/>
+        </answerCoding>
+      </enableWhen>
+	  <required value="true" />
+	  <repeats value="false" />
+      <answerValueSet value="https://demis.rki.de/fhir/ValueSet/yesOrNoOrNoInformation" />
+      <initial>
+        <valueCoding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" />
+          <code value="NASK" />
+          <display value="not asked" />
+        </valueCoding>
+      </initial>
+    </item>
+    <item>
+      <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://hl7.org/fhir/questionnaire-item-control" />
+            <code value="drop-down" />
+            <display value="Drop down" />
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <linkId value="drugs" />
+      <text value="Konsumiert die betroffene Person intravenöse Drogen?" />
+      <type value="choice" />
+      <enableWhen>
+        <question value="form" />
+        <operator value="=" />
+        <answerCoding>
+          <system value="http://snomed.info/sct" />
+          <code value="398530003" />
+        </answerCoding>
+      </enableWhen>
+	  <required value="true" />
+	  <repeats value="false" />
+      <answerValueSet value="https://demis.rki.de/fhir/ValueSet/yesOrNoOrNoInformation" />
+      <initial>
+        <valueCoding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" />
+          <code value="NASK" />
+          <display value="not asked" />
+        </valueCoding>
+      </initial>
+    </item>
+	<item>
+      <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+	    <valueCodeableConcept>
+	      <coding>
+	        <system value="http://hl7.org/fhir/questionnaire-item-control" />
+	        <code value="drop-down" />
+		    <display value="Drop down" />
+		  </coding>
+	    </valueCodeableConcept>
+	  </extension>
+	  <linkId value="cosmetic" />
+      <text value="Hat die betroffene Person vor ihrer Infektion eine kosmetische Behandlung mit einer Injektion von Botulimum-Neurotoxin erhalten?" />
+	  <type value="choice" />
+	  <enableWhen>
+	    <question value="form" />
+	    <operator value="=" />
+		<answerCoding>
+		  <system value="http://snomed.info/sct" />
+		  <code value="11894001" />
+		</answerCoding>
+      </enableWhen>
+	  <enableWhen>
+	    <question value="form" />
+		<operator value="=" />
+		<answerCoding>
+		  <system value="http://snomed.info/sct" />
+	      <code value="1149322001" />
+		</answerCoding>
+      </enableWhen>
+	  <enableBehavior value="any" />
+	  <required value="true" />
+	  <repeats value="false" />
+	  <answerValueSet value="https://demis.rki.de/fhir/ValueSet/yesOrNoOrNoInformation" />
+	  <initial>
+		<valueCoding>
+		  <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" />
+		  <code value="NASK" />
+		  <display value="not asked" />
+	    </valueCoding>
+      </initial>
+	</item>
+	<item>
+      <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+	    <valueCodeableConcept>
+		  <coding>
+		    <system value="http://hl7.org/fhir/questionnaire-item-control" />
+			  <code value="drop-down" />
+			  <display value="Drop down" />
+		  </coding>
+		</valueCodeableConcept>
+      </extension>
+	  <linkId value="medical" />
+	  <text value="Hat die betroffene Person vor Ihrer Infektion eine medizinische Behandlung mit einer Injektion von Botulimum-Neurotoxin erhalten?" />
+      <type value="choice" />
+		<enableWhen>
+		  <question value="form" />
+		  <operator value="=" />
+		  <answerCoding>
+		    <system value="http://snomed.info/sct" />
+		    <code value="11894001" />
+		  </answerCoding>
+		</enableWhen>
+		<enableWhen>
+		  <question value="form" />
+		  <operator value="=" />
+	      <answerCoding>
+		    <system value="http://snomed.info/sct" />
+			<code value="1149322001" />
+	      </answerCoding>
+		</enableWhen>
+		<enableBehavior value="any" />
+		<required value="true" />
+		<repeats value="false" />
+		<answerValueSet value="https://demis.rki.de/fhir/ValueSet/yesOrNoOrNoInformation" />
+		<initial>
+	      <valueCoding>
+		    <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" />
+			<code value="NASK" />
+			<display value="not asked" />
+	      </valueCoding>
+		</initial>
+	  </item>
+    <item>
+      <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://hl7.org/fhir/questionnaire-item-control" />
+            <code value="gtable" />
+            <display value="Group Table" />
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <linkId value="foodGroup" />
+      <type value="group" />
+      <enableWhen>
+        <question value="form" />
+        <operator value="=" />
+        <answerCoding>
+          <system value="http://snomed.info/sct" />
+          <code value="398523009" />
+        </answerCoding>
+      </enableWhen>
+	  <required value="true" />
+	  <repeats value="false" />
+      <item>
+        <linkId value="food" />
+        <text value="Welches Lebensmittel hat wahrscheinlich die Infektion verursacht?" />
+        <type value="choice" />
+        <required value="true" />
+        <repeats value="false" />
+        <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetFoodCLOD" />
+        <initial>
+          <valueCoding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" />
+            <code value="NASK" />
+            <display value="not asked" />
+          </valueCoding>
+        </initial>
+        <item>
+          <linkId value="otherfood" />
+          <text value="Welches andere Lebensmittel hat wahrscheinlich die Infektion verursacht?" />
+          <type value="text" />
+          <enableWhen>
+            <question value="food" />
+            <operator value="=" />
+            <answerCoding>
+              <system value="http://snomed.info/sct" />
+              <code value="346602001" />
+            </answerCoding>
+          </enableWhen>
+          <required value="false" />
+          <repeats value="false" />
+        </item>
+      </item>
+      <item>
+        <linkId value="consumptionWhen" />
+        <text value="Verzehr am?" />
+        <type value="date" />
+        <required value="false" />
+        <repeats value="false" />
+      </item>
+      <item>
+        <linkId value="consumptionWhere" />
+        <text value="Verzehr wo?" />
+        <type value="choice" />
+        <required value="true" />
+        <repeats value="false" />
+        <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetConsumptionCLOD" />
+        <initial>
+          <valueCoding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" />
+            <code value="NASK" />
+            <display value="not asked" />
+          </valueCoding>
+        </initial>
+      </item>
+      <item>
+        <linkId value="conservation" />
+        <text value="Auf welche Art wurde das Lebensmittel konserviert?" />
+        <type value="choice" />
+        <required value="true" />
+        <repeats value="false" />
+        <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetConservationCLOD" />
+        <initial>
+          <valueCoding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" />
+            <code value="NASK" />
+            <display value="not asked" />
+          </valueCoding>
+        </initial>
+      </item>
+      <item>
+        <linkId value="manufacturing" />
+        <text value="Aus welcher Herstellung stammt das Lebensmittel?" />
+        <type value="choice" />
+        <required value="true" />
+        <repeats value="false" />
+        <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetManufacturingCLOD" />
+        <initial>
+          <valueCoding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" />
+            <code value="NASK" />
+            <display value="not asked" />
+          </valueCoding>
+        </initial>
+      </item>
+      <item>
+        <linkId value="toxinInFood" />
+        <text value="Wurde das Toxin im Lebensmittel nachgewiesen?" />
+        <type value="choice" />
+        <required value="true" />
+        <repeats value="false" />
+        <answerValueSet value="https://demis.rki.de/fhir/ValueSet/yesOrNoOrNoInformation" />
+        <initial>
+          <valueCoding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" />
+            <code value="NASK" />
+            <display value="not asked" />
+          </valueCoding>
+        </initial>
+      </item>
+    </item>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control" />
+          <code value="drop-down" />
+          <display value="Drop down" />
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="outbreak" />
+    <text value="Kann der gemeldete Fall einem Ausbruch zugeordnet werden?" />
+    <type value="choice" />
+    <required value="true" />
+    <repeats value="false" />
+    <answerValueSet value="https://demis.rki.de/fhir/ValueSet/yesOrNoOrNoInformation" />
+    <initial>
+      <valueCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" />
+        <code value="NASK" />
+        <display value="not asked" />
+      </valueCoding>
+    </initial>
+    <item>
+      <linkId value="outbreakNote" />
+      <text value="Fallbezogene Zusatzinformationen zum Ausbruch" />
+      <type value="text" />
+      <enableWhen>
+        <question value="outbreak" />
+        <operator value="=" />
+        <answerCoding>
+          <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer" />
+          <code value="yes" />
+        </answerCoding>
+      </enableWhen>
+      <required value="false" />
+      <repeats value="false" />
+    </item>
+    <item>
+      <linkId value="outbreakNotificationId" />
+      <text value="Notification-Id der zugehörigen Ausbruchsmeldung" />
+      <type value="reference" />
+      <enableWhen>
+        <question value="outbreak" />
+        <operator value="=" />
+        <answerCoding>
+          <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer" />
+          <code value="yes" />
+        </answerCoding>
+      </enableWhen>
+      <required value="false" />
+      <repeats value="false" />
+    </item>
+  </item>
+</Questionnaire>

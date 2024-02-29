@@ -1,0 +1,54 @@
+<Condition xmlns="http://hl7.org/fhir">
+   <id value="c48ea7ef-cee0-36ac-b11a-75426c7d16e3"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/DiseasePOVD"></profile>
+   </meta>
+   <verificationStatus>
+      <coding>
+         <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"></system>
+         <code value="confirmed"></code>
+      </coding>
+   </verificationStatus>
+   <code>
+      <coding>
+         <system value="https://demis.rki.de/fhir/CodeSystem/notificationDiseaseCategory"></system>
+         <code value="povd"></code>
+         <display value="Poliomyelitis"></display>
+      </coding>
+   </code>
+   <subject>
+      <reference value="Patient/25d04f11-b37b-3ef2-a0bb-4c524e3c8166"></reference>
+   </subject>
+   <onsetDateTime value="2022-12-05"></onsetDateTime>
+   <recordedDate value="2022-12-07"></recordedDate>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="3006004"></code>
+            <display value="veränderte Bewusstseinslage"></display>
+         </coding>
+      </code>
+   </evidence>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="698293005:363698007=66019005"></code>
+            <display value="akute schlaffe Lähmung einer oder mehrerer Extremitäten"></display>
+         </coding>
+      </code>
+   </evidence>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="25064002"></code>
+            <display value="Kopfschmerzen"></display>
+         </coding>
+      </code>
+   </evidence>
+   <note>
+      <text value="vorübergende leichte Bewußtseinseintrübung, akute schlaffe Lähmung des linken Beins"></text>
+   </note>
+</Condition>

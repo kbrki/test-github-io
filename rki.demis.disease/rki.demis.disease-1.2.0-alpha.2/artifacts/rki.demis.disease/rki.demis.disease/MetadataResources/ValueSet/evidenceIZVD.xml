@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="evidenceIZVD"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/evidenceIZVD"/>
+  <version value="1.0.0"/>
+  <name value="EvidenceIZVD"/>
+  <title value="Zoonotische Influenza-Symptom und -Manifestation"/>
+  <status value="active"/>
+  <date value="2023-04-24"/>
+  <description value="Das ValueSet EvidenceIZVD enthält die Codes der Zoonotische Influenza-Symptome und -Manifestationen."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <code value="67782005"/>
+        <display value="akutes schweres Atemnotsyndrom (ARDS)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Acute respiratory distress syndrome (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="50043002+371820004"/>
+        <display value="beatmungspflichtige Atemwegserkrankung"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="50043002 | Disorder of respiratory system (disorder) | + 371820004 | Patient ventilated (finding) |"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="62315008"/>
+        <display value="Durchfall, akut"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Diarrhea (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="267036007"/>
+        <display value="Atemstörung (Dyspnoe)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Dyspnea (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="45170000"/>
+        <display value="Gehirnentzündung (Enzephalitis)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Encephalitis (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="95891005"/>
+        <display value="grippetypische Symptomatik"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Influenza-like illness (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="9826008"/>
+        <display value="Bindehautentzündung (Konjunktivitis)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Conjunctivitis (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="50920009"/>
+        <display value="Herzmuskelentzündung (Myokarditis)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Myocarditis (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="233604007"/>
+        <display value="Lungenentzündung (Pneumonie)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Pneumonia (disorder)"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,100 @@
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+   <id value="900f4bd2-fb73-3e00-9d8b-c24a7a9e4c28"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseInformationCVDD"></profile>
+   </meta>
+   <questionnaire value="https://demis.rki.de/fhir/Questionnaire/DiseaseQuestionsCVDD"></questionnaire>
+   <status value="completed"></status>
+   <subject>
+      <reference value="Patient/51eddc9b-0ac4-360c-b89d-5478b696f6dc"></reference>
+   </subject>
+   <item>
+      <linkId value="infectionSource"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+            <code value="yes"></code>
+         </valueCoding>
+      </answer>
+   </item>
+   <item>
+      <linkId value="infectionEnvironmentSetting"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+            <code value="yes"></code>
+            <display value="Ja"></display>
+         </valueCoding>
+         <item>
+            <linkId value="infectionEnvironmentSettingGroup"></linkId>
+            <item>
+               <linkId value="infectionEnvironmentSettingKind"></linkId>
+               <answer>
+                  <valueCoding>
+                     <system value="https://demis.rki.de/fhir/CodeSystem/infectionEnvironmentSetting"></system>
+                     <code value="182"></code>
+                     <display value="Musikveranstaltung/Konzert"></display>
+                  </valueCoding>
+               </answer>
+            </item>
+            <item>
+               <linkId value="infectionEnvironmentSettingBegin"></linkId>
+               <answer>
+                  <valueDate value="2021-02-25"></valueDate>
+               </answer>
+            </item>
+            <item>
+               <linkId value="infectionEnvironmentSettingEnd"></linkId>
+               <answer>
+                  <valueDate value="2021-02-25"></valueDate>
+               </answer>
+            </item>
+         </item>
+      </answer>
+   </item>
+   <item>
+      <linkId value="immunization"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+            <code value="yes"></code>
+            <display value="Ja"></display>
+         </valueCoding>
+         <item>
+            <linkId value="immunizationRef"></linkId>
+            <answer>
+               <valueReference>
+                  <reference value="Immunization/4f2cb284-10a8-3838-bd18-0c23b647eefd"></reference>
+               </valueReference>
+            </answer>
+         </item>
+         <item>
+            <linkId value="immunizationRef"></linkId>
+            <answer>
+               <valueReference>
+                  <reference value="Immunization/6ebbf60f-5d5e-3553-af19-38b45050bf2d"></reference>
+               </valueReference>
+            </answer>
+         </item>
+      </answer>
+   </item>
+   <item>
+      <linkId value="reason"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/hospitalizationReason"></system>
+            <code value="becauseOfDisease"></code>
+         </valueCoding>
+      </answer>
+   </item>
+   <item>
+      <linkId value="outbreak"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"></system>
+            <code value="NASK"></code>
+            <display value="not asked"></display>
+         </valueCoding>
+      </answer>
+   </item>
+</QuestionnaireResponse>

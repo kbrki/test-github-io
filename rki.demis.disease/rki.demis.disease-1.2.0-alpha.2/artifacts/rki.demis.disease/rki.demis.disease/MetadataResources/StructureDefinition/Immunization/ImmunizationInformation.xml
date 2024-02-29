@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ImmunizationInformation" />
+  <url value="https://demis.rki.de/fhir/StructureDefinition/ImmunizationInformation" />
+  <version value="1.0.1" />
+  <name value="ImmunizationInformation" />
+  <title value="Impfung" />
+  <status value="active" />
+  <date value="2023-02-22" />
+  <description value="Die Impfung umfasst Angaben zum Impfstoff und das Datum der Impfung." />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="cda" />
+    <uri value="http://hl7.org/v3/cda" />
+    <name value="CDA (R2)" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="true" />
+  <type value="Immunization" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Immunization" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Immunization.status">
+      <path value="Immunization.status" />
+      <fixedCode value="completed" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Immunization.statusReason">
+      <path value="Immunization.statusReason" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.vaccineCode">
+      <path value="Immunization.vaccineCode" />
+      <short value="Verabreichter Impfstoff" />
+      <definition value="Verabreichter Impfstoff" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Immunization.vaccineCode.coding">
+      <path value="Immunization.vaccineCode.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Immunization.vaccineCode.coding:snomed_CT">
+      <path value="Immunization.vaccineCode.coding" />
+      <sliceName value="snomed_CT" />
+      <short value="SNOMED CT" />
+      <definition value="Dieses Element beschreibt den Impfstoff als SNOMED CT® Product Code." />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Immunization.vaccineCode.coding:snomed_CT.system">
+      <path value="Immunization.vaccineCode.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="Immunization.vaccineCode.coding:snomed_CT.code">
+      <path value="Immunization.vaccineCode.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Immunization.vaccineCode.coding:pharmazentralnummer_pzn">
+      <path value="Immunization.vaccineCode.coding" />
+      <sliceName value="pharmazentralnummer_pzn" />
+      <short value="Pharmazentralnummer (PZN)" />
+      <definition value="Dieses Element beschreibt den Impfstoff als 8-stellige Pharmazentralnummer (PZN). Die PZN definiert ein Fertigarzneimittel eindeutig." />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Immunization.vaccineCode.coding:pharmazentralnummer_pzn.system">
+      <path value="Immunization.vaccineCode.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://fhir.de/CodeSystem/ifa/pzn" />
+    </element>
+    <element id="Immunization.vaccineCode.coding:pharmazentralnummer_pzn.code">
+      <path value="Immunization.vaccineCode.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Immunization.vaccineCode.coding:nullflavor">
+      <path value="Immunization.vaccineCode.coding"/>
+      <sliceName value="nullflavor"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://demis.rki.de/fhir/ValueSet/nullFlavor"/>
+      </binding>
+    </element>
+    <element id="Immunization.vaccineCode.coding:nullflavor.system">
+      <path value="Immunization.vaccineCode.coding.system"/>
+      <min value="1"/>
+      <fixedUri value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" />
+    </element>
+    <element id="Immunization.vaccineCode.coding:nullflavor.code">
+      <path value="Immunization.vaccineCode.coding.code"/>
+      <min value="1"/>
+    </element>
+    <element id="Immunization.vaccineCode.text">
+      <path value="Immunization.vaccineCode.text" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.patient">
+      <path value="Immunization.patient" />
+      <short value="Verweis auf die in der Meldung benannte betroffene Person." />
+      <definition value="Verweis auf die in der Meldung benannte betroffene Person. Hierbei handelt es sich grundsätzlich um den Verweis auf die in der Erregernachweismeldung als „subject“ referenzierte Patient Ressource." />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/NotifiedPerson" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Immunization.encounter">
+      <path value="Immunization.encounter" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.occurrence[x]">
+      <path value="Immunization.occurrence[x]" />
+      <short value="Datum der Impfung" />
+      <definition value="Datum der Impfung" />
+    </element>
+    <element id="Immunization.recorded">
+      <path value="Immunization.recorded" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.primarySource">
+      <path value="Immunization.primarySource" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.reportOrigin">
+      <path value="Immunization.reportOrigin" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.location">
+      <path value="Immunization.location" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.manufacturer">
+      <path value="Immunization.manufacturer" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.lotNumber">
+      <path value="Immunization.lotNumber" />
+      <short value="Chargenbezeichnung" />
+      <definition value="Chargenbezeichnung" />
+    </element>
+    <element id="Immunization.expirationDate">
+      <path value="Immunization.expirationDate" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.site">
+      <path value="Immunization.site" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.route">
+      <path value="Immunization.route" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.doseQuantity">
+      <path value="Immunization.doseQuantity" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.performer">
+      <path value="Immunization.performer" />
+      <short value="Verantwortliche Person für die Durchführung der Schutzimpfung" />
+      <definition value="Verantwortliche Person für die Durchführung der Schutzimpfung" />
+      <max value="1" />
+      <mustSupport value="false" />
+    </element>
+    <element id="Immunization.note">
+      <path value="Immunization.note" />
+      <short value="Hinweis zur Impfung" />
+      <definition value="Hinweis zur Impfung" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Immunization.reasonCode">
+      <path value="Immunization.reasonCode" />
+      <short value="Impfindikation" />
+      <definition value="Impfindikation" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Immunization.reasonCode.coding">
+      <path value="Immunization.reasonCode.coding" />
+      <min value="1" />
+      <max value="1" />
+      <binding>
+        <strength value="extensible" />
+        <description value="Impfindikation" />
+        <valueSet value="https://demis.rki.de/fhir/ValueSet/vaccinationIndication" />
+      </binding>
+    </element>
+    <element id="Immunization.reasonCode.coding.system">
+      <path value="Immunization.reasonCode.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Immunization.reasonCode.coding.code">
+      <path value="Immunization.reasonCode.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Immunization.reasonReference">
+      <path value="Immunization.reasonReference" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.isSubpotent">
+      <path value="Immunization.isSubpotent" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.subpotentReason">
+      <path value="Immunization.subpotentReason" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.education">
+      <path value="Immunization.education" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.programEligibility">
+      <path value="Immunization.programEligibility" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.fundingSource">
+      <path value="Immunization.fundingSource" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.reaction">
+      <path value="Immunization.reaction" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.protocolApplied">
+      <path value="Immunization.protocolApplied" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

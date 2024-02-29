@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vaccineCVDD-SNOMED"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/vaccineCVDD-SNOMED"/>
+  <version value="1.0.0"/>
+  <name value="VaccineCVDD-SNOMED"/>
+  <title value="Covid-19-Impfstoff als SNOMED-Cod"/>
+  <status value="active"/>
+  <date value="2023-04-14"/>
+  <description value="Das ValueSet VaccineCVDD-SNOMED enthält die Codes der Covid-19-Impfstoffe als SNOMED-Code."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <code value="1119349007"/>
+        <display value="COVID-19-Impfstoff (mRNA) (BioNTech / Pfizer, Moderna)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Vaccine product containing only severe acute respiratory syndrome coronavirus 2 messenger ribonucleic acid (medicinal product)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1157024006"/>
+        <display value="COVID-19-Impfstoff (Virusimpfstoff, inaktiviert, adjuvantiert) (Valneva)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Vaccine product containing only inactivated whole severe acute respiratory syndrome coronavirus 2 antigen (medicinal product)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1187593009"/>
+        <display value="COVID-19-Impfstoff (Proteinbasierter Impfstoff)  (Novavax)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Vaccine product containing only severe acute respiratory syndrome coronavirus 2 deoxyribonucleic acid plasmid encoding spike protein (medicinal product)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="29061000087103"/>
+        <display value="COVID-19-Impfstoff (Vektor-Impfstoff)  (Astra Zeneca, Johnson&amp;Johnson bzw. Janssen-Cilag)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Vaccine product containing only recombinant non-replicating viral vector encoding severe acute respiratory syndrome coronavirus 2 spike protein (medicinal product)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1162643001"/>
+        <display value="COVID-19-Impfstoff (Proteinbasierter Impfstoff, rekombinant, adjuvantiert) (Sanofi - GSK)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Vaccine product containing only severe acute respiratory syndrome coronavirus 2 recombinant spike protein antigen (medicinal product)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="74964007"/>
+        <display value="-andere/sonstige-"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Other (qualifier value)"/>
+        </designation>
+      </concept>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+      <version value="2.1.0"/>
+      <concept>
+        <code value="ASKU"/>
+        <display value="asked but unknown"/>
+      </concept>
+      <concept>
+        <code value="NASK"/>
+        <display value="not asked"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

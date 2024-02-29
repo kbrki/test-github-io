@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+	<id value="NotificationDiseaseHAVD" />
+	<url value="https://demis.rki.de/fhir/StructureDefinition/NotificationDiseaseHAVD" />
+	<version value="1.0.0" />
+	<name value="NotificationDiseaseHAVD" />
+	<title value="Hepatitis A -Erkrankungsmeldung" />
+	<status value="active" />
+	<date value="2023-02-03" />
+	<description value="Die Hepatitis A -Erkrankungsmeldung spezifiziert die Meldeinhalte hinsichtlich Hepatitis A." />
+	<fhirVersion value="4.0.1" />
+	<mapping>
+		<identity value="cda" />
+		<uri value="http://hl7.org/v3/cda" />
+		<name value="CDA (R2)" />
+	</mapping>
+	<mapping>
+		<identity value="fhirdocumentreference" />
+		<uri value="http://hl7.org/fhir/documentreference" />
+		<name value="FHIR DocumentReference" />
+	</mapping>
+	<kind value="resource" />
+	<abstract value="false" />
+	<type value="Composition" />
+	<baseDefinition value="https://demis.rki.de/fhir/StructureDefinition/NotificationDisease" />
+	<derivation value="constraint" />
+	<differential>
+		<element id="Composition.category.coding.system">
+			<path value="Composition.category.coding.system" />
+			<fixedUri value="https://demis.rki.de/fhir/CodeSystem/notificationType" />
+		</element>
+		<element id="Composition.category.coding.code">
+			<path value="Composition.category.coding.code" />
+			<fixedCode value="6.1_2" />
+		</element>
+		<element id="Composition.section:disease">
+			<path value="Composition.section" />
+			<sliceName value="disease" />
+			<short value="Enthält einen Verweis auf die Hepatitis A -Erkankung" />
+			<definition value="Enthält einen Verweis auf die Hepatitis A -Erkankung" />
+		</element>
+		<element id="Composition.section:disease.entry">
+			<path value="Composition.section.entry" />
+			<type>
+				<code value="Reference" />
+				<targetProfile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseHAVD" />
+			</type>
+		</element>
+		<element id="Composition.section:diseaseInformation">
+			<path value="Composition.section" />
+			<sliceName value="diseaseInformation" />
+			<short value="Enthält einen Verweis auf die Hepatitis A -Erkrankungs-Informationen" />
+			<definition value="Enthält einen Verweis auf die Hepatitis A -Erkrankungs-Informationen" />
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:diseaseInformation.entry">
+			<path value="Composition.section.entry" />
+			<type>
+				<code value="Reference" />
+				<targetProfile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseInformationHAVD" />
+			</type>
+		</element>
+	</differential>
+</StructureDefinition>

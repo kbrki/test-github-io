@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Questionnaire xmlns="http://hl7.org/fhir">
+  <id value="DiseaseQuestionsMYBD"/>
+  <url value="https://demis.rki.de/fhir/Questionnaire/DiseaseQuestionsMYBD"/>
+  <version value="1.0.0"/>
+  <name value="DiseaseQuestionsMYBD"/>
+  <title value="Behandlungsabbruch Tuberkulose-spezifische klinische und epidemiologische Angaben"/>
+  <status value="active"/>
+  <date value="2023-04-19"/>
+  <description value="Behandlungsabbruch Tuberkulose spezifische Informationsbedarfe werden in diesem meldetatbestandsspezifischen Fragebogen zusammengestellt. Dieser manifestiert sich als entsprechende QuestionnaireResponse innerhalb der Meldung."/>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="drop-down"/>
+          <display value="Drop down"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="reasonTherapyEnd"/>
+    <text value="Aus welchem Grund wird keine Therapie der Tuberkulose durchgeführt?"/>
+    <type value="choice"/>
+    <required value="true"/>
+    <repeats value="false"/>
+    <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetFormMYBD"/>
+    <initial>
+      <valueCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+        <code value="NASK"/>
+        <display value="not asked"/>
+      </valueCoding>
+    </initial>
+  </item>
+</Questionnaire>

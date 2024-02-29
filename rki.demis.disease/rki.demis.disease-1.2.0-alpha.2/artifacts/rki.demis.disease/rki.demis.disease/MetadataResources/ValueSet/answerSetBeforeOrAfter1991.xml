@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetBeforeOrAfter1991"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetBeforeOrAfter1991"/>
+  <version value="1.0.0"/>
+  <name value="AnswerSetBeforeOrAfter1991"/>
+  <title value="Anwort Vor oder nach 1991"/>
+  <status value="active"/>
+  <date value="2023-04-25"/>
+  <description value="Das ValueSet AnswerSetBeforeOrAfter1991 enthält die Codes der Antwortmöglichkeiten für vor 1991 und für 1991 und später."/>
+  <compose>
+    <include>
+      <system value="https://demis.rki.de/fhir/CodeSystem/beforeOrAfter1991"/>
+      <version value="1.0.0"/>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+      <version value="2.1.0"/>
+      <concept>
+        <code value="ASKU"/>
+        <display value="asked but unknown"/>
+      </concept>
+      <concept>
+        <code value="NASK"/>
+        <display value="not asked"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

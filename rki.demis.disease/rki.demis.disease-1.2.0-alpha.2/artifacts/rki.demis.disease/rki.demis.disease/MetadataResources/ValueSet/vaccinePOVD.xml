@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vaccinePOVD"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/vaccinePOVD"/>
+  <version value="1.1.0"/>
+  <name value="VaccinePOVD"/>
+  <title value="Poliomyelitis-Impfstoff als SNOMED-Code"/>
+  <status value="active"/>
+  <date value="2023-03-23"/>
+  <description value="Das ValueSet VaccinePOVD enthält die Codes der Poliomyelitis-Impfstoffe als SNOMED-Code."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <code value="871740006"/>
+        <display value="Poliomyelitis-Impfstoff (Virusimpfstoff, inaktiviert) (Imovax Polio, IPV Merieux, Poliovaccine-SSI)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Vaccine product containing only inactivated whole Human poliovirus antigen (medicinal product)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="871893003"/>
+        <display value="Diphtherie- Tetanus- Pertussis (azellulär, aus Komponenten)- Poliomyelitis (inaktiviert)- Adsorbat­ Impfstoff (Boostrix-Polio, Repevax)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Vaccine product containing only acellular Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and inactivated whole Human poliovirus antigens (medicinal product)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="871883005"/>
+        <display value="Diptherie-Tetanus-Pertussis(azellulär)-Poliomyelitis (inaktiviert)-Adsorbat-Impfstoff, reduzierte Antigenmenge (Tetravac)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Pediatric vaccine product containing only acellular Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Human poliovirus antigens (medicinal product)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="871888001"/>
+        <display value="Diphtherie- Tetanus- azellulärer Pertussis- inakti­vierter Polio­myelitis (adsorbiert) und Haemo­philus-Typ b-Konjugat -Impfstoff (Pentavac, Infanrix-IPV-Hib)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Vaccine product containing only acellular Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type b and inactivated whole Human poliovirus antigens (medicinal product)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1162634005"/>
+        <display value="Impfstoffprodukt nur mit Bordetella-pertussis- und Clostridium-tetani- und Corynebacterium-diphtheriae- und Haemophilus-influenzae-b- und Hepatitis-B-Virus- und Humanes-Poliovirus-Antigenen (Hexyon, Hexacima, Infanrix hexa, Vaxelis, Hexavac)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Pediatric vaccine product containing only acellular Bordetella pertussis, Clostridium tetani and Corynebacterium diphtheriae toxoids, Haemophilus influenzae type b conjugated, Hepatitis B virus and inactivated Human poliovirus antigens (medicinal product)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="871838009"/>
+        <display value="Tetanus- Diphtherie- Poliomyelitis (inaktiviert)- Adsorbat- Impfstoff (Revaxis)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Vaccine product containing only Clostridium tetani and low dose Corynebacterium diphtheriae and inactivated Human poliovirus antigens (medicinal product)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1051000221104"/>
+        <display value="OPV-Impfstoff (OPV) (Serotypes 1 und 3)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Vaccine product containing only live attenuated Human poliovirus serotypes 1 and 3 antigens in oral dose form (medicinal product form)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="74964007"/>
+        <display value="Anderer"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Other (qualifier value)"/>
+        </designation>
+      </concept>
+    </include>
+	<include>
+	  <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+	  <version value="2.1.0"/>
+	  <concept>
+	    <code value="ASKU"/>
+		<display value="asked but unknown"/>
+	  </concept>
+	  <concept>
+	    <code value="NASK"/>
+    	<display value="not asked"/>
+	  </concept>
+    </include>
+  </compose>
+</ValueSet>

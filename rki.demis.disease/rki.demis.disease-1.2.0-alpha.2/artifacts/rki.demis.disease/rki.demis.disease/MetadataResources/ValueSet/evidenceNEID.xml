@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="evidenceNEID"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/evidenceNEID"/>
+  <version value="1.0.0"/>
+  <name value="EvidenceNEID"/>
+  <title value="Meningokokken-Symptom und -Manifestation"/>
+  <status value="active"/>
+  <date value="2023-04-25"/>
+  <description value="Das ValueSet EvidenceNEID enthält die Codes der Meningokokken-Symptome und -Manifestationen."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <code value="103019006"/>
+        <display value="aufgetriebene Fontanelle"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Bulging fontanelle (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="302227002"/>
+        <display value="Hauteinblutung, Ekchymosen"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Ecchymosis (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="422400008"/>
+        <display value="Erbrechen"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Vomiting (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="386661006"/>
+        <display value="Fieber"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Fever (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="410430005"/>
+        <display value="Herz-/Kreislaufversagen"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Cardiorespiratory arrest (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="308921004:47429007=271719001"/>
+        <display value="Hirndruckzeichen, andere"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="308921004 |Neurological symptom (finding)|:  47429007 |Associated with (attribute)|  = 271719001 | Raised intracranial pressure (finding) |"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="25064002"/>
+        <display value="Kopfschmerzen"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Headache (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="247471006"/>
+        <display value="makulopapulöses Exanthem"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Maculopapular eruption (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="161882006"/>
+        <display value="Nackensteifigkeit"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Stiff neck (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="50091001"/>
+        <display value="Hauteinblutung, Petechien"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Petechia (morphologic abnormality)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="233604007"/>
+        <display value="Lungenentzündung (Pneumonie)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Pneumonia (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="13507004"/>
+        <display value="Purpura fulminans"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Purpura fulminans (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="447931005"/>
+        <display value="septisches Krankheitsbild"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Clinical sepsis (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="3006004"/>
+        <display value="veränderte Bewusstseinslage"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Disturbance of consciousness (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="36102002"/>
+        <display value="Waterhouse-Friderichsen-Syndrom"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Acute adrenal insufficiency with meningococcemia (disorder)"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

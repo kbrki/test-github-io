@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetResultOfTreatmentMYTD"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetResultOfTreatmentMYTD"/>
+  <version value="1.0.0"/>
+  <name value="AnswerSetResultOfTreatmentMYTD"/>
+  <title value="Anwort Behandlungsergebnis beiTuberkulose"/>
+  <status value="active"/>
+  <date value="2023-04-25"/>
+  <description value="Das ValueSet AnswerSetResultOfTreatmentMYTD enthält die Codes der Antwortmöglichkeiten für Ergebnis der Behandlung bei Tuberkulose."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <code value="371001000"/>
+        <display value="Abschluss der Behandlung mit Nachweis einer negativen Kultur im letzten Behandlungsmonat und zu wenigstens einem früheren Zeitpunkt"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Patient cured (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="182992009"/>
+        <display value="Abschluss der Behandlung ohne oder mit nur einem Nachweis einer negativen Kultur"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Treatment completed (situation)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="274512008"/>
+        <display value="Abbruch der Behandlung"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Drug therapy discontinued (situation)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="266714009"/>
+        <display value="Fortführung der Behandlung nach mehr als 12 Monaten (Ergebnis folgt noch)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Previous treatment continue (situation)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="419620001:{371881003=416608005,47429007=113861009}"/>
+        <display value="Tod an TB  während der Behandlung"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="419620001 | Death (event) |: {371881003 |During (attribute)| = 416608005 | Drug therapy (procedure) | , 47429007 |Associated with (attribute)| = 113861009 | Mycobacterium tuberculosis (organism) |}"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="419620001:371881003=416608005"/>
+        <display value="Tod an anderer Ursache während der Behandlung"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="419620001 | Death (event) |: 371881003 |During (attribute)| = 416608005 | Drug therapy (procedure) |"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="419620001:{288556008=416608005,47429007=113861009}"/>
+        <display value="Tod an TB vor Beginn einer notwendigen Behandlung"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="419620001 | Death (event) |: {288556008 |Before (attribute)| = 416608005 | Drug therapy (procedure) |, 47429007 |Associated with (attribute)| = 113861009 | Mycobacterium tuberculosis (organism) |}"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="419620001:288556008=416608005"/>
+        <display value="Tod an anderer Ursache vor Beginn einer notwendigen Behandlung"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="419620001 | Death (event) |: 288556008 |Before (attribute)| = 416608005 | Drug therapy (procedure) |"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="399307001"/>
+        <display value="Unbekannt, da Patient/in ins Ausland oder unbekannt verzogen"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Lost to follow-up (finding)"/>
+        </designation>
+      </concept>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+      <version value="2.1.0"/>
+      <concept>
+        <code value="ASKU"/>
+        <display value="asked but unknown"/>
+      </concept>
+      <concept>
+        <code value="NASK"/>
+        <display value="not asked"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

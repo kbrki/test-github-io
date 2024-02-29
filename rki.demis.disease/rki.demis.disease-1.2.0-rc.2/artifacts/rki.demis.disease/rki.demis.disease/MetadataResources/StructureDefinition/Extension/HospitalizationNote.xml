@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="HospitalizationNote" />
+  <url value="https://demis.rki.de/fhir/StructureDefinition/HospitalizationNote" />
+  <version value="1.0.0" />
+  <name value="HospitalizationNote" />
+  <title value="Hinweise zur Hospitalisierung" />
+  <status value="active" />
+  <date value="2022-01-18" />
+  <description value="Die HospitalizationNote dient der Angabe von Hinweisen zur Hospitalisierung." />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Encounter" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="https://demis.rki.de/fhir/StructureDefinition/HospitalizationNote" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

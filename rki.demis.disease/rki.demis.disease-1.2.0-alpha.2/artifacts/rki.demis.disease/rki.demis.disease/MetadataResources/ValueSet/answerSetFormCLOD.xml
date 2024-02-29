@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetFormCLOD"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetFormCLOD"/>
+  <version value="1.1.0"/>
+  <name value="AnswerSetFormCLOD"/>
+  <title value="Antwort Botulismus-Krankheitsform"/>
+  <status value="active"/>
+  <date value="2023-03-23"/>
+  <description value="Das ValueSet AnswerSetFormCLOD enthält die Codes der Antwortmöglichkeiten für die Botulismus-Krankheitsform."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <code value="398523009"/>
+        <display value="Lebensmittelbedingter Botulismus"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Foodborne botulism (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="414488002"/>
+        <display value="Säuglingsbotulismus"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Infantile botulism (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="398530003"/>
+        <display value="Wundbotulismus"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Wound botulism (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+	    <code value="409562009"/>
+		<display value="Iatrogener Botulismus"/>
+		<designation>
+		  <language value="en-US"/>
+		  <use>
+		    <system value="http://snomed.info/sct"/>
+			<code value="900000000000003001"/>
+		  </use>
+		  <value value="Inhalational botulism (disorder)"/>
+		</designation>
+	  </concept>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+      <version value="2.1.0"/>
+      <concept>
+        <code value="ASKU"/>
+        <display value="asked but unknown"/>
+      </concept>
+      <concept>
+        <code value="NASK"/>
+        <display value="not asked"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

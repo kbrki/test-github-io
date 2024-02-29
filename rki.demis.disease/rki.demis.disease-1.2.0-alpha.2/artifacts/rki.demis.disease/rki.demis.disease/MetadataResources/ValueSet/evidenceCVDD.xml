@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="evidenceCVDD"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/evidenceCVDD"/>
+  <version value="1.0.0"/>
+  <name value="EvidenceCVDD"/>
+  <title value="Covid-19-Symptom und -Manifestation"/>
+  <status value="active"/>
+  <date value="2023-04-14"/>
+  <description value="Das ValueSet EvidenceCVDD enthält die Codes der Covid-19-Symptome und -Manifestationen."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <code value="67782005"/>
+        <display value="akutes schweres Atemnotsyndrom (ARDS)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Acute respiratory distress syndrome (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="43724002"/>
+        <display value="Frösteln"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Chill (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="25064002"/>
+        <display value="Kopfschmerzen"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Headache (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="68962001"/>
+        <display value="Muskelschmerzen"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Muscle pain (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="90834002"/>
+        <display value="Gliederschmerzen"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Pain in limb (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="161891005"/>
+        <display value="Rückenschmerzen"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Backache (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="213257006: 246112005=24484000"/>
+        <display value="schweres Krankheitsgefühl"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="213257006 | Generally unwell (finding) |:  246112005 |Severity (attribute)| = 24484000 | Severe (severity modifier) (qualifier value) |"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="50043002+371820004"/>
+        <display value="beatmungspflichtige Atemwegserkrankung"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="50043002 | Disorder of respiratory system (disorder) | + 371820004 | Patient ventilated (finding) |"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="409966000"/>
+        <display value="Durchfall, akut"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Acute diarrhea (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="267036007"/>
+        <display value="Atemstörung (Dyspnoe)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Dyspnea (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="386661006"/>
+        <display value="Fieber"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Fever (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="44169009"/>
+        <display value="Geruchsverlust"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Loss of sense of smell (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="36955009"/>
+        <display value="Geschmacksverlust"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Loss of taste (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="267102003"/>
+        <display value="Halsschmerzen/-entzündung"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Sore throat symptom (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="49727002"/>
+        <display value="Husten"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Cough (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="233604007"/>
+        <display value="Lungenentzündung (Pneumonie)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Pneumonia (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="275280004"/>
+        <display value="Schnupfen"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Sniffles (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="3424008"/>
+        <display value="Herzrhythmusstörung mit Anstieg der Herzfrequenz (Tachykardie)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Tachycardia (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="271823003"/>
+        <display value="beschleunigte Atmung (Tachypnoe)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Tachypnea (finding)"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

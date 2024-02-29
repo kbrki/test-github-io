@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetCountry"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetCountry"/>
+  <version value="1.0.0"/>
+  <name value="AnswerSetCountry"/>
+  <title value="Anwort Country mit staatenlos und Ausland"/>
+  <status value="active"/>
+  <date value="2023-04-25"/>
+  <description value="Das ValueSet answerSetCountry enthält die Codes der Antwortmöglichkeiten für Country mit staatenlos und Ausland."/>
+  <compose>
+    <include>
+      <system value="https://demis.rki.de/fhir/CodeSystem/country"/>
+      <version value="1.0.0"/>
+    </include>
+    <include>
+      <system value="https://demis.rki.de/fhir/CodeSystem/noCountry"/>
+      <version value="1.0.0"/>
+    </include>
+	<include>
+	  <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+	  <version value="2.1.0"/>
+	  <concept>
+	    <code value="ASKU"/>
+		<display value="asked but unknown"/>
+	  </concept>
+	  <concept>
+	    <code value="NASK"/>
+		<display value="not asked"/>
+	  </concept>
+	</include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="evidenceRUVD"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/evidenceRUVD"/>
+  <version value="1.0.0"/>
+  <name value="EvidenceRUVD"/>
+  <title value="Röteln postnatal-Symptom und -Manifestation"/>
+  <status value="active"/>
+  <date value="2023-03-23"/>
+  <description value="Das ValueSet EvidenceRUVD enthält die Codes der Röteln postnatal-Symptome und -Manifestationen."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <code value="32398004"/>
+        <display value="Bronchitis"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Bronchitis (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="50920009"/>
+        <display value="Herzmuskelentzündung (Myokarditis)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Myocarditis (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="3238004"/>
+        <display value="Perikarditis (Herzbeutelentzündung)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Pericarditis (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="302215000"/>
+        <display value="Thrombozytopenie"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Thrombocytopenic disorder (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="45170000"/>
+        <display value="Gehirnentzündung (Enzephalitis)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Encephalitis (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="65363002"/>
+        <display value="Entzündung des Mittelohrs (Otitis media)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Otitis media (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="3723001"/>
+        <display value="Gelenkentzündung (Arthritis)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Arthritis (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="57676002"/>
+        <display value="Gelenkschmerzen (Arthralgie)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Joint pain (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="725119006"/>
+        <display value="Ausschlag, generalisiert"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Generalized rash (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="425061006"/>
+        <display value="Lymphknotenschwellung im Kopf-, Hals- oder Nackenbereich"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Lymphadenopathy of head AND/OR neck (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="17369002"/>
+        <display value="vor Ende der 23. Schwangerschaftswoche (Fehlgeburt (Abort))"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Miscarriage (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="367494004"/>
+        <display value="29. Schwangerschaftswoche vor Ende der 36. Schwangerschaftswoche (Frühgeburt)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Premature birth of newborn (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="237364002"/>
+        <display value="Totgeburt"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Stillbirth (finding)"/>
+        </designation>
+      </concept>
+	  <concept>
+		<code value="169836001+1857005"/>
+		<display value="Geburt eines Kindes mit Rötelnembryofethopathie"/>
+		<designation>
+		  <language value="en-US"/>
+		  <use>
+		    <system value="http://snomed.info/sct"/>
+			<code value="1119454002"/>
+		  </use>
+		  <value value="169836001 | Birth of child (finding) | + 1857005 | Congenital rubella syndrome (disorder) |"/>
+		</designation>
+	  </concept>
+      <concept>
+        <code value="43275000"/>
+        <display value="Entzündung des Ohrs (Otitis)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Otitis (disorder)"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

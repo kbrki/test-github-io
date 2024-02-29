@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetDiagnosisCJKD"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetDiagnosisCJKD"/>
+  <version value="1.0.0"/>
+  <name value="AnswerSetDiagnosisCJKD"/>
+  <title value="Anwort spezielle Form bei Kreuzfeldt-Jakob"/>
+  <status value="active"/>
+  <date value="2023-04-24"/>
+  <description value="Das ValueSet AnswerSetDiagnosisCJKD enthält die Codes der Antwortmöglichkeiten für die spezielle Form für Kreuzfeldt-Jakob."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <code value="713060000"/>
+        <display value="sporadische CJK"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Sporadic Creutzfeldt-Jakob disease (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="715662009"/>
+        <display value="iatrogene CJK"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Iatrogenic Jakob-Creutzfeldt disease (disorder)"/>
+        </designation>
+      </concept>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+      <version value="2.1.0"/>
+      <concept>
+        <code value="ASKU"/>
+        <display value="asked but unknown"/>
+      </concept>
+      <concept>
+        <code value="NASK"/>
+        <display value="not asked"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

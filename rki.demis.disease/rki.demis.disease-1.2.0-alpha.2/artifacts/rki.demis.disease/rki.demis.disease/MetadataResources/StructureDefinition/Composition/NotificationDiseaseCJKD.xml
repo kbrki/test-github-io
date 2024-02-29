@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="NotificationDiseaseCJKD"/>
+  <url value="https://demis.rki.de/fhir/StructureDefinition/NotificationDiseaseCJKD"/>
+  <version value="1.0.0"/>
+  <name value="NotificationDiseaseCJKD"/>
+  <title value="Kreuzfeldt-Jakob (CJK)-Erkrankungsmeldung"/>
+  <status value="active"/>
+  <date value="2023-04-19"/>
+  <description value="Die Kreuzfeldt-Jakob (CJK)-Erkrankungsmeldung spezifiziert die Meldeinhalte hinsichtlich Kreuzfeldt-Jakob (CJK)."/>
+  <fhirVersion value="4.0.1"/>
+  <mapping>
+    <identity value="cda"/>
+    <uri value="http://hl7.org/v3/cda"/>
+    <name value="CDA (R2)"/>
+  </mapping>
+  <mapping>
+    <identity value="fhirdocumentreference"/>
+    <uri value="http://hl7.org/fhir/documentreference"/>
+    <name value="FHIR DocumentReference"/>
+  </mapping>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="Composition"/>
+  <baseDefinition value="https://demis.rki.de/fhir/StructureDefinition/NotificationDisease"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Composition.category.coding.system">
+      <path value="Composition.category.coding.system"/>
+      <fixedUri value="https://demis.rki.de/fhir/CodeSystem/notificationType"/>
+    </element>
+    <element id="Composition.category.coding.code">
+      <path value="Composition.category.coding.code"/>
+      <fixedCode value="6.1_2"/>
+    </element>
+    <element id="Composition.section:disease">
+      <path value="Composition.section"/>
+      <sliceName value="disease"/>
+      <short value="Enthält einen Verweis auf die Kreuzfeldt-Jakob (CJK)-Erkankung"/>
+      <definition value="Enthält einen Verweis auf die Kreuzfeldt-Jakob (CJK)-Erkankung"/>
+    </element>
+    <element id="Composition.section:disease.entry">
+      <path value="Composition.section.entry"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseCJKD"/>
+      </type>
+    </element>
+    <element id="Composition.section:diseaseInformation">
+      <path value="Composition.section"/>
+      <sliceName value="diseaseInformation"/>
+      <short value="Enthält einen Verweis auf die Kreuzfeldt-Jakob (CJK)-Erkrankungs-Informationen"/>
+      <definition value="Enthält einen Verweis auf die Kreuzfeldt-Jakob (CJK)-Erkrankungs-Informationen"/>
+      <min value="1"/>
+    </element>
+    <element id="Composition.section:diseaseInformation.entry">
+      <path value="Composition.section.entry"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseInformationCJKD"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

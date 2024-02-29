@@ -1,0 +1,26 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="organizationAssociation" />
+  <url value="https://demis.rki.de/fhir/CodeSystem/organizationAssociation" />
+  <version value="1.0.0" />
+  <name value="OrganizationAssociation" />
+  <title value="Art der Beziehung zur Einrichtung" />
+  <status value="active" />
+  <date value="2022-01-18" />
+  <description value="Das CodeSystem OrganizationAssociation enthält die Codes zur Unterscheidung der Art der Beziehung zur Einrichtung." />
+  <caseSensitive value="false" />
+  <valueSet value="https://demis.rki.de/fhir/ValueSet/organizationAssociation" />
+  <content value="complete" />
+  <count value="3" />
+  <concept>
+    <code value="employment" />
+    <display value="Tätigkeit" />
+  </concept>
+  <concept>
+    <code value="care" />
+    <display value="Betreuung" />
+  </concept>
+  <concept>
+    <code value="accommodation" />
+    <display value="Unterbringung" />
+  </concept>
+</CodeSystem>

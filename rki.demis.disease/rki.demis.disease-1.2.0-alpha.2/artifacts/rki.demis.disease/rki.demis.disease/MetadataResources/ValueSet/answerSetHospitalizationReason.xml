@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetHospitalizationReason"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetHospitalizationReason"/>
+  <version value="1.1.0"/>
+  <name value="AnswerSetHospitalizationReason"/>
+  <title value="Antwort Grund der Hospitalisierung"/>
+  <status value="active"/>
+  <date value="2023-03-03"/>
+  <description value="Das ValueSet AnswerSetHospitalizationReason enthält die Codes der Antwortmöglichkeiten für den Hospitalisierungsgrund."/>
+  <compose>
+    <include>
+      <system value="https://demis.rki.de/fhir/CodeSystem/hospitalizationReason"/>
+      <version value="1.0.0"/>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+      <version value="2.1.0"/>
+      <concept>
+        <code value="ASKU"/>
+        <display value="asked but unknown"/>
+      </concept>
+      <concept>
+        <code value="NASK"/>
+        <display value="not asked"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

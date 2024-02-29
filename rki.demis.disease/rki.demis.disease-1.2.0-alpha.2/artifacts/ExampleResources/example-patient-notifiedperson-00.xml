@@ -1,0 +1,25 @@
+<Patient xmlns="http://hl7.org/fhir">
+   <id value="ac163863-fefa-3ce2-8511-7a4150d6ad43"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/NotifiedPerson"></profile>
+   </meta>
+   <name>
+      <use value="official"></use>
+      <family value="Fontane"></family>
+      <given value="Theodor"></given>
+   </name>
+   <gender value="male"></gender>
+   <birthDate value="1991-12-30"></birthDate>
+   <address>
+      <extension url="https://demis.rki.de/fhir/StructureDefinition/AddressUse">
+         <valueCoding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/addressUse"></system>
+            <code value="primary"></code>
+         </valueCoding>
+      </extension>
+      <line value="Heerstr. 1"></line>
+      <city value="Berlin"></city>
+      <postalCode value="14052"></postalCode>
+      <country value="20422"></country>
+   </address>
+</Patient>

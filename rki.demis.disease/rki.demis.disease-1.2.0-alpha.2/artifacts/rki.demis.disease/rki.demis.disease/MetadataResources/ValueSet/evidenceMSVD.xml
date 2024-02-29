@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="evidenceMSVD"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/evidenceMSVD"/>
+  <version value="1.0.0"/>
+  <name value="EvidenceMSVD"/>
+  <title value="Masern-Symptom und -Manifestation"/>
+  <status value="active"/>
+  <date value="2023-03-23"/>
+  <description value="Das ValueSet EvidenceMSVD enthält die Codes der Masern-Symptome und -Manifestationen."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <code value="233604007"/>
+        <display value="Lungenentzündung"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Pneumonia (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="45170000"/>
+        <display value="Masernenzephalitis"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Encephalitis (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="7180009"/>
+        <display value="Meningitis"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Meningitis (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="65363002"/>
+        <display value="Entzündung des Mittelohrs (Otitis media)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Otitis media (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="85919009"/>
+        <display value="Darm-Komplikation"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Disorder of intestine (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="386661006"/>
+        <display value="Fieber"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Fever (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="247471006:363698007=181469002"/>
+        <display value="Hautausschlag, generalisiert, makulopapulös"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="247471006 |Maculopapular eruption (disorder)| : 363698007 |Finding site (attribute)| = 181469002 |Entire skin (body structure)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="49727002"/>
+        <display value="Husten"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Cough (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="64611009"/>
+        <display value="wässriger Schnupfen (Katarrh)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Catarrhal nasal discharge (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="193894004"/>
+        <display value="Rötung der Bindehaut"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Conjunctival hyperemia (finding)"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

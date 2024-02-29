@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetLocationMucosalLesionsMPXD"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetLocationMucosalLesionsMPXD"/>
+  <version value="1.0.0"/>
+  <name value="AnswerSetLocationMucosalLesionsMPXD"/>
+  <title value="Anwort Lokalisation der Schleimhautläsionen bei Mpox"/>
+  <status value="active"/>
+  <date value="2023-04-25"/>
+  <description value="Das ValueSet AnswerSetLocationMucosalLesionsMPXD enthält die Codes der Antwortmöglichkeiten für die Lokalisation der Schleimhautläsionen bei Mpox."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <code value="276320009+399988002"/>
+        <display value="anorektal"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="276320009 | Lesion of mucosa (disorder) |+399988002 | Structure of skin and/or mucosa of anogenital area (body structure) |"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="089981000119106"/>
+        <display value="oral"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Lesion of oral mucosa (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="276320009+56508003"/>
+        <display value="vaginal"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="276320009 | Lesion of mucosa (disorder) |+ 56508003 | Vaginal mucous membrane structure (body structure) |"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="276320009+17135008"/>
+        <display value="urethral"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="276320009 | Lesion of mucosa (disorder) |+ 17135008 | Structure of mucous membrane of urethra (body structure) |"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="74964007"/>
+        <display value="-andere/sonstige-"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Other (qualifier value)"/>
+        </designation>
+      </concept>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+      <version value="2.1.0"/>
+      <concept>
+        <code value="ASKU"/>
+        <display value="asked but unknown"/>
+      </concept>
+      <concept>
+        <code value="NASK"/>
+        <display value="not asked"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

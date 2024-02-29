@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetFormCDFD"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetFormCDFD"/>
+  <version value="1.0.0"/>
+  <name value="AnswerSetFormCDFD"/>
+  <title value="Antwort Clostridioides difficile -Krankheitsform"/>
+  <status value="active"/>
+  <date value="2023-04-24"/>
+  <description value="Das ValueSet AnswerSetFormCDFD enthält die Codes der Antwortmöglichkeiten für die Clostridioides difficile -Krankheitsform."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <code value="305351004+186431008"/>
+        <display value="Aufnahme auf eine Intensivstation aufgrund einer C.-difficile-Infektion oder ihrer Komplikationen"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="305351004 | Admission to intensive care unit (procedure) |+ 186431008 | Infection caused by Clostridioides difficile (disorder) |"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="397821002+186431008"/>
+        <display value="Verlegung auf eine Intensivstation aufgrund einer C.-difficile-Infektion oder ihrer Komplikationen"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="397821002 | Patient transfer to intensive care unit (procedure) |+ 186431008 | Infection caused by Clostridioides difficile (disorder) |"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="23968004"/>
+        <display value="Chirurgischer Eingriff (Kolektomie) aufgrund eines Megakolons, einer Perforation oder einer refraktären Kolitis"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Excision of colon (procedure)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="419620001:42752001=186431008"/>
+        <display value="Tod innerhalb von 30 Tage nach Diagnosestellung einer C.-difficile-Infektion in Zusammenhang mit der Erkrankung"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="419620001 | Death (event) |: 42752001 |Due to| = 186431008 | Infection caused by Clostridioides difficile (disorder) |"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="32485007+186431008"/>
+        <display value="Aufnahme in eine medizinische Einrichtung zur Behandlung einer ambulant erworbenen C.-difficile-Erkrankung"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="32485007 | Hospital admission (procedure) | + 186431008 | Infection caused by Clostridioides difficile (disorder) |"/>
+        </designation>
+      </concept>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+      <version value="2.1.0"/>
+      <concept>
+        <code value="ASKU"/>
+        <display value="asked but unknown"/>
+      </concept>
+      <concept>
+        <code value="NASK"/>
+        <display value="not asked"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

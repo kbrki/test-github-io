@@ -1,0 +1,21 @@
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+   <id value="e578f06e-fc0d-3985-b99b-850a86dcd6a3"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseInformationLSVD"></profile>
+   </meta>
+   <questionnaire value="https://demis.rki.de/fhir/Questionnaire/DiseaseQuestionsLSVD"></questionnaire>
+   <status value="completed"></status>
+   <subject>
+      <reference value="Patient/f9b043b1-478c-3a8a-9bd3-2031d144127c"></reference>
+   </subject>
+   <item>
+      <linkId value="outbreak"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+            <code value="no"></code>
+            <display value="Nein"></display>
+         </valueCoding>
+      </answer>
+   </item>
+</QuestionnaireResponse>

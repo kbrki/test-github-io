@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="infectionEnvironmentSettingCVDD"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/infectionEnvironmentSettingCVDD"/>
+  <version value="1.1.0"/>
+  <name value="InfectionEnvironmentSettingCVDD"/>
+  <title value="Covid-19-Infektionsumfeld"/>
+  <status value="active"/>
+  <date value="2023-03-03"/>
+  <description value="Das ValueSet InfectionEnvironmentSettingCVDD enthält die Codes zur Angabe des Covid-19-Infektionsumfeldes."/>
+  <compose>
+    <include>
+      <system value="https://demis.rki.de/fhir/CodeSystem/infectionEnvironmentSetting"/>
+      <version value="1.0.0"/>
+      <concept>
+        <code value="1"/>
+        <display value="Arbeitsplatz, andere"/>
+      </concept>
+      <concept>
+        <code value="110"/>
+        <display value="Großraumbüro"/>
+      </concept>
+      <concept>
+        <code value="111"/>
+        <display value="Lebensmittelbereich"/>
+      </concept>
+      <concept>
+        <code value="112"/>
+        <display value="Baugewerbe"/>
+      </concept>
+      <concept>
+        <code value="113"/>
+        <display value="Logistikzentrum"/>
+      </concept>
+      <concept>
+        <code value="2"/>
+        <display value="Bildungs-/Betreuungseinrichtung"/>
+      </concept>
+      <concept>
+        <code value="101"/>
+        <display value="Kita"/>
+      </concept>
+      <concept>
+        <code value="300"/>
+        <display value="Betreute/-r"/>
+      </concept>
+      <concept>
+        <code value="302"/>
+        <display value="Eltern"/>
+      </concept>
+      <concept>
+        <code value="301"/>
+        <display value="Erzieher/-in, Betreuer/-in"/>
+      </concept>
+      <concept>
+        <code value="303"/>
+        <display value="sonstiges Personal"/>
+      </concept>
+      <concept>
+        <code value="102"/>
+        <display value="Schule"/>
+      </concept>
+      <concept>
+        <code value="310"/>
+        <display value="Schüler/-in"/>
+      </concept>
+      <concept>
+        <code value="312"/>
+        <display value="Eltern"/>
+      </concept>
+      <concept>
+        <code value="311"/>
+        <display value="Lehrkraft"/>
+      </concept>
+      <concept>
+        <code value="313"/>
+        <display value="sonstiges Personal"/>
+      </concept>
+      <concept>
+        <code value="104"/>
+        <display value="Universität"/>
+      </concept>
+      <concept>
+        <code value="103"/>
+        <display value="sonstige Bildungs-/Betreuungseinrichtung"/>
+      </concept>
+      <concept>
+        <code value="320"/>
+        <display value="Betreute/-r"/>
+      </concept>
+      <concept>
+        <code value="321"/>
+        <display value="Erzieher/-in, Ausbilder/-in, Betreuer/-in"/>
+      </concept>
+      <concept>
+        <code value="322"/>
+        <display value="sonstiges Personal"/>
+      </concept>
+      <concept>
+        <code value="3"/>
+        <display value="Gesundheitseinrichtung"/>
+      </concept>
+      <concept>
+        <code value="120"/>
+        <display value="medizinische Einrichtung"/>
+      </concept>
+      <concept>
+        <code value="200"/>
+        <display value="Patient/-in"/>
+      </concept>
+      <concept>
+        <code value="204"/>
+        <display value="Besucher/-in"/>
+      </concept>
+      <concept>
+        <code value="201"/>
+        <display value="medizinisches Personal"/>
+      </concept>
+      <concept>
+        <code value="202"/>
+        <display value="Pflegepersonal"/>
+      </concept>
+      <concept>
+        <code value="203"/>
+        <display value="sonstiges Personal"/>
+      </concept>
+      <concept>
+        <code value="121"/>
+        <display value="Pflegeeinrichtung"/>
+      </concept>
+      <concept>
+        <code value="220"/>
+        <display value="Betreute/-r"/>
+      </concept>
+      <concept>
+        <code value="223"/>
+        <display value="Besucher/-in"/>
+      </concept>
+      <concept>
+        <code value="221"/>
+        <display value="Pflegepersonal"/>
+      </concept>
+      <concept>
+        <code value="222"/>
+        <display value="sonstiges Personal"/>
+      </concept>
+      <concept>
+        <code value="122"/>
+        <display value="ambulanter Pflegedienst"/>
+      </concept>
+      <concept>
+        <code value="143"/>
+        <display value="Betreute/-r"/>
+      </concept>
+      <concept>
+        <code value="240"/>
+        <display value="Pflegepersonal"/>
+      </concept>
+      <concept>
+        <code value="241"/>
+        <display value="sonstiges Personal"/>
+      </concept>
+      <concept>
+        <code value="124"/>
+        <display value="Reha-Einrichtung"/>
+      </concept>
+      <concept>
+        <code value="362"/>
+        <display value="Patient/-in"/>
+      </concept>
+      <concept>
+        <code value="363"/>
+        <display value="Besucher/-in"/>
+      </concept>
+      <concept>
+        <code value="364"/>
+        <display value="medizinisches Personal"/>
+      </concept>
+      <concept>
+        <code value="365"/>
+        <display value="Pflegepersonal"/>
+      </concept>
+      <concept>
+        <code value="366"/>
+        <display value="sonstiges Personal"/>
+      </concept>
+      <concept>
+        <code value="123"/>
+        <display value="Labor"/>
+      </concept>
+      <concept>
+        <code value="4"/>
+        <display value="privater Haushalt"/>
+      </concept>
+      <concept>
+        <code value="5"/>
+        <display value="Einzelhandel"/>
+      </concept>
+      <concept>
+        <code value="150"/>
+        <display value="als Kunde"/>
+      </concept>
+      <concept>
+        <code value="151"/>
+        <display value="als Personal"/>
+      </concept>
+      <concept>
+        <code value="6"/>
+        <display value="Freizeit"/>
+      </concept>
+      <concept>
+        <code value="161"/>
+        <display value="Chor"/>
+      </concept>
+      <concept>
+        <code value="160"/>
+        <display value="Sport"/>
+      </concept>
+      <concept>
+        <code value="162"/>
+        <display value="Verein"/>
+      </concept>
+      <concept>
+        <code value="7"/>
+        <display value="Gastronomie"/>
+      </concept>
+      <concept>
+        <code value="170"/>
+        <display value="als Gast"/>
+      </concept>
+      <concept>
+        <code value="171"/>
+        <display value="als Personal"/>
+      </concept>
+      <concept>
+        <code value="8"/>
+        <display value="Veranstaltung"/>
+      </concept>
+      <concept>
+        <code value="184"/>
+        <display value="Demonstration/Kundgebung"/>
+      </concept>
+      <concept>
+        <code value="185"/>
+        <display value="Karneval"/>
+      </concept>
+      <concept>
+        <code value="186"/>
+        <display value="Messe"/>
+      </concept>
+      <concept>
+        <code value="182"/>
+        <display value="Musikveranstaltung/Konzert"/>
+      </concept>
+      <concept>
+        <code value="180"/>
+        <display value="private Feier/Treffen"/>
+      </concept>
+      <concept>
+        <code value="183"/>
+        <display value="religiöse Veranstaltung (z.B. Gottesdienst)"/>
+      </concept>
+      <concept>
+        <code value="181"/>
+        <display value="Sportveranstaltung"/>
+      </concept>
+      <concept>
+        <code value="9"/>
+        <display value="Transportmittel"/>
+      </concept>
+      <concept>
+        <code value="190"/>
+        <display value="Flugzeug/Flughafen"/>
+      </concept>
+      <concept>
+        <code value="323"/>
+        <display value="Passagier/-in"/>
+      </concept>
+      <concept>
+        <code value="324"/>
+        <display value="Personal"/>
+      </concept>
+      <concept>
+        <code value="191"/>
+        <display value="Schiff/Hafen"/>
+      </concept>
+      <concept>
+        <code value="330"/>
+        <display value="Passagier/-in"/>
+      </concept>
+      <concept>
+        <code value="331"/>
+        <display value="Personal"/>
+      </concept>
+      <concept>
+        <code value="192"/>
+        <display value="Zug/Bahnhof"/>
+      </concept>
+      <concept>
+        <code value="340"/>
+        <display value="Passagier/-in"/>
+      </concept>
+      <concept>
+        <code value="341"/>
+        <display value="Personal"/>
+      </concept>
+      <concept>
+        <code value="193"/>
+        <display value="Fernbus"/>
+      </concept>
+      <concept>
+        <code value="350"/>
+        <display value="Passagier/-in"/>
+      </concept>
+      <concept>
+        <code value="351"/>
+        <display value="Personal"/>
+      </concept>
+      <concept>
+        <code value="194"/>
+        <display value="öffentlicher Nahverkehr"/>
+      </concept>
+      <concept>
+        <code value="360"/>
+        <display value="Passagier/-in"/>
+      </concept>
+      <concept>
+        <code value="361"/>
+        <display value="Personal"/>
+      </concept>
+      <concept>
+        <code value="260"/>
+        <display value="Übernachtung"/>
+      </concept>
+      <concept>
+        <code value="261"/>
+        <display value="Hotel, Pension, Herberge"/>
+      </concept>
+      <concept>
+        <code value="262"/>
+        <display value="Kreuzfahrtschiff"/>
+      </concept>
+      <concept>
+        <code value="263"/>
+        <display value="Zeltplatz, Campingplatz"/>
+      </concept>
+      <concept>
+        <code value="250"/>
+        <display value="Wohnstätten"/>
+      </concept>
+      <concept>
+        <code value="251"/>
+        <display value="Alten-/Pflegeheim"/>
+      </concept>
+      <concept>
+        <code value="252"/>
+        <display value="Wohnheim (Kinder-, Jugend-, Studierenden-)"/>
+      </concept>
+      <concept>
+        <code value="253"/>
+        <display value="Kaserne"/>
+      </concept>
+      <concept>
+        <code value="254"/>
+        <display value="Justizvollzugsanstalt"/>
+      </concept>
+      <concept>
+        <code value="255"/>
+        <display value="Flüchtlings-, Asylbewerberheim"/>
+      </concept>
+      <concept>
+        <code value="10"/>
+        <display value="sonstiges"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetLocationLymphNodeSwellingMPXD"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetLocationLymphNodeSwellingMPXD"/>
+  <version value="1.0.0"/>
+  <name value="AnswerSetLocationLymphNodeSwellingMPXD"/>
+  <title value="Anwort Lokalisation der Lymphknotenschwellung bei Mpox"/>
+  <status value="active"/>
+  <date value="2023-04-25"/>
+  <description value="Das ValueSet AnswerSetLocationLymphNodeSwellingMPXD enthält die Codes der Antwortmöglichkeiten für die Lokalisation der Lymphknotenschwellung bei Mpox."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <code value="274741002"/>
+        <display value="generalisiert"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Generalized enlarged lymph nodes (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="127199000"/>
+        <display value="in Leistenregion"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Inguinal lymphadenopathy (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="74964007"/>
+        <display value="-andere/sonstige-"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Other (qualifier value)"/>
+        </designation>
+      </concept>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+      <version value="2.1.0"/>
+      <concept>
+        <code value="ASKU"/>
+        <display value="asked but unknown"/>
+      </concept>
+      <concept>
+        <code value="NASK"/>
+        <display value="not asked"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

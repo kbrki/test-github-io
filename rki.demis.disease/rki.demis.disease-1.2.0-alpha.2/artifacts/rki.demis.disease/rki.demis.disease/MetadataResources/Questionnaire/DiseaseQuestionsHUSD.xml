@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Questionnaire xmlns="http://hl7.org/fhir">
+  <id value="DiseaseQuestionsHUSD"/>
+  <url value="https://demis.rki.de/fhir/Questionnaire/DiseaseQuestionsHUSD"/>
+  <version value="1.0.0"/>
+  <name value="DiseaseQuestionsHUSD"/>
+  <title value="Hämolytisch-urämisches Syndrom (HUS)-spezifische klinische und epidemiologische Angaben"/>
+  <status value="active"/>
+  <date value="2023-04-19"/>
+  <description value="Hämolytisch-urämisches Syndrom (HUS) spezifische Informationsbedarfe werden in diesem meldetatbestandsspezifischen Fragebogen zusammengestellt. Dieser manifestiert sich als entsprechende QuestionnaireResponse innerhalb der Meldung."/>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="drop-down"/>
+          <display value="Drop down"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="infectionPathKind"/>
+    <text value="Auf welchem Weg hat sich die betroffene Person wahrscheinlich infiziert?"/>
+    <type value="choice"/>
+    <required value="true"/>
+    <repeats value="false"/>
+    <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetInfectionPathHUSD"/>
+    <initial>
+      <valueCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+        <code value="NASK"/>
+        <display value="not asked"/>
+      </valueCoding>
+    </initial>
+    <item>
+      <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+            <code value="gtable"/>
+            <display value="Group Table"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <linkId value="infectionPathGroup"/>
+      <type value="group"/>
+      <enableWhen>
+        <question value="infectionPathKind"/>
+        <operator value="="/>
+        <answerCoding>
+          <system value="https://demis.rki.de/fhir/CodeSystem/answerSetInfectionPathHUSD"/>
+          <code value="409496000:{704319004=303071001,704326004=62315008}"/>
+        </answerCoding>
+      </enableWhen>
+      <required value="true"/>
+      <repeats value="true"/>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+              <code value="drop-down"/>
+              <display value="Drop down"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <linkId value="infectionPathWho"/>
+        <text value="Bei wem?"/>
+        <type value="choice"/>
+        <required value="true"/>
+        <repeats value="false"/>
+        <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetInfectionPathWhoHUSD"/>
+        <initial>
+          <valueCoding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+            <code value="NASK"/>
+            <display value="not asked"/>
+          </valueCoding>
+        </initial>
+      </item>
+      <item>
+        <linkId value="infectionPathWhen"/>
+        <text value="Wann?"/>
+        <type value="date"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </item>
+      <item>
+		<linkId value="onsetOfDiseaseHUS"/>
+		<text value="Datum des Auftretens des HUS-Vollbildes"/>
+		<type value="date"/>
+		<required value="false"/>
+		<repeats value="false"/>
+	  </item>
+    </item>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="drop-down"/>
+          <display value="Drop down"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="infectionRisk"/>
+    <text value="Lag ein Risiko bei der betroffenen Person in den zwei Wochen vor Erkrankungsbeginn vor? (Tierkontakt)"/>
+    <type value="choice"/>
+    <required value="true"/>
+    <repeats value="false"/>
+    <answerValueSet value="https://demis.rki.de/fhir/ValueSet/yesOrNoOrNoInformation"/>
+    <initial>
+      <valueCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+        <code value="NASK"/>
+        <display value="not asked"/>
+      </valueCoding>
+    </initial>
+    <item>
+      <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+            <code value="gtable"/>
+            <display value="Group Table"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <linkId value="infectionRiskGroup"/>
+      <type value="group"/>
+      <enableWhen>
+        <question value="infectionRisk"/>
+        <operator value="="/>
+        <answerCoding>
+          <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"/>
+          <code value="yes"/>
+        </answerCoding>
+      </enableWhen>
+      <required value="true"/>
+      <repeats value="true"/>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+              <code value="drop-down"/>
+              <display value="Drop down"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <linkId value="infectionRiskKindAnimal"/>
+        <text value="Welches Tier?"/>
+        <type value="choice"/>
+        <required value="true"/>
+        <repeats value="false"/>
+        <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetInfectionRiskAnimalHUSD"/>
+        <initial>
+          <valueCoding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+            <code value="NASK"/>
+            <display value="not asked"/>
+          </valueCoding>
+        </initial>
+      </item>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+              <code value="drop-down"/>
+              <display value="Drop down"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <linkId value="infectionAnimalWhere"/>
+        <text value="Wo fand der Kontakt statt?"/>
+        <type value="choice"/>
+        <required value="true"/>
+        <repeats value="false"/>
+        <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetInfectionAnimalWhereHUSD"/>
+        <initial>
+          <valueCoding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+            <code value="NASK"/>
+            <display value="not asked"/>
+          </valueCoding>
+        </initial>
+      </item>
+      <item>
+        <linkId value="infectionAnimalWhen"/>
+        <text value="Wann fand der Kontakt statt?"/>
+        <type value="date"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </item>
+    </item>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="drop-down"/>
+          <display value="Drop down"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="outbreak"/>
+    <text value="Kann der gemeldete Fall einem Ausbruch zugeordnet werden?"/>
+    <type value="choice"/>
+    <required value="true"/>
+    <repeats value="false"/>
+    <answerValueSet value="https://demis.rki.de/fhir/ValueSet/yesOrNoOrNoInformation"/>
+    <initial>
+      <valueCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+        <code value="NASK"/>
+        <display value="not asked"/>
+      </valueCoding>
+    </initial>
+    <item>
+      <linkId value="outbreakNote"/>
+      <text value="Fallbezogene Zusatzinformationen zum Ausbruch"/>
+      <type value="text"/>
+      <enableWhen>
+        <question value="outbreak"/>
+        <operator value="="/>
+        <answerCoding>
+          <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"/>
+          <code value="yes"/>
+        </answerCoding>
+      </enableWhen>
+      <required value="false"/>
+      <repeats value="false"/>
+    </item>
+    <item>
+      <linkId value="outbreakNotificationId"/>
+      <text value="Notification-Id der zugehörigen Ausbruchsmeldung"/>
+      <type value="reference"/>
+      <enableWhen>
+        <question value="outbreak"/>
+        <operator value="="/>
+        <answerCoding>
+          <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"/>
+          <code value="yes"/>
+        </answerCoding>
+      </enableWhen>
+      <required value="false"/>
+      <repeats value="false"/>
+    </item>
+  </item>
+</Questionnaire>

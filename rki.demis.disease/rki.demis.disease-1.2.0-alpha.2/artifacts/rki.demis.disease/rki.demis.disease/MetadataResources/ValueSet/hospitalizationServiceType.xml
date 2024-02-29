@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="hospitalizationServiceType"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/hospitalizationServiceType"/>
+  <version value="1.1.0"/>
+  <name value="HospitalizationServiceType"/>
+  <title value="Art der Hospitalisierung"/>
+  <status value="active"/>
+  <date value="2023-03-03"/>
+  <description value="Das ValueSet HospitalizationServiceType enthält die Codes zur Angabe der Art der Hospitalisierung."/>
+  <compose>
+    <include>
+      <system value="https://demis.rki.de/fhir/CodeSystem/hospitalizationServiceType"/>
+      <version value="1.0.1"/>
+    </include>
+  </compose>
+</ValueSet>

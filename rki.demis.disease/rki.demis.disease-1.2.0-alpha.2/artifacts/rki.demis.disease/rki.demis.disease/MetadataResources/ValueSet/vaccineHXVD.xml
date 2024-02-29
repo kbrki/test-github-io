@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vaccineHXVD"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/vaccineHXVD"/>
+  <version value="1.0.0"/>
+  <name value="VaccineHXVD"/>
+  <title value="Hepatitis-Impfstoff als SNOMED-Code"/>
+  <status value="active"/>
+  <date value="2023-04-24"/>
+  <description value="Das ValueSet VaccineHXVD enthält die Codes der Hepatitis-Impfstoffe als SNOMED-Code."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <code value="121000221105"/>
+        <display value="Hepatitis A / Hepatitis B (rDNA) (Virusimpfstoff, inaktiviert) - Erwachsene (Twinrix Erwachsene)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Vaccine product containing only inactivated whole Hepatitis A and Hepatitis B surface antigens (medicinal product)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="865997008"/>
+        <display value="Hepatitis-A-Impfstoff (Virusimpfstoff, inaktiviert) - Erwachsene (Avaxim, Havarix 1440, VAQTA, VAQTA 50 E/1ml)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Adult vaccine product containing only Hepatitis A virus antigen (medicinal product)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="871750007"/>
+        <display value="Hepatitis-A-Impfstoff (Virusimpfstoff, inaktiviert) - Kinder (Avaxim Junior, Havarix 720 Kinder, VAQTA Kinder, VAQTA Kinder 25E/0,5ml)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Pediatric vaccine product containing only Hepatitis A virus antigen (medicinal product)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="871804001"/>
+        <display value="Inaktivierter Hepatitis A-Adsorbat- und Typhus-Polysaccharid- Impfstoff (ViATIM)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Vaccine product containing only Hepatitis A virus and Salmonella enterica subspecies enterica serovar Typhi antigens (medicinal product)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1162634005"/>
+        <display value="Impfstoffprodukt nur mit Bordetella-pertussis- und Clostridium-tetani- und Corynebacterium-diphtheriae- und Haemophilus-influenzae-b- und Hepatitis-B-Virus- und Humanes-Poliovirus-Antigenen (Hexyon, Hexacima, Infanrix hexa, Vaxelis, Hexavac)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Pediatric vaccine product containing only acellular Bordetella pertussis, Clostridium tetani and Corynebacterium diphtheriae toxoids, Haemophilus influenzae type b conjugated, Hepatitis B virus and inactivated Human poliovirus antigens (medicinal product)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="871806004"/>
+        <display value="HepB-Hib-impfstoff"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Vaccine product containing only Haemophilus influenzae type b and Hepatitis B virus antigens (medicinal product)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="871822003"/>
+        <display value="Rekombinanter Hepatitis B-Impfstoff (adsorbiert) - Erwachsene (Engerix B Erwachsene, HBVax­Pro - Erwachsene)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Vaccine product containing only Hepatitis B virus antigen (medicinal product)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="74964007"/>
+        <display value="-andere/sonstige-"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Other (qualifier value)"/>
+        </designation>
+      </concept>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+      <version value="2.1.0"/>
+      <concept>
+        <code value="ASKU"/>
+        <display value="asked but unknown"/>
+      </concept>
+      <concept>
+        <code value="NASK"/>
+        <display value="not asked"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="evidenceVZWD"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/evidenceVZWD"/>
+  <version value="1.0.0"/>
+  <name value="EvidenceVZWD"/>
+  <title value="Windpocken-Symptom und -Manifestation"/>
+  <status value="active"/>
+  <date value="2023-03-23"/>
+  <description value="Das ValueSet EvidenceVZWD enthält die Codes der Windpocken-Symptome und -Manifestationen."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <code value="260413007"/>
+        <display value="keine Komplikation"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="None (qualifier value)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="233604007"/>
+        <display value="Lungenentzündung (Pneumonie)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Pneumonia (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="193198003"/>
+        <display value="bakterielle Superinfektion"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Superimposed infection (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="65363002"/>
+        <display value="Entzündung des Mittelohrs (Otitis media)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Otitis media (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="7180009"/>
+        <display value="Meningitis"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Meningitis (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="45170000"/>
+        <display value="Gehirnentzündung (Enzephalitis)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Encephalitis (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="271807003:116676008=112629002"/>
+        <display value="Ausschlag an Haut oder Schleimhaut mit Flecken (makulös)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="271807003 |Eruption of skin (disorder)| : 116676008 |Associated morphology (attribute)| = 112629002 |Macule (morphologic abnormality)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="271807003:116676008=47002008"/>
+        <display value="Ausschlag an Haut oder Schleimhaut mit Pusteln (pustulös)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="271807003 |Eruption of skin (disorder)| : 116676008 |Associated morphology (attribute)| = 47002008 |Pustule (morphologic abnormality)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="271807003:116676008=339008"/>
+        <display value="Ausschlag an Haut oder Schleimhaut mit Bläschen (vesikulös)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="271807003 |Eruption of skin (disorder)| : 116676008 |Associated morphology (attribute)| = 339008 |Blister (morphologic abnormality)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="423333008"/>
+        <display value="Ausschlag an Haut oder Schleimhaut mit gleichzeitig vorhandenen Papeln, Bläschen bzw. Pusteln und Schorf (sog. Sternenhimmel)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Exanthem due to varicella (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="715223009"/>
+        <display value="Fetales (kongenitales) Varizellensyndrom"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Fetal varicella syndrome (disorder)"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

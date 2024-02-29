@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="evidenceDEND"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/evidenceDEND"/>
+  <version value="1.2.0"/>
+  <name value="EvidenceDEND"/>
+  <title value="Denguefieber-Symptom und -Manifestation"/>
+  <status value="active"/>
+  <date value="2023-04-04"/>
+  <description value="Das ValueSet EvidenceDEND enthält die Codes der Denguefieber-Symptome und -Manifestationen."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <code value="417186004:255234002=78534001"/>
+        <display value="Absinken des Hämatokrit nach Volumenersatztherapie um &gt;= 20% des Ausgangswertes"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="417186004 |Precipitous drop in hematocrit (finding)| : 255234002 |After (attribute)| = 78534001 |Body fluid replacement (procedure)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="60046008:42752001=166778002"/>
+        <display value="Anzeichen für Plasmaaustritt (Pleuraerguss)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="60046008 |Pleural effusion (disorder)| : 42752001 |Due to (attribute)| = 166778002 |Serum proteins low (finding)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="389026000:42752001=166778002"/>
+        <display value="Anzeichen für Plasmaaustritt (Aszites)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="389026000 |Ascites (disorder)| : 42752001 |Due to (attribute)| = 166778002 |Serum proteins low (finding)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="267038008:42752001=166778002"/>
+        <display value="Anzeichen für Plasmaaustritt (Ödeme bei Hypoproteninämie)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="267038008 |Edema (finding)| : 42752001 |Due to (attribute)| = 166778002 |Serum proteins low (finding)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="2901004"/>
+        <display value="Blutstuhl, Melaena"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Melena (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="66857006"/>
+        <display value="Bluthusten (Hämoptysen)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Hemoptysis (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="131148009:{363698007=414781009}"/>
+        <display value="Blutung der Schleimhäute"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="131148009 |Bleeding (finding)| : { 363698007 |Finding site (attribute)| = 414781009 |Mucous membrane structure (body structure)| }"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="74474003"/>
+        <display value="Blutung gastrointestinal"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Gastrointestinal hemorrhage (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="95385002"/>
+        <display value="Blutung aus Injektionsstelle"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Injection site hemorrhage (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="131148009"/>
+        <display value="Blutung"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Bleeding (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="386661006"/>
+        <display value="Fieber"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Fever (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="165413005"/>
+        <display value="Hämatokrit &gt; 120% des Normwertes"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Hematocrit - packed cell volume - high (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="423902002"/>
+        <display value="Hauteinblutung, Purpura"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Purpura (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="271813007"/>
+        <display value="Hauteinblutung, Petechien"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Petechiae (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="302227002"/>
+        <display value="Haueinblutung, Ekchymosen"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Ecchymosis (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="302215000"/>
+        <display value="Thrombozytopenie (&lt;= 150.000 Zellen/cmm)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Thrombocytopenic disorder (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="846603004"/>
+        <display value="positiver Tourniquet-Test"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Positive capillary fragility test (finding)"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

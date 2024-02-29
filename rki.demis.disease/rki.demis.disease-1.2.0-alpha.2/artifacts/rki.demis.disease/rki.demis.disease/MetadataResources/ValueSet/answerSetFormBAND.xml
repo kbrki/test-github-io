@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetFormBAND"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetFormBAND"/>
+  <version value="1.1.0"/>
+  <name value="AnswerSetFormBAND"/>
+  <title value="Antwort Milzbrand-Krankheitsform"/>
+  <status value="active"/>
+  <date value="2023-03-23"/>
+  <description value="Das ValueSet AnswerSetFormBAND enthält die Codes der Antwortmöglichkeiten für die Milzbrand-Krankheitsform."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <code value="84980006"/>
+        <display value="Hautmilzbrand"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Cutaneous anthrax (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="11389007"/>
+        <display value="Lungenmilzbrand"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Inhalational anthrax (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="111798006"/>
+        <display value="Darmmilzbrand"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Gastrointestinal anthrax (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="213314004:246075003=21927003"/>
+        <display value="Injektionsmilzbrand"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="213314004 |Infection after injection (disorder)| : 246075003 |Causative agent (attribute)| = 21927003 |Bacillus anthracis (organism)|"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="720990007"/>
+        <display value="Milzbrandmeningitis"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Meningitis caused by Bacillus anthracis (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="448482003"/>
+        <display value="Milzbrandsepsis"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Sepsis caused by Bacillus anthracis (disorder)"/>
+        </designation>
+      </concept>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+      <version value="2.1.0"/>
+      <concept>
+        <code value="ASKU"/>
+        <display value="asked but unknown"/>
+      </concept>
+      <concept>
+        <code value="NASK"/>
+        <display value="not asked"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

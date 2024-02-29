@@ -1,0 +1,54 @@
+<Condition xmlns="http://hl7.org/fhir">
+   <id value="5c6f8e53-b57e-3f4e-8c54-5849466d96cb"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseBPSD"></profile>
+   </meta>
+   <verificationStatus>
+      <coding>
+         <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"></system>
+         <code value="confirmed"></code>
+      </coding>
+   </verificationStatus>
+   <code>
+      <coding>
+         <system value="https://demis.rki.de/fhir/CodeSystem/notificationDiseaseCategory"></system>
+         <code value="bpsd"></code>
+         <display value="Keuchhusten"></display>
+      </coding>
+   </code>
+   <subject>
+      <reference value="Patient/48e4549c-6c2a-3451-b543-8a7d55bb6ccd"></reference>
+   </subject>
+   <onsetDateTime value="2023-02-22"></onsetDateTime>
+   <recordedDate value="2023-03-10"></recordedDate>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="284523002"></code>
+            <display value="Husten von mehr als 14 Tagen Dauer"></display>
+         </coding>
+      </code>
+   </evidence>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="58596002"></code>
+            <display value="Atemgeräusch, inspiratorisches Stridor"></display>
+         </coding>
+      </code>
+   </evidence>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="13094009"></code>
+            <display value="Atemstillstand (Apnoe) bei Säuglingen"></display>
+         </coding>
+      </code>
+   </evidence>
+   <note>
+      <text value="Textueller Hinweis"></text>
+   </note>
+</Condition>

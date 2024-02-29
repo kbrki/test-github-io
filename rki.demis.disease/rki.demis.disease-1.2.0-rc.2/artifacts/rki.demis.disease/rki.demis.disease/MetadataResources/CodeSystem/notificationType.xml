@@ -1,0 +1,30 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="notificationType" />
+  <url value="https://demis.rki.de/fhir/CodeSystem/notificationType" />
+  <version value="1.1.0" />
+  <name value="NotificationType" />
+  <title value="Typ der Meldung" />
+  <status value="active" />
+  <date value="2022-12-07" />
+  <description value="Das CodeSystem NotificationType enthält die Codes für den Typ der Meldung." />
+  <caseSensitive value="false" />
+  <valueSet value="https://demis.rki.de/fhir/ValueSet/notificationType" />
+  <content value="complete" />
+  <count value="4" />
+  <concept>
+    <code value="6.1_2" />
+    <display value="Meldung gemäß IfSG §6 Absatz 1, 2" />
+  </concept>
+  <concept>
+    <code value="6.3" />
+    <display value="Meldung gemäß IfSG §6 Absatz 3" />
+  </concept>
+  <concept>
+    <code value="34_36" />
+    <display value="Benachrichtigung gemäß IfSG §34, §36" />
+  </concept>
+  <concept>
+    <code value="13_5" />
+    <display value="Benachrichtigung gemäß IfSG §13 Absatz 5" />
+  </concept>
+</CodeSystem>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetCoinfectionHDVD"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetCoinfectionHDVD"/>
+  <version value="1.0.0"/>
+  <name value="AnswerSetCoinfectionHDVD"/>
+  <title value="Anwort Koinfektion mit Hepatitis B bei Hepatitis D"/>
+  <status value="active"/>
+  <date value="2023-04-24"/>
+  <description value="Das ValueSet AnswerSetCoinfectionHDVD enthält die Codes der Antwortmöglichkeiten für die Koinfektionen mit Hepatitis B für Hepatitis D."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <code value="235864009"/>
+        <display value="Simultaninfektion mit HBV, akute Infektion"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Acute hepatitis B with hepatitis D (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="235869004"/>
+        <display value="Simultaninfektion mit HBV, chronische Infektion"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Chronic viral hepatitis B with hepatitis D (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="235865005"/>
+        <display value="Superinfektion zu HBV"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Hepatitis D superinfection of hepatitis B carrier (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="74964007"/>
+        <display value="-andere/sonstige-"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Other (qualifier value)"/>
+        </designation>
+      </concept>
+    </include>
+	<include>
+      <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"/>
+      <version value="1.0.0"/>
+      <concept>
+        <code value="no"/>
+        <display value="Nein"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+      <version value="2.1.0"/>
+      <concept>
+        <code value="ASKU"/>
+        <display value="asked but unknown"/>
+      </concept>
+      <concept>
+        <code value="NASK"/>
+        <display value="not asked"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetPathogenHFAD"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetPathogenHFAD"/>
+  <version value="1.1.1"/>
+  <name value="AnswerSetPathogenHFAD"/>
+  <title value="Antwort Erreger Hämorrhagisches Fieber"/>
+  <status value="active"/>
+  <date value="2023-03-27"/>
+  <description value="Das ValueSet AnswerSetPathogenHFAD enthält die Codes der Antwortmöglichkeiten für die Hämorrhagisches Fieber-Erreger."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <code value="311506003"/>
+        <display value="Guanaritovirus (GTOV)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Guanarito virus (organism)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="26352009"/>
+        <display value="Junínvirus (AHF)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Junin virus (organism)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="79875007"/>
+        <display value="Krim-Kongo-Fieber-Virus (Crimean-Congo hemorrhagic fever virus, CCHFV)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Crimean-Congo hemorrhagic fever virus (organism)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="32137001"/>
+        <display value="Kyasanur-Wald-Fieber-Virus (Kyasanur Forest disease virus, KFDV)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Kyasanur Forest disease virus (organism)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="71489006"/>
+        <display value="Machupovirus (BHF)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Machupo virus (organism)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="51439004"/>
+        <display value="Omsk-Hämorrhagisches-Fieber-Virus (Omsk hemorrhagic fever virus, OHFV)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Omsk hemorrhagic fever virus (organism)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="28335002"/>
+        <display value="Rifttal-Fieber-Virus (Rift Valley fever virus, RVFV)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Rift Valley fever virus (organism)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="311508002"/>
+        <display value="Sabiàvirus (SABV)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Sabia virus (organism)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="764949001"/>
+        <display value="Alkhurmavirus (AKFV)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Alkhurma virus (organism)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="450621007"/>
+        <display value="Chaparevirus (CHAV)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Chapare virus (organism)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="450622000"/>
+        <display value="Lujo virus (LUJV)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Lujo virus (organism)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="82518003"/>
+        <display value="Lymphozytäre-Choriomeningitis-Virus (lymphocytic choriomeningitis virus, LCMV)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Lymphocytic choriomeningitis virus (organism)"/>
+        </designation>
+      </concept>
+	  <concept>
+	    <code value="74964007"/>
+		<display value="-andere/sonstige-"/>
+		<designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Other (qualifier value)"/>
+        </designation>
+	  </concept>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+      <version value="2.1.0"/>
+      <concept>
+        <code value="ASKU"/>
+        <display value="asked but unknown"/>
+      </concept>
+      <concept>
+        <code value="NASK"/>
+        <display value="not asked"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

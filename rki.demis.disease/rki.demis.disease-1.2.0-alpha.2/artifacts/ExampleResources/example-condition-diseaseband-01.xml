@@ -1,0 +1,45 @@
+<Condition xmlns="http://hl7.org/fhir">
+   <id value="e9633360-0083-31fe-ac90-6735de3a4cc2"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseBAND"></profile>
+   </meta>
+   <verificationStatus>
+      <coding>
+         <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"></system>
+         <code value="confirmed"></code>
+      </coding>
+   </verificationStatus>
+   <code>
+      <coding>
+         <system value="https://demis.rki.de/fhir/CodeSystem/notificationDiseaseCategory"></system>
+         <code value="band"></code>
+         <display value="Milzbrand"></display>
+      </coding>
+   </code>
+   <subject>
+      <reference value="Patient/ae2582e3-8376-3b7a-b4ae-4390b6a45ae8"></reference>
+   </subject>
+   <onsetDateTime value="2022-12-05"></onsetDateTime>
+   <recordedDate value="2022-12-07"></recordedDate>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="95324001:116676008=53788007"></code>
+            <display value="Hautläsion, vesikulös"></display>
+         </coding>
+      </code>
+   </evidence>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="416893007:246075003=21927003"></code>
+            <display value="Milzbrandkarbunkel"></display>
+         </coding>
+      </code>
+   </evidence>
+   <note>
+      <text value="Textueller Hinweis"></text>
+   </note>
+</Condition>

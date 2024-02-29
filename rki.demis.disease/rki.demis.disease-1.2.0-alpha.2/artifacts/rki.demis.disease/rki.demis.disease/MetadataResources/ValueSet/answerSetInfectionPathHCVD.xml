@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetInfectionPathHCVD"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetInfectionPathHCVD"/>
+  <version value="1.0.0"/>
+  <name value="AnswerSetInfectionPathHCVD"/>
+  <title value="Antwort zum Infektionsweg bei Hepatitis C"/>
+  <status value="active"/>
+  <date value="2023-04-24"/>
+  <description value="Das ValueSet AnswerSetInfectionPathHCVD enthält die Codes der Antwortmöglichkeiten für den Infektionsweg bei Hepatitis C."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <code value="409496000:704326004=225531006"/>
+        <display value="Homosexuelle Übertragung"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="409496000 | Mode of transmission (observable entity) |: 704326004 |Precondition (attribute)|  = 225531006 | Homosexual behavior (finding) |"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="409496000:{704326004=(224149009:47429007=170489004)}"/>
+        <display value="Wohngemeinschaft mit Virusträger/-in"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="409496000 | Mode of transmission (observable entity) |: {704326004 |Precondition (attribute)|  = (224149009 | Lives in a commune (finding) |: 47429007 |Associated with (attribute)| = 170489004 | Viral hepatitis carrier (finding) |)}"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="409496000+408678008"/>
+        <display value="Nosokomiale Übertragung"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="409496000 | Mode of transmission (observable entity) | + 408678008 | Healthcare associated infectious disease (disorder) |"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="409496000:704326004=879862001"/>
+        <display value="Piercing"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="409496000 | Mode of transmission (observable entity) |: 704326004 |Precondition (attribute)|  = 879862001 | Body piercing (finding) |"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="409496000:704326004=341000119102"/>
+        <display value="Tattoo"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="409496000 | Mode of transmission (observable entity) |: 704326004 |Precondition (attribute)|  =  341000119102 | Tattoo of skin (finding) |"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="409496000:704326004=9632001"/>
+        <display value="Berufliche Exposition mit Patienten/-innen, Material"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="409496000 | Mode of transmission (observable entity) |: 704326004 |Precondition (attribute)|  = 9632001 | Nursing procedure (procedure) |"/>
+        </designation>
+      </concept>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+      <version value="2.1.0"/>
+      <concept>
+        <code value="ASKU"/>
+        <display value="asked but unknown"/>
+      </concept>
+      <concept>
+        <code value="NASK"/>
+        <display value="not asked"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

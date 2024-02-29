@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="noCountry"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/noCountry"/>
+  <version value="1.0.0"/>
+  <name value="NoCountry"/>
+  <title value="Staatenlos oder Ausland"/>
+  <status value="active"/>
+  <date value="2023-04-25"/>
+  <description value="Das ValueSet NoCountry enthält die Codes für staatenlos und Ausland."/>
+  <compose>
+    <include>
+      <system value="https://demis.rki.de/fhir/CodeSystem/noCountry"/>
+      <version value="1.0.0"/>
+    </include>
+  </compose>
+</ValueSet>
