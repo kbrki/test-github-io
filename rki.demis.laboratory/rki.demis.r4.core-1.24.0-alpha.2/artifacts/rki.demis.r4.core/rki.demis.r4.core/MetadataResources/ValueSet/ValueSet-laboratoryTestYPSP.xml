@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="laboratoryTestYPSP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/laboratoryTestYPSP"/>
+  <version value="1.3.0"/>
+  <name value="LaboratoryTestYPSP"/>
+  <title value="Labortest für Yersinia pestis"/>
+  <status value="active"/>
+  <date value="2023-05-04"/>
+  <description value="Das ValueSet LaboratoryTestYPSP enthält die Codes der Labortests für Yersinia pestis."/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <version value="2.74"/>
+      <concept>
+        <code value="101363-0"/>
+        <display value="Yersinia pestis DNA [Presence] in Blood by NAA with non-probe detection"/>
+      </concept>
+      <concept>
+        <code value="101371-3"/>
+        <display value="Yersinia pestis DNA [Presence] by NAA with non-probe detection in Positive blood culture"/>
+      </concept>
+      <concept>
+        <code value="101372-1"/>
+        <display value="Yersinia pestis DNA [Presence] in Sputum by NAA with non-probe detection"/>
+      </concept>
+      <concept>
+        <code value="33685-9"/>
+        <display value="Yersinia pestis [Presence] in Specimen by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Yersinia pestis [Nachweis] in Probenmaterial mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="33686-7"/>
+        <display value="Yersinia pestis [Presence] in Isolate by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Yersinia pestis [Nachweis] in Isolat mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="33687-5"/>
+        <display value="Yersinia pestis Ag [Presence] in Specimen by Immunofluorescence"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Yersinia pestis-Antigen [Nachweis] in Probenmaterial mit Immunfluoreszenztest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="33688-3"/>
+        <display value="Yersinia pestis Ag [Presence] in Isolate by Immunofluorescence"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Yersinia pestis-Antigen [Nachweis] in Isolat mit Immunfluoreszenztest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="33690-9"/>
+        <display value="Yersinia pestis Ab [Titer] in Serum by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Yersinia pestis-Antikörper [Titer] in Serum mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="33691-7"/>
+        <display value="Yersinia pestis DNA [Presence] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Yersinia pestis-DNA [Nachweis] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="33692-5"/>
+        <display value="Yersinia pestis DNA [Presence] in Isolate by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Yersinia pestis-DNA [Nachweis] in Isolat mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="33707-1"/>
+        <display value="Yersinia pestis Ab [Titer] in Serum"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Yersinia pestis-Antikörper [Titer] in Serum"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="33689-1"/>
+        <display value="Yersinia pestis Ab [Presence] in Serum by Hemagglutination inhibition"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Yersinia pestis-Antikörper [Nachweis] in Serum mit Hämagglutinationshemmtest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="33706-3"/>
+        <display value="Yersinia pestis Ab [Presence] in Serum"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Yersinia pestis-Antikörper [Nachweis] in Serum"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="91895-3"/>
+        <display value="Bacterial strain [Type] in Isolate by Sequencing"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Bakterienstamm [Typ] in Isolat mit Sequenzierung"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="90246-0"/>
+        <display value="Bacterial whole genome [Nucleotide sequence] in Isolate by Sequencing"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Bakterielles Gesamtgenom [Nukleotidsequenz] in Isolat mit Sequenzierung"/>
+        </designation>
+      </concept>
+    </include>
+    <include>
+      <valueSet value="https://demis.rki.de/fhir/ValueSet/resistance"/>
+    </include>
+  </compose>
+</ValueSet>

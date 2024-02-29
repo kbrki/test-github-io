@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="PathogenDetection" />
+  <url value="https://demis.rki.de/fhir/StructureDefinition/PathogenDetection" />
+  <version value="1.7.0" />
+  <name value="PathogenDetection" />
+  <title value="Erregernachweis" />
+  <status value="active" />
+  <date value="2024-02-12" />
+  <description value="Der Erregernachweis enthält die Angaben zum durchgeführten Labortest, zur Nachweismethode und zur verwendeten Probe." />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="sct-concept" />
+    <uri value="http://snomed.info/conceptdomain" />
+    <name value="SNOMED CT Concept Domain Binding" />
+  </mapping>
+  <mapping>
+    <identity value="sct-attr" />
+    <uri value="http://snomed.org/attributebinding" />
+    <name value="SNOMED CT Attribute Binding" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="true" />
+  <type value="Observation" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation.basedOn">
+      <path value="Observation.basedOn" />
+      <max value="0" />
+    </element>
+    <element id="Observation.partOf">
+      <path value="Observation.partOf" />
+      <max value="0" />
+    </element>
+    <element id="Observation.status">
+      <path value="Observation.status" />
+      <short value="Status des Erregernachweis-Ergebnisses" />
+      <definition value="Status des Erregernachweis-Ergenisses" />
+      <comment value="Der Status ist szenarienspezifisch folgendermaßen zu belegen:&#xD;&#xA;amended - bei einer Korrekturmeldung; &#xD;&#xA;final - in allen anderen Fällen" />
+      <mustSupport value="true" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ObservationStatus" />
+        </extension>
+        <strength value="required"/>
+        <description value="Status des Erregernachweis"/>
+        <valueSet value="https://demis.rki.de/fhir/ValueSet/pathogenDetectionStatus"/>
+      </binding>
+    </element>
+    <element id="Observation.category">
+      <path value="Observation.category" />
+      <short value="Klassifikation des Nachweises" />
+      <definition value="Klassifikation der durchgeführten Untersuchung.  Für DEMIS ist die entsprechende Klassifikation grundsätzlich mit dem Wert „laboratory“ aus dem entsprechend hinterlegten ValueSet zu belegen." />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category.coding">
+      <path value="Observation.category.coding" />
+      <min value="1" />
+      <max value="1" />
+	  <patternCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+        <code value="laboratory" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code">
+      <path value="Observation.code" />
+      <short value="Typ des durchgeführten Labortests." />
+      <definition value="Typ des durchgeführten Labortests. Der Wert muss als LOINC-Code - entsprechend des vom RKI definierten und in regelmäßigen Abständen aktualisierten ValueSets (https://demis.rki.de/fhir/ValueSet/laboratoryTest) – im coding Element dargestellt werden. Für eine begrenzte Übergangszeit ist die Verwendung des text Elementes in Ausnahmefällen zulässig. Folgende Ausbaustufen des Systems werden hier jedoch deutlich restriktiver sein, um einen automatisierte Weiterverarbeitung der Inhalte im Gesundheitsamt zu ermöglichen." />
+      <constraint>
+        <key value="codingOrText" />
+        <severity value="error" />
+        <human value="Entweder coding oder text muss angegeben sein." />
+        <expression value="coding.empty() or text.empty()" />
+        <source value="https://demis.rki.de/fhir/StructureDefinition/PathogenDetection" />
+      </constraint>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding">
+      <path value="Observation.code.coding" />
+      <max value="1" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://demis.rki.de/fhir/ValueSet/laboratoryTest" />
+      </binding>
+    </element>
+    <element id="Observation.code.coding.system">
+      <path value="Observation.code.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://loinc.org" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding.code">
+      <path value="Observation.code.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.subject">
+      <path value="Observation.subject" />
+      <short value="Verweis auf die in der Meldung benannte betroffene Person." />
+      <definition value="Verweis auf die in der Meldung benannte betroffene Person. Hierbei handelt es sich grundsätzlich um den Verweis auf die in der Erregernachweismeldung als „subject“ referenzierte Patient Ressource." />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/NotifiedPerson" />
+        <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/NotifiedPersonNotByName" />
+        <aggregation value="bundled" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.subject.reference">
+      <path value="Observation.subject.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.focus">
+      <path value="Observation.focus" />
+      <max value="0" />
+    </element>
+    <element id="Observation.encounter">
+      <path value="Observation.encounter" />
+      <max value="0" />
+    </element>
+    <element id="Observation.effective[x]">
+      <path value="Observation.effective[x]" />
+      <max value="0" />
+    </element>
+    <element id="Observation.issued">
+      <path value="Observation.issued" />
+      <max value="0" />
+    </element>
+    <element id="Observation.performer">
+      <path value="Observation.performer" />
+      <max value="0" />
+    </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <short value="Ergebnis des durchgeführten Labortests." />
+      <definition value="Ergebnis des durchgeführten Labortests. Für qualitative Tests muss valueCodableConcept mit einem Code aus der AnswerList genutzt werden. Wir verweisen dazu in erster Linie auf die hinterlegte Answercodeliste im Implementierungsleitfaden (https://simplifier.net/guide/rki.demis.laboratory/Home/resources/terminologies/valuesets/answerSet?version=current) oder auf die für den jeweiligen Labortestest auf loinc.org hinterlegten Answer-Codes. Für quantitative Tests muss valueQuantity genutzt werden. Siehe auch https://wiki.gematik.de/display/DSKB/Implementierungshinweise+zur+Labormeldung. Für eine begrenzte Übergangszeit ist die Verwendung von valueString in Ausnahmefällen zulässig. Folgende Ausbaustufen des Systems werden hier jedoch deutlich restriktiver sein, um einen automatisierte Weiterverarbeitung der Inhalte im Gesundheitsamt zu ermöglichen." />
+      <min value="1" />
+      <type>
+        <code value="Quantity" />
+      </type>
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <type>
+        <code value="string" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.dataAbsentReason">
+      <path value="Observation.dataAbsentReason" />
+      <max value="0" />
+    </element>
+    <element id="Observation.interpretation">
+      <path value="Observation.interpretation" />
+      <short value="Interpretation des Testergebnisses" />
+      <definition value="Interpretation des Testergebnisses. Mindestens eine vollständig kodierte Interpretation des Testergebnisses, die Auskunft über die Bewertung in Bezug auf die Festlegung der Meldetatbestände gemäß IfSG gibt, muss angegeben werden. Relevante Codes sind POS für positive direkte oder indirekte Erregernachweise, NEG für negative und IND für unbestimmte Ergebnisse." />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.interpretation.coding.system">
+      <path value="Observation.interpretation.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.interpretation.coding.code">
+      <path value="Observation.interpretation.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.note">
+      <path value="Observation.note" />
+      <short value="Textuelle Hinweise zum Untersuchungsergebnis." />
+      <definition value="Textuelle Hinweise zum Untersuchungsergebnis, die dem Gesundheitsamt eine bessere Bewertung der Ergebnisse ermöglichen." />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.note.text">
+      <path value="Observation.note.text" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.bodySite">
+      <path value="Observation.bodySite" />
+      <max value="0" />
+    </element>
+    <element id="Observation.method">
+      <path value="Observation.method" />
+      <short value="Angaben zur genutzten Nachweismethode." />
+      <definition value="Angaben zur genutzten Nachweismethode. Über die im Observation.code verschlüsselte Nachweismethode hinaus, sollen dem öffentlichen Gesundheitsdienst detaillierte Angaben zur jeweils genutzten Nachweismethode bereitgestellt werden. Sofern verfügbar, ist einer der durch das RKI definierten Codes aus dem referenzierten ValueSet zu verwenden." />
+      <comment value="Die Angabe der Nachweismethode unter Verwendung von method.text ist in folgenden zwei Ausnahmefällen zulässig: &#xD;&#xA;- Die Nachweismethode ist in dem ValueSet https://demis.rki.de/fhir/ValueSet/method nicht enthalten. Bitte geben Sie Feedback an DEMIS (demis-support@rki.de), damit das ValueSet ergänzt werden kann.&#xA;- Das Primärsystem kann die internen Codes zur Zeit noch nicht korrekt auf die SNOMED-Codes des ValueSets https://demis.rki.de/fhir/ValueSet/method mappen." />
+      <constraint>
+        <key value="codingOrText" />
+        <severity value="error" />
+        <human value="Entweder coding oder text muss angegeben sein." />
+        <expression value="coding.empty() or text.empty()" />
+        <source value="https://demis.rki.de/fhir/StructureDefinition/PathogenDetection" />
+      </constraint>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.method.coding">
+      <path value="Observation.method.coding" />
+      <max value="1" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://demis.rki.de/fhir/ValueSet/method" />
+      </binding>
+    </element>
+    <element id="Observation.method.coding.system">
+      <path value="Observation.method.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.method.coding.code">
+      <path value="Observation.method.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.specimen">
+      <path value="Observation.specimen" />
+      <short value="Verweis auf die dem Labortest zugrundeliegende Probe." />
+      <definition value="Verweis auf die dem Labortest zugrundeliegende Probe. Über die Probe können Angaben zum verwendeten Material und deren Einsender gemacht werden." />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/Specimen" />
+        <aggregation value="bundled" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.referenceRange">
+      <path value="Observation.referenceRange" />
+      <max value="0" />
+    </element>
+    <element id="Observation.hasMember">
+      <path value="Observation.hasMember" />
+      <max value="0" />
+    </element>
+    <element id="Observation.component">
+      <path value="Observation.component" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

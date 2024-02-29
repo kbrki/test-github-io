@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="materialEBVP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/materialEBVP"/>
+  <version value="1.5.0"/>
+  <name value="MaterialEBVP"/>
+  <title value="Material für Ebolavirus"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-11-09"/>
+  <publisher value="Robert Koch-Institut"/>
+  <description value="Das ValueSet MaterialEBVP enthält die Codes der Materialien für Ebolavirus."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230901"/>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="119297000"/>
+        <display value="Blood specimen (specimen)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Blood specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Blutprobe"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="445295009"/>
+        <display value="Blood specimen with edetic acid (specimen)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Blood specimen with edetic acid (specimen)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="EDTA-Blutprobe"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="708049000"/>
+        <display value="Plasma specimen with ethylenediamine tetraacetic acid (specimen)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Plasma specimen with ethylenediamine tetraacetic acid (specimen)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="EDTA-Plasmaprobe"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="119364003"/>
+        <display value="Serum specimen (specimen)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Serum specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Serumprobe"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="122592007"/>
+        <display value="Acellular blood (serum or plasma) specimen (specimen)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Acellular blood (serum or plasma) specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Blutprobe, azellulär (Serum oder Plasma)"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="122575003"/>
+        <display value="Urine specimen (specimen)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Urine specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Urin"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="119339001"/>
+        <display value="Stool specimen (specimen)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Stool specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Stuhlprobe"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="119347001"/>
+        <display value="Seminal fluid specimen (specimen)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Seminal fluid specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Samenflüssigkeit"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="119401005"/>
+        <display value="Specimen from conjunctiva (specimen)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Specimen from conjunctiva (specimen)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Probe der Bindehaut"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="258498002"/>
+        <display value="Conjunctival swab (specimen)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Conjunctival swab (specimen)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Konjunktivalabstrich"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="733104004"/>
+        <display value="Swab from buccal mucosa (specimen)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Swab from buccal mucosa (specimen)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Mundschleimhautabstrich"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="418932006"/>
+        <display value="Oral swab (specimen)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Oral swab (specimen)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Mundabstrich"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="122569007"/>
+        <display value="Sweat specimen (specimen)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Sweat specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Schweiß"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="123038009"/>
+        <display value="Specimen (specimen)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Anderes Untersuchungsmaterial"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

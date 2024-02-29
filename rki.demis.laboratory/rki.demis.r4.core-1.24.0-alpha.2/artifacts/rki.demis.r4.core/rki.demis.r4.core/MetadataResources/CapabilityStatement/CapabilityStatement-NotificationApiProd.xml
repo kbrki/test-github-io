@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+  <id value="NotificationApiProd"/>
+  <url value="https://demis.rki.de/fhir/CapabilityStatement/NotificationApiProd"/>
+  <version value="1.0.1"/>
+  <name value="NotificationApiProd"/>
+  <title value="NotificationApiProd"/>
+  <status value="active"/>
+  <date value="2023-05-30"/>
+  <publisher value="Robert Koch-Institut"/>
+  <description value="Beschreibt die Fähigkeiten (das Verhalten) der DEMIS Notification API."/>
+  <kind value="instance"/>
+  <software>
+    <name value="DEMIS Notification API"/>
+    <version value="1.7.1"/>
+  </software>
+  <implementation>
+    <description value="Die DEMIS Notification API bildet die Außenschnittstelle der zentralen DEMIS Infrastruktur in Richtung der Melder. Hier erfolgen die Annahme, Vorverarbeitung und Weiterleitung zur späteren Speicherung der gesendeten Meldungen (Meldevorgänge)."/>
+    <url value="https://demis.rki.de/notification-api/fhir"/>
+  </implementation>
+  <fhirVersion value="4.0.1"/>
+  <format value="application/fhir+xml"/>
+  <format value="application/fhir+json"/>
+  <rest>
+    <mode value="server"/>
+    <documentation value="Alle Funktionalitäten der DEMIS Notification API."/>
+    <security>
+      <description value="Zugriff wird durch Token und MTLS realisiert. Mehr Informationen sind in der Wissensdatenbank zu finden (https://wiki.gematik.de/display/DSKB)."/>
+    </security>
+    <operation>
+      <name value="process-notification"/>
+      <definition value="https://demis.rki.de/fhir/OperationDefinition/ProcessNotification"/>
+    </operation>
+  </rest>
+  <document>
+    <mode value="consumer"/>
+    <profile value="https://demis.rki.de/fhir/StructureDefinition/NotificationBundle"/>
+  </document>
+</CapabilityStatement>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetEAHP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetEAHP"/>
+  <version value="1.3.0"/>
+  <name value="AnswerSetEAHP"/>
+  <title value="AnswerSet für Amoebiasis, Entamoeba histolytica"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-11-09"/>
+  <publisher value="Robert Koch-Institut"/>
+  <description value="Das ValueSet AnswerSetEAHP enthält die Codes der Answer-Codes für Amoebiasis, Entamoeba histolytica."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230901"/>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="4716008"/>
+        <display value="Entamoeba histolytica (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Entamoeba histolytica (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Entamoeba histolytica"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="363769000"/>
+        <display value="Entamoeba histolytica/Entamoeba dispar complex (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Entamoeba histolytica/Entamoeba dispar complex (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Entamoeba-histolytica/Entamoeba-dispar-Komplex"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="699415006"/>
+        <display value="Trophozoite of Entamoeba histolytica-Entamoeba dispar complex (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Trophozoite of Entamoeba histolytica-Entamoeba dispar complex (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Entamoeba-histolytica-Entamoeba-dispar-Komplex-Trophozoit"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="699416007"/>
+        <display value="Cyst of Entamoeba histolytica-Entamoeba dispar complex (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Cyst of Entamoeba histolytica-Entamoeba dispar complex (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Entamoeba-histolytica-Entamoeba-dispar-Komplex-Zyste"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="110389002"/>
+        <display value="Entamoeba histolytica trophozoite (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Entamoeba histolytica trophozoite (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Entamoeba-histolytica-Trophozoit"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="110390006"/>
+        <display value="Entamoeba histolytica cyst (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Entamoeba histolytica cyst (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Entamoeba-histolytica-Zyste"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="699399003"/>
+        <display value="Trophozoite of genus Entamoeba (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Trophozoite of genus Entamoeba (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Trophozoit der Gattung Entamoeba"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="materialBRUP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/materialBRUP"/>
+  <version value="1.6.0"/>
+  <name value="MaterialBRUP"/>
+  <title value="Material für Brucella sp."/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-11-09"/>
+  <publisher value="Robert Koch-Institut"/>
+  <description value="Das ValueSet MaterialBRUP enthält die Codes der Materialien für Brucella sp.."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230901"/>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="878861003"/>
+        <display value="Blood specimen in blood culture bottle (specimen)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Blood specimen in blood culture bottle (specimen)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Blutkultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="119359002"/>
+        <display value="Bone marrow specimen (specimen)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Bone marrow specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Knochenmarksprobe"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="258450006"/>
+        <display value="Cerebrospinal fluid specimen (specimen)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Cerebrospinal fluid specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Liquorprobe"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="122575003"/>
+        <display value="Urine specimen (specimen)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Urine specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Urin"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="119376003"/>
+        <display value="Tissue specimen (specimen)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Tissue specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Gewebeprobe"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="119364003"/>
+        <display value="Serum specimen (specimen)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Serum specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Serumprobe"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="122592007"/>
+        <display value="Acellular blood (serum or plasma) specimen (specimen)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Acellular blood (serum or plasma) specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Blutprobe, azellulär (Serum oder Plasma)"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="119361006"/>
+        <display value="Plasma specimen (specimen)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Plasma specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Plasmaprobe"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="119297000"/>
+        <display value="Blood specimen (specimen)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Blood specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Blutprobe"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="123038009"/>
+        <display value="Specimen (specimen)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Anderes Untersuchungsmaterial"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="LaboratoryReportRTVP"/>
+  <url value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportRTVP"/>
+  <version value="1.3.0"/>
+  <name value="LaboratoryReportRTVP"/>
+  <title value="Laborbericht für Rotavirus"/>
+  <status value="active"/>
+  <date value="2023-05-05"/>
+  <description value="Der Rotavirus-Laborbericht kann mehrere Rotavirus-Erregernachweise enthalten und fasst die Ergebnisse der Einzeltests zusammen."/>
+  <fhirVersion value="4.0.1"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="DiagnosticReport"/>
+  <baseDefinition value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReport"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="DiagnosticReport.code">
+      <path value="DiagnosticReport.code"/>
+      <definition value="Im Laborbericht für Rotavirus ist der code immer mit dem Wert &quot;rtvp&quot; aus dem ValueSet https://demis.rki.de/fhir/CodeSystem/notificationCategory zu belegen."/>
+    </element>
+    <element id="DiagnosticReport.code.coding.system">
+      <path value="DiagnosticReport.code.coding.system"/>
+      <fixedUri value="https://demis.rki.de/fhir/CodeSystem/notificationCategory"/>
+    </element>
+    <element id="DiagnosticReport.code.coding.code">
+      <path value="DiagnosticReport.code.coding.code"/>
+      <fixedCode value="rtvp"/>
+    </element>
+    <element id="DiagnosticReport.code.coding.display">
+      <path value="DiagnosticReport.code.coding.display"/>
+      <min value="1"/>
+    </element>
+    <element id="DiagnosticReport.result">
+      <path value="DiagnosticReport.result"/>
+      <short value="Rotavirus-Erregernachweis"/>
+      <definition value="Referenziert einen Rotavirus-Erregernachweis"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/PathogenDetectionRTVP"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

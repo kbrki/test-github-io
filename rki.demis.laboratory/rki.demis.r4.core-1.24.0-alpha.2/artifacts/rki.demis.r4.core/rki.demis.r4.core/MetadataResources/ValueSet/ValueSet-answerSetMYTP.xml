@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetMYTP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetMYTP"/>
+  <version value="1.4.0"/>
+  <name value="AnswerSetMYTP"/>
+  <title value="AnswerSet für Mycobacterium tuberculosis, Mycobacterium africanum, Mycobacterium bovis; Meldepflicht für den direkten Erregernachweis sowie nachfolgend für das Ergebnis der Resistenzbestimmung; vorab auch für den Nachweis säurefester Stäbchen im Sputum"/>
+  <status value="active"/>
+  <date value="2023-05-30"/>
+  <description value="Das ValueSet AnswerSetMYTP enthält die Codes der Answer-Codes für Mycobacterium tuberculosis, Mycobacterium africanum, Mycobacterium bovis; Meldepflicht für den direkten Erregernachweis sowie nachfolgend für das Ergebnis der Resistenzbestimmung; vorab auch für den Nachweis säurefester Stäbchen im Sputum."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="110379001"/>
+        <display value="Mycobacterium, non-tuberculosis (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Mycobacterium, non-tuberculosis (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Mycobacterium, nicht tuberculosis"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="51320008"/>
+        <display value="Mycobacterium africanum (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Mycobacterium africanum (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Mycobacterium africanum"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="27142009"/>
+        <display value="Mycobacterium bovis (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Mycobacterium bovis (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Mycobacterium bovis"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="832924651000087107"/>
+        <display value="Mycobacterium bovis subspecies bovis (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Mycobacterium bovis subspecies bovis (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Mycobacterium bovis Subspecies bovis"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="414789006"/>
+        <display value="Mycobacterium canettii (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Mycobacterium canettii (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Mycobacterium canettii"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="430579009"/>
+        <display value="Mycobacterium caprae (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Mycobacterium caprae (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Mycobacterium caprae"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="70801007"/>
+        <display value="Mycobacterium microti (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Mycobacterium microti (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Mycobacterium microti"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="430914003"/>
+        <display value="Mycobacterium pinnipedii (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Mycobacterium pinnipedii (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Mycobacterium pinnipedii"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="113861009"/>
+        <display value="Mycobacterium tuberculosis (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Mycobacterium tuberculosis (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Mycobacterium tuberculosis"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="243372002"/>
+        <display value="Mycobacterium tuberculosis African I variant (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Mycobacterium tuberculosis African I variant (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Mycobacterium tuberculosis, afrikanische Variante I"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="243373007"/>
+        <display value="Mycobacterium tuberculosis African II variant (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Mycobacterium tuberculosis African II variant (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Mycobacterium tuberculosis, afrikanische Variante II"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="243371009"/>
+        <display value="Mycobacterium tuberculosis Asian variant (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Mycobacterium tuberculosis Asian variant (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Mycobacterium tuberculosis, asiatische Variante"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="243370005"/>
+        <display value="Mycobacterium tuberculosis classical variant (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Mycobacterium tuberculosis classical variant (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Mycobacterium tuberculosis, klassische Variante"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="113858008"/>
+        <display value="Mycobacterium tuberculosis complex (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Mycobacterium tuberculosis complex (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Mycobacterium-tuberculosis-Komplex"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="36354002"/>
+        <display value="Mycobacterium tuberculosis hominis (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Mycobacterium tuberculosis hominis (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Mycobacterium tuberculosis hominis"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="243365003"/>
+        <display value="Acid-fast bacillus (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Acid-fast bacillus (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Säure-fester Bacillus"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

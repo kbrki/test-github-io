@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="materialABVP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/materialABVP"/>
+  <version value="1.4.0"/>
+  <name value="MaterialABVP"/>
+  <title value="Material für Arboviren (sonstige)"/>
+  <status value="active"/>
+  <date value="2023-05-30"/>
+  <description value="Das ValueSet MaterialABVP enthält die Codes der Materialien für Arboviren (sonstige)."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="119364003"/>
+        <display value="Serum specimen (specimen)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Serum specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Serum"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Serum"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="122592007"/>
+        <display value="Acellular blood (serum or plasma) specimen (specimen)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Acellular blood (serum or plasma) specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Blut, azellulär (Serum oder Plasma)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Blut, azellulär (Serum oder Plasma)"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="119361006"/>
+        <display value="Plasma specimen (specimen)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Plasma specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Plasma"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Plasma"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="445295009"/>
+        <display value="Blood specimen with edetic acid (specimen)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Blood specimen with edetic acid (specimen)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="EDTA-Blut"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="EDTA-Blut"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="708049000"/>
+        <display value="Plasma specimen with ethylenediamine tetraacetic acid (specimen)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Plasma specimen with ethylenediamine tetraacetic acid (specimen)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="EDTA-Plasma"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="EDTA-Plasma"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="119297000"/>
+        <display value="Blood specimen (specimen)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Blood specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Blut"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Blut"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="258580003"/>
+        <display value="Whole blood specimen (specimen)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Whole blood specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Vollblut"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Vollblut"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="119294007"/>
+        <display value="Dried blood specimen (specimen)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Dried blood specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Trockenblut"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Trockenblut"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="123038009"/>
+        <display value="Specimen (specimen)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Anderes Untersuchungsmaterial"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

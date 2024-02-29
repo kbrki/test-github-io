@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetCRYP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetCRYP"/>
+  <version value="1.1.0"/>
+  <name value="AnswerSetCRYP"/>
+  <title value="AnswerSet für humanpathogene Cryptosporidium sp."/>
+  <status value="active"/>
+  <date value="2023-05-30"/>
+  <description value="Das ValueSet AnswerSetCRYP enthält die Codes der Answer-Codes für humanpathogene Cryptosporidium sp.."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="608957004"/>
+        <display value="Oocyst of genus Cryptosporidium (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Oocyst of genus Cryptosporidium (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Oozyste der Gattung Cryptosporidium"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="83821001"/>
+        <display value="Cryptosporidium (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Cryptosporidium (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Cryptosporidium spp."/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="laboratoryTestPINP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/laboratoryTestPINP"/>
+  <version value="1.2.0"/>
+  <name value="LaboratoryTestPINP"/>
+  <title value="Labortest für Parainfluenzavirus"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-11-01"/>
+  <publisher value="Robert Koch-Institut"/>
+  <description value="Das ValueSet LaboratoryTestPINP enthält die Codes der Labortests für Parainfluenzavirus."/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <version value="2.76"/>
+      <concept>
+        <code value="101297-0"/>
+        <display value="Parainfluenza virus 1+2+3+4 RNA [Presence] in Throat by NAA with non-probe detection"/>
+      </concept>
+      <concept>
+        <code value="60269-8"/>
+        <display value="Parainfluenza virus 1 RNA [Presence] in Isolate by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="13327-2"/>
+        <display value="Parainfluenza virus Ag [Presence] in Specimen by Immunofluorescence"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Parainfluenza-Virus Antigen [Nachweis] in Probenmaterial mit Immunfluoreszenztest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="17414-4"/>
+        <display value="Parainfluenza virus 1+2+3 Ag [Presence] in Specimen"/>
+      </concept>
+      <concept>
+        <code value="31923-6"/>
+        <display value="Parainfluenza virus 1 Ag [Presence] in Throat"/>
+      </concept>
+      <concept>
+        <code value="31924-4"/>
+        <display value="Parainfluenza virus 1 Ag [Presence] in Specimen"/>
+      </concept>
+      <concept>
+        <code value="31925-1"/>
+        <display value="Parainfluenza virus 2 Ag [Presence] in Throat"/>
+      </concept>
+      <concept>
+        <code value="31926-9"/>
+        <display value="Parainfluenza virus 2 Ag [Presence] in Specimen"/>
+      </concept>
+      <concept>
+        <code value="31927-7"/>
+        <display value="Parainfluenza virus 3 Ag [Presence] in Throat"/>
+      </concept>
+      <concept>
+        <code value="31928-5"/>
+        <display value="Parainfluenza virus 3 Ag [Presence] in Specimen"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Parainfluenza-Virus 3 Antigen [Nachweis] in Probenmaterial"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="31929-3"/>
+        <display value="Parainfluenza virus Ag [Presence] in Specimen"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Parainfluenza-Virus Antigen [Nachweis] in Probenmaterial"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="60417-3"/>
+        <display value="Parainfluenza virus 2 RNA [Presence] in Isolate by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="60416-5"/>
+        <display value="Parainfluenza virus 3 RNA [Presence] in Isolate by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="88208-4"/>
+        <display value="Parainfluenza virus 1 RNA [Presence] in Cornea or Conjunctiva by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="60415-7"/>
+        <display value="Parainfluenza virus 4 RNA [Presence] in Isolate by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="94483-5"/>
+        <display value="Parainfluenza virus 1 RNA [Presence] in Lower respiratory specimen by NAA with non-probe detection"/>
+      </concept>
+      <concept>
+        <code value="88563-2"/>
+        <display value="Parainfluenza virus 1 RNA [Presence] in Lower respiratory specimen by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="82171-0"/>
+        <display value="Parainfluenza virus 1 RNA [Presence] in Nasopharynx by NAA with non-probe detection"/>
+      </concept>
+      <concept>
+        <code value="76084-3"/>
+        <display value="Parainfluenza virus 1 RNA [Presence] in Nasopharynx by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Parainfluenza-Virus 1 RNA [Nachweis] in Nasopharynx mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="92140-3"/>
+        <display value="Parainfluenza virus 1 RNA [Presence] in Respiratory system specimen by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="55097-0"/>
+        <display value="Parainfluenza virus 1 [Presence] in Specimen by Organism specific culture"/>
+      </concept>
+      <concept>
+        <code value="91802-9"/>
+        <display value="Parainfluenza virus 1 RNA [Presence] in Upper respiratory specimen by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="38395-0"/>
+        <display value="Parainfluenza virus 1 Ag [Presence] in Nasopharynx by Immunofluorescence"/>
+      </concept>
+      <concept>
+        <code value="55098-8"/>
+        <display value="Parainfluenza virus 2 [Presence] in Specimen by Organism specific culture"/>
+      </concept>
+      <concept>
+        <code value="92883-8"/>
+        <display value="Parainfluenza virus 1+2+3+4 RNA [Presence] in Lower respiratory specimen by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="88890-9"/>
+        <display value="Parainfluenza virus 1+2+3+4 RNA [Presence] in Nasopharynx by NAA with non-probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Parainfluenza-Virus 1+2+3+4 RNA [Nachweis] in Nasopharynx mit Nukleinsäureamplifikation mit Detektion ohne Sonde"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="53252-3"/>
+        <display value="Parainfluenza virus 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Parainfluenza-Virus 1 RNA [#/Volumen] (Viruslast) in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="92884-6"/>
+        <display value="Parainfluenza virus 1+2+3+4 RNA [Presence] in Upper respiratory specimen by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="29908-1"/>
+        <display value="Parainfluenza virus 1 RNA [Presence] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Parainfluenza-Virus 1 RNA [Nachweis] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="38396-8"/>
+        <display value="Parainfluenza virus 1 Ag [Presence] in Nose by Immunofluorescence"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Parainfluenza-Virus 1 Antigen [Nachweis] in Nase mit Immunfluoreszenztest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="40986-2"/>
+        <display value="Parainfluenza virus 4 Ag [Presence] in Specimen by Immunofluorescence"/>
+      </concept>
+      <concept>
+        <code value="43366-4"/>
+        <display value="Parainfluenza virus Ag [Identifier] in Specimen by Immunofluorescence"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Parainfluenza-Virus Antigen [Nachweis oder Identität] in Probenmaterial mit Immunfluoreszenztest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="5868-5"/>
+        <display value="Parainfluenza virus 1 Ag [Presence] in Throat by Immunofluorescence"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Parainfluenza-Virus 1 Antigen [Nachweis] im Rachen mit Immunfluoreszenztest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="5869-3"/>
+        <display value="Parainfluenza virus 1 Ag [Presence] in Specimen by Immunofluorescence"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Parainfluenza-Virus 1 Antigen [Nachweis] in Probenmaterial mit Immunfluoreszenztest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="5870-1"/>
+        <display value="Parainfluenza virus 2 Ag [Presence] in Throat by Immunofluorescence"/>
+      </concept>
+      <concept>
+        <code value="5871-9"/>
+        <display value="Parainfluenza virus 2 Ag [Presence] in Specimen by Immunofluorescence"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Parainfluenza-Virus 2 Antigen [Nachweis] in Probenmaterial mit Immunfluoreszenztest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="5872-7"/>
+        <display value="Parainfluenza virus 3 Ag [Presence] in Throat by Immunofluorescence"/>
+      </concept>
+      <concept>
+        <code value="88531-9"/>
+        <display value="Parainfluenza virus identified in Cornea or Conjunctiva by Organism specific culture"/>
+      </concept>
+      <concept>
+        <code value="60254-0"/>
+        <display value="Parainfluenza virus 1+2+3 RNA [Presence] in Specimen by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="88209-2"/>
+        <display value="Parainfluenza virus 2 RNA [Presence] in Cornea or Conjunctiva by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="97645-6"/>
+        <display value="Parainfluenza virus 1+2+3+4 RNA [Presence] in Specimen by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="94484-3"/>
+        <display value="Parainfluenza virus 2 RNA [Presence] in Lower respiratory specimen by NAA with non-probe detection"/>
+      </concept>
+      <concept>
+        <code value="88559-0"/>
+        <display value="Parainfluenza virus 2 RNA [Presence] in Lower respiratory specimen by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="82172-8"/>
+        <display value="Parainfluenza virus 2 RNA [Presence] in Nasopharynx by NAA with non-probe detection"/>
+      </concept>
+      <concept>
+        <code value="76085-0"/>
+        <display value="Parainfluenza virus 2 RNA [Presence] in Nasopharynx by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Parainfluenza-Virus 2 RNA [Nachweis] in Nasopharynx mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="92139-5"/>
+        <display value="Parainfluenza virus 2 RNA [Presence] in Respiratory system specimen by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="55099-6"/>
+        <display value="Parainfluenza virus 3 [Presence] in Specimen by Organism specific culture"/>
+      </concept>
+      <concept>
+        <code value="91801-1"/>
+        <display value="Parainfluenza virus 2 RNA [Presence] in Upper respiratory specimen by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="89653-0"/>
+        <display value="Parainfluenza virus identified in Lower respiratory specimen by Organism specific culture"/>
+      </concept>
+      <concept>
+        <code value="5873-5"/>
+        <display value="Parainfluenza virus 3 Ag [Presence] in Specimen by Immunofluorescence"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Parainfluenza-Virus 3 Antigen [Nachweis] in Probenmaterial mit Immunfluoreszenztest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="60424-9"/>
+        <display value="Parainfluenza virus 4 Ag [Presence] in Specimen"/>
+      </concept>
+      <concept>
+        <code value="67808-6"/>
+        <display value="Parainfluenza virus 1 Ag [Presence] in Isolate by Immunofluorescence"/>
+      </concept>
+      <concept>
+        <code value="67809-4"/>
+        <display value="Parainfluenza virus 2 Ag [Presence] in Isolate by Immunofluorescence"/>
+      </concept>
+      <concept>
+        <code value="67810-2"/>
+        <display value="Parainfluenza virus 3 Ag [Presence] in Isolate by Immunofluorescence"/>
+      </concept>
+      <concept>
+        <code value="67811-0"/>
+        <display value="Parainfluenza virus 4 Ag [Presence] in Isolate by Immunofluorescence"/>
+      </concept>
+      <concept>
+        <code value="77385-3"/>
+        <display value="Parainfluenza virus 1 Ag [Presence] in Bronchoalveolar lavage by Immunofluorescence"/>
+      </concept>
+      <concept>
+        <code value="77386-1"/>
+        <display value="Parainfluenza virus 2 Ag [Presence] in Bronchoalveolar lavage by Immunofluorescence"/>
+      </concept>
+      <concept>
+        <code value="21442-9"/>
+        <display value="Parainfluenza virus identified in Nose by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Parainfluenza-Virus identifiziert in Nase mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="53253-1"/>
+        <display value="Parainfluenza virus 2 RNA [#/volume] (viral load) in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Parainfluenza-Virus 2 RNA [#/Volumen] (Viruslast) in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="88210-0"/>
+        <display value="Parainfluenza virus 3 RNA [Presence] in Cornea or Conjunctiva by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="29909-9"/>
+        <display value="Parainfluenza virus 2 RNA [Presence] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Parainfluenza-Virus 2 RNA [Nachweis] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="94485-0"/>
+        <display value="Parainfluenza virus 3 RNA [Presence] in Lower respiratory specimen by NAA with non-probe detection"/>
+      </concept>
+      <concept>
+        <code value="88560-8"/>
+        <display value="Parainfluenza virus 3 RNA [Presence] in Lower respiratory specimen by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="82173-6"/>
+        <display value="Parainfluenza virus 3 RNA [Presence] in Nasopharynx by NAA with non-probe detection"/>
+      </concept>
+      <concept>
+        <code value="76086-8"/>
+        <display value="Parainfluenza virus 3 RNA [Presence] in Nasopharynx by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Parainfluenza-Virus 3 RNA [Nachweis] in Nasopharynx mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="92138-7"/>
+        <display value="Parainfluenza virus 3 RNA [Presence] in Respiratory system specimen by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="53254-9"/>
+        <display value="Parainfluenza virus 3 RNA [#/volume] (viral load) in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Parainfluenza-Virus 3 RNA [#/Volumen] (Viruslast) in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="91800-3"/>
+        <display value="Parainfluenza virus 3 RNA [Presence] in Upper respiratory specimen by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="77387-9"/>
+        <display value="Parainfluenza virus 3 Ag [Presence] in Bronchoalveolar lavage by Immunofluorescence"/>
+      </concept>
+      <concept>
+        <code value="77391-1"/>
+        <display value="Parainfluenza virus 2 Ag [Presence] in Nasopharynx by Immunofluorescence"/>
+      </concept>
+      <concept>
+        <code value="77392-9"/>
+        <display value="Parainfluenza virus 3 Ag [Presence] in Nasopharynx by Immunofluorescence"/>
+      </concept>
+      <concept>
+        <code value="29910-7"/>
+        <display value="Parainfluenza virus 3 RNA [Presence] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Parainfluenza-Virus 3 RNA [Nachweis] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="88530-1"/>
+        <display value="Parainfluenza virus 4 RNA [Presence] in Cornea or Conjunctiva by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="40436-8"/>
+        <display value="Parainfluenza virus identified in Specimen by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Parainfluenza-Virus identifiziert in Probenmaterial mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="94486-8"/>
+        <display value="Parainfluenza virus 4 RNA [Presence] in Lower respiratory specimen by NAA with non-probe detection"/>
+      </concept>
+      <concept>
+        <code value="88561-6"/>
+        <display value="Parainfluenza virus 4 RNA [Presence] in Lower respiratory specimen by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="82174-4"/>
+        <display value="Parainfluenza virus 4 RNA [Presence] in Nasopharynx by NAA with non-probe detection"/>
+      </concept>
+      <concept>
+        <code value="76087-6"/>
+        <display value="Parainfluenza virus 4 RNA [Presence] in Nasopharynx by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Parainfluenza-Virus 4 RNA [Nachweis] in Nasopharynx mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="92137-9"/>
+        <display value="Parainfluenza virus 4 RNA [Presence] in Respiratory system specimen by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="41010-0"/>
+        <display value="Parainfluenza virus 4 RNA [Presence] in Specimen by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="91799-7"/>
+        <display value="Parainfluenza virus 4 RNA [Presence] in Upper respiratory specimen by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="67818-5"/>
+        <display value="Parainfluenza virus 4a RNA [Presence] in Specimen by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="67819-3"/>
+        <display value="Parainfluenza virus 4b RNA [Presence] in Specimen by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="88906-3"/>
+        <display value="Parainfluenza virus 1 Ag [Presence] in Lower respiratory specimen by Immunofluorescence"/>
+      </concept>
+      <concept>
+        <code value="88907-1"/>
+        <display value="Parainfluenza virus 2 Ag [Presence] in Lower respiratory specimen by Immunofluorescence"/>
+      </concept>
+      <concept>
+        <code value="88908-9"/>
+        <display value="Parainfluenza virus 3 Ag [Presence] in Lower respiratory specimen by Immunofluorescence"/>
+      </concept>
+      <concept>
+        <code value="89654-8"/>
+        <display value="Parainfluenza virus identified in Upper respiratory specimen by Organism specific culture"/>
+      </concept>
+      <concept>
+        <code value="80592-9"/>
+        <display value="Parainfluenza virus 1 F gene [Presence] in Nasopharynx by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="80593-7"/>
+        <display value="Parainfluenza virus 2 L gene [Presence] in Nasopharynx by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="80594-5"/>
+        <display value="Parainfluenza virus 3 NP gene [Presence] in Nasopharynx by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="80595-2"/>
+        <display value="Parainfluenza virus 4 P gene [Presence] in Nasopharynx by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="88529-3"/>
+        <display value="Parainfluenza virus RNA [Presence] in Cornea or Conjunctiva by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="92963-8"/>
+        <display value="Parainfluenza virus RNA [Presence] in Lower respiratory specimen by NAA with non-probe detection"/>
+      </concept>
+      <concept>
+        <code value="88562-4"/>
+        <display value="Parainfluenza virus RNA [Presence] in Lower respiratory specimen by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="61365-3"/>
+        <display value="Parainfluenza virus RNA [Presence] in Specimen by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="91798-9"/>
+        <display value="Parainfluenza virus RNA [Presence] in Upper respiratory specimen by NAA with probe detection"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

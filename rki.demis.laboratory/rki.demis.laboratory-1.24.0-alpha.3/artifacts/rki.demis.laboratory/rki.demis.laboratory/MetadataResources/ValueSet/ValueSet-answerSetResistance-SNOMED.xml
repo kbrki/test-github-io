@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetResistance-SNOMED"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetResistance-SNOMED"/>
+  <version value="1.0.0"/>
+  <name value="AnswerSetResistance-SNOMED"/>
+  <title value="SNOMED-AnswerSet für Resistenz"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-11-04"/>
+  <publisher value="Robert Koch-Institut"/>
+  <description value="Das ValueSet AnswerSetResistance-SNOMED enthält die SNOMED-Answer-Codes für Resistenzen."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230901"/>
+      <concept>
+        <code value="30714006"/>
+        <display value="Resistant (qualifier value)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Resistant (qualifier value)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Resistent"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1255965005"/>
+        <display value="Susceptible with increased exposure (qualifier value)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Susceptible with increased exposure (qualifier value)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Sensibel bei erhöhter Exposition"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="11896004"/>
+        <display value="Intermediate (qualifier value)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Intermediate (qualifier value)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Intermediär"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="131196009"/>
+        <display value="Susceptible (qualifier value)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Susceptible (qualifier value)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Sensibel"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="82334004"/>
+        <display value="Indeterminate (qualifier value)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Indeterminate (qualifier value)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Uneindeutig"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

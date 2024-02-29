@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OperationDefinition xmlns="http://hl7.org/fhir">
+  <id value="ProcessNotificationSequence"/>
+  <url value="https://demis.rki.de/fhir/OperationDefinition/ProcessNotificationSequence"/>
+  <version value="1.0.0"/>
+  <name value="ProcessNotificationSequence"/>
+  <title value="ProcessNotificationSequence"/>
+  <status value="active"/>
+  <kind value="operation"/>
+  <date value="2023-07-02"/>
+  <publisher value="Robert Koch-Institut (RKI)"/>
+  <contact>
+    <name value="DEMIS Geschäftsstelle"/>
+    <telecom>
+      <system value="email"/>
+      <value value="demis@rki.de"/>
+    </telecom>
+  </contact>
+  <description value="Operation zum Übermitteln von Sequenz- und Metadaten gemäß Infektionsschutzgesetz (§13 Abs. 3)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+    </coding>
+  </jurisdiction>
+  <affectsState value="true"/>
+  <code value="process-notification"/>
+  <system value="true"/>
+  <type value="false"/>
+  <instance value="false"/>
+  <inputProfile value="https://demis.rki.de/fhir/StructureDefinition/ProcessNotificationSequenceRequestParameters"/>
+  <outputProfile value="https://demis.rki.de/fhir/StructureDefinition/ProcessNotificationSequenceResponseParameters"/>
+  <parameter>
+    <name value="content"/>
+    <use value="in"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="Sequenz-Meldevorgang"/>
+    <type value="Bundle"/>
+    <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/NotificationBundleSequence"/>
+  </parameter>
+  <parameter>
+    <name value="operationOutcome"/>
+    <use value="out"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="Ergebnis der Verarbeitung"/>
+    <type value="OperationOutcome"/>
+    <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/ProcessNotificationResponse"/>
+  </parameter>
+  <parameter>
+    <name value="transactionID"/>
+    <use value="out"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="Transaktions-ID: Verweis auf das Analyseergebnis der Integrierten Genomischen Surveillance (IGS)"/>
+    <type value="Identifier"/>
+  </parameter>
+  <parameter>
+    <name value="submitterGeneratedNotificationID"/>
+    <use value="out"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="NotificationID der ursprünglich vom Einsender der Probe erstellten Meldung."/>
+    <type value="Identifier"/>
+  </parameter>
+  <parameter>
+    <name value="labSequenceID"/>
+    <use value="out"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="Laboreigene ID der Probe"/>
+    <type value="Identifier"/>
+  </parameter>
+</OperationDefinition>

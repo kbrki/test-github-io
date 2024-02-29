@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="laboratoryTestBORP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/laboratoryTestBORP"/>
+  <version value="1.6.0"/>
+  <name value="LaboratoryTestBORP"/>
+  <title value="Labortest für Borrelia recurrentis"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-11-01"/>
+  <publisher value="Robert Koch-Institut"/>
+  <description value="Das ValueSet LaboratoryTestBORP enthält die Codes der Labortests für Borrelia recurrentis."/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <version value="2.76"/>
+      <concept>
+        <code value="49615-8"/>
+        <display value="Borrelia sp DNA [Identifier] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Borrelia sp DNA [Nachweis oder Identität] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="6323-0"/>
+        <display value="Borrelia sp identified in Specimen by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Borrelia sp identifiziert in Probenmaterial mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="87945-2"/>
+        <display value="Borrelia sp identified in Cerebral spinal fluid by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Borrelia sp identifiziert in Zerebrospinalflüssigkeit mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="87946-0"/>
+        <display value="Borrelia sp identified in Tissue by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Borrelia sp identifiziert in Gewebe mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="87947-8"/>
+        <display value="Borrelia sp DNA identified in Tissue by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Borrelia sp DNA identifiziert in Gewebe mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="88581-4"/>
+        <display value="Borrelia sp DNA [Identifier] in Cerebral spinal fluid by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Borrelia sp DNA [Nachweis oder Identität] in Zerebrospinalflüssigkeit mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="91895-3"/>
+        <display value="Bacterial strain [Type] in Isolate by Sequencing"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Bakterienstamm [Typ] in Isolat mit Sequenzierung"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="90246-0"/>
+        <display value="Bacterial whole genome [Nucleotide sequence] in Isolate by Sequencing"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Bakterielles Gesamtgenom [Nukleotidsequenz] in Isolat mit Sequenzierung"/>
+        </designation>
+      </concept>
+    </include>
+    <include>
+      <valueSet value="https://demis.rki.de/fhir/ValueSet/resistance"/>
+    </include>
+    <include>
+      <valueSet value="https://demis.rki.de/fhir/ValueSet/resistanceGene"/>
+    </include>
+  </compose>
+</ValueSet>

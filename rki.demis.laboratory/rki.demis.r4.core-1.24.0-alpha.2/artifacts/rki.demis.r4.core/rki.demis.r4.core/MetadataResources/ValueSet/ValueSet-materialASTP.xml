@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="materialASTP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/materialASTP"/>
+  <version value="1.0.0"/>
+  <name value="MaterialASTP"/>
+  <title value="Material für Astroviren"/>
+  <status value="active"/>
+  <date value="2023-05-03"/>
+  <description value="Das ValueSet MaterialASTP enthält die Codes der Materialien für Astroviren."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <code value="122572000"/>
+        <display value="Vomitus specimen (specimen)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Vomitus specimen (specimen)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="119339001"/>
+        <display value="Stool specimen (specimen)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Stool specimen (specimen)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="119303007"/>
+        <display value="Microbial isolate specimen (specimen)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Microbial isolate specimen (specimen)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="119364003"/>
+        <display value="Serum specimen (specimen)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Serum specimen (specimen)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="258528007"/>
+        <display value="Rectal swab (specimen)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Rectal swab (specimen)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="258527002"/>
+        <display value="Anal swab (specimen)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Anal swab (specimen)"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="SpecimenPOVP"/>
+  <url value="https://demis.rki.de/fhir/StructureDefinition/SpecimenPOVP"/>
+  <version value="1.2.0"/>
+  <name value="SpecimenPOVP"/>
+  <title value="Probe für Poliovirus"/>
+  <status value="active"/>
+  <date value="2023-05-05"/>
+  <description value="Die Probe für Poliovirus spezifiziert die Probe hinsichtlich des Probenmaterials für Poliovirus."/>
+  <fhirVersion value="4.0.1"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="Specimen"/>
+  <baseDefinition value="https://demis.rki.de/fhir/StructureDefinition/Specimen"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Specimen.type">
+      <path value="Specimen.type"/>
+      <definition value="Art des Probenmaterials. Der Wert muss entsprechend des vom RKI definierten ValueSets (https://demis.rki.de/fhir/ValueSet/materialPOVP) im coding Element dargestellt werden."/>
+    </element>
+    <element id="Specimen.type.coding">
+      <path value="Specimen.type.coding"/>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="https://demis.rki.de/fhir/ValueSet/materialPOVP"/>
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>

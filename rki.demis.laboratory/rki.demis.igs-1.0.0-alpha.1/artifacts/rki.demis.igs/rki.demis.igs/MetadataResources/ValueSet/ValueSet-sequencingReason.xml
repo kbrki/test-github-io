@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="sequencingReason" />
+  <url value="https://demis.rki.de/fhir/ValueSet/sequencingReason" />
+  <version value="1.0.0" />
+  <name value="SequencingReason" />
+  <title value="Grund der Sequenzierung" />
+  <status value="active" />
+  <date value="2023-07-17" />
+  <description value="Das ValueSet SequencingReason enthält die Codes für den Grund der Sequenzierung der Probe." />
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331" />
+      <concept>
+        <code value="255226008"/>
+        <display value="Random (qualifier value)"/>
+      </concept>
+      <concept>
+        <code value="385644000"/>
+        <display value="Requested (qualifier value)"/>
+      </concept>
+      <concept>
+        <code value="74964007"/>
+        <display value="Other (qualifier value)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

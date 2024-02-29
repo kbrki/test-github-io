@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+  <id value="LaboratoryReportCVDP-example" />
+  <meta>
+    <profile value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportCVDP" />
+  </meta>
+  <basedOn>
+    <type value="ServiceRequest" />
+    <identifier>
+      <system value="https://demis.rki.de/fhir/NamingSystem/ServiceRequestId" />
+      <value value="2020-0003456" />
+    </identifier>
+  </basedOn>
+  <status value="final" />
+  <code>
+    <coding>
+      <system value="https://demis.rki.de/fhir/CodeSystem/notificationCategory" />
+      <code value="cvdp" />
+      <display value="Severe-Acute-Respiratory-Syndrome-Coronavirus-2 (SARS-CoV-2)" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/d3539a4c-9093-467a-a3e8-050594afbd57" />
+  </subject>
+  <issued value="2021-03-04T11:45:33+11:00" />
+  <result>
+    <reference value="Observation/d3539a4c-9093-467a-a3e8-050594afbd59" />
+  </result>
+  <result>
+    <reference value="Observation/d3539a4c-9093-467a-a3e8-050594afbd53" />
+  </result>
+  <conclusionCode>
+    <coding>
+      <system value="https://demis.rki.de/fhir/CodeSystem/conclusionCode" />
+      <code value="pathogenDetected" />
+    </coding>
+  </conclusionCode>
+</DiagnosticReport>

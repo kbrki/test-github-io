@@ -1,0 +1,1458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="LOINCMaterialToSNOMEDMaterial"/>
+  <url value="https://demis.rki.de/fhir/ConceptMap/LOINCMaterialToSNOMEDMaterial"/>
+  <version value="1.1.0"/>
+  <name value="LOINCMaterialToSNOMEDMaterial"/>
+  <title value="LOINCMaterialToSNOMEDMaterial"/>
+  <status value="active"/>
+  <date value="2022-01-21"/>
+  <description value="Die ConceptMap LOINCMaterialToSNOMEDMaterial ordnet den Material-Part eines LOINC-Labortest-Codes äquivalente SNOMED-Codes zu."/>
+  <sourceUri value="http://loinc.org"/>
+  <targetUri value="http://snomed.info/sct"/>
+  <group>
+    <source value="http://loinc.org"/>
+    <target value="http://snomed.info/sct"/>
+    <element>
+      <code value="LP7057-5"/>
+      <display value="Blood"/>
+      <target>
+        <code value="258580003"/>
+        <display value="Whole blood sample (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="878861003"/>
+        <display value="Blood specimen in blood culture bottle"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="119297000"/>
+        <display value="Blood sample"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="119294007"/>
+        <display value="Dried blood specimen (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="445295009"/>
+        <display value="Blood specimen with ethylenediamine tetraacetic acid"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="119345009"/>
+        <display value="Menstrual blood specimen (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="122592007"/>
+        <display value="Acellular blood (serum or plasma) specimen (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP7567-3"/>
+      <display value="Serum"/>
+      <target>
+        <code value="119364003"/>
+        <display value="Serum sample"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="122592007"/>
+        <display value="Acellular blood (serum or plasma) specimen (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP7156-5"/>
+      <display value="Cerebral spinal fluid"/>
+      <target>
+        <code value="258450006"/>
+        <display value="Cerebrospinal fluid specimen"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP7084-9"/>
+      <display value="Brain"/>
+      <target>
+        <code value="128157004"/>
+        <display value="Tissue specimen from brain (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP7238-1"/>
+      <display value="Body fluid"/>
+      <target>
+        <code value="309051001"/>
+        <display value="Body fluid specimen"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP234849-0"/>
+      <display value="Tissue"/>
+      <target>
+        <code value="258417006"/>
+        <display value="Bone tissue sample (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="128157004"/>
+        <display value="Tissue specimen from brain (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="128159001"/>
+        <display value="Tissue specimen from colon (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="127474009"/>
+        <display value="Kidney tissue sample"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="122643008"/>
+        <display value="Tissue specimen from large intestine (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="128168004"/>
+        <display value="Liver tissue sample"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="399492000"/>
+        <display value="Tissue specimen from lung"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="309078004"/>
+        <display value="Lymph node tissue sample (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="91727004"/>
+        <display value="Muscle tissue (body structure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="309129006"/>
+        <display value="Nerve tissue sample (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="699874006"/>
+        <display value="Tissue specimen from pericardium (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="127460002"/>
+        <display value="Tissue specimen from pleura (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="258484005"/>
+        <display value="Postmortem tissue sample (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="122638001"/>
+        <display value="Tissue specimen from small intestine (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="309508006"/>
+        <display value="Soft tissue lesion fine needle aspirate sample (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="119376003"/>
+        <display value="Tissue specimen (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP7000-5"/>
+      <display value="Amniotic fluid"/>
+      <target>
+        <code value="119373006"/>
+        <display value="Amniotic fluid sample"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP193443-1"/>
+      <display value="Anorectal or stool specimen"/>
+      <target>
+        <code value="119339001"/>
+        <display value="Feces specimen"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="258528007"/>
+        <display value="Rectal swab (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="258527002"/>
+        <display value="Anal swab (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP7037-7"/>
+      <display value="Aspirate"/>
+      <target>
+        <code value="446972001"/>
+        <display value="Specimen from abscess obtained by aspiration"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="119295008"/>
+        <display value="Aspirate"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="302795002"/>
+        <display value="Lymph node aspirate (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="258411007"/>
+        <display value="Nasopharyngeal aspirate (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="432981006"/>
+        <display value="Specimen from eye obtained by fine needle aspiration biopsy"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="122618002"/>
+        <display value="Specimen from pleura obtained by fine needle aspiration procedure (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="309508006"/>
+        <display value="Soft tissue lesion fine needle aspirate sample (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="258609006"/>
+        <display value="Sputum specimen obtained by aspiration from trachea"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="445447003"/>
+        <display value="Tracheal aspirate"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP36498-1"/>
+      <display value="Bronchoalveolar lavage Qualitative"/>
+      <target>
+        <code value="258607008"/>
+        <display value="Bronchoalveolar lavage fluid sample (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP7051-8"/>
+      <display value="Bile fluid"/>
+      <target>
+        <code value="119341000"/>
+        <display value="Bile sample"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP21304-8"/>
+      <display value="DBS"/>
+      <target>
+        <code value="119294007"/>
+        <display value="Dried blood specimen (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP29830-4"/>
+      <display value="Blood from Donor"/>
+      <target>
+        <code value="258580003"/>
+        <display value="Whole blood sample (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="878861003"/>
+        <display value="Blood specimen in blood culture bottle"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="119297000"/>
+        <display value="Blood sample"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="119294007"/>
+        <display value="Dried blood specimen (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="445295009"/>
+        <display value="Blood specimen with ethylenediamine tetraacetic acid"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="119345009"/>
+        <display value="Menstrual blood specimen (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="122592007"/>
+        <display value="Acellular blood (serum or plasma) specimen (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP7069-0"/>
+      <display value="Cord blood"/>
+      <target>
+        <code value="122556008"/>
+        <display value="Cord blood sample"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP7410-6"/>
+      <display value="Bone marrow"/>
+      <target>
+        <code value="119359002"/>
+        <display value="Bone marrow sample"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP7091-4"/>
+      <display value="Bronchial specimen"/>
+      <target>
+        <code value="258607008"/>
+        <display value="Bronchoalveolar lavage fluid sample (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="309176002"/>
+        <display value="Bronchial brushings sample (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="258446004"/>
+        <display value="Bronchial fluid sample (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="309174004"/>
+        <display value="Bronchial biopsy sample (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="119391001"/>
+        <display value="Specimen from bronchus (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="258606004"/>
+        <display value="Lower respiratory sample (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP36499-9"/>
+      <display value="Bronchial brush"/>
+      <target>
+        <code value="309176002"/>
+        <display value="Bronchial brushings sample (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP7146-6"/>
+      <display value="Conjunctival specimen"/>
+      <target>
+        <code value="119401005"/>
+        <display value="Specimen from conjunctiva (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="258498002"/>
+        <display value="Conjunctival swab (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP264599-4"/>
+      <display value="Cornea or Conjunctiva"/>
+      <target>
+        <code value="119401005"/>
+        <display value="Specimen from conjunctiva (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="258498002"/>
+        <display value="Conjunctival swab (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="119400006"/>
+        <display value="Specimen from cornea (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="472894002"/>
+        <display value="Corneal swab"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP7162-3"/>
+      <display value="Cervix"/>
+      <target>
+        <code value="119344008"/>
+        <display value="Specimen from genital system (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP7218-3"/>
+      <display value="Eye"/>
+      <target>
+        <code value="119399004"/>
+        <display value="Specimen from eye (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="309128003"/>
+        <display value="Eye fluid sample (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="432981006"/>
+        <display value="Specimen from eye obtained by fine needle aspiration biopsy"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="119400006"/>
+        <display value="Specimen from cornea (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="472894002"/>
+        <display value="Corneal swab"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="119401005"/>
+        <display value="Specimen from conjunctiva (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="258498002"/>
+        <display value="Conjunctival swab (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP7255-5"/>
+      <display value="Gastric fluid"/>
+      <target>
+        <code value="122573005"/>
+        <display value="Gastric contents specimen (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="258459007"/>
+        <display value="Gastric fluid sample (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="309199003"/>
+        <display value="Gastrointestinal fluid sample (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP7261-3"/>
+      <display value="Genital specimen"/>
+      <target>
+        <code value="258519006"/>
+        <display value="Female genital swab (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="16214171000119101"/>
+        <display value="Genital fluid specimen"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="122578001"/>
+        <display value="Female genital fluid sample"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="122579009"/>
+        <display value="Lochia sample"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="122576002"/>
+        <display value="Genital mucus specimen (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="258508008"/>
+        <display value="Genital swab (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="119344008"/>
+        <display value="Specimen from genital system (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="258470000"/>
+        <display value="Expressed prostatic fluid"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="119347001"/>
+        <display value="Seminal fluid sample"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="258577004"/>
+        <display value="Vaginal secretion sample (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="258520000"/>
+        <display value="Swab - vaginal"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP7370-2"/>
+      <display value="Isolate"/>
+      <target>
+        <code value="119303007"/>
+        <display value="Microbial isolate"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP266970-5"/>
+      <display value="Isolate or Specimen"/>
+      <target>
+        <code value="119303007"/>
+        <display value="Microbial isolate"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP7443-7"/>
+      <display value="Nose"/>
+      <target>
+        <code value="447154002"/>
+        <display value="Specimen from nose"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="16224371000119105"/>
+        <display value="Nasal lavage fluid sample"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="472901003"/>
+        <display value="Swab from nasal sinus (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="258411007"/>
+        <display value="Nasopharyngeal aspirate (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="430248009"/>
+        <display value="Specimen from nasopharyngeal structure"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="258500001"/>
+        <display value="Nasopharyngeal swab (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="697989009"/>
+        <display value="Anterior nares swab (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP30875-6"/>
+      <display value="Nasopharynx"/>
+      <target>
+        <code value="258411007"/>
+        <display value="Nasopharyngeal aspirate (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="430248009"/>
+        <display value="Specimen from nasopharyngeal structure"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="258500001"/>
+        <display value="Nasopharyngeal swab (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="697989009"/>
+        <display value="Anterior nares swab (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP7448-6"/>
+      <display value="Ocular fluid"/>
+      <target>
+        <code value="309128003"/>
+        <display value="Eye fluid sample (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="432981006"/>
+        <display value="Specimen from eye obtained by fine needle aspiration biopsy"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP422509-2"/>
+      <display value="Oropharyngeal wash"/>
+      <target>
+        <code value="461911000124106"/>
+        <display value="Swab specimen from oropharynx"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="258469001"/>
+        <display value="Throat washings"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP7477-5"/>
+      <display value="Placenta"/>
+      <target>
+        <code value="119403008"/>
+        <display value="Specimen from placenta (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP7466-8"/>
+      <display value="Pericardial fluid"/>
+      <target>
+        <code value="122571007"/>
+        <display value="Heart sac fluid sample"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP186026-3"/>
+      <display value="Plasma from Donor"/>
+      <target>
+        <code value="708049000"/>
+        <display value="Plasma specimen with ethylenediamine tetraacetic acid (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="119361006"/>
+        <display value="Plasma sample"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="122592007"/>
+        <display value="Acellular blood (serum or plasma) specimen (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP185760-8"/>
+      <display value="Plasma or Blood"/>
+      <target>
+        <code value="258580003"/>
+        <display value="Whole blood sample (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="878861003"/>
+        <display value="Blood specimen in blood culture bottle"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="119297000"/>
+        <display value="Blood sample"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="119294007"/>
+        <display value="Dried blood specimen (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="445295009"/>
+        <display value="Blood specimen with ethylenediamine tetraacetic acid"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="119345009"/>
+        <display value="Menstrual blood specimen (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="122592007"/>
+        <display value="Acellular blood (serum or plasma) specimen (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="708049000"/>
+        <display value="Plasma specimen with ethylenediamine tetraacetic acid (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="119361006"/>
+        <display value="Plasma sample"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="119364003"/>
+        <display value="Serum sample"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="122556008"/>
+        <display value="Cord blood sample"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP208442-6"/>
+      <display value="Respiratory specimen"/>
+      <target>
+        <code value="258607008"/>
+        <display value="Bronchoalveolar lavage fluid sample (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="309176002"/>
+        <display value="Bronchial brushings sample (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="258446004"/>
+        <display value="Bronchial fluid sample (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="309174004"/>
+        <display value="Bronchial biopsy sample (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="119391001"/>
+        <display value="Specimen from bronchus (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="258606004"/>
+        <display value="Lower respiratory sample (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="410580001"/>
+        <display value="Respiratory fluid sample"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="20139000"/>
+        <display value="Structure of respiratory system"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="309164002"/>
+        <display value="Upper respiratory swab sample (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="258604001"/>
+        <display value="Upper respiratory sample (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP7486-6"/>
+      <display value="Pleural fluid"/>
+      <target>
+        <code value="418564007"/>
+        <display value="Pleural fluid specimen"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP208441-8"/>
+      <display value="Upper respiratory specimen"/>
+      <target>
+        <code value="309164002"/>
+        <display value="Upper respiratory swab sample (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="258604001"/>
+        <display value="Upper respiratory sample (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="410580001"/>
+        <display value="Respiratory fluid sample"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="20139000"/>
+        <display value="Structure of respiratory system"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="697989009"/>
+        <display value="Anterior nares swab (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="309128003"/>
+        <display value="Eye fluid sample (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="432981006"/>
+        <display value="Specimen from eye obtained by fine needle aspiration biopsy"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="16224371000119105"/>
+        <display value="Nasal lavage fluid sample"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="472901003"/>
+        <display value="Swab from nasal sinus (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="258411007"/>
+        <display value="Nasopharyngeal aspirate (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="430248009"/>
+        <display value="Specimen from nasopharyngeal structure"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="258500001"/>
+        <display value="Nasopharyngeal swab (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="461911000124106"/>
+        <display value="Swab specimen from oropharynx"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="472881004"/>
+        <display value="Swab from pharynx (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="258469001"/>
+        <display value="Throat washings"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP201886-1"/>
+      <display value="Lower respiratory specimen"/>
+      <target>
+        <code value="258607008"/>
+        <display value="Bronchoalveolar lavage fluid sample (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="309176002"/>
+        <display value="Bronchial brushings sample (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="258446004"/>
+        <display value="Bronchial fluid sample (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="309174004"/>
+        <display value="Bronchial biopsy sample (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="119391001"/>
+        <display value="Specimen from bronchus (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="258606004"/>
+        <display value="Lower respiratory sample (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="410580001"/>
+        <display value="Respiratory fluid sample"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="20139000"/>
+        <display value="Structure of respiratory system"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP7565-7"/>
+      <display value="Saliva (oral fluid)"/>
+      <target>
+        <code value="119342007"/>
+        <display value="Saliva specimen (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="441620008"/>
+        <display value="Oral fluid specimen (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP7589-7"/>
+      <display value="Semen"/>
+      <target>
+        <code value="119347001"/>
+        <display value="Seminal fluid sample"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP7576-4"/>
+      <display value="Serum or Plasma"/>
+      <target>
+        <code value="119361006"/>
+        <display value="Plasma sample"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="119364003"/>
+        <display value="Serum sample"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="122592007"/>
+        <display value="Acellular blood (serum or plasma) specimen (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="708049000"/>
+        <display value="Plasma specimen with ethylenediamine tetraacetic acid (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP7575-6"/>
+      <display value="Serum or Blood"/>
+      <target>
+        <code value="258580003"/>
+        <display value="Whole blood sample (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="878861003"/>
+        <display value="Blood specimen in blood culture bottle"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="119297000"/>
+        <display value="Blood sample"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="119294007"/>
+        <display value="Dried blood specimen (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="445295009"/>
+        <display value="Blood specimen with ethylenediamine tetraacetic acid"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="119345009"/>
+        <display value="Menstrual blood specimen (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="122592007"/>
+        <display value="Acellular blood (serum or plasma) specimen (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="708049000"/>
+        <display value="Plasma specimen with ethylenediamine tetraacetic acid (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="119361006"/>
+        <display value="Plasma sample"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="119364003"/>
+        <display value="Serum sample"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="122556008"/>
+        <display value="Cord blood sample"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP7567-3"/>
+      <display value="Serum"/>
+      <target>
+        <code value="258580003"/>
+        <display value="Whole blood sample (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="878861003"/>
+        <display value="Blood specimen in blood culture bottle"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="119297000"/>
+        <display value="Blood sample"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="119294007"/>
+        <display value="Dried blood specimen (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="445295009"/>
+        <display value="Blood specimen with ethylenediamine tetraacetic acid"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="119345009"/>
+        <display value="Menstrual blood specimen (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="122592007"/>
+        <display value="Acellular blood (serum or plasma) specimen (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="708049000"/>
+        <display value="Plasma specimen with ethylenediamine tetraacetic acid (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="119361006"/>
+        <display value="Plasma sample"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="119364003"/>
+        <display value="Serum sample"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="122556008"/>
+        <display value="Cord blood sample"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP30270-0"/>
+      <display value="Serum from Donor"/>
+      <target>
+        <code value="119364003"/>
+        <display value="Serum sample"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="122592007"/>
+        <display value="Acellular blood (serum or plasma) specimen (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP30269-2"/>
+      <display value="Serum or Plasma from Donor"/>
+      <target>
+        <code value="119364003"/>
+        <display value="Serum sample"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="122592007"/>
+        <display value="Acellular blood (serum or plasma) specimen (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="708049000"/>
+        <display value="Plasma specimen with ethylenediamine tetraacetic acid (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="119361006"/>
+        <display value="Plasma sample"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP7603-6"/>
+      <display value="Sputum tracheal aspirate"/>
+      <target>
+        <code value="258609006"/>
+        <display value="Sputum specimen obtained by aspiration from trachea"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="445447003"/>
+        <display value="Tracheal aspirate"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP36760-4"/>
+      <display value="Skin"/>
+      <target>
+        <code value="472862007"/>
+        <display value="Swab from lesion of skin (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="608969007"/>
+        <display value="Specimen from skin"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="309066003"/>
+        <display value="Skin biopsy sample (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="258505006"/>
+        <display value="Skin ulcer swab (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP7600-2"/>
+      <display value="Sputum"/>
+      <target>
+        <code value="119334006"/>
+        <display value="Sputum sample"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="258609006"/>
+        <display value="Sputum specimen obtained by aspiration from trachea"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP7601-0"/>
+      <display value="Sputum or Bronchial"/>
+      <target>
+        <code value="119334006"/>
+        <display value="Sputum sample"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="258609006"/>
+        <display value="Sputum specimen obtained by aspiration from trachea"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="258607008"/>
+        <display value="Bronchoalveolar lavage fluid sample (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="309176002"/>
+        <display value="Bronchial brushings sample (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="258446004"/>
+        <display value="Bronchial fluid sample (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="309174004"/>
+        <display value="Bronchial biopsy sample (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="119391001"/>
+        <display value="Specimen from bronchus (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP7604-4"/>
+      <display value="Stool"/>
+      <target>
+        <code value="119339001"/>
+        <display value="Feces specimen"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP7592-1"/>
+      <display value="Synovial fluid"/>
+      <target>
+        <code value="119332005"/>
+        <display value="Synovial fluid specimen (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP234849-0"/>
+      <display value="Tissue"/>
+      <target>
+        <code value="258417006"/>
+        <display value="Bone tissue sample (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="128157004"/>
+        <display value="Tissue specimen from brain (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="128159001"/>
+        <display value="Tissue specimen from colon (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="127474009"/>
+        <display value="Kidney tissue sample"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="122643008"/>
+        <display value="Tissue specimen from large intestine (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="128168004"/>
+        <display value="Liver tissue sample"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="399492000"/>
+        <display value="Tissue specimen from lung"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="309078004"/>
+        <display value="Lymph node tissue sample (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="91727004"/>
+        <display value="Muscle tissue (body structure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="309129006"/>
+        <display value="Nerve tissue sample (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="699874006"/>
+        <display value="Tissue specimen from pericardium (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="127460002"/>
+        <display value="Tissue specimen from pleura (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="258484005"/>
+        <display value="Postmortem tissue sample (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="122638001"/>
+        <display value="Tissue specimen from small intestine (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="309508006"/>
+        <display value="Soft tissue lesion fine needle aspirate sample (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="119376003"/>
+        <display value="Tissue specimen (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP96315-4"/>
+      <display value="Throat"/>
+      <target>
+        <code value="119389009"/>
+        <display value="Specimen from throat (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="258529004"/>
+        <display value="Throat swab (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP7646-5"/>
+      <display value="Large intestine or small intestine Tissue"/>
+      <target>
+        <code value="119381007"/>
+        <display value="Specimen from large intestine (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="122643008"/>
+        <display value="Tissue specimen from large intestine (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="119380008"/>
+        <display value="Specimen from small intestine (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="122638001"/>
+        <display value="Tissue specimen from small intestine (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP7649-9"/>
+      <display value="Trachea"/>
+      <target>
+        <code value="258609006"/>
+        <display value="Sputum specimen obtained by aspiration from trachea"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="445447003"/>
+        <display value="Tracheal aspirate"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="119390000"/>
+        <display value="Specimen from trachea (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP7681-2"/>
+      <display value="Urine"/>
+      <target>
+        <code value="122575003"/>
+        <display value="Urine sample"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP30364-1"/>
+      <display value="Urethra"/>
+      <target>
+        <code value="119393003"/>
+        <display value="Specimen from urethra (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="309277003"/>
+        <display value="Urethra biopsy sample (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="258511009"/>
+        <display value="Penile urethral swab (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP7690-3"/>
+      <display value="Urine sediment"/>
+      <target>
+        <code value="122575003"/>
+        <display value="Urine sample"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP7271-2"/>
+      <display value="Vaginal fluid"/>
+      <target>
+        <code value="258577004"/>
+        <display value="Vaginal secretion sample (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="258520000"/>
+        <display value="Swab - vaginal"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LP7717-4"/>
+      <display value="Vomitus"/>
+      <target>
+        <code value="122572000"/>
+        <display value="Vomit sample"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="122573005"/>
+        <display value="Gastric contents specimen (specimen)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

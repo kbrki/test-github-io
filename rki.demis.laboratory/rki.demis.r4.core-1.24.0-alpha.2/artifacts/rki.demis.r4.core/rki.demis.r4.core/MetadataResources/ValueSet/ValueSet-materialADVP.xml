@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="materialADVP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/materialADVP"/>
+  <version value="1.2.0"/>
+  <name value="MaterialADVP"/>
+  <title value="Material für Adenoviren; Meldepflicht nur für den direkten Nachweis im Konjunktivalabstrich"/>
+  <status value="active"/>
+  <date value="2023-05-30"/>
+  <description value="Das ValueSet MaterialADVP enthält die Codes der Materialien für Adenoviren; Meldepflicht nur für den direkten Nachweis im Konjunktivalabstrich."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="119401005"/>
+        <display value="Specimen from conjunctiva (specimen)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Specimen from conjunctiva (specimen)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Konjunktiva"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="258498002"/>
+        <display value="Conjunctival swab (specimen)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Conjunctival swab (specimen)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Konjunktivalabstrich"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="123038009"/>
+        <display value="Specimen (specimen)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Anderes Untersuchungsmaterial"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

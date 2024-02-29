@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetTRIP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetTRIP"/>
+  <version value="1.1.0"/>
+  <name value="AnswerSetTRIP"/>
+  <title value="AnswerSet für Trichinella spiralis"/>
+  <status value="active"/>
+  <date value="2023-05-30"/>
+  <description value="Das ValueSet AnswerSetTRIP enthält die Codes der Answer-Codes für Trichinella spiralis."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="37900004"/>
+        <display value="Trichinella (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Trichinella (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Gattung Trichinella"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="609075007"/>
+        <display value="Larva of Trichinella spiralis (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Larva of Trichinella spiralis (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Trichinella-spiralis-Larve"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

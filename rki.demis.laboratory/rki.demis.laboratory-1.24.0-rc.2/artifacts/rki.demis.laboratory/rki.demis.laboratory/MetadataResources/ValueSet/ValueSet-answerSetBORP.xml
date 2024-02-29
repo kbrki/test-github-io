@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetBORP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetBORP"/>
+  <version value="1.4.0"/>
+  <name value="AnswerSetBORP"/>
+  <title value="AnswerSet für Borrelia recurrentis"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-11-09"/>
+  <publisher value="Robert Koch-Institut"/>
+  <description value="Das ValueSet AnswerSetBORP enthält die Codes der Answer-Codes für Borrelia recurrentis."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230901"/>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="34726005"/>
+        <display value="Borrelia recurrentis (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Borrelia recurrentis (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Borrelia recurrentis"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

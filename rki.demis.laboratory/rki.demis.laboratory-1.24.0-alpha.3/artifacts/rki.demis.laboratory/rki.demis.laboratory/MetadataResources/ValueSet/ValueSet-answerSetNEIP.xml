@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetNEIP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetNEIP"/>
+  <version value="1.6.0"/>
+  <name value="AnswerSetNEIP"/>
+  <title value="AnswerSet für Neisseria meningitidis; Meldepflicht nur für den direkten Nachweis aus Liquor, Blut, hämorrhagischen Hautinfiltraten oder anderen normalerweise sterilen Substraten"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-11-09"/>
+  <publisher value="Robert Koch-Institut"/>
+  <description value="Das ValueSet AnswerSetNEIP enthält die Codes der Answer-Codes für Neisseria meningitidis; Meldepflicht nur für den direkten Nachweis aus Liquor, Blut, hämorrhagischen Hautinfiltraten oder anderen normalerweise sterilen Substraten."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230901"/>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="83410001"/>
+        <display value="Gram-negative diplococcus (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Gram-negative diplococcus (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Gram-negativer Diplococcus"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="17872004"/>
+        <display value="Neisseria meningitidis (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Neisseria meningitidis (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Neisseria meningitidis"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="722355003"/>
+        <display value="Neisseria meningitidis, beta lactamase negative (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Neisseria meningitidis, beta lactamase negative (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Neisseria meningitidis, Beta-Laktamase-negativ"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="722356002"/>
+        <display value="Neisseria meningitidis, beta lactamase positive (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Neisseria meningitidis, beta lactamase positive (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Neisseria meningitidis, Beta-Laktamase-positiv"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="414810006"/>
+        <display value="Neisseria meningitidis non-groupable (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Neisseria meningitidis non-groupable (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Neisseria meningitidis, nicht-gruppierbar"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="103479006"/>
+        <display value="Neisseria meningitidis serogroup A (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Neisseria meningitidis serogroup A (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Neisseria meningitidis, Serogruppe A"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="103480009"/>
+        <display value="Neisseria meningitidis serogroup B (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Neisseria meningitidis serogroup B (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Neisseria meningitidis, Serogruppe B"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="103481008"/>
+        <display value="Neisseria meningitidis serogroup C (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Neisseria meningitidis serogroup C (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Neisseria meningitidis, Serogruppe C"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="698162001"/>
+        <display value="Neisseria meningitidis serogroup E (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Neisseria meningitidis serogroup E (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Neisseria meningitidis, Serogruppe E"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="103483006"/>
+        <display value="Neisseria meningitidis serogroup W (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Neisseria meningitidis serogroup W (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Neisseria meningitidis, Serogruppe W"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="125041003"/>
+        <display value="Neisseria meningitidis serogroup X (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Neisseria meningitidis serogroup X (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Neisseria meningitidis, Serogruppe X"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="103482001"/>
+        <display value="Neisseria meningitidis serogroup Y (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Neisseria meningitidis serogroup Y (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Neisseria meningitidis, Serogruppe Y"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="125042005"/>
+        <display value="Neisseria meningitidis serogroup Z (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Neisseria meningitidis serogroup Z (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Neisseria meningitidis, Serogruppe Z"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

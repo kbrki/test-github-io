@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetResistance-LOINC"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetResistance-LOINC"/>
+  <version value="1.0.0"/>
+  <name value="AnswerSetResistance-LOINC"/>
+  <title value="LOINC-AnswerSet für Resistenz"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-11-04"/>
+  <publisher value="Robert Koch-Institut"/>
+  <description value="Das ValueSet AnswerSetResistance-LOINC enthält die LOINC-Answer-Codes für Resistenzen."/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <version value="2.76"/>
+      <concept>
+        <code value="LA6676-6"/>
+        <display value="Resistant"/>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Resistent"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA29303-7"/>
+        <display value="Intermediate resistance"/>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Intermediär resistent"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA24225-7"/>
+        <display value="Susceptible"/>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Sensibel"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA11884-6"/>
+        <display value="Indeterminate"/>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Uneindeutig"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

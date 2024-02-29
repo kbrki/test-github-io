@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="laboratoryTestBOVP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/laboratoryTestBOVP"/>
+  <version value="1.2.0"/>
+  <name value="LaboratoryTestBOVP"/>
+  <title value="Labortest für humanpathogene Bornaviren; Meldepflicht nur für den direkten Nachweis"/>
+  <status value="active"/>
+  <date value="2023-05-04"/>
+  <description value="Das ValueSet LaboratoryTestBOVP enthält die Codes der Labortests für humanpathogene Bornaviren; Meldepflicht nur für den direkten Nachweis."/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <version value="2.74"/>
+      <concept>
+        <code value="41852-5"/>
+        <display value="Microorganism or agent identified in Specimen"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mikroorganismus oder Erreger identifiziert in Probenmaterial"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="41461-5"/>
+        <display value="Virus identified in Specimen"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Virus identifiziert in Probenmaterial"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="92253-4"/>
+        <display value="Microorganism identified in Isolate or Specimen by Molecular genetics method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mikroorganismus identifiziert in Isolat oder Probenmaterial, molekulargenetisch"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

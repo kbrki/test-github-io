@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="conclusionCode"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/conclusionCode"/>
+  <version value="1.2.0"/>
+  <name value="ConclusionCode"/>
+  <title value="Gesamttestergebnis-Code"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-09-19"/>
+  <publisher value="Robert Koch-Institut"/>
+  <description value="Das ValueSet ConclusionCode enthält die Codes des Gesamttestergebnisses."/>
+  <compose>
+    <include>
+      <system value="https://demis.rki.de/fhir/CodeSystem/conclusionCode"/>
+      <version value="1.3.0"/>
+    </include>
+  </compose>
+</ValueSet>

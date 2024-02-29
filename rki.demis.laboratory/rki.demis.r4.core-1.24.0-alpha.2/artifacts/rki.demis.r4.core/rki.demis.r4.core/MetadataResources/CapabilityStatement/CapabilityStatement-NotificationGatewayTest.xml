@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+  <id value="NotificationGatewayTest"/>
+  <url value="https://demis.rki.de/fhir/CapabilityStatement/NotificationGatewayTest"/>
+  <version value="1.0.0"/>
+  <name value="NotificationGatewayTest"/>
+  <title value="NotificationGatewayTest"/>
+  <status value="active"/>
+  <date value="2021-03-22"/>
+  <publisher value="Robert Koch-Institut"/>
+  <description value="Beschreibt die Fähigkeiten (das Verhalten) des DEMIS Notification Gateway."/>
+  <kind value="instance"/>
+  <software>
+    <name value="DEMIS Notification Gateway"/>
+    <version value="1.7.1"/>
+  </software>
+  <implementation>
+    <description value="Das Testinstanz der DEMIS Notification Gateway bildet die Außenschnittstelle der zentralen Test-DEMIS Infrastruktur in Richtung der Melder. Hier erfolgen die Annahme, Vorverarbeitung und Weiterleitung zur späteren Speicherung der gesendeten Meldungen (Meldevorgänge)."/>
+    <url value="https://demis-test.rki.de/notification-gateway/fhir"/>
+  </implementation>
+  <fhirVersion value="4.0.1"/>
+  <format value="application/fhir+xml"/>
+  <format value="application/fhir+json"/>
+  <rest>
+    <mode value="server"/>
+    <documentation value="Alle Funktionalitäten des DEMIS Notification Gateway."/>
+    <operation>
+      <name value="process-notification"/>
+      <definition value="https://demis.rki.de/fhir/OperationDefinition/ProcessNotification"/>
+    </operation>
+  </rest>
+  <document>
+    <mode value="consumer"/>
+    <profile value="https://demis.rki.de/fhir/StructureDefinition/NotificationBundle"/>
+  </document>
+</CapabilityStatement>

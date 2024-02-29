@@ -1,0 +1,2285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="notificationCategory"/>
+  <url value="https://demis.rki.de/fhir/CodeSystem/notificationCategory"/>
+  <version value="1.11.0"/>
+  <name value="NotificationCategory"/>
+  <title value="Meldetatbestand"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-10-16"/>
+  <publisher value="Robert Koch-Institut"/>
+  <description value="Das CodeSystem NotificationCategory enthält die Codes der Meldetatbestände."/>
+  <caseSensitive value="false"/>
+  <valueSet value="https://demis.rki.de/fhir/ValueSet/notificationCategory"/>
+  <content value="complete"/>
+  <count value="85"/>
+  <property>
+    <code value="usage-status"/>
+    <description value="Nutzungsstatus"/>
+    <type value="code"/>
+  </property>
+  <property>
+    <code value="diagnosticReport-profile"/>
+    <description value="Verweis auf das zu verwendende Profil für den Laborbericht (DiagnosticReport)"/>
+    <type value="string"/>
+  </property>
+  <property>
+    <code value="national-notificationCategory"/>
+    <description value="Nationaler Meldetatbestand"/>
+    <type value="boolean"/>
+  </property>
+  <property>
+    <code value="federal-state-specific-notificationCategory"/>
+    <description value="Bundeslandspezifischer Meldetatbestand"/>
+    <type value="boolean"/>
+  </property>
+  <property>
+    <code value="federal-state"/>
+    <description value="Bundesland"/>
+    <type value="Coding"/>
+  </property>
+  <concept>
+    <code value="advp"/>
+    <display value="Adenoviren; Meldepflicht nur für den direkten Nachweis im Konjunktivalabstrich"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Adenoviren, Konjunktivalabstrich"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportADVP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="banp"/>
+    <display value="Bacillus anthracis"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Bacillus anthracis"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportBANP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="bpsp"/>
+    <display value="Bordetella pertussis, Bordetella parapertussis"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Bordetella pertussis/parapertussis"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportBPSP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>	
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="bovp"/>
+    <display value="humanpathogene Bornaviren; Meldepflicht nur für den direkten Nachweis"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Bornaviren"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportBOVP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="borp"/>
+    <display value="Borrelia recurrentis"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Borrelia recurrentis"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportBORP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="brup"/>
+    <display value="Brucella sp."/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Brucella sp."/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportBRUP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="camp"/>
+    <display value="Campylobacter spp. (darmpathogen)"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Campylobacter spp., darmpathogen"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportCAMP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="ckvp"/>
+    <display value="Chikungunya-Virus"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Chikungunya-Virus"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportCKVP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="chlp"/>
+    <display value="Chlamydia psittaci"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Chlamydia psittaci"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportCHLP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="clop"/>
+    <display value="Clostridium botulinum oder Toxinnachweis"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Clostridium botulinum"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportCLOP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="corp"/>
+    <display value="Corynebacterium spp. (Toxin bildend)"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Corynebacterium spp., Toxin bildend"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportCORP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="coxp"/>
+    <display value="Coxiella burnetii"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Coxiella burnetii"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportCOXP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="denp"/>
+    <display value="Denguevirus"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Denguevirus"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportDENP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="cryp"/>
+    <display value="humanpathogene Cryptosporidium sp."/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Cryptosporidium sp., humanpathogen"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportCRYP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="ebvp"/>
+    <display value="Ebolavirus"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Ebolavirus"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportEBVP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="ehcp"/>
+    <display value="E. coli (enterohämorrhagische Stämme) (EHEC)"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Escherichia coli, enterohämorrhagisch"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportEHCP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="ecop"/>
+    <display value="Escherichia coli (sonstige darmpathogene Stämme)"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="E. coli, sonstige"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportECOP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="frtp"/>
+    <display value="Francisella tularensis"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Francisella tularensis"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportFRTP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="fsvp"/>
+    <display value="FSME-Virus"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="FSME-Virus"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportFSVP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="gfvp"/>
+    <display value="Gelbfiebervirus"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Gelbfiebervirus"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportGFVP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="gilp"/>
+    <display value="Giardia lamblia"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Giardia lamblia"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportGILP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="hinp"/>
+    <display value="Haemophilus influenzae; Meldepflicht nur für den direkten Nachweis aus Liquor oder Blut"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Haemophilus influenzae"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportHINP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="havp"/>
+    <display value="Hepatitis-A-Virus"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Hepatitis-A-Virus"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportHAVP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="hbvp"/>
+    <display value="Hepatitis-B-Virus; Meldepflicht für alle Nachweise"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Hepatitis-B-Virus"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportHBVP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="hcvp"/>
+    <display value="Hepatitis-C-Virus; Meldepflicht für alle Nachweise"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Hepatitis-C-Virus"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportHCVP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="hdvp"/>
+    <display value="Hepatitis-D-Virus; Meldepflicht für alle Nachweise"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Hepatitis-D-Virus"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportHDVP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="hevp"/>
+    <display value="Hepatitis-E-Virus"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Hepatitis-E-Virus"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportHEVP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="htvp"/>
+    <display value="Hantavirus"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Hantavirus"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportHTVP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="invp"/>
+    <display value="Influenzavirus; Meldepflicht nur für den direkten Nachweis"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Influenzavirus"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportINVP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="lsvp"/>
+    <display value="Lassavirus"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Lassavirus"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportLSVP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="legp"/>
+    <display value="Legionella sp."/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Legionella sp."/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportLEGP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="lepp"/>
+    <display value="humanpathogene Leptospira sp."/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Leptospira sp., humanpathogen"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportLEPP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="lisp"/>
+    <display value="Listeria monocytogenes; Meldepflicht nur für den direkten Nachweis aus Blut, Liquor oder anderen normalerweise sterilen Substraten sowie aus Abstrichen von Neugeborenen"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Listeria monocytogenes"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportLISP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="mbvp"/>
+    <display value="Marburgvirus"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Marburgvirus"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportMBVP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="msvp"/>
+    <display value="Masernvirus"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Masernvirus"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportMSVP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="mrsp"/>
+    <display value="Middle-East-Respiratory-Syndrome-Coronavirus (MERS-CoV)"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="MERS-CoV"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportMRSP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="mpvp"/>
+    <display value="Mumpsvirus"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Mumpsvirus"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportMPVP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="mpxp"/>
+    <display value="Orthopockenviren (Mpoxvirus)"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Mpoxvirus"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportMPXP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="mylp"/>
+    <display value="Mycobacterium leprae"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Mycobacterium leprae"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportMYLP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="mytp"/>
+    <display value="Mycobacterium tuberculosis, Mycobacterium africanum, Mycobacterium bovis; Meldepflicht für den direkten Erregernachweis sowie nachfolgend für das Ergebnis der Resistenzbestimmung; vorab auch für den Nachweis säurefester Stäbchen im Sputum"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Mycobacterium tuberculosis"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportMYTP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="neip"/>
+    <display value="Neisseria meningitidis; Meldepflicht nur für den direkten Nachweis aus Liquor, Blut, hämorrhagischen Hautinfiltraten oder anderen normalerweise sterilen Substraten"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Neisseria meningitidis"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportNEIP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="novp"/>
+    <display value="Norovirus"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Norovirus"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportNOVP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="opxp"/>
+    <display value="Orthopockenviren (sonstige Orthopockenviren)"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Orthopockenvirus, sonstige"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportOPXP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="povp"/>
+    <display value="Poliovirus"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Poliovirus"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportPOVP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="rbvp"/>
+    <display value="Rabiesvirus"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Rabiesvirus"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportRBVP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="ricp"/>
+    <display value="Rickettsia prowazekii"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Rickettsia prowazekii"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportRICP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="rtvp"/>
+    <display value="Rotavirus"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Rotavirus"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportRTVP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="ruvp"/>
+    <display value="Rubellavirus"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Rubellavirus"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportRUVP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="spap"/>
+    <display value="Salmonella Paratyphi; Meldepflicht für alle direkten Nachweise"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Salmonella Paratyphi"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportSPAP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="styp"/>
+    <display value="Salmonella Typhi; Meldepflicht für alle direkten Nachweise"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Salmonella Typhi"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportSTYP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="salp"/>
+    <display value="Salmonella (sonstige)"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Salmonella, sonstige"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportSALP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="cvdp"/>
+    <display value="Severe-Acute-Respiratory-Syndrome-Coronavirus-2 (SARS-CoV-2)"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="SARS-CoV-2"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportCVDP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="cvsp"/>
+    <display value="Severe-Acute-Respiratory-Syndrome-Coronavirus (SARS-CoV)"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="SARS-CoV"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportCVSP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="ship"/>
+    <display value="Shigella sp."/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Shigella sp."/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportSHIP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="spnp"/>
+    <display value="Streptococcus pneumoniae; Meldepflicht nur für den direkten Nachweis aus Liquor, Blut, Gelenkpunktat oder anderen normalerweise sterilen Substraten"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Streptococcus pneumoniae"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportSPNP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="trip"/>
+    <display value="Trichinella spiralis"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Trichinella spiralis"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportTRIP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="vzvp"/>
+    <display value="Varizella-Zoster-Virus"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Varizella-Zoster-Virus"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportVZVP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="vchp"/>
+    <display value="Vibrio spp. (humanpathogen); soweit ausschließlich eine Ohrinfektion vorliegt nur bei Vibrio cholerae"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Vibrio spp., humanpathogen"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportVCHP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="wnvp"/>
+    <display value="West-Nil-Virus"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="West-Nil-Virus"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportWNVP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="ypsp"/>
+    <display value="Yersinia pestis"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Yersinia pestis"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportYPSP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="yenp"/>
+    <display value="Yersinia spp. (darmpathogen)"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Yersinia spp., darmpathogen"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportYENP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="zkvp"/>
+    <display value="Zika-Virus"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Zika-Virus"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportZKVP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="abvp"/>
+    <display value="Arboviren (sonstige)"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Arboviren, sonstige"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportABVP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="hfap"/>
+    <display value="Andere Erreger hämorrhagischer Fieber"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Erreger hämorrhagischer Fieber"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportHFAP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="mrap"/>
+    <display value="Staphylococcus aureus (Methicillin-resistente Stämme); Meldepflicht nur für den Nachweis aus Blut oder Liquor"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="MRSA"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportMRAP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="ebcp"/>
+    <display value="Enterobacterales bei Nachweis einer Carbapenemase-Determinante oder mit verminderter Empfindlichkeit gegenüber Carbapenemen außer bei natürlicher Resistenz; Meldepflicht nur bei Infektion oder Kolonisation"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Enterobacterales, Carbapenem"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportEBCP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="acbp"/>
+    <display value="Acinetobacter spp. bei Nachweis einer Carbapenemase-Determinante oder mit verminderter Empfindlichkeit gegenüber Carbapenemen außer bei natürlicher Resistenz; Meldepflicht nur bei Infektion oder Kolonisation"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Acinetobacter spp., Carbapenem"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportACBP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="wbkp"/>
+    <display value="Krankheitserreger unter Berücksichtigung der Art der Krankheitserreger und der Häufigkeit ihres Nachweises wenn Hinweise auf eine schwerwiegende Gefahr für die Allgemeinheit bestehen"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Weitere bedrohliche Erreger"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportWBKP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="pkvp"/>
+    <display value="Orthopockenviren (Variolavirus)"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Variolavirus"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportPKVP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="rsvp"/>
+    <display value="Respiratorisches-Synzytial-Virus"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="RSV"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportRSVP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="astp"/>
+    <display value="Astroviren"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Astroviren"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportASTP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state"/>
+	  <valueCoding>
+        <system value="urn:iso:std:iso:3166-2:de"/>
+        <code value="DE-SN"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="bobp"/>
+    <display value="(Lyme-) Borreliose, Borrelia burgdorferi"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Borreliose"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportBOBP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state"/>
+	  <valueCoding>
+        <system value="urn:iso:std:iso:3166-2:de"/>
+        <code value="DE-RP"/>
+      </valueCoding>
+    </property>
+    <property>
+      <code value="federal-state"/>
+	  <valueCoding>
+        <system value="urn:iso:std:iso:3166-2:de"/>
+        <code value="DE-BY"/>
+      </valueCoding>
+    </property>
+    <property>
+      <code value="federal-state"/>
+	  <valueCoding>
+        <system value="urn:iso:std:iso:3166-2:de"/>
+        <code value="DE-SL"/>
+      </valueCoding>
+    </property>
+    <property>
+      <code value="federal-state"/>
+	  <valueCoding>
+        <system value="urn:iso:std:iso:3166-2:de"/>
+        <code value="DE-BE"/>
+      </valueCoding>
+    </property>
+    <property>
+      <code value="federal-state"/>
+	  <valueCoding>
+        <system value="urn:iso:std:iso:3166-2:de"/>
+        <code value="DE-BB"/>
+      </valueCoding>
+    </property>
+    <property>
+      <code value="federal-state"/>
+	  <valueCoding>
+        <system value="urn:iso:std:iso:3166-2:de"/>
+        <code value="DE-MV"/>
+      </valueCoding>
+    </property>
+    <property>
+      <code value="federal-state"/>
+	  <valueCoding>
+        <system value="urn:iso:std:iso:3166-2:de"/>
+        <code value="DE-SN"/>
+      </valueCoding>
+    </property>
+    <property>
+      <code value="federal-state"/>
+	  <valueCoding>
+        <system value="urn:iso:std:iso:3166-2:de"/>
+        <code value="DE-ST"/>
+      </valueCoding>
+    </property>
+    <property>
+      <code value="federal-state"/>
+	  <valueCoding>
+        <system value="urn:iso:std:iso:3166-2:de"/>
+        <code value="DE-TH"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="cltp"/>
+    <display value="Tetanus, Clostridium tetani"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Tetanus"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportCLTP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state"/>
+	  <valueCoding>
+        <system value="urn:iso:std:iso:3166-2:de"/>
+        <code value="DE-MV"/>
+      </valueCoding>
+    </property>
+    <property>
+      <code value="federal-state"/>
+	  <valueCoding>
+        <system value="urn:iso:std:iso:3166-2:de"/>
+        <code value="DE-SN"/>
+      </valueCoding>
+    </property>
+    <property>
+      <code value="federal-state"/>
+	  <valueCoding>
+        <system value="urn:iso:std:iso:3166-2:de"/>
+        <code value="DE-ST"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="cymp"/>
+    <display value="Cytomegalie, Cytomegalievirus"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Cytomegalie"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportCYMP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state"/>
+	  <valueCoding>
+        <system value="urn:iso:std:iso:3166-2:de"/>
+        <code value="DE-SN"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="eahp"/>
+    <display value="Amoebiasis, Entamoeba histolytica"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Amoebiasis"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportEAHP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state"/>
+	  <valueCoding>
+        <system value="urn:iso:std:iso:3166-2:de"/>
+        <code value="DE-MV"/>
+      </valueCoding>
+    </property>
+    <property>
+      <code value="federal-state"/>
+	  <valueCoding>
+        <system value="urn:iso:std:iso:3166-2:de"/>
+        <code value="DE-SN"/>
+      </valueCoding>
+    </property>
+    <property>
+      <code value="federal-state"/>
+	  <valueCoding>
+        <system value="urn:iso:std:iso:3166-2:de"/>
+        <code value="DE-ST"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="etvp"/>
+    <display value="Enteroviren"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Enteroviren"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportETVP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state"/>
+	  <valueCoding>
+        <system value="urn:iso:std:iso:3166-2:de"/>
+        <code value="DE-SN"/>
+      </valueCoding>
+    </property>
+    <property>
+      <code value="federal-state"/>
+	  <valueCoding>
+        <system value="urn:iso:std:iso:3166-2:de"/>
+        <code value="DE-ST"/>
+      </valueCoding>
+    </property>
+    <property>
+      <code value="federal-state"/>
+	  <valueCoding>
+        <system value="urn:iso:std:iso:3166-2:de"/>
+        <code value="DE-TH"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="gbsp"/>
+    <display value="Gruppe-B-Streptokokken (GBS); Meldepflicht nur für den direkten Nachweis bei Schwangeren und Neugeborenen"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="GBS"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportGBSP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state"/>
+	  <valueCoding>
+        <system value="urn:iso:std:iso:3166-2:de"/>
+        <code value="DE-SN"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="hfmp"/>
+    <display value="Hand-Fuß-Mund-Krankheit"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Hand-Fuß-Mund-Krankheit"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportHFMP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state"/>
+	  <valueCoding>
+        <system value="urn:iso:std:iso:3166-2:de"/>
+        <code value="DE-SN"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="mpmp"/>
+    <display value="Mycoplasmen"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Mycoplasmen"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportMPMP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state"/>
+	  <valueCoding>
+        <system value="urn:iso:std:iso:3166-2:de"/>
+        <code value="DE-SN"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="pinp"/>
+    <display value="Parainfluenzavirus"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Parainfluenza"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportPINP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state"/>
+	  <valueCoding>
+        <system value="urn:iso:std:iso:3166-2:de"/>
+        <code value="DE-SN"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="pvbp"/>
+    <display value="Ringelröteln, Parvovirus B 19"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Ringelröteln"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportPVBP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state"/>
+	  <valueCoding>
+        <system value="urn:iso:std:iso:3166-2:de"/>
+        <code value="DE-SN"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="spyp"/>
+    <display value="Scharlach, Beta-hämolysierenden Streptokokken der Gruppe A"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Scharlach, GAS"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportSPYP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state"/>
+	  <valueCoding>
+        <system value="urn:iso:std:iso:3166-2:de"/>
+        <code value="DE-SN"/>
+      </valueCoding>
+    </property>
+    <property>
+      <code value="federal-state"/>
+	  <valueCoding>
+        <system value="urn:iso:std:iso:3166-2:de"/>
+        <code value="DE-ST"/>
+      </valueCoding>
+    </property>
+    <property>
+      <code value="federal-state"/>
+	  <valueCoding>
+        <system value="urn:iso:std:iso:3166-2:de"/>
+        <code value="DE-TH"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="adep"/>
+    <display value="Adenoviren; Meldepflicht bei akuter Infektion für Nachweise aus allen Körpermaterialien"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Adenovirus, alle Materialien"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportADEP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state"/>
+	  <valueCoding>
+        <system value="urn:iso:std:iso:3166-2:de"/>
+        <code value="DE-SN"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="caup"/>
+    <display value="Candida auris; Meldepflicht nur für den direkten Nachweis"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Candida auris"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportCAUP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="plap"/>
+    <display value="Plasmodium spp. (Malaria)"/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Malaria"/>
+    </designation>
+    <property>
+      <code value="usage-status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="diagnosticReport-profile"/>
+      <valueString value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportPLAP"/>
+    </property>
+	<property>
+      <code value="national-notificationCategory"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+</CodeSystem>

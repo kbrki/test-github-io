@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="laboratoryTestGFVP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/laboratoryTestGFVP"/>
+  <version value="1.6.0"/>
+  <name value="LaboratoryTestGFVP"/>
+  <title value="Labortest für Gelbfiebervirus"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-11-01"/>
+  <publisher value="Robert Koch-Institut"/>
+  <description value="Das ValueSet LaboratoryTestGFVP enthält die Codes der Labortests für Gelbfiebervirus."/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <version value="2.76"/>
+      <concept>
+        <code value="22618-3"/>
+        <display value="Yellow fever virus Ab [Titer] in Serum"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Gelbfieber-Virus Antikörper [Titer] in Serum"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="41216-3"/>
+        <display value="Yellow fever virus IgM Ab [Presence] in Serum"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Gelbfieber-Virus IgM-Antikörper [Nachweis] in Serum"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="41217-1"/>
+        <display value="Yellow fever virus IgG Ab [Presence] in Serum"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Gelbfieber-Virus IgG-Antikörper [Nachweis] in Serum"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="41246-0"/>
+        <display value="Yellow fever virus Ab [Titer] in Serum --2nd specimen"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Gelbfieber-Virus Antikörper [Titer] in Serum --2. Probenmaterial"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="41247-8"/>
+        <display value="Yellow fever virus Ab [Titer] in Serum --1st specimen"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Gelbfieber-Virus Antikörper [Titer] in Serum --1. Probenmaterial"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="6589-6"/>
+        <display value="Yellow fever virus Ab [Titer] in Serum by Immunofluorescence"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Gelbfieber-Virus Antikörper [Titer] in Serum mit Immunfluoreszenztest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="6591-2"/>
+        <display value="Yellow fever virus neutralizing antibody [Units/volume] in Serum by Neutralization test"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Gelbfiebervirus-neutralisierender Antikörper [Einheiten/Volumen] in Serum mit Neutralisationstest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="6592-0"/>
+        <display value="Yellow fever virus IgG Ab [Units/volume] in Serum by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Gelbfieber-Virus IgG-Antikörper [Einheiten/Volumen] in Serum mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="6593-8"/>
+        <display value="Yellow fever virus IgM Ab [Units/volume] in Serum by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Gelbfieber-Virus IgM-Antikörper [Einheiten/Volumen] in Serum mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="71782-7"/>
+        <display value="Yellow fever virus IgM Ab [Presence] in Cerebral spinal fluid by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Gelbfieber-Virus IgM-Antikörper [Nachweis] in Zerebrospinalflüssigkeit mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="71783-5"/>
+        <display value="Yellow fever virus neutralizing antibody [Titer] in Cerebral spinal fluid by Neutralization test"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Gelbfieber-Virus neutralisierender Antikörper [Titer] in Zerebrospinalflüssigkeit mit Neutralisationstest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="77954-6"/>
+        <display value="Yellow fever virus IgG Ab [Presence] in Serum by Immunofluorescence"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Gelbfieber-Virus IgG-Antikörper [Nachweis] in Serum mit Immunfluoreszenztest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="77955-3"/>
+        <display value="Yellow fever virus IgM Ab [Presence] in Serum by Immunofluorescence"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Gelbfieber-Virus IgM-Antikörper [Nachweis] in Serum mit Immunfluoreszenztest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="77959-5"/>
+        <display value="Yellow fever virus ns5 gene [Presence] in Cerebral spinal fluid by NAA with non-probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Gelbfieber-Virus ns5-Gen [Nachweis] in Zerebrospinalflüssigkeit mit Nukleinsäureamplifikation mit Detektion ohne Sonde"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="8054-9"/>
+        <display value="Yellow fever virus Ab [Units/volume] in Serum"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Gelbfieber-Virus Antikörper [Einheiten/Volumen] in Serum"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="8055-6"/>
+        <display value="Yellow fever virus IgG Ab [Units/volume] in Serum"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Gelbfieber-Virus IgG-Antikörper [Einheiten/Volumen] in Serum"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="8056-4"/>
+        <display value="Yellow fever virus IgM Ab [Units/volume] in Serum"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Gelbfieber-Virus IgM-Antikörper [Einheiten/Volumen] in Serum"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="8057-2"/>
+        <display value="Yellow fever virus RNA [Presence] in Serum by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Gelbfieber-Virus RNA [Nachweis] in Serum mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="90459-9"/>
+        <display value="Yellow fever virus RNA [Presence] in Blood by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Gelbfieber-Virus RNA [Nachweis] in Blut mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="94184-9"/>
+        <display value="Yellow fever virus RNA [Presence] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Gelbfieber-Virus RNA [Nachweis] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="95651-6"/>
+        <display value="Yellow fever virus neutralizing antibody [Titer] in Specimen by Neutralization test"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Gelbfieber-Virus neutralisierender Antikörper [Titer] in Probenmaterial mit Neutralisationstest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="95675-5"/>
+        <display value="Yellow fever virus IgG Ab [Presence] in Specimen by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Gelbfieber-Virus IgG-Antikörper [Nachweis] in Probenmaterial mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="95690-4"/>
+        <display value="Yellow fever virus IgM Ab [Presence] in Specimen by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Gelbfieber-Virus IgM-Antikörper [Nachweis] in Probenmaterial mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="41461-5"/>
+        <display value="Virus identified in Specimen"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Virus identifiziert in Probenmaterial"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="92253-4"/>
+        <display value="Microorganism identified in Isolate or Specimen by Molecular genetics method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mikroorganismus identifiziert in Isolat oder Probenmaterial, molekulargenetisch"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

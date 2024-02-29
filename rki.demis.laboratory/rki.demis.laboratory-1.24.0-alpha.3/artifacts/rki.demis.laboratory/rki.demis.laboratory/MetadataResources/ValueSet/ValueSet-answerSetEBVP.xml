@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetEBVP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetEBVP"/>
+  <version value="1.3.0"/>
+  <name value="AnswerSetEBVP"/>
+  <title value="AnswerSet für Ebolavirus"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-11-09"/>
+  <publisher value="Robert Koch-Institut"/>
+  <description value="Das ValueSet AnswerSetEBVP enthält die Codes der Answer-Codes für Ebolavirus."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230901"/>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="424206003"/>
+        <display value="Genus Ebolavirus (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Genus Ebolavirus (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Ebolavirus spp."/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="422448009"/>
+        <display value="Reston ebolavirus (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Reston ebolavirus (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Reston-Ebolavirus"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="423042009"/>
+        <display value="Ivory Coast ebolavirus (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Ivory Coast ebolavirus (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Ebolavirus Ivory Coast"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="450597006"/>
+        <display value="Bundibugyo ebolavirus (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Bundibugyo ebolavirus (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Bundibugyo Ebolavirus"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="424116003"/>
+        <display value="Sudan ebolavirus (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Sudan ebolavirus (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Sudan Ebolavirus"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="425092008"/>
+        <display value="Zaire virus (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Zaire virus (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Zaire-Ebolavirus"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

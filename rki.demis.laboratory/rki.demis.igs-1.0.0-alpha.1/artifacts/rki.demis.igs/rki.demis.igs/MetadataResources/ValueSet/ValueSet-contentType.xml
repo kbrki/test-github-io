@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="contentType" />
+  <url value="https://demis.rki.de/fhir/ValueSet/contentType" />
+  <version value="1.0.0" />
+  <name value="ContentType" />
+  <title value="Format der Sequenz" />
+  <status value="active" />
+  <date value="2023-07-16" />
+  <description value="Das ValueSet ContentType enthält die Codes für das Format der Sequenz, die entweder als FASTA oder FASTQ hochgeladen werden kann." />
+  <compose>
+    <include>
+      <system value="urn:ietf:bcp:13" />
+      <concept>
+        <code value="chemical/seq-na-fasta" />
+        <display value="chemical/seq-na-fasta" />
+      </concept>
+      <concept>
+        <code value="chemical/seq-na-fasta-gzip" />
+        <display value="chemical/seq-na-fasta-gzip" />
+      </concept>
+      <concept>
+        <code value="chemical/seq-na-fastq" />
+        <display value="chemical/seq-na-fastq" />
+      </concept>
+      <concept>
+        <code value="chemical/seq-na-fastq-gzip" />
+        <display value="chemical/seq-na-fastq-gzip" />
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

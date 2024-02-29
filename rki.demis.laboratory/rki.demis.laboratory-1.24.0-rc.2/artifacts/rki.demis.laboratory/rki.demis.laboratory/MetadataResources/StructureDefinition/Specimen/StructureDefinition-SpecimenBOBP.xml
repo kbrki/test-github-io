@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="SpecimenBOBP"/>
+  <url value="https://demis.rki.de/fhir/StructureDefinition/SpecimenBOBP"/>
+  <version value="1.1.0"/>
+  <name value="SpecimenBOBP"/>
+  <title value="Probe für (Lyme-) Borreliose, Borrelia burgdorferi"/>
+  <status value="active"/>
+  <date value="2023-10-30"/>
+  <description value="Die Probe für Borreliose spezifiziert die Probe hinsichtlich des Probenmaterials für (Lyme-) Borreliose, Borrelia burgdorferi."/>
+  <fhirVersion value="4.0.1"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="Specimen"/>
+  <baseDefinition value="https://demis.rki.de/fhir/StructureDefinition/Specimen"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Specimen.meta">
+      <path value="Specimen.meta"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Specimen.meta.profile">
+      <path value="Specimen.meta.profile"/>
+      <min value="1"/>
+      <max value="1"/>
+      <fixedCanonical value="https://demis.rki.de/fhir/StructureDefinition/SpecimenBOBP"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Specimen.type">
+      <path value="Specimen.type"/>
+      <definition value="Art des Probenmaterials. Der Wert muss entsprechend des vom RKI definierten ValueSets (https://demis.rki.de/fhir/ValueSet/materialBOBP) im coding Element dargestellt werden."/>
+    </element>
+    <element id="Specimen.type.coding">
+      <path value="Specimen.type.coding"/>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="https://demis.rki.de/fhir/ValueSet/materialBOBP"/>
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>

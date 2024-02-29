@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="LaboratoryReport" />
+  <url value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReport" />
+  <version value="1.4.0" />
+  <name value="LaboratoryReport" />
+  <title value="Laborbericht" />
+  <status value="active" />
+  <date value="2023-10-30" />
+  <description value="Der Laborbericht kann mehrere Erregernachweise zu einer Probe enthalten und beinhaltet eine Gesamtbewertung der Ergebnisse aller Einzeltests." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="true" />
+  <type value="DiagnosticReport" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="DiagnosticReport.extension">
+      <path value="DiagnosticReport.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="DiagnosticReport.extension:reasonForTesting">
+      <path value="DiagnosticReport.extension" />
+      <sliceName value="reasonForTesting" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/workflow-reasonCode" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="DiagnosticReport.extension:reasonForTesting.value[x]">
+      <path value="DiagnosticReport.extension.value[x]" />
+      <mustSupport value="true" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="EventReason" />
+        </extension>
+        <strength value="required" />
+        <valueSet value="https://demis.rki.de/fhir/ValueSet/reasonForTesting" />
+      </binding>
+    </element>
+    <element id="DiagnosticReport.extension:reasonForTesting.value[x].coding">
+      <path value="DiagnosticReport.extension.value[x].coding" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.extension:reasonForTesting.value[x].coding.system">
+      <path value="DiagnosticReport.extension.value[x].coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.extension:reasonForTesting.value[x].coding.code">
+      <path value="DiagnosticReport.extension.value[x].coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.extension:reasonForTesting.value[x].text">
+      <path value="DiagnosticReport.extension.value[x].text" />
+      <max value="0" />
+    </element>
+    <element id="DiagnosticReport.basedOn">
+      <path value="DiagnosticReport.basedOn" />
+      <short value="Laborauftragsnummer" />
+      <definition value="Es ist nicht ein echter ServiceRequest anzugeben, sondern eine logische Variante, die über die Laborauftragsnummer referenziert wird." />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
+        <aggregation value="referenced" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.basedOn.reference">
+      <path value="DiagnosticReport.basedOn.reference" />
+      <max value="0" />
+    </element>
+    <element id="DiagnosticReport.basedOn.type">
+      <path value="DiagnosticReport.basedOn.type" />
+      <min value="1" />
+      <fixedUri value="ServiceRequest" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.basedOn.identifier">
+      <path value="DiagnosticReport.basedOn.identifier" />
+      <short value="Laborauftragsnummer" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.basedOn.identifier.system">
+      <path value="DiagnosticReport.basedOn.identifier.system" />
+      <min value="1" />
+      <fixedUri value="https://demis.rki.de/fhir/NamingSystem/ServiceRequestId" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.basedOn.identifier.value">
+      <path value="DiagnosticReport.basedOn.identifier.value" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.status">
+      <path value="DiagnosticReport.status" />
+      <short value="Status der Testergebnisse" />
+      <definition value="Status der Testergebnisse" />
+      <comment value="Der Status ist szenarienspezifisch folgendermaßen zu belegen.&#xD;&#xA;final - bei einer Meldung, bei der kein Bestätigungstest notwendig ist, bei einem erfolgten Bestätigungstest;&#xD;&#xA;preliminary - bei einer Meldung, bei der ein Bestätigungstest notwendig ist;&#xD;&#xA;amended/corrected - bei einer Korrekturmeldung" />
+      <mustSupport value="true" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="DiagnosticReportStatus" />
+        </extension>
+        <strength value="required"/>
+        <description value="Status des Laborberichts"/>
+        <valueSet value="https://demis.rki.de/fhir/ValueSet/laboratoryReportStatus"/>
+      </binding>
+    </element>
+    <element id="DiagnosticReport.category">
+      <path value="DiagnosticReport.category" />
+      <max value="0" />
+    </element>
+    <element id="DiagnosticReport.code">
+      <path value="DiagnosticReport.code" />
+      <short value="Meldetatbestand" />
+      <definition value="Angabe des Meldetatbestandes. Der jeweils zutreffende Meldetatbestand ist in abgeleiteten erregerspezifischen Laborbericht-Profilen vorgegeben." />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.code.coding">
+      <path value="DiagnosticReport.code.coding" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <description value="Meldetatbestand" />
+        <valueSet value="https://demis.rki.de/fhir/ValueSet/notificationCategory" />
+      </binding>
+    </element>
+    <element id="DiagnosticReport.code.coding.system">
+      <path value="DiagnosticReport.code.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.code.coding.code">
+      <path value="DiagnosticReport.code.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.subject">
+      <path value="DiagnosticReport.subject" />
+      <short value="Verweis auf die in der Meldung benannte betroffene Person." />
+      <definition value="Verweis auf die in der Meldung benannte betroffene Person. Hierbei handelt es sich grundsätzlich um den Verweis auf die in der Erregernachweismeldung als „subject“ referenzierte Patient Ressource." />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/NotifiedPerson" />
+        <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/NotifiedPersonNotByName" />
+        <aggregation value="bundled" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.subject.reference">
+      <path value="DiagnosticReport.subject.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.encounter">
+      <path value="DiagnosticReport.encounter" />
+      <max value="0" />
+    </element>
+    <element id="DiagnosticReport.effective[x]">
+      <path value="DiagnosticReport.effective[x]" />
+      <max value="0" />
+    </element>
+    <element id="DiagnosticReport.issued">
+      <path value="DiagnosticReport.issued" />
+      <short value="Zeitpunkt der Erstellung/Bearbeitung (der aktuellen Version) des Laborberichts" />
+      <definition value="Zeitpunkt der Erstellung/Bearbeitung (der aktuellen Version) des Laborberichts. Dieser ändert sich entsprechend bei Ergänzungen/Korrekturen." />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.performer">
+      <path value="DiagnosticReport.performer" />
+      <max value="0" />
+    </element>
+    <element id="DiagnosticReport.resultsInterpreter">
+      <path value="DiagnosticReport.resultsInterpreter" />
+      <max value="0" />
+    </element>
+    <element id="DiagnosticReport.specimen">
+      <path value="DiagnosticReport.specimen" />
+      <max value="0" />
+    </element>
+    <element id="DiagnosticReport.result">
+      <path value="DiagnosticReport.result" />
+      <short value="Erregernachweis" />
+      <definition value="Referenziert einen Erregernachweis." />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/PathogenDetection" />
+        <aggregation value="bundled" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.result.reference">
+      <path value="DiagnosticReport.result.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.imagingStudy">
+      <path value="DiagnosticReport.imagingStudy" />
+      <max value="0" />
+    </element>
+    <element id="DiagnosticReport.media">
+      <path value="DiagnosticReport.media" />
+      <max value="0" />
+    </element>
+    <element id="DiagnosticReport.conclusion">
+      <path value="DiagnosticReport.conclusion" />
+      <short value="Textuelle Zusammenfassung der Testergebnisse" />
+      <definition value="Fasst die Ergebnisse der Einzeltests in textueller Form zusammen." />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.conclusionCode">
+      <path value="DiagnosticReport.conclusionCode" />
+      <short value="Kodierte Zusammenfassung der Testergebnisse" />
+      <definition value="Fasst die Ergebnisse der Einzeltests in kodierter Form zusammen und gibt damit an, ob der Meldetatbestand erfüllt ist." />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.conclusionCode.coding">
+      <path value="DiagnosticReport.conclusionCode.coding" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <description value="Gesamttestergebnis" />
+        <valueSet value="https://demis.rki.de/fhir/ValueSet/conclusionCode" />
+      </binding>
+    </element>
+    <element id="DiagnosticReport.conclusionCode.coding.system">
+      <path value="DiagnosticReport.conclusionCode.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.conclusionCode.coding.code">
+      <path value="DiagnosticReport.conclusionCode.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.presentedForm">
+      <path value="DiagnosticReport.presentedForm" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetCYMP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetCYMP"/>
+  <version value="1.0.0"/>
+  <name value="AnswerSetCYMP"/>
+  <title value="AnswerSet für Cytomegalie, Cytomegalievirus"/>
+  <status value="active"/>
+  <date value="2023-05-03"/>
+  <description value="Das ValueSet AnswerSetCYMP enthält die Codes der Answer-Codes für Cytomegalie, Cytomegalievirus."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <code value="407444007"/>
+        <display value="Genus Cytomegalovirus (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Genus Cytomegalovirus (organism)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="243579005"/>
+        <display value="Human cytomegalovirus 5 (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Human cytomegalovirus 5 (organism)"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

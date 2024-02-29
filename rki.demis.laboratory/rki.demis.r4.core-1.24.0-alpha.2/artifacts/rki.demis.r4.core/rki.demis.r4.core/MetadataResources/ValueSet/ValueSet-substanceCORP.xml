@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="substanceCORP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/substanceCORP"/>
+  <version value="1.0.0"/>
+  <name value="SubstanceCORP"/>
+  <title value="Analyt-Set für Corynebacterium spp. (Toxin bildend)"/>
+  <status value="active"/>
+  <date value="2023-05-03"/>
+  <description value="Das ValueSet SubstanceCORP enthält die Codes des Analyt-Sets für Corynebacterium spp. (Toxin bildend)."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <code value="55123007"/>
+        <display value="Diphtheria toxin (substance)"/>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Diphtherietoxin"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

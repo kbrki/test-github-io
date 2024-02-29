@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="conclusionCode" />
+  <url value="https://demis.rki.de/fhir/CodeSystem/conclusionCode" />
+  <version value="1.2.0" />
+  <name value="ConclusionCode" />
+  <title value="Gesamttestergebnis" />
+  <status value="active" />
+  <date value="2021-12-08" />
+  <description value="Das CodeSystem ConclusionCode enthält die Codes des Gesamttestergebnisses." />
+  <caseSensitive value="false" />
+  <valueSet value="https://demis.rki.de/fhir/ValueSet/conclusionCode" />
+  <content value="complete" />
+  <count value="2" />
+  <concept>
+    <code value="pathogenDetected" />
+    <display value="Meldepflichtiger Erreger nachgewiesen" />
+  </concept>
+  <concept>
+    <code value="pathogenNotDetected" />
+    <display value="Meldepflichtiger Erreger nicht nachgewiesen" />
+  </concept>
+</CodeSystem>

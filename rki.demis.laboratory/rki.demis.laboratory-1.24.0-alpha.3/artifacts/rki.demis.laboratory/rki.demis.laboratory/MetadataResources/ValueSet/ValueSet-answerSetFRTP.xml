@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetFRTP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetFRTP"/>
+  <version value="1.4.0"/>
+  <name value="AnswerSetFRTP"/>
+  <title value="AnswerSet für Francisella tularensis"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-11-09"/>
+  <publisher value="Robert Koch-Institut"/>
+  <description value="Das ValueSet AnswerSetFRTP enthält die Codes der Answer-Codes für Francisella tularensis."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230901"/>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="51526001"/>
+        <display value="Francisella tularensis (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Francisella tularensis (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Francisella tularensis"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="60502008"/>
+        <display value="Francisella tularensis subspecies holarctica (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Francisella tularensis subspecies holarctica (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Francisella tularensis Subspecies holarctica"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="432830002"/>
+        <display value="Francisella tularensis subspecies japonica (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Francisella tularensis subspecies japonica (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Francisella tularensis Subspecies japonica"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="23930001"/>
+        <display value="Francisella tularensis subspecies mediasiatica (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Francisella tularensis subspecies mediasiatica (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Francisella tularensis Subspecies mediasiatica"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="432832005"/>
+        <display value="Francisella tularensis subspecies novicida (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Francisella tularensis subspecies novicida (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Francisella tularensis Subspecies novicida"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="91508008"/>
+        <display value="Francisella tularensis subspecies tularensis (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Francisella tularensis subspecies tularensis (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Francisella tularensis Subspecies tularensis"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

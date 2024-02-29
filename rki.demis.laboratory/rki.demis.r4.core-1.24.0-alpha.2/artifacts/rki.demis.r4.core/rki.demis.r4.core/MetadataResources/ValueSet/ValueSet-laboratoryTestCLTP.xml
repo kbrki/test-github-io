@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="laboratoryTestCLTP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/laboratoryTestCLTP"/>
+  <version value="1.0.0"/>
+  <name value="LaboratoryTestCLTP"/>
+  <title value="Labortest für Tetanus, Clostridium tetani"/>
+  <status value="active"/>
+  <date value="2023-05-03"/>
+  <description value="Das ValueSet LaboratoryTestCLTP enthält die Codes der Labortests für Tetanus, Clostridium tetani."/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <version value="2.74"/>
+      <concept>
+        <code value="26643-7"/>
+        <display value="Clostridium tetani toxoid Ab [Presence] in Serum"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Clostridium tetani-Toxoid-Antikörper [Nachweis] in Serum"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="32775-9"/>
+        <display value="Clostridium tetani toxoid Ab [Units/volume] in Serum"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Clostridium tetani-Toxoid-Antikörper [Einheiten/Volumen] in Serum"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="41483-9"/>
+        <display value="Clostridium tetani toxoid Ab [Units/volume] in Serum by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Clostridium tetani-Toxoid-Antikörper [Einheiten/Volumen] in Serum mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="47296-9"/>
+        <display value="Clostridium tetani toxoid Ab [Ratio] in Serum --2nd specimen/1st specimen"/>
+      </concept>
+      <concept>
+        <code value="48652-2"/>
+        <display value="Clostridium tetani toxoid IgG Ab [Units/volume] in Serum by Immunoassay --2nd specimen"/>
+      </concept>
+      <concept>
+        <code value="48653-0"/>
+        <display value="Clostridium tetani toxoid IgG Ab [Units/volume] in Serum by Immunoassay --1st specimen"/>
+      </concept>
+      <concept>
+        <code value="49191-0"/>
+        <display value="Clostridium tetani toxoid IgG Ab [Units/volume] in Serum --1st specimen"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Clostridium tetani-Toxoid-IgG-Antikörper [Einheiten/Volumen] in Serum --1. Probenmaterial"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="49192-8"/>
+        <display value="Clostridium tetani toxoid IgG Ab [Units/volume] in Serum --2nd specimen"/>
+      </concept>
+      <concept>
+        <code value="53935-3"/>
+        <display value="Clostridium tetani toxoid IgG Ab [Units/volume] in Serum or Plasma by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Clostridium tetani-Toxoid-IgG-Antikörper [Einheiten/Volumen] in Serum oder Plasma mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="58770-9"/>
+        <display value="Clostridium tetani toxoid IgG Ab [Units/volume] in Serum by Immunofluorescence"/>
+      </concept>
+      <concept>
+        <code value="99454-1"/>
+        <display value="Clostridium tetani toxoid IgG Ab [Mass/volume] in Serum"/>
+      </concept>
+      <concept>
+        <code value="75756-7"/>
+        <display value="Bacteria identified in Isolate by MS.MALDI-TOF"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Bakterien identifiziert in Isolat mit MS.MALDI-TOF"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="91895-3"/>
+        <display value="Bacterial strain [Type] in Isolate by Sequencing"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Bakterienstamm [Typ] in Isolat mit Sequenzierung"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="90246-0"/>
+        <display value="Bacterial whole genome [Nucleotide sequence] in Isolate by Sequencing"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Bakterielles Gesamtgenom [Nukleotidsequenz] in Isolat mit Sequenzierung"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="6462-6"/>
+        <display value="Bacteria identified in Wound by Culture"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="PrimerSubstance" />
+  <url value="https://demis.rki.de/fhir/StructureDefinition/PrimerSubstance" />
+  <version value="1.0.0" />
+  <name value="PrimerSubstance" />
+  <title value="PrimerSubstance" />
+  <status value="draft" />
+  <date value="2023-07-10" />
+  <description value="Die PrimerSubstance dient der Angabe der Sequenzen der Primer, die zur Amplicon-Sequenzierung verwendet wurden. Die Ressource wird pro Primersequenz einmal verwendet." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Substance" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Substance" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Substance.category">
+      <path value="Substance.category" />
+      <max value="0" />
+    </element>
+    <element id="Substance.code">
+      <path value="Substance.code" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Substance.code.coding">
+      <path value="Substance.code.coding" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="https://demis.rki.de/fhir/CodeSystem/sequencingSubstances" />
+        <code value="primer" />
+      </patternCoding>
+    </element>
+    <element id="Substance.code.coding.system">
+      <path value="Substance.code.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Substance.code.coding.code">
+      <path value="Substance.code.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Substance.code.text">
+      <path value="Substance.code.text" />
+      <max value="0" />
+    </element>
+    <element id="Substance.description">
+      <path value="Substance.description" />
+      <short value="Primer-Sequenzen" />
+      <definition value="Primer-Sequenzen, die bei der Amplicon-Sequenzierung benutzt werden" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Substance.instance">
+      <path value="Substance.instance" />
+      <max value="0" />
+    </element>
+    <element id="Substance.ingredient">
+      <path value="Substance.ingredient" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="laboratoryTestEBVP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/laboratoryTestEBVP"/>
+  <version value="1.2.0"/>
+  <name value="LaboratoryTestEBVP"/>
+  <title value="Labortest für Ebolavirus"/>
+  <status value="active"/>
+  <date value="2023-05-04"/>
+  <description value="Das ValueSet LaboratoryTestEBVP enthält die Codes der Labortests für Ebolavirus."/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <version value="2.74"/>
+      <concept>
+        <code value="101366-3"/>
+        <display value="Ebola virus RNA [Presence] in Blood by NAA with non-probe detection"/>
+      </concept>
+      <concept>
+        <code value="41636-2"/>
+        <display value="Ebola virus RNA [Presence] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Ebola-Virus-RNA [Nachweis] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="41637-0"/>
+        <display value="Ebola virus Ag [Presence] in Specimen by Immunofluorescence"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Ebola-Virus-Antigen [Nachweis] in Probenmaterial mit Immunfluoreszenztest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="71711-6"/>
+        <display value="Ebola virus IgM Ab [Titer] in Serum by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Ebola-Virus-IgM-Antikörper [Titer] in Serum mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="71712-4"/>
+        <display value="Ebola virus IgM Ab [Presence] in Serum by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Ebola-Virus-IgM-Antikörper [Nachweis] in Serum mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="71767-8"/>
+        <display value="Ebola virus IgG Ab [Titer] in Serum by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Ebola-Virus-IgG-Antikörper [Titer] in Serum mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="71768-6"/>
+        <display value="Ebola virus Ag [Presence] in Specimen by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Ebola-Virus-Antigen [Nachweis] in Probenmaterial mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="71770-2"/>
+        <display value="Ebola virus IgG Ab [Presence] in Serum by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Ebola-Virus-IgG-Antikörper [Nachweis] in Serum mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="75411-9"/>
+        <display value="Ebola Zaire virus RNA [Presence] in Plasma or Blood by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Ebola-Zaire-Virus-RNA [Nachweis] in Plasma oder Blut mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="86518-8"/>
+        <display value="Ebola virus RNA [Presence] in Blood by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Ebola-Virus-RNA [Nachweis] in Blut mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="41461-5"/>
+        <display value="Virus identified in Specimen"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Virus identifiziert in Probenmaterial"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="92253-4"/>
+        <display value="Microorganism identified in Isolate or Specimen by Molecular genetics method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mikroorganismus identifiziert in Isolat oder Probenmaterial, molekulargenetisch"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

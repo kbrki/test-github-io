@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetResistance"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetResistance"/>
+  <version value="1.4.0"/>
+  <name value="AnswerSetResistance"/>
+  <title value="AnswerSet für Resistenz"/>
+  <status value="active"/>
+  <date value="2023-05-04"/>
+  <description value="Das ValueSet AnswerSetResistance enthält die Codes der Answer-Codes für Resistenzen."/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <version value="2.74"/>
+      <concept>
+        <code value="LA6676-6"/>
+        <display value="Resistant"/>
+      </concept>
+      <concept>
+        <code value="LA29303-7"/>
+        <display value="Intermediate resistance"/>
+      </concept>
+      <concept>
+        <code value="LA24225-7"/>
+        <display value="Susceptible"/>
+      </concept>
+      <concept>
+        <code value="LA11884-6"/>
+        <display value="Indeterminate"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

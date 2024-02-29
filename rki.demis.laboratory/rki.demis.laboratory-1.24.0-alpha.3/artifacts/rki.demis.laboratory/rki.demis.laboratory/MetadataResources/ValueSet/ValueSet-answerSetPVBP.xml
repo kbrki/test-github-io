@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetPVBP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetPVBP"/>
+  <version value="1.3.0"/>
+  <name value="AnswerSetPVBP"/>
+  <title value="AnswerSet für Ringelröteln, Parvovirus B 19"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-11-09"/>
+  <publisher value="Robert Koch-Institut"/>
+  <description value="Das ValueSet AnswerSetPVBP enthält die Codes der Answer-Codes für Ringelröteln, Parvovirus B 19."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230901"/>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="407394007"/>
+        <display value="Genus Erythroparvovirus (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Genus Erythroparvovirus (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Erythrovirus spp."/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="11970002"/>
+        <display value="Genus Parvovirus (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Genus Parvovirus (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Gattung Parvovirus"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="63603005"/>
+        <display value="Primate erythroparvovirus 1 (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Primate erythroparvovirus 1 (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Primaten-Erythroparvovirus 1"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

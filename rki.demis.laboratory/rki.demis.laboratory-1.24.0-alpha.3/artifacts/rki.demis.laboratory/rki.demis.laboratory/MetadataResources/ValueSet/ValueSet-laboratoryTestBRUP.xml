@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="laboratoryTestBRUP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/laboratoryTestBRUP"/>
+  <version value="1.6.0"/>
+  <name value="LaboratoryTestBRUP"/>
+  <title value="Labortest für Brucella sp."/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-11-01"/>
+  <publisher value="Robert Koch-Institut"/>
+  <description value="Das ValueSet LaboratoryTestBRUP enthält die Codes der Labortests für Brucella sp.."/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <version value="2.76"/>
+      <concept>
+        <code value="101802-7"/>
+        <display value="Brucella sp IgA Ab [Presence] in Serum"/>
+      </concept>
+      <concept>
+        <code value="10349-9"/>
+        <display value="Brucella sp Ab [Units/volume] in Serum"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Brucella sp Antikörper [Einheiten/Volumen] in Serum"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="13210-0"/>
+        <display value="Brucella sp IgG Ab [Units/volume] in Serum"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Brucella sp IgG-Antikörper [Einheiten/Volumen] in Serum"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="13211-8"/>
+        <display value="Brucella sp IgA Ab [Units/volume] in Serum"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Brucella sp IgA-Antikörper [Einheiten/Volumen] in Serum"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="19053-8"/>
+        <display value="Brucella sp Ab [Titer] in Serum by Agglutination"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Brucella sp Antikörper [Titer] in Serum mit Agglutination"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="20734-0"/>
+        <display value="Brucella sp identified in Tissue by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Brucella sp identifiziert in Gewebe mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="22159-8"/>
+        <display value="Brucella sp Ab [Titer] in Serum"/>
+      </concept>
+      <concept>
+        <code value="22927-8"/>
+        <display value="Brucella abortus DNA [Presence] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Brucella abortus DNA [Nachweis] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="22936-9"/>
+        <display value="Brucella melitensis DNA [Presence] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Brucella melitensis DNA [Nachweis] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="22943-5"/>
+        <display value="Brucella sp Ag [Presence] in Placenta by Immunofluorescence"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Brucella sp Antigen [Nachweis] in Plazenta mit Immunfluoreszenztest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="22944-3"/>
+        <display value="Brucella sp Ag [Presence] in Vaginal fluid by Immune stain"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Brucella sp Antigen [Nachweis] in Vaginalflüssigkeit mit Immunfärbung"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="22945-0"/>
+        <display value="Brucella sp Ag [Presence] in Tissue by Immune stain"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Brucella sp Antigen [Nachweis] in Gewebe mit Immunfärbung"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="22947-6"/>
+        <display value="Brucella sp Ag [Presence] in Vaginal fluid by Immunofluorescence"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Brucella sp Antigen [Nachweis] in Vaginalflüssigkeit mit Immunfluoreszenztest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="22949-2"/>
+        <display value="Brucella sp Ag [Presence] in Placenta by Immune stain"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Brucella sp Antigen [Nachweis] in Plazenta mit Immunfärbung"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="22955-9"/>
+        <display value="Brucella suis DNA [Presence] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Brucella suis DNA [Nachweis] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="23594-5"/>
+        <display value="Brucella sp identified in Semen by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Brucella sp identifiziert in Sperma mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="24003-6"/>
+        <display value="Brucella sp identified in Bone marrow by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Brucella sp identifiziert in Knochenmark mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="24388-1"/>
+        <display value="Brucella sp IgM Ab [Presence] in Serum by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Brucella sp IgM-Antikörper [Nachweis] in Serum mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="24397-2"/>
+        <display value="Brucella sp IgM Ab [Presence] in Serum"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Brucella sp IgM-Antikörper [Nachweis] in Serum"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="31753-7"/>
+        <display value="Brucella sp Ag [Presence] in Vaginal fluid"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Brucella sp Antigen [Nachweis] in Vaginalflüssigkeit"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="31754-5"/>
+        <display value="Brucella sp Ag [Presence] in Placenta"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Brucella sp Antigen [Nachweis] in Plazenta"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="38247-3"/>
+        <display value="Brucella sp IgG Ab [Titer] in Serum"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Brucella sp IgG-Antikörper [Titer] in Serum"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="38248-1"/>
+        <display value="Brucella sp IgM Ab [Titer] in Serum"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Brucella sp IgM-Antikörper [Titer] in Serum"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="41624-8"/>
+        <display value="Brucella sp Ag [Presence] in Specimen by Immunofluorescence"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Brucella sp Antigen [Nachweis] in Probenmaterial mit Immunfluoreszenztest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="41625-5"/>
+        <display value="Brucella sp DNA [Identifier] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Brucella sp DNA [Nachweis oder Identität] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="41626-3"/>
+        <display value="Brucella sp DNA [Presence] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Brucella sp DNA [Nachweis] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="44271-5"/>
+        <display value="Brucella sp Ag [Identifier] in Specimen by Immunofluorescence"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Brucella sp Antigen [Nachweis oder Identität] in Probenmaterial mit Immunfluoreszenztest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="44797-9"/>
+        <display value="Brucella sp [Presence] in Specimen by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Brucella sp [Nachweis] in Probenmaterial mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="47001-3"/>
+        <display value="Brucella sp Ag [Presence] in Specimen by Agglutination"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Brucella sp Antigen [Nachweis] in Probenmaterial mit Agglutination"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="5070-8"/>
+        <display value="Brucella sp IgM Ab [Units/volume] in Serum"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Brucella sp IgM-Antikörper [Einheiten/Volumen] in Serum"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="53604-5"/>
+        <display value="Brucella sp DNA [Identifier] in Serum by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Brucella sp DNA [Nachweis oder Identität] in Serum mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="551-2"/>
+        <display value="Brucella sp identified in Blood by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Brucella sp identifiziert in Blut mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="552-0"/>
+        <display value="Brucella sp identified in Specimen by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Brucella sp identifiziert in Probenmaterial mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="56630-7"/>
+        <display value="Brucella sp IgG Ab [Units/volume] in Serum by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Brucella sp IgG-Antikörper [Einheiten/Volumen] in Serum mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="56631-5"/>
+        <display value="Brucella sp IgM Ab [Units/volume] in Serum by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Brucella sp IgM-Antikörper [Einheiten/Volumen] in Serum mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="63465-9"/>
+        <display value="Brucella sp DNA [Presence] in Cerebral spinal fluid by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Brucella sp DNA [Nachweis] in Zerebrospinalflüssigkeit mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="66485-4"/>
+        <display value="Brucella sp IgG and IgM [Interpretation] in Serum"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Brucella sp IgG- und IgM-Antikörper [Interpretation] in Serum"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="72307-2"/>
+        <display value="Brucella sp IgG Ab [Titer] in Serum --2nd specimen"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Brucella sp IgG-Antikörper [Titer] in Serum --2. Probenmaterial"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="72308-0"/>
+        <display value="Brucella sp IgG Ab [Titer] in Serum --1st specimen"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Brucella sp IgG-Antikörper [Titer] in Serum --1. Probenmaterial"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="75756-7"/>
+        <display value="Bacteria identified in Isolate by MS.MALDI-TOF"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Bakterien identifiziert in Isolat mit MS.MALDI-TOF"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="91895-3"/>
+        <display value="Bacterial strain [Type] in Isolate by Sequencing"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Bakterienstamm [Typ] in Isolat mit Sequenzierung"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="90246-0"/>
+        <display value="Bacterial whole genome [Nucleotide sequence] in Isolate by Sequencing"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Bakterielles Gesamtgenom [Nukleotidsequenz] in Isolat mit Sequenzierung"/>
+        </designation>
+      </concept>
+    </include>
+    <include>
+      <valueSet value="https://demis.rki.de/fhir/ValueSet/resistance"/>
+    </include>
+    <include>
+      <valueSet value="https://demis.rki.de/fhir/ValueSet/resistanceGene"/>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,1295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="resistanceGene"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/resistanceGene"/>
+  <version value="1.0.0"/>
+  <name value="ResistanceGene"/>
+  <title value="Resistenzdeterminante"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-11-03"/>
+  <publisher value="Robert Koch-Institut"/>
+  <description value="Das ValueSet ResistanceGene enthält die Codes für die Resistenzdeterminanten."/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <version value="2.76"/>
+      <concept>
+        <code value="101576-7"/>
+        <display value="Bacterial gyrB gene drug resistance mutation [Identifier] by Molecular method"/>
+      </concept>
+      <concept>
+        <code value="77666-6"/>
+        <display value="Methicillin resistance mecA mRNA [Presence] by FISH in Positive blood culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Methicillin-Resistenz mecA-mRNA [Nachweis] in positiver Blutkultur mit Fluoreszenz-in-situ-Hybridisierung (FISH)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="101123-8"/>
+        <display value="Bacterial carbapenem resistance blaIMI gene [Presence] by Molecular method"/>
+      </concept>
+      <concept>
+        <code value="101124-6"/>
+        <display value="Bacterial carbapenem resistance blaIMI+blaNMC genes [Presence] by Molecular method"/>
+      </concept>
+      <concept>
+        <code value="101125-3"/>
+        <display value="Bacterial carbapenem resistance blaOXA-235-like gene [Presence] by Molecular method"/>
+      </concept>
+      <concept>
+        <code value="101126-1"/>
+        <display value="Bacterial carbapenem resistance blaOXA-24+blaOXA-40 genes [Presence] by Molecular method"/>
+      </concept>
+      <concept>
+        <code value="101127-9"/>
+        <display value="Bacterial carbapenem resistance blaSIM gene [Presence] by Molecular method"/>
+      </concept>
+      <concept>
+        <code value="33634-7"/>
+        <display value="Mycobacterium tuberculosis rifAMPin resistance gene [Identifier] in Sputum by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis Rifampicin-Resistenzgen [Nachweis oder Identität] in Sputum mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="46244-0"/>
+        <display value="Mycobacterium tuberculosis complex rpoB gene rifAMPin resistance mutation identified by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis-Komplex rpoB-Gen Mutation zu Rifampicin-Resistenz identifiziert, molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="46245-7"/>
+        <display value="Mycobacterium tuberculosis pncA gene pyrazinamide resistance mutation [Identifier] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis pncA-Gen Mutation zu Pyrazinamid-Resistenz [Nachweis oder Identität], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="46246-5"/>
+        <display value="Mycobacterium tuberculosis katG gene isoniazid high level resistance mutation [Identifier] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis katG-Gen Mutation zu hoher Isoniazid-Resistenz [Nachweis oder Identität], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="46247-3"/>
+        <display value="Mycobacterium tuberculosis embB gene ethambutol resistance mutation [Identifier] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis embB-Gen Mutation zu Ethambutol-Resistenz [Nachweis oder Identität], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="48175-4"/>
+        <display value="Mycobacterium tuberculosis katG + inhA gene isoniazid resistance mutation [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis katG + inhA-Gene Mutation zu Isoniazid-Resistenz [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="48813-0"/>
+        <display value="Methicillin resistance mecA gene [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Methicillin-Resistenz mecA-Gen [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="48814-8"/>
+        <display value="Vancomycin resistance vanA gene [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Vancomycin-Resistenz vanA-Gen [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="48816-3"/>
+        <display value="Staphylococcus aureus Panton-Valentine leukocidin gene [Presence] in Isolate or Specimen by Molecular genetics method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Staphylococcus aureus Panton-Valentine-leukocidin-Gene [Nachweis] in Isolat oder Probenmaterial, molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="49617-4"/>
+        <display value="Carbapenem resistance blaKPC gene [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Carbapenem-Resistenz blaKPC-Gen [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="62256-3"/>
+        <display value="Aminoglycoside resistance aacA gene [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Aminoglykosid-Resistenz aacA-Gen [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="62258-9"/>
+        <display value="Erythromyin+clindamycin resistance ermA + ermC genes [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Erythromyin+Clindamycin-Resistenz ermA + ermC-Gene [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="62260-5"/>
+        <display value="Tetracycline resistance tetK + tetM genes [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Tetracyclin-Resistenz tetK + tetM-Gene [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="62261-3"/>
+        <display value="Vancomycin resistance vanA + vanB genes [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Vancomycin-Resistenz vanA + vanB-Gene [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="63072-3"/>
+        <display value="Mycobacterium tuberculosis inhA gene isoniazid low level resistance mutation [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis inhA-Gen Mutation zu geringer Isoniazid-Resistenz [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="63368-5"/>
+        <display value="Carbapenem resistance genes [Identifier] by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Carbapenem-Resistenzgene [Nachweis oder Identität] mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="69379-6"/>
+        <display value="Vancomycin resistance vanA and vanB and vanC1 and vanC2 genes [Identifier] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Vancomycin-Resistenz vanA und vanB und vanC1 und vanC2-Gene [Nachweis oder Identität], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="72276-9"/>
+        <display value="Mycobacterium tuberculosis gyrA gene fluoroquinolone resistance mutation [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis gyrA-Gen Mutation zu Fluorchinolon-Resistenz [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="72421-1"/>
+        <display value="Vancomycin resistance vanB gene [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Vancomycin-Resistenz vanB-Gen [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="72836-0"/>
+        <display value="Vancomycin resistance vanC2+vanC3 genes [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Vancomycin-Resistenz vanC2+vanC3-Gene [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="72837-8"/>
+        <display value="Vancomycin resistance vanC1 gene [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Vancomycin-Resistenz vanC1-Gen [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="72863-4"/>
+        <display value="Mycobacterium leprae gyrB gene fluoroquinolone resistance mutation [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium leprae gyrB-Gen Mutation zu Fluorchinolon-Resistenz [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="72864-2"/>
+        <display value="Mycobacterium tuberculosis rpsL+rrs genes aminoglycoside resistance mutation [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis rpsL+rrs-Gene Mutation zu Aminoglykosid-Resistenz [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="72865-9"/>
+        <display value="Mycobacterium tuberculosis ethB gene ethionamide resistance mutation [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis ethB-Gen Mutation zu Ethionamid-Resistenz [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="72866-7"/>
+        <display value="Mycobacterium tuberculosis ethA gene ethionamide resistance mutation [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis ethA-Gen Mutation zu Ethionamid-Resistenz [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="72867-5"/>
+        <display value="Mycobacterium tuberculosis gyrB gene fluoroquinolone resistance mutation [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis gyrB-Gen Mutation zu Fluorchinolon-Resistenz [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="72868-3"/>
+        <display value="Mycobacterium leprae folP1 gene dapsone resistance mutation [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium leprae folP1-Gen Mutation zu Dapson-Resistenz [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="72869-1"/>
+        <display value="Mycobacterium leprae gyrA gene fluoroquinolone resistance mutation [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium leprae gyrA-Gen Mutation zu Fluorchinolon-Resistenz [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="72870-9"/>
+        <display value="Mycobacterium leprae rpoB gene rifAMPin resistance mutation [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium leprae rpoB-Gen Mutation zu Rifampicin-Resistenz [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="72887-3"/>
+        <display value="Staphylococcus aureus methicillin resistance SCCmec [Presence] in Nose by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Staphylococcus aureus Methicillin-Resistenz SCCmec [Nachweis] in Nase mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="73982-1"/>
+        <display value="Carbapenem resistance blaNDM gene [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Carbapenem-Resistenz blaNDM-Gen [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="75753-4"/>
+        <display value="Vancomycin resistance vanD gene [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Vancomycin-Resistenz vanD-Gen [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="77682-3"/>
+        <display value="Staphylococcus aureus methicillin resistance SCCmec+orfX junction [Presence] in Nose by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Staphylococcus aureus Methicillin-Resistenz SCCmec+orfX junction [Nachweis] in Nase mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="77734-2"/>
+        <display value="Mycobacterium abscessus complex clarithromycin resistance erm(41) full length gene [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium-abscessus-Komplex Clarithromycin-Resistenz erm(41)-Gen in voller Länge [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="77735-9"/>
+        <display value="Mycobacterium abscessus complex clarithromycin resistance erm(41) truncated gene [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium-abscessus-Komplex Clarithromycin-Resistenz verkürztes erm(41)- Gen [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="77736-7"/>
+        <display value="Mycobacterium abscessus complex clarithromycin resistance erm(41) gene [Interpretation] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium abscessus-Komplex Clarithromycin-Resistenz erm(41)-Gen [Interpretation], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="85498-4"/>
+        <display value="Carbapenem resistance blaIMP gene [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Carbapenem-Resistenz blaIMP-Gen [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="85501-5"/>
+        <display value="Carbapenem resistance blaVIM gene [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Carbapenem-Resistenz blaVIM-Gen [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="85503-1"/>
+        <display value="Carbapenem resistance blaOXA-48 gene [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Carbapenem-Resistenz blaOXA-48-Gen [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="85786-2"/>
+        <display value="Methicillin resistance mecA gene [Presence] by NAA with non-probe detection in Positive blood culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Methicillin-Resistenz mecA-Gen [Nachweis] in positiver Blutkultur mit Nukleinsäureamplifikation mit Detektion ohne Sonde"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="85787-0"/>
+        <display value="Vancomycin resistance vanA + vanB genes [Presence] by NAA with non-probe detection in Positive blood culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Vancomycin-Resistenz vanA + vanB-Gene [Nachweis] in positiver Blutkultur mit Nukleinsäureamplifikation mit Detektion ohne Sonde"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="85822-5"/>
+        <display value="Beta-lactam resistance AmpC blaCMY+blaMOX genes [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Beta-Lactam-Resistenz AmpC blaCMY+blaMOX-Gene [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="85823-3"/>
+        <display value="Carbapenem resistance blaGES gene [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Carbapenem-Resistenz blaGES-Gen [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="85825-8"/>
+        <display value="Carbapenem resistance blaOXA-23-like gene [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Carbapenem-Resistenz blaOXA-23-ähnliches Gen [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="85826-6"/>
+        <display value="Carbapenem resistance blaOXA-24-like gene [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Carbapenem-Resistenz blaOXA-24-ähnliches Gen [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="85827-4"/>
+        <display value="Carbapenem resistance bla OXA-48-like gene [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Carbapenem-Resistenz blaOXA-48-ähnliches Gen [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="85828-2"/>
+        <display value="Carbapenem resistance blaOXA-58-like gene [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Carbapenem-Resistenz blaOXA-58-ähnliches Gen [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="85829-0"/>
+        <display value="Carbapenem resistance blaSPM gene [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Carbapenem-Resistenz blaSPM-Gen [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="85831-6"/>
+        <display value="Beta-lactam resistance ESBL blaBEL gene [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Beta-Lactam-Resistenz ESBL blaBEL-Gen [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="85832-4"/>
+        <display value="Beta-lactam resistance ESBL blaCTX-M-1 Group gene [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Beta-Lactam-Resistenz ESBL blaCTX-M-1-Gruppe-Gen [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="85833-2"/>
+        <display value="Carbapenem resistance blaGIM gene [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Carbapenem-Resistenz blaGIM-Gen [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="85834-0"/>
+        <display value="Beta-lactam resistance ESBL blaCTX-M-9 Group gene [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Beta-Lactam-Resistenz ESBL blaCTX-M-9-Gruppe-Gen [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="85835-7"/>
+        <display value="Beta-lactam resistance ESBL blaCTX-M-8+blaCTX-M-25 Group genes [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Beta-Lactam-Resistenz ESBL blaCTX-M-8+blaCTX-M-25-Gruppen-Gene [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="85836-5"/>
+        <display value="Beta-lactam resistance ESBL blaGES gene [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Beta-Lactam-Resistenz ESBL blaGES-Gen [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="85837-3"/>
+        <display value="Beta-lactam resistance ESBL blaPER gene [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Beta-Lactam-Resistenz ESBL blaPER-Gen [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="85838-1"/>
+        <display value="Beta-lactam resistance ESBL blaSHV gene [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Beta-Lactam-Resistenz ESBL blaSHV-Gen [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="85839-9"/>
+        <display value="Beta-lactam resistance ESBL blaTEM gene [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Beta-Lactam-Resistenz ESBL blaTEM-Gen [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="85840-7"/>
+        <display value="Beta-lactam resistance ESBL blaVEB gene [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Beta-Lactam-Resistenz ESBL blaVEB-Gen [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="85841-5"/>
+        <display value="Beta-lactam resistance AmpC blaACC gene [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Beta-Lactam-Resistenz AmpC blaACC-Gen [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="85842-3"/>
+        <display value="Beta-lactam resistance AmpC blaACT+blaMIR genes [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Beta-Lactam-Resistenz AmpC blaACT+blaMIR-Gene [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="85843-1"/>
+        <display value="Beta-lactam resistance AmpC blaFOX gene [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Beta-Lactam-Resistenz AmpC blaFOX-Gen [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="85844-9"/>
+        <display value="Beta-lactam resistance ESBL blaCTX-M-2 Group gene [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Beta-Lactam-Resistenz ESBL blaCTX-M-2-Gruppe-Gen [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="86221-9"/>
+        <display value="Colistin resistance mcr-1 gene [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Colistin-Resistenz mcr-1-Gen [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="86620-2"/>
+        <display value="Methicillin resistance mecA+mecC genes [Presence] in Nose by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Methicillin-Resistenz mecA+mecC-Gene [Nachweis] in Nase mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="86621-0"/>
+        <display value="Methicillin resistance mecC gene [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Methicillin-Resistenz mecC-Gen [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="86712-7"/>
+        <display value="Carbapenem resistance blaOXA gene [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Carbapenem-Resistenz blaOXA-Gen [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="86713-5"/>
+        <display value="Carbapenem resistance blaOXA-134-like gene [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Carbapenem-Resistenz blaOXA-134-ähnliches Gen [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="86714-3"/>
+        <display value="Carbapenem resistance blaOXA-51-like gene [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Carbapenem-Resistenz blaOXA-51-ähnliches Gen [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="86930-5"/>
+        <display value="Carbapenemase [Presence] in Isolate"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Carbapenemase [Nachweis] in Isolat"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="88250-6"/>
+        <display value="Cephalosporin resistance blaCTX-M gene [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cephalosporin-Resistenz blaCTX-M-Gen [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="88251-4"/>
+        <display value="Methicillin resistance mecA gene [Presence] by Probe in Positive blood culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Methicillin-Resistenz mecA-Gen [Nachweis] in positiver Blutkultur mit Sonde"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="88252-2"/>
+        <display value="Vancomycin resistance vanA gene [Presence] by Probe in Positive blood culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Vancomycin-Resistenz vanA-Gen [Nachweis] in positiver Blutkultur mit Sonde"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="88253-0"/>
+        <display value="Vancomycin resistance vanB gene [Presence] by Probe in Positive blood culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Vancomycin-Resistenz vanB-Gen [Nachweis] in positiver Blutkultur mit Sonde"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="89314-9"/>
+        <display value="Bacterial 23S rRNA gene azithromycin resistance mutation [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Bakterielles 23S rRNA-Gen Mutation zu Azithromycin-Resistenz [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="89371-9"/>
+        <display value="MTB complex DNA and rpoB RIF resistance mutation panel [Presence]"/>
+      </concept>
+      <concept>
+        <code value="89372-7"/>
+        <display value="Mycobacterium tuberculosis complex rpoB gene rifAMPin resistance mutation [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis-Komplex rpoB-Gen Mutation zu Rifampicin-Resistenz [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="92968-7"/>
+        <display value="Methicillin resistance mecA+mecC genes [Presence] in Isolate or Specimen by Molecular genetics method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Methicillin-Resistenz mecA+mecC-Gene [Nachweis] in Isolat oder Probenmaterial, molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="93390-3"/>
+        <display value="Carbapenem resistance blaOXA-23-like+blaOXA-48-like genes [Presence] in Isolate or Specimen by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Carbapenem-Resistance blaOXA-23-like+blaOXA-48-ähnliches Gene [Nachweis] in Isolat oder Probenmaterial, molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="93699-7"/>
+        <display value="Beta-lactam resistance AmpC blaCMY-2 gene [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Beta-Lactam-Resistenz AmpC blaCMY-2-Gen [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="93700-3"/>
+        <display value="Beta-lactam resistance AmpC blaDHA gene [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Beta-Lactam-Resistenz AmpC blaDHA-Gen [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="93701-1"/>
+        <display value="Colistin resistance mcr-2 gene [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Colistin-Resistenz mcr-2-Gen [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="94054-4"/>
+        <display value="Bacterial katG gene drug resistance mutation [Identifier] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Arzneimittel-Resistenzmutation im bakteriellen katG-Gen [Nachweis oder Identität], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="94055-1"/>
+        <display value="Bacterial inhA gene drug resistance mutation [Identifier] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Arzneimittel-Resistenzmutation im bakteriellen inhA-Gen [Nachweis oder Identität], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="94056-9"/>
+        <display value="Bacterial fabG1 gene drug resistance mutation [Identifier] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Arzneimittel-Resistenzmutation im bakteriellen fabG1-Gen [Nachweis oder Identität], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="94057-7"/>
+        <display value="Bacterial ahpC gene drug resistance mutation [Identifier] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Arzneimittel-Resistenzmutation im bakteriellen ahpC-Gen [Nachweis oder Identität], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="94058-5"/>
+        <display value="Bacterial embB gene drug resistance mutation [Identifier] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Arzneimittel-Resistenzmutation im bakteriellen embB-Gen [Nachweis oder Identität], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="94059-3"/>
+        <display value="Bacterial pncA gene drug resistance mutation [Identifier] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Arzneimittel-Resistenzmutation im bakteriellen pncA-Gen [Nachweis oder Identität], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="94060-1"/>
+        <display value="Bacterial gyrA gene drug resistance mutation [Identifier] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Arzneimittel-Resistenzmutation im bakteriellen gyrA-Gen [Nachweis oder Identität], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="94061-9"/>
+        <display value="Bacterial gidB gene drug resistance mutation [Identifier] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Arzneimittel-Resistenzmutation im bakteriellen gidB-Gen [Nachweis oder Identität], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="94062-7"/>
+        <display value="Bacterial rrs gene drug resistance mutation [Identifier] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Arzneimittel-Resistenzmutation im bakteriellen rrs-Gen [Nachweis oder Identität], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="94063-5"/>
+        <display value="Bacterial rpsL gene drug resistance mutation [Identifier] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Arzneimittel-Resistenzmutation im bakteriellen rpsL-Gen [Nachweis oder Identität], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="94064-3"/>
+        <display value="Bacterial eis gene drug resistance mutation [Identifier] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Arzneimittel-Resistenzmutation im bakteriellen eis-Gen [Nachweis oder Identität], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="94065-0"/>
+        <display value="Bacterial rpoB gene drug resistance mutation [Identifier] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Arzneimittel-Resistenzmutation im bakteriellen rpoB-Gen [Nachweis oder Identität], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="95540-1"/>
+        <display value="Carbapenem resistance blaIMP+blaVIM genes [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Carbapenem-Resistenz blaIMP+blaVIM-Gene [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="95809-0"/>
+        <display value="Carbapenem resistance genes [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Carbapenem-Resistenzgene [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="96309-0"/>
+        <display value="Methicillin resistance mecA+mecC genes+SCCmec+OrfX junction [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Methicillin-Resistenz mecA+mecC-Gene+SCCmec+OrfX junction [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="98063-1"/>
+        <display value="Beta-lactam resistance ESBL blaCTX-M-15 gene [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Beta-Lactam-Resistenz ESBL blaCTX-M-15-Gen [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="98064-9"/>
+        <display value="Beta-lactam resistance ESBL blaCTX-M-14 gene [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Beta-Lactam-Resistenz ESBL blaCTX-M-14-Gen [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="98065-6"/>
+        <display value="Carbapenem resistance blaOXA-143 gene [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Carbapenem-Resistenz blaOXA-143-Gen [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="98066-4"/>
+        <display value="Colistin resistance mcr-3+mcr-4+mcr-5 genes [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Colistin-Resistenz mcr-3+mcr-4+mcr-5-Gene [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="99034-1"/>
+        <display value="Trimethoprim resistance dfrA1 gene [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Bakterielle Trimethoprim-Resistenz dfrA1-Gen [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="99035-8"/>
+        <display value="Trimethoprim resistance dfrA5 gene [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Bakterielle Trimethoprim-Resistenz dfrA5-Gen [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="99036-6"/>
+        <display value="Trimethoprim resistance dfrA7+dfrA17 genes [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Bakterielle Trimethoprim-Resistenz dfrA7+dfrA17-Gene [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="99037-4"/>
+        <display value="Trimethoprim dfrA12 gene [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Bakterielle Trimethoprim-Resistenz dfrA12-Gen [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="PathogenDetectionSequence" />
+  <url value="https://demis.rki.de/fhir/StructureDefinition/PathogenDetectionSequence" />
+  <version value="1.0.0" />
+  <name value="PathogenDetectionSequence" />
+  <title value="Sequenz-Erregernachweis" />
+  <status value="active" />
+  <date value="2023-07-20" />
+  <description value="Der Sequenz-Erregernachweis enthält die Angaben über die erfolgte Sequenzierung mit dem Ergebnis der Spezies- oder Variantenbestimmung. Für die Übermittlung sind die für die DEMIS-Labormeldung (https://simplifier.net/demis) erregerspezifischen ValueSets zu verwenden." />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="sct-concept" />
+    <uri value="http://snomed.info/conceptdomain" />
+    <name value="SNOMED CT Concept Domain Binding" />
+  </mapping>
+  <mapping>
+    <identity value="sct-attr" />
+    <uri value="http://snomed.org/attributebinding" />
+    <name value="SNOMED CT Attribute Binding" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="true" />
+  <type value="Observation" />
+  <baseDefinition value="https://demis.rki.de/fhir/StructureDefinition/PathogenDetection" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation.subject">
+      <path value="Observation.subject" />
+      <short value="Betroffene Person (nichtnamentlich)" />
+      <definition value="Betroffene Person (nichtnamentlich)" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/NotifiedPersonNotByName" />
+        <aggregation value="bundled" />
+      </type>
+    </element>
+    <element id="Observation.specimen">
+      <path value="Observation.specimen" />
+      <short value="Verweis auf die dem Labortest zugrundeliegende Sequenz-Probe." />
+      <definition value="Verweis auf die dem Labortest zugrundeliegende Sequenz-Probe. Über die Sequenz-Probe können Angaben ... gemacht werden." />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/SpecimenSequence" />
+        <aggregation value="bundled" />
+      </type>
+    </element>
+    <element id="Observation.device">
+      <path value="Observation.device" />
+      <short value="Verweis auf das für die Sequenzierung verwendete Gerät" />
+      <definition value="Verweis auf das für die Sequenzierung verwendete Gerät" />
+      <min value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/SequencingDevice"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Observation.device.reference">
+      <path value="Observation.device.reference" />
+      <min value="1" />
+    </element>
+    <element id="Observation.derivedFrom">
+      <path value="Observation.derivedFrom" />
+      <short value="Verweis auf die Sequenz" />
+      <definition value="Verweis auf die Sequenz" />
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/Sequence" />
+      </type>
+    </element>
+    <element id="Observation.derivedFrom.reference">
+      <path value="Observation.derivedFrom.reference" />
+      <min value="1" />
+    </element>
+  </differential>
+</StructureDefinition>

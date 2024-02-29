@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="NotificationLaboratoryCVDP-example" />
+  <meta>
+    <profile value="https://demis.rki.de/fhir/StructureDefinition/NotificationLaboratory" />
+  </meta>
+  <identifier>
+    <system value="https://demis.rki.de/fhir/NamingSystem/NotificationId" />
+    <value value="bc6a490d-7221-5dbf-8d00-0617359b78fb" />
+  </identifier>
+  <status value="final" />
+  <type>
+    <coding>
+      <system value="http://loinc.org" />
+      <code value="34782-3" />
+      <display value="Infectious disease Note" />
+    </coding>
+  </type>
+  <category>
+    <coding>
+      <system value="http://loinc.org" />
+      <code value="11502-2" />
+      <display value="Laboratory report" />
+    </coding>
+  </category>
+  <subject>
+    <reference value="Patient/61ebe359-bfdc-4613-8bf2-c5e300945f0n17" />
+  </subject>
+  <date value="2020-04-16" />
+  <author>
+    <reference value="PractitionerRole/61ebe359-bfdc-4613-8bf2-c5e300945f0n18" />
+  </author>
+  <title value="SARS-CoV-2-Erregernachweismeldung" />
+  <relatesTo>
+    <code value="appends" />
+    <targetReference>
+      <type value="Composition" />
+      <identifier>
+        <system value="https://demis.rki.de/fhir/NamingSystem/NotificationId" />
+        <value value="bc6a490d-7221-5dbf-8d00-0617359b78fb" />
+      </identifier>
+    </targetReference>
+  </relatesTo>
+  <section>
+    <code>
+      <coding>
+        <system value="http://loinc.org" />
+        <code value="11502-2" />
+        <display value="Laboratory report" />
+      </coding>
+    </code>
+    <entry>
+      <reference value="DiagnosticReport/61ebe359-bfdc-4613-8bf2-c5e300945f0n19" />
+    </entry>
+  </section>
+</Composition>

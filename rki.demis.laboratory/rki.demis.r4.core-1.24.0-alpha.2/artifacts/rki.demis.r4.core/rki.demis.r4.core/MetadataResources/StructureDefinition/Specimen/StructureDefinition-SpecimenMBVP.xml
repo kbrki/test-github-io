@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="SpecimenMBVP"/>
+  <url value="https://demis.rki.de/fhir/StructureDefinition/SpecimenMBVP"/>
+  <version value="1.2.0"/>
+  <name value="SpecimenMBVP"/>
+  <title value="Probe für Marburgvirus"/>
+  <status value="active"/>
+  <date value="2023-05-05"/>
+  <description value="Die Probe für Marburgvirus spezifiziert die Probe hinsichtlich des Probenmaterials für Marburgvirus."/>
+  <fhirVersion value="4.0.1"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="Specimen"/>
+  <baseDefinition value="https://demis.rki.de/fhir/StructureDefinition/Specimen"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Specimen.type">
+      <path value="Specimen.type"/>
+      <definition value="Art des Probenmaterials. Der Wert muss entsprechend des vom RKI definierten ValueSets (https://demis.rki.de/fhir/ValueSet/materialMBVP) im coding Element dargestellt werden."/>
+    </element>
+    <element id="Specimen.type.coding">
+      <path value="Specimen.type.coding"/>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="https://demis.rki.de/fhir/ValueSet/materialMBVP"/>
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>

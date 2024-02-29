@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="laboratoryTestMPXP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/laboratoryTestMPXP"/>
+  <version value="1.6.0"/>
+  <name value="LaboratoryTestMPXP"/>
+  <title value="Labortest für Orthopockenviren (Mpoxvirus)"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-11-01"/>
+  <publisher value="Robert Koch-Institut"/>
+  <description value="Das ValueSet LaboratoryTestMPXP enthält die Codes der Labortests für Orthopockenviren (Mpoxvirus)."/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <version value="2.76"/>
+      <concept>
+        <code value="100370-6"/>
+        <display value="Orthopoxvirus DNA [Identifier] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Orthopoxvirus DNA [Nachweis oder Identität] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="100434-0"/>
+        <display value="Orthopoxvirus.non-variola DNA [Presence] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Orthopoxvirus.nicht-variola DNA [Nachweis] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="100891-1"/>
+        <display value="Orthopoxvirus IgG Ab [Presence] in Serum or Plasma by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Orthopoxvirus IgG-Antikörper [Nachweis] in Serum oder Plasma mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="100892-9"/>
+        <display value="Orthopoxvirus IgM Ab [Presence] in Serum or Plasma by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Orthopoxvirus IgM-Antikörper [Nachweis] in Serum oder Plasma mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="101003-2"/>
+        <display value="Monkeypox virus clade [Type] in Specimen by Sequencing"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Affenpocken-Virus-Klade [Typ] in Probenmaterial mit Sequenzierung"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="101004-0"/>
+        <display value="Monkeypox virus lineage [Type] in Specimen by Sequencing"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Affenpocken-Virus-Abstammungslinie [Nachweis] in Probenmaterial mit Sequenzierung"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="100383-9"/>
+        <display value="Monkeypox virus DNA [Presence] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Affenpocken-Virus DNA [Nachweis] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="100888-7"/>
+        <display value="Monkeypox virus clade II DNA [Presence] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Affenpocken-Virus Klade II DNA [Nachweis] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="100889-5"/>
+        <display value="Monkeypox virus clade I DNA [Presence] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Affenpocken-Virus Klade I DNA [Nachweis] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="10700-3"/>
+        <display value="Orthopoxvirus [Identifier] in Skin by Electron microscopy"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Orthopoxvirus [Nachweis oder Identität] in Haut mit Elektronenmikroskopie"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="41853-3"/>
+        <display value="Orthopoxvirus DNA [Presence] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Orthopoxvirus DNA [Nachweis] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

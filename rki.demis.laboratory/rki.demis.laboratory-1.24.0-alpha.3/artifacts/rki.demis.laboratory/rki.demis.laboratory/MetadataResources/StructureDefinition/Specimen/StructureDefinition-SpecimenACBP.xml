@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="SpecimenACBP"/>
+  <url value="https://demis.rki.de/fhir/StructureDefinition/SpecimenACBP"/>
+  <version value="1.3.0"/>
+  <name value="SpecimenACBP"/>
+  <title value="Probe für Acinetobacter spp. bei Nachweis einer Carbapenemase-Determinante oder mit verminderter Empfindlichkeit gegenüber Carbapenemen außer bei natürlicher Resistenz; Meldepflicht nur bei Infektion oder Kolonisation."/>
+  <status value="active"/>
+  <date value="2023-10-30"/>
+  <description value="Die Probe für Acinetobacter spp. spezifiziert die Probe hinsichtlich des Probenmaterials für Acinetobacter spp. bei Nachweis einer Carbapenemase-Determinante oder mit verminderter Empfindlichkeit gegenüber Carbapenemen außer bei natürlicher Resistenz; Meldepflicht nur bei Infektion oder Kolonisation.."/>
+  <fhirVersion value="4.0.1"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="Specimen"/>
+  <baseDefinition value="https://demis.rki.de/fhir/StructureDefinition/Specimen"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Specimen.meta">
+      <path value="Specimen.meta"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Specimen.meta.profile">
+      <path value="Specimen.meta.profile"/>
+      <min value="1"/>
+      <max value="1"/>
+      <fixedCanonical value="https://demis.rki.de/fhir/StructureDefinition/SpecimenACBP"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Specimen.type">
+      <path value="Specimen.type"/>
+      <definition value="Art des Probenmaterials. Der Wert muss entsprechend des vom RKI definierten ValueSets (https://demis.rki.de/fhir/ValueSet/materialACBP) im coding Element dargestellt werden."/>
+    </element>
+    <element id="Specimen.type.coding">
+      <path value="Specimen.type.coding"/>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="https://demis.rki.de/fhir/ValueSet/materialACBP"/>
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>

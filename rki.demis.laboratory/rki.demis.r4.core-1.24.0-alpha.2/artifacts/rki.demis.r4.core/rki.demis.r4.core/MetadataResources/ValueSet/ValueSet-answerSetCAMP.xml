@@ -1,0 +1,891 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetCAMP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetCAMP"/>
+  <version value="1.4.0"/>
+  <name value="AnswerSetCAMP"/>
+  <title value="AnswerSet für Campylobacter spp. (darmpathogen)"/>
+  <status value="active"/>
+  <date value="2023-05-30"/>
+  <description value="Das ValueSet AnswerSetCAMP enthält die Codes der Answer-Codes für Campylobacter spp. (darmpathogen)."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="447797004"/>
+        <display value="Campylobacter peloridis (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Campylobacter peloridis (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Campylobacter peloridis"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="715324000"/>
+        <display value="Campylobacter species, not Campylobacter jejuni (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Campylobacter species, not Campylobacter jejuni (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Campylobacter Species, nicht Campylobacter jejuni"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="243357001"/>
+        <display value="Campylobacter sputorum biovar fecalis (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Campylobacter sputorum biovar fecalis (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Campylobacter sputorum, Biovar fecalis"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="448403005"/>
+        <display value="Campylobacter sputorum biovar paraureolyticus (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Campylobacter sputorum biovar paraureolyticus (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Campylobacter sputorum, Biovar paraureolyticus"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="445776001"/>
+        <display value="Campylobacter subantarcticus (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Campylobacter subantarcticus (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Campylobacter subantarcticus"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="450602004"/>
+        <display value="Campylobacter ureolyticus (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Campylobacter ureolyticus (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Campylobacter ureolyticus"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="450609008"/>
+        <display value="Campylobacter volucris (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Campylobacter volucris (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Campylobacter volucris"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="372380008"/>
+        <display value="Campylobacter-like species (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Campylobacter-like species (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Campylobacter-ähnliche Species"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="114245005"/>
+        <display value="Family Campylobacteraceae (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Family Campylobacteraceae (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Familie Campylobacteraceae"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="726497006"/>
+        <display value="Fluoroquinolone resistant Campylobacter (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Fluoroquinolone resistant Campylobacter (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Fluoroquinolon-resistente Campylobacter"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="35408001"/>
+        <display value="Genus Campylobacter (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Genus Campylobacter (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Campylobacter spp."/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="425417007"/>
+        <display value="Order Campylobacterales (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Order Campylobacterales (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Ordnung Campylobacterales"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="710331003"/>
+        <display value="Anaerobic Campylobacter species (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Anaerobic Campylobacter species (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Anaerobe Campylobacter Species"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="448130009"/>
+        <display value="Campylobacter avium (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Campylobacter avium (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Campylobacter avium"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="447727006"/>
+        <display value="Campylobacter canadensis (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Campylobacter canadensis (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Campylobacter canadensis"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="447728001"/>
+        <display value="Campylobacter cuniculorum (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Campylobacter cuniculorum (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Campylobacter cuniculorum"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="1003776009"/>
+        <display value="Campylobacter hepaticus (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Campylobacter hepaticus (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Campylobacter hepaticus"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="782519001"/>
+        <display value="Campylobacter iguaniorum (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Campylobacter iguaniorum (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Campylobacter iguaniorum"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="40614002"/>
+        <display value="Campylobacter coli (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Campylobacter coli (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Campylobacter coli"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="9892000"/>
+        <display value="Campylobacter concisus (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Campylobacter concisus (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Campylobacter concisus"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="116037008"/>
+        <display value="Campylobacter curvus (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Campylobacter curvus (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Campylobacter curvus"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="84210007"/>
+        <display value="Campylobacter fetus (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Campylobacter fetus (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Campylobacter fetus"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="64589009"/>
+        <display value="Campylobacter fetus ss. fetus (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Campylobacter fetus ss. fetus (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Campylobacter fetus Subspecies fetus"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="60817000"/>
+        <display value="Campylobacter fetus ss. venerealis (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Campylobacter fetus ss. venerealis (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Campylobacter fetus Subspecies venerealis"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="113528007"/>
+        <display value="Campylobacter gracilis (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Campylobacter gracilis (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Campylobacter gracilis"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="113522008"/>
+        <display value="Campylobacter helveticus (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Campylobacter helveticus (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Campylobacter helveticus"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="416679003"/>
+        <display value="Campylobacter hominis (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Campylobacter hominis (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Campylobacter hominis"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="9041007"/>
+        <display value="Campylobacter hyointestinalis (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Campylobacter hyointestinalis (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Campylobacter hyointestinalis"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="113527002"/>
+        <display value="Campylobacter hyointestinalis ss hyointestinalis (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Campylobacter hyointestinalis ss hyointestinalis (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Campylobacter hyointestinalis Subspecies hyointestinalis"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="432459009"/>
+        <display value="Campylobacter hyointestinalis subspecies lawsonii (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Campylobacter hyointestinalis subspecies lawsonii (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Campylobacter hyointestinalis Subspecies lawsonii"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="432460004"/>
+        <display value="Campylobacter insulaenigrae (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Campylobacter insulaenigrae (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Campylobacter insulaenigrae"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="66543000"/>
+        <display value="Campylobacter jejuni (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Campylobacter jejuni (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Campylobacter jejuni"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="113523003"/>
+        <display value="Campylobacter jejuni ss doylei (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Campylobacter jejuni ss doylei (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Campylobacter jejuni Subspecies doylei"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="113524009"/>
+        <display value="Campylobacter jejuni ss jejuni (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Campylobacter jejuni ss jejuni (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Campylobacter jejuni Subspecies jejuni"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="432537009"/>
+        <display value="Campylobacter lanienae (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Campylobacter lanienae (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Campylobacter lanienae"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="116386003"/>
+        <display value="Campylobacter lari (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Campylobacter lari (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Campylobacter lari"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="87402003"/>
+        <display value="Campylobacter mucosalis (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Campylobacter mucosalis (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Campylobacter mucosalis"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="113525005"/>
+        <display value="Campylobacter rectus (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Campylobacter rectus (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Campylobacter rectus"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="113526006"/>
+        <display value="Campylobacter showae (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Campylobacter showae (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Campylobacter showae"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="91524009"/>
+        <display value="Campylobacter sputorum (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Campylobacter sputorum (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Campylobacter sputorum"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="19552006"/>
+        <display value="Campylobacter sputorum ss. bubulus (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Campylobacter sputorum ss. bubulus (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Campylobacter sputorum Subspecies bubulus"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="58928003"/>
+        <display value="Campylobacter sputorum ss. sputorum (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Campylobacter sputorum ss. sputorum (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Campylobacter sputorum Subspecies sputorum"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="103427005"/>
+        <display value="Campylobacter upsaliensis (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Campylobacter upsaliensis (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Campylobacter upsaliensis"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="830230009"/>
+        <display value="Campylobacter fetus subspecies testudinum (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Campylobacter fetus subspecies testudinum (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Campylobacter fetus Subspecies testudinum"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="446191000"/>
+        <display value="Campylobacter lari subspecies concheus (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Campylobacter lari subspecies concheus (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Campylobacter lari Subspecies concheus"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="448945001"/>
+        <display value="Campylobacter lari subspecies lari (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Campylobacter lari subspecies lari (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Campylobacter lari Subspecies lari"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

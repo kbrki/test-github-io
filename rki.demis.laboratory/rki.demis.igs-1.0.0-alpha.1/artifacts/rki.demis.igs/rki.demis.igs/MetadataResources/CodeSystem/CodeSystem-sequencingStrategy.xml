@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="sequencingStrategy" />
+  <url value="https://demis.rki.de/fhir/CodeSystem/sequencingStrategy" />
+  <version value="1.0.0" />
+  <name value="SequencingStrategy" />
+  <title value="Sequenzierungsstrategie" />
+  <status value="active" />
+  <date value="2023-07-20" />
+  <description value="Das CodeSystem SequencingStrategy enthält die Codes für die Sequenzierungsstrategie (angelehnt an ENA)." />
+  <caseSensitive value="false" />
+  <valueSet value="https://demis.rki.de/fhir/ValueSet/sequencingStrategy" />
+  <content value="complete" />
+  <count value="36" />
+  <concept>
+    <code value="wgs"/>
+    <display value="Whole Genome Sequencing - random sequencing of the whole genome (see pubmed 10731132 for details)"/>
+  </concept>
+  <concept>
+    <code value="wga"/>
+    <display value="Whole Genome Amplification followed by random sequencing. (see pubmed 1631067,8962113 for details)"/>
+  </concept>
+  <concept>
+    <code value="wxs"/>
+    <display value="Random sequencing of exonic regions selected from the genome. (see pubmed 20111037 for details)"/>
+  </concept>
+  <concept>
+    <code value="rna-seq"/>
+    <display value="Random sequencing of whole transcriptome, also known as Whole Transcriptome Shotgun Sequencing, or WTSS). (see pubmed 18611170 for details)"/>
+  </concept>
+  <concept>
+    <code value="ssrna-seq"/>
+    <display value="Strand-specific RNA sequencing."/>
+  </concept>
+  <concept>
+    <code value="mirna-seq"/>
+    <display value="Micro RNA sequencing strategy designed to capture post-transcriptional RNA elements and include non-coding functional elements. (see pubmed 21787409 for details)"/>
+  </concept>
+  <concept>
+    <code value="ncrna-seq"/>
+    <display value="Capture of other non-coding RNA types, including post-translation modification types such as snRNA (small nuclear RNA) or snoRNA (small nucleolar RNA), or expression regulation types such as siRNA (small interfering RNA) or piRNA/piwi/RNA (piwi-interacting RNA)."/>
+  </concept>
+  <concept>
+    <code value="fl-cdna"/>
+    <display value="Full-length sequencing of cDNA templates"/>
+  </concept>
+  <concept>
+    <code value="est"/>
+    <display value="Single pass sequencing of cDNA templates"/>
+  </concept>
+  <concept>
+    <code value="hi-c"/>
+    <display value="Chromosome Conformation Capture technique where a biotin-labeled nucleotide is incorporated at the ligation junction, enabling selective purification of chimeric DNA ligation junctions followed by deep sequencing."/>
+  </concept>
+  <concept>
+    <code value="atac-seq"/>
+    <display value="Assay for Transposase-Accessible Chromatin (ATAC) strategy is used to study genome-wide chromatin accessibility. alternative method to DNase-seq that uses an engineered Tn5 transposase to cleave DNA and to integrate primer DNA sequences into the cleaved genomic DNA."/>
+  </concept>
+  <concept>
+    <code value="wcs"/>
+    <display value="Random sequencing of a whole chromosome or other replicon isolated from a genome."/>
+  </concept>
+  <concept>
+    <code value="rad-seq"/>
+    <display value="RAD sequencing"/>
+  </concept>
+  <concept>
+    <code value="clone"/>
+    <display value="Genomic clone based (hierarchical) sequencing."/>
+  </concept>
+  <concept>
+    <code value="poolclone"/>
+    <display value="Shotgun of pooled clones (usually BACs and Fosmids)."/>
+  </concept>
+  <concept>
+    <code value="amplicon"/>
+    <display value="Sequencing of overlapping or distinct PCR or RT-PCR products. For example, metagenomic community profiling using SSU rRNA."/>
+  </concept>
+  <concept>
+    <code value="cloneend"/>
+    <display value="Clone end (5’, 3’, or both) sequencing."/>
+  </concept>
+  <concept>
+    <code value="finishing"/>
+    <display value="Sequencing intended to finish (close) gaps in existing coverage."/>
+  </concept>
+  <concept>
+    <code value="chip-seq"/>
+    <display value="ChIP-seq, Chromatin ImmunoPrecipitation, reveals binding sites of specific proteins, typically transcription factors (TFs) using antibodies to extract DNA fragments bound to the target protein."/>
+  </concept>
+  <concept>
+    <code value="mnase-seq"/>
+    <display value="Identifies well-positioned nucleosomes. uses Micrococcal Nuclease (MNase) is an endo-exonuclease that processively digests DNA until an obstruction, such as a nucleosome, is reached."/>
+  </concept>
+  <concept>
+    <code value="dnase-hypersensitivity"/>
+    <display value="Sequencing of hypersensitive sites, or segments of open chromatin that are more readily cleaved by DNaseI."/>
+  </concept>
+  <concept>
+    <code value="bisulfite-seq"/>
+    <display value="MethylC-seq. Sequencing following treatment of DNA with bisulfite to convert cytosine residues to uracil depending on methylation status."/>
+  </concept>
+  <concept>
+    <code value="cts"/>
+    <display value="Concatenated Tag Sequencing"/>
+  </concept>
+  <concept>
+    <code value="mre-seq"/>
+    <display value="Methylation-Sensitive Restriction Enzyme Sequencing."/>
+  </concept>
+  <concept>
+    <code value="medip-seq"/>
+    <display value="Methylated DNA Immunoprecipitation Sequencing."/>
+  </concept>
+  <concept>
+    <code value="mbd-seq"/>
+    <display value="Methyl CpG Binding Domain Sequencing."/>
+  </concept>
+  <concept>
+    <code value="tn-seq"/>
+    <display value="Quantitatively determine fitness of bacterial genes based on how many times a purposely seeded transposon gets inserted into each gene of a colony after some time."/>
+  </concept>
+  <concept>
+    <code value="validation"/>
+    <display value="CGHub special request"/>
+  </concept>
+  <concept>
+    <code value="faire-seq"/>
+    <display value="Formaldehyde Assisted Isolation of Regulatory Elements. Reveals regions of open chromatin."/>
+  </concept>
+  <concept>
+    <code value="selex"/>
+    <display value="Systematic Evolution of Ligands by Exponential enrichment"/>
+  </concept>
+  <concept>
+    <code value="rip-seq"/>
+    <display value="Direct sequencing of RNA immunoprecipitates (includes CLIP-Seq, HITS-CLIP and PAR-CLIP)."/>
+  </concept>
+  <concept>
+    <code value="chia-pet"/>
+    <display value="Direct sequencing of proximity-ligated chromatin immunoprecipitates."/>
+  </concept>
+  <concept>
+    <code value="synthetic-long-read"/>
+    <display value="binning and barcoding of large DNA fragments to facilitate assembly of the fragment"/>
+  </concept>
+  <concept>
+    <code value="targeted-capture"/>
+    <display value="Enrichment of a targeted subset of loci."/>
+  </concept>
+  <concept>
+    <code value="tethered-chromatin-conformation-capture"/>
+    <display value="Tethered Chromatin Conformation Capture"/>
+  </concept>
+  <concept>
+    <code value="other"/>
+    <display value="Library strategy not listed."/>
+  </concept>
+</CodeSystem>

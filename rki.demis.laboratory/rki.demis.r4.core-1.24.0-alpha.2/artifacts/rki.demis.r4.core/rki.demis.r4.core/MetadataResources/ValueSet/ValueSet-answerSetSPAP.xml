@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetSPAP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetSPAP"/>
+  <version value="1.4.0"/>
+  <name value="AnswerSetSPAP"/>
+  <title value="AnswerSet für Salmonella Paratyphi; Meldepflicht für alle direkten Nachweise"/>
+  <status value="active"/>
+  <date value="2023-05-30"/>
+  <description value="Das ValueSet AnswerSetSPAP enthält die Codes der Answer-Codes für Salmonella Paratyphi; Meldepflicht für alle direkten Nachweise."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="840687007"/>
+        <display value="Multidrug-resistant Salmonella paratyphi (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Multidrug-resistant Salmonella paratyphi (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Multidrug-resistente Salmonella paratyphi"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="79128009"/>
+        <display value="Salmonella Paratyphi A (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Salmonella Paratyphi A (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Salmonella Paratyphi A"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="85908006"/>
+        <display value="Salmonella Paratyphi B (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Salmonella Paratyphi B (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Salmonella Paratyphi B"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="128388007"/>
+        <display value="Salmonella Paratyphi B var. Java (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Salmonella Paratyphi B var. Java (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Salmonella Paratyphi B, Variante Java"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="32488009"/>
+        <display value="Salmonella Paratyphi C (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Salmonella Paratyphi C (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Salmonella Paratyphi C"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

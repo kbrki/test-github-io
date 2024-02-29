@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetASTP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetASTP"/>
+  <version value="1.0.0"/>
+  <name value="AnswerSetASTP"/>
+  <title value="AnswerSet für Astroviren"/>
+  <status value="active"/>
+  <date value="2023-05-03"/>
+  <description value="Das ValueSet AnswerSetASTP enthält die Codes der Answer-Codes für Astroviren."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <code value="33160002"/>
+        <display value="Human astrovirus (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Human astrovirus (organism)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="294803071000087109"/>
+        <display value="Human astrovirus 1 (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Human astrovirus 1 (organism)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="423599005"/>
+        <display value="Genus Mamastrovirus (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Genus Mamastrovirus (organism)"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

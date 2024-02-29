@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ProcessNotificationSequenceRequestParameters" />
+  <url value="https://demis.rki.de/fhir/StructureDefinition/ProcessNotificationSequenceRequestParameters" />
+  <version value="1.1.0" />
+  <name value="ProcessNotificationSequenceRequestParameters" />
+  <title value="ProcessNotificationSequence-Eingabeparameter" />
+  <status value="active" />
+  <date value="2023-12-28" />
+  <description value="Der ProcessNotificationSequenceRequestParameter ist der Eingabeparameter für die ProcessNotificationSequence-Operation. Er enthält den Sequenz-Meldevorgang der an DEMIS übermittelt wird." />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="v2" />
+    <uri value="http://hl7.org/v2" />
+    <name value="HL7 v2 Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Parameters" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Parameters" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Parameters.meta">
+      <path value="Parameters.meta" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Parameters.meta.profile">
+      <path value="Parameters.meta.profile" />
+      <min value="1" />
+      <max value="1" />
+      <fixedCanonical value="https://demis.rki.de/fhir/StructureDefinition/ProcessNotificationSequenceRequestParameters" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Parameters.parameter">
+      <path value="Parameters.parameter" />
+	  <short value="Enthält den Sequenz-Meldevorgang der an DEMIS übermittelt wird"/>
+      <definition value="Enthält den Sequenz-Meldevorgang der an DEMIS übermittelt wird"/>
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Parameters.parameter.resource">
+      <path value="Parameters.parameter.resource" />
+      <min value="1" />
+      <type>
+        <code value="Resource" />
+        <profile value="https://demis.rki.de/fhir/StructureDefinition/NotificationBundleSequence" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

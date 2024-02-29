@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="laboratoryTestSALP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/laboratoryTestSALP"/>
+  <version value="1.7.0"/>
+  <name value="LaboratoryTestSALP"/>
+  <title value="Labortest für Salmonella (sonstige)"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-11-01"/>
+  <publisher value="Robert Koch-Institut"/>
+  <description value="Das ValueSet LaboratoryTestSALP enthält die Codes der Labortests für Salmonella (sonstige)."/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <version value="2.76"/>
+      <concept>
+        <code value="101140-2"/>
+        <display value="Salmonella sp Ag [Presence] in Stool by Rapid immunoassay"/>
+      </concept>
+      <concept>
+        <code value="101512-2"/>
+        <display value="Salmonella typhimurium DNA [Cycle Threshold #] in Specimen by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="101536-1"/>
+        <display value="Salmonella sp whole genome [Nucleotide sequence] in Isolate by Sequencing"/>
+      </concept>
+      <concept>
+        <code value="23431-0"/>
+        <display value="Salmonella gallinarum DNA [Presence] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Salmonella gallinarum DNA [Nachweis] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="23432-8"/>
+        <display value="Salmonella gallinarum rRNA [Presence] in Specimen by Probe"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Salmonella gallinarum rRNA [Nachweis] in Probenmaterial mit Sonde"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="23435-1"/>
+        <display value="Salmonella pullorum DNA [Presence] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Salmonella pullorum DNA [Nachweis] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="23436-9"/>
+        <display value="Salmonella pullorum rRNA [Presence] in Specimen by Probe"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Salmonella pullorum rRNA [Nachweis] in Probenmaterial mit Sonde"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="96313-2"/>
+        <display value="Salmonella sp DNA [Presence] by NAA with non-probe detection in Positive blood culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Salmonella sp DNA [Nachweis] in positiver Blutkultur mit Nukleinsäureamplifikation mit Detektion ohne Sonde"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="97313-1"/>
+        <display value="Salmonella sp DNA [Presence] in Stool by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Salmonella sp DNA [Nachweis] in Stuhl mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="97632-4"/>
+        <display value="Salmonella sp DNA [Presence] in Synovial fluid by NAA with non-probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Salmonella sp DNA [Nachweis] in Synovialflüssigkeit mit Nukleinsäureamplifikation mit Detektion ohne Sonde"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="17563-8"/>
+        <display value="Salmonella sp identified in Specimen by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Salmonella sp identifiziert in Probenmaterial mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="20951-0"/>
+        <display value="Salmonella sp serotype [Identifier] in Isolate by Agglutination"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Salmonella sp Serotyp [Nachweis oder Identität] in Isolat mit Agglutination"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="20953-6"/>
+        <display value="Salmonella sp identified in Tissue by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Salmonella sp identifiziert in Gewebe mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="20955-1"/>
+        <display value="Salmonella sp identified in Stool by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Salmonella sp identifiziert in Stuhl mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="23602-6"/>
+        <display value="Salmonella enteritidis [Presence] in Stool by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Salmonella enteritidis [Nachweis] in Stuhl mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="34891-2"/>
+        <display value="Salmonella enteritidis [Presence] in Specimen by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Salmonella enteritidis [Nachweis] in Probenmaterial mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="42255-0"/>
+        <display value="Salmonella and Shigella sp identified in Specimen by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Salmonella sp and Shigella sp identifiziert in Probenmaterial mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="43371-4"/>
+        <display value="Salmonella and Shigella sp identified in Stool by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Salmonella sp and Shigella sp identifiziert in Stuhl mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="48806-4"/>
+        <display value="Salmonella sp+Shigella sp+Escherichia coli enterotoxic identified in Stool by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Salmonella sp+Shigella sp+Escherichia coli enterotoxisch identifiziert in Stuhl mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="49612-5"/>
+        <display value="Salmonella sp DNA [Presence] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Salmonella sp DNA [Nachweis] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="56475-7"/>
+        <display value="Salmonella sp antigenic formula [Identifier] in Isolate by Agglutination"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Salmonella sp Antigen-Formel [Identifier] in Isolat mit Agglutination"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="59846-6"/>
+        <display value="Salmonella sp identified [Type] in Isolate"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Salmonella sp identifiziert [Typ] in Isolat"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="61370-3"/>
+        <display value="Salmonella enterica DNA [Presence] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Salmonella enterica DNA [Nachweis] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="65756-9"/>
+        <display value="Salmonella sp serovar [Type] in Isolate"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Salmonella sp Serovar [Typ] in Isolat"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="73672-8"/>
+        <display value="Salmonella sp phage type in Isolate"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Salmonella sp Phagentyp in Isolat"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="79383-6"/>
+        <display value="Salmonella sp rpoD gene [Presence] in Stool by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Salmonella sp rpoD-Gen [Nachweis] in Stuhl mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="80678-6"/>
+        <display value="Salmonella sp invA+fliC genes [Presence] in Stool by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Salmonella sp invA+fliC-Gene [Nachweis] in Stuhl mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="81657-9"/>
+        <display value="Salmonella sp spaO gene [Presence] in Stool by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Salmonella sp spaO-Gen [Nachweis] in Stuhl mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="82199-1"/>
+        <display value="Salmonella enterica+bongori DNA [Presence] in Stool by NAA with non-probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Salmonella enterica+bongori DNA [Nachweis] in Stuhl mit Nukleinsäureamplifikation mit Detektion ohne Sonde"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="82301-3"/>
+        <display value="Salmonella sp [Presence] in Stool by Culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Salmonella sp [Nachweis] in Stuhl mit Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="87394-3"/>
+        <display value="Salmonella sp DNA [Cycle Threshold #] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Salmonella sp DNA [Zyklusschwellenwert #] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="93385-3"/>
+        <display value="Salmonella sp DNA [Presence] by NAA with probe detection in Positive blood culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Salmonella sp DNA [Nachweis] in positiver Blutkultur mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="86930-5"/>
+        <display value="Carbapenemase [Presence] in Isolate"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Carbapenemase [Nachweis] in Isolat"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="75756-7"/>
+        <display value="Bacteria identified in Isolate by MS.MALDI-TOF"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Bakterien identifiziert in Isolat mit MS.MALDI-TOF"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="88462-7"/>
+        <display value="Carbapenem [Susceptibility]"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Carbapenem [Empfindlichkeit]"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="91895-3"/>
+        <display value="Bacterial strain [Type] in Isolate by Sequencing"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Bakterienstamm [Typ] in Isolat mit Sequenzierung"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="90246-0"/>
+        <display value="Bacterial whole genome [Nucleotide sequence] in Isolate by Sequencing"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Bakterielles Gesamtgenom [Nukleotidsequenz] in Isolat mit Sequenzierung"/>
+        </designation>
+      </concept>
+    </include>
+    <include>
+      <valueSet value="https://demis.rki.de/fhir/ValueSet/resistance"/>
+    </include>
+    <include>
+      <valueSet value="https://demis.rki.de/fhir/ValueSet/resistanceGene"/>
+    </include>
+  </compose>
+</ValueSet>

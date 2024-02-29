@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="SequenceAuthor" />
+  <url value="https://demis.rki.de/fhir/StructureDefinition/SequenceAuthor" />
+  <version value="1.0.0" />
+  <name value="SequenceAuthor" />
+  <title value="Verantwortlicher der Sequenz" />
+  <status value="draft" />
+  <date value="2023-07-07" />
+  <description value="Der SequenceAuthor dient der Angabe der Person/der Personen, die verantwortlich für die Sequenz ist und bei Publikationen genannt wird." />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="MolecularSequence" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="https://demis.rki.de/fhir/StructureDefinition/SequenceAuthor" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="string" />
+      </type>
+      <type>
+        <code value="HumanName" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

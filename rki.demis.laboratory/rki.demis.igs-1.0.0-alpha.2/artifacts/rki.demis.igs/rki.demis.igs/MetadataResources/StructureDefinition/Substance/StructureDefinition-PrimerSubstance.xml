@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="PrimerSubstance" />
+  <url value="https://demis.rki.de/fhir/StructureDefinition/PrimerSubstance" />
+  <version value="1.1.0" />
+  <name value="PrimerSubstance" />
+  <title value="Primer-Scheme" />
+  <status value="draft" />
+  <date value="2023-12-29" />
+  <description value="Die PrimerSubstance dient der Angabe des Primer-Scheme (z.B. ARTICv4.1), das zur Amplicon-Sequenzierung verwendet wurde. Zusätzlich kann ein Link auf die hinterlegten Sequenzen angegeben werden (z.B. github.com/...). Die Ressource wird pro Primer-Scheme einmal verwendet." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Substance" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Substance" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Substance.meta">
+      <path value="Substance.meta" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Substance.meta.profile">
+      <path value="Substance.meta.profile" />
+      <min value="1" />
+      <max value="1" />
+      <fixedCanonical value="https://demis.rki.de/fhir/StructureDefinition/PrimerSubstance" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Substance.category">
+      <path value="Substance.category" />
+      <max value="0" />
+    </element>
+    <element id="Substance.code">
+      <path value="Substance.code" />
+	  <short value="Sequenziermaterial"/>
+	  <definition value="Sequenziermaterial. Der code immer mit dem Wert &quot;primer&quot; aus dem ValueSet https://demis.rki.de/fhir/CodeSystem/sequencingSubstances im coding-Element zu belegen."/>
+      <mustSupport value="true" />
+    </element>
+    <element id="Substance.code.coding">
+      <path value="Substance.code.coding" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="https://demis.rki.de/fhir/CodeSystem/sequencingSubstances" />
+        <code value="primer" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Substance.code.text">
+      <path value="Substance.code.text" />
+      <max value="0" />
+    </element>
+    <element id="Substance.description">
+      <path value="Substance.description" />
+      <short value="Primer-Scheme" />
+      <definition value="Primer-Scheme, das zur Amplicon-Sequenzierung verwendet wurde" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Substance.instance">
+      <path value="Substance.instance" />
+      <max value="0" />
+    </element>
+    <element id="Substance.ingredient">
+      <path value="Substance.ingredient" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

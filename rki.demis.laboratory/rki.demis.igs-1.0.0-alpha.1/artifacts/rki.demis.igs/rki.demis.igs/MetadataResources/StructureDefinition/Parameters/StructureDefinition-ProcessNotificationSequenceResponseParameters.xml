@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ProcessNotificationSequenceResponseParameters" />
+  <url value="https://demis.rki.de/fhir/StructureDefinition/ProcessNotificationSequenceResponseParameters" />
+  <version value="1.0.0" />
+  <name value="ProcessNotificationSequenceResponseParameters" />
+  <title value="ProcessNotificationSequence-Ausgabeparameter" />
+  <status value="active" />
+  <date value="2023-07-22" />
+  <description value="Der ProcessNotificationSequenceResponseParameter ist der Ausgabeparameter für die ProcessNotificationSequence-Operation. Er beinhaltet die von DEMIS erstellte und ausgegebene IMS-ID (TransactionID), die Meldungs-Id (NotificationID) der ursprünglich vom Einsender der Probe erstellten Meldung (SubmitterGeneratedNotificationID), die laboreigene ID der Sequenz (LabSequenceID) und das Ergebnis der Verarbeitung (OperationOutcome)."/>
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="v2" />
+    <uri value="http://hl7.org/v2" />
+    <name value="HL7 v2 Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Parameters" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Parameters" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Parameters.parameter">
+      <path value="Parameters.parameter" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="name" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Parameters.parameter:transactionID">
+      <path value="Parameters.parameter" />
+      <sliceName value="transactionID" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Parameters.parameter:transactionID.name">
+      <path value="Parameters.parameter.name" />
+      <fixedString value="transactionID" />
+    </element>
+    <element id="Parameters.parameter.transactionID.value[x]">
+      <path value="Parameters.parameter.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="Parameters.parameter:submitterGeneratedNotificationID">
+      <path value="Parameters.parameter" />
+      <sliceName value="submitterGeneratedNotificationID" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Parameters.parameter:submitterGeneratedNotificationID.name">
+      <path value="Parameters.parameter.name" />
+      <fixedString value="submitterGeneratedNotificationID" />
+    </element>
+    <element id="Parameters.parameter.submitterGeneratedNotificationID.value[x]">
+      <path value="Parameters.parameter.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="Parameters.parameter:labSequenceID">
+      <path value="Parameters.parameter" />
+      <sliceName value="labSequenceID" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Parameters.parameter:labSequenceID.name">
+      <path value="Parameters.parameter.name" />
+      <fixedString value="labSequenceID" />
+    </element>
+    <element id="Parameters.parameter.labSequenceID.value[x]">
+      <path value="Parameters.parameter.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="Parameters.parameter:operationOutcome">
+      <path value="Parameters.parameter" />
+      <sliceName value="operationOutcome" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Parameters.parameter:operationOutcome.name">
+      <path value="Parameters.parameter.name" />
+      <fixedString value="operationOutcome" />
+    </element>
+    <element id="Parameters.parameter:operationOutcome.resource">
+      <path value="Parameters.parameter.resource" />
+      <min value="1" />
+      <type>
+        <code value="OperationOutcome" />
+        <profile value="https://demis.rki.de/fhir/StructureDefinition/ProcessNotificationResponse" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

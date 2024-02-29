@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="laboratoryReportStatus"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/laboratoryReportStatus"/>
+  <version value="1.2.0"/>
+  <name value="LaboratoryReportStatus"/>
+  <title value="Laborbericht-Status"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-09-19"/>
+  <publisher value="Robert Koch-Institut"/>
+  <description value="Das ValueSet LaboratoryReportStatus enthält die Codes der Status des Laborberichts."/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/diagnostic-report-status"/>
+      <version value="4.3.0"/>
+      <concept>
+        <code value="final"/>
+        <display value="Final"/>
+      </concept>
+      <concept>
+        <code value="preliminary"/>
+        <display value="Preliminary"/>
+      </concept>
+      <concept>
+        <code value="amended"/>
+        <display value="Amended"/>
+      </concept>
+      <concept>
+        <code value="corrected"/>
+        <display value="Corrected"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

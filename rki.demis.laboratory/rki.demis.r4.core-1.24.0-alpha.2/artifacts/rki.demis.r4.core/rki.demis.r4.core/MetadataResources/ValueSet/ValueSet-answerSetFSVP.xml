@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetFSVP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetFSVP"/>
+  <version value="1.1.0"/>
+  <name value="AnswerSetFSVP"/>
+  <title value="AnswerSet für FSME-Virus"/>
+  <status value="active"/>
+  <date value="2023-05-30"/>
+  <description value="Das ValueSet AnswerSetFSVP enthält die Codes der Answer-Codes für FSME-Virus."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="81370003"/>
+        <display value="European tick-borne encephalitis virus (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="European tick-borne encephalitis virus (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Europäische-Frühsommer-Meningoenzephalitis-Virus"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="281169009"/>
+        <display value="Kumlinge virus (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Kumlinge virus (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Kumlinge-Virus"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="243605006"/>
+        <display value="Tick-borne encephalitis virus subgroup (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Tick-borne encephalitis virus subgroup (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Frühsommer-Meningoenzephalitis-Virus-Subgruppe"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="32323003"/>
+        <display value="Tick-borne encephalitis virus (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Tick-borne encephalitis virus (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Frühsommer-Meningoenzephalitis-Virus"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="6186009"/>
+        <display value="Far Eastern tick-borne encephalitis virus (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Far Eastern tick-borne encephalitis virus (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Fernöstliche-Frühsommer-Meningoenzephalitis-Virus"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="415526006"/>
+        <display value="Siberian tick-borne encephalitis virus (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Siberian tick-borne encephalitis virus (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Sibirische-Frühsommer-Meningoenzephalitis-Virus"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

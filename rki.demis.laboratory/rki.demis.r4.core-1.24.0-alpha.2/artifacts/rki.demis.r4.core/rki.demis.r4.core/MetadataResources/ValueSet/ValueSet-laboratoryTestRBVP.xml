@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="laboratoryTestRBVP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/laboratoryTestRBVP"/>
+  <version value="1.3.0"/>
+  <name value="LaboratoryTestRBVP"/>
+  <title value="Labortest für Rabiesvirus"/>
+  <status value="active"/>
+  <date value="2023-05-04"/>
+  <description value="Das ValueSet LaboratoryTestRBVP enthält die Codes der Labortests für Rabiesvirus."/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <version value="2.74"/>
+      <concept>
+        <code value="23388-2"/>
+        <display value="Rabies virus [Presence] in Brain by Light microscopy"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Tollwut-Virus [Nachweis] in Gehirn mit Lichtmikroskopie"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="23389-0"/>
+        <display value="Rabies virus Ag [Presence] in Brain by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Tollwut-Virus-Antigen [Nachweis] in Gehirn mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="23390-8"/>
+        <display value="Rabies virus Ag [Presence] in Brain by Immune stain"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Tollwut-Virus-Antigen [Nachweis] in Gehirn mit Immunfärbung"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="23391-6"/>
+        <display value="Rabies virus Ag [Presence] in Specimen by Immune stain"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Tollwut-Virus-Antigen [Nachweis] in Probenmaterial mit Immunfärbung"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="51646-8"/>
+        <display value="Rabies virus RNA [Presence] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Tollwut-Virus-RNA [Nachweis] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="51647-6"/>
+        <display value="Rabies virus RNA [Presence] in Specimen by Probe"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Tollwut-Virus-RNA [Nachweis] in Probenmaterial mit Sonde"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="60270-6"/>
+        <display value="Rabies virus RNA [Presence] in Isolate by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Tollwut-Virus-RNA [Nachweis] in Isolat mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="6528-4"/>
+        <display value="Rabies virus Ag [Presence] in Tissue by Immunofluorescence"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Tollwut-Virus-Antigen [Nachweis] in Gewebe mit Immunfluoreszenztest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="6532-6"/>
+        <display value="Rabies virus Ag [Presence] in Specimen by Immunofluorescence"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Tollwut-Virus-Antigen [Nachweis] in Probenmaterial mit Immunfluoreszenztest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="6536-7"/>
+        <display value="Rabies virus identified in Tissue by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Tollwut-Virus identifiziert in Gewebe mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="6539-1"/>
+        <display value="Rabies virus identified in Specimen by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Tollwut-Virus identifiziert in Probenmaterial mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="70866-9"/>
+        <display value="Rabies virus strain identified in Specimen by Immunofluorescence"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Tollwut-Virus-Stamm identifiziert in Probenmaterial mit Immunfluoreszenztest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="70867-7"/>
+        <display value="Rabies virus strain identified in Specimen by Sequencing"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Tollwut-Virus-Stamm identifiziert in Probenmaterial mit Sequenzierung"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="86588-1"/>
+        <display value="Rabies virus RNA [Presence] in Cerebral spinal fluid by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Tollwut-Virus-RNA [Nachweis] in Zerebrospinalflüssigkeit mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="88211-8"/>
+        <display value="Rabies virus Ag [Presence] in Cerebral spinal fluid by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Tollwut-Virus-Antigen [Nachweis] in Zerebrospinalflüssigkeit mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="88214-2"/>
+        <display value="Rabies virus RNA [Presence] in Tissue by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Tollwut-Virus-RNA [Nachweis] in Gewebe mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="88215-9"/>
+        <display value="Rabies virus RNA [Presence] in Saliva (oral fluid) by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Tollwut-Virus-RNA [Nachweis] in Speichel mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="91075-2"/>
+        <display value="Rabies virus Ag [Presence] in Saliva (oral fluid) by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Tollwut-Virus-Antigen [Nachweis] in Speichel mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="91076-0"/>
+        <display value="Rabies virus Ag [Presence] in Tissue by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Tollwut-Virus-Antigen [Nachweis] in Gewebe mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="41461-5"/>
+        <display value="Virus identified in Specimen"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Virus identifiziert in Probenmaterial"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="92253-4"/>
+        <display value="Microorganism identified in Isolate or Specimen by Molecular genetics method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mikroorganismus identifiziert in Isolat oder Probenmaterial, molekulargenetisch"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

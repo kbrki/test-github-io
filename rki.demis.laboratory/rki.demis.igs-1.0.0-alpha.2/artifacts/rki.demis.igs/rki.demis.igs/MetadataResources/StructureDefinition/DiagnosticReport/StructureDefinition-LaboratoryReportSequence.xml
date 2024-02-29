@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="LaboratoryReportSequence" />
+  <url value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportSequence" />
+  <version value="1.1.0" />
+  <name value="LaboratoryReportSequence" />
+  <title value="Sequenz-Laborbericht" />
+  <status value="active" />
+  <date value="2023-12-29" />
+  <description value="Der Sequenz-Laborbericht kann mehrere Sequenz-Erregernachweise zu einer Probe enthalten." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="true" />
+  <type value="DiagnosticReport" />
+  <baseDefinition value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReport" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="DiagnosticReport.meta">
+      <path value="DiagnosticReport.meta" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.meta.profile">
+      <path value="DiagnosticReport.meta.profile" />
+      <min value="1" />
+      <max value="1" />
+      <fixedCanonical value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportSequence" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.subject">
+      <path value="DiagnosticReport.subject" />
+      <short value="Betroffene Person (nichtnamentlich)" />
+      <definition value="Betroffene Person (nichtnamentlich)" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/NotifiedPersonNotByName" />
+        <aggregation value="bundled" />
+      </type>
+    </element>
+    <element id="DiagnosticReport.result">
+      <path value="DiagnosticReport.result" />
+      <short value="Sequenz-Erregernachweis" />
+      <definition value="Referenziert einen Sequenz-Erregernachweis." />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/PathogenDetectionSequence" />
+        <aggregation value="bundled" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,33 @@
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="PathogenDetection-CT-example" />
+  <meta>
+    <profile value="https://demis.rki.de/fhir/StructureDefinition/PathogenDetectionCVDP" />
+  </meta>
+  <status value="final" />
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+      <code value="laboratory" />
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org" />
+      <code value="96764-6" />
+      <display value="SARS-CoV-2 (COVID-19) E gene [Cycle Threshold #] in Respiratory specimen by NAA with probe detection" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/113de363-be19-46b4-8364-71416c7e662b" />
+  </subject>
+  <valueString value="30,02" />
+  <interpretation>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation" />
+      <code value="POS" />
+    </coding>
+  </interpretation>
+  <specimen>
+    <reference value="Specimen/47d61bca-9c53-4422-bb33-3621da084bf4" />
+  </specimen>
+</Observation>

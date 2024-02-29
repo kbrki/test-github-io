@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="NotificationBundle"/>
+  <url value="https://demis.rki.de/fhir/StructureDefinition/NotificationBundle"/>
+  <version value="1.2.0"/>
+  <name value="NotificationBundle"/>
+  <title value="Meldevorgang"/>
+  <status value="active"/>
+  <date value="2023-05-05"/>
+  <description value="Der Meldevorgang bildet den Container für Meldungen und die darin referenzierten Ressourcen."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <version value="ALPHA-2"/>
+      <code value="DE"/>
+    </coding>
+  </jurisdiction>
+  <fhirVersion value="4.0.1"/>
+  <kind value="resource"/>
+  <abstract value="true"/>
+  <type value="Bundle"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Bundle">
+      <path value="Bundle"/>
+      <constraint>
+        <key value="exactlyOneMetaProfile"/>
+        <severity value="error"/>
+        <human value="Es muss genau ein meta.profile angegeben werden."/>
+        <expression value="entry.all(resource.meta.profile.count()=1)"/>
+      </constraint>
+    </element>
+    <element id="Bundle.identifier">
+      <path value="Bundle.identifier"/>
+      <short value="Identifier für den Meldevorgang"/>
+      <definition value="Der Identifier für den Meldevorgang ist als uuidv4 in value und unter der Verwendung der NotificationBundleId (https://demis.rki.de/fhir/NamingSystem/NotificationBundleId) in system anzugeben.&#xD;&#xA;Dabei ist zu beachten, dass der gesetzte Wert durch die Infrastruktur verworfen und neu generiert wird."/>
+      <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Bundle.identifier.system">
+      <path value="Bundle.identifier.system"/>
+      <min value="1"/>
+    </element>
+    <element id="Bundle.identifier.value">
+      <path value="Bundle.identifier.value"/>
+      <short value="uuidv4"/>
+      <definition value="uuidv4"/>
+      <min value="1"/>
+    </element>
+    <element id="Bundle.type">
+      <path value="Bundle.type"/>
+      <short value="Typ der Bundle-Ressource."/>
+      <definition value="Typ der Bundle-Ressource. Für DEMIS ist der Typ grundsätzlich mit dem Wert „document“ aus dem referenzierten ValueSet (http://hl7.org/fhir/ValueSet/bundle-type|4.0.0) zu belegen."/>
+      <fixedCode value="document"/>
+    </element>
+    <element id="Bundle.entry">
+      <path value="Bundle.entry"/>
+      <slicing>
+        <discriminator>
+          <type value="type"/>
+          <path value="resource"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+    </element>
+    <element id="Bundle.entry:notification">
+      <path value="Bundle.entry"/>
+      <sliceName value="notification"/>
+      <short value="Enthaltene Meldungen."/>
+      <definition value="Enthaltene Meldungen. In einem Meldevorgang können mehrere Meldungen übermittelt werden. Dies trifft nicht auf jede Art von Meldevorgang zu und wird in abgeleiteten Profilen ggf. eingeschränkt. Ebenso wird der Typ der zu übermittelnden Meldung in den abgeleiteten Profilen vorgegeben."/>
+      <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Bundle.entry:notification.resource">
+      <path value="Bundle.entry.resource"/>
+      <short value="Enthält die Meldung"/>
+      <definition value="Enthält die Meldung. In davon abgeleiteten Profilen ist die Meldung vom erlaubten Typ enthalten."/>
+      <min value="1"/>
+      <type>
+        <code value="Composition"/>
+        <profile value="https://demis.rki.de/fhir/StructureDefinition/Notification"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="laboratoryTestRTVP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/laboratoryTestRTVP"/>
+  <version value="1.4.0"/>
+  <name value="LaboratoryTestRTVP"/>
+  <title value="Labortest für Rotavirus"/>
+  <status value="active"/>
+  <date value="2023-05-04"/>
+  <description value="Das ValueSet LaboratoryTestRTVP enthält die Codes der Labortests für Rotavirus."/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <version value="2.74"/>
+      <concept>
+        <code value="101560-1"/>
+        <display value="Rotavirus B RNA [Presence] in Stool by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="101561-9"/>
+        <display value="Rotavirus C RNA [Presence] in Stool by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="17547-1"/>
+        <display value="Rotavirus Ag [Presence] in Stool"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Rotavirus-Antigen [Nachweis] in Stuhl"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="17548-9"/>
+        <display value="Rotavirus RNA [Presence] in Specimen by Probe"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Rotavirus-RNA [Nachweis] in Probenmaterial mit Sonde"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="20950-2"/>
+        <display value="Bovine rotavirus Ag [Presence] in Tissue by Immunofluorescence"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Bovines Rotavirus-Antigen [Nachweis] in Gewebe mit Immunfluoreszenztest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="23773-5"/>
+        <display value="Porcine rotavirus Ag [Presence] in Tissue by Immunofluorescence"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Porzines Rotavirus-Antigen [Nachweis] in Gewebe mit Immunfluoreszenztest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="5879-2"/>
+        <display value="Rotavirus Ag [Presence] in Stool by Agglutination"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Rotavirus-Antigen [Nachweis] in Stuhl mit Agglutination"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="5880-0"/>
+        <display value="Rotavirus Ag [Presence] in Stool by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Rotavirus-Antigen [Nachweis] in Stuhl mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="60273-0"/>
+        <display value="Rotavirus RNA [Presence] in Isolate by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Rotavirus-RNA [Nachweis] in Isolat mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="62859-4"/>
+        <display value="Rotavirus RNA [Presence] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Rotavirus-RNA [Nachweis] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="6547-4"/>
+        <display value="Rotavirus identified in Specimen by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Rotavirus identifiziert in Probenmaterial mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="71700-9"/>
+        <display value="Rotavirus RNA [Identifier] in Stool by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Rotavirus-RNA [Nachweis oder Identität] in Stuhl mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="71701-7"/>
+        <display value="Rotavirus dsRNA [Identifier] in Stool by Polyacrylamide gel electrophoresis (PAGE)"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Rotavirus-dsRNA [Nachweis oder Identität] in Stuhl mit Polyacrylamid-Gelelektrophorese (PAGE)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="71702-5"/>
+        <display value="Rotavirus dsRNA [Identifier] in Isolate by Polyacrylamide gel electrophoresis (PAGE)"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Rotavirus-dsRNA [Nachweis oder Identität] in Isolat mit Polyacrylamid-Gelelektrophorese (PAGE)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="71759-5"/>
+        <display value="Rotavirus RNA [Identifier] in Isolate by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Rotavirus-RNA [Nachweis oder Identität] in Isolat mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="71760-3"/>
+        <display value="Rotavirus identified in Stool by Sequencing"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Rotavirus identifiziert in Stuhl mit Sequenzierung"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="71761-1"/>
+        <display value="Rotavirus identified in Isolate by Sequencing"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Rotavirus identifiziert in Isolat mit Sequenzierung"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="72174-6"/>
+        <display value="Rotavirus Ag [Presence] in Stool by Rapid immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Rotavirus-Antigen [Nachweis] in Stuhl mit Immunoassay-Schnelltest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="79389-3"/>
+        <display value="Rotavirus A nsp5 gene [Presence] in Stool by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Rotavirus A nsp5-Gen [Nachweis] in Stuhl mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="8011-9"/>
+        <display value="Rotavirus [Presence] in Stool by Electron microscopy"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Rotavirus [Nachweis] in Stuhl mit Elektronenmikroskopie"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="8012-7"/>
+        <display value="Rotavirus dsRNA [Presence] in Stool by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Rotavirus-dsRNA [Nachweis] in Stuhl mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="80675-2"/>
+        <display value="Rotavirus A VP6 gene [Presence] in Stool by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Rotavirus A VP6-Gen [Nachweis] in Stuhl mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="82212-2"/>
+        <display value="Rotavirus A RNA [Presence] in Stool by NAA with non-probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Rotavirus A-RNA [Nachweis] in Stuhl mit Nukleinsäureamplifikation mit Detektion ohne Sonde"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="86199-7"/>
+        <display value="Rotavirus A Ag [Presence] in Tissue by Immune stain"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Rotavirus A-Antigen [Nachweis] in Gewebe mit Immunfärbung"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="86217-7"/>
+        <display value="Rotavirus A VP6 capsid protein [Presence] in Specimen by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Rotavirus A VP6 Capsid-Protein [Nachweis] in Probenmaterial mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="86688-9"/>
+        <display value="Rotavirus C [Presence] in Specimen by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Rotavirus C [Nachweis] in Probenmaterial mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="86689-7"/>
+        <display value="Rotavirus A [Presence] in Specimen by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Rotavirus A [Nachweis] in Probenmaterial mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="86690-5"/>
+        <display value="Rotavirus C RNA [Presence] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Rotavirus C-RNA [Nachweis] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="86691-3"/>
+        <display value="Rotavirus B RNA [Presence] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Rotavirus B-RNA [Nachweis] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="86692-1"/>
+        <display value="Rotavirus A RNA [Presence] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Rotavirus A-RNA [Nachweis] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="86696-2"/>
+        <display value="Rotavirus B RNA [Nucleotide sequence] in Isolate by Sequencing"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Rotavirus B-RNA [Nukleotidsequenz] in Isolat mit Sequenzierung"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="86697-0"/>
+        <display value="Rotavirus A RNA [Nucleotide sequence] in Isolate by Sequencing"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Rotavirus A-RNA [Nukleotidsequenz] in Isolat mit Sequenzierung"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="86699-6"/>
+        <display value="Rotavirus C RNA [Nucleotide sequence] in Isolate by Sequencing"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Rotavirus C-RNA [Nukleotidsequenz] in Isolat mit Sequenzierung"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="86700-2"/>
+        <display value="Rotavirus C RNA [Cycle Threshold #] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Rotavirus C-RNA [Zyklusschwellenwert #] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="86701-0"/>
+        <display value="Rotavirus A RNA [Cycle Threshold #] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Rotavirus A-RNA [Zyklusschwellenwert #] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="86702-8"/>
+        <display value="Rotavirus B RNA [Cycle Threshold #] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Rotavirus B-RNA [Zyklusschwellenwert #] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="87710-0"/>
+        <display value="Rotavirus C VP7 gene [Nucleotide sequence] in Isolate by Sequencing"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Rotavirus C VP7-Gen [Nukleotidsequenz] in Isolat mit Sequenzierung"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="87711-8"/>
+        <display value="Rotavirus B VP7 gene [Nucleotide sequence] in Isolate by Sequencing"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Rotavirus B VP7-Gen [Nukleotidsequenz] in Isolat mit Sequenzierung"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="87712-6"/>
+        <display value="Rotavirus A VP7 gene [Nucleotide sequence] in Isolate by Sequencing"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Rotavirus A VP7-Gen [Nukleotidsequenz] in Isolat mit Sequenzierung"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="87713-4"/>
+        <display value="Rotavirus A VP4 gene [Nucleotide sequence] in Isolate by Sequencing"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Rotavirus A VP4-Gen [Nukleotidsequenz] in Isolat mit Sequenzierung"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="92693-1"/>
+        <display value="Rotavirus A RNA [Presence] in Stool by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Rotavirus A-RNA [Nachweis] in Stuhl mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="41461-5"/>
+        <display value="Virus identified in Specimen"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Virus identifiziert in Probenmaterial"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="92253-4"/>
+        <display value="Microorganism identified in Isolate or Specimen by Molecular genetics method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mikroorganismus identifiziert in Isolat oder Probenmaterial, molekulargenetisch"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetNOVP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetNOVP"/>
+  <version value="1.1.0"/>
+  <name value="AnswerSetNOVP"/>
+  <title value="AnswerSet für Norovirus"/>
+  <status value="active"/>
+  <date value="2023-05-30"/>
+  <description value="Das ValueSet AnswerSetNOVP enthält die Codes der Answer-Codes für Norovirus."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="919722731000087109"/>
+        <display value="Norovirus genogroup I (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Norovirus genogroup I (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Norovirus G1"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="909640571000087107"/>
+        <display value="Norovirus GIV (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Norovirus GIV (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Norovirus G4"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="347362891000087107"/>
+        <display value="Norovirus genogroup II (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Norovirus genogroup II (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Norovirus G2"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="407359000"/>
+        <display value="Genus Norovirus (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Genus Norovirus (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Gattung Norovirus"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="substanceDENP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/substanceDENP"/>
+  <version value="1.0.0"/>
+  <name value="SubstanceDENP"/>
+  <title value="Analyt-Set für Denguevirus"/>
+  <status value="active"/>
+  <date value="2023-05-03"/>
+  <description value="Das ValueSet SubstanceDENP enthält die Codes des Analyt-Sets für Denguevirus."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <code value="121020003"/>
+        <display value="Antigen of Dengue virus (substance)"/>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Dengue-Antigen"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

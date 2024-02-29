@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetDENP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetDENP"/>
+  <version value="1.3.0"/>
+  <name value="AnswerSetDENP"/>
+  <title value="AnswerSet für Denguevirus"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-11-09"/>
+  <publisher value="Robert Koch-Institut"/>
+  <description value="Das ValueSet AnswerSetDENP enthält die Codes der Answer-Codes für Denguevirus."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230901"/>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="60588009"/>
+        <display value="Dengue virus, type 1 (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Dengue virus, type 1 (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Dengue-Virus, Typ 1"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="34348001"/>
+        <display value="Dengue virus (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Dengue virus (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Dengue-Virus"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="8467002"/>
+        <display value="Dengue virus, type 3 (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Dengue virus, type 3 (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Dengue-Virus, Typ 3"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="243604005"/>
+        <display value="Dengue virus subgroup (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Dengue virus subgroup (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Dengue-Virus-Subgruppe"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="36700002"/>
+        <display value="Dengue virus, type 4 (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Dengue virus, type 4 (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Dengue-Virus, Typ 4"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="41328007"/>
+        <display value="Dengue virus, type 2 (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Dengue virus, type 2 (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Dengue-Virus, Typ 2"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

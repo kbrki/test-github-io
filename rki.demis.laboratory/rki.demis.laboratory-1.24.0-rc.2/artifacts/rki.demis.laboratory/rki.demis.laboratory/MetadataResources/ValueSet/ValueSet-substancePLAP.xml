@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="substancePLAP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/substancePLAP"/>
+  <version value="1.3.0"/>
+  <name value="SubstancePLAP"/>
+  <title value="Analyt-Set für Plasmodium spp. (Malaria)"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-11-09"/>
+  <publisher value="Robert Koch-Institut"/>
+  <description value="Das ValueSet SubstancePLAP enthält die Codes des Analyt-Sets für Plasmodium spp. (Malaria)."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230901"/>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="372478003"/>
+        <display value="Doxycycline (substance)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Doxycycline (substance)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Doxycyclin"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="387505001"/>
+        <display value="Mefloquine (substance)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Mefloquine (substance)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Mefloquin"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="783052008"/>
+        <display value="Product containing precisely atovaquone 250 milligram and proguanil hydrochloride 100 milligram/1 each conventional release oral tablet (clinical drug)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Product containing precisely atovaquone 250 milligram and proguanil hydrochloride 100 milligram/1 each conventional release oral tablet (clinical drug)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Atovaquon/Proguanil (Malarone)"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="373468005"/>
+        <display value="Chloroquine (substance)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Chloroquine (substance)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Chloroquin"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="387094004"/>
+        <display value="Proguanil (substance)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Proguanil (substance)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Proguanil"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="74964007"/>
+        <display value="Other (qualifier value)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Other (qualifier value)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="andere"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="311901004"/>
+        <display value="Mosquito repellant (substance)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Mosquito repellant (substance)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Mückenschutzmittel"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

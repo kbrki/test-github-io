@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="SpecimenHBVP"/>
+  <url value="https://demis.rki.de/fhir/StructureDefinition/SpecimenHBVP"/>
+  <version value="1.2.0"/>
+  <name value="SpecimenHBVP"/>
+  <title value="Probe für Hepatitis-B-Virus; Meldepflicht für alle Nachweise"/>
+  <status value="active"/>
+  <date value="2023-05-05"/>
+  <description value="Die Probe für Hepatitis-B-Virus spezifiziert die Probe hinsichtlich des Probenmaterials für Hepatitis-B-Virus (Meldepflicht für alle Nachweise)."/>
+  <fhirVersion value="4.0.1"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="Specimen"/>
+  <baseDefinition value="https://demis.rki.de/fhir/StructureDefinition/Specimen"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Specimen.type">
+      <path value="Specimen.type"/>
+      <definition value="Art des Probenmaterials. Der Wert muss entsprechend des vom RKI definierten ValueSets (https://demis.rki.de/fhir/ValueSet/materialHBVP) im coding Element dargestellt werden."/>
+    </element>
+    <element id="Specimen.type.coding">
+      <path value="Specimen.type.coding"/>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="https://demis.rki.de/fhir/ValueSet/materialHBVP"/>
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>

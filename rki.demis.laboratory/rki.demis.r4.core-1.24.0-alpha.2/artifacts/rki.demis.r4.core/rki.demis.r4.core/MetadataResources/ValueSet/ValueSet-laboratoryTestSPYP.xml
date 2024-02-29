@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="laboratoryTestSPYP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/laboratoryTestSPYP"/>
+  <version value="1.0.0"/>
+  <name value="LaboratoryTestSPYP"/>
+  <title value="Labortest für Scharlach, Beta-hämolysierenden Streptokokken der Gruppe A"/>
+  <status value="active"/>
+  <date value="2023-05-03"/>
+  <description value="Das ValueSet LaboratoryTestSPYP enthält die Codes der Labortests für Scharlach, Beta-hämolysierenden Streptokokken der Gruppe A."/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <version value="2.74"/>
+      <concept>
+        <code value="101300-2"/>
+        <display value="Streptococcus pyogenes DNA [Presence] in Throat by NAA with non-probe detection"/>
+      </concept>
+      <concept>
+        <code value="11268-0"/>
+        <display value="Streptococcus pyogenes [Presence] in Throat by Organism specific culture"/>
+      </concept>
+      <concept>
+        <code value="11269-8"/>
+        <display value="Streptococcus pyogenes Ag [Presence] in Serum by Agglutination"/>
+      </concept>
+      <concept>
+        <code value="12259-8"/>
+        <display value="Streptococcus pyogenes enzyme Ab [Presence] in Serum by Sheep Cell Agglutination"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Streptococcus pyogenes Enzym-Antikörper [Nachweis] in Serum mit Schafzellagglutination"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="17656-0"/>
+        <display value="Streptococcus pyogenes [Presence] in Specimen by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Streptococcus pyogenes [Nachweis] in Probenmaterial mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="18481-2"/>
+        <display value="Streptococcus pyogenes Ag [Presence] in Throat"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Streptococcus pyogenes-Antigen [Nachweis] in Rachen"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="22566-4"/>
+        <display value="Streptococcus pyogenes enzyme Ab [Presence] in Serum"/>
+      </concept>
+      <concept>
+        <code value="22567-2"/>
+        <display value="Streptococcus pyogenes enzyme Ab [Titer] in Serum"/>
+      </concept>
+      <concept>
+        <code value="31658-8"/>
+        <display value="Streptococcus pyogenes enzyme Ab [Units/volume] in Serum"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Streptococcus pyogenes Enzym-Antikörper [Einheiten/Volumen] in Serum"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="31970-7"/>
+        <display value="Streptococcus pyogenes Ag [Presence] in Serum"/>
+      </concept>
+      <concept>
+        <code value="31971-5"/>
+        <display value="Streptococcus pyogenes Ag [Presence] in Specimen"/>
+      </concept>
+      <concept>
+        <code value="49610-9"/>
+        <display value="Streptococcus pyogenes DNA [Identifier] in Specimen by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="5036-9"/>
+        <display value="Streptococcus pyogenes rRNA [Presence] in Specimen by Probe"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Streptococcus pyogenes-rRNA [Nachweis] in Probenmaterial mit Sonde"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="5172-2"/>
+        <display value="Streptococcus pyogenes enzyme Ab [Presence] in Serum by Latex agglutination"/>
+      </concept>
+      <concept>
+        <code value="5173-0"/>
+        <display value="Streptococcus pyogenes enzyme Ab [Titer] in Serum by Latex agglutination"/>
+      </concept>
+      <concept>
+        <code value="60489-2"/>
+        <display value="Streptococcus pyogenes DNA [Presence] in Throat by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="6557-3"/>
+        <display value="Streptococcus pyogenes Ag [Presence] in Throat by Immunofluorescence"/>
+      </concept>
+      <concept>
+        <code value="6558-1"/>
+        <display value="Streptococcus pyogenes Ag [Presence] in Specimen by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Streptococcus pyogenes-Antigen [Nachweis] in Probenmaterial mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="6559-9"/>
+        <display value="Streptococcus pyogenes Ag [Presence] in Specimen by Immunofluorescence"/>
+      </concept>
+      <concept>
+        <code value="67569-4"/>
+        <display value="Streptococcus pyogenes M protein emm gene [Type] in Isolate by Sequencing"/>
+      </concept>
+      <concept>
+        <code value="68954-7"/>
+        <display value="Streptococcus pyogenes rRNA [Presence] in Throat by Probe"/>
+      </concept>
+      <concept>
+        <code value="72268-6"/>
+        <display value="Streptococcus pyogenes exotoxin B speB gene [Presence] in Specimen by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="76581-8"/>
+        <display value="Streptococcus pyogenes csrS gene [Presence] in Swab specimen by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="76596-6"/>
+        <display value="Streptococcus pyogenes csrS gene [#/mass] in XXX.tissue by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="76609-7"/>
+        <display value="Streptococcus pyogenes csrS gene [#/volume] in XXX.body fluid by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="78012-2"/>
+        <display value="Streptococcus pyogenes Ag [Presence] in Throat by Rapid immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Streptococcus pyogenes-Antigen [Nachweis] in Rachen mit Immunoassay-Schnelltest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="85769-8"/>
+        <display value="Streptococcus pyogenes DNA [Presence] by NAA with non-probe detection in Positive blood culture"/>
+      </concept>
+      <concept>
+        <code value="88276-1"/>
+        <display value="Streptococcus pyogenes hsp60 gene [Presence] by Probe in Positive blood culture"/>
+      </concept>
+      <concept>
+        <code value="92770-7"/>
+        <display value="Streptococcus pyogenes DNA [Presence] by NAA with probe detection in Positive blood culture"/>
+      </concept>
+      <concept>
+        <code value="92946-3"/>
+        <display value="Streptococcus pyogenes DNA [NCncRange] in Sputum Qualitative by NAA with non-probe detection"/>
+      </concept>
+      <concept>
+        <code value="92947-1"/>
+        <display value="Streptococcus pyogenes DNA [NCncRange] in Bronchoalveolar lavage Qualitative by NAA with non-probe detection"/>
+      </concept>
+      <concept>
+        <code value="94366-2"/>
+        <display value="Streptococcus pyogenes DNA [Presence] in Lower respiratory specimen by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="96331-4"/>
+        <display value="Streptococcus pyogenes DNA [NCncRange] in Lower respiratory specimen Qualitative by NAA with non-probe detection"/>
+      </concept>
+      <concept>
+        <code value="97638-1"/>
+        <display value="Streptococcus pyogenes DNA [Presence] in Synovial fluid by NAA with non-probe detection"/>
+      </concept>
+      <concept>
+        <code value="99095-2"/>
+        <display value="Streptococcus pyogenes DNA [Presence] in Cerebral spinal fluid by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="75756-7"/>
+        <display value="Bacteria identified in Isolate by MS.MALDI-TOF"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Bakterien identifiziert in Isolat mit MS.MALDI-TOF"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="91895-3"/>
+        <display value="Bacterial strain [Type] in Isolate by Sequencing"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Bakterienstamm [Typ] in Isolat mit Sequenzierung"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="90246-0"/>
+        <display value="Bacterial whole genome [Nucleotide sequence] in Isolate by Sequencing"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Bakterielles Gesamtgenom [Nukleotidsequenz] in Isolat mit Sequenzierung"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

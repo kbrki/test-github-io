@@ -1,0 +1,889 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="laboratoryTestMYTP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/laboratoryTestMYTP"/>
+  <version value="1.9.0"/>
+  <name value="LaboratoryTestMYTP"/>
+  <title value="Labortest für Mycobacterium tuberculosis, Mycobacterium africanum, Mycobacterium bovis; Meldepflicht für den direkten Erregernachweis sowie nachfolgend für das Ergebnis der Resistenzbestimmung; vorab auch für den Nachweis säurefester Stäbchen im Sputum"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-11-01"/>
+  <publisher value="Robert Koch-Institut"/>
+  <description value="Das ValueSet LaboratoryTestMYTP enthält die Codes der Labortests für Mycobacterium tuberculosis, Mycobacterium africanum, Mycobacterium bovis; Meldepflicht für den direkten Erregernachweis sowie nachfolgend für das Ergebnis der Resistenzbestimmung; vorab auch für den Nachweis säurefester Stäbchen im Sputum."/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <version value="2.76"/>
+      <concept>
+        <code value="23241-3"/>
+        <display value="Mycobacterium bovis Ag [Presence] in Tissue by Immune stain"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium bovis Antigen [Nachweis] in Gewebe mit Immunfärbung"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="38379-4"/>
+        <display value="Mycobacterium tuberculosis complex DNA [Presence] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis Komplex DNA [Nachweis] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="85362-2"/>
+        <display value="Mycobacterium tuberculosis complex DNA [Presence] in Sputum or Bronchial by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis Komplex DNA [Nachweis] in Sputum oder Bronchialsekret mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="42717-9"/>
+        <display value="Mycobacterium tuberculosis complex genotype [Identifier] in Isolate"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis Komplex Genotyp [Nachweis oder Identität] in Isolat"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="46244-0"/>
+        <display value="Mycobacterium tuberculosis complex rpoB gene rifAMPin resistance mutation identified by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis-Komplex rpoB-Gen Mutation zu Rifampicin-Resistenz identifiziert, molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="48174-7"/>
+        <display value="Mycobacterium tuberculosis complex rRNA [Presence] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis Komplex rRNA [Nachweis] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="17296-5"/>
+        <display value="Mycobacterium tuberculosis complex rRNA [Presence] in Specimen by Probe"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis Komplex rRNA [Nachweis] in Probenmaterial mit Sonde"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="94576-6"/>
+        <display value="Mycobacterium tuberculosis complex species identified in Isolate by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium-tuberculosis-Komplex-Spezies identifiziert in Isolat mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="92827-5"/>
+        <display value="Mycobacterium tuberculosis complex species identified in Specimen by Sequencing"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium-tuberculosis-Komplex-Spezies identifiziert in Probenmaterial mit Sequenzierung"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="53257-2"/>
+        <display value="Mycobacterium tuberculosis DNA [#/volume] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis DNA [#/Volumen] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="91763-3"/>
+        <display value="Mycobacterium tuberculosis DNA [Presence] in Aspirate by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis DNA [Nachweis] in Aspirat mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="90283-3"/>
+        <display value="Mycobacterium tuberculosis DNA [Presence] in Bile fluid by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis DNA [Nachweis] in Gallenflüssigkeit mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="16278-4"/>
+        <display value="Mycobacterium tuberculosis DNA [Presence] in Blood by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis DNA [Nachweis] in Blut mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="58931-7"/>
+        <display value="Mycobacterium tuberculosis DNA [Presence] in Body fluid by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis DNA [Nachweis] in Körperflüssigkeit mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="14557-3"/>
+        <display value="Mycobacterium tuberculosis DNA [Presence] in Bronchial specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis DNA [Nachweis] in Probenmaterial aus dem Bronchialtrakt mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="78357-1"/>
+        <display value="Mycobacterium tuberculosis DNA [Presence] in Bronchoalveolar lavage by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis DNA [Nachweis] in bronchoalveolärer Lavage mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="14561-5"/>
+        <display value="Mycobacterium tuberculosis DNA [Presence] in Cerebral spinal fluid by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis DNA [Nachweis] in Zerebrospinalflüssigkeit mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="88165-6"/>
+        <display value="Mycobacterium tuberculosis DNA [Presence] in Cornea or Conjunctiva by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis DNA [Nachweis] in Kornea bzw. Konjunktiva mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="14558-1"/>
+        <display value="Mycobacterium tuberculosis DNA [Presence] in Gastric fluid by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis DNA [Nachweis] in Magenflüssigkeit mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="89635-7"/>
+        <display value="Mycobacterium tuberculosis DNA [Presence] in Implanted device by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis DNA [Nachweis] in implantiertem Medizinprodukt mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="91829-2"/>
+        <display value="Mycobacterium tuberculosis DNA [Presence] in Lower respiratory specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis DNA [Nachweis] in Probenmaterial aus dem unteren Respirationstrakt mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="88166-4"/>
+        <display value="Mycobacterium tuberculosis DNA [Presence] in Ocular fluid by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis DNA [Nachweis] in okulärer Flüssigkeit mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="14559-9"/>
+        <display value="Mycobacterium tuberculosis DNA [Presence] in Pleural fluid by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis DNA [Nachweis] in Pleuraflüssigkeit mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="14562-3"/>
+        <display value="Mycobacterium tuberculosis DNA [Presence] in Semen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis DNA [Nachweis] in Sperma mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="13956-8"/>
+        <display value="Mycobacterium tuberculosis DNA [Presence] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis DNA [Nachweis] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="14556-5"/>
+        <display value="Mycobacterium tuberculosis DNA [Presence] in Sputum by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis DNA [Nachweis] in Sputum mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="14560-7"/>
+        <display value="Mycobacterium tuberculosis DNA [Presence] in Urine by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis DNA [Nachweis] in Urin mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="46247-3"/>
+        <display value="Mycobacterium tuberculosis embB gene ethambutol resistance mutation [Identifier] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis embB-Gen Mutation zu Ethambutol-Resistenz [Nachweis oder Identität], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="72866-7"/>
+        <display value="Mycobacterium tuberculosis ethA gene ethionamide resistance mutation [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis ethA-Gen Mutation zu Ethionamid-Resistenz [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="72865-9"/>
+        <display value="Mycobacterium tuberculosis ethB gene ethionamide resistance mutation [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis ethB-Gen Mutation zu Ethionamid-Resistenz [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="35352-4"/>
+        <display value="Mycobacterium tuberculosis genotype [Identifier] in Isolate"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis Genotyp [Nachweis oder Identität] in Isolat"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="72276-9"/>
+        <display value="Mycobacterium tuberculosis gyrA gene fluoroquinolone resistance mutation [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis gyrA-Gen Mutation zu Fluorchinolon-Resistenz [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="72867-5"/>
+        <display value="Mycobacterium tuberculosis gyrB gene fluoroquinolone resistance mutation [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis gyrB-Gen Mutation zu Fluorchinolon-Resistenz [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="63072-3"/>
+        <display value="Mycobacterium tuberculosis inhA gene isoniazid low level resistance mutation [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis inhA-Gen Mutation zu geringer Isoniazid-Resistenz [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="48175-4"/>
+        <display value="Mycobacterium tuberculosis katG + inhA gene isoniazid resistance mutation [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis katG + inhA-Gene Mutation zu Isoniazid-Resistenz [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="46246-5"/>
+        <display value="Mycobacterium tuberculosis katG gene isoniazid high level resistance mutation [Identifier] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis katG-Gen Mutation zu hoher Isoniazid-Resistenz [Nachweis oder Identität], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="46245-7"/>
+        <display value="Mycobacterium tuberculosis pncA gene pyrazinamide resistance mutation [Identifier] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis pncA-Gen Mutation zu Pyrazinamid-Resistenz [Nachweis oder Identität], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="33634-7"/>
+        <display value="Mycobacterium tuberculosis rifAMPin resistance gene [Identifier] in Sputum by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis Rifampicin-Resistenzgen [Nachweis oder Identität] in Sputum mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="72864-2"/>
+        <display value="Mycobacterium tuberculosis rpsL+rrs genes aminoglycoside resistance mutation [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis rpsL+rrs-Gene Mutation zu Aminoglykosid-Resistenz [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="5027-8"/>
+        <display value="Mycobacterium tuberculosis rRNA [Presence] in Specimen by Probe"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis rRNA [Nachweis] in Probenmaterial mit Sonde"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="11476-9"/>
+        <display value="Microscopic observation [Identifier] in Gastric fluid by Acid fast stain"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mikroskopische Beobachtung [Nachweis oder Identität] in Magenflüssigkeit mit säurefester Färbung"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="89662-1"/>
+        <display value="Microscopic observation [Identifier] in Lower respiratory specimen by Acid fast stain"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mikroskopische Beobachtung [Nachweis oder Identität] in Probenmaterial aus dem unteren Respirationstrakt mit säurefester Färbung"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="11545-1"/>
+        <display value="Microscopic observation [Identifier] in Specimen by Acid fast stain"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mikroskopische Beobachtung [Nachweis oder Identität] in Probenmaterial mit säurefester Färbung"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="11477-7"/>
+        <display value="Microscopic observation [Identifier] in Sputum by Acid fast stain"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mikroskopische Beobachtung [Nachweis oder Identität] in Sputum mit säurefester Färbung"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="89661-3"/>
+        <display value="Microscopic observation [Identifier] in Upper respiratory specimen by Acid fast stain"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mikroskopische Beobachtung [Nachweis oder Identität] in Probenmaterial aus dem oberem Respirationstrakt mit säurefester Färbung"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="72357-7"/>
+        <display value="Microscopic observation [Presence] in Specimen by Acid fast stain"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mikroskopische Beobachtung [Nachweis] in Probenmaterial mit säurefester Färbung"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="23242-1"/>
+        <display value="Mycobacterium bovis Ag [Presence] in Blood"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium bovis Antigen [Nachweis] in Blut"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="83066-1"/>
+        <display value="Mycobacterium tuberculosis complex immunogenic protein MPB64 [Presence] in Isolate by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis-Komplex immunogenes Protein MPB64 [Nachweis] in Isolat mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="95127-7"/>
+        <display value="Mycobacterium tuberculosis lipoarabinomannan Ag [Presence] in Urine by Rapid immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis-Lipoarabinomannan Antigen [Nachweis] in Urin mit Immunoassay-Schnelltest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="88874-3"/>
+        <display value="Mycobacterium tuberculosis complex DNA [Presence] in Isolate or Specimen by Molecular genetics method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis Komplex DNA [Nachweis] in Isolat oder Probenmaterial, molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="89372-7"/>
+        <display value="Mycobacterium tuberculosis complex rpoB gene rifAMPin resistance mutation [Presence] by Molecular method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium tuberculosis-Komplex rpoB-Gen Mutation zu Rifampicin-Resistenz [Nachweis], molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="75756-7"/>
+        <display value="Bacteria identified in Isolate by MS.MALDI-TOF"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Bakterien identifiziert in Isolat mit MS.MALDI-TOF"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="88183-9"/>
+        <display value="Mycobacterium sp identified in Isolate by Sequencing"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium sp identifiziert in Isolat mit Sequenzierung"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="90306-2"/>
+        <display value="Mycobacterium sp identified in Specimen by Sequencing"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium sp identifiziert in Probenmaterial mit Sequenzierung"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="91895-3"/>
+        <display value="Bacterial strain [Type] in Isolate by Sequencing"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Bakterienstamm [Typ] in Isolat mit Sequenzierung"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="90246-0"/>
+        <display value="Bacterial whole genome [Nucleotide sequence] in Isolate by Sequencing"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Bakterielles Gesamtgenom [Nukleotidsequenz] in Isolat mit Sequenzierung"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="76687-3"/>
+        <display value="Mycobacterium sp identified in Bronchoalveolar lavage by Organism specific culture"/>
+      </concept>
+      <concept>
+        <code value="88167-2"/>
+        <display value="Mycobacterium sp identified in Cornea or Conjunctiva by Organism specific culture"/>
+      </concept>
+      <concept>
+        <code value="88168-0"/>
+        <display value="Mycobacterium sp identified in Ocular fluid by Organism specific culture"/>
+      </concept>
+      <concept>
+        <code value="532-2"/>
+        <display value="Mycobacterium sp identified in Aspirate by Organism specific culture"/>
+      </concept>
+      <concept>
+        <code value="533-0"/>
+        <display value="Mycobacterium sp identified in Blood by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium sp identifiziert in Blut mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="540-5"/>
+        <display value="Mycobacterium sp identified in Tissue by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium sp identifiziert in Gewebe mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="541-3"/>
+        <display value="Mycobacterium sp identified in Urine by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium sp identifiziert in Urin mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="542-1"/>
+        <display value="Mycobacterium sp identified in Wound by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium sp identifiziert in Wunde mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="90284-1"/>
+        <display value="Mycobacterium sp identified in Bile fluid by Organism specific culture"/>
+      </concept>
+      <concept>
+        <code value="9823-6"/>
+        <display value="Mycobacterium sp identified in Bronchial specimen by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium sp identifiziert in Probenmaterial aus dem Bronchialtrakt mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="30045-9"/>
+        <display value="Mycobacterium sp identified in Dialysis fluid by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium sp identifiziert in Dialysat mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="9824-4"/>
+        <display value="Mycobacterium sp identified in Gastric fluid by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium sp identifiziert in Magenflüssigkeit mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="89637-3"/>
+        <display value="Mycobacterium sp identified in Implanted device by Organism specific culture"/>
+      </concept>
+      <concept>
+        <code value="537-1"/>
+        <display value="Mycobacterium sp identified in Peritoneal fluid by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium sp identifiziert in Peritonealflüssigkeit mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="53909-8"/>
+        <display value="Mycobacterium sp identified in Pleural fluid by Organism specific culture"/>
+      </concept>
+      <concept>
+        <code value="89636-5"/>
+        <display value="Mycobacterium sp identified in Lower respiratory specimen by Organism specific culture"/>
+      </concept>
+      <concept>
+        <code value="539-7"/>
+        <display value="Mycobacterium sp identified in Sputum by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium sp identifiziert in Sputum mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="543-9"/>
+        <display value="Mycobacterium sp identified in Specimen by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium sp identifiziert in Probenmaterial mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="535-5"/>
+        <display value="Mycobacterium sp identified in Body fluid by Organism specific culture"/>
+      </concept>
+      <concept>
+        <code value="536-3"/>
+        <display value="Mycobacterium sp identified in Bone marrow by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium sp identifiziert in Knochenmark mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="534-8"/>
+        <display value="Mycobacterium sp identified in Cerebral spinal fluid by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium sp identifiziert in Zerebrospinalflüssigkeit mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="538-9"/>
+        <display value="Mycobacterium sp identified in Synovial fluid by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mycobacterium sp identifiziert in Synovialflüssigkeit mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+    </include>
+    <include>
+      <valueSet value="https://demis.rki.de/fhir/ValueSet/resistance"/>
+    </include>
+    <include>
+      <valueSet value="https://demis.rki.de/fhir/ValueSet/resistanceGene"/>
+    </include>
+  </compose>
+</ValueSet>

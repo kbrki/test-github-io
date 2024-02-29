@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="LaboratoryReportVZVP"/>
+  <url value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportVZVP"/>
+  <version value="1.2.0"/>
+  <name value="LaboratoryReportVZVP"/>
+  <title value="Laborbericht für Varizella-Zoster-Virus"/>
+  <status value="active"/>
+  <date value="2023-05-05"/>
+  <description value="Der Varizella-Zoster-Virus-Laborbericht kann mehrere Varizella-Zoster-Virus-Erregernachweise enthalten und fasst die Ergebnisse der Einzeltests zusammen."/>
+  <fhirVersion value="4.0.1"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="DiagnosticReport"/>
+  <baseDefinition value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReport"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="DiagnosticReport.code">
+      <path value="DiagnosticReport.code"/>
+      <definition value="Im Laborbericht für Varizella-Zoster-Virus ist der code immer mit dem Wert &quot;vzvp&quot; aus dem ValueSet https://demis.rki.de/fhir/CodeSystem/notificationCategory zu belegen."/>
+    </element>
+    <element id="DiagnosticReport.code.coding.system">
+      <path value="DiagnosticReport.code.coding.system"/>
+      <fixedUri value="https://demis.rki.de/fhir/CodeSystem/notificationCategory"/>
+    </element>
+    <element id="DiagnosticReport.code.coding.code">
+      <path value="DiagnosticReport.code.coding.code"/>
+      <fixedCode value="vzvp"/>
+    </element>
+    <element id="DiagnosticReport.code.coding.display">
+      <path value="DiagnosticReport.code.coding.display"/>
+      <min value="1"/>
+    </element>
+    <element id="DiagnosticReport.result">
+      <path value="DiagnosticReport.result"/>
+      <short value="Referenziert einen Erregernachweis für Varizella-Zoster-Virus"/>
+      <definition value="Referenziert einen Erregernachweis für Varizella-Zoster-Virus"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/PathogenDetectionVZVP"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

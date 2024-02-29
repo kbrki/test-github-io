@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetLaboratoryTest-LOINC"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetLaboratoryTest-LOINC"/>
+  <version value="1.0.0"/>
+  <name value="AnswerSetLaboratoryTest-LOINC"/>
+  <title value="LOINC-AnswerSet für Labortest"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-11-04"/>
+  <publisher value="Robert Koch-Institut"/>
+  <description value="Das ValueSet AnswerSetLaboratoryTest-LOINC enthält die LOINC-Answer-Codes für Labortests."/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <version value="2.76"/>
+      <concept>
+        <code value="LA11882-0"/>
+        <display value="Detected"/>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Nachgewiesen"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA11883-8"/>
+        <display value="Not detected"/>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Nicht nachgewiesen"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA11884-6"/>
+        <display value="Indeterminate"/>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Uneindeutig"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA6576-8"/>
+        <display value="Positive"/>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Positiv"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA19422-7"/>
+        <display value="Weak positive"/>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Schwach positiv"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA6577-6"/>
+        <display value="Negative"/>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Negativ"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA11885-3"/>
+        <display value="Equivocal"/>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Grenzwertig"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

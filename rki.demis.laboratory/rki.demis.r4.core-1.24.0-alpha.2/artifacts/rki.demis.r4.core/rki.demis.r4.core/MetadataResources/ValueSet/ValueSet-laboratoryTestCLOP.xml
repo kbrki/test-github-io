@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="laboratoryTestCLOP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/laboratoryTestCLOP"/>
+  <version value="1.2.0"/>
+  <name value="LaboratoryTestCLOP"/>
+  <title value="Labortest für Clostridium botulinum oder Toxinnachweis"/>
+  <status value="active"/>
+  <date value="2023-05-04"/>
+  <description value="Das ValueSet LaboratoryTestCLOP enthält die Codes der Labortests für Clostridium botulinum oder Toxinnachweis."/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <version value="2.74"/>
+      <concept>
+        <code value="11470-2"/>
+        <display value="Clostridium botulinum toxin [Units/volume] in Stool"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Clostridium botulinum Toxin [Einheiten/Volumen] in Stuhl"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="20705-0"/>
+        <display value="Clostridium botulinum toxin [Identifier] in Serum by Animal inoculation"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Clostridium botulinum Toxin [Nachweis oder Identität] in Serum mit Tierbeimpfung"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="20706-8"/>
+        <display value="Clostridium botulinum toxin [Identifier] in Specimen by Animal inoculation"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Clostridium botulinum Toxin [Nachweis oder Identität] in Probenmaterial mit Tierbeimpfung"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="33694-1"/>
+        <display value="Clostridium botulinum [Presence] in Specimen by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Clostridium botulinum [Nachweis] in Probenmaterial mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="33695-8"/>
+        <display value="Clostridium botulinum [Presence] in Isolate by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Clostridium botulinum [Nachweis] in Isolat mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="33696-6"/>
+        <display value="Clostridium botulinum toxin [Presence] in Specimen by Mouse bioassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Clostridium botulinum Toxin [Nachweis] in Probenmaterial mit Maus-Bioassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="33701-4"/>
+        <display value="Clostridium botulinum toxin A [Presence] in Specimen by Mouse bioassay neutralization"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Clostridium botulinum Toxin A [Nachweis] in Probenmaterial mit Maus-Bioassay.Neutralisation"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="33702-2"/>
+        <display value="Clostridium botulinum toxin E [Presence] in Specimen by Mouse bioassay neutralization"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Clostridium botulinum Toxin E [Nachweis] in Probenmaterial mit Maus-Bioassay.Neutralisation"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="33703-0"/>
+        <display value="Clostridium botulinum toxin F [Presence] in Specimen by Mouse bioassay neutralization"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Clostridium botulinum Toxin F [Nachweis] in Probenmaterial mit Maus-Bioassay.Neutralisation"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="33704-8"/>
+        <display value="Clostridium botulinum toxin A+B+E [Presence] in Specimen by Mouse bioassay neutralization"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Clostridium botulinum Toxin A+B+E [Nachweis] in Probenmaterial mit Maus-Bioassay.Neutralisation"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="33705-5"/>
+        <display value="Clostridium botulinum toxin B [Presence] in Specimen by Mouse bioassay neutralization"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Clostridium botulinum Toxin B [Nachweis] in Probenmaterial mit Maus-Bioassay.Neutralisation"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="33708-9"/>
+        <display value="Clostridium botulinum toxin [Presence] in Specimen"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Clostridium botulinum Toxin [Nachweis] in Probenmaterial"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="33709-7"/>
+        <display value="Clostridium botulinum toxin A [Presence] in Specimen"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Clostridium botulinum Toxin A [Nachweis] in Probenmaterial"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="33710-5"/>
+        <display value="Clostridium botulinum toxin E [Presence] in Specimen"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Clostridium botulinum Toxin E [Nachweis] in Probenmaterial"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="33711-3"/>
+        <display value="Clostridium botulinum toxin F [Presence] in Specimen"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Clostridium botulinum Toxin F [Nachweis] in Probenmaterial"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="33712-1"/>
+        <display value="Clostridium botulinum toxin A+B+E [Presence] in Specimen"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Clostridium botulinum Toxin A+B+E [Nachweis] in Probenmaterial"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="33713-9"/>
+        <display value="Clostridium botulinum toxin B [Presence] in Specimen"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Clostridium botulinum Toxin B [Nachweis] in Probenmaterial"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="38989-0"/>
+        <display value="Clostridium botulinum toxin A+B+E+F+G [Presence] in Specimen by Mouse bioassay neutralization"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Clostridium botulinum Toxin A+B+E+F+G [Nachweis] in Probenmaterial mit Maus-Bioassay.Neutralisation"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="41630-5"/>
+        <display value="Clostridium botulinum toxin A [Presence] in Specimen by Immunofluorescence"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Clostridium botulinum Toxin A [Nachweis] in Probenmaterial mit Immunfluoreszenztest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="41631-3"/>
+        <display value="Clostridium botulinum toxin A botA gene [Presence] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Clostridium botulinum Toxin A botA-Gen [Nachweis] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="41632-1"/>
+        <display value="Clostridium botulinum toxin B [Presence] in Specimen by Immunofluorescence"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Clostridium botulinum Toxin B [Nachweis] in Probenmaterial mit Immunfluoreszenztest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="41633-9"/>
+        <display value="Clostridium botulinum toxin B botB gene [Presence] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Clostridium botulinum Toxin B botB-Gen [Nachweis] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="41634-7"/>
+        <display value="Clostridium botulinum toxin E [Presence] in Specimen by Immunofluorescence"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Clostridium botulinum Toxin E [Nachweis] in Probenmaterial mit Immunfluoreszenztest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="41635-4"/>
+        <display value="Clostridium botulinum toxin F [Presence] in Specimen by Immunofluorescence"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Clostridium botulinum Toxin F [Nachweis] in Probenmaterial mit Immunfluoreszenztest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="44274-9"/>
+        <display value="Clostridium botulinum toxin [Identifier] in Specimen by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Clostridium botulinum Toxin [Nachweis oder Identität] in Probenmaterial mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="44796-1"/>
+        <display value="Clostridium botulinum toxin [Identifier] in Specimen"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Clostridium botulinum Toxin [Nachweis oder Identität] in Probenmaterial"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="45039-5"/>
+        <display value="Clostridium botulinum toxin [Presence] in Specimen by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Clostridium botulinum Toxin [Nachweis] in Probenmaterial mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="46705-0"/>
+        <display value="Clostridium botulinum toxin gene [Identifier] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Clostridium-botulinum-Toxin-Gen [Nachweis oder Identität] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="81644-7"/>
+        <display value="Clostridium botulinum toxin C botC gene [Presence] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Clostridium botulinum Toxin C botC-Gen [Nachweis] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="81645-4"/>
+        <display value="Clostridium botulinum toxin D botD gene [Presence] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Clostridium botulinum Toxin D botD-Gen [Nachweis] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="81646-2"/>
+        <display value="Clostridium botulinum toxin E botE gene [Presence] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Clostridium botulinum Toxin E botE-Gen [Nachweis] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="81647-0"/>
+        <display value="Clostridium botulinum toxin F botF gene [Presence] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Clostridium botulinum Toxin F botF-Gen [Nachweis] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="81648-8"/>
+        <display value="Clostridium botulinum toxin G botG gene [Presence] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Clostridium botulinum Toxin G botG-Gen [Nachweis] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="87948-6"/>
+        <display value="Clostridium botulinum [Presence] in Stool by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Clostridium botulinum [Nachweis] in Stuhl mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="88578-0"/>
+        <display value="Clostridium botulinum toxin [Identifier] in Stool by Mouse bioassay neutralization"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Clostridium botulinum Toxin [Nachweis oder Identität] in Stuhl mit Maus-Bioassay.Neutralisation"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="88589-7"/>
+        <display value="Clostridium botulinum toxin [Identifier] in Serum by Mouse bioassay neutralization"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Clostridium botulinum Toxin [Nachweis oder Identität] in Serum mit Maus-Bioassay.Neutralisation"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="80518-4"/>
+        <display value="Clostridium baratii toxin F bont gene [Presence] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Clostridium baratii Toxin F bont-Gen [Nachweis] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="91895-3"/>
+        <display value="Bacterial strain [Type] in Isolate by Sequencing"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Bakterienstamm [Typ] in Isolat mit Sequenzierung"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="90246-0"/>
+        <display value="Bacterial whole genome [Nucleotide sequence] in Isolate by Sequencing"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Bakterielles Gesamtgenom [Nukleotidsequenz] in Isolat mit Sequenzierung"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="23667-9"/>
+        <display value="Bacteria identified in Specimen"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,781 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="laboratoryTestVZVP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/laboratoryTestVZVP"/>
+  <version value="1.5.0"/>
+  <name value="LaboratoryTestVZVP"/>
+  <title value="Labortest für Varizella-Zoster-Virus"/>
+  <status value="active"/>
+  <date value="2023-05-04"/>
+  <description value="Das ValueSet LaboratoryTestVZVP enthält die Codes der Labortests für Varizella-Zoster-Virus."/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <version value="2.74"/>
+      <concept>
+        <code value="100982-8"/>
+        <display value="Varicella zoster virus DNA [Log #/volume] (viral load) in Specimen by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="101204-6"/>
+        <display value="Varicella zoster virus IgA Ab [Units/volume] in Serum or Plasma by Immunoassay"/>
+      </concept>
+      <concept>
+        <code value="100691-5"/>
+        <display value="Varicella zoster virus DNA [Log #/volume] (viral load) in Blood by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-DNA [log #/Volumen] (Viruslast) in Blut mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="100692-3"/>
+        <display value="Varicella zoster virus DNA [Log #/volume] (viral load) in Cerebral spinal fluid by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-DNA [log #/Volumen] (Viruslast) in Zerebrospinalflüssigkeit mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="22601-9"/>
+        <display value="Varicella zoster virus IgG Ab [Titer] in Cerebral spinal fluid"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-IgG-Antikörper [Titer] in Zerebrospinalflüssigkeit"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="22602-7"/>
+        <display value="Varicella zoster virus IgG Ab [Titer] in Serum"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-IgG-Antikörper [Titer] in Serum"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="29249-0"/>
+        <display value="Varicella zoster virus IgG Ab [Units/volume] in Body fluid"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-IgG-Antikörper [Einheiten/Volumen] in Körperflüssigkeit"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="44771-4"/>
+        <display value="Varicella zoster virus Ab [Titer] in Serum by Immunofluorescence"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-Antikörper [Titer] in Serum mit Immunfluoreszenztest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="47419-7"/>
+        <display value="Varicella zoster virus Ab [Units/volume] in Serum by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-Antikörper [Einheiten/Volumen] in Serum mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="52978-4"/>
+        <display value="Varicella zoster virus Ab [Units/volume] in Serum by Complement fixation"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-Antikörper [Einheiten/Volumen] in Serum mit Komplementbindungsreaktion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="53534-4"/>
+        <display value="Varicella zoster virus IgG Ab [Presence] in Body fluid by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-IgG-Antikörper [Nachweis] in Körperflüssigkeit mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="5401-5"/>
+        <display value="Varicella zoster virus Ab [Titer] in Serum by Complement fixation"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-Antikörper [Titer] in Serum mit Komplementbindungsreaktion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="5402-3"/>
+        <display value="Varicella zoster virus Ab [Titer] in Serum by Latex agglutination"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-Antikörper [Titer] in Serum mit Latexagglutination"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="5403-1"/>
+        <display value="Varicella zoster virus IgG Ab [Units/volume] in Serum by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-IgG-Antikörper [Einheiten/Volumen] in Serum mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="6569-8"/>
+        <display value="Varicella zoster virus IgG Ab [Titer] in Serum by Immunofluorescence"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-IgG-Antikörper [Titer] in Serum mit Immunfluoreszenztest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="8046-5"/>
+        <display value="Varicella zoster virus Ab [Units/volume] in Serum"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-Antikörper [Einheiten/Volumen] in Serum"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="8047-3"/>
+        <display value="Varicella zoster virus IgG Ab [Units/volume] in Serum"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-IgG-Antikörper [Einheiten/Volumen] in Serum"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="95714-2"/>
+        <display value="Varicella zoster virus IgG Ab [Units/volume] in Specimen by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-IgG-Antikörper [Einheiten/Volumen] in Probenmaterial mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="96960-0"/>
+        <display value="Varicella zoster virus IgM Ab index [Units/volume] in Serum and CSF"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-IgM-Antikörperindex [Einheiten/Volumen] in Serum und Zerebrospinalflüssigkeit"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="96961-8"/>
+        <display value="Varicella zoster virus IgG Ab index [Units/volume] in Serum and CSF"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-IgG-Antikörperindex [Einheiten/Volumen] in Serum und Zerebrospinalflüssigkeit"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="10860-5"/>
+        <display value="Varicella zoster virus [Presence] in Specimen by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus [Nachweis] in Probenmaterial mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="11483-5"/>
+        <display value="Varicella zoster virus DNA [Presence] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-DNA [Nachweis] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="14306-5"/>
+        <display value="Varicella zoster virus IgG Ab [Units/volume] in Serum by Immunoassay --1st specimen"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-IgG-Antikörper [Einheiten/Volumen] in Serum mit Immunoassay --1. Probenmaterial"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="14307-3"/>
+        <display value="Varicella zoster virus IgG Ab [Units/volume] in Serum by Immunoassay --2nd specimen"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-IgG-Antikörper [Einheiten/Volumen] in Serum mit Immunoassay --2. Probenmaterial"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="17764-2"/>
+        <display value="Varicella zoster virus IgG Ab [Units/volume] in Cerebral spinal fluid"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-IgG-Antikörper [Einheiten/Volumen] in Zerebrospinalflüssigkeit"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="21597-0"/>
+        <display value="Varicella zoster virus IgM Ab [Presence] in Serum"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-IgM-Antikörper [Nachweis] in Serum"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="21598-8"/>
+        <display value="Varicella zoster virus DNA [Presence] in Cerebral spinal fluid by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-DNA [Nachweis] in Zerebrospinalflüssigkeit mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="22603-5"/>
+        <display value="Varicella zoster virus IgG Ab [Units/volume] in Serum --1st specimen"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-IgG-Antikörper [Einheiten/Volumen] in Serum --1. Probenmaterial"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="22604-3"/>
+        <display value="Varicella zoster virus IgG Ab [Units/volume] in Serum --2nd specimen"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-IgG-Antikörper [Einheiten/Volumen] in Serum --2. Probenmaterial"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="22605-0"/>
+        <display value="Varicella zoster virus IgM Ab [Titer] in Cerebral spinal fluid"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-IgM-Antikörper [Titer] in Zerebrospinalflüssigkeit"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="22606-8"/>
+        <display value="Varicella zoster virus IgM Ab [Titer] in Serum"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-IgM-Antikörper [Titer] in Serum"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="29248-2"/>
+        <display value="Varicella zoster virus DNA [Presence] in Blood by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-DNA [Nachweis] in Blut mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="29662-4"/>
+        <display value="Varicella zoster virus IgM Ab [Presence] in Serum by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-IgM-Antikörper [Nachweis] in Serum mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="31695-0"/>
+        <display value="Varicella zoster virus IgM Ab [Units/volume] in Cerebral spinal fluid"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-IgM-Antikörper [Einheiten/Volumen] in Zerebrospinalflüssigkeit"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="31982-2"/>
+        <display value="Varicella zoster virus Ag [Presence] in Specimen"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-Antigen [Nachweis] in Probenmaterial"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="35399-5"/>
+        <display value="Varicella zoster virus DNA [Presence] in Eye by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-DNA [Nachweis] in Auge mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="35400-1"/>
+        <display value="Varicella zoster virus DNA [Presence] in Tissue by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-DNA [Nachweis] in Gewebe mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="47002-1"/>
+        <display value="Varicella zoster virus DNA [#/volume] (viral load) in Cerebral spinal fluid by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-DNA [#/Volumen] (Viruslast) in Zerebrospinalflüssigkeit mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="47003-9"/>
+        <display value="Varicella zoster virus DNA [#/volume] (viral load) in Serum or Plasma by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-DNA [#/Volumen] (Viruslast) in Serum oder Plasma mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="49450-0"/>
+        <display value="Varicella zoster virus DNA [#/volume] (viral load) in Tissue by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-DNA [#/Volumen] (Viruslast) in Gewebe mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="49451-8"/>
+        <display value="Varicella zoster virus DNA [#/volume] (viral load) in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-DNA [#/Volumen] (Viruslast) in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="49452-6"/>
+        <display value="Varicella zoster virus DNA [#/volume] (viral load) in Urine by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-DNA [#/Volumen] (Viruslast) in Urin mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="49453-4"/>
+        <display value="Varicella zoster virus DNA [#/volume] (viral load) in Bone marrow by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-DNA [#/Volumen] (Viruslast) in Knochenmark mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="49454-2"/>
+        <display value="Varicella zoster virus DNA [#/volume] (viral load) in Amniotic fluid by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-DNA [#/Volumen] (Viruslast) in Amnionflüssigkeit mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="49455-9"/>
+        <display value="Varicella zoster virus DNA [#/volume] (viral load) in Bronchoalveolar lavage by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-DNA [#/Volumen] (Viruslast) in bronchoalveolärer Lavage mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="5404-9"/>
+        <display value="Varicella zoster virus IgM Ab [Units/volume] in Serum by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-IgM-Antikörper [Einheiten/Volumen] in Serum mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="69930-6"/>
+        <display value="Varicella zoster virus IgM Ab [Presence] in Cerebral spinal fluid by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-IgM-Antikörper [Nachweis] in Zerebrospinalflüssigkeit mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="73657-9"/>
+        <display value="Varicella zoster virus ORF36 genotype [Identifier]"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus ORF36-Genotyp [Nachweis oder Identität]"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="8048-1"/>
+        <display value="Varicella zoster virus IgM Ab [Units/volume] in Serum"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-IgM-Antikörper [Einheiten/Volumen] in Serum"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="8049-9"/>
+        <display value="Varicella zoster virus DNA [Presence] in Serum by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-DNA [Nachweis] in Serum mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="82188-4"/>
+        <display value="Varicella zoster virus DNA [Presence] in Cerebral spinal fluid by NAA with non-probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-DNA [Nachweis] in Zerebrospinalflüssigkeit mit Nukleinsäureamplifikation mit Detektion ohne Sonde"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="82746-9"/>
+        <display value="Varicella zoster virus strain [Type] in Isolate"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-Stamm [Typ] in Isolat"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="86502-2"/>
+        <display value="Varicella zoster virus strain DNA [Type] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-Stamm-DNA [Typ] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="86509-7"/>
+        <display value="Varicella zoster virus clade [Type] in Specimen by Molecular genetics method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-Klade [Typ] in Probenmaterial, molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="86593-1"/>
+        <display value="Varicella zoster virus DNA [Presence] in Amniotic fluid by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-DNA [Nachweis] in Amnionflüssigkeit mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="88536-8"/>
+        <display value="Varicella zoster virus DNA [Presence] in Aspirate by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-DNA [Nachweis] in Aspirat mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="88565-7"/>
+        <display value="Varicella zoster virus DNA [Presence] in Lower respiratory specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-DNA [Nachweis] in Probenmaterial aus dem unteren Respirationstrakt mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="89589-6"/>
+        <display value="Varicella zoster virus Ag [Presence] in Cerebral spinal fluid by Immunofluorescence"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-Antigen [Nachweis] in Zerebrospinalflüssigkeit mit Immunfluoreszenztest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="92888-7"/>
+        <display value="Varicella zoster virus DNA [Presence] in Skin by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-DNA [Nachweis] in Haut mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="94584-0"/>
+        <display value="Varicella zoster virus DNA [Presence] in Specimen by NAA with non-probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-DNA [Nachweis] in Probenmaterial mit Nukleinsäureamplifikation mit Detektion ohne Sonde"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="94831-5"/>
+        <display value="Varicella zoster virus DNA [Units/volume] (viral load) in Amniotic fluid by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-DNA [Einheiten/Volumen] (Viruslast) in Amnionflüssigkeit mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="94832-3"/>
+        <display value="Varicella zoster virus DNA [log units/volume] (viral load) in Amniotic fluid by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-DNA [log Einheiten/Volumen] (Viruslast) in Amnionflüssigkeit mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="94833-1"/>
+        <display value="Varicella zoster virus DNA [Log #/volume] (viral load) in Amniotic fluid by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Varicella-Zoster-Virus-DNA [log #/Volumen] (Viruslast) in Amnionflüssigkeit mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="41461-5"/>
+        <display value="Virus identified in Specimen"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Virus identifiziert in Probenmaterial"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="92253-4"/>
+        <display value="Microorganism identified in Isolate or Specimen by Molecular genetics method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mikroorganismus identifiziert in Isolat oder Probenmaterial, molekulargenetisch"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

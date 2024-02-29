@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="laboratoryTestPLAP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/laboratoryTestPLAP"/>
+  <version value="1.2.0"/>
+  <name value="LaboratoryTestPLAP"/>
+  <title value="Labortest für Plasmodium spp. (Malaria)"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-11-01"/>
+  <publisher value="Robert Koch-Institut"/>
+  <description value="Das ValueSet LaboratoryTestPLAP enthält die Codes der Labortests für Plasmodium spp. (Malaria)."/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <version value="2.76"/>
+      <concept>
+        <code value="101996-7"/>
+        <display value="Erythrocytes.Plasmodium falciparum infected/100 erythrocytes in Blood by Microscopy"/>
+      </concept>
+      <concept>
+        <code value="101205-3"/>
+        <display value="Plasmodium sp IgG Ab [Units/volume] in Serum or Plasma by Immunoassay"/>
+      </concept>
+      <concept>
+        <code value="101305-1"/>
+        <display value="Plasmodium sp DNA [Presence] in Blood by NAA with non-probe detection"/>
+      </concept>
+      <concept>
+        <code value="101306-9"/>
+        <display value="Plasmodium falciparum DNA [Presence] in Blood by NAA with non-probe detection"/>
+      </concept>
+      <concept>
+        <code value="101307-7"/>
+        <display value="Plasmodium vivax+ovale DNA [Presence] in Blood by NAA with non-probe detection"/>
+      </concept>
+      <concept>
+        <code value="10710-2"/>
+        <display value="Plasmodium sp identified in Blood by Thin film"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Plasmodium sp identifiziert in Blut mit Blutausstrich"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="32206-5"/>
+        <display value="Plasmodium sp identified in Blood by Light microscopy"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Plasmodium sp identifiziert in Blut mit Lichtmikroskopie"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="41447-4"/>
+        <display value="Plasmodium falciparum DNA [Presence] in Blood by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Plasmodium falciparum DNA [Nachweis] in Blut mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="41448-2"/>
+        <display value="Plasmodium malariae DNA [Presence] in Blood by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Plasmodium malariae DNA [Nachweis] in Blut mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="41449-0"/>
+        <display value="Plasmodium ovale DNA [Presence] in Blood by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Plasmodium ovale DNA [Nachweis] in Blut mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="41450-8"/>
+        <display value="Plasmodium vivax DNA [Presence] in Blood by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Plasmodium vivax DNA [Nachweis] in Blut mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="41451-6"/>
+        <display value="Plasmodium stage [Identifier] in Blood by Light microscopy"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Plasmodium-Stadium [Nachweis oder Identität] in Blut mit Lichtmikroskopie"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="47085-6"/>
+        <display value="Plasmodium sp DNA [Presence] in Blood by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Plasmodium sp DNA [Nachweis] in Blut mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="47260-5"/>
+        <display value="Plasmodium sp DNA [Identifier] in Blood by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Plasmodium sp DNA [Nachweis oder Identität] in Blut mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="48427-9"/>
+        <display value="Erythrocytes.Plasmodium sp infected/1000 erythrocytes in Blood"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Erythrozyten.Plasmodium-sp-infiziert/1000 Erythrozyten in Blut"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="50687-3"/>
+        <display value="Plasmodium sp Ag [Presence] in Blood"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Plasmodium sp Antigen [Nachweis] in Blut"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="51587-4"/>
+        <display value="Plasmodium sp [Presence] in Blood by Light microscopy"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Plasmodium sp [Nachweis] in Blut mit Lichtmikroskopie"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="53556-7"/>
+        <display value="Erythrocytes.Plasmodium sp infected/100 erythrocytes in Blood"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Erythrozyten.Plasmodium-sp-infiziert/100 Erythrozyten in Blut"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="637-9"/>
+        <display value="Plasmodium sp identified in Blood by Thick film"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Plasmodium sp identifiziert in Blut mit dickem Tropfen"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="70568-1"/>
+        <display value="Plasmodium knowlesi DNA [Presence] in Blood by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Plasmodium knowlesi DNA [Nachweis] in Blut mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="70569-9"/>
+        <display value="Plasmodium sp Ag [Identifier] in Blood by Rapid immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Plasmodium sp Antigen [Nachweis oder Identität] in Blut mit Immunoassay-Schnelltest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="76772-3"/>
+        <display value="Plasmodium falciparum Ag [Presence] in Blood by Rapid immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Plasmodium falciparum Antigen [Nachweis] in Blut mit Immunoassay-Schnelltest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="29305-0"/>
+        <display value="Medication prescribed"/>
+      </concept>
+      <concept>
+        <code value="92253-4"/>
+        <display value="Microorganism identified in Isolate or Specimen by Molecular genetics method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mikroorganismus identifiziert in Isolat oder Probenmaterial, molekulargenetisch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="32700-7"/>
+        <display value="Microscopic observation [Identifier] in Blood by Malaria smear"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mikroskopische Beobachtung [Nachweis oder Identität] in Blut mit Malariaausstrich"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

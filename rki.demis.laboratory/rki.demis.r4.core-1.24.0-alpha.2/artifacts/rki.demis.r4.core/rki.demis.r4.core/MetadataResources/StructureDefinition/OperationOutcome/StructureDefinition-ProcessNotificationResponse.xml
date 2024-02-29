@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ProcessNotificationResponse"/>
+  <url value="https://demis.rki.de/fhir/StructureDefinition/ProcessNotificationResponse"/>
+  <version value="1.1.0"/>
+  <name value="ProcessNotificationResponse"/>
+  <title value="Response für $process-notification"/>
+  <status value="active"/>
+  <date value="2023-05-05"/>
+  <description value="Response für $process-notification"/>
+  <fhirVersion value="4.0.1"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="OperationOutcome"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/OperationOutcome"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="OperationOutcome.issue.location">
+      <path value="OperationOutcome.issue.location"/>
+      <max value="0"/>
+    </element>
+  </differential>
+</StructureDefinition>

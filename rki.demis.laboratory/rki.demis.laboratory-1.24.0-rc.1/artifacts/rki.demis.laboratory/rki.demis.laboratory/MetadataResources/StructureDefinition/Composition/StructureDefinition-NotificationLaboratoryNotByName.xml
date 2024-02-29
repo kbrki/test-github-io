@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="NotificationLaboratoryNotByName" />
+  <url value="https://demis.rki.de/fhir/StructureDefinition/NotificationLaboratoryNotByName" />
+  <version value="1.3.0" />
+  <name value="NotificationLaboratoryNotByName" />
+  <title value="Erregernachweismeldung (nichtnamentlich)" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2023-11-28" />
+  <description value="Die Erregernachweismeldung (nichtnamentlich) definiert die Meldeinhalte, die von Laboren übermittelt werden müssen. Erregerspezifische Befunddaten werden über Subprofile des Laborberichts-Profils definiert. In der Erregernachweismeldung kann ein spezifischer Laborbericht referenziert werden." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Composition" />
+  <baseDefinition value="https://demis.rki.de/fhir/StructureDefinition/Notification" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Composition.meta">
+      <path value="Composition.meta" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.meta.profile">
+      <path value="Composition.meta.profile" />
+      <min value="1" />
+      <max value="1" />
+      <fixedCanonical value="https://demis.rki.de/fhir/StructureDefinition/NotificationLaboratoryNotByName" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.contained">
+      <path value="Composition.contained" />
+      <max value="0" />
+    </element>
+    <element id="Composition.identifier">
+      <path value="Composition.identifier" />
+      <short value="Eindeutige ID der Meldung" />
+      <definition value="Eindeutige ID der Meldung, die vom Melder bei Erstellung generiert wird oder sich aus der Auftragsnummer ableitet. Es handelt sich um eine UUID im NamingSystem https://demis.rki.de/fhir/NamingSystem/NotificationId." />
+      <comment value="Bei einer Ergänzungs- bzw. einer Korrekturmeldung ist die gleiche NotificationId der Meldung anzugegeben." />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.identifier.system">
+      <path value="Composition.identifier.system" />
+      <min value="1" />
+      <fixedUri value="https://demis.rki.de/fhir/NamingSystem/NotificationId" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.identifier.value">
+      <path value="Composition.identifier.value" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.type">
+      <path value="Composition.type" />
+      <definition value="Typ der Composition. In DEMIS ist der Typ immer mit dem Wert 34782-3 (Infectious disease Note) aus dem entsprechend hinterlegten LOINC-ValueSet zu belegen." />
+    </element>
+    <element id="Composition.type.coding">
+      <path value="Composition.type.coding" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://loinc.org" />
+        <code value="34782-3" />
+        <display value="Infectious disease Note" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.category">
+      <path value="Composition.category" />
+      <short value="Art der Meldung" />
+      <definition value="Art der Meldung. Für die Erregernachweismeldung ist category mit dem LOINC-Code \&quot;Laboratory report\&quot; im coding zu belegen." />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.category.coding">
+      <path value="Composition.category.coding" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://loinc.org" />
+        <code value="11502-2" />
+        <display value="Laboratory report" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.subject">
+      <path value="Composition.subject" />
+      <short value="Verweis auf die betroffene Person (nichtnamentlich)." />
+      <definition value="Verweis auf die betroffene Person (nichtnamentlich)." />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/NotifiedPersonNotByName" />
+        <aggregation value="bundled" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.subject.reference">
+      <path value="Composition.subject.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.author">
+      <path value="Composition.author" />
+      <definition value="Verweis auf die Melder-Rolle. Über die Melder-Rolle kann eine Person oder eine Organisation als Melder - hier das Labor - referenziert werden." />
+    </element>
+    <element id="Composition.section">
+      <path value="Composition.section" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="code.coding" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Composition.section:laboratoryReport">
+      <path value="Composition.section" />
+      <sliceName value="laboratoryReport" />
+      <short value="Enthält einen Verweis auf einen erregerspezifischen Laborbericht" />
+      <definition value="Entsprechend des Meldetatbestandes wird an dieser Stelle ein erregerspezifischer Laborbericht z.B. SARS-CoV-2-Laborbericht referenziert." />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:laboratoryReport.code">
+      <path value="Composition.section.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:laboratoryReport.code.coding">
+      <path value="Composition.section.code.coding" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://loinc.org" />
+        <code value="11502-2" />
+        <display value="Laboratory report" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:laboratoryReport.entry">
+      <path value="Composition.section.entry" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReport" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:laboratoryReport.entry.reference">
+      <path value="Composition.section.entry.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:laboratoryReport.section">
+      <path value="Composition.section.section" />
+      <contentReference value="http://hl7.org/fhir/StructureDefinition/Composition#Composition.section" />
+    </element>
+  </differential>
+</StructureDefinition>

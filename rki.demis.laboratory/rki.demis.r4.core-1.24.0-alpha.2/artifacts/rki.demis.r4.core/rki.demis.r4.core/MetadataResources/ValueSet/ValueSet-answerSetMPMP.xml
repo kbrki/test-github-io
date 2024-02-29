@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetMPMP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetMPMP"/>
+  <version value="1.0.0"/>
+  <name value="AnswerSetMPMP"/>
+  <title value="AnswerSet für Mycoplasmen"/>
+  <status value="active"/>
+  <date value="2023-05-03"/>
+  <description value="Das ValueSet AnswerSetMPMP enthält die Codes der Answer-Codes für Mycoplasmen."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <code value="78981005"/>
+        <display value="Genus Mycoplasma (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Genus Mycoplasma (organism)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="5056007"/>
+        <display value="Mycoplasma genitalium (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Mycoplasma genitalium (organism)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1290001"/>
+        <display value="Metamycoplasma hominis (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Metamycoplasma hominis (organism)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="58720004"/>
+        <display value="Mycoplasma pneumoniae (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Mycoplasma pneumoniae (organism)"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

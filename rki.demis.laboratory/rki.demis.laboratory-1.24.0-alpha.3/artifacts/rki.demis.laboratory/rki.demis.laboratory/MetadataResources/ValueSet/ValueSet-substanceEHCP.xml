@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="substanceEHCP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/substanceEHCP"/>
+  <version value="1.3.0"/>
+  <name value="SubstanceEHCP"/>
+  <title value="Analyt-Set für Escherichia coli (enterohämorrhagisch)"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-11-09"/>
+  <publisher value="Robert Koch-Institut"/>
+  <description value="Das ValueSet SubstanceEHCP enthält die Codes des Analyt-Sets für Escherichia coli (enterohämorrhagisch)."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230901"/>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="709385004"/>
+        <display value="Antigen of Escherichia coli O157 (substance)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Antigen of Escherichia coli O157 (substance)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="E.coli-O157-Antigen"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="259835003"/>
+        <display value="Escherichia coli lipopolysaccharide antibody (substance)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Escherichia coli lipopolysaccharide antibody (substance)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="E.coli-LPS-Antikörper"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="608774005"/>
+        <display value="Shiga toxin 1 (substance)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Shiga toxin 1 (substance)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Shigatoxin 1 (stx1)"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="608775006"/>
+        <display value="Shiga toxin 2 (substance)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Shiga toxin 2 (substance)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Shigatoxin 2 (stx2)"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="255835006"/>
+        <display value="Shiga toxin (substance)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Shiga toxin (substance)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Shigatoxin"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetBOVP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetBOVP"/>
+  <version value="1.4.0"/>
+  <name value="AnswerSetBOVP"/>
+  <title value="AnswerSet für humanpathogene Bornaviren; Meldepflicht nur für den direkten Nachweis"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-11-09"/>
+  <publisher value="Robert Koch-Institut"/>
+  <description value="Das ValueSet AnswerSetBOVP enthält die Codes der Answer-Codes für humanpathogene Bornaviren; Meldepflicht nur für den direkten Nachweis."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230901"/>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="285349002"/>
+        <display value="Borna disease virus (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Borna disease virus (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Borna-disease-Virus"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="407340002"/>
+        <display value="Genus Bornavirus (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Genus Bornavirus (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Bornavirus spp."/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

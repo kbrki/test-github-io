@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="LaboratoryReportMRAP"/>
+  <url value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportMRAP"/>
+  <version value="1.2.0"/>
+  <name value="LaboratoryReportMRAP"/>
+  <title value="Laborbericht für Staphylococcus aureus (Methicillin-resistente Stämme); Meldepflicht nur für den Nachweis aus Blut oder Liquor"/>
+  <status value="active"/>
+  <date value="2023-05-05"/>
+  <description value="Der Staphylococcus aureus-Laborbericht kann mehrere Staphylococcus aureus-Erregernachweise enthalten und fasst die Ergebnisse der Einzeltests zusammen."/>
+  <fhirVersion value="4.0.1"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="DiagnosticReport"/>
+  <baseDefinition value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReport"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="DiagnosticReport.code">
+      <path value="DiagnosticReport.code"/>
+      <definition value="Im Laborbericht für Staphylococcus aureus ist der code immer mit dem Wert &quot;mrap&quot; aus dem ValueSet https://demis.rki.de/fhir/CodeSystem/notificationCategory zu belegen."/>
+    </element>
+    <element id="DiagnosticReport.code.coding.system">
+      <path value="DiagnosticReport.code.coding.system"/>
+      <fixedUri value="https://demis.rki.de/fhir/CodeSystem/notificationCategory"/>
+    </element>
+    <element id="DiagnosticReport.code.coding.code">
+      <path value="DiagnosticReport.code.coding.code"/>
+      <fixedCode value="mrap"/>
+    </element>
+    <element id="DiagnosticReport.code.coding.display">
+      <path value="DiagnosticReport.code.coding.display"/>
+      <min value="1"/>
+    </element>
+    <element id="DiagnosticReport.result">
+      <path value="DiagnosticReport.result"/>
+      <short value="Referenziert einen Erregernachweis für Staphylococcus aureus (Methicillin-resistente Stämme); Meldepflicht nur für den Nachweis aus Blut oder Liquor"/>
+      <definition value="Referenziert einen Erregernachweis für Staphylococcus aureus (Methicillin-resistente Stämme); Meldepflicht nur für den Nachweis aus Blut oder Liquor"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/PathogenDetectionMRAP"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

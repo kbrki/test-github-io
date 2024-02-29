@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="laboratoryTestPKVP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/laboratoryTestPKVP"/>
+  <version value="1.2.0"/>
+  <name value="LaboratoryTestPKVP"/>
+  <title value="Labortest für Orthopockenviren (Variolavirus)"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-11-01"/>
+  <publisher value="Robert Koch-Institut"/>
+  <description value="Das ValueSet LaboratoryTestPKVP enthält die Codes der Labortests für Orthopockenviren (Variolavirus)."/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <version value="2.76"/>
+      <concept>
+        <code value="41856-6"/>
+        <display value="Variola virus DNA [Presence] in Specimen by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="41461-5"/>
+        <display value="Virus identified in Specimen"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Virus identifiziert in Probenmaterial"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

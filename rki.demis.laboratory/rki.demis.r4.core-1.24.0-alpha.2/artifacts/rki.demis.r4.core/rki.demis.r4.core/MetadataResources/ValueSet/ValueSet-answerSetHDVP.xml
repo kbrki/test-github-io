@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetHDVP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetHDVP"/>
+  <version value="1.2.0"/>
+  <name value="AnswerSetHDVP"/>
+  <title value="AnswerSet für Hepatitis-D-Virus; Meldepflicht für alle Nachweise"/>
+  <status value="active"/>
+  <date value="2023-05-30"/>
+  <description value="Das ValueSet AnswerSetHDVP enthält die Codes der Answer-Codes für Hepatitis-D-Virus; Meldepflicht für alle Nachweise."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="83617006"/>
+        <display value="Hepatitis D virus (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Hepatitis D virus (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Hepatitis-D-Virus"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

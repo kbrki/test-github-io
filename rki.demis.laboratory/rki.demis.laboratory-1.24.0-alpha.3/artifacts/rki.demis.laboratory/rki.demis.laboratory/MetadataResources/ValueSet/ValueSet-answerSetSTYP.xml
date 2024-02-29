@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetSTYP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetSTYP"/>
+  <version value="1.5.0"/>
+  <name value="AnswerSetSTYP"/>
+  <title value="AnswerSet für Salmonella Typhi; Meldepflicht für alle direkten Nachweise"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-11-09"/>
+  <publisher value="Robert Koch-Institut"/>
+  <description value="Das ValueSet AnswerSetSTYP enthält die Codes der Answer-Codes für Salmonella Typhi; Meldepflicht für alle direkten Nachweise."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230901"/>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="5595000"/>
+        <display value="Salmonella enterica subspecies enterica serovar Typhi (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Salmonella enterica subspecies enterica serovar Typhi (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Salmonella enterica Subspecies enterica, Serovar Typhi"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

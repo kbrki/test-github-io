@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="SpecimenSequence" />
+  <url value="https://demis.rki.de/fhir/StructureDefinition/SpecimenSequence" />
+  <version value="1.0.0" />
+  <name value="SpecimenSequence" />
+  <title value="Sequenz-Probe" />
+  <status value="active" />
+  <date value="2023-07-10" />
+  <description value="Die Sequenz-Probe enthält Angaben zum Probenmaterial, Datum des Probeneingangs, Probennahmedatum und Angaben zur Analyse der Probe in Form der Sequenzierstrategie, des Sequenzierprotokolls, Reagenzien zur Verarbeitung (Sequenzen der Primer für die Amplikonsequenzierung und der Adapter). Die IGS-ID wird von DEMIS beim Sequenzupload vergeben, als DEMIS Identifier für die Sequenz, und an den Melder zurückgegeben." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="true" />
+  <type value="Specimen" />
+  <baseDefinition value="https://demis.rki.de/fhir/StructureDefinition/Specimen" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Specimen.extension">
+      <path value="Specimen.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="Specimen.extension:isolate">
+      <path value="Specimen.extension" />
+      <sliceName value="isolate" />
+      <short value="Verwendetes Isolat" />
+      <definition value="Verwendetes Isolat" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://demis.rki.de/fhir/StructureDefinition/Isolate" />
+      </type>
+      <mustSupport value="true" />
+      <isModifier value="false" />
+    </element>
+    <element id="Specimen.subject">
+      <path value="Specimen.subject" />
+      <short value="Betroffene Person (nichtnamentlich)" />
+      <definition value="Betroffene Person (nichtnamentlich)" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/NotifiedPersonNotByName" />
+        <aggregation value="bundled" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Specimen.processing">
+      <path value="Specimen.processing" />
+      <min value="1" />
+    </element>
+    <element id="Specimen.processing.description">
+      <path value="Specimen.processing.description" />
+      <short value="Name des Sequenzierungsprotokolls" />
+      <definition value="Name des Sequenzierungsprotokolls" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Specimen.processing.procedure">
+      <path value="Specimen.processing.procedure" />
+      <short value="Sequenzierungsstrategie" />
+      <definition value="Sequenzierungsstrategie" />
+      <mustSupport value="true" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="SpecimenProcessingProcedure" />
+        </extension>
+        <strength value="required" />
+        <description value="Sequenzierungsstrategie" />
+        <valueSet value="https://demis.rki.de/fhir/ValueSet/sequencingStrategy" />
+      </binding>
+    </element>
+    <element id="Specimen.processing.additive">
+      <path value="Specimen.processing.additive" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="resolve().code.coding" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Specimen.processing.additive:adapterSubstance">
+      <path value="Specimen.processing.additive" />
+      <sliceName value="adapterSubstance" />
+      <short value="Verwendetes Material für die Sequenzierung" />
+      <definition value="Verwendetes Material für die Sequenzierung" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/AdapterSubstance" />
+        <aggregation value="bundled" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Specimen.processing.additive:primerSubstance">
+      <path value="Specimen.processing.additive" />
+      <sliceName value="primerSubstance" />
+      <short value="PrimerSequenzen, die bei der Amplicon-Sequenzierung benutzt werden" />
+      <definition value="PrimerSequenzen, die bei der Amplicon-Sequenzierung benutzt werden" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/PrimerSubstance" />
+        <aggregation value="bundled" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Specimen.processing.time[x]">
+      <path value="Specimen.processing.time[x]" />
+      <short value="Verarbeitungsdatum z.B. Sequenzierungsdatum" />
+      <definition value="Datum, an dem die Probe verarbeitet z.B. sequenziert wurde" />
+      <type>
+        <code value="dateTime" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="materialCLTP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/materialCLTP"/>
+  <version value="1.0.0"/>
+  <name value="MaterialCLTP"/>
+  <title value="Material für Tetanus, Clostridium tetani"/>
+  <status value="active"/>
+  <date value="2023-05-03"/>
+  <description value="Das ValueSet MaterialCLTP enthält die Codes der Materialien für Tetanus, Clostridium tetani."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <code value="119364003"/>
+        <display value="Serum specimen (specimen)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Serum specimen (specimen)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="258531008"/>
+        <display value="Wound swab (specimen)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Wound swab (specimen)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="119365002"/>
+        <display value="Specimen from wound (specimen)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Specimen from wound (specimen)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="122566000"/>
+        <display value="Fluid specimen from wound (specimen)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Fluid specimen from wound (specimen)"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

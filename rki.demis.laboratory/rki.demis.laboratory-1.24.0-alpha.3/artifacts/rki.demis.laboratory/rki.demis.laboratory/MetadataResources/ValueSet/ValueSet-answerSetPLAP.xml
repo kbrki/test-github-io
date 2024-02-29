@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetPLAP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetPLAP"/>
+  <version value="1.2.0"/>
+  <name value="AnswerSetPLAP"/>
+  <title value="AnswerSet für Plasmodium spp. (Malaria)"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-11-09"/>
+  <publisher value="Robert Koch-Institut"/>
+  <description value="Das ValueSet AnswerSetPLAP enthält die Codes der Answer-Codes für Plasmodium spp. (Malaria)."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230901"/>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="49918008"/>
+        <display value="Plasmodium knowlesi (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Plasmodium knowlesi (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Plasmodium knowlesi"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="74746009"/>
+        <display value="Plasmodium vivax (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Plasmodium vivax (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Plasmodium vivax"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="18508006"/>
+        <display value="Plasmodium ovale (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Plasmodium ovale (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Plasmodium ovale"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="30020004"/>
+        <display value="Plasmodium falciparum (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Plasmodium falciparum (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Plasmodium falciparum"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="56395006"/>
+        <display value="Plasmodium malariae (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Plasmodium malariae (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Plasmodium malariae"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="34706006"/>
+        <display value="Plasmodium (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Plasmodium (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Plasmodium"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Specimen xmlns="http://hl7.org/fhir">
+  <id value="TransactionID-example-2" />
+  <meta>
+    <profile value="https://demis.rki.de/fhir/StructureDefinition/SpecimenCVDP" />
+  </meta>
+  <type>
+    <text value="Tupferabstrich" />
+  </type>
+  <subject>
+    <reference value="Patient/2abf2c7a-2933-4096-a542-3cab3771d1b8" />
+  </subject>
+  <receivedTime value="2020-04-16T00:00:00+02:00" />
+  <collection>
+    <collector>
+      <reference value="PractitionerRole/44f6ad17-955f-4874-b19d-1be9fec866bf" />
+    </collector>
+  </collection>
+  <processing>
+    <extension url="https://demis.rki.de/fhir/StructureDefinition/TransactionID">
+      <valueIdentifier>
+        <system value="https://demis.rki.de/fhir/NamingSystem/TransactionId" />
+        <value value="IGS-10001-CVDP-be8131da-9024-41a4-a53c-3ce0d6f6fe37" />
+      </valueIdentifier>
+    </extension>
+  </processing>
+</Specimen>

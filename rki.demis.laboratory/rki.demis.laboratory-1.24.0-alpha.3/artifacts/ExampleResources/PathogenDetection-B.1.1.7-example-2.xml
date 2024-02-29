@@ -1,0 +1,36 @@
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="PathogenDetection-B.1.1.7-example-2" />
+  <meta>
+    <profile value="https://demis.rki.de/fhir/StructureDefinition/PathogenDetectionCVDP" />
+  </meta>
+  <status value="final" />
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+      <code value="laboratory" />
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org" />
+      <code value="96751-3" />
+      <display value="SARS-CoV-2 (COVID-19) S gene mutation detected Molgen Nom (Specimen)" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/113de363-be19-46b4-8364-71416c7e662b" />
+  </subject>
+  <valueString value="N501Y;H69_V70del#B.1.1.7" />
+  <interpretation>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation" />
+      <code value="POS" />
+    </coding>
+  </interpretation>
+  <note>
+    <text value="Ich bin ein optionaler beschreibender Text ..." />
+  </note>
+  <specimen>
+    <reference value="Specimen/47d61bca-9c53-4422-bb33-3621da084bf4" />
+  </specimen>
+</Observation>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="pathogenDetectionStatus"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/pathogenDetectionStatus"/>
+  <version value="1.2.0"/>
+  <name value="PathogenDetectionStatus"/>
+  <title value="Erregernachweis-Status"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-09-19"/>
+  <publisher value="Robert Koch-Institut"/>
+  <description value="Das ValueSet PathogenDetectionStatus enthält die Codes der Status des Erregernachweises"/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/observation-status"/>
+      <version value="4.0.1"/>
+      <concept>
+        <code value="final"/>
+        <display value="Final"/>
+      </concept>
+      <concept>
+        <code value="amended"/>
+        <display value="Amended"/>
+      </concept>
+      <concept>
+        <code value="corrected"/>
+        <display value="Corrected"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

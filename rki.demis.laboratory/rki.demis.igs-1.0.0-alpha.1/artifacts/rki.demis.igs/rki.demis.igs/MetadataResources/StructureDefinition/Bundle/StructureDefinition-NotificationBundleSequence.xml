@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="NotificationBundleSequence" />
+  <url value="https://demis.rki.de/fhir/StructureDefinition/NotificationBundleSequence" />
+  <version value="1.0.0" />
+  <name value="NotificationBundleSequence" />
+  <title value="Sequenzmeldevorgang" />
+  <status value="draft" />
+  <date value="2023-07-02" />
+  <description value="Der Sequenzmeldevorgang ist vom Meldevorgang abgeleitet und bildet den Container für eine Sequenzmeldung (Sequenzübermittlung) und die darin referenzierten Ressourcen." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Bundle" />
+  <baseDefinition value="https://demis.rki.de/fhir/StructureDefinition/NotificationBundle" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Bundle">
+      <path value="Bundle" />
+      <constraint>
+        <key value="exactlyOneSequence" />
+        <severity value="error" />
+        <human value="Im NotificationBundle muss genau eine Sequenz enthalten sein." />
+        <expression value="entry.where(resource.meta.profile='https://demis.rki.de/fhir/StructureDefinition/Sequence').count()=1" />
+      </constraint>
+    </element>
+    <element id="Bundle.meta">
+      <path value="Bundle.meta" />
+      <min value="1" />
+    </element>
+    <element id="Bundle.meta.profile">
+      <path value="Bundle.meta.profile" />
+      <min value="1" />
+      <max value="1" />
+      <fixedCanonical value="https://demis.rki.de/fhir/StructureDefinition/NotificationBundleSequence" />
+    </element>
+    <element id="Bundle.entry:notification">
+      <path value="Bundle.entry" />
+      <sliceName value="notification" />
+      <definition value="Enthaltene Meldungen. In einem Sequenzmeldevorgang muss genau eine Sequenzmeldung enthalten sein." />
+    </element>
+    <element id="Bundle.entry:notification.resource">
+      <path value="Bundle.entry.resource" />
+      <type>
+        <code value="Composition" />
+        <profile value="https://demis.rki.de/fhir/StructureDefinition/NotificationSequence" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

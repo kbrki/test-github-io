@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="laboratoryTestCAUP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/laboratoryTestCAUP"/>
+  <version value="1.2.0"/>
+  <name value="LaboratoryTestCAUP"/>
+  <title value="Labortest für Candida auris; Meldepflicht nur für den direkten Nachweis"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-11-01"/>
+  <publisher value="Robert Koch-Institut"/>
+  <description value="Das ValueSet LaboratoryTestCAUP enthält die Codes der Labortests für Candida auris; Meldepflicht nur für den direkten Nachweis."/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <version value="2.76"/>
+      <concept>
+        <code value="10650-0"/>
+        <display value="Candida sp DNA [Presence] in Blood by Probe with amplification"/>
+      </concept>
+      <concept>
+        <code value="16539-9"/>
+        <display value="Candida sp Ag [Presence] in Serum"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Candida sp Antigen [Nachweis] in Serum"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="27440-7"/>
+        <display value="Candida sp Ag [Units/volume] in Serum or Plasma by Immunoassay"/>
+      </concept>
+      <concept>
+        <code value="31760-2"/>
+        <display value="Candida sp Ag [Units/volume] in Serum"/>
+      </concept>
+      <concept>
+        <code value="555-3"/>
+        <display value="Candida sp identified in Specimen by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Candida sp identifiziert in Probenmaterial mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="73962-3"/>
+        <display value="Candida sp rRNA [Identifier] by FISH in Positive blood culture"/>
+      </concept>
+      <concept>
+        <code value="88717-4"/>
+        <display value="Candida sp identified in Isolate"/>
+      </concept>
+      <concept>
+        <code value="91081-0"/>
+        <display value="Candida sp DNA [Presence] in Specimen by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="9501-8"/>
+        <display value="Candida sp Ag [Titer] in Serum"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Candida sp Antigen [Titer] in Serum"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="97612-6"/>
+        <display value="Candida sp DNA [Presence] in Synovial fluid by NAA with non-probe detection"/>
+      </concept>
+      <concept>
+        <code value="98394-0"/>
+        <display value="Candida sp [Identifier] in Isolate by MS.MALDI-TOF"/>
+      </concept>
+      <concept>
+        <code value="94419-9"/>
+        <display value="Candida auris [Presence] in Isolate by MS.MALDI-TOF"/>
+      </concept>
+      <concept>
+        <code value="90002-7"/>
+        <display value="Candida auris [Presence] in Specimen by Organism specific culture"/>
+      </concept>
+      <concept>
+        <code value="87620-1"/>
+        <display value="Candida auris ITS2 gene [Presence] in Specimen by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="95766-2"/>
+        <display value="Candida auris DNA [Presence] in Blood by NAA with non-probe detection"/>
+      </concept>
+      <concept>
+        <code value="95764-7"/>
+        <display value="Candida auris DNA [Presence] in Urine by NAA with non-probe detection"/>
+      </concept>
+      <concept>
+        <code value="92791-3"/>
+        <display value="Candida auris DNA [Presence] by NAA with probe detection in Positive blood culture"/>
+      </concept>
+      <concept>
+        <code value="95765-4"/>
+        <display value="Candida auris DNA [Presence] in Specimen by NAA with non-probe detection"/>
+      </concept>
+      <concept>
+        <code value="97936-9"/>
+        <display value="Candida auris DNA [Presence] in Specimen by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="96302-5"/>
+        <display value="Candida auris DNA [Presence] by NAA with non-probe detection in Positive blood culture"/>
+      </concept>
+      <concept>
+        <code value="98393-2"/>
+        <display value="Candida sp [Identifier] in Isolate by Sequencing"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="laboratoryTestACBP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/laboratoryTestACBP"/>
+  <version value="1.4.0"/>
+  <name value="LaboratoryTestACBP"/>
+  <title value="Labortest für Acinetobacter spp. bei Nachweis einer Carbapenemase-Determinante oder mit verminderter Empfindlichkeit gegenüber Carbapenemen außer bei natürlicher Resistenz; Meldepflicht nur bei Infektion oder Kolonisation"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-11-01"/>
+  <publisher value="Robert Koch-Institut"/>
+  <description value="Das ValueSet LaboratoryTestACBP enthält die Codes der Labortests für Acinetobacter spp. bei Nachweis einer Carbapenemase-Determinante oder mit verminderter Empfindlichkeit gegenüber Carbapenemen außer bei natürlicher Resistenz; Meldepflicht nur bei Infektion oder Kolonisation."/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <version value="2.76"/>
+      <concept>
+        <code value="99013-5"/>
+        <display value="Acinetobacter baumannii DNA [Presence] in Urine by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Acinetobacter baumannii DNA [Nachweis] in Urin mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="92988-5"/>
+        <display value="Acinetobacter calcoaceticus-baumannii complex DNA [NCncRange] in Sputum Qualitative by NAA with non-probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Acinetobacter calcoaceticus-baumannii-Komplex DNA [#/Volumen (Messbereiche)] in Sputum mit Nukleinsäureamplifikation mit Detektion ohne Sonde"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="92989-3"/>
+        <display value="Acinetobacter calcoaceticus-baumannii complex DNA [NCncRange] in Bronchoalveolar lavage Qualitative by NAA with non-probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Acinetobacter calcoaceticus-baumannii-Komplex DNA [#/Volumen (Messbereiche)] in bronchoalveolärer Lavage mit Nukleinsäureamplifikation mit Detektion ohne Sonde"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="96317-3"/>
+        <display value="Acinetobacter calcoaceticus-baumannii complex DNA [NCncRange] in Lower respiratory specimen by NAA with non-probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Acinetobacter calcoaceticus-baumannii-Komplex DNA [#/Volumen (Messbereiche)] in Probenmaterial aus dem unteren Respirationstrakt mit Nukleinsäureamplifikation mit Detektion ohne Sonde"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="97050-9"/>
+        <display value="Acinetobacter calcoaceticus-baumannii complex DNA [Presence] by NAA with non-probe detection in Positive blood culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Acinetobacter calcoaceticus-baumannii-Komplex DNA [Nachweis] in positiver Blutkultur mit Nukleinsäureamplifikation mit Detektion ohne Sonde"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="40684-3"/>
+        <display value="Acinetobacter sp multidrug resistant identified in Specimen by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Acinetobacter sp.multiresistent identifiziert in Probenmaterial mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="61360-4"/>
+        <display value="Acinetobacter baumannii DNA [Presence] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Acinetobacter baumannii DNA [Nachweis] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="85770-6"/>
+        <display value="Acinetobacter baumannii DNA [Presence] by NAA with non-probe detection in Positive blood culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Acinetobacter baumannii DNA [Nachweis] in positiver Blutkultur mit Nukleinsäureamplifikation mit Detektion ohne Sonde"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="88244-9"/>
+        <display value="Acinetobacter sp rpsA gene [Presence] by Probe in Positive blood culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Acinetobacter sp rpsA-Gen [Nachweis] in positiver Blutkultur mit Sonde"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="90003-5"/>
+        <display value="Acinetobacter sp identified in Specimen by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Acinetobacter sp identifiziert in Probenmaterial mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="93406-7"/>
+        <display value="Acinetobacter baumannii DNA [Presence] by NAA with probe detection in Positive blood culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Acinetobacter baumannii DNA [Nachweis] in positiver Blutkultur mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="94380-3"/>
+        <display value="Acinetobacter baumannii DNA [Presence] in Lower respiratory specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Acinetobacter baumannii DNA [Nachweis] in Probenmaterial aus dem unteren Respirationstrakt mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="86930-5"/>
+        <display value="Carbapenemase [Presence] in Isolate"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Carbapenemase [Nachweis] in Isolat"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="88462-7"/>
+        <display value="Carbapenem [Susceptibility]"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Carbapenem [Empfindlichkeit]"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="75756-7"/>
+        <display value="Bacteria identified in Isolate by MS.MALDI-TOF"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Bakterien identifiziert in Isolat mit MS.MALDI-TOF"/>
+        </designation>
+      </concept>
+    </include>
+    <include>
+      <valueSet value="https://demis.rki.de/fhir/ValueSet/resistance"/>
+    </include>
+    <include>
+      <valueSet value="https://demis.rki.de/fhir/ValueSet/resistanceGene"/>
+    </include>
+  </compose>
+</ValueSet>

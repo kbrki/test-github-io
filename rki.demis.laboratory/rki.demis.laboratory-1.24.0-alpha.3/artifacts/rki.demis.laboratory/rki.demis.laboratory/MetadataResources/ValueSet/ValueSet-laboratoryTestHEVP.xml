@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="laboratoryTestHEVP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/laboratoryTestHEVP"/>
+  <version value="1.5.0"/>
+  <name value="LaboratoryTestHEVP"/>
+  <title value="Labortest für Hepatitis-E-Virus"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-11-01"/>
+  <publisher value="Robert Koch-Institut"/>
+  <description value="Das ValueSet LaboratoryTestHEVP enthält die Codes der Labortests für Hepatitis-E-Virus."/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <version value="2.76"/>
+      <concept>
+        <code value="101207-9"/>
+        <display value="Hepatitis E virus IgG Ab [Presence] in Serum or Plasma by Line blot"/>
+      </concept>
+      <concept>
+        <code value="101208-7"/>
+        <display value="Hepatitis E virus IgM Ab [Presence] in Serum or Plasma by Line blot"/>
+      </concept>
+      <concept>
+        <code value="14211-7"/>
+        <display value="Hepatitis E virus IgG Ab [Presence] in Serum"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Hepatitis-E-Virus IgG-Antikörper [Nachweis] in Serum"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="49693-5"/>
+        <display value="Hepatitis E virus IgG Ab [Presence] in Serum by Immunoassay"/>
+      </concept>
+      <concept>
+        <code value="14212-5"/>
+        <display value="Hepatitis E virus IgM Ab [Presence] in Serum"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Hepatitis-E-Virus IgM-Antikörper [Nachweis] in Serum"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="51798-7"/>
+        <display value="Hepatitis E virus IgM Ab [Units/volume] in Serum"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Hepatitis-E-Virus IgM-Antikörper [Einheiten/Volumen] in Serum"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="56513-5"/>
+        <display value="Hepatitis E virus IgG Ab [Units/volume] in Serum or Plasma by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Hepatitis-E-Virus IgG-Antikörper [Einheiten/Volumen] in Serum oder Plasma mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="60430-6"/>
+        <display value="Hepatitis E virus genotype [Identifier] in Blood by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Hepatitis-E-Virus Genotyp [Nachweis oder Identität] in Blut mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="69577-5"/>
+        <display value="Hepatitis E virus RNA [Presence] in Blood by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Hepatitis-E-Virus RNA [Nachweis] in Blut mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="69961-1"/>
+        <display value="Hepatitis E virus RNA [Units/volume] (viral load) in Serum or Plasma by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Hepatitis-E-Virus RNA [Einheiten/Volumen] (Viruslast) in Serum oder Plasma mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="74858-2"/>
+        <display value="Hepatitis E virus genotypes 1+2+3+4 RNA [Presence] in Serum or Plasma from Donor by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Hepatitis-E-Virus Genotypen 1+2+3+4 RNA [Nachweis] in Serum oder Plasma von Donor mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="78750-7"/>
+        <display value="Hepatitis E virus RNA [log units/volume] (viral load) in Serum or Plasma by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Hepatitis-E-Virus RNA [log Einheiten/Volumen] (Viruslast) in Serum oder Plasma mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="83128-9"/>
+        <display value="Hepatitis E virus IgM Ab [Presence] in Serum or Plasma by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Hepatitis-E-Virus IgM-Antikörper [Nachweis] in Serum oder Plasma mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="90460-7"/>
+        <display value="Hepatitis E virus RNA [Presence] in Serum or Plasma by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Hepatitis-E-Virus RNA [Nachweis] in Serum oder Plasma mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="91071-1"/>
+        <display value="Hepatitis E virus RNA [Presence] in Stool by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Hepatitis-E-Virus RNA [Nachweis] in Stuhl mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="95156-6"/>
+        <display value="Hepatitis E virus RNA [Presence] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Hepatitis-E-Virus RNA [Nachweis] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="95240-8"/>
+        <display value="Hepatitis E virus Ab [Interpretation] in Serum or Plasma"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Hepatitis-E-Virus Antikörper [Interpretation] in Serum oder Plasma"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="41461-5"/>
+        <display value="Virus identified in Specimen"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Virus identifiziert in Probenmaterial"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="92253-4"/>
+        <display value="Microorganism identified in Isolate or Specimen by Molecular genetics method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mikroorganismus identifiziert in Isolat oder Probenmaterial, molekulargenetisch"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,370 @@
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="NotificationBundleLaboratory-example" />
+  <meta>
+    <profile value="https://demis.rki.de/fhir/StructureDefinition/NotificationBundleLaboratory" />
+  </meta>
+  <identifier>
+    <system value="https://demis.rki.de/fhir/NamingSystem/NotificationBundleId" />
+    <value value="0de84a15-3f79-439a-a33c-a5989927cf7d" />
+  </identifier>
+  <type value="document" />
+  <timestamp value="2020-10-05T07:37:44.979+02:00" />
+  <entry>
+    <fullUrl value="https://demis.rki.de/fhir/Composition/a194b5c3-a3c5-4ceb-9087-d7fd87e1ec4e" />
+    <resource>
+      <Composition xmlns="http://hl7.org/fhir">
+        <id value="a194b5c3-a3c5-4ceb-9087-d7fd87e1ec4e" />
+        <meta>
+          <profile value="https://demis.rki.de/fhir/StructureDefinition/NotificationLaboratory" />
+        </meta>
+        <identifier>
+          <system value="https://demis.rki.de/fhir/NamingSystem/NotificationId" />
+          <value value="bc6a490d-7221-5dbf-8d00-0617359b78fb" />
+        </identifier>
+        <status value="final" />
+        <type>
+          <coding>
+            <system value="http://loinc.org" />
+            <code value="34782-3" />
+            <display value="Infectious disease Note" />
+          </coding>
+        </type>
+        <category>
+          <coding>
+            <system value="http://loinc.org" />
+            <code value="11502-2" />
+            <display value="Laboratory report" />
+          </coding>
+        </category>
+        <subject>
+          <reference value="Patient/61ebe359-bfdc-4613-8bf2-c5e300945f0n17" />
+        </subject>
+        <date value="2020-04-16" />
+        <author>
+          <reference value="PractitionerRole/61ebe359-bfdc-4613-8bf2-c5e300945f0n18" />
+        </author>
+        <title value="SARS-CoV-2-Erregernachweismeldung" />
+        <relatesTo>
+          <code value="appends" />
+          <targetReference>
+            <type value="Composition" />
+            <identifier>
+              <system value="https://demis.rki.de/fhir/NamingSystem/NotificationId" />
+              <value value="bc6a490d-7221-5dbf-8d00-0617359b78fb" />
+            </identifier>
+          </targetReference>
+        </relatesTo>
+        <section>
+          <code>
+            <coding>
+              <system value="http://loinc.org" />
+              <code value="11502-2" />
+              <display value="Laboratory report" />
+            </coding>
+          </code>
+          <entry>
+            <reference value="DiagnosticReport/61ebe359-bfdc-4613-8bf2-c5e300945f0n19" />
+          </entry>
+        </section>
+      </Composition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://demis.rki.de/fhir/PractitionerRole/61ebe359-bfdc-4613-8bf2-c5e300945f0n18" />
+    <resource>
+      <PractitionerRole xmlns="http://hl7.org/fhir">
+	    <id value="61ebe359-bfdc-4613-8bf2-c5e300945f0n18" />
+        <meta>
+          <profile value="https://demis.rki.de/fhir/StructureDefinition/NotifierRole" />
+        </meta>
+        <practitioner>
+          <reference value="Practitioner/61abc359-bfdc-4613-8bf2-c5e300945f0n18" />
+        </practitioner>
+      </PractitionerRole>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://demis.rki.de/fhir/Practitioner/61abc359-bfdc-4613-8bf2-c5e300945f0n18" />
+    <resource>
+      <Practitioner xmlns="http://hl7.org/fhir">
+	  	<id value="61ebe359-bfdc-4613-8bf2-c5e300945f0n18" />
+        <meta>
+          <profile value="https://demis.rki.de/fhir/StructureDefinition/Notifier" />
+        </meta>
+        <extension url="https://demis.rki.de/fhir/StructureDefinition/Salutation">
+          <valueCoding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/salutation" />
+            <code value="mrs" />
+          </valueCoding>
+        </extension>
+        <name>
+          <use value="official" />
+          <family value="Bonheure" />
+          <given value="Julie" />
+        </name>
+        <telecom>
+          <extension url="https://demis.rki.de/fhir/StructureDefinition/Comment">
+            <valueString value="Ab 14 Uhr" />
+          </extension>
+          <system value="phone" />
+          <value value="+49 (0)12345 - 123456" />
+          <use value="work" />
+        </telecom>
+      </Practitioner>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://demis.rki.de/fhir/Patient/61ebe359-bfdc-4613-8bf2-c5e300945f0n17" />
+    <resource>
+      <Patient xmlns="http://hl7.org/fhir">
+	  	<id value="61ebe359-bfdc-4613-8bf2-c5e300945f0n17" />
+        <meta>
+          <profile value="https://demis.rki.de/fhir/StructureDefinition/NotifiedPerson" />
+        </meta>
+        <name>
+          <use value="official" />
+          <family value="Müller" />
+          <given value="Karl-Heinz" />
+        </name>
+        <telecom>
+          <extension url="https://demis.rki.de/fhir/StructureDefinition/Comment">
+            <valueString value="Ab 14 Uhr" />
+          </extension>
+          <system value="phone" />
+          <value value="+49 (0)12345 - 123456" />
+          <use value="work" />
+        </telecom>
+        <gender value="male" />
+        <birthDate value="1974-12-25" />
+        <address>
+          <extension url="https://demis.rki.de/fhir/StructureDefinition/AddressUse">
+            <valueCoding>
+              <system value="https://demis.rki.de/fhir/CodeSystem/addressUse" />
+              <code value="ordinary" />
+            </valueCoding>
+          </extension>
+          <extension url="https://demis.rki.de/fhir/StructureDefinition/FacilityAddressNotifiedPerson">
+            <valueReference>
+              <reference value="Organization/98cda07d-1fa7-47f6-ad79-e66de48d6078" />
+            </valueReference>
+          </extension>
+        </address>
+        <contact>
+          <relationship>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0131" />
+              <code value="E" />
+            </coding>
+          </relationship>
+          <name>
+            <use value="official" />
+            <family value="Meier" />
+            <given value="Joachim" />
+          </name>
+        </contact>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://demis.rki.de/fhir/DiagnosticReport/61ebe359-bfdc-4613-8bf2-c5e300945f0n19" />
+    <resource>
+      <DiagnosticReport xmlns="http://hl7.org/fhir">
+	  	<id value="61ebe359-bfdc-4613-8bf2-c5e300945f0n19" />
+        <meta>
+          <profile value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportCVDP" />
+        </meta>
+        <basedOn>
+          <type value="ServiceRequest" />
+          <identifier>
+            <system value="https://demis.rki.de/fhir/NamingSystem/ServiceRequestId" />
+            <value value="2020-0003456" />
+          </identifier>
+        </basedOn>
+        <status value="final" />
+        <code>
+          <coding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/notificationCategory" />
+            <code value="cvdp" />
+            <display value="Severe-Acute-Respiratory-Syndrome-Coronavirus-2 (SARS-CoV-2)" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/61ebe359-bfdc-4613-8bf2-c5e300945f0n17" />
+        </subject>
+        <issued value="2021-03-04T11:45:33+11:00" />
+        <result>
+          <reference value="Observation/d3539a4c-9093-467a-a3e8-050594afbd59" />
+        </result>
+        <conclusionCode>
+          <coding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/conclusionCode" />
+            <code value="pathogenDetected" />
+          </coding>
+        </conclusionCode>
+      </DiagnosticReport>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://demis.rki.de/fhir/Organization/98cda07d-1fa7-47f6-ad79-e66de48d6078" />
+    <resource>
+      <Organization xmlns="http://hl7.org/fhir">
+	  	<id value="98cda07d-1fa7-47f6-ad79-e66de48d6078" />
+        <meta>
+          <profile value="https://demis.rki.de/fhir/StructureDefinition/NotifiedPersonFacility" />
+        </meta>
+        <type>
+          <coding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/organizationType" />
+            <code value="hospital" />
+          </coding>
+        </type>
+        <name value="Krankenhaus am See" />
+        <telecom>
+          <system value="phone" />
+          <value value="+49 (0)12345 - 123456" />
+          <use value="work" />
+        </telecom>
+        <address>
+          <line value="Kurzer Weg 15" />
+          <city value="Berlin" />
+          <state value="DE-BE" />
+          <postalCode value="10117" />
+          <country value="DE" />
+        </address>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://demis.rki.de/fhir/Observation/d3539a4c-9093-467a-a3e8-050594afbd59" />
+    <resource>
+      <Observation xmlns="http://hl7.org/fhir">
+	  	<id value="d3539a4c-9093-467a-a3e8-050594afbd59" />
+        <meta>
+          <profile value="https://demis.rki.de/fhir/StructureDefinition/PathogenDetectionCVDP" />
+        </meta>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+            <code value="laboratory" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org" />
+            <code value="96741-4" />
+            <display value="SARS-CoV-2 (COVID-19) variant Sequencing Nom (Specimen)" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/61ebe359-bfdc-4613-8bf2-c5e300945f0n17" />
+        </subject>
+        <valueString value="#B.1.1.7" />
+        <interpretation>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation" />
+            <code value="POS" />
+          </coding>
+        </interpretation>
+        <note>
+          <text value="Ich bin ein optionaler beschreibender Text ..." />
+        </note>
+		<method>
+			<coding>
+			  <system value="http://snomed.info/sct"/>
+			  <code value="115418004"/>
+			  <display value="Viral Sequencing (procedure)"/>
+		    </coding>
+        </method>
+        <specimen>
+          <reference value="Specimen/47d61bca-9c53-4422-bb33-3621da084bf4" />
+        </specimen>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://demis.rki.de/fhir/Specimen/47d61bca-9c53-4422-bb33-3621da084bf4" />
+    <resource>
+      <Specimen xmlns="http://hl7.org/fhir">
+	  	<id value="47d61bca-9c53-4422-bb33-3621da084bf4" />
+        <meta>
+          <profile value="https://demis.rki.de/fhir/StructureDefinition/SpecimenCVDP" />
+        </meta>
+        <type>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="309164002" />
+            <display value="Upper respiratory swab sample (specimen)" />
+          </coding>
+        </type>
+        <subject>
+          <reference value="Patient/61ebe359-bfdc-4613-8bf2-c5e300945f0n17" />
+        </subject>
+        <receivedTime value="2020-09-27T22:01:38+02:00" />
+        <collection>
+          <collector>
+            <reference value="PractitionerRole/xyz2f5-8384-4191-916b-10150c780453" />
+          </collector>
+          <collectedDateTime value="2020-08-17T10:10:00Z" />
+        </collection>
+        <processing>
+          <extension url="https://demis.rki.de/fhir/StructureDefinition/TransactionID">
+            <valueString value="IGS-10001-CVDP-be8131da-9024-41a4-a53c-3ce0d6f6fe37" />
+          </extension>
+          <timeDateTime value="2020-08-18T08:10:00Z" />
+        </processing>
+        <note>
+          <text value="Die Probe gehört zu einem Ausbruch." />
+        </note>
+      </Specimen>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://demis.rki.de/fhir/PractitionerRole/xyz2f5-8384-4191-916b-10150c780453" />
+    <resource>
+      <PractitionerRole xmlns="http://hl7.org/fhir">
+  	  	<id value="xyz2f5-8384-4191-916b-10150c780453" />
+        <meta>
+          <profile value="https://demis.rki.de/fhir/StructureDefinition/SubmittingRole" />
+        </meta>
+        <practitioner>
+          <reference value="Practitioner/42cdf5-8384-4191-916b-10150c780453" />
+        </practitioner>
+      </PractitionerRole>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://demis.rki.de/fhir/Practitioner/42cdf5-8384-4191-916b-10150c780453" />
+    <resource>
+      <Practitioner xmlns="http://hl7.org/fhir">
+  	  	<id value="42cdf5-8384-4191-916b-10150c780453" />
+        <meta>
+          <profile value="https://demis.rki.de/fhir/StructureDefinition/SubmittingPerson" />
+        </meta>
+        <name>
+          <use value="official" />
+          <family value="Mantle" />
+          <given value="Karl-Heinz" />
+        </name>
+        <telecom>
+          <system value="phone" />
+          <value value="+49 (0)12345 - 123456" />
+          <use value="work" />
+        </telecom>
+        <telecom>
+          <system value="phone" />
+          <value value="+49 (0)12345 - 123567" />
+          <use value="home" />
+        </telecom>
+        <address>
+          <use value="home" />
+          <line value="Erster Weg 1" />
+          <city value="Berlin" />
+          <state value="DE-BE" />
+          <postalCode value="10117" />
+          <country value="DE" />
+        </address>
+      </Practitioner>
+    </resource>
+  </entry>
+</Bundle>

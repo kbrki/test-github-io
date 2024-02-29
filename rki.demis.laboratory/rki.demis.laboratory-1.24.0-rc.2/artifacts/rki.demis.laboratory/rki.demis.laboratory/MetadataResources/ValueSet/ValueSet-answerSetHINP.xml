@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetHINP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetHINP"/>
+  <version value="1.6.0"/>
+  <name value="AnswerSetHINP"/>
+  <title value="AnswerSet für Haemophilus influenzae; Meldepflicht nur für den direkten Nachweis aus Liquor oder Blut"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-11-09"/>
+  <publisher value="Robert Koch-Institut"/>
+  <description value="Das ValueSet AnswerSetHINP enthält die Codes der Answer-Codes für Haemophilus influenzae; Meldepflicht nur für den direkten Nachweis aus Liquor oder Blut."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230901"/>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="726495003"/>
+        <display value="Ampicillin resistant Haemophilus influenzae (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Ampicillin resistant Haemophilus influenzae (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Ampicillin-resistente Haemophilus influenzae"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="44470000"/>
+        <display value="Haemophilus influenzae (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Haemophilus influenzae (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Haemophilus influenzae"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="722351007"/>
+        <display value="Haemophilus influenzae, beta lactamase negative (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Haemophilus influenzae, beta lactamase negative (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Haemophilus influenzae, Beta-Laktamase-negativ"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="722353005"/>
+        <display value="Haemophilus influenzae, beta lactamase positive (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Haemophilus influenzae, beta lactamase positive (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Haemophilus influenzae, Beta-Laktamase-positiv"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="127505006"/>
+        <display value="Haemophilus influenzae, biotype I (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Haemophilus influenzae, biotype I (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Haemophilus influenzae, Biotyp I"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="127506007"/>
+        <display value="Haemophilus influenzae, biotype II (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Haemophilus influenzae, biotype II (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Haemophilus influenzae, Biotyp II"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="127507003"/>
+        <display value="Haemophilus influenzae, biotype III (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Haemophilus influenzae, biotype III (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Haemophilus influenzae, Biotyp III"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="127508008"/>
+        <display value="Haemophilus influenzae, biotype IV (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Haemophilus influenzae, biotype IV (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Haemophilus influenzae, Biotyp IV"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="127509000"/>
+        <display value="Haemophilus influenzae, biotype V (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Haemophilus influenzae, biotype V (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Haemophilus influenzae, Biotyp V"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="127510005"/>
+        <display value="Haemophilus influenzae, biotype VI (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Haemophilus influenzae, biotype VI (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Haemophilus influenzae, Biotyp VI"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="127511009"/>
+        <display value="Haemophilus influenzae, biotype VII (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Haemophilus influenzae, biotype VII (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Haemophilus influenzae, Biotyp VII"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="127512002"/>
+        <display value="Haemophilus influenzae, biotype VIII (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Haemophilus influenzae, biotype VIII (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Haemophilus influenzae, Biotyp VIII"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="115407004"/>
+        <display value="Haemophilus influenzae, not b (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Haemophilus influenzae, not b (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Haemophilus influenzae, nicht b"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="103441001"/>
+        <display value="Haemophilus influenzae type a (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Haemophilus influenzae type a (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Haemophilus influenzae, Typ a"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="103442008"/>
+        <display value="Haemophilus influenzae type b (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Haemophilus influenzae type b (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Haemophilus influenzae, Typ b"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="103443003"/>
+        <display value="Haemophilus influenzae type c (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Haemophilus influenzae type c (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Haemophilus influenzae, Typ c"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="103444009"/>
+        <display value="Haemophilus influenzae type d (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Haemophilus influenzae type d (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Haemophilus influenzae, Typ d"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="103445005"/>
+        <display value="Haemophilus influenzae type e (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Haemophilus influenzae type e (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Haemophilus influenzae, Typ e"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0"/>
+        </extension>
+        <code value="103446006"/>
+        <display value="Haemophilus influenzae type f (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Haemophilus influenzae type f (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Haemophilus influenzae, Typ f"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

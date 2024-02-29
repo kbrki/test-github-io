@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="sequencingStrategy" />
+  <url value="https://demis.rki.de/fhir/ValueSet/sequencingStrategy" />
+  <version value="1.0.0" />
+  <name value="SequencingStrategy" />
+  <title value="Sequenzierungsstrategie" />
+  <status value="active" />
+  <date value="2023-07-17" />
+  <description value="Das ValueSet SequencingStrategy enthält die Codes für die Sequenzierstrategie (angelehnt an ENA, z.B. WGS, Amplicon, RNA-sec)." />
+  <compose>
+    <include>
+      <system value="https://demis.rki.de/fhir/CodeSystem/sequencingStrategy" />
+      <version value="1.0.0" />
+    </include>
+  </compose>
+</ValueSet>

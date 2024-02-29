@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+  <id value="NotificationClearingApiTest"/>
+  <url value="https://demis.rki.de/fhir/CapabilityStatement/NotificationClearingApiTest"/>
+  <version value="1.0.2"/>
+  <name value="NotificationClearingApiTest"/>
+  <title value="NotificationClearingApiTest"/>
+  <status value="active"/>
+  <date value="2023-05-30"/>
+  <publisher value="Robert Koch-Institut"/>
+  <description value="Beschreibt die Fähigkeiten (das Verhalten) der DEMIS Notification Clearing API."/>
+  <kind value="instance"/>
+  <software>
+    <name value="DEMIS Notification API"/>
+    <version value="1.7.1"/>
+  </software>
+  <implementation>
+    <description value="Die Testinstanz der DEMIS Notification Clearing API realisiert die Speicherung der vorverarbeiteten und verschlüsselten Testmeldungen und stellt die Schnittstelle zum Abruf gespeicherten Informationen für die Akteure des ÖGD bereit."/>
+    <url value="https://demis-test.rki.de/notification-clearing-api/fhir"/>
+  </implementation>
+  <fhirVersion value="4.0.1"/>
+  <format value="application/fhir+xml"/>
+  <format value="application/fhir+json"/>
+  <rest>
+    <mode value="server"/>
+    <documentation value="Alle Funktionalitäten der DEMIS Notification Clearing API."/>
+    <security>
+      <description value="Zugriff wird durch Token und MTLS realisiert. Mehr Informationen sind in der Wissensdatenbank zu finden (https://wiki.gematik.de/display/DSKB)."/>
+    </security>
+    <resource>
+      <type value="Bundle"/>
+      <profile value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="vread"/>
+      </interaction>
+      <interaction>
+        <code value="history-instance"/>
+      </interaction>
+      <interaction>
+        <code value="history-type"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <conditionalCreate value="false"/>
+      <conditionalUpdate value="false"/>
+      <conditionalDelete value="not-supported"/>
+      <searchInclude value="*"/>
+      <searchParam>
+        <name value="_language"/>
+        <definition value="http://build.fhir.org/resource-definitions.html#Resource.language"/>
+        <type value="string"/>
+        <documentation value="The language of the resource"/>
+      </searchParam>
+      <searchParam>
+        <name value="_id"/>
+        <definition value="http://hl7.org/fhir/R4/resource-definitions.html#Resource.id"/>
+        <type value="token"/>
+        <documentation value="Logical id of this artifact"/>
+      </searchParam>
+      <searchParam>
+        <name value="_lastUpdate"/>
+        <definition value="http://hl7.org/fhir/R4/resource-definitions.html#Meta.lastUpdated"/>
+        <type value="date"/>
+        <documentation value="When the resource version last changed"/>
+      </searchParam>
+      <searchParam>
+        <name value="_tag"/>
+        <definition value="http://hl7.org/fhir/R4/resource-definitions.html#Meta.tag"/>
+        <type value="token"/>
+        <documentation value="A tag defining the health department identifier (https://demis.rki.de/fhir/CodeSystem/ResponsibleDepartment)."/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="Binary"/>
+      <profile value="http://hl7.org/fhir/StructureDefinition/Binary"/>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="vread"/>
+      </interaction>
+      <interaction>
+        <code value="history-instance"/>
+      </interaction>
+      <interaction>
+        <code value="history-type"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <conditionalCreate value="false"/>
+      <conditionalUpdate value="false"/>
+      <conditionalDelete value="not-supported"/>
+      <searchInclude value="*"/>
+      <searchParam>
+        <name value="_language"/>
+        <definition value="http://build.fhir.org/resource-definitions.html#Resource.language"/>
+        <type value="string"/>
+        <documentation value="The language of the resource"/>
+      </searchParam>
+      <searchParam>
+        <name value="_id"/>
+        <definition value="Logical id of this artifact"/>
+        <type value="token"/>
+        <documentation value="http://hl7.org/fhir/R4/resource-definitions.html#Resource.id"/>
+      </searchParam>
+      <searchParam>
+        <name value="_lastUpdate"/>
+        <definition value="http://hl7.org/fhir/R4/resource-definitions.html#Meta.lastUpdated"/>
+        <type value="date"/>
+        <documentation value="When the resource version last changed"/>
+      </searchParam>
+      <searchParam>
+        <name value="_tag"/>
+        <definition value="http://hl7.org/fhir/R4/resource-definitions.html#Meta.tag"/>
+        <type value="token"/>
+        <documentation value="A tag defining the health department identifier (https://demis.rki.de/fhir/CodeSystem/ResponsibleDepartment)."/>
+      </searchParam>
+    </resource>
+  </rest>
+</CapabilityStatement>

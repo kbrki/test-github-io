@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetCHLP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetCHLP"/>
+  <version value="1.4.0"/>
+  <name value="AnswerSetCHLP"/>
+  <title value="AnswerSet für Chlamydia psittaci"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-11-09"/>
+  <publisher value="Robert Koch-Institut"/>
+  <description value="Das ValueSet AnswerSetCHLP enthält die Codes der Answer-Codes für Chlamydia psittaci."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230901"/>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="14590003"/>
+        <display value="Chlamydophila psittaci (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Chlamydophila psittaci (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Chlamydophila psittaci"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="41090000"/>
+        <display value="Chlamydophila psittaci variant bovis (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Chlamydophila psittaci variant bovis (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Chlamydophila psittaci, Variante bovis"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="60927005"/>
+        <display value="Chlamydophila psittaci variant felis (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Chlamydophila psittaci variant felis (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Chlamydophila psittaci, Variante felis"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="18279000"/>
+        <display value="Chlamydophila psittaci variant ovis (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Chlamydophila psittaci variant ovis (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Chlamydophila psittaci, Variante ovis"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

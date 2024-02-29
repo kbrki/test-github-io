@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="SequenceUploadSubmitter" />
+  <url value="https://demis.rki.de/fhir/StructureDefinition/SequenceUploadSubmitter" />
+  <version value="1.1.0" />
+  <name value="SequenceUploadSubmitter" />
+  <title value="Verantwortlicher des Sequenz-Uploads" />
+  <status value="draft" />
+  <date value="2023-12-29" />
+  <description value="Die SequenceUploadSubmitter dient der Angabe der Person/des Labors, die/das den Sequenz-Upload in eine Online-Datenbank (Repository) durchgeführt hat oder verantwortlich ist." />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="MolecularSequence.repository" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="https://demis.rki.de/fhir/StructureDefinition/SequenceUploadSubmitter" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="string" />
+      </type>
+      <type>
+        <code value="HumanName" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

@@ -40,7 +40,7 @@
 					<br/>Change log (gegenüber rki.demis.common-1.0.0-rc.2):
 					<ul>
 						<li>    fix: Warning-Constraints zur Validierung von Telefon- und Faxnummern wurden aktualisiert</li>
-							<li>	feat: Warning-Constraints zur Validierung des Vor- und Nachnamens der betroffenen Person wurden hinzugefügt</li>
+							<li>	feat: Error-Constraints zur Validierung des Vor- und Nachnamens der betroffenen Person wurden aktualisiert</li>
 								<li>	feat: Warning-Constraints zur Validierung des Geburtsdatums der betroffenen Person (namentlich und nicht namentlich) wurden hinzugefügt</li>
 									<li>	doc: neue Supporteingangskanäle hinterlegt: E-Mail: demis-support@rki.de, Hotline: 0800 - 000 3041 (Mo.-Fr., 09-17 Uhr)</li>
 					</ul><br/>
@@ -62,67 +62,226 @@
 					<h3>Version rki.demis.common-1.0.0-alpha.1  (13.11.2023)</h3>
 					<a class="package-link" href="./rki.demis.common/rki.demis.common-1.0.0-alpha.1/Home.html">Leitfaden</a>
 					<a href="./rki.demis.common/rki.demis.common-1.0.0-alpha.1/Vorabveröffentlichung DEMIS Common@current.zip">Download ZIP</a>
-					<dl>
-						<dt>Inhaltlich wurden an diesen Ressourcen gegenüber der Version rki.demis.r4.core 1.24.0-alpha.2 folgende Änderungen vorgenommen:</dt>
-							<dd>- Plausibilitätsprüfung von Kontaktdaten: Warning-Constraints wurden zur Validierung von Email, Telefonnummer, Faxnummer und URL hinzugefügt</dd>
-							<dd>- Land wird nun als ISO-Länder-Code abgebildet; die DEMIS-Ländercodes sind weiterhin valide</dd>
-							<dd>- CodeSystem OrganizationType wurde erweitert</dd>
-							<dd>- CapabilityStatements werden nicht mehr benötigt und wurden entfernt</dd>
-							<dd>- mustSupport-Markierungen für Unterelemente wurden hinzugefügt</dd>
-							<dt>- FHIR-technische Verbesserungen:</dt>
-								<dd>- meta-Tag ist verpflichtend</dd>
-								<dd>- Kompatibilität der CodeSysteme und ValueSets mit Shareable CodeSystem bzw. Shareable ValueSet ist sichergestellt: publisher- und experimental-Tag wurden hinzugefügt </dd>
-								<dd>- an Stelle von fixed Values werden pattern definiert</dd>
-					</dl><br/> 
+					<br/>Inhaltlich wurden an diesen Ressourcen gegenüber der Version rki.demis.r4.core 1.24.0-alpha.2 folgende Änderungen vorgenommen:
+					<ul>
+						<li> Plausibilitätsprüfung von Kontaktdaten: Warning-Constraints wurden zur Validierung von Email, Telefonnummer, Faxnummer und URL hinzugefügt</li>
+						<li> Land wird nun als ISO-Länder-Code abgebildet; die DEMIS-Ländercodes sind weiterhin valide</li>
+						<li> CodeSystem OrganizationType wurde erweitert</li>
+						<li> CapabilityStatements werden nicht mehr benötigt und wurden entfernt</li>
+						<li> mustSupport-Markierungen für Unterelemente wurden hinzugefügt</li>
+						<li> FHIR-technische Verbesserungen:
+						<ul>							
+							<li> meta-Tag ist verpflichtend</li>
+							<li> Kompatibilität der CodeSysteme und ValueSets mit Shareable CodeSystem bzw. Shareable ValueSet ist sichergestellt: publisher- und experimental-Tag wurden hinzugefügt </li>
+							<li> an Stelle von fixed Values werden pattern definiert</li>
+						</ul>
+					</ul><br/> 
+				
+					 
 				</p>
 			</blockquote>
 			<h2>FHIR-Profile Erregernachweismeldung (rki.demis.laboratory)</h2>
+			<p>Das Paket rki.demis.laboratory beinhaltet die Ressourcen für die Erregernachweismeldung. Das Paket rki.demis.ims (rki.demis.igs) erweitert die Ressourcen des rki.demis.laboratory-Paketes für die Integrierte Genomische Surveillance (IGS).</p>
 			<blockquote>
 				<p class="link">
 					<h3>Version rki.demis.laboratory-1.24.0-rc.2 (16.02.2024)</h3>
-					<a href="./rki.demis.laboratory/rki.demis.laboratory-1.24.0-rc.2/....zip">Download ZIP</a>
+					<a class="package-link" href="./rki.demis.laboratory/rki.demis.laboratory-1.24.0-rc.2/Home.html">Leitfaden</a>
+					<a href="./rki.demis.laboratory/rki.demis.laboratory-1.24.0-rc.2/Vorab Implementierungsleitfaden für DEMIS-Erregernachweismeldung@current.zip">Download ZIP</a>
+					<br/>Change log:
+					<ul>
+						<li>doc: Szenario 6 im Lifecyclemanagement hinzugefügt</li>
+						<li>doc: Hinweise zu Qualitätskriterien hinzugefügt</li>
+						<li>doc: Hinweise zu den Analyt-Sets (Substances) aktualisiert</li>
+						<li>doc: neue Supporteingangskanäle hinterlegt: E-Mail: demis-support@rki.de, Hotline: 0800 - 000 3041 (Mo.-Fr., 09-17 Uhr)</li>
+					</ul><br/>
 					<h3>Version rki.demis.igs-1.0.0-alpha.2 (26.01.2024)</h3>
-					<a href="./rki.demis.laboratory/rki.demis.igs-1.0.0-alpha.2/....zip">Download ZIP</a>
+					<a class="package-link" href="./rki.demis.laboratory/rki.demis.igs-1.0.0-alpha.2/Home.html">Leitfaden</a>
+					<a href="./rki.demis.laboratory/rki.demis.igs-1.0.0-alpha.2/Vorab Implementierungsleitfaden für DEMIS IGS@current.zip">Download ZIP</a>
+					<br/>Change log:
+					<ul>
+						<li>Update auf SNOMED 20230901
+							<li>SNOMED-Code 58147004 (Clinical (qualifier value)) in ValueSet SequencingReason hinzugefügt
+								<li>Beispiele aktualisiert</li>
+									<li>Schärfung der Beschreibungstexte der Ressourcen und des Leitfadens</li>
+										<li>mustSupport-Markierungen für Unterelemente hinzugefügt</li>
+											<li>FHIR-technische Verbesserungen:</li>
+												<ul>
+												<li>meta-Tag ist verpflichtend</li>
+													<li>Kompatibilität der CodeSysteme und ValueSets mit Shareable CodeSystem bzw. Shareable ValueSet ist sichergestellt: publisher- und experimental-Tag wurden hinzugefügt</li>
+														<li>an Stelle von fixed Values werden pattern definiert</li>
+														</ul>
+														</ul><br/>
 					<h3>Version rki.demis.laboratory-1.24.0-rc.1 (01.12.2023)</h3>
-					<a href="./rki.demis.laboratory/rki.demis.laboratory-1.24.0-rc.1/....zip">Download ZIP</a>
+					<a class="package-link" href="./rki.demis.laboratory/rki.demis.laboratory-1.24.0-rc.1//Home.html">Leitfaden</a>
+					<a href="./rki.demis.laboratory/rki.demis.laboratory-1.24.0-rc.1/Implementierungsleitfaden für DEMIS Erregernachweismeldung@current.zip">Download ZIP</a>
+					<br/>Change log:
+					<ul>
+						<li>Übernahme als Release Candidate</li>
+						<li>patternCoding mit LOINC-Code 34782-3 in Composition.type hinzugefügt (bisher war das patternCoding im Oberprofil Notification (rki.demis.common) definiert)</li>
+					</ul><br/>
 					<h3>Version rki.demis.laboratory-1.24.0-alpha.3 (13.11.2023)</h3>
-					<a href="./rki.demis.laboratory/rki.demis.laboratory-1.24.0-alpha.3/....zip">Download ZIP</a>
+					<a class="package-link" href="./rki.demis.laboratory/rki.demis.laboratory-1.24.0-alpha.3/Home.html">Leitfaden</a>
+					<a href="./rki.demis.laboratory/rki.demis.laboratory-1.24.0-alpha.3/Vorabveröffentlichung rki.demis.laboratory@current.zip">Download ZIP</a>
+					<br/>Change log:
+					<ul>
+						<li>Integration der Version rki.demis.r4.core 1.23.1</li>
+						<li>Update auf LOINC 2.76</li>
+						<li>Update auf SNOMED 20230901</li>
+						<li>ResistanceGene hinzugefügt: dieses enthält LOINC-Codes zum Gennachweis für Resistenzen (Resistenzdeterminanten)</li>
+							<li>bestimmte meldetatbestandsspezifische LaboratoryTest-ValueSets inkludieren das ValueSet ResistanceGene</li>
+								<li>4 ValueSets mit Answer-Codes hinzugefügt: sie enthalten die Codes, die als Antwort auf einen LOINC-Code aus dem ValueSet LaboratoryTest oder Resistance/ResistanceGene gegeben werden können. Es sind Codes der LOINC- oder SNOMED-Terminologie.</li>
+									<li>answerSetLaboratoryTest-LOINC: LOINC-Answer-Codes für Labortests</li>
+										<li>answerSetLaboratoryTest-SNOMED: SNOMED-Answer-Codes für Labortests</li>
+											<li>answerSetResistance-LOINC: LOINC-Answer-Codes für Resistenzen</li>
+												<li>answerSetResistance-SNOMED: SNOMED-Answer-Codes für Resistenzen</li>
+													<li>ValueSet answerSetWBKP hinzugefügt</li>
+														<li>CodeSystem notificationCategory um weitere Properties erweitert</li>
+															<li>ConceptMap NotificationCategoryToSurvNetCode in NotificationCategoryToTransmissionCategory umbenannt</li>
+																<li>mustSupport-Markierungen für Unterelemente hinzugefügt</li>
+																	<li>FHIR-technische Verbesserungen:</li>
+																		<li>meta-Tag ist verpflichtend</li>
+																			<li>Kompatibilität der CodeSysteme und ValueSets mit Shareable CodeSystem bzw. Shareable ValueSet ist sichergestellt: publisher- und experimental-Tag wurden hinzugefügt</li>
+																				<li>an Stelle von fixed Values werden pattern definiert</li>
+					</ul><br/>
 					<h3>Version rki.demis.igs-1.0.0-alpha.1 (28.07.2023)</h3>
-					<a href="./rki.demis.laboratory/rki.demis.igs-1.0.0-alpha.1/....zip">Download ZIP</a>
+					<a class="package-link" href="./rki.demis.laboratory/rki.demis.igs-1.0.0-alpha.1/Home.html">Leitfaden</a>
+					<a href="./rki.demis.laboratory/rki.demis.igs-1.0.0-alpha.1/Leitfaden Integrierte Genomische Surveillance@current.zip">Download ZIP</a>
+					<p>Diese Erstveröffentlichung als separates Paket rki.demis.igs beinhaltet eine Erweiterung der Ressourcen für die Integrierte Genomische Surveillance (IGS), welche als Bestandteil des rki.demis.r4.core-1.25.0-alpha.1-Paketes im Dezember 2022 vorab veröffentlicht wurde. Das rki.demis.r4.core mit Versionsnummer 1.25.X wird nicht fortgeführt, die Weiterentwicklung der IGS-Ressourcen erfolgt innerhalb des rki.demis.igs-Paketes.
+					<p>Dependencies: rki.demis.r4.core-1.24.0-alpha.2</p>				
+					Change log:
+					<ul>
+						<li>Integrierte Molekulare Surveillance (IMS) in Integrierte Genomische Surveillance (IGS) umbenannt</li>
+							<li>Ressourcen für die Meldungsverarbeitung hinzugefügt (ProcessNotificationSequence, Parameters)</li>
+								<li>die Ressourcen Laborbericht, Erregernachweis und Probe der DEMIS-Labormeldung (https://simplifier.net/demis) werden nicht genutzt; an Stelle dessen wurden davon abgeleitete spezifische Ressourcen für die Sequenzmeldung angelegt</li>
+									<li>Ressourcen zur Angabe des Sequenzierungsgrundes, des Gerätenamens, des Sequenziermaterials (Primer Scheme) und des Formates der Sequenz hinzugefügt</li>
+										<li>Formatprüfung für die Transaktion-Id hinzugefügt; die Transaktion-Id kann als string oder als Identifier angegeben werden</li>
+											<li>SpecimenSequence.processing.time erlaubt nur dateTime</li>
+												<li>Leitfaden hinzugefügt, inklusive einer Beschreibung des Lifecyclemanagements und des Datenuploads</li>
+													<li>Beispiele hinzugefügt
+					</ul><br/>
 					<h3>Version rki.demis.r4.core-1.24.0-alpha.2 (10.06.2023)</h3>
-					<a href="./rki.demis.laboratory/rki.demis.r4.core-1.24.0-alpha.2/....zip">Download ZIP</a>
+					<a class="package-link" href="./rki.demis.laboratory/rki.demis.r4.core-1.24.0-alpha.2/Home.html">Leitfaden</a>
+					<a href="./rki.demis.laboratory/rki.demis.r4.core-1.24.0-alpha.2/Implementierungsleitfaden für DEMIS Labormeldung@current.zip">Download ZIP</a>
+					<br/>Change log:
+					<ul>
+						<li>Integration der Version 1.23.0-alpha.3</li>
+						<li>NotificationBundleLaboratoryNotByName und NotificationLaboratoryNotByName auf experimental gesetzt</li>
+    					<li>Beispiele für nichtnamentliche Meldung entfernt</li>
+						<li>Anpassungen der SNOMED-Codes in ValueSet reasonForTesting: 225058007 durch 314074007 und 41769001 durch 168186002 ersetzt</li>
+						<li>die ValueSets laboratoryTest und material inkludieren jeweils direkt die meldetatbestandsspezifischen ValueSets an Stelle der in den meldetatbestandsspezifischen ValueSets befindlichen Codes</li>
+					</ul><br/>
 					<h3>Version rki.demis.r4.core-1.25.0-alpha.1 (23.12.2022)</h3>
-					<a href="./rki.demis.laboratory/rki.demis.r4.core-1.25.0-alpha.1/....zip">Download ZIP</a>
+					<a href="./rki.demis.laboratory/rki.demis.r4.core-1.25.0-alpha.1/rki.demis.r4.core-1.25.0-alpha.1.zip">Download ZIP</a>
+					<ul>
+						<li>Ressourcen für die Integrierte Molekulare Surveillance (IMS)-Meldung hinzugefügt</li>
+					</ul><br/>
 					<h3>Version rki.demis.r4.core-1.24.0-alpha.1 (23.12.2022)</h3>
-					<a href="./rki.demis.laboratory/rki.demis.r4.core-1.24.0-alpha.1/....zip">Download ZIP</a>
+					<a href="./rki.demis.laboratory/rki.demis.r4.core-1.24.0-alpha.1/rki.demis.r4.core-1.24.0-alpha.1.zip">Download ZIP</a>
+					<br/>Change log:
+					<ul>
+							<li>Ressourcen für die nichtnamentliche Meldung (gemäß §7 Absatz 4) hinzugefügt</li>
+						</ul><br/>
 				</p>
 			</blockquote>
 			<h2>FHIR-Profile Erkrankungsmeldung (rki.demis.disease)</h2>
+			<p>Das Paket rki.demis.disease beinhaltet die Ressourcen für die Erkrankungsmeldung.</p>
 			<blockquote>
 				<p class="link">
 					<h3>Version rki.demis.disease-1.2.0-rc.4 (16.02.2024)</h3>
 					<a class="package-link" href="./rki.demis.disease/rki.demis.disease-1.2.0-rc.4/Home.html">Leitfaden</a>
 					<a href="./rki.demis.disease/rki.demis.disease-1.2.0-rc.4/Vorab Implementierungsleitfaden für DEMIS-Arztmeldung@current.zip">Download ZIP</a>
+					<br/>Change log:
+					<ul>    
+						<li>feat: in DiseaseQuestionsHEVD repeat auf false gesetzt für infectionPathKind (Frage nach dem wahrscheinlichen Infektionsweg), infectionRiskKindJob (Frage nach beruflichen Risiken), infectionRiskKindAnimal (Frage nach Tierkontakt) und infectionRiskKindOther (Frage nach sonstigem Kontakt)
+						<li>feat: in DiseaseQuestionsHTVD repeat auf false gesetzt für infectionRiskKindJob (Frage nach berufliche Risiken)
+						<li>feat: infectedOrColonized (Frage nach infiziert/kolonisiert) in DiseaseQuestionsSPAD, DiseaseQuestionsSTYD, DiseaseQuestionsSXXD und DiseaseQuestionsYPSD entfernt
+						<li>feat: in diagnosisHXXD und diagnosisSXXD die NullFlavors "NASK" und "ASKU" entfernt
+						<li>feat: in answerSetInfectionRiskNEID "andere/sonstige" entfernt
+						<li>feat: in DiseaseQuestionsCommon infectProtectFacilityType (Frage nach Art der Einrichtung) als Unterelement von infectProtectFacilityGroup verschoben
+						<li>fix: "unsichtbare" Zeichen in einigen ValueSets entfernt
+						<li>fix: in DiseaseQuestionsCommon "Verstorbendatum" in "Sterbedatum" umbenannt
+						<li>doc: neue Supporteingangskanäle hinterlegt: E-Mail: demis-support@rki.de, Hotline: 0800 - 000 3041 (Mo.-Fr., 09-17 Uhr)</ul><br/>
 					<h3>Version rki.demis.disease-1.2.0-rc.3 (26.01.2024)</h3>
 					<a class="package-link" href="./rki.demis.disease/rki.demis.disease-1.2.0-rc.3/Home.html">Leitfaden</a>
 					<a href="./rki.demis.disease/rki.demis.disease-1.2.0-rc.3/Vorab Implementierungsleitfaden für DEMIS Arztmeldung@current.zip">Download ZIP</a>
+					<br/>Change log:
+					<ul>   
+						<li>feat: Formulierung der Fragetexte in DiseaseQuestionsCommon überarbeitet
+						<li>feat: optionale Frage infectProtectFacilityType (Art der Einrichtung) in DiseaseQuestionsCommon hinzugefügt
+						<li>feat: CodeSystem notificationDiseaseCategory um Properties national-notificationCategory, federal-state-specific-notificationCategory und federal-state ergänzt; diese geben an, ob ein Meldetatbestand international oder national (und in welchen Bundesländern) meldepflichtig ist
+						<li>fix: Item-Control-Extension in DiseaseQuestionsCVDD für infectionEnvironmentSettingKind hinzugefügt
+						<li>fix: Item-Control-Extensions in DiseaseQuestionsCommon aktualisiert und hinzugefügt
+						<li>fix: Binding von vaccineCVDD in ImmunizationInformationCVDD auf extensible gesetzt (Rückwärtskompatibilität)</ul><br/>
 					<h3>Version rki.demis.disease-1.2.0-rc.2 (15.12.2023)</h3>
 					<a class="package-link" href="./rki.demis.disease/rki.demis.disease-1.2.0-rc.2/Home.html">Leitfaden</a>
 					<a href="./rki.demis.disease/rki.demis.disease-1.2.0-rc.2/Vorab Implementierungsleitfaden für DEMIS Arztmeldung@current.zip">Download ZIP</a>
+					<br/>Change log:
+					<ul>
+						<li>feat: Update auf SNOMED Version 20230901
+						<li>feat: Bundle.identifier.system fix auf https://demis.rki.de/fhir/NamingSystem/NotificationBundleId gesetzt
+						<li>feat: SNOMED-Kodierung für "Homosexuelle Übertragung" in answerSetInfectionPathHBVD und answerSetInfectionPathHCVD hinzugefügt und in DiseaseQuestionsHBVD und DiseaseQuestionsHCVD entsprechend enableWhen-Element in "sexualContact"-Frage ergänzt
+						<li>feat: SNOMED-Kodierung für "Medizinische Injektion im Ausland" in answerSetTransmissionKindHBVD und answerSetTransmissionKindHCVD hinzugefügt
+						<li>feat: CodeSystem und ValueSet geographicRegion entfernt (diese sind nun Bestandteil des common-Paketes)
+						<li>fix: SNOMED-Kodierung für "Oberbauchbeschwerden" in evidenceHDVD korrigiert
+					</ul><br/>
 					<h3>Version rki.demis.disease-1.2.0-rc.1 (04.12.2023)</h3>
 					<a class="package-link" href="./rki.demis.disease/rki.demis.disease-1.2.0-rc.1/Home.html">Leitfaden</a>
 					<a href="./rki.demis.disease/rki.demis.disease-1.2.0-rc.1/Implementierungsleitfaden für DEMIS Arztmeldungen rc.1@current.zip">Download ZIP</a>
+					<br/>Change log:
+					<ul>
+						<li>fix: CVDD: fixedUri für EMA-Kodiersystem korrigiert</li>
+						<li>feat: CLOD Frage nach cosmetic und medical entfernt</li>
+						<li>fix: Korrekturen an enableWhen codes: HBVD, HCVD, HUSD, MYTD</li>
+						<li>fix: Korrektur unerlaubter Leerzeichen CJKD, IZVD</li>
+						<li>feat: answerSetCountry auf iso3166-1-2 umgestellt</li>
+						<li>fix: Korrekturen am Leitfaden</li>
+						<li>feat: OPXD: Infektionsweg-Kodierungen NASK und ASKU hinzugefügt</li>
+						<li>feat: In der Erkrankungsmeldung Composition.type hinzugefügt</li>
+					</ul><br/>
 					<h3>Version rki.demis.disease-1.2.0-alpha.4 (13.11.2023)</h3>
 					<a class="package-link" href="./rki.demis.disease/rki.demis.disease-1.2.0-alpha.4/Home.html">Leitfaden</a>
 					<a href="./rki.demis.disease/rki.demis.disease-1.2.0-alpha.4/Implementierungsleitfaden für DEMIS Arztmeldung alpha4@current.zip">Download ZIP</a>
+					<br/>Change log:
+					<ul>
+						<li>feat: Änderung der Abhängigkeit auf rki.demis.common (vorher rki.demis.r4.core)</li>
+						<li>fix: Anpassung der ValueSets</li>
+						
+						<li>CLOD: Symptom "Lähmung" entfernt, Form "iatrogene Botulismus" entfernt</li>
+						<ul>
+							<li>CORD: Symptom "Pseudomembränöse Beläge im oberen Respirationstrakt und/oder Pharynx und/oder Larynx" entfernt, Kodierungen für Symptom "Halsschmerzen/-enzündung" korrigiert</li>
+							<li>CJKD: Form-Kodierung korrigiert</li>
+							<li>DEND: Displayname für Immunization "Tetravalenter Dengue-Impfstoff (lebend, attenuiert) (Qdenga, Dengvaxia)" korrigiert und Symptom "Herz-/Kreislaufversagen" hinzugefügt</li>
+							<li>HAVD: Infektionsweg-Kodierungen korrigiert und Symptom-Kodierung "Oberbauchbeschwerden" korrigiert</li>
+							</ul>
+							</ul><br/>
 					<h3>Version rki.demis.disease-1.2.0-alpha.3 (14.07.2023)</h3>
 					<a class="package-link" href="./rki.demis.disease/rki.demis.disease-1.2.0-alpha.3/Home.html">Leitfaden</a>
 					<a href="./rki.demis.disease/rki.demis.disease-1.2.0-alpha.3/Implementierungsleitfaden für DEMIS Arztmeldung Vorab@current.zip">Download ZIP</a>
+					<br/>Change log:
+					<ul>
+						<li>feat: Ressourcen für die Meldetatbestände Pocken (PKVD) und andere Orthopockenviren (OPXD) hinzugefügt</li>
+						<li>feat/fix: Erweiterung CVDD</li>
+					<ul>	
+						<li>Frage "infectionRiskKind" hinzugefügt</li>
+							<li>Frage "outbreak" hinzugefügt</li>
+						</ul>		
+					</ul><br/>
 					<h3>Version rki.demis.disease-1.2.0-alpha.2 (28.04.2023)</h3>
 					<a class="package-link" href="./rki.demis.disease/rki.demis.disease-1.2.0-alpha.2/Home.html">Leitfaden</a>
 					<a href="./rki.demis.disease/rki.demis.disease-1.2.0-alpha.2/Vorveröffentlichung Arztmeldung 1.2.0-alpha.2@current.zip">Download ZIP</a>
+					<br/>Change log:
+					<ul>
+						<li>feat: Ressourcen für die Meldetatbestände Clostridioides difficile, Kreuzfeldt-Jakob (CJK), Hepatitis A, Hepatitis B, Hepatitis C, Hepatitis D, Hepatitis E, Hantavirus, Hämolytisch-urämisches Syndrom (HUS), Verdacht auf akute Hepatitis, Zoonotische Influenza, Mumps, Mpox, Masern, Behandlungsabbruch Tuberkulose, Tuberkulose, Meningokokken, Tollwut, Röteln konnatal, Röteln postnatal, Paratyphus, Subakute Sklerosierende Panenzephalitis (SSPE), Typhus, Verdacht auf Paratyphus/Typhus, Tollwutexpositionsverdacht, Cholera, Windpocken, Zoster und Pest hinzugefügt</li>
+							<li>feat: in den ValueSets wird nun die Version des/der referenzierten CodeSystems/e mit angegeben</li>
+								<li>fix: in den Symptom-ValueSets wurden "NASK","ASK" und „andere/sonstige“ entfernt</li>
+					</ul><br/>
 					<h3>Version rki.demis.disease-1.2.0-alpha.1 (23.12.2022)</h3>
 					<a href="./rki.demis.disease/rki.demis.disease-1.2.0-alpha.1/rki.demis.disease-1.2.0-alpha.1.zip">Download ZIP</a>
+					<br/>Change log:
+					<ul>  
+						<li>feat: Ressourcen für die Meldetatbestände Milzbrand, Keuchusten, Botulismus, Diphtherie, Denguefieber, Ebolafieber, Gelbfieber, Hämorrhagisches Fieber, Lassafieber, Marburgfieber und Poliomyelitis hinzugefügt</li>
+						<li>feat: Slicing in ImmunizationInformation.vaccineCode hinzugefügt: die entsprechende Information kann entweder mithilfe von Konzepten aus SNOMED-CT und PZN oder einem von zwei Null-Flavors ("nicht erhoben" / "nicht ermittelbar") dargestellt werden; bei CVDD können weiterhin die Konzepte aus EMA genutzt werden</li>
+					</ul><br/>
 				</p>
 			</blockquote>
 		</div>

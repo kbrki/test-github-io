@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Specimen" />
+  <url value="https://demis.rki.de/fhir/StructureDefinition/Specimen" />
+  <version value="1.8.0" />
+  <name value="Specimen" />
+  <title value="Probe" />
+  <status value="active" />
+  <date value="2024-02-12" />
+  <description value="Die Probe enthält Angaben zum Eingangszeitpunkt der Probe sowie zum Probenmaterial. Darüber hinaus wird auf den Einsender der Probe verwiesen." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="true" />
+  <type value="Specimen" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Specimen" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Specimen.status">
+      <path value="Specimen.status" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Specimen.type">
+      <path value="Specimen.type" />
+      <short value="Art des Probenmaterials" />
+      <definition value="Art des Probenmaterials. Der Wert muss entsprechend des vom RKI definierten ValueSets (https://demis.rki.de/fhir/ValueSet/material) im coding Element dargestellt werden." />
+      <comment value="Die Angabe des Materials unter Verwendung von Type.text ist in folgenden zwei Ausnahmefällen zulässig: &#xD;&#xA;- Das Material ist in dem ValueSet https://demis.rki.de/fhir/ValueSet/material nicht enthalten. Bitte geben Sie Feedback an DEMIS (demis-support@rki.de), damit das ValueSet ergänzt werden kann.&#xA;- Das Primärsystem kann die internen Codes zur Zeit noch nicht korrekt auf die SNOMED-Codes des ValueSets https://demis.rki.de/fhir/ValueSet/material mappen." />
+      <constraint>
+        <key value="codingOrText" />
+        <severity value="error" />
+        <human value="Entweder coding oder text muss angegeben sein." />
+        <expression value="coding.empty() or text.empty()" />
+        <source value="https://demis.rki.de/fhir/StructureDefinition/Specimen" />
+      </constraint>
+      <mustSupport value="true" />
+    </element>
+    <element id="Specimen.type.coding">
+      <path value="Specimen.type.coding" />
+      <max value="1" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://demis.rki.de/fhir/ValueSet/material" />
+      </binding>
+    </element>
+    <element id="Specimen.type.coding.system">
+      <path value="Specimen.type.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Specimen.type.coding.code">
+      <path value="Specimen.type.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Specimen.subject">
+      <path value="Specimen.subject" />
+      <short value="Verweis auf die in der Meldung benannte betroffene Person." />
+      <definition value="Verweis auf die in der Meldung benannte betroffene Person. Hierbei handelt es sich grundsätzlich um den Verweis auf die in der Erregernachweismeldung als „subject“ referenzierte Patient Ressource." />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/NotifiedPerson" />
+        <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/NotifiedPersonNotByName" />
+        <aggregation value="bundled" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Specimen.subject.reference">
+      <path value="Specimen.subject.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Specimen.receivedTime">
+      <path value="Specimen.receivedTime" />
+      <short value="Zeitpunkt des Probeneingangs im Labor" />
+      <definition value="Zeitpunkt des Probeneingangs im Labor" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Specimen.collection">
+      <path value="Specimen.collection" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Specimen.collection.collector">
+      <path value="Specimen.collection.collector" />
+      <short value="Verweis auf die Einsender-Rolle" />
+      <definition value="Verweis auf die Einsender-Rolle. Über die Einsender-Rolle kann eine Person oder eine Organisation als Einsender referenziert werden." />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/SubmittingRole" />
+        <aggregation value="bundled" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Specimen.collection.collector.reference">
+      <path value="Specimen.collection.collector.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Specimen.collection.collected[x]">
+      <path value="Specimen.collection.collected[x]" />
+      <short value="Probenentnahmezeitpunkt" />
+      <definition value="Probenentnahmezeitpunkt" />
+      <type>
+        <code value="dateTime" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Specimen.processing">
+      <path value="Specimen.processing" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Specimen.processing.extension">
+      <path value="Specimen.processing.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="Specimen.processing.extension:transactionID">
+      <path value="Specimen.processing.extension" />
+      <sliceName value="transactionID" />
+      <short value="Transaktions-ID: Verweis auf das Analyseergebnis der Integrierten Genomischen Surveillance (IGS)" />
+      <definition value="Format: IGS-12345-CVDP-UUID&#xD;&#xA;&#xD;&#xA;**IGS**: festes Prefix&#xD;&#xA;&#xD;&#xA;**12345**: 5-stelliger Identifier (DEMIS-ParticipantID) des sequenzierenden Labors (Untersuchungslabors), analog zum bereits existierenden DEMIS-System (DEMIS-10001 bis derzeit DEMIS-10563). Die Liste wird von der DEMIS-Geschäftsstelle gepflegt. Falls Sie noch nicht registriert sind, wenden Sie sich bitte an demis-support@rki.de.&#xD;&#xA;&#xD;&#xA;**CVDP**: 4-stelliges DEMIS-Kürzel, welches dem Meldetatbestand direkt zugeordnet wird.&#xD;&#xA;&#xD;&#xA;**UUID**: hexadezimal Zahl nach dem Muster 8-4-4-4-12 (z.B. be8131da-9024-41a4-a53c-3ce0d6f6fe37).&#xD;&#xA;&#xD;&#xA;Beispiel: IGS-10001-CVDP-be8131da-9024-41a4-a53c-3ce0d6f6fe37" />
+      <min value="0" />
+      <max value="1"/>
+      <type>
+        <code value="Extension" />
+        <profile value="https://demis.rki.de/fhir/StructureDefinition/TransactionID" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Specimen.note">
+      <path value="Specimen.note" />
+      <short value="Kommentar z.B. für die Information, dass die Probe zu einem Ausbruch gehört" />
+      <definition value="Kommentar z.B. für die Information, dass die Probe zu einem Ausbruch gehört" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Specimen.note.text">
+      <path value="Specimen.note.text" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

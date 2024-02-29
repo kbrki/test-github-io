@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="laboratoryTestWNVP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/laboratoryTestWNVP"/>
+  <version value="1.5.0"/>
+  <name value="LaboratoryTestWNVP"/>
+  <title value="Labortest für West-Nil-Virus"/>
+  <status value="active"/>
+  <date value="2023-05-04"/>
+  <description value="Das ValueSet LaboratoryTestWNVP enthält die Codes der Labortests für West-Nil-Virus."/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <version value="2.74"/>
+      <concept>
+        <code value="97185-3"/>
+        <display value="West Nile virus RNA [Presence] in Urine by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-RNA [Nachweis] in Urin mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="29535-2"/>
+        <display value="West Nile virus IgG Ab [Units/volume] in Serum"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-IgG-Antikörper [Einheiten/Volumen] in Serum"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="29536-0"/>
+        <display value="West Nile virus IgM Ab [Units/volume] in Serum"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-IgM-Antikörper [Einheiten/Volumen] in Serum"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="29537-8"/>
+        <display value="West Nile virus IgG Ab [Units/volume] in Cerebral spinal fluid"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-IgG-Antikörper [Einheiten/Volumen] in Zerebrospinalflüssigkeit"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="29538-6"/>
+        <display value="West Nile virus IgM Ab [Units/volume] in Cerebral spinal fluid"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-IgM-Antikörper [Einheiten/Volumen] in Zerebrospinalflüssigkeit"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="29566-7"/>
+        <display value="West Nile virus IgG Ab [Presence] in Serum by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-IgG-Antikörper [Nachweis] in Serum mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="29567-5"/>
+        <display value="West Nile virus IgM Ab [Presence] in Serum by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-IgM-Antikörper [Nachweis] in Serum mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="29568-3"/>
+        <display value="West Nile virus neutralizing antibody [Titer] in Serum by Neutralization test"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-neutralisierender Antikörper [Titer] in Serum mit Neutralisationstest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="29569-1"/>
+        <display value="West Nile virus IgM Ab [Presence] in Cerebral spinal fluid by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-IgM-Antikörper [Nachweis] in Zerebrospinalflüssigkeit mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="29570-9"/>
+        <display value="West Nile virus neutralizing antibody [Titer] in Cerebral spinal fluid by Neutralization test"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-neutralisierender Antikörper [Titer] in Zerebrospinalflüssigkeit mit Neutralisationstest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="29778-8"/>
+        <display value="West Nile virus IgM Ab [Presence] in Specimen by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-IgM-Antikörper [Nachweis] in Probenmaterial mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="29779-6"/>
+        <display value="West Nile virus neutralizing antibody [Titer] in Specimen by Neutralization test"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-neutralisierender Antikörper [Titer] in Probenmaterial mit Neutralisationstest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="29780-4"/>
+        <display value="West Nile virus IgM Ab [Presence] in Specimen"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-IgM-Antikörper [Nachweis] in Probenmaterial"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="30178-8"/>
+        <display value="West Nile virus IgG Ab [Presence] in Specimen by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-IgG-Antikörper [Nachweis] in Probenmaterial mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="31701-6"/>
+        <display value="West Nile virus IgG Ab [Presence] in Serum"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-IgG-Antikörper [Nachweis] in Serum"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="31702-4"/>
+        <display value="West Nile virus IgG Ab [Presence] in Specimen"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-IgG-Antikörper [Nachweis] in Probenmaterial"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="31703-2"/>
+        <display value="West Nile virus IgM Ab [Presence] in Cerebral spinal fluid"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-IgM-Antikörper [Nachweis] in Zerebrospinalflüssigkeit"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="31704-0"/>
+        <display value="West Nile virus IgM Ab [Presence] in Serum"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-IgM-Antikörper [Nachweis] in Serum"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="32361-8"/>
+        <display value="West Nile virus RNA [Presence] in Serum by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-RNA [Nachweis] in Serum mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="32370-9"/>
+        <display value="West Nile virus RNA [Presence] in Tissue by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-RNA [Nachweis] in Gewebe mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="32371-7"/>
+        <display value="West Nile virus Ag [Presence] in Tissue by Immune stain"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-Antigen [Nachweis] in Gewebe mit Immunfärbung"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="33328-6"/>
+        <display value="West Nile virus IgG Ab [Titer] in Cerebral spinal fluid"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-IgG-Antikörper [Titer] in Zerebrospinalflüssigkeit"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="33329-4"/>
+        <display value="West Nile virus IgG Ab [Titer] in Serum"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-IgG-Antikörper [Titer] in Serum"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="33330-2"/>
+        <display value="West Nile virus IgM Ab [Titer] in Cerebral spinal fluid"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-IgM-Antikörper [Titer] in Zerebrospinalflüssigkeit"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="33331-0"/>
+        <display value="West Nile virus IgM Ab [Titer] in Serum"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-IgM-Antikörper [Titer] in Serum"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="34460-6"/>
+        <display value="West Nile virus RNA [Presence] in Blood by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-RNA [Nachweis] in Blut mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="34461-4"/>
+        <display value="West Nile virus RNA [Presence] in Cerebral spinal fluid by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-RNA [Nachweis] in Zerebrospinalflüssigkeit mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="34892-0"/>
+        <display value="West Nile virus RNA [Presence] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-RNA [Nachweis] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="37985-9"/>
+        <display value="West Nile virus RNA [Presence] in Specimen by Probe"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-RNA [Nachweis] in Probenmaterial mit Sonde"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="38166-5"/>
+        <display value="West Nile virus IgM Ab [Units/volume] in Serum by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-IgM-Antikörper [Einheiten/Volumen] in Serum mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="38997-3"/>
+        <display value="West Nile virus IgG Ab [Units/volume] in Serum by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-IgG-Antikörper [Einheiten/Volumen] in Serum mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="39572-3"/>
+        <display value="West Nile virus IgG Ab [Units/volume] in Cerebral spinal fluid by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-IgG-Antikörper [Einheiten/Volumen] in Zerebrospinalflüssigkeit mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="39573-1"/>
+        <display value="West Nile virus IgM Ab [Units/volume] in Cerebral spinal fluid by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-IgM-Antikörper [Einheiten/Volumen] in Zerebrospinalflüssigkeit mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="41195-9"/>
+        <display value="West Nile virus IgM Ab [Titer] in Body fluid"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-IgM-Antikörper [Titer] in Körperflüssigkeit"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="41196-7"/>
+        <display value="West Nile virus IgG Ab [Titer] in Body fluid"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-IgG-Antikörper [Titer] in Körperflüssigkeit"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="41211-4"/>
+        <display value="West Nile virus IgG+IgM Ab [Presence] in Serum"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-IgG+IgM-Antikörper [Nachweis] in Serum"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="41212-2"/>
+        <display value="West Nile virus RNA [Presence] in Serum from Donor by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-RNA [Nachweis] in Serum von Donor mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="41236-1"/>
+        <display value="West Nile virus IgG Ab [Presence] in Cerebral spinal fluid"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-IgG-Antikörper [Nachweis] in Zerebrospinalflüssigkeit"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="41642-0"/>
+        <display value="West Nile virus IgM Ab [Presence] in Specimen by Immunofluorescence"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-IgM-Antikörper [Nachweis] in Probenmaterial mit Immunfluoreszenztest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="41643-8"/>
+        <display value="West Nile virus Ag [Presence] in Specimen by Immunofluorescence"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-Antigen [Nachweis] in Probenmaterial mit Immunfluoreszenztest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="43342-5"/>
+        <display value="West Nile virus IgM Ab [Titer] in Cerebral spinal fluid by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-IgM-Antikörper [Titer] in Zerebrospinalflüssigkeit mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="43343-3"/>
+        <display value="West Nile virus IgM Ab [Titer] in Serum by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-IgM-Antikörper [Titer] in Serum mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="50015-7"/>
+        <display value="West Nile virus Ag [Presence] in Blood or Marrow from Donor"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-Antigen [Nachweis] in Blut oder Knochenmark von Donor"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="60028-8"/>
+        <display value="West Nile virus IgG Ab avidity [Presence] in Serum by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-IgG-Antikörperavidität [Nachweis] in Serum mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="60029-6"/>
+        <display value="West Nile virus IgG Ab avidity [Presence] in Serum by Immunofluorescence"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-IgG-Antikörperavidität [Nachweis] in Serum mit Immunfluoreszenztest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="60030-4"/>
+        <display value="West Nile virus IgG Ab [Presence] in Serum by Immunofluorescence"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-IgG-Antikörper [Nachweis] in Serum mit Immunfluoreszenztest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="62436-1"/>
+        <display value="West Nile virus IgM Ab [Presence] in Body fluid by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-IgM-Antikörper [Nachweis] in Körperflüssigkeit mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="74857-4"/>
+        <display value="West Nile virus RNA [Presence] in Serum or Plasma from Donor by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-RNA [Nachweis] in Serum oder Plasma von Donor mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="77953-8"/>
+        <display value="West Nile virus IgG Ab [Presence] in Cerebral spinal fluid by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-IgG-Antikörper [Nachweis] in Zerebrospinalflüssigkeit mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="81096-0"/>
+        <display value="West Nile virus Kunjin strain IgM Ab [Presence] in Serum"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus, Kunjin-Stamm-IgM-Antikörper [Nachweis] in Serum"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="81650-4"/>
+        <display value="West Nile virus Kunjin strain RNA [Presence] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus, Kunjin-Stamm-RNA [Nachweis] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="87395-0"/>
+        <display value="West Nile virus RNA [Cycle Threshold #] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-RNA [Zyklusschwellenwert #] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="94289-6"/>
+        <display value="West Nile virus neutralizing antibody [Presence] in Specimen by Neutralization test"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-neutralisierender Antikörper [Nachweis] in Probenmaterial mit Neutralisationstest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="94602-0"/>
+        <display value="West Nile virus IgM Ab/Positive control in Serum by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="West-Nil-Virus-IgM-Antikörper/Positivkontrolle in Serum mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="41461-5"/>
+        <display value="Virus identified in Specimen"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Virus identifiziert in Probenmaterial"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="92253-4"/>
+        <display value="Microorganism identified in Isolate or Specimen by Molecular genetics method"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mikroorganismus identifiziert in Isolat oder Probenmaterial, molekulargenetisch"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

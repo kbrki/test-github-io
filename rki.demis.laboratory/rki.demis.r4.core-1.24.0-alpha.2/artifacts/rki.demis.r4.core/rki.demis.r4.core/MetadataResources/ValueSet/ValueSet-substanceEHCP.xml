@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="substanceEHCP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/substanceEHCP"/>
+  <version value="1.0.0"/>
+  <name value="SubstanceEHCP"/>
+  <title value="Analyt-Set für Escherichia coli (enterohämorrhagisch)"/>
+  <status value="active"/>
+  <date value="2023-05-03"/>
+  <description value="Das ValueSet SubstanceEHCP enthält die Codes des Analyt-Sets für Escherichia coli (enterohämorrhagisch)."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <code value="709385004"/>
+        <display value="Antigen of Escherichia coli O157 (substance)"/>
+        <designation>
+          <language value="de-DE"/>
+          <value value="E.coli-O157-Antigen"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="259835003"/>
+        <display value="Escherichia coli lipopolysaccharide antibody (substance)"/>
+        <designation>
+          <language value="de-DE"/>
+          <value value="E.coli-LPS-Antikörper"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="608774005"/>
+        <display value="Shiga toxin 1 (substance)"/>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Shigatoxin 1 (stx1)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="608775006"/>
+        <display value="Shiga toxin 2 (substance)"/>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Shigatoxin 2 (stx2)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="255835006"/>
+        <display value="Shiga toxin (substance)"/>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Shigatoxin"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="NotifierRole"/>
+  <url value="https://demis.rki.de/fhir/StructureDefinition/NotifierRole"/>
+  <version value="1.1.0"/>
+  <name value="NotifierRole"/>
+  <title value="Melder-Rolle"/>
+  <status value="active"/>
+  <date value="2023-05-05"/>
+  <description value="Melder müssen gemäß IfSG entweder Angaben zu ihrer Einrichtung oder Angaben zu ihrer Person angeben. Es können auch beide Angaben hinterlegt werden. Die Melder-Rolle ist erforderlich, um eine Unterscheidung zwischen Melder und Meldender Einrichtung vornehmen zu können. Sie beinhaltet lediglich Verweise auf die Meldende Person und/oder die Meldende Einrichtung."/>
+  <fhirVersion value="4.0.1"/>
+  <mapping>
+    <identity value="servd"/>
+    <uri value="http://www.omg.org/spec/ServD/1.0/"/>
+    <name value="ServD"/>
+  </mapping>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="PractitionerRole"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="PractitionerRole">
+      <path value="PractitionerRole"/>
+      <constraint>
+        <key value="personOrFacility"/>
+        <severity value="error"/>
+        <human value="Der Melder ist entweder eine Meldende Person oder eine Meldende Einrichtung."/>
+        <expression value="practitioner.count()=1 or organization.count()=1"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
+      </constraint>
+    </element>
+    <element id="PractitionerRole.practitioner">
+      <path value="PractitionerRole.practitioner"/>
+      <short value="Verweis auf die Meldende Person"/>
+      <definition value="Verweis auf die Meldende Person"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/Notifier"/>
+        <aggregation value="bundled"/>
+      </type>
+    </element>
+    <element id="PractitionerRole.practitioner.reference">
+      <path value="PractitionerRole.practitioner.reference"/>
+      <min value="1"/>
+    </element>
+    <element id="PractitionerRole.organization">
+      <path value="PractitionerRole.organization"/>
+      <short value="Verweis auf die Meldende Einrichtung"/>
+      <definition value="Verweis auf die Meldende Einrichtung"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/NotifierFacility"/>
+        <aggregation value="bundled"/>
+      </type>
+    </element>
+    <element id="PractitionerRole.organization.reference">
+      <path value="PractitionerRole.organization.reference"/>
+      <min value="1"/>
+    </element>
+  </differential>
+</StructureDefinition>

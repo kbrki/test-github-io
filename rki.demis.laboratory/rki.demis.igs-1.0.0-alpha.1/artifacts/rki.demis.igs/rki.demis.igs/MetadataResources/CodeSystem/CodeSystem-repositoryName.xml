@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="repositoryName" />
+  <url value="https://demis.rki.de/fhir/CodeSystem/repositoryName" />
+  <version value="1.0.0" />
+  <name value="RepositoryName" />
+  <title value="Name des Repository" />
+  <status value="active" />
+  <date value="2023-07-22" />
+  <description value="Das CodeSystem RepositoryName enthält die Codes für den Namen der Online-Datenbank (Repository), auf die die Sequenz hochgeladen wurde oder beabsichtigt wird, hochgeladen zu werden." />
+  <caseSensitive value="false" />
+  <valueSet value="https://demis.rki.de/fhir/ValueSet/repositoryName" />
+  <content value="complete" />
+  <count value="6" />
+  <concept>
+    <code value="gisaid"/>
+    <display value="GISAID"/>
+  </concept>
+  <concept>
+    <code value="ena"/>
+    <display value="ENA"/>
+  </concept>
+  <concept>
+    <code value="sra"/>
+    <display value="SRA"/>
+  </concept>
+  <concept>
+    <code value="pubmlst"/>
+    <display value="PubMLST"/>
+  </concept>
+  <concept>
+    <code value="genbank"/>
+    <display value="GenBank"/>
+  </concept>
+  <concept>
+    <code value="other"/>
+    <display value="OTHER"/>
+  </concept>
+</CodeSystem>

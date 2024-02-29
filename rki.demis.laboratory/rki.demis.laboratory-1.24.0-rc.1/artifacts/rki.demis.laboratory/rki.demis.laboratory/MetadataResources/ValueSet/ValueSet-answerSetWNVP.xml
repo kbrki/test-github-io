@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetWNVP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetWNVP"/>
+  <version value="1.4.0"/>
+  <name value="AnswerSetWNVP"/>
+  <title value="AnswerSet für West-Nil-Virus"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-11-09"/>
+  <publisher value="Robert Koch-Institut"/>
+  <description value="Das ValueSet AnswerSetWNVP enthält die Codes der Answer-Codes für West-Nil-Virus."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230901"/>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="57311007"/>
+        <display value="West Nile virus (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="West Nile virus (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="West-Nil-Virus"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="31441007"/>
+        <display value="Kunjin virus (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Kunjin virus (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Kunjin-Virus"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

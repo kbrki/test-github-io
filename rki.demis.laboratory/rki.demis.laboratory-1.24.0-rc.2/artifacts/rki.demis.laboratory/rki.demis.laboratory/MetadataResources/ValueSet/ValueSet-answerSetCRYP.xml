@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetCRYP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetCRYP"/>
+  <version value="1.3.0"/>
+  <name value="AnswerSetCRYP"/>
+  <title value="AnswerSet für humanpathogene Cryptosporidium sp."/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-11-09"/>
+  <publisher value="Robert Koch-Institut"/>
+  <description value="Das ValueSet AnswerSetCRYP enthält die Codes der Answer-Codes für humanpathogene Cryptosporidium sp.."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230901"/>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="608957004"/>
+        <display value="Oocyst of genus Cryptosporidium (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Oocyst of genus Cryptosporidium (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Oozyste der Gattung Cryptosporidium"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="83821001"/>
+        <display value="Cryptosporidium (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Cryptosporidium (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Cryptosporidium spp."/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="51504002"/>
+        <display value="Cryptosporidium parvum (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Cryptosporidium parvum (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Cryptosporidium parvum"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="417722006"/>
+        <display value="Cryptosporidium hominis (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Cryptosporidium hominis (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Cryptosporidium hominis"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="416762004"/>
+        <display value="Cryptosporidium canis (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Cryptosporidium canis (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Cryptosporidium canis"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="416961000"/>
+        <display value="Cryptosporidium felis (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Cryptosporidium felis (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Cryptosporidium felis"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

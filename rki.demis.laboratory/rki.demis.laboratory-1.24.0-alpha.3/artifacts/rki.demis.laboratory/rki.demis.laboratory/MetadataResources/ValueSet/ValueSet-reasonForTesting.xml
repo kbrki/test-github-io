@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="reasonForTesting"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/reasonForTesting"/>
+  <version value="1.3.0"/>
+  <name value="ReasonForTesting"/>
+  <title value="Untersuchungsgrund"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-11-10"/>
+  <publisher value="Robert Koch-Institut"/>
+  <description value="Das ValueSet ReasonForTesting enthält die Codes für den Untersuchungsgrund."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230901"/>
+      <concept>
+        <code value="314074007"/>
+        <display value="nicht medizinisch-diagnostischer Anlass"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Microbiology screening test (procedure)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="168186002"/>
+        <display value="allgemeiner medizinisch-diagnostischer Anlass"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Sample - microbiological exam (procedure)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="428792000"/>
+        <display value="Kontaktperson"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Person exposed to disease (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="9718006:{363702006=(308273005:255234002=117725006)},{363702006=(308273005:255234002=9718006)}"/>
+        <display value="Verlaufs-PCR in Folge eines Bakteriennachweis mittels PCR"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="9718006 | Polymerase chain reaction analysis (procedure) | : { 363702006 | Has focus (attribute) | = ( 308273005 | Follow-up status (finding) | : 255234002 | After (attribute) | = 117725006 | Detection of bacteria (procedure) | ) } ,  { 363702006 | Has focus (attribute) | = ( 308273005 | Follow-up status (finding) | : 255234002 | After (attribute) | = 9718006 | Polymerase chain reaction analysis (procedure) | ) }"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="9718006:{363702006=(308273005:255234002=122442008)},{363702006=(308273005:255234002=9718006)}"/>
+        <display value="Verlaufs-PCR in Folge eines Virusnachweis mittels PCR"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="9718006 | Polymerase chain reaction analysis (procedure) | : { 363702006 | Has focus (attribute) | = ( 308273005 | Follow-up status (finding) | : 255234002 | After (attribute) | = 122442008 | Detection of virus (procedure) | ) } ,  { 363702006 | Has focus (attribute) | = ( 308273005 | Follow-up status (finding) | : 255234002 | After (attribute) | = 9718006 | Polymerase chain reaction analysis (procedure) | ) }"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="871560001:246501002=703690001"/>
+        <display value="bestätigender PCR-Test (nach einem positiven Antigen-Schnell- oder Selbsttest)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119454002"/>
+          </use>
+          <value value="871560001 | Detection of ribonucleic acid of severe acute respiratory syndrome coronavirus 2 using polymerase chain reaction (observable entity) | : 246501002 | Technique (attribute) | = 703690001 | Confirmatory technique (qualifier value) |"/>
+        </designation>
+      </concept>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+      <concept>
+        <code value="ASKU"/>
+        <display value="asked but unknown"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

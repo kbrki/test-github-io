@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="sequencingSubstances" />
+  <url value="https://demis.rki.de/fhir/ValueSet/sequencingSubstances" />
+  <version value="1.1.0" />
+  <name value="SequencingSubstances" />
+  <title value="Sequenziermaterial" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2023-12-28" />
+  <publisher value="Robert Koch-Institut" />
+  <description value="Das ValueSet SequencingSubstances enthält die Codes der Sequenziermaterialien." />
+  <compose>
+    <include>
+      <system value="https://demis.rki.de/fhir/CodeSystem/sequencingSubstances" />
+      <version value="1.1.0" />
+    </include>
+  </compose>
+</ValueSet>

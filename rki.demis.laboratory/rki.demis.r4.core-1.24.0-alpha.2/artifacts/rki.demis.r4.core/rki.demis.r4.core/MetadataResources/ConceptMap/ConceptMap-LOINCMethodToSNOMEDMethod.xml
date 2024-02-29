@@ -1,0 +1,1040 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="LOINCMethodToSNOMEDMethod"/>
+  <url value="https://demis.rki.de/fhir/ConceptMap/LOINCMethodToSNOMEDMethod"/>
+  <version value="1.1.0"/>
+  <name value="LOINCMethodToSNOMEDMethod"/>
+  <title value="LOINCMethodToSNOMEDMethod"/>
+  <status value="active"/>
+  <date value="2022-01-22"/>
+  <description value="Die ConceptMap LOINCMethodToSNOMEDMethod ordnet den Methoden-Part eines LOINC-Labortest-Codes äquivalente SNOMED-Codes zu."/>
+  <sourceUri value="http://loinc.org"/>
+  <targetUri value="http://snomed.info/sct"/>
+  <group>
+    <source value="http://loinc.org"/>
+    <target value="http://snomed.info/sct"/>
+    <element>
+      <display value="Acid fast stain"/>
+      <code value="LP6094-9"/>
+      <target>
+        <code value="67122001"/>
+        <display value="Acid fast stain method"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Agglutination"/>
+      <code value="LP6106-1"/>
+      <target>
+        <code value="359821004"/>
+        <display value="Agglutination assay (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="165771000"/>
+        <display value="Coombs test - anti-human globulin (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Animal inoculation"/>
+      <code value="LP6132-7"/>
+      <target>
+        <code value="127785005"/>
+        <display value="Active or passive immunisation"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Bioassay"/>
+      <code value="LP6150-9"/>
+      <target>
+        <code value="58779000"/>
+        <display value="Bioassay (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Cell wall fatty acid analysis"/>
+      <code value="LP31263-4"/>
+      <target>
+        <code value="313406008"/>
+        <display value="Fatty acid measurement (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Complement fixation"/>
+      <code value="LP6176-4"/>
+      <target>
+        <code value="69207009"/>
+        <display value="Complement fixation test (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="104336004"/>
+        <display value="Complement component, antigen measurement (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Confirmatory method"/>
+      <code value="LP6197-0"/>
+      <target>
+        <code value="703690001"/>
+        <display value="Confirm"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Culture"/>
+      <code value="LP6209-3"/>
+      <target>
+        <code value="61594008"/>
+        <display value="Microbial culture (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="104172004"/>
+        <display value="Organism specific culture (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="12717000"/>
+        <display value="Culture for viruses"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="104178000"/>
+        <display value="Culture for bacteria"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Electron microscopy"/>
+      <code value="LP6395-0"/>
+      <target>
+        <code value="104158008"/>
+        <display value="Electron microscopy, diagnostic (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="FISH"/>
+      <code value="LP62864-1"/>
+      <target>
+        <code value="426329006"/>
+        <display value="Fluorescence in situ hybridization"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Genotype method"/>
+      <code value="LP28723-2"/>
+      <target>
+        <code value="363779003"/>
+        <display value="Genotype determination (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Giemsa stain"/>
+      <code value="LP6294-5"/>
+      <target>
+        <code value="104208006"/>
+        <display value="Giemsa stain"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Hemagglutination"/>
+      <code value="LP28800-8"/>
+      <target>
+        <code value="85000002"/>
+        <display value="Hemagglutination"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="165771000"/>
+        <display value="Coombs test - anti-human globulin (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Hemagglutination inhibition"/>
+      <code value="LP6304-2"/>
+      <target>
+        <code value="34733005"/>
+        <display value="HAI - Hemagglutination inhibition"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="165771000"/>
+        <display value="Coombs test - anti-human globulin (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Immune diffusion (ID)"/>
+      <code value="LP6322-4"/>
+      <target>
+        <code value="32623009"/>
+        <display value="Immunodiffusion measurement (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="359872008"/>
+        <display value="Disk diffusion susceptibility test (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Immune stain"/>
+      <code value="LP6333-1"/>
+      <target>
+        <code value="406867009"/>
+        <display value="Immunofluorescent stain"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="13269000"/>
+        <display value="Immunocytochemical stain (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Immunoassay"/>
+      <code value="LP217197-5"/>
+      <target>
+        <code value="414464004"/>
+        <display value="Immunoassay method"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="250507002"/>
+        <display value="Antibody titre measurement"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="121276004"/>
+        <display value="Antigen measurement"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="359788000"/>
+        <display value="Antinuclear antibody measurement (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="4613005"/>
+        <display value="Radioimmunoassay (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="118119003"/>
+        <display value="Measurement of microbial antibody"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="104336004"/>
+        <display value="Complement component, antigen measurement (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="31651002"/>
+        <display value="Measurement of immunoglobulin A (IgA)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="45293001"/>
+        <display value="Immunoglobulin G level"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="45764000"/>
+        <display value="Immunoglobulin M level"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="414111007"/>
+        <display value="Enzyme immunoassay"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="88221005"/>
+        <display value="Affinity chromatography measurement (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="165771000"/>
+        <display value="Coombs test - anti-human globulin (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="37586002"/>
+        <display value="Counterimmunoelectrophoresis measurement (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Immunoassay --1st specimen"/>
+      <code value="LP217197-5"/>
+      <target>
+        <code value="414464004"/>
+        <display value="Immunoassay method"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="250507002"/>
+        <display value="Antibody titre measurement"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="121276004"/>
+        <display value="Antigen measurement"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="359788000"/>
+        <display value="Antinuclear antibody measurement (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="4613005"/>
+        <display value="Radioimmunoassay (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="118119003"/>
+        <display value="Measurement of microbial antibody"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="104336004"/>
+        <display value="Complement component, antigen measurement (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="31651002"/>
+        <display value="Measurement of immunoglobulin A (IgA)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="45293001"/>
+        <display value="Immunoglobulin G level"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="45764000"/>
+        <display value="Immunoglobulin M level"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="414111007"/>
+        <display value="Enzyme immunoassay"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="88221005"/>
+        <display value="Affinity chromatography measurement (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="165771000"/>
+        <display value="Coombs test - anti-human globulin (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="37586002"/>
+        <display value="Counterimmunoelectrophoresis measurement (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Immunoassay --2nd specimen"/>
+      <code value="LP217197-5"/>
+      <target>
+        <code value="414464004"/>
+        <display value="Immunoassay method"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="250507002"/>
+        <display value="Antibody titre measurement"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="121276004"/>
+        <display value="Antigen measurement"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="359788000"/>
+        <display value="Antinuclear antibody measurement (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="4613005"/>
+        <display value="Radioimmunoassay (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="118119003"/>
+        <display value="Measurement of microbial antibody"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="104336004"/>
+        <display value="Complement component, antigen measurement (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="31651002"/>
+        <display value="Measurement of immunoglobulin A (IgA)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="45293001"/>
+        <display value="Immunoglobulin G level"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="45764000"/>
+        <display value="Immunoglobulin M level"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="414111007"/>
+        <display value="Enzyme immunoassay"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="88221005"/>
+        <display value="Affinity chromatography measurement (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="165771000"/>
+        <display value="Coombs test - anti-human globulin (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="37586002"/>
+        <display value="Counterimmunoelectrophoresis measurement (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Immunoassay --3rd specimen"/>
+      <code value="LP217197-5"/>
+      <target>
+        <code value="414464004"/>
+        <display value="Immunoassay method"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="250507002"/>
+        <display value="Antibody titre measurement"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="121276004"/>
+        <display value="Antigen measurement"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="359788000"/>
+        <display value="Antinuclear antibody measurement (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="4613005"/>
+        <display value="Radioimmunoassay (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="118119003"/>
+        <display value="Measurement of microbial antibody"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="104336004"/>
+        <display value="Complement component, antigen measurement (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="31651002"/>
+        <display value="Measurement of immunoglobulin A (IgA)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="45293001"/>
+        <display value="Immunoglobulin G level"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="45764000"/>
+        <display value="Immunoglobulin M level"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="414111007"/>
+        <display value="Enzyme immunoassay"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="88221005"/>
+        <display value="Affinity chromatography measurement (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="165771000"/>
+        <display value="Coombs test - anti-human globulin (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="37586002"/>
+        <display value="Counterimmunoelectrophoresis measurement (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Immunoblot"/>
+      <code value="LP6320-8"/>
+      <target>
+        <code value="37310002"/>
+        <display value="Immunoblot assay (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Immunofluorescence"/>
+      <code value="LP6323-2"/>
+      <target>
+        <code value="406867009"/>
+        <display value="Immunofluorescent stain"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="3967008"/>
+        <display value="Fluorescence polarization immunoassay (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Immunofluorescence --1st specimen"/>
+      <code value="LP6323-2"/>
+      <target>
+        <code value="406867009"/>
+        <display value="Immunofluorescent stain"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="3967008"/>
+        <display value="Fluorescence polarization immunoassay (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Immunofluorescence --2nd specimen"/>
+      <code value="LP6323-2"/>
+      <target>
+        <code value="406867009"/>
+        <display value="Immunofluorescent stain"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="3967008"/>
+        <display value="Fluorescence polarization immunoassay (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Immunofluorescence Narrative"/>
+      <code value="LP6323-2"/>
+      <target>
+        <code value="406867009"/>
+        <display value="Immunofluorescent stain"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="3967008"/>
+        <display value="Fluorescence polarization immunoassay (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Latex agglutination"/>
+      <code value="LP6360-4"/>
+      <target>
+        <code value="43657008"/>
+        <display value="Latex agglutination"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Light microscopy"/>
+      <code value="LP6398-4"/>
+      <target>
+        <code value="104157003"/>
+        <display value="LM - Light microscopy"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Line blot"/>
+      <code value="LP266806-1"/>
+      <target>
+        <code value="37310002"/>
+        <display value="Immunoblot assay (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="88221005"/>
+        <display value="Affinity chromatography measurement (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Microagglutination"/>
+      <code value="LP31254-3"/>
+      <target>
+        <code value="359821004"/>
+        <display value="Agglutination assay (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Molecular genetics method"/>
+      <code value="LP6404-0"/>
+      <target>
+        <code value="116148004"/>
+        <display value="Molecular genetics procedure (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Molecular method"/>
+      <code value="LP6404-0"/>
+      <target>
+        <code value="116148004"/>
+        <display value="Molecular genetics procedure (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Mouse bioassay"/>
+      <code value="LP31256-8"/>
+      <target>
+        <code value="58779000"/>
+        <display value="Bioassay (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Mouse bioassay neutralization"/>
+      <code value="LP31257-6"/>
+      <target>
+        <code value="34146008"/>
+        <display value="Mouse toxin neutralization test (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="58779000"/>
+        <display value="Bioassay (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="MS.MALDI-TOF"/>
+      <code value="LP186074-3"/>
+      <target>
+        <code value="8959002"/>
+        <display value="Mass spectrometry measurement (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="NAA with non-probe detection"/>
+      <code value="LP208998-7"/>
+      <target>
+        <code value="398545005"/>
+        <display value="Nucleic acid detection"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="69363007"/>
+        <display value="Nucleic acid amplification (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="NAA with non-probe detection in Positive blood culture"/>
+      <code value="LP208998-7"/>
+      <target>
+        <code value="398545005"/>
+        <display value="Nucleic acid detection"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="69363007"/>
+        <display value="Nucleic acid amplification (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="NAA with probe detection"/>
+      <code value="LP6464-4"/>
+      <target>
+        <code value="117245002"/>
+        <display value="Nucleic acid probe method with target amplification (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="69363007"/>
+        <display value="Nucleic acid amplification (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="NAA with probe detection in Positive blood culture"/>
+      <code value="LP6464-4"/>
+      <target>
+        <code value="398545005"/>
+        <display value="Nucleic acid detection"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="117245002"/>
+        <display value="Nucleic acid probe method with target amplification (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="69363007"/>
+        <display value="Nucleic acid amplification (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Neutralization test"/>
+      <code value="LP6416-4"/>
+      <target>
+        <code value="39624002"/>
+        <display value="Viral neutralization test (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Neutralization test --1st specimen"/>
+      <code value="LP6416-4"/>
+      <target>
+        <code value="39624002"/>
+        <display value="Viral neutralization test (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Neutralization test --2nd specimen"/>
+      <code value="LP6416-4"/>
+      <target>
+        <code value="39624002"/>
+        <display value="Viral neutralization test (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Nucleic acid amplification using CDC primer-probe set N1"/>
+      <code value="LP417603-0"/>
+      <target>
+        <code value="69363007"/>
+        <display value="Nucleic acid amplification (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="117245002"/>
+        <display value="Nucleic acid probe method with target amplification (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Nucleic acid amplification using CDC primer-probe set N2"/>
+      <code value="LP417604-8"/>
+      <target>
+        <code value="69363007"/>
+        <display value="Nucleic acid amplification (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="117245002"/>
+        <display value="Nucleic acid probe method with target amplification (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Nucleic acid amplification using primer-probe set H5a"/>
+      <code value="LP212403-2"/>
+      <target>
+        <code value="69363007"/>
+        <display value="Nucleic acid amplification (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="117245002"/>
+        <display value="Nucleic acid probe method with target amplification (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Nucleic acid amplification using primer-probe set H5b"/>
+      <code value="LP212404-0"/>
+      <target>
+        <code value="69363007"/>
+        <display value="Nucleic acid amplification (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="117245002"/>
+        <display value="Nucleic acid probe method with target amplification (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Orcein stain"/>
+      <code value="LP6428-9"/>
+      <target>
+        <code value="117321004"/>
+        <display value="Orcein stain"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Organism specific culture"/>
+      <code value="LP6429-7"/>
+      <target>
+        <code value="104178000"/>
+        <display value="Culture for bacteria"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="61594008"/>
+        <display value="Microbial culture (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="104172004"/>
+        <display value="Organism specific culture (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="12717000"/>
+        <display value="Culture for viruses"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="121898003"/>
+        <display value="Coliform bacteria viability count (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="104234003"/>
+        <display value="Gradient strip susceptibility test (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="782518009"/>
+        <display value="Modified carbapenem inactivation technique (qualifier value)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="104233009"/>
+        <display value="Antiviral susceptibility test (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Phage lysis"/>
+      <code value="LP31255-0"/>
+      <target>
+        <code value="22642004"/>
+        <display value="Bacterial bacteriophage typing (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Phenotype method"/>
+      <code value="LP28724-0"/>
+      <target>
+        <code value="363778006"/>
+        <display value="Phenotype determination (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Polyacrylamide gel electrophoresis (PAGE)"/>
+      <code value="LP6434-7"/>
+      <target>
+        <code value="252326002"/>
+        <display value="Polyacrylamide gel electrophoresis (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Probe"/>
+      <code value="LP6459-4"/>
+      <target>
+        <code value="384715000"/>
+        <display value="Nucleic acid hybridization procedure"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Probe and target amplification method detection limit = 200 copies/ml"/>
+      <code value="LP6464-4"/>
+      <target>
+        <code value="117245002"/>
+        <display value="Nucleic acid probe method with target amplification (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Probe and target amplification method detection limit = 5 iU/mL"/>
+      <code value="LP6464-4"/>
+      <target>
+        <code value="117245002"/>
+        <display value="Nucleic acid probe method with target amplification (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Probe and target amplification method detection limit = 50 iU/mL"/>
+      <code value="LP6464-4"/>
+      <target>
+        <code value="117245002"/>
+        <display value="Nucleic acid probe method with target amplification (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Probe and target amplification method detection limit = 500 copies/mL"/>
+      <code value="LP6464-4"/>
+      <target>
+        <code value="117245002"/>
+        <display value="Nucleic acid probe method with target amplification (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Probe and target amplification method detection limit = 500 IU/mL"/>
+      <code value="LP6464-4"/>
+      <target>
+        <code value="117245002"/>
+        <display value="Nucleic acid probe method with target amplification (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Probe in Positive blood culture"/>
+      <code value="LP6459-4"/>
+      <target>
+        <code value="384715000"/>
+        <display value="Nucleic acid hybridization procedure"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Probe with amplification"/>
+      <code value="LP6462-8"/>
+      <target>
+        <code value="117245002"/>
+        <display value="Nucleic acid probe method with target amplification (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Probe with signal amplification"/>
+      <code value="LP6463-6"/>
+      <target>
+        <code value="117245002"/>
+        <display value="Nucleic acid probe method with target amplification (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="pVNT"/>
+      <code value="LP419175-7"/>
+      <target>
+        <code value="39624002"/>
+        <display value="Viral neutralization test (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Radioimmunoassay (RIA)"/>
+      <code value="LP6493-3"/>
+      <target>
+        <code value="4613005"/>
+        <display value="Radioimmunoassay (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Rapid immunoassay"/>
+      <code value="LP217198-3"/>
+      <target>
+        <code value="708099001"/>
+        <display value="Rapid immunoassay technique"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="RFLP"/>
+      <code value="LP35703-5"/>
+      <target>
+        <code value="90603004"/>
+        <display value="Restriction fragment length polymorphism analysis (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="RFLP.rRNA"/>
+      <code value="LP428417-2"/>
+      <target>
+        <code value="90603004"/>
+        <display value="Restriction fragment length polymorphism analysis (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Sequencing"/>
+      <code value="LP150045-5"/>
+      <target>
+        <code value="117040002"/>
+        <display value="Nucleic acid sequencing (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+      <target>
+        <code value="115418004"/>
+        <display value="Viral Sequencing (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Slide agglutination"/>
+      <code value="LP31266-7"/>
+      <target>
+        <code value="359821004"/>
+        <display value="Agglutination assay (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <display value="Tube agglutination"/>
+      <code value="LP6115-2"/>
+      <target>
+        <code value="359821004"/>
+        <display value="Agglutination assay (procedure)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

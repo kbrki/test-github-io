@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Sequence" />
+  <url value="https://demis.rki.de/fhir/StructureDefinition/Sequence" />
+  <version value="1.0.0" />
+  <name value="Sequence" />
+  <title value="Sequenz" />
+  <status value="draft" />
+  <date value="2023-07-22" />
+  <description value="Die Sequenz umfasst Informationen zu einer biologischen Sequenz, hier DNA-Sequenz. Es kann sich hierbei auch um Sequenzrohdaten oder assemblierte Daten handeln, jeweils mit den dazugehörigen Metadaten (z.B. Datum der Probennahme, Sequenzierungsgerät, Adapter für die Library Preparation, Upload in eine Online-Datenbank (Repositorium), etc.) handeln." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="MolecularSequence" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MolecularSequence" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="MolecularSequence.extension">
+      <path value="MolecularSequence.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="MolecularSequence.extension:sequenceAuthor">
+      <path value="MolecularSequence.extension" />
+      <sliceName value="sequenceAuthor" />
+      <short value="Person/Labors, die/das verantwortlich für die Sequenz ist" />
+      <definition value="Person/Labors, die/das verantwortlich für die Sequenz ist" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://demis.rki.de/fhir/StructureDefinition/SequenceAuthor" />
+      </type>
+      <mustSupport value="true" />
+      <isModifier value="false" />
+    </element>
+    <element id="MolecularSequence.extension:sequencingReason">
+      <path value="MolecularSequence.extension" />
+      <sliceName value="sequencingReason" />
+      <short value="Grund der Sequenzierung der Probe" />
+      <definition value="Grund der Sequenzierung der Probe" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://demis.rki.de/fhir/StructureDefinition/SequencingReason" />
+      </type>
+      <mustSupport value="true" />
+      <isModifier value="false" />
+    </element>
+    <element id="MolecularSequence.extension:sequenceDocumentReference">
+      <path value="MolecularSequence.extension"/>
+      <sliceName value="sequenceDocumentReference"/>
+      <short value="Referenz auf die Sequenz"/>
+      <definition value="Referenz auf die Sequenz"/>
+      <min value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="https://demis.rki.de/fhir/StructureDefinition/SequenceDocumentReference"/>
+      </type>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+    </element>
+    <element id="MolecularSequence.identifier">
+      <path value="MolecularSequence.identifier" />
+      <short value="Laboreigener Identifier der Probe" />
+      <definition value="Eineindeutiger Identifier der Probe, die vom einreichenden Labor verwendet wird." />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MolecularSequence.type">
+      <path value="MolecularSequence.type" />
+      <fixedCode value="dna" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MolecularSequence.patient">
+      <path value="MolecularSequence.patient"/>
+      <max value="0"/>
+    </element>
+    <element id="MolecularSequence.specimen">
+      <path value="MolecularSequence.specimen" />
+      <short value="Verweis auf die Probe" />
+      <definition value="Verweis auf die Probe" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/Specimen" />
+        <aggregation value="bundled" />
+      </type>
+    </element>
+    <element id="MolecularSequence.specimen.reference">
+      <path value="MolecularSequence.specimen.reference" />
+      <min value="1" />
+    </element>
+    <element id="MolecularSequence.device">
+      <path value="MolecularSequence.device" />
+      <short value="Verweis auf das Sequenziergerät" />
+      <definition value="Verweis auf das Sequenziergerät" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/SequencingDevice" />
+        <aggregation value="bundled" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="MolecularSequence.device.reference">
+      <path value="MolecularSequence.device.reference" />
+      <min value="1" />
+    </element>
+    <element id="MolecularSequence.performer">
+      <path value="MolecularSequence.performer" />
+      <short value="Verweis auf die Melder-Einrichtung" />
+      <definition value="Verweis auf die Melder-Einrichtung" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/NotifierFacility" />
+        <aggregation value="bundled" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="MolecularSequence.performer.reference">
+      <path value="MolecularSequence.performer.reference" />
+      <min value="1" />
+    </element>
+    <element id="MolecularSequence.quantity">
+      <path value="MolecularSequence.quantity" />
+      <max value="0" />
+    </element>
+    <element id="MolecularSequence.referenceSeq">
+      <path value="MolecularSequence.referenceSeq" />
+      <max value="0" />
+    </element>
+    <element id="MolecularSequence.variant">
+      <path value="MolecularSequence.variant" />
+      <max value="0" />
+    </element>
+    <element id="MolecularSequence.observedSeq">
+      <path value="MolecularSequence.observedSeq" />
+      <max value="0" />
+    </element>
+    <element id="MolecularSequence.quality">
+      <path value="MolecularSequence.quality" />
+      <max value="0" />
+    </element>
+    <element id="MolecularSequence.readCoverage">
+      <path value="MolecularSequence.readCoverage" />
+      <max value="0" />
+    </element>
+    <element id="MolecularSequence.repository">
+      <path value="MolecularSequence.repository" />
+      <short value="Repositorium" />
+      <definition value="Repositorium, in welches die Sequenz hochgeladen wird" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MolecularSequence.repository.extension">
+      <path value="MolecularSequence.repository.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="MolecularSequence.repository.extension:sequenceUploadDate">
+      <path value="MolecularSequence.repository.extension" />
+      <sliceName value="sequenceUploadDate" />
+      <short value="Datums des Sequenz-Uploads" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://demis.rki.de/fhir/StructureDefinition/SequenceUploadDate" />
+      </type>
+      <mustSupport value="true" />
+      <isModifier value="false" />
+    </element>
+    <element id="MolecularSequence.repository.extension:sequenceUploadSubmitter">
+      <path value="MolecularSequence.repository.extension" />
+      <sliceName value="sequenceUploadSubmitter" />
+      <short value="Verantwortliche/es Person/Labor für den Sequenz-Upload" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://demis.rki.de/fhir/StructureDefinition/SequenceUploadSubmitter" />
+      </type>
+      <mustSupport value="true" />
+      <isModifier value="false" />
+    </element>
+    <element id="MolecularSequence.repository.extension:sequenceUploadStatus">
+      <path value="MolecularSequence.repository.extension" />
+      <sliceName value="sequenceUploadStatus" />
+      <short value="Status des Sequenz-Uploads" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://demis.rki.de/fhir/StructureDefinition/SequenceUploadStatus" />
+      </type>
+      <mustSupport value="true" />
+      <isModifier value="false" />
+    </element>
+    <element id="MolecularSequence.repository.type">
+      <path value="MolecularSequence.repository.type" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MolecularSequence.repository.url">
+      <path value="MolecularSequence.repository.url" />
+      <short value="Hyperlink auf die Sequenz im Repositorium" />
+      <definition value="Hyperlink auf die Sequenz im Repositorium" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MolecularSequence.repository.name">
+      <path value="MolecularSequence.repository.name" />
+      <short value="Name des Repositoriums" />
+      <definition value="Name des Repositoriums, in welches die Sequenz hochgeladen wird. Der Wert muss entsprechend des vom RKI definierten ValueSets (https://demis.rki.de/fhir/ValueSet/repositoryName) im coding Element dargestellt werden." />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://demis.rki.de/fhir/ValueSet/repositoryName" />
+      </binding>
+    </element>
+    <element id="MolecularSequence.repository.datasetId">
+      <path value="MolecularSequence.repository.datasetId" />
+      <short value="Identifier der Sequenz im Repositorium" />
+      <definition value="Identifier der Sequenz im Repositorium" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MolecularSequence.pointer">
+      <path value="MolecularSequence.pointer" />
+      <max value="0" />
+    </element>
+    <element id="MolecularSequence.structureVariant">
+      <path value="MolecularSequence.structureVariant" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

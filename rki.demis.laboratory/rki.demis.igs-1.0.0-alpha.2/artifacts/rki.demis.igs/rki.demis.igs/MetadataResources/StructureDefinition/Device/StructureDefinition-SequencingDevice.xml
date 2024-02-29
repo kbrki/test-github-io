@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="SequencingDevice" />
+  <url value="https://demis.rki.de/fhir/StructureDefinition/SequencingDevice" />
+  <version value="1.1.0" />
+  <name value="SequencingDevice" />
+  <title value="Sequenziergerät" />
+  <status value="draft" />
+  <date value="2023-12-29" />
+  <description value="Das Sequenziergerät umfasst die Angabe des Namens des Sequenziergerätes, sowie die Sequenzierungsplattform auf die die Sequenz hochgeladen wurde oder beabsichtigt wird, hochgeladen zu werden." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Device" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Device" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Device.meta">
+      <path value="Device.meta" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Device.meta.profile">
+      <path value="Device.meta.profile" />
+      <min value="1" />
+      <max value="1" />
+      <fixedCanonical value="https://demis.rki.de/fhir/StructureDefinition/SequencingDevice" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Device.deviceName">
+      <path value="Device.deviceName" />
+      <short value="Sequenzierungsgerät" />
+      <definition value="Das Sequenzierungsgerät, das für die Sequenzierung der Probe verwendet wurde. Der jeweils zutreffende Name des Sequenzierungsgerätes ist aus dem vom RKI definierten ValueSet https://demis.rki.de/fhir/ValueSet/instrument zu entnehmen." />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://demis.rki.de/fhir/ValueSet/instrument" />
+      </binding>
+    </element>
+    <element id="Device.deviceName.name">
+      <path value="Device.deviceName.name" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Device.deviceName.type">
+      <path value="Device.deviceName.type" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Device.type">
+      <path value="Device.type" />
+      <short value="Sequenzierungsplattform" />
+      <definition value="Die Sequenzierungsplattform auf die die Sequenz hochgeladen wurde oder beabsichtigt wird, hochgeladen zu werden.&#xA;Die jeweils zutreffende Plattform ist aus dem vom RKI definierten ValueSet https://demis.rki.de/fhir/ValueSet/sequencingPlatform zu entnehmen und im coding-Element anzugeben." />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Device.type.coding">
+      <path value="Device.type.coding" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://demis.rki.de/fhir/ValueSet/sequencingPlatform" />
+      </binding>
+    </element>
+    <element id="Device.type.coding.system">
+      <path value="Device.type.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Device.type.coding.code">
+      <path value="Device.type.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Device.note">
+      <path value="Device.note" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Device.note.text">
+      <path value="Device.note.text" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

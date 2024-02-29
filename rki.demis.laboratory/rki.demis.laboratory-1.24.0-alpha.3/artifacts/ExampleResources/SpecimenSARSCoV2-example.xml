@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Specimen xmlns="http://hl7.org/fhir">
+  <id value="SpecimenSARSCoV2-example" />
+  <meta>
+    <profile value="https://demis.rki.de/fhir/StructureDefinition/SpecimenCVDP" />
+  </meta>
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="309164002" />
+      <display value="Upper respiratory swab sample (specimen)" />
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/d3539a4c-9093-467a-a3e8-050594afbd59" />
+  </subject>
+  <receivedTime value="2020-09-27T22:01:38+02:00" />
+  <collection>
+    <collector>
+      <reference value="PractitionerRole/e84a62f5-8384-4191-916b-10150c780453" />
+    </collector>
+    <collectedDateTime value="2020-08-17T10:10:00Z" />
+  </collection>
+  <processing>
+    <extension url="https://demis.rki.de/fhir/StructureDefinition/TransactionID">
+      <valueIdentifier>
+        <system value="https://demis.rki.de/fhir/NamingSystem/TransactionId" />
+        <value value="IGS-10001-CVDP-be8131da-9024-41a4-a53c-3ce0d6f6fe37" />
+      </valueIdentifier>
+    </extension>
+    <timeDateTime value="2020-08-18T08:10:00Z" />
+  </processing>
+  <note>
+    <text value="Die Probe gehört zu einem Ausbruch." />
+  </note>
+</Specimen>

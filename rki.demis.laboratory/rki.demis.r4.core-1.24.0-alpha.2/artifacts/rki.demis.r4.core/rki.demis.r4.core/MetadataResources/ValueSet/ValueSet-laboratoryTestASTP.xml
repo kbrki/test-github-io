@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="laboratoryTestASTP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/laboratoryTestASTP"/>
+  <version value="1.0.0"/>
+  <name value="LaboratoryTestASTP"/>
+  <title value="Labortest für Astroviren"/>
+  <status value="active"/>
+  <date value="2023-05-03"/>
+  <description value="Das ValueSet LaboratoryTestASTP enthält die Codes der Labortests für Astroviren."/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <version value="2.74"/>
+      <concept>
+        <code value="7811-3"/>
+        <display value="Astrovirus RNA [Presence] in Serum by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="69938-9"/>
+        <display value="Astrovirus RNA [Presence] in Specimen by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="10646-8"/>
+        <display value="Astrovirus [Identifier] in Stool by Electron microscopy"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Astrovirus [Nachweis oder Identität] in Stuhl mit Elektronenmikroskopie"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="31718-0"/>
+        <display value="Astrovirus Ag [Presence] in Stool"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Astrovirus-Antigen [Nachweis] in Stuhl"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="7809-7"/>
+        <display value="Astrovirus [Presence] in Stool by Electron microscopy"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Astrovirus [Nachweis] in Stuhl mit Elektronenmikroskopie"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="7810-5"/>
+        <display value="Astrovirus Ag [Presence] in Stool by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Astrovirus-Antigen [Nachweis] in Stuhl mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="82210-6"/>
+        <display value="Astrovirus subtypes 1-8 RNA [Presence] in Stool by NAA with non-probe detection"/>
+      </concept>
+      <concept>
+        <code value="92691-5"/>
+        <display value="Astrovirus RNA [Presence] in Stool by NAA with probe detection"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

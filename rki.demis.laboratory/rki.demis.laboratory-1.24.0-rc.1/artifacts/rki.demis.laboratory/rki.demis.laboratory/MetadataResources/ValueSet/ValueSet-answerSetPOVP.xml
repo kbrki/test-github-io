@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetPOVP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetPOVP"/>
+  <version value="1.4.0"/>
+  <name value="AnswerSetPOVP"/>
+  <title value="AnswerSet für Poliovirus"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-11-09"/>
+  <publisher value="Robert Koch-Institut"/>
+  <description value="Das ValueSet AnswerSetPOVP enthält die Codes der Answer-Codes für Poliovirus."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230901"/>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="44172002"/>
+        <display value="Human poliovirus (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Human poliovirus (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Humanes Poliovirus"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="22580008"/>
+        <display value="Human poliovirus 1 (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Human poliovirus 1 (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Humanes Poliovirus 1"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="55174004"/>
+        <display value="Human poliovirus 2 (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Human poliovirus 2 (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Humanes Poliovirus 2"/>
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="16362001"/>
+        <display value="Human poliovirus 3 (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Human poliovirus 3 (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Humanes Poliovirus 3"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

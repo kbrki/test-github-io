@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="laboratoryTestEAHP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/laboratoryTestEAHP"/>
+  <version value="1.2.0"/>
+  <name value="LaboratoryTestEAHP"/>
+  <title value="Labortest für Amoebiasis, Entamoeba histolytica"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-11-01"/>
+  <publisher value="Robert Koch-Institut"/>
+  <description value="Das ValueSet LaboratoryTestEAHP enthält die Codes der Labortests für Amoebiasis, Entamoeba histolytica."/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <version value="2.76"/>
+      <concept>
+        <code value="14125-9"/>
+        <display value="Entamoeba histolytica [Presence] in Stool by Trichrome stain"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Entamoeba histolytica [Nachweis] in Stuhl mit Trichrom-Färbung"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="16817-9"/>
+        <display value="Entamoeba histolytica Ab [Presence] in Serum by Immune diffusion (ID)"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Entamoeba histolytica Antikörper [Nachweis] in Serum mit Immundiffusion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="16818-7"/>
+        <display value="Entamoeba histolytica Ab [Units/volume] in Cerebral spinal fluid"/>
+      </concept>
+      <concept>
+        <code value="16819-5"/>
+        <display value="Entamoeba histolytica Ab [Units/volume] in Serum by Immunofluorescence"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Entamoeba histolytica Antikörper [Einheiten/Volumen] in Serum mit Immunfluoreszenztest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="16820-3"/>
+        <display value="Entamoeba histolytica Ab [Units/volume] in Serum by Complement fixation"/>
+      </concept>
+      <concept>
+        <code value="21259-7"/>
+        <display value="Entamoeba histolytica Ab [Titer] in Serum by Hemagglutination"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Entamoeba histolytica Antikörper [Titer] in Serum mit Hämagglutinationstest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="22285-1"/>
+        <display value="Entamoeba histolytica Ab [Presence] in Serum"/>
+      </concept>
+      <concept>
+        <code value="22286-9"/>
+        <display value="Entamoeba histolytica Ab [Titer] in Serum"/>
+      </concept>
+      <concept>
+        <code value="22287-7"/>
+        <display value="Entamoeba histolytica IgA Ab [Units/volume] in Serum"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Entamoeba histolytica IgA-Antikörper [Einheiten/Volumen] in Serum"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="22288-5"/>
+        <display value="Entamoeba histolytica IgG Ab [Units/volume] in Serum"/>
+      </concept>
+      <concept>
+        <code value="22289-3"/>
+        <display value="Entamoeba histolytica IgM Ab [Units/volume] in Serum"/>
+      </concept>
+      <concept>
+        <code value="25400-3"/>
+        <display value="Entamoeba histolytica Ab [Titer] in Serum by Immunofluorescence"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Entamoeba histolytica Antikörper [Titer] in Serum mit Immunfluoreszenztest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="27090-0"/>
+        <display value="Entamoeba histolytica IgA Ab [Presence] in Saliva (oral fluid)"/>
+      </concept>
+      <concept>
+        <code value="29905-7"/>
+        <display value="Entamoeba histolytica Ag [Presence] in Stool by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Entamoeba histolytica Antigen [Nachweis] in Stuhl mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="31810-5"/>
+        <display value="Entamoeba histolytica Ag [Units/volume] in Serum"/>
+      </concept>
+      <concept>
+        <code value="31811-3"/>
+        <display value="Entamoeba histolytica Ag [Units/volume] in Stool"/>
+      </concept>
+      <concept>
+        <code value="31812-1"/>
+        <display value="Entamoeba histolytica Ag [Units/volume] in Specimen"/>
+      </concept>
+      <concept>
+        <code value="47406-4"/>
+        <display value="Entamoeba histolytica Ab [Presence] in Cerebral spinal fluid"/>
+      </concept>
+      <concept>
+        <code value="5150-8"/>
+        <display value="Entamoeba histolytica Ab [Units/volume] in Serum by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Entamoeba histolytica Antikörper [Einheiten/Volumen] in Serum mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="5151-6"/>
+        <display value="Entamoeba histolytica Ab [Units/volume] in Serum by Hemagglutination"/>
+      </concept>
+      <concept>
+        <code value="56921-0"/>
+        <display value="Entamoeba histolytica Ab [Presence] in Serum by Immunofluorescence"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Entamoeba histolytica Antikörper [Nachweis] in Serum mit Immunfluoreszenztest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="56922-8"/>
+        <display value="Entamoeba histolytica IgG Ab [Presence] in Serum by Immunoassay"/>
+      </concept>
+      <concept>
+        <code value="6396-6"/>
+        <display value="Entamoeba histolytica DNA [Presence] in Specimen by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="6397-4"/>
+        <display value="Entamoeba histolytica Ag [Units/volume] in Serum by Immunoassay"/>
+      </concept>
+      <concept>
+        <code value="6398-2"/>
+        <display value="Entamoeba histolytica Ag [Units/volume] in Stool by Immunoassay"/>
+      </concept>
+      <concept>
+        <code value="6399-0"/>
+        <display value="Entamoeba histolytica Ag [Units/volume] in Specimen by Immunoassay"/>
+      </concept>
+      <concept>
+        <code value="7880-8"/>
+        <display value="Entamoeba histolytica Ab [Units/volume] in Serum"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Entamoeba histolytica Antikörper [Einheiten/Volumen] in Serum"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="80682-8"/>
+        <display value="Entamoeba histolytica 18S rRNA [Presence] in Stool by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="82207-2"/>
+        <display value="Entamoeba histolytica DNA [Presence] in Stool by NAA with non-probe detection"/>
+      </concept>
+      <concept>
+        <code value="90297-3"/>
+        <display value="Entamoeba histolytica Ab [Presence] in Serum by Immunoassay"/>
+      </concept>
+      <concept>
+        <code value="91766-6"/>
+        <display value="Entamoeba histolytica DNA [Presence] in Aspirate by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="92689-9"/>
+        <display value="Entamoeba histolytica DNA [Presence] in Stool by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Entamoeba histolytica DNA [Nachweis] in Stuhl mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="9420-1"/>
+        <display value="Entamoeba histolytica Ab [Titer] in Serum by Complement fixation"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Entamoeba histolytica Antikörper [Titer] in Serum mit Komplementbindungsreaktion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="9421-9"/>
+        <display value="Entamoeba histolytica Ab [Units/volume] in Serum by Immune diffusion (ID)"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Entamoeba histolytica Antikörper [Einheiten/Volumen] in Serum mit Immundiffusion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="9521-6"/>
+        <display value="Entamoeba histolytica IgA Ab [Units/volume] in Serum by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Entamoeba histolytica IgA-Antikörper [Einheiten/Volumen] in Serum mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="9522-4"/>
+        <display value="Entamoeba histolytica IgG Ab [Units/volume] in Serum by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Entamoeba histolytica IgG-Antikörper [Einheiten/Volumen] in Serum mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="9523-2"/>
+        <display value="Entamoeba histolytica IgM Ab [Units/volume] in Serum by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Entamoeba histolytica IgM-Antikörper [Einheiten/Volumen] in Serum mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="10704-5"/>
+        <display value="Ova and parasites identified in Stool by Light microscopy"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Wurmeier und Parasiten identifiziert in Stuhl mit Lichtmikroskopie"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="41852-5"/>
+        <display value="Microorganism or agent identified in Specimen"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Mikroorganismus oder Erreger identifiziert in Probenmaterial"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="uploadStatus" />
+  <url value="https://demis.rki.de/fhir/ValueSet/uploadStatus" />
+  <version value="1.0.0" />
+  <name value="UploadStatus" />
+  <title value="Status des Sequenz-Uploads" />
+  <status value="active" />
+  <date value="2023-07-17" />
+  <description value="Das ValueSet UploadStatus enthält die Codes für den Status des Sequenz-Uploads auf eine Online-Datenbank (Repository)." />
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331" />
+      <concept>
+        <code value="385645004" />
+        <display value="Accepted (qualifier value)" />
+      </concept>
+      <concept>
+        <code value="397943006" />
+        <display value="Planned (qualifier value)" />
+      </concept>
+      <concept>
+        <code value="441889009" />
+        <display value="Denied (qualifier value)" />
+      </concept>
+      <concept>
+        <code value="74964007" />
+        <display value="Other (qualifier value)" />
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

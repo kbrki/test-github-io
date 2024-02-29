@@ -1,0 +1,1025 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <title>Implementierungsleitfaden für DEMIS Integrierte Genomische Surveillance (IGS)</title>
+
+        <link rel="icon" href="static/styles/common/favicon.ico" />
+
+        <script src="static/styles/common/jquery/jquery.min.js"></script>
+        <script src="static/styles/common/bootstrap/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="static/styles/common/main.min.css" />
+        <link rel="stylesheet" href="static/styles/common/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="static/styles/common/rendering/rendering.min.css" />
+
+        <script src="static/styles/common/rendering/stu3TreeTable.min.js"></script>
+        <script src="static/styles/common/rendering/baseTreetable.min.js"></script>
+
+        <link rel="stylesheet" href="static/styles/treetable/style.css?v=1d9c2d6f39bb880" />
+
+    </head>
+
+    <body>
+
+        <div id="ig-viewer">
+
+            <div class="ig-view-content">
+
+                <div id="ig-view-treetable">
+
+                    <div class="segment-default-header" role="banner" aria-label="Header">
+                        <div class="row">
+                            <header class="col-md-12" aria-hidden="true">
+                                <h1 class="title">
+                                    <b>Implementierungsleitfaden für DEMIS Integrierte Genomische Surveillance (IGS)</b>
+                                </h1>
+                            </header>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid">
+                        <div id="guide-panel">
+                            <div class="tree-panel" role="navigation" aria-label="Main menu">
+                                
+
+<div class="tree-content">
+    <div>
+
+        <input data-val="true" data-val-required="The Id field is required." id="GuideId" name="Guide.Id" type="hidden" value="4762" />
+
+        <table id="treetable" class="treetable ig-treetable hidden">
+
+                    <tr data-id="Home"
+                        data-filepath="Home"
+                        data-serial-nr="2"
+                        data-is-folder="True"
+                        class="rootnode treenode">
+                        <td>
+                            <a href="Home.html">
+                                <span class="baseIcon resource"></span>
+                                <span title="Home">Home</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/guide-overview.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/guide-overview.guide.md"
+                        data-parentId="Home"
+                        data-serial-nr="5"
+                        class="treenode">
+                        <td>
+                            <a href="Home-guide-overview.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Grundlagen und &#xDC;berblick">Grundlagen und &#xDC;berblick</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/guide-model.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/guide-model.guide.md"
+                        data-parentId="Home"
+                        data-serial-nr="6"
+                        class="treenode">
+                        <td>
+                            <a href="Home-guide-model.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Ressourcenmodell">Ressourcenmodell</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/changelogs"
+                        data-is-folder="True"
+                        data-filepath="Home/changelogs"
+                        data-parentId="Home"
+                        data-serial-nr="7"
+                        class="treenode">
+                        <td>
+                            <a href="Home-changelogs.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="&#xC4;nderungshistorie">&#xC4;nderungshistorie</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/changelogs/rki.demis.igs-1.0.0-alpha.1.md"
+                        data-is-folder="False"
+                        data-filepath="Home/changelogs/rki.demis.igs-1.0.0-alpha.1.md"
+                        data-parentId="Home/changelogs"
+                        data-serial-nr="10"
+                        class="treenode">
+                        <td>
+                            <a href="Home-changelogs-rki.demis.igs-1.0.0-alpha.1.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="rki.demis.igs-1.0.0-alpha.1 (28.07.2023)">rki.demis.igs-1.0.0-alpha.1 (28.07.2023)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/changelogs/rki.demis.r4.core-1.25.0-alpha.1.md"
+                        data-is-folder="False"
+                        data-filepath="Home/changelogs/rki.demis.r4.core-1.25.0-alpha.1.md"
+                        data-parentId="Home/changelogs"
+                        data-serial-nr="11"
+                        class="treenode">
+                        <td>
+                            <a href="Home-changelogs-rki.demis.r4.core-1.25.0-alpha.1.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="rki.demis.r4.core-1.25.0-alpha.1 (23.12.2022)">rki.demis.r4.core-1.25.0-alpha.1 (23.12.2022)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/guide-lifecyclemanagement.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/guide-lifecyclemanagement.guide.md"
+                        data-parentId="Home"
+                        data-serial-nr="12"
+                        class="treenode">
+                        <td>
+                            <a href="Home-guide-lifecyclemanagement.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Lifecyclemanagement">Lifecyclemanagement</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/guide-dataupload.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/guide-dataupload.guide.md"
+                        data-parentId="Home"
+                        data-serial-nr="13"
+                        class="treenode">
+                        <td>
+                            <a href="Home-guide-dataupload.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Datenupload per Labormanagementsystem">Datenupload per Labormanagementsystem</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/guide-links.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/guide-links.guide.md"
+                        data-parentId="Home"
+                        data-serial-nr="14"
+                        class="treenode">
+                        <td>
+                            <a href="Home-guide-links.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Weiterf&#xFC;hrende Informationen">Weiterf&#xFC;hrende Informationen</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources"
+                        data-is-folder="True"
+                        data-filepath="Home/resources"
+                        data-parentId="Home"
+                        data-serial-nr="15"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Ressourcen">Ressourcen</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/conformanceresources"
+                        data-parentId="Home/resources"
+                        data-serial-nr="18"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Conformance Resources">Conformance Resources</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/operationdefinitions"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/conformanceresources/operationdefinitions"
+                        data-parentId="Home/resources/conformanceresources"
+                        data-serial-nr="21"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-operationdefinitions.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="OperationDefinitions">OperationDefinitions</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/operationdefinitions/guide-processnotificationsequence.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/conformanceresources/operationdefinitions/guide-processnotificationsequence.guide.md"
+                        data-parentId="Home/resources/conformanceresources/operationdefinitions"
+                        data-serial-nr="24"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-operationdefinitions-guide-processnotificationsequence.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="ProcessNotificationSequence">ProcessNotificationSequence</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions"
+                        data-parentId="Home/resources/conformanceresources"
+                        data-serial-nr="25"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="StructureDefinitions">StructureDefinitions</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/notificationbundle"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/notificationbundle"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions"
+                        data-serial-nr="28"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-notificationbundle.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Meldevorgang (NotificationBundle)">Meldevorgang (NotificationBundle)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/notificationbundle/guide-notificationbundlesequence.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/notificationbundle/guide-notificationbundlesequence.guide.md"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions/notificationbundle"
+                        data-serial-nr="31"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-notificationbundle-guide-notificationbundlesequence.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Sequenzmeldevorgang (NotificationBundleSequence)">Sequenzmeldevorgang (NotificationBundleSequence)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/notification"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/notification"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions"
+                        data-serial-nr="32"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-notification.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Meldung (Notification)">Meldung (Notification)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/notification/guide-notificationsequence.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/notification/guide-notificationsequence.guide.md"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions/notification"
+                        data-serial-nr="35"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-notification-guide-notificationsequence.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Sequenzmeldung (NotificationSequence)">Sequenzmeldung (NotificationSequence)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/guide-sequence.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/guide-sequence.guide.md"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions"
+                        data-serial-nr="36"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-guide-sequence.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Sequenz (Sequence)">Sequenz (Sequence)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/laboratoryreportsequence"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/laboratoryreportsequence"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions"
+                        data-serial-nr="37"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-laboratoryreportsequence.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Laborbericht (LaboratoryReport)">Laborbericht (LaboratoryReport)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/laboratoryreportsequence/guide-laboratoryreportsequence.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/laboratoryreportsequence/guide-laboratoryreportsequence.guide.md"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions/laboratoryreportsequence"
+                        data-serial-nr="40"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-laboratoryreportsequence-guide-laboratoryreportsequence.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Sequenz-Laborbericht (LaboratoryReportSequence)">Sequenz-Laborbericht (LaboratoryReportSequence)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/pathogendetectionsequence"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/pathogendetectionsequence"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions"
+                        data-serial-nr="41"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-pathogendetectionsequence.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Erregernachweise (PathogenDetection)">Erregernachweise (PathogenDetection)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/pathogendetectionsequence/guide-pathogendetectionsequence.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/pathogendetectionsequence/guide-pathogendetectionsequence.guide.md"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions/pathogendetectionsequence"
+                        data-serial-nr="44"
+                        class="treenode selected">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-pathogendetectionsequence-guide-pathogendetectionsequence.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Sequenz-Erregernachweis (PathogenDetectionSequence)">Sequenz-Erregernachweis (PathogenDetectionSequence)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/specimensequence"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/specimensequence"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions"
+                        data-serial-nr="45"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-specimensequence.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Probe (Specimen)">Probe (Specimen)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/specimensequence/guide-specimensequence.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/specimensequence/guide-specimensequence.guide.md"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions/specimensequence"
+                        data-serial-nr="48"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-specimensequence-guide-specimensequence.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Sequenz-Probe (SpecimenSequence)">Sequenz-Probe (SpecimenSequence)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/guide-sequencedocument.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/guide-sequencedocument.guide.md"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions"
+                        data-serial-nr="49"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-guide-sequencedocument.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Sequenz-Dokument (SequenceDocument)">Sequenz-Dokument (SequenceDocument)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/substance"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/substance"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions"
+                        data-serial-nr="50"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-substance.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Material (Substance)">Material (Substance)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/substance/guide-adaptersubstance.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/substance/guide-adaptersubstance.guide.md"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions/substance"
+                        data-serial-nr="53"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-substance-guide-adaptersubstance.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Adapter-Sequenz (AdapterSubstance)">Adapter-Sequenz (AdapterSubstance)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/substance/guide-primersubstance.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/substance/guide-primersubstance.guide.md"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions/substance"
+                        data-serial-nr="54"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-substance-guide-primersubstance.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Primer-Sequenz (PrimerSubstance)">Primer-Sequenz (PrimerSubstance)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/guide-sequencingdevice.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/guide-sequencingdevice.guide.md"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions"
+                        data-serial-nr="55"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-guide-sequencingdevice.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Sequenzierger&#xE4;t (SequencingDevice)">Sequenzierger&#xE4;t (SequencingDevice)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/extensions"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/extensions"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions"
+                        data-serial-nr="56"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-extensions.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Erweiterungen (Extensions)">Erweiterungen (Extensions)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/extensions/guide-sequencingreason.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/extensions/guide-sequencingreason.guide.md"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions/extensions"
+                        data-serial-nr="58"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-extensions-guide-sequencingreason.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Grund der Sequenzierung (SequencingReason)">Grund der Sequenzierung (SequencingReason)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/extensions/guide-sequenceuploadsubmitter.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/extensions/guide-sequenceuploadsubmitter.guide.md"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions/extensions"
+                        data-serial-nr="59"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-extensions-guide-sequenceuploadsubmitter.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Verantwortlicher des Sequenz-Uploads (SequenceUploadSubmitter)">Verantwortlicher des Sequenz-Uploads (SequenceUploadSubmitter)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/extensions/guide-sequenceuploadstatus.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/extensions/guide-sequenceuploadstatus.guide.md"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions/extensions"
+                        data-serial-nr="60"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-extensions-guide-sequenceuploadstatus.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Status des Sequenz-Uploads (SequenceUploadStatus)">Status des Sequenz-Uploads (SequenceUploadStatus)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/extensions/guide-sequenceuploaddate.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/extensions/guide-sequenceuploaddate.guide.md"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions/extensions"
+                        data-serial-nr="61"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-extensions-guide-sequenceuploaddate.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Datum des Sequenz-Uploads (SequenceUploadDate)">Datum des Sequenz-Uploads (SequenceUploadDate)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/extensions/guide-sequenceauthor.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/extensions/guide-sequenceauthor.guide.md"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions/extensions"
+                        data-serial-nr="62"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-extensions-guide-sequenceauthor.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Verantwortlicher der Sequenz (SequenceAuthor)">Verantwortlicher der Sequenz (SequenceAuthor)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/extensions/guide-isolate.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/extensions/guide-isolate.guide.md"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions/extensions"
+                        data-serial-nr="63"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-extensions-guide-isolate.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Isolat (Isolate)">Isolat (Isolate)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/extensions/guide-sequencedocumentreference.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/extensions/guide-sequencedocumentreference.guide.md"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions/extensions"
+                        data-serial-nr="64"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-extensions-guide-sequencedocumentreference.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Referenz auf das SequenceDocument (SequenceDocumentreference)">Referenz auf das SequenceDocument (SequenceDocumentreference)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/parameters"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/parameters"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions"
+                        data-serial-nr="65"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-parameters.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Parameter (Parameters)">Parameter (Parameters)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/parameters/guide-processnotificationsequencerequestparameters.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/parameters/guide-processnotificationsequencerequestparameters.guide.md"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions/parameters"
+                        data-serial-nr="68"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-parameters-guide-processnotificationsequencerequestparameters.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="ProcessNotificationSequenceRequestParameters">ProcessNotificationSequenceRequestParameters</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/parameters/guide-processnotificationsequenceresponseparameters.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/parameters/guide-processnotificationsequenceresponseparameters.guide.md"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions/parameters"
+                        data-serial-nr="69"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-parameters-guide-processnotificationsequenceresponseparameters.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="ProcessNotificationSequenceResponseParameters">ProcessNotificationSequenceResponseParameters</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologyresources"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/terminologyresources"
+                        data-parentId="Home/resources"
+                        data-serial-nr="70"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologyresources.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Terminology Resources">Terminology Resources</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologyresources/codesystems"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/terminologyresources/codesystems"
+                        data-parentId="Home/resources/terminologyresources"
+                        data-serial-nr="73"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologyresources-codesystems.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="CodeSystems">CodeSystems</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologyresources/codesystems/guide-instrument.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologyresources/codesystems/guide-instrument.guide.md"
+                        data-parentId="Home/resources/terminologyresources/codesystems"
+                        data-serial-nr="76"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologyresources-codesystems-guide-instrument.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="instrument">instrument</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologyresources/codesystems/guide-repositoryName.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologyresources/codesystems/guide-repositoryName.guide.md"
+                        data-parentId="Home/resources/terminologyresources/codesystems"
+                        data-serial-nr="77"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologyresources-codesystems-guide-repositoryName.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="repositoryName">repositoryName</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologyresources/codesystems/guide-sequencingPlatform.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologyresources/codesystems/guide-sequencingPlatform.guide.md"
+                        data-parentId="Home/resources/terminologyresources/codesystems"
+                        data-serial-nr="78"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologyresources-codesystems-guide-sequencingPlatform.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="sequencingPlatform">sequencingPlatform</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologyresources/codesystems/guide-sequencingStrategy.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologyresources/codesystems/guide-sequencingStrategy.guide.md"
+                        data-parentId="Home/resources/terminologyresources/codesystems"
+                        data-serial-nr="79"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologyresources-codesystems-guide-sequencingStrategy.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="sequencingStrategy">sequencingStrategy</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologyresources/codesystems/guide-sequencingSubstances.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologyresources/codesystems/guide-sequencingSubstances.guide.md"
+                        data-parentId="Home/resources/terminologyresources/codesystems"
+                        data-serial-nr="80"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologyresources-codesystems-guide-sequencingSubstances.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="sequencingSubstances">sequencingSubstances</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologyresources/valuesets"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/terminologyresources/valuesets"
+                        data-parentId="Home/resources/terminologyresources"
+                        data-serial-nr="81"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologyresources-valuesets.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="ValueSets">ValueSets</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologyresources/valuesets/guide-contentType.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologyresources/valuesets/guide-contentType.guide.md"
+                        data-parentId="Home/resources/terminologyresources/valuesets"
+                        data-serial-nr="84"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologyresources-valuesets-guide-contentType.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="contentType">contentType</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologyresources/valuesets/guide-instrument.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologyresources/valuesets/guide-instrument.guide.md"
+                        data-parentId="Home/resources/terminologyresources/valuesets"
+                        data-serial-nr="85"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologyresources-valuesets-guide-instrument.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="instrument">instrument</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologyresources/valuesets/guide-repositoryName.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologyresources/valuesets/guide-repositoryName.guide.md"
+                        data-parentId="Home/resources/terminologyresources/valuesets"
+                        data-serial-nr="86"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologyresources-valuesets-guide-repositoryName.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="repositoryName">repositoryName</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologyresources/valuesets/guide-sequencingPlatform.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologyresources/valuesets/guide-sequencingPlatform.guide.md"
+                        data-parentId="Home/resources/terminologyresources/valuesets"
+                        data-serial-nr="87"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologyresources-valuesets-guide-sequencingPlatform.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="sequencingPlatform">sequencingPlatform</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologyresources/valuesets/guide-sequencingReason.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologyresources/valuesets/guide-sequencingReason.guide.md"
+                        data-parentId="Home/resources/terminologyresources/valuesets"
+                        data-serial-nr="88"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologyresources-valuesets-guide-sequencingReason.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="sequencingReason">sequencingReason</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologyresources/valuesets/guide-sequencingStrategy.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologyresources/valuesets/guide-sequencingStrategy.guide.md"
+                        data-parentId="Home/resources/terminologyresources/valuesets"
+                        data-serial-nr="89"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologyresources-valuesets-guide-sequencingStrategy.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="sequencingStrategy">sequencingStrategy</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologyresources/valuesets/guide-sequencingSubstances.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologyresources/valuesets/guide-sequencingSubstances.guide.md"
+                        data-parentId="Home/resources/terminologyresources/valuesets"
+                        data-serial-nr="90"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologyresources-valuesets-guide-sequencingSubstances.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="sequencingSubstances">sequencingSubstances</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologyresources/valuesets/guide-uploadStatus.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologyresources/valuesets/guide-uploadStatus.guide.md"
+                        data-parentId="Home/resources/terminologyresources/valuesets"
+                        data-serial-nr="91"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologyresources-valuesets-guide-uploadStatus.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="uploadStatus">uploadStatus</span>
+                            </a>
+                        </td>
+                    </tr>
+
+        </table>
+    </div>
+</div>
+
+<script type="text/javascript">
+    window.addEventListener('DOMContentLoaded', (event) => {
+
+        var resourceTreeTable = new BaseTreeTable();
+        resourceTreeTable.init("treetable");
+
+        var tree = document.getElementById("treetable");
+        tree.classList.remove("hidden");
+
+    });
+</script>
+
+                            </div>
+                            <div id="preview-content" class="preview-panel full-width" role="main" aria-label="Main content">
+                                
+
+<h1 id="page-title">Sequenz-Erregernachweis (PathogenDetectionSequence)</h1>
+<p><a href="https://simplifier.net/rki.demis.igs/%7Eresources?canonical=https://demis.rki.de/fhir/structuredefinition/pathogendetectionsequence&amp;category=Profile&amp;sortBy=RankScore_desc">https://demis.rki.de/fhir/StructureDefinition/PathogenDetectionSequence</a></p>
+<p><p>Der Sequenz-Erregernachweis enthält die Angaben über die erfolgte Sequenzierung mit dem Ergebnis der Spezies- oder Variantenbestimmung. Für die Übermittlung sind die für die DEMIS-Labormeldung (<a href="https://simplifier.net/demis">https://simplifier.net/demis</a>) erregerspezifischen ValueSets zu verwenden.</p>
+</p>
+<p><strong>Profilansicht</strong>
+<div id="bff9e7467c604b50829847a7bd610958" data-level="1" class="stu3-treetable"><div class="treetable-wrapper hybrid"><div class="treetable-left-panel"><table class="treetable"><tr data-id="284971f9-c88a-4826-84a9-b16ec62dd82e" class="collapsed constraints"><td class="profile"><span class="baseIcon resource"></span><span class="constraints">Observation</span></td><td class="profile"><span title="This element has or is affected by some invariants">I</span></td><td></td><td class="profile"><span>Observation</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation</pre></p></div><span><b>Short description </b></span><p><span>Measurements and simple assertions</span></p><span><b>Alternate names </b></span><p><span>Vital Signs</span><span>, </span><span>Measurement</span><span>, </span><span>Results</span><span>, </span><span>Tests</span></p><span><b>Definition </b></span><div class="markdown"><p>Measurements and simple assertions made about a patient, device or other subject.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc.</p>
+</div><span><b>Data Type </b></span><p><span>Observation</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>dom-2:</b>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/><code>contained.contained.empty()</code></li><li class=""><b>dom-4:</b>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/><code>contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</code></li><li class=""><b>dom-3:</b>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/><code>contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</code></li><li class=""><b>dom-6:</b>A resource should have narrative for robust management<br/><code>text.div.exists()</code></li><li class=""><b>dom-5:</b>If a resource is contained in another resource, it SHALL NOT have a security label<br/><code>contained.meta.security.empty()</code></li><li class=""><b>obs-7:</b>If Observation.code is the same as an Observation.component.code then the value element associated with the code SHALL NOT be present<br/><code>value.empty() or component.code.where( (coding.code = %resource.code.coding.code) and (coding.system = %resource.code.coding.system)).empty()</code></li><li class=""><b>obs-6:</b>dataAbsentReason SHALL only be present if Observation.value[x] is not present<br/><code>dataAbsentReason.empty() or value.empty()</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>Entity. Role, or Act</li><li class=""><b>workflow:</b>Event</li><li class=""><b>sct-concept:</b>&lt; 363787002 |Observable entity|</li><li class=""><b>v2:</b>OBX</li><li class=""><b>rim:</b>Observation[classCode=OBS, moodCode=EVN]</li></ul></td></tr><tr id="Observation.identifier" data-id="1402a0e4-bdd1-4736-ae74-ce3a28badf95" data-parentId="284971f9-c88a-4826-84a9-b16ec62dd82e" class=""><td class="profile"><span class="baseIcon datatype"></span><span>identifier</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>*</span></td><td class="profile"><span>Identifier</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.identifier</pre></p></div><span><b>Short description </b></span><p><span>Business Identifier for observation</span></p><span><b>Definition </b></span><div class="markdown"><p>A unique identifier assigned to this observation.</p>
+</div><span><b>Requirements </b></span><div class="markdown"><p>Allows observations to be distinguished and referenced.</p>
+</div><span><b>Data Type </b></span><p><span>Identifier</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>CX / EI (occasionally, more often EI maps to a resource id or a URL)</li><li class=""><b>rim:</b>II - The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT]</li><li class=""><b>servd:</b>Identifier</li><li class=""><b>workflow:</b>Event.identifier</li><li class=""><b>w5:</b>FiveWs.identifier</li><li class=""><b>v2:</b>OBX.21  For OBX segments from systems without OBX-21 support a combination of ORC/OBR and OBX must be negotiated between trading partners to uniquely identify the OBX segment. Depending on how V2 has been implemented each of these may be an option: 1) OBR-3 + OBX-3 + OBX-4 or 2) OBR-3 + OBR-4 + OBX-3 + OBX-4 or 2) some other way to uniquely ID the OBR/ORC + OBX-3 + OBX-4.</li><li class=""><b>rim:</b>id</li></ul></td></tr><tr id="Observation.basedOn" data-id="aba31e2f-602c-4350-9dc4-a25d03e9856d" data-parentId="284971f9-c88a-4826-84a9-b16ec62dd82e" class="striped"><td class="profile"><span class="baseIcon reference"></span><span>basedOn</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span> <span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span>0</span><span>..</span><span>0</span></td><td class="profile"><span>Reference</span><span>(</span><span>http://hl7.org/fhir/StructureDefinition/CarePlan</span><span> | </span><span>http://hl7.org/fhir/StructureDefinition/DeviceRequest</span><span> | </span><span>http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation</span><span> | </span><span>http://hl7.org/fhir/StructureDefinition/MedicationRequest</span><span> | </span><span>http://hl7.org/fhir/StructureDefinition/NutritionOrder</span><span> | </span><span>http://hl7.org/fhir/StructureDefinition/ServiceRequest</span><span>)</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.basedOn</pre></p></div><span><b>Short description </b></span><p><span>Fulfills plan, proposal or order</span></p><span><b>Alternate names </b></span><p><span>Fulfills</span></p><span><b>Definition </b></span><div class="markdown"><p>A plan, proposal or order that is fulfilled in whole or in part by this event.  For example, a MedicationRequest may require a patient to have laboratory test performed before  it is dispensed.</p>
+</div><span><b>Requirements </b></span><div class="markdown"><p>Allows tracing of authorization for the event and tracking whether proposals/recommendations were acted upon.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.</p>
+</div><span><b>Data Type </b></span><p><span>Reference</span><span>(</span><span>http://hl7.org/fhir/StructureDefinition/CarePlan</span><span> | </span><span>http://hl7.org/fhir/StructureDefinition/DeviceRequest</span><span> | </span><span>http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation</span><span> | </span><span>http://hl7.org/fhir/StructureDefinition/MedicationRequest</span><span> | </span><span>http://hl7.org/fhir/StructureDefinition/NutritionOrder</span><span> | </span><span>http://hl7.org/fhir/StructureDefinition/ServiceRequest</span><span>)</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li><li class=""><b>ref-1:</b>SHALL have a contained resource if a local reference is provided<br/><code>reference.startsWith('#').not() or (reference.substring(1).trace('url') in %resource.contained.id.trace('ids'))</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>rim:</b>The target of a resource reference is a RIM entry point (Act, Role, or Entity)</li><li class=""><b>workflow:</b>Event.basedOn</li><li class=""><b>v2:</b>ORC</li><li class=""><b>rim:</b>.inboundRelationship[typeCode=COMP].source[moodCode=EVN]</li></ul></td></tr><tr id="Observation.partOf" data-id="df4eadfd-999f-4c8e-8fd8-667ab0040adb" data-parentId="284971f9-c88a-4826-84a9-b16ec62dd82e" class="striped"><td class="profile"><span class="baseIcon reference"></span><span>partOf</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span> <span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span>0</span><span>..</span><span>0</span></td><td class="profile"><span>Reference</span><span>(</span><span>http://hl7.org/fhir/StructureDefinition/MedicationAdministration</span><span> | </span><span>http://hl7.org/fhir/StructureDefinition/MedicationDispense</span><span> | </span><span>http://hl7.org/fhir/StructureDefinition/MedicationStatement</span><span> | </span><span>http://hl7.org/fhir/StructureDefinition/Procedure</span><span> | </span><span>http://hl7.org/fhir/StructureDefinition/Immunization</span><span> | </span><span>http://hl7.org/fhir/StructureDefinition/ImagingStudy</span><span>)</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.partOf</pre></p></div><span><b>Short description </b></span><p><span>Part of referenced event</span></p><span><b>Alternate names </b></span><p><span>Container</span></p><span><b>Definition </b></span><div class="markdown"><p>A larger event of which this particular Observation is a component or step.  For example,  an observation as part of a procedure.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>To link an Observation to an Encounter use <code>encounter</code>.  See the  <a href="observation.html#obsgrouping">Notes</a> below for guidance on referencing another Observation.</p>
+</div><span><b>Data Type </b></span><p><span>Reference</span><span>(</span><span>http://hl7.org/fhir/StructureDefinition/MedicationAdministration</span><span> | </span><span>http://hl7.org/fhir/StructureDefinition/MedicationDispense</span><span> | </span><span>http://hl7.org/fhir/StructureDefinition/MedicationStatement</span><span> | </span><span>http://hl7.org/fhir/StructureDefinition/Procedure</span><span> | </span><span>http://hl7.org/fhir/StructureDefinition/Immunization</span><span> | </span><span>http://hl7.org/fhir/StructureDefinition/ImagingStudy</span><span>)</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li><li class=""><b>ref-1:</b>SHALL have a contained resource if a local reference is provided<br/><code>reference.startsWith('#').not() or (reference.substring(1).trace('url') in %resource.contained.id.trace('ids'))</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>rim:</b>The target of a resource reference is a RIM entry point (Act, Role, or Entity)</li><li class=""><b>workflow:</b>Event.partOf</li><li class=""><b>v2:</b>Varies by domain</li><li class=""><b>rim:</b>.outboundRelationship[typeCode=FLFS].target</li></ul></td></tr><tr id="Observation.status" data-id="935454df-171a-402e-aacc-b92f8b16e946" data-parentId="284971f9-c88a-4826-84a9-b16ec62dd82e" class=""><td class="profile"><span class="baseIcon primitive"></span><span>status</span></td><td class="profile"><span class="mustsupport" title="This element is an element that must be supported">S</span> <span title="This element is an element that is part of the summary">Σ</span> <span title="This element is a modifying element">?!</span></td><td class="profile"><span>1</span><span>..</span><span>1</span></td><td class="profile"><span>code</span><span class="binding-label">Binding</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.status</pre></p></div><span><b>Short description </b></span><p><span>Status des Erregernachweis-Ergebnisses</span></p><span><b>Definition </b></span><div class="markdown"><p>Status des Erregernachweis-Ergenisses</p>
+</div><span><b>Requirements </b></span><div class="markdown"><p>Need to track the status of individual results. Some results are finalized before the whole report is finalized.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Der Status ist szenarienspezifisch folgendermaßen zu belegen:
+amended - bei einer Korrekturmeldung;
+final - in allen anderen Fällen</p>
+</div><span><b>Data Type </b></span><p><span>code</span></p><span><b>Binding </b></span><p><p><span>Codes providing the status of an observation.</span></p><a  href="http://hl7.org/fhir/ValueSet/observation-status|4.0.0" >http://hl7.org/fhir/ValueSet/observation-status|4.0.0</a><span> (</span><a title="To be conformant, instances of this element SHALL include a code from the specified valueset" href="http://hl7.org/fhir/r4/terminologies.html#required" >required</a><span>)</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>workflow:</b>Event.status</li><li class=""><b>w5:</b>FiveWs.status</li><li class=""><b>sct-concept:</b>&lt; 445584004 |Report by finality status|</li><li class=""><b>v2:</b>OBX-11</li><li class=""><b>rim:</b>status  Amended &amp; Final are differentiated by whether it is the subject of a ControlAct event with a type of &quot;revise&quot;</li></ul></td></tr><tr id="Observation.category" data-id="06cf8e30-b6e9-4a08-9775-f00fa932b724" data-parentId="284971f9-c88a-4826-84a9-b16ec62dd82e" class="collapsed"><td class="profile"><span class="baseIcon datatype"></span><span>category</span></td><td class="profile"></td><td class="profile"><span>1</span><span>..</span><span>1</span></td><td class="profile"><span>CodeableConcept</span><span class="binding-label">Binding</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.category</pre></p></div><span><b>Short description </b></span><p><span>Klassifikation des Nachweises</span></p><span><b>Definition </b></span><div class="markdown"><p>Klassifikation der durchgeführten Untersuchung.  Für DEMIS ist die entsprechende Klassifikation grundsätzlich mit dem Wert „laboratory“ aus dem entsprechend hinterlegten ValueSet zu belegen.</p>
+</div><span><b>Requirements </b></span><div class="markdown"><p>Used for filtering what observations are retrieved and displayed.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.</p>
+</div><span><b>Data Type </b></span><p><span>CodeableConcept</span></p><span><b>Binding </b></span><p><p><span>Codes for high level observation categories.</span></p><a  href="http://hl7.org/fhir/ValueSet/observation-category" >http://hl7.org/fhir/ValueSet/observation-category</a><span> (</span><a title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." href="http://hl7.org/fhir/r4/terminologies.html#preferred" >preferred</a><span>)</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>CE/CNE/CWE</li><li class=""><b>rim:</b>CD</li><li class=""><b>orim:</b>fhir:CodeableConcept rdfs:subClassOf dt:CD</li><li class=""><b>w5:</b>FiveWs.class</li><li class=""><b>rim:</b>.outboundRelationship[typeCode=&quot;COMP].target[classCode=&quot;LIST&quot;, moodCode=&quot;EVN&quot;].code</li></ul></td></tr><tr id="Observation.category.coding" data-id="a474ba85-14e1-4dca-aea1-0a4022a734ac" data-parentId="06cf8e30-b6e9-4a08-9775-f00fa932b724" class="collapsed"><td class="profile"><span class="baseIcon datatype"></span><span>coding</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>1</span><span>..</span><span>1</span></td><td class="profile"><span>Coding</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.category.coding</pre></p></div><span><b>Short description </b></span><p><span>Code defined by a terminology system</span></p><span><b>Definition </b></span><div class="markdown"><p>A reference to a code defined by a terminology system.</p>
+</div><span><b>Requirements </b></span><div class="markdown"><p>Allows for alternative encodings within a code system, and translations to other code systems.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.</p>
+</div><span><b>Data Type </b></span><p><span>Coding</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>CE/CNE/CWE subset one of the sets of component 1-3 or 4-6</li><li class=""><b>rim:</b>CV</li><li class=""><b>orim:</b>fhir:Coding rdfs:subClassOf dt:CDCoding</li><li class=""><b>v2:</b>C*E.1-8, C*E.10-22</li><li class=""><b>rim:</b>union(., ./translation)</li><li class=""><b>orim:</b>fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding</li></ul></td></tr><tr id="Observation.category.coding.system" data-id="bb5a157f-6dc3-4245-b19b-b130827240f9" data-parentId="a474ba85-14e1-4dca-aea1-0a4022a734ac" class=""><td class="profile"><span class="baseIcon primitive"></span><span>system</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>1</span><span>..</span><span>1</span></td><td class="profile"><span>uri</span><span class="fixed-label">Fixed Value</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.category.coding.system</pre></p></div><span><b>Short description </b></span><p><span>Identity of the terminology system</span></p><span><b>Definition </b></span><div class="markdown"><p>The identification of the code system that defines the meaning of the symbol in the code.</p>
+</div><span><b>Requirements </b></span><div class="markdown"><p>Need to be unambiguous about the source of the definition of the symbol.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should reference to some definition that establishes the system clearly and unambiguously.</p>
+</div><span><b>Data Type </b></span><p><span>uri</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Fixed Value </b></span><div>
+<p><pre class="">http://terminology.hl7.org/CodeSystem/observation-category</pre></p></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>C*E.3</li><li class=""><b>rim:</b>./codeSystem</li><li class=""><b>orim:</b>fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem</li></ul></td></tr><tr id="Observation.category.coding.version" data-id="1589d730-e301-4752-a09c-d45ffaf6c5e4" data-parentId="a474ba85-14e1-4dca-aea1-0a4022a734ac" class=""><td class="profile"><span class="baseIcon primitive"></span><span>version</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><span>string</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.category.coding.version</pre></p></div><span><b>Short description </b></span><p><span>Version of the system - if relevant</span></p><span><b>Definition </b></span><div class="markdown"><p>The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.</p>
+</div><span><b>Data Type </b></span><p><span>string</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>C*E.7</li><li class=""><b>rim:</b>./codeSystemVersion</li><li class=""><b>orim:</b>fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion</li></ul></td></tr><tr id="Observation.category.coding.code" data-id="c0eccefc-2cd1-4e29-939d-f4966aabf35c" data-parentId="a474ba85-14e1-4dca-aea1-0a4022a734ac" class=""><td class="profile"><span class="baseIcon primitive"></span><span>code</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>1</span><span>..</span><span>1</span></td><td class="profile"><span>code</span><span class="fixed-label">Fixed Value</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.category.coding.code</pre></p></div><span><b>Short description </b></span><p><span>Symbol in syntax defined by the system</span></p><span><b>Definition </b></span><div class="markdown"><p>A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).</p>
+</div><span><b>Requirements </b></span><div class="markdown"><p>Need to refer to a particular code in the system.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Note that FHIR strings SHALL NOT exceed 1MB in size</p>
+</div><span><b>Data Type </b></span><p><span>code</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Fixed Value </b></span><div>
+<p><pre class="">laboratory</pre></p></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>C*E.1</li><li class=""><b>rim:</b>./code</li><li class=""><b>orim:</b>fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code</li></ul></td></tr><tr id="Observation.category.coding.display" data-id="13ce56dd-02f5-4ef2-b8be-997e96b2c044" data-parentId="a474ba85-14e1-4dca-aea1-0a4022a734ac" class=""><td class="profile"><span class="baseIcon primitive"></span><span>display</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><span>string</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.category.coding.display</pre></p></div><span><b>Short description </b></span><p><span>Representation defined by the system</span></p><span><b>Definition </b></span><div class="markdown"><p>A representation of the meaning of the code in the system, following the rules of the system.</p>
+</div><span><b>Requirements </b></span><div class="markdown"><p>Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Note that FHIR strings SHALL NOT exceed 1MB in size</p>
+</div><span><b>Data Type </b></span><p><span>string</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>C*E.2 - but note this is not well followed</li><li class=""><b>rim:</b>CV.displayName</li><li class=""><b>orim:</b>fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName</li></ul></td></tr><tr id="Observation.category.coding.userSelected" data-id="a51d31b4-d9eb-4800-9d2c-02b73ae73eed" data-parentId="a474ba85-14e1-4dca-aea1-0a4022a734ac" class=""><td class="profile"><span class="baseIcon primitive"></span><span>userSelected</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><span>boolean</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.category.coding.userSelected</pre></p></div><span><b>Short description </b></span><p><span>If this coding was chosen directly by the user</span></p><span><b>Definition </b></span><div class="markdown"><p>Indicates that this coding was chosen by a user directly - e.g. off a pick list of available items (codes or displays).</p>
+</div><span><b>Requirements </b></span><div class="markdown"><p>This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.</p>
+</div><span><b>Data Type </b></span><p><span>boolean</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>Sometimes implied by being first</li><li class=""><b>rim:</b>CD.codingRationale</li><li class=""><b>orim:</b>fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\#true a [     fhir:source &quot;true&quot;;     fhir:target dt:CDCoding.codingRationale\#O   ]</li></ul></td></tr><tr id="Observation.category.text" data-id="c1a36f72-ce48-4f67-b2f1-ed03d5d1ae1d" data-parentId="06cf8e30-b6e9-4a08-9775-f00fa932b724" class=""><td class="profile"><span class="baseIcon primitive"></span><span>text</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><span>string</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.category.text</pre></p></div><span><b>Short description </b></span><p><span>Plain text representation of the concept</span></p><span><b>Definition </b></span><div class="markdown"><p>A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.</p>
+</div><span><b>Requirements </b></span><div class="markdown"><p>The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Very often the text is the same as a displayName of one of the codings.</p>
+</div><span><b>Data Type </b></span><p><span>string</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>C*E.9. But note many systems use C*E.2 for this</li><li class=""><b>rim:</b>./originalText[mediaType/code=&quot;text/plain&quot;]/data</li><li class=""><b>orim:</b>fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText</li></ul></td></tr><tr id="Observation.code" data-id="2953624d-f316-4a44-af75-992115ddea96" data-parentId="284971f9-c88a-4826-84a9-b16ec62dd82e" class="collapsed"><td class="profile"><span class="baseIcon datatype"></span><span>code</span></td><td class="profile"><span class="mustsupport" title="This element is an element that must be supported">S</span> <span title="This element is an element that is part of the summary">Σ</span> <span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span>1</span><span>..</span><span>1</span></td><td class="profile"><span>CodeableConcept</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.code</pre></p></div><span><b>Short description </b></span><p><span>Typ des durchgef&#252;hrten Labortests.</span></p><span><b>Alternate names </b></span><p><span>Name</span></p><span><b>Definition </b></span><div class="markdown"><p>Typ des durchgeführten Labortests. Der Wert muss als LOINC-Code - entsprechend des vom RKI definierten und in regelmäßigen Abständen aktualisierten ValueSets (https://demis.rki.de/fhir/ValueSet/laboratoryTest) – im coding Element dargestellt werden. Für eine begrenzte Übergangszeit ist die Verwendung des text Elementes in Ausnahmefällen zulässig. Folgende Ausbaustufen des Systems werden hier jedoch deutlich restriktiver sein, um einen automatisierte Weiterverarbeitung der Inhalte im Gesundheitsamt zu ermöglichen.</p>
+</div><span><b>Requirements </b></span><div class="markdown"><p>Knowing what kind of observation is being made is essential to understanding the observation.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p><em>All</em> code-value and, if present, component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.</p>
+</div><span><b>Data Type </b></span><p><span>CodeableConcept</span></p><span><b>Binding </b></span><p><p><span>Codes identifying names of simple observations.</span></p><a  href="http://hl7.org/fhir/ValueSet/observation-codes" >http://hl7.org/fhir/ValueSet/observation-codes</a><span> (</span><a title="Instances are not expected or even encouraged to draw from the specified valueset. The value set merely provides examples of the types of concepts intended to be included." href="http://hl7.org/fhir/r4/terminologies.html#example" >example</a><span>)</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li><li class=""><b>codingOrText:</b>Entweder coding oder text muss angegeben sein.<br/><code>coding.empty() or text.empty()</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>CE/CNE/CWE</li><li class=""><b>rim:</b>CD</li><li class=""><b>orim:</b>fhir:CodeableConcept rdfs:subClassOf dt:CD</li><li class=""><b>workflow:</b>Event.code</li><li class=""><b>w5:</b>FiveWs.what[x]</li><li class=""><b>sct-concept:</b>&lt; 363787002 |Observable entity| OR &lt; 386053000 |Evaluation procedure|</li><li class=""><b>v2:</b>OBX-3</li><li class=""><b>rim:</b>code</li><li class=""><b>sct-attr:</b>116680003 |Is a|</li></ul></td></tr><tr id="Observation.code.coding" data-id="f639e325-952b-404d-b9ea-3df65a1bd617" data-parentId="2953624d-f316-4a44-af75-992115ddea96" class="collapsed"><td class="profile"><span class="baseIcon datatype"></span><span>coding</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><span>Coding</span><span class="binding-label">Binding</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.code.coding</pre></p></div><span><b>Short description </b></span><p><span>Code defined by a terminology system</span></p><span><b>Definition </b></span><div class="markdown"><p>A reference to a code defined by a terminology system.</p>
+</div><span><b>Requirements </b></span><div class="markdown"><p>Allows for alternative encodings within a code system, and translations to other code systems.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.</p>
+</div><span><b>Data Type </b></span><p><span>Coding</span></p><span><b>Binding </b></span><p><a  href="https://demis.rki.de/fhir/ValueSet/laboratoryTest" >https://demis.rki.de/fhir/ValueSet/laboratoryTest</a><span> (</span><a title="To be conformant, instances of this element SHALL include a code from the specified value set if any of the codes within the value set can apply to the concept being communicated. If the valueset does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." href="http://hl7.org/fhir/r4/terminologies.html#extensible" >extensible</a><span>)</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>CE/CNE/CWE subset one of the sets of component 1-3 or 4-6</li><li class=""><b>rim:</b>CV</li><li class=""><b>orim:</b>fhir:Coding rdfs:subClassOf dt:CDCoding</li><li class=""><b>v2:</b>C*E.1-8, C*E.10-22</li><li class=""><b>rim:</b>union(., ./translation)</li><li class=""><b>orim:</b>fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding</li></ul></td></tr><tr id="Observation.code.coding.system" data-id="0eef1a11-bc62-477d-8c6e-b95d5a359f43" data-parentId="f639e325-952b-404d-b9ea-3df65a1bd617" class=""><td class="profile"><span class="baseIcon primitive"></span><span>system</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>1</span><span>..</span><span>1</span></td><td class="profile"><span>uri</span><span class="fixed-label">Fixed Value</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.code.coding.system</pre></p></div><span><b>Short description </b></span><p><span>Identity of the terminology system</span></p><span><b>Definition </b></span><div class="markdown"><p>The identification of the code system that defines the meaning of the symbol in the code.</p>
+</div><span><b>Requirements </b></span><div class="markdown"><p>Need to be unambiguous about the source of the definition of the symbol.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should reference to some definition that establishes the system clearly and unambiguously.</p>
+</div><span><b>Data Type </b></span><p><span>uri</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Fixed Value </b></span><div>
+<p><pre class="">http://loinc.org</pre></p></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>C*E.3</li><li class=""><b>rim:</b>./codeSystem</li><li class=""><b>orim:</b>fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem</li></ul></td></tr><tr id="Observation.code.coding.version" data-id="a7ec7bd5-eda4-4257-978f-cdeed8acd73f" data-parentId="f639e325-952b-404d-b9ea-3df65a1bd617" class=""><td class="profile"><span class="baseIcon primitive"></span><span>version</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><span>string</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.code.coding.version</pre></p></div><span><b>Short description </b></span><p><span>Version of the system - if relevant</span></p><span><b>Definition </b></span><div class="markdown"><p>The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.</p>
+</div><span><b>Data Type </b></span><p><span>string</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>C*E.7</li><li class=""><b>rim:</b>./codeSystemVersion</li><li class=""><b>orim:</b>fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion</li></ul></td></tr><tr id="Observation.code.coding.code" data-id="b7fdbbea-8701-4638-839c-f7608edbbd2f" data-parentId="f639e325-952b-404d-b9ea-3df65a1bd617" class=""><td class="profile"><span class="baseIcon primitive"></span><span>code</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>1</span><span>..</span><span>1</span></td><td class="profile"><span>code</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.code.coding.code</pre></p></div><span><b>Short description </b></span><p><span>Symbol in syntax defined by the system</span></p><span><b>Definition </b></span><div class="markdown"><p>A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).</p>
+</div><span><b>Requirements </b></span><div class="markdown"><p>Need to refer to a particular code in the system.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Note that FHIR strings SHALL NOT exceed 1MB in size</p>
+</div><span><b>Data Type </b></span><p><span>code</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>C*E.1</li><li class=""><b>rim:</b>./code</li><li class=""><b>orim:</b>fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code</li></ul></td></tr><tr id="Observation.code.coding.display" data-id="c7b5be9b-27f9-4c0f-a2dc-86fb2611fb99" data-parentId="f639e325-952b-404d-b9ea-3df65a1bd617" class=""><td class="profile"><span class="baseIcon primitive"></span><span>display</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><span>string</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.code.coding.display</pre></p></div><span><b>Short description </b></span><p><span>Representation defined by the system</span></p><span><b>Definition </b></span><div class="markdown"><p>A representation of the meaning of the code in the system, following the rules of the system.</p>
+</div><span><b>Requirements </b></span><div class="markdown"><p>Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Note that FHIR strings SHALL NOT exceed 1MB in size</p>
+</div><span><b>Data Type </b></span><p><span>string</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>C*E.2 - but note this is not well followed</li><li class=""><b>rim:</b>CV.displayName</li><li class=""><b>orim:</b>fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName</li></ul></td></tr><tr id="Observation.code.coding.userSelected" data-id="63e871be-6922-489e-8f3d-1ac96c3306f2" data-parentId="f639e325-952b-404d-b9ea-3df65a1bd617" class=""><td class="profile"><span class="baseIcon primitive"></span><span>userSelected</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><span>boolean</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.code.coding.userSelected</pre></p></div><span><b>Short description </b></span><p><span>If this coding was chosen directly by the user</span></p><span><b>Definition </b></span><div class="markdown"><p>Indicates that this coding was chosen by a user directly - e.g. off a pick list of available items (codes or displays).</p>
+</div><span><b>Requirements </b></span><div class="markdown"><p>This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.</p>
+</div><span><b>Data Type </b></span><p><span>boolean</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>Sometimes implied by being first</li><li class=""><b>rim:</b>CD.codingRationale</li><li class=""><b>orim:</b>fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\#true a [     fhir:source &quot;true&quot;;     fhir:target dt:CDCoding.codingRationale\#O   ]</li></ul></td></tr><tr id="Observation.code.text" data-id="cacad016-66c7-4c36-9f24-816d15b7e47e" data-parentId="2953624d-f316-4a44-af75-992115ddea96" class=""><td class="profile"><span class="baseIcon primitive"></span><span>text</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><span>string</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.code.text</pre></p></div><span><b>Short description </b></span><p><span>Plain text representation of the concept</span></p><span><b>Definition </b></span><div class="markdown"><p>A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.</p>
+</div><span><b>Requirements </b></span><div class="markdown"><p>The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Very often the text is the same as a displayName of one of the codings.</p>
+</div><span><b>Data Type </b></span><p><span>string</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>C*E.9. But note many systems use C*E.2 for this</li><li class=""><b>rim:</b>./originalText[mediaType/code=&quot;text/plain&quot;]/data</li><li class=""><b>orim:</b>fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText</li></ul></td></tr><tr id="Observation.subject" data-id="c9068d76-2e55-4654-a0fd-97fa41baa503" data-parentId="284971f9-c88a-4826-84a9-b16ec62dd82e" class="collapsed constraints"><td class="profile"><span class="baseIcon reference"></span><span class="constraints">subject</span></td><td class="profile"><span class="mustsupport" title="This element is an element that must be supported">S</span> <span title="This element is an element that is part of the summary">Σ</span> <span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span>1</span><span>..</span><span>1</span></td><td class="profile"><span class="constraints">Reference</span><span class="constraints">(</span><span class="constraints">https://demis.rki.de/fhir/StructureDefinition/NotifiedPersonNotByName</span><span class="constraints">)</span></td><td class="details hidden"><span class="pin-control"></span><span><b>Element Id</b></span><div><p><pre>Observation.subject</pre></p></div><span class="constraints"><b>Short description </b></span><p><span class="constraints">Betroffene Person (nichtnamentlich)</span></p><span class="constraints"><b>Definition </b></span><div class="markdown constraints"><p>Betroffene Person (nichtnamentlich)</p>
+</div><span><b>Requirements </b></span><div class="markdown"><p>Observations have no value if you don't know who or what they're about.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>One would expect this element to be a cardinality of 1..1. The only circumstance in which the subject can be missing is when the observation is made by a device that does not know the patient. In this case, the observation SHALL be matched to a patient through some context/channel matching technique, and at this point, the observation should be updated.</p>
+</div><span class="constraints"><b>Data Type </b></span><p><span class="constraints">Reference</span><span class="constraints">(</span><span class="constraints">https://demis.rki.de/fhir/StructureDefinition/NotifiedPersonNotByName</span><span class="constraints">)</span></p><p><span>Allowed aggregation: </span><span>bundled</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li><li class=""><b>ref-1:</b>SHALL have a contained resource if a local reference is provided<br/><code>reference.startsWith('#').not() or (reference.substring(1).trace('url') in %resource.contained.id.trace('ids'))</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>rim:</b>The target of a resource reference is a RIM entry point (Act, Role, or Entity)</li><li class=""><b>workflow:</b>Event.subject</li><li class=""><b>w5:</b>FiveWs.subject[x]</li><li class=""><b>v2:</b>PID-3</li><li class=""><b>rim:</b>participation[typeCode=RTGT]</li><li class=""><b>w5:</b>FiveWs.subject</li></ul></td></tr><tr id="Observation.subject.reference" data-id="a3212f5a-7dc1-4241-a1ad-057a995b29ac" data-parentId="c9068d76-2e55-4654-a0fd-97fa41baa503" class=""><td class="profile"><span class="baseIcon primitive"></span><span>reference</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span> <span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span>1</span><span>..</span><span>1</span></td><td class="profile"><span>string</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.subject.reference</pre></p></div><span><b>Short description </b></span><p><span>Literal reference, Relative, internal or absolute URL</span></p><span><b>Definition </b></span><div class="markdown"><p>A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure &quot;/[type]/[id]&quot; then it should be assumed that the reference is to a FHIR RESTful server.</p>
+</div><span><b>Data Type </b></span><p><span>string</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>rim:</b>N/A</li></ul></td></tr><tr id="Observation.subject.type" data-id="ec7185d4-6802-4f24-9e7b-9e817cdcd1f7" data-parentId="c9068d76-2e55-4654-a0fd-97fa41baa503" class=""><td class="profile"><span class="baseIcon primitive"></span><span>type</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><span>uri</span><span class="binding-label">Binding</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.subject.type</pre></p></div><span><b>Short description </b></span><p><span>Type the reference refers to (e.g. &quot;Patient&quot;)</span></p><span><b>Definition </b></span><div class="markdown"><p>The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.</p>
+<p>The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. &quot;Patient&quot; is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources).</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>This element is used to indicate the type of  the target of the reference. This may be used which ever of the other elements are populated (or not). In some cases, the type of the target may be determined by inspection of the reference (e.g. a RESTful URL) or by resolving the target of the reference; if both the type and a reference is provided, the reference SHALL resolve to a resource of the same type as that specified.</p>
+</div><span><b>Data Type </b></span><p><span>uri</span></p><span><b>Binding </b></span><p><p><span>Aa resource (or, for logical models, the URI of the logical model).</span></p><a  href="http://hl7.org/fhir/ValueSet/resource-types" >http://hl7.org/fhir/ValueSet/resource-types</a><span> (</span><a title="To be conformant, instances of this element SHALL include a code from the specified value set if any of the codes within the value set can apply to the concept being communicated. If the valueset does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." href="http://hl7.org/fhir/r4/terminologies.html#extensible" >extensible</a><span>)</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>rim:</b>N/A</li></ul></td></tr><tr id="Observation.subject.identifier" data-id="0e6d7ac3-4191-4fc5-a5c2-39a86aed0cb5" data-parentId="c9068d76-2e55-4654-a0fd-97fa41baa503" class=""><td class="profile"><span class="baseIcon datatype"></span><span>identifier</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><span>Identifier</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.subject.identifier</pre></p></div><span><b>Short description </b></span><p><span>Logical reference, when literal reference is not known</span></p><span><b>Definition </b></span><div class="markdown"><p>An identifier for the target resource. This is used when there is no way to reference the other resource directly, either because the entity it represents is not available through a FHIR server, or because there is no way for the author of the resource to convert a known identifier to an actual location. There is no requirement that a Reference.identifier point to something that is actually exposed as a FHIR instance, but it SHALL point to a business concept that would be expected to be exposed as a FHIR instance, and that instance would need to be of a FHIR resource type allowed by the reference.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>When an identifier is provided in place of a reference, any system processing the reference will only be able to resolve the identifier to a reference if it understands the business context in which the identifier is used. Sometimes this is global (e.g. a national identifier) but often it is not. For this reason, none of the useful mechanisms described for working with references (e.g. chaining, includes) are possible, nor should servers be expected to be able resolve the reference. Servers may accept an identifier based reference untouched, resolve it, and/or reject it - see CapabilityStatement.rest.resource.referencePolicy.</p>
+<p>When both an identifier and a literal reference are provided, the literal reference is preferred. Applications processing the resource are allowed - but not required - to check that the identifier matches the literal reference</p>
+<p>Applications converting a logical reference to a literal reference may choose to leave the logical reference present, or remove it.</p>
+<p>Reference is intended to point to a structure that can potentially be expressed as a FHIR resource, though there is no need for it to exist as an actual FHIR resource instance - except in as much as an application wishes to actual find the target of the reference. The content referred to be the identifier must meet the logical constraints implied by any limitations on what resource types are permitted for the reference.  For example, it would not be legitimate to send the identifier for a drug prescription if the type were Reference(Observation|DiagnosticReport).  One of the use-cases for Reference.identifier is the situation where no FHIR representation exists (where the type is Reference (Any).</p>
+</div><span><b>Data Type </b></span><p><span>Identifier</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>CX / EI (occasionally, more often EI maps to a resource id or a URL)</li><li class=""><b>rim:</b>II - The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT]</li><li class=""><b>servd:</b>Identifier</li><li class=""><b>rim:</b>.identifier</li></ul></td></tr><tr id="Observation.subject.display" data-id="3ce087fa-7a31-4637-8b17-49319719a54d" data-parentId="c9068d76-2e55-4654-a0fd-97fa41baa503" class=""><td class="profile"><span class="baseIcon primitive"></span><span>display</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><span>string</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.subject.display</pre></p></div><span><b>Short description </b></span><p><span>Text alternative for the resource</span></p><span><b>Definition </b></span><div class="markdown"><p>Plain text narrative that identifies the resource in addition to the resource reference.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.</p>
+</div><span><b>Data Type </b></span><p><span>string</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>rim:</b>N/A</li></ul></td></tr><tr id="Observation.focus" data-id="faa2691a-0908-42d1-9220-7dd6f2bf02e9" data-parentId="284971f9-c88a-4826-84a9-b16ec62dd82e" class="striped"><td class="profile"><span class="baseIcon reference"></span><span>focus</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span> <span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span>0</span><span>..</span><span>0</span></td><td class="profile"><span>Reference</span><span>(</span><span>http://hl7.org/fhir/StructureDefinition/Resource</span><span>)</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.focus</pre></p></div><span><b>Short description </b></span><p><span>What the observation is about, when it is not about the subject of record</span></p><span><b>Definition </b></span><div class="markdown"><p>The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus observations in a mother's record.  The focus of an observation could also be an existing condition,  an intervention, the subject's diet,  another observation of the subject,  or a body structure such as tumor or implanted device.   An example use case would be using the Observation resource to capture whether the mother is trained to change her child's tracheostomy tube. In this example, the child is the patient of record and the mother is the focus.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Typically, an observation is made about the subject - a patient, or group of patients, location, or device - and the distinction between the subject and what is directly measured for an observation is specified in the observation code itself ( e.g., &quot;Blood Glucose&quot;) and does not need to be represented separately using this element.  Use <code>specimen</code> if a reference to a specimen is required.  If a code is required instead of a resource use either  <code>bodysite</code> for bodysites or the standard extension <a href="extension-observation-focuscode.html">focusCode</a>.</p>
+</div><span><b>Data Type </b></span><p><span>Reference</span><span>(</span><span>http://hl7.org/fhir/StructureDefinition/Resource</span><span>)</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li><li class=""><b>ref-1:</b>SHALL have a contained resource if a local reference is provided<br/><code>reference.startsWith('#').not() or (reference.substring(1).trace('url') in %resource.contained.id.trace('ids'))</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>rim:</b>The target of a resource reference is a RIM entry point (Act, Role, or Entity)</li><li class=""><b>w5:</b>FiveWs.subject[x]</li><li class=""><b>v2:</b>OBX-3</li><li class=""><b>rim:</b>participation[typeCode=SBJ]</li><li class=""><b>w5:</b>FiveWs.subject</li></ul></td></tr><tr id="Observation.encounter" data-id="1103aef1-893e-4a97-a2c0-88f9c827fb12" data-parentId="284971f9-c88a-4826-84a9-b16ec62dd82e" class="striped"><td class="profile"><span class="baseIcon reference"></span><span>encounter</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span> <span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span>0</span><span>..</span><span>0</span></td><td class="profile"><span>Reference</span><span>(</span><span>http://hl7.org/fhir/StructureDefinition/Encounter</span><span>)</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.encounter</pre></p></div><span><b>Short description </b></span><p><span>Healthcare event during which this observation is made</span></p><span><b>Alternate names </b></span><p><span>Context</span></p><span><b>Definition </b></span><div class="markdown"><p>The healthcare event  (e.g. a patient and healthcare provider interaction) during which this observation is made.</p>
+</div><span><b>Requirements </b></span><div class="markdown"><p>For some observations it may be important to know the link between an observation and a particular encounter.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>This will typically be the encounter the event occurred within, but some events may be initiated prior to or after the official completion of an encounter but still be tied to the context of the encounter (e.g. pre-admission laboratory tests).</p>
+</div><span><b>Data Type </b></span><p><span>Reference</span><span>(</span><span>http://hl7.org/fhir/StructureDefinition/Encounter</span><span>)</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li><li class=""><b>ref-1:</b>SHALL have a contained resource if a local reference is provided<br/><code>reference.startsWith('#').not() or (reference.substring(1).trace('url') in %resource.contained.id.trace('ids'))</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>rim:</b>The target of a resource reference is a RIM entry point (Act, Role, or Entity)</li><li class=""><b>workflow:</b>Event.context</li><li class=""><b>w5:</b>FiveWs.context</li><li class=""><b>v2:</b>PV1</li><li class=""><b>rim:</b>inboundRelationship[typeCode=COMP].source[classCode=ENC, moodCode=EVN]</li></ul></td></tr><tr id="Observation.effective[x]" data-id="8bc5f4bb-f63a-4f73-af46-72b56cab6463" data-parentId="284971f9-c88a-4826-84a9-b16ec62dd82e" class="collapsed striped"><td class="profile"><span class="baseIcon valueX"></span><span>effective[x]</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>0</span></td><td class="profile"></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.effective[x]</pre></p></div><span><b>Short description </b></span><p><span>Clinically relevant time/time-period for observation</span></p><span><b>Alternate names </b></span><p><span>Occurrence</span></p><span><b>Definition </b></span><div class="markdown"><p>The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the &quot;physiologically relevant time&quot;. This is usually either the time of the procedure or of specimen collection, but very often the source of the date/time is not known, only the date/time itself.</p>
+</div><span><b>Requirements </b></span><div class="markdown"><p>Knowing when an observation was deemed true is important to its relevance as well as determining trends.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>At least a date should be present unless this observation is a historical report.  For recording imprecise or &quot;fuzzy&quot; times (For example, a blood glucose measurement taken &quot;after breakfast&quot;) use the <a href="datatypes.html#timing">Timing</a> datatype which allow the measurement to be tied to regular life events.</p>
+</div><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>workflow:</b>Event.occurrence[x]</li><li class=""><b>w5:</b>FiveWs.done[x]</li><li class=""><b>v2:</b>OBX-14, and/or OBX-19 after v2.4  (depends on who observation made)</li><li class=""><b>rim:</b>effectiveTime</li></ul></td></tr><tr id="Observation.issued" data-id="00ab9278-708f-42eb-a019-d8d207e6ad5f" data-parentId="284971f9-c88a-4826-84a9-b16ec62dd82e" class="striped"><td class="profile"><span class="baseIcon primitive"></span><span>issued</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>0</span></td><td class="profile"><span>instant</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.issued</pre></p></div><span><b>Short description </b></span><p><span>Date/Time this version was made available</span></p><span><b>Definition </b></span><div class="markdown"><p>The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>For Observations that don’t require review and verification, it may be the same as the <a href="resource-definitions.html#Meta.lastUpdated"><code>lastUpdated</code> </a> time of the resource itself.  For Observations that do require review and verification for certain updates, it might not be the same as the <code>lastUpdated</code> time of the resource itself due to a non-clinically significant update that doesn’t require the new version to be reviewed and verified again.</p>
+</div><span><b>Data Type </b></span><p><span>instant</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>w5:</b>FiveWs.recorded</li><li class=""><b>v2:</b>OBR.22 (or MSH.7), or perhaps OBX-19 (depends on who observation made)</li><li class=""><b>rim:</b>participation[typeCode=AUT].time</li></ul></td></tr><tr id="Observation.performer" data-id="523af7f7-3435-424a-8056-7c41c862b7c1" data-parentId="284971f9-c88a-4826-84a9-b16ec62dd82e" class="striped"><td class="profile"><span class="baseIcon reference"></span><span>performer</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span> <span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span>0</span><span>..</span><span>0</span></td><td class="profile"><span>Reference</span><span>(</span><span>http://hl7.org/fhir/StructureDefinition/Practitioner</span><span> | </span><span>http://hl7.org/fhir/StructureDefinition/PractitionerRole</span><span> | </span><span>http://hl7.org/fhir/StructureDefinition/Organization</span><span> | </span><span>http://hl7.org/fhir/StructureDefinition/CareTeam</span><span> | </span><span>http://hl7.org/fhir/StructureDefinition/Patient</span><span> | </span><span>http://hl7.org/fhir/StructureDefinition/RelatedPerson</span><span>)</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.performer</pre></p></div><span><b>Short description </b></span><p><span>Who is responsible for the observation</span></p><span><b>Definition </b></span><div class="markdown"><p>Who was responsible for asserting the observed value as &quot;true&quot;.</p>
+</div><span><b>Requirements </b></span><div class="markdown"><p>May give a degree of confidence in the observation and also indicates where follow-up questions should be directed.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.</p>
+</div><span><b>Data Type </b></span><p><span>Reference</span><span>(</span><span>http://hl7.org/fhir/StructureDefinition/Practitioner</span><span> | </span><span>http://hl7.org/fhir/StructureDefinition/PractitionerRole</span><span> | </span><span>http://hl7.org/fhir/StructureDefinition/Organization</span><span> | </span><span>http://hl7.org/fhir/StructureDefinition/CareTeam</span><span> | </span><span>http://hl7.org/fhir/StructureDefinition/Patient</span><span> | </span><span>http://hl7.org/fhir/StructureDefinition/RelatedPerson</span><span>)</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li><li class=""><b>ref-1:</b>SHALL have a contained resource if a local reference is provided<br/><code>reference.startsWith('#').not() or (reference.substring(1).trace('url') in %resource.contained.id.trace('ids'))</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>rim:</b>The target of a resource reference is a RIM entry point (Act, Role, or Entity)</li><li class=""><b>workflow:</b>Event.performer.actor</li><li class=""><b>w5:</b>FiveWs.actor</li><li class=""><b>v2:</b>OBX.15 / (Practitioner)  OBX-16,  PRT-5:PRT-4=&#39;RO&#39; /  (Device)  OBX-18 , PRT-10:PRT-4=&#39;EQUIP&#39; / (Organization)  OBX-23,  PRT-8:PRT-4=&#39;PO&#39;</li><li class=""><b>rim:</b>participation[typeCode=PRF]</li></ul></td></tr><tr id="Observation.value[x]" data-id="b4644640-cd7c-4f43-979c-0274f26c84e9" data-parentId="284971f9-c88a-4826-84a9-b16ec62dd82e" class="collapsed"><td class="profile"><span class="baseIcon valueX"></span><span>value[x]</span></td><td class="profile"><span class="mustsupport" title="This element is an element that must be supported">S</span> <span title="This element is an element that is part of the summary">Σ</span> <span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span>1</span><span>..</span><span>1</span></td><td class="profile"></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.value[x]</pre></p></div><span><b>Short description </b></span><p><span>Ergebnis des durchgef&#252;hrten Labortests.</span></p><span><b>Definition </b></span><div class="markdown"><p>Ergebnis des durchgeführten Labortests. Für qualitative Tests muss valueCodableConcept mit einem Code aus der AnswerList genutzt werden, welche für den jeweiligen Test (vgl. Observation.code) im LOINC hinterlegt ist. Für quantitative Tests muss valueQuantity genutzt werden. Für eine begrenzte Übergangszeit ist die Verwendung von valueString in Ausnahmefällen zulässig. Folgende Ausbaustufen des Systems werden hier jedoch deutlich restriktiver sein, um einen automatisierte Weiterverarbeitung der Inhalte im Gesundheitsamt zu ermöglichen.</p>
+</div><span><b>Requirements </b></span><div class="markdown"><p>An observation exists to have a value, though it might not if it is in error, or if it represents a group of observations.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>An observation may have; 1)  a single value here, 2)  both a value and a set of related or component values,  or 3)  only a set of related or component values. If a value is present, the datatype for this element should be determined by Observation.code.  A CodeableConcept with just a text would be used instead of a string if the field was usually coded, or if the type associated with the Observation.code defines a coded value.  For additional guidance, see the <a href="observation.html#notes">Notes section</a> below.</p>
+</div><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>sct-concept:</b>&lt; 441742003 |Evaluation finding|</li><li class=""><b>v2:</b>OBX.2, OBX.5, OBX.6</li><li class=""><b>rim:</b>value</li><li class=""><b>sct-attr:</b>363714003 |Interprets|</li></ul></td></tr><tr id="Observation.valueQuantity" data-id="7b4159c2-45f2-4ca5-bfa8-ae7defc42968" data-parentId="b4644640-cd7c-4f43-979c-0274f26c84e9" class=""><td class="profile"><span class="baseIcon datatype"></span><span>valueQuantity</span></td><td class="profile"></td><td></td><td class="profile"><span>Quantity</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Data Type </b></span><p><span>Quantity</span></p></td></tr><tr id="Observation.valueCodeableConcept" data-id="7989de84-5e3b-4301-8fb1-e512b87c2534" data-parentId="b4644640-cd7c-4f43-979c-0274f26c84e9" class=""><td class="profile"><span class="baseIcon datatype"></span><span>valueCodeableConcept</span></td><td class="profile"></td><td></td><td class="profile"><span>CodeableConcept</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Data Type </b></span><p><span>CodeableConcept</span></p></td></tr><tr id="Observation.valueString" data-id="b8c354bc-cad4-4ba3-b93e-95f4d714ccd7" data-parentId="b4644640-cd7c-4f43-979c-0274f26c84e9" class=""><td class="profile"><span class="baseIcon primitive"></span><span>valueString</span></td><td class="profile"></td><td></td><td class="profile"><span>string</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Data Type </b></span><p><span>string</span></p></td></tr><tr id="Observation.dataAbsentReason" data-id="a0ab8e92-19ed-412b-821d-4ee742803632" data-parentId="284971f9-c88a-4826-84a9-b16ec62dd82e" class="striped"><td class="profile"><span class="baseIcon datatype"></span><span>dataAbsentReason</span></td><td class="profile"><span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span>0</span><span>..</span><span>0</span></td><td class="profile"><span>CodeableConcept</span><span class="binding-label">Binding</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.dataAbsentReason</pre></p></div><span><b>Short description </b></span><p><span>Why the result is missing</span></p><span><b>Definition </b></span><div class="markdown"><p>Provides a reason why the expected value in the element Observation.value[x] is missing.</p>
+</div><span><b>Requirements </b></span><div class="markdown"><p>For many results it is necessary to handle exceptional values in measurements.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Null or exceptional values can be represented two ways in FHIR Observations.  One way is to simply include them in the value set and represent the exceptions in the value.  For example, measurement values for a serology test could be  &quot;detected&quot;, &quot;not detected&quot;, &quot;inconclusive&quot;, or  &quot;specimen unsatisfactory&quot;.</p>
+<p>The alternate way is to use the value element for actual observations and use the explicit dataAbsentReason element to record exceptional values.  For example, the dataAbsentReason code &quot;error&quot; could be used when the measurement was not completed. Note that an observation may only be reported if there are values to report. For example differential cell counts values may be reported only when &gt; 0.  Because of these options, use-case agreements are required to interpret general observations for null or exceptional values.</p>
+</div><span><b>Data Type </b></span><p><span>CodeableConcept</span></p><span><b>Binding </b></span><p><p><span>Codes specifying why the result (`Observation.value[x]`) is missing.</span></p><a  href="http://hl7.org/fhir/ValueSet/data-absent-reason" >http://hl7.org/fhir/ValueSet/data-absent-reason</a><span> (</span><a title="To be conformant, instances of this element SHALL include a code from the specified value set if any of the codes within the value set can apply to the concept being communicated. If the valueset does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." href="http://hl7.org/fhir/r4/terminologies.html#extensible" >extensible</a><span>)</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>CE/CNE/CWE</li><li class=""><b>rim:</b>CD</li><li class=""><b>orim:</b>fhir:CodeableConcept rdfs:subClassOf dt:CD</li><li class=""><b>v2:</b>N/A</li><li class=""><b>rim:</b>value.nullFlavor</li></ul></td></tr><tr id="Observation.interpretation" data-id="35670d5f-6cc8-4497-8749-f2851d14a296" data-parentId="284971f9-c88a-4826-84a9-b16ec62dd82e" class="collapsed"><td class="profile"><span class="baseIcon datatype"></span><span>interpretation</span></td><td class="profile"><span class="mustsupport" title="This element is an element that must be supported">S</span></td><td class="profile"><span>1</span><span>..</span><span>*</span></td><td class="profile"><span>CodeableConcept</span><span class="binding-label">Binding</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.interpretation</pre></p></div><span><b>Short description </b></span><p><span>Interpretation des Testergebnisses</span></p><span><b>Alternate names </b></span><p><span>Abnormal Flag</span></p><span><b>Definition </b></span><div class="markdown"><p>Interpretation des Testergebnisses. Mindestens eine vollständig kodierte Interpretation des Testergebnisses, die Auskunft über die Bewertung in Bezug auf die Festlegung der Meldetatbestände gemäß IfSG gibt, muss angegeben werden. Relevante Codes sind POS für positive direkte oder indirekte Erregernachweise, NEG für negative und IND für unbestimmte Ergebnisse.</p>
+</div><span><b>Requirements </b></span><div class="markdown"><p>For some results, particularly numeric results, an interpretation is necessary to fully understand the significance of a result.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Historically used for laboratory results (known as 'abnormal flag' ),  its use extends to other use cases where coded interpretations  are relevant.  Often reported as one or more simple compact codes this element is often placed adjacent to the result value in reports and flow sheets to signal the meaning/normalcy status of the result.</p>
+</div><span><b>Data Type </b></span><p><span>CodeableConcept</span></p><span><b>Binding </b></span><p><p><span>Codes identifying interpretations of observations.</span></p><a  href="http://hl7.org/fhir/ValueSet/observation-interpretation" >http://hl7.org/fhir/ValueSet/observation-interpretation</a><span> (</span><a title="To be conformant, instances of this element SHALL include a code from the specified value set if any of the codes within the value set can apply to the concept being communicated. If the valueset does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." href="http://hl7.org/fhir/r4/terminologies.html#extensible" >extensible</a><span>)</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>CE/CNE/CWE</li><li class=""><b>rim:</b>CD</li><li class=""><b>orim:</b>fhir:CodeableConcept rdfs:subClassOf dt:CD</li><li class=""><b>sct-concept:</b>&lt; 260245000 |Findings values|</li><li class=""><b>v2:</b>OBX-8</li><li class=""><b>rim:</b>interpretationCode</li><li class=""><b>sct-attr:</b>363713009 |Has interpretation|</li></ul></td></tr><tr id="Observation.interpretation.coding" data-id="4347bbd8-1830-4b03-97d8-89d748b61f6a" data-parentId="35670d5f-6cc8-4497-8749-f2851d14a296" class="collapsed"><td class="profile"><span class="baseIcon datatype"></span><span>coding</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>*</span></td><td class="profile"><span>Coding</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.interpretation.coding</pre></p></div><span><b>Short description </b></span><p><span>Code defined by a terminology system</span></p><span><b>Definition </b></span><div class="markdown"><p>A reference to a code defined by a terminology system.</p>
+</div><span><b>Requirements </b></span><div class="markdown"><p>Allows for alternative encodings within a code system, and translations to other code systems.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.</p>
+</div><span><b>Data Type </b></span><p><span>Coding</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>CE/CNE/CWE subset one of the sets of component 1-3 or 4-6</li><li class=""><b>rim:</b>CV</li><li class=""><b>orim:</b>fhir:Coding rdfs:subClassOf dt:CDCoding</li><li class=""><b>v2:</b>C*E.1-8, C*E.10-22</li><li class=""><b>rim:</b>union(., ./translation)</li><li class=""><b>orim:</b>fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding</li></ul></td></tr><tr id="Observation.interpretation.coding.system" data-id="4d3b131c-9c0b-4cab-8b27-ed0eb00ea63c" data-parentId="4347bbd8-1830-4b03-97d8-89d748b61f6a" class=""><td class="profile"><span class="baseIcon primitive"></span><span>system</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>1</span><span>..</span><span>1</span></td><td class="profile"><span>uri</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.interpretation.coding.system</pre></p></div><span><b>Short description </b></span><p><span>Identity of the terminology system</span></p><span><b>Definition </b></span><div class="markdown"><p>The identification of the code system that defines the meaning of the symbol in the code.</p>
+</div><span><b>Requirements </b></span><div class="markdown"><p>Need to be unambiguous about the source of the definition of the symbol.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should reference to some definition that establishes the system clearly and unambiguously.</p>
+</div><span><b>Data Type </b></span><p><span>uri</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>C*E.3</li><li class=""><b>rim:</b>./codeSystem</li><li class=""><b>orim:</b>fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem</li></ul></td></tr><tr id="Observation.interpretation.coding.version" data-id="adc1dbbe-76ae-47eb-96d1-ce995a2b0684" data-parentId="4347bbd8-1830-4b03-97d8-89d748b61f6a" class=""><td class="profile"><span class="baseIcon primitive"></span><span>version</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><span>string</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.interpretation.coding.version</pre></p></div><span><b>Short description </b></span><p><span>Version of the system - if relevant</span></p><span><b>Definition </b></span><div class="markdown"><p>The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.</p>
+</div><span><b>Data Type </b></span><p><span>string</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>C*E.7</li><li class=""><b>rim:</b>./codeSystemVersion</li><li class=""><b>orim:</b>fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion</li></ul></td></tr><tr id="Observation.interpretation.coding.code" data-id="9243e2c0-1c25-4114-8448-f504209bfeae" data-parentId="4347bbd8-1830-4b03-97d8-89d748b61f6a" class=""><td class="profile"><span class="baseIcon primitive"></span><span>code</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>1</span><span>..</span><span>1</span></td><td class="profile"><span>code</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.interpretation.coding.code</pre></p></div><span><b>Short description </b></span><p><span>Symbol in syntax defined by the system</span></p><span><b>Definition </b></span><div class="markdown"><p>A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).</p>
+</div><span><b>Requirements </b></span><div class="markdown"><p>Need to refer to a particular code in the system.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Note that FHIR strings SHALL NOT exceed 1MB in size</p>
+</div><span><b>Data Type </b></span><p><span>code</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>C*E.1</li><li class=""><b>rim:</b>./code</li><li class=""><b>orim:</b>fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code</li></ul></td></tr><tr id="Observation.interpretation.coding.display" data-id="369913bd-09e0-4de9-aa58-d60ea2853678" data-parentId="4347bbd8-1830-4b03-97d8-89d748b61f6a" class=""><td class="profile"><span class="baseIcon primitive"></span><span>display</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><span>string</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.interpretation.coding.display</pre></p></div><span><b>Short description </b></span><p><span>Representation defined by the system</span></p><span><b>Definition </b></span><div class="markdown"><p>A representation of the meaning of the code in the system, following the rules of the system.</p>
+</div><span><b>Requirements </b></span><div class="markdown"><p>Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Note that FHIR strings SHALL NOT exceed 1MB in size</p>
+</div><span><b>Data Type </b></span><p><span>string</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>C*E.2 - but note this is not well followed</li><li class=""><b>rim:</b>CV.displayName</li><li class=""><b>orim:</b>fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName</li></ul></td></tr><tr id="Observation.interpretation.coding.userSelected" data-id="2c1b2592-3128-4c2a-9108-636671edffd1" data-parentId="4347bbd8-1830-4b03-97d8-89d748b61f6a" class=""><td class="profile"><span class="baseIcon primitive"></span><span>userSelected</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><span>boolean</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.interpretation.coding.userSelected</pre></p></div><span><b>Short description </b></span><p><span>If this coding was chosen directly by the user</span></p><span><b>Definition </b></span><div class="markdown"><p>Indicates that this coding was chosen by a user directly - e.g. off a pick list of available items (codes or displays).</p>
+</div><span><b>Requirements </b></span><div class="markdown"><p>This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.</p>
+</div><span><b>Data Type </b></span><p><span>boolean</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>Sometimes implied by being first</li><li class=""><b>rim:</b>CD.codingRationale</li><li class=""><b>orim:</b>fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\#true a [     fhir:source &quot;true&quot;;     fhir:target dt:CDCoding.codingRationale\#O   ]</li></ul></td></tr><tr id="Observation.interpretation.text" data-id="330575ce-8314-4b34-929f-b69648929325" data-parentId="35670d5f-6cc8-4497-8749-f2851d14a296" class=""><td class="profile"><span class="baseIcon primitive"></span><span>text</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><span>string</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.interpretation.text</pre></p></div><span><b>Short description </b></span><p><span>Plain text representation of the concept</span></p><span><b>Definition </b></span><div class="markdown"><p>A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.</p>
+</div><span><b>Requirements </b></span><div class="markdown"><p>The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Very often the text is the same as a displayName of one of the codings.</p>
+</div><span><b>Data Type </b></span><p><span>string</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>C*E.9. But note many systems use C*E.2 for this</li><li class=""><b>rim:</b>./originalText[mediaType/code=&quot;text/plain&quot;]/data</li><li class=""><b>orim:</b>fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText</li></ul></td></tr><tr id="Observation.note" data-id="3b8ab1fa-5744-40f9-ba2e-2b769d503217" data-parentId="284971f9-c88a-4826-84a9-b16ec62dd82e" class=""><td class="profile"><span class="baseIcon datatype"></span><span>note</span></td><td class="profile"><span class="mustsupport" title="This element is an element that must be supported">S</span></td><td class="profile"><span>0</span><span>..</span><span>*</span></td><td class="profile"><span>Annotation</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.note</pre></p></div><span><b>Short description </b></span><p><span>Textuelle Hinweise zum Untersuchungsergebnis.</span></p><span><b>Definition </b></span><div class="markdown"><p>Textuelle Hinweise zum Untersuchungsergebnis, die dem Gesundheitsamt eine bessere Bewertung der Ergebnisse ermöglichen.</p>
+</div><span><b>Requirements </b></span><div class="markdown"><p>Need to be able to provide free text additional information.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>May include general statements about the observation, or statements about significant, unexpected or unreliable results values, or information about its source when relevant to its interpretation.</p>
+</div><span><b>Data Type </b></span><p><span>Annotation</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>N/A</li><li class=""><b>rim:</b>Act</li><li class=""><b>v2:</b>NTE.3 (partner NTE to OBX, or sometimes another (child?) OBX)</li><li class=""><b>rim:</b>subjectOf.observationEvent[code=&quot;annotation&quot;].value</li></ul></td></tr><tr id="Observation.bodySite" data-id="79c16a1e-af2f-4708-b0fa-c94ae8616002" data-parentId="284971f9-c88a-4826-84a9-b16ec62dd82e" class="striped"><td class="profile"><span class="baseIcon datatype"></span><span>bodySite</span></td><td class="profile"></td><td class="profile"><span>0</span><span>..</span><span>0</span></td><td class="profile"><span>CodeableConcept</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.bodySite</pre></p></div><span><b>Short description </b></span><p><span>Observed body part</span></p><span><b>Definition </b></span><div class="markdown"><p>Indicates the site on the subject's body where the observation was made (i.e. the target site).</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Only used if not implicit in code found in Observation.code.  In many systems, this may be represented as a related observation instead of an inline component.</p>
+<p>If the use case requires BodySite to be handled as a separate resource (e.g. to identify and track separately) then use the standard extension<a href="extension-bodysite.html"> bodySite</a>.</p>
+</div><span><b>Data Type </b></span><p><span>CodeableConcept</span></p><span><b>Binding </b></span><p><p><span>Codes describing anatomical locations. May include laterality.</span></p><a  href="http://hl7.org/fhir/ValueSet/body-site" >http://hl7.org/fhir/ValueSet/body-site</a><span> (</span><a title="Instances are not expected or even encouraged to draw from the specified valueset. The value set merely provides examples of the types of concepts intended to be included." href="http://hl7.org/fhir/r4/terminologies.html#example" >example</a><span>)</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>CE/CNE/CWE</li><li class=""><b>rim:</b>CD</li><li class=""><b>orim:</b>fhir:CodeableConcept rdfs:subClassOf dt:CD</li><li class=""><b>sct-concept:</b>&lt; 123037004 |Body structure|</li><li class=""><b>v2:</b>OBX-20</li><li class=""><b>rim:</b>targetSiteCode</li><li class=""><b>sct-attr:</b>718497002 |Inherent location|</li></ul></td></tr><tr id="Observation.method" data-id="16eb97cc-98eb-47f2-9547-7d25a3e64f7c" data-parentId="284971f9-c88a-4826-84a9-b16ec62dd82e" class="collapsed"><td class="profile"><span class="baseIcon datatype"></span><span>method</span></td><td class="profile"><span class="mustsupport" title="This element is an element that must be supported">S</span> <span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><span>CodeableConcept</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.method</pre></p></div><span><b>Short description </b></span><p><span>Angaben zur genutzten Nachweismethode.</span></p><span><b>Definition </b></span><div class="markdown"><p>Angaben zur genutzten Nachweismethode. Über die im Observation.code verschlüsselte Nachweismethode hinaus, sollen dem öffentlichen Gesundheitsdienst detaillierte Angaben zur jeweils genutzten Nachweismethode bereitgestellt werden. Sofern verfügbar, ist einer der durch das RKI definierten Codes aus dem referenzierten ValueSet zu verwenden.</p>
+</div><span><b>Requirements </b></span><div class="markdown"><p>In some cases, method can impact results and is thus used for determining whether results can be compared or determining significance of results.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Die Angabe der Nachweismethode unter Verwendung von method.text ist in folgenden zwei Ausnahmefällen zulässig:</p>
+<ul>
+<li>Die Nachweismethode ist in dem ValueSet https://demis.rki.de/fhir/ValueSet/method nicht enthalten. Bitte geben Sie Feedback an die DEMIS Geschäftsstelle (demis@rki.de), damit das ValueSet ergänzt werden kann.</li>
+<li>Das Primärsystem kann die internen Codes zur Zeit noch nicht korrekt auf die SNOMED-Codes des ValueSets https://demis.rki.de/fhir/ValueSet/method mappen.</li>
+</ul>
+</div><span><b>Data Type </b></span><p><span>CodeableConcept</span></p><span><b>Binding </b></span><p><p><span>Methods for simple observations.</span></p><a  href="http://hl7.org/fhir/ValueSet/observation-methods" >http://hl7.org/fhir/ValueSet/observation-methods</a><span> (</span><a title="Instances are not expected or even encouraged to draw from the specified valueset. The value set merely provides examples of the types of concepts intended to be included." href="http://hl7.org/fhir/r4/terminologies.html#example" >example</a><span>)</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li><li class=""><b>codingOrText:</b>Entweder coding oder text muss angegeben sein.<br/><code>coding.empty() or text.empty()</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>CE/CNE/CWE</li><li class=""><b>rim:</b>CD</li><li class=""><b>orim:</b>fhir:CodeableConcept rdfs:subClassOf dt:CD</li><li class=""><b>v2:</b>OBX-17</li><li class=""><b>rim:</b>methodCode</li></ul></td></tr><tr id="Observation.method.coding" data-id="87595c34-1952-4b9d-b65d-a862a14c68e4" data-parentId="16eb97cc-98eb-47f2-9547-7d25a3e64f7c" class="collapsed"><td class="profile"><span class="baseIcon datatype"></span><span>coding</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><span>Coding</span><span class="binding-label">Binding</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.method.coding</pre></p></div><span><b>Short description </b></span><p><span>Code defined by a terminology system</span></p><span><b>Definition </b></span><div class="markdown"><p>A reference to a code defined by a terminology system.</p>
+</div><span><b>Requirements </b></span><div class="markdown"><p>Allows for alternative encodings within a code system, and translations to other code systems.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.</p>
+</div><span><b>Data Type </b></span><p><span>Coding</span></p><span><b>Binding </b></span><p><a  href="https://demis.rki.de/fhir/ValueSet/method" >https://demis.rki.de/fhir/ValueSet/method</a><span> (</span><a title="To be conformant, instances of this element SHALL include a code from the specified valueset" href="http://hl7.org/fhir/r4/terminologies.html#required" >required</a><span>)</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>CE/CNE/CWE subset one of the sets of component 1-3 or 4-6</li><li class=""><b>rim:</b>CV</li><li class=""><b>orim:</b>fhir:Coding rdfs:subClassOf dt:CDCoding</li><li class=""><b>v2:</b>C*E.1-8, C*E.10-22</li><li class=""><b>rim:</b>union(., ./translation)</li><li class=""><b>orim:</b>fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding</li></ul></td></tr><tr id="Observation.method.coding.system" data-id="674679de-2593-4833-b309-5c0213156784" data-parentId="87595c34-1952-4b9d-b65d-a862a14c68e4" class=""><td class="profile"><span class="baseIcon primitive"></span><span>system</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>1</span><span>..</span><span>1</span></td><td class="profile"><span>uri</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.method.coding.system</pre></p></div><span><b>Short description </b></span><p><span>Identity of the terminology system</span></p><span><b>Definition </b></span><div class="markdown"><p>The identification of the code system that defines the meaning of the symbol in the code.</p>
+</div><span><b>Requirements </b></span><div class="markdown"><p>Need to be unambiguous about the source of the definition of the symbol.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should reference to some definition that establishes the system clearly and unambiguously.</p>
+</div><span><b>Data Type </b></span><p><span>uri</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>C*E.3</li><li class=""><b>rim:</b>./codeSystem</li><li class=""><b>orim:</b>fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem</li></ul></td></tr><tr id="Observation.method.coding.version" data-id="d28cd644-8802-4e20-8b23-4eb35e9d0b3a" data-parentId="87595c34-1952-4b9d-b65d-a862a14c68e4" class=""><td class="profile"><span class="baseIcon primitive"></span><span>version</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><span>string</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.method.coding.version</pre></p></div><span><b>Short description </b></span><p><span>Version of the system - if relevant</span></p><span><b>Definition </b></span><div class="markdown"><p>The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.</p>
+</div><span><b>Data Type </b></span><p><span>string</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>C*E.7</li><li class=""><b>rim:</b>./codeSystemVersion</li><li class=""><b>orim:</b>fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion</li></ul></td></tr><tr id="Observation.method.coding.code" data-id="291d85bf-5c84-4465-90ef-82857decdef6" data-parentId="87595c34-1952-4b9d-b65d-a862a14c68e4" class=""><td class="profile"><span class="baseIcon primitive"></span><span>code</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>1</span><span>..</span><span>1</span></td><td class="profile"><span>code</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.method.coding.code</pre></p></div><span><b>Short description </b></span><p><span>Symbol in syntax defined by the system</span></p><span><b>Definition </b></span><div class="markdown"><p>A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).</p>
+</div><span><b>Requirements </b></span><div class="markdown"><p>Need to refer to a particular code in the system.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Note that FHIR strings SHALL NOT exceed 1MB in size</p>
+</div><span><b>Data Type </b></span><p><span>code</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>C*E.1</li><li class=""><b>rim:</b>./code</li><li class=""><b>orim:</b>fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code</li></ul></td></tr><tr id="Observation.method.coding.display" data-id="c1183cbf-037b-4416-96aa-cebb0fd47dad" data-parentId="87595c34-1952-4b9d-b65d-a862a14c68e4" class=""><td class="profile"><span class="baseIcon primitive"></span><span>display</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><span>string</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.method.coding.display</pre></p></div><span><b>Short description </b></span><p><span>Representation defined by the system</span></p><span><b>Definition </b></span><div class="markdown"><p>A representation of the meaning of the code in the system, following the rules of the system.</p>
+</div><span><b>Requirements </b></span><div class="markdown"><p>Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Note that FHIR strings SHALL NOT exceed 1MB in size</p>
+</div><span><b>Data Type </b></span><p><span>string</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>C*E.2 - but note this is not well followed</li><li class=""><b>rim:</b>CV.displayName</li><li class=""><b>orim:</b>fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName</li></ul></td></tr><tr id="Observation.method.coding.userSelected" data-id="f1aeb759-f30e-429e-92bd-b732a60ce627" data-parentId="87595c34-1952-4b9d-b65d-a862a14c68e4" class=""><td class="profile"><span class="baseIcon primitive"></span><span>userSelected</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><span>boolean</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.method.coding.userSelected</pre></p></div><span><b>Short description </b></span><p><span>If this coding was chosen directly by the user</span></p><span><b>Definition </b></span><div class="markdown"><p>Indicates that this coding was chosen by a user directly - e.g. off a pick list of available items (codes or displays).</p>
+</div><span><b>Requirements </b></span><div class="markdown"><p>This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.</p>
+</div><span><b>Data Type </b></span><p><span>boolean</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>Sometimes implied by being first</li><li class=""><b>rim:</b>CD.codingRationale</li><li class=""><b>orim:</b>fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\#true a [     fhir:source &quot;true&quot;;     fhir:target dt:CDCoding.codingRationale\#O   ]</li></ul></td></tr><tr id="Observation.method.text" data-id="c349ba90-4b1d-4b23-b484-212ffc40d386" data-parentId="16eb97cc-98eb-47f2-9547-7d25a3e64f7c" class=""><td class="profile"><span class="baseIcon primitive"></span><span>text</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><span>string</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.method.text</pre></p></div><span><b>Short description </b></span><p><span>Plain text representation of the concept</span></p><span><b>Definition </b></span><div class="markdown"><p>A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.</p>
+</div><span><b>Requirements </b></span><div class="markdown"><p>The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Very often the text is the same as a displayName of one of the codings.</p>
+</div><span><b>Data Type </b></span><p><span>string</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>C*E.9. But note many systems use C*E.2 for this</li><li class=""><b>rim:</b>./originalText[mediaType/code=&quot;text/plain&quot;]/data</li><li class=""><b>orim:</b>fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText</li></ul></td></tr><tr id="Observation.specimen" data-id="2a42711e-c51a-455e-9128-5143df54f6c2" data-parentId="284971f9-c88a-4826-84a9-b16ec62dd82e" class="constraints"><td class="profile"><span class="baseIcon reference"></span><span class="constraints">specimen</span></td><td class="profile"><span class="mustsupport" title="This element is an element that must be supported">S</span> <span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span>1</span><span>..</span><span>1</span></td><td class="profile"><span class="constraints">Reference</span><span class="constraints">(</span><a title="Die Sequenz-Probe enth&#228;lt Angaben zum Probenmaterial, Datum des Probeneingangs, Probennahmedatum und Angaben zur Analyse der Probe in Form der Sequenzierstrategie, des Sequenzierprotokolls, Reagenzien zur Verarbeitung (Sequenzen der Primer f&#252;r die Amplikonsequenzierung und der Adapter). Die IGS-ID wird von DEMIS beim Sequenzupload vergeben, als DEMIS Identifier f&#252;r die Sequenz, und an den Melder zur&#252;ckgegeben." href="artifacts/rki.demis.igs/rki.demis.igs/MetadataResources/StructureDefinition/Specimen/StructureDefinition-SpecimenSequence.xml"  class="constraints">Sequenz-Probe</a><span class="constraints">)</span></td><td class="details hidden"><span class="pin-control"></span><span><b>Element Id</b></span><div><p><pre>Observation.specimen</pre></p></div><span class="constraints"><b>Short description </b></span><p><span class="constraints">Verweis auf die dem Labortest zugrundeliegende Sequenz-Probe.</span></p><span class="constraints"><b>Definition </b></span><div class="markdown constraints"><p>Verweis auf die dem Labortest zugrundeliegende Sequenz-Probe. Über die Sequenz-Probe können Angaben ... gemacht werden.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Should only be used if not implicit in code found in <code>Observation.code</code>.  Observations are not made on specimens themselves; they are made on a subject, but in many cases by the means of a specimen. Note that although specimens are often involved, they are not always tracked and reported explicitly. Also note that observation resources may be used in contexts that track the specimen explicitly (e.g. Diagnostic Report).</p>
+</div><span class="constraints"><b>Data Type </b></span><p><span class="constraints">Reference</span><span class="constraints">(</span><a title="Die Sequenz-Probe enth&#228;lt Angaben zum Probenmaterial, Datum des Probeneingangs, Probennahmedatum und Angaben zur Analyse der Probe in Form der Sequenzierstrategie, des Sequenzierprotokolls, Reagenzien zur Verarbeitung (Sequenzen der Primer f&#252;r die Amplikonsequenzierung und der Adapter). Die IGS-ID wird von DEMIS beim Sequenzupload vergeben, als DEMIS Identifier f&#252;r die Sequenz, und an den Melder zur&#252;ckgegeben." href="artifacts/rki.demis.igs/rki.demis.igs/MetadataResources/StructureDefinition/Specimen/StructureDefinition-SpecimenSequence.xml"  class="constraints">Sequenz-Probe</a><span class="constraints">)</span></p><p><span>Allowed aggregation: </span><span>bundled</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li><li class=""><b>ref-1:</b>SHALL have a contained resource if a local reference is provided<br/><code>reference.startsWith('#').not() or (reference.substring(1).trace('url') in %resource.contained.id.trace('ids'))</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>rim:</b>The target of a resource reference is a RIM entry point (Act, Role, or Entity)</li><li class=""><b>sct-concept:</b>&lt; 123038009 |Specimen|</li><li class=""><b>v2:</b>SPM segment</li><li class=""><b>rim:</b>participation[typeCode=SPC].specimen</li><li class=""><b>sct-attr:</b>704319004 |Inherent in|</li></ul></td></tr><tr id="Observation.device" data-id="3201c2c5-626c-461d-b9e4-ff828bea1f1a" data-parentId="284971f9-c88a-4826-84a9-b16ec62dd82e" class="collapsed striped constraints"><td class="profile"><span class="baseIcon reference"></span><span class="constraints">device</span></td><td class="profile"><span class="mustsupport constraints" title="This element is an element that must be supported">S</span> <span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span class="constraints">1</span><span class="constraints">..</span><span>0</span></td><td class="profile"><span class="constraints">Reference</span><span class="constraints">(</span><a title="Das Sequenzierger&#228;t definiert welches Ger&#228;t f&#252;r die Sequenzierung verwendet wurde, z.B. Illumina_MiSeq oder MinION. Der Ger&#228;t muss entsprechend des vom RKI definierten, an ENA angelehnten ValueSets https://demis.rki.de/fhir/ValueSet/instrument im Coding-Element dargestellt werden." href="artifacts/rki.demis.igs/rki.demis.igs/MetadataResources/StructureDefinition/Device/StructureDefinition-SequencingDevice.xml"  class="constraints">Sequenzierger&#228;t</a><span class="constraints">)</span></td><td class="details hidden"><span class="pin-control"></span><span><b>Element Id</b></span><div><p><pre>Observation.device</pre></p></div><span class="constraints"><b>Short description </b></span><p><span class="constraints">Verweis auf das f&#252;r die Sequenzierung verwendete Ger&#228;t</span></p><span class="constraints"><b>Definition </b></span><div class="markdown constraints"><p>Verweis auf das für die Sequenzierung verwendete Gerät</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Note that this is not meant to represent a device involved in the transmission of the result, e.g., a gateway.  Such devices may be documented using the Provenance resource where relevant.</p>
+</div><span class="constraints"><b>Data Type </b></span><p><span class="constraints">Reference</span><span class="constraints">(</span><a title="Das Sequenzierger&#228;t definiert welches Ger&#228;t f&#252;r die Sequenzierung verwendet wurde, z.B. Illumina_MiSeq oder MinION. Der Ger&#228;t muss entsprechend des vom RKI definierten, an ENA angelehnten ValueSets https://demis.rki.de/fhir/ValueSet/instrument im Coding-Element dargestellt werden." href="artifacts/rki.demis.igs/rki.demis.igs/MetadataResources/StructureDefinition/Device/StructureDefinition-SequencingDevice.xml"  class="constraints">Sequenzierger&#228;t</a><span class="constraints">)</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li><li class=""><b>ref-1:</b>SHALL have a contained resource if a local reference is provided<br/><code>reference.startsWith('#').not() or (reference.substring(1).trace('url') in %resource.contained.id.trace('ids'))</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>rim:</b>The target of a resource reference is a RIM entry point (Act, Role, or Entity)</li><li class=""><b>sct-concept:</b>&lt; 49062001 |Device|</li><li class=""><b>v2:</b>OBX-17 / PRT -10</li><li class=""><b>rim:</b>participation[typeCode=DEV]</li><li class=""><b>sct-attr:</b>424226004 |Using device|</li></ul></td></tr><tr id="Observation.referenceRange" data-id="bd9a6bdf-3202-4fa3-b9de-3a1821976b19" data-parentId="284971f9-c88a-4826-84a9-b16ec62dd82e" class="collapsed striped"><td class="profile"><span class="baseIcon backboneElement"></span><span>referenceRange</span></td><td class="profile"><span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span>0</span><span>..</span><span>0</span></td><td class="profile"><span>BackboneElement</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.referenceRange</pre></p></div><span><b>Short description </b></span><p><span>Provides guide for interpretation</span></p><span><b>Definition </b></span><div class="markdown"><p>Guidance on how to interpret the value by comparison to a normal or recommended range.  Multiple reference ranges are interpreted as an &quot;OR&quot;.   In other words, to represent two distinct target populations, two <code>referenceRange</code> elements would be used.</p>
+</div><span><b>Requirements </b></span><div class="markdown"><p>Knowing what values are considered &quot;normal&quot; can help evaluate the significance of a particular result. Need to be able to provide multiple reference ranges for different contexts.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Most observations only have one generic reference range. Systems MAY choose to restrict to only supplying the relevant reference range based on knowledge about the patient (e.g., specific to the patient's age, gender, weight and other factors), but this might not be possible or appropriate. Whenever more than one reference range is supplied, the differences between them SHOULD be provided in the reference range and/or age properties.</p>
+</div><span><b>Data Type </b></span><p><span>BackboneElement</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li><li class=""><b>obs-3:</b>Must have at least a low or a high or text<br/><code>low.exists() or high.exists() or text.exists()</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>OBX.7</li><li class=""><b>rim:</b>outboundRelationship[typeCode=REFV]/target[classCode=OBS, moodCode=EVN]</li></ul></td></tr><tr id="Observation.hasMember" data-id="3bae82b8-293c-4319-98f6-f2cf1602809f" data-parentId="284971f9-c88a-4826-84a9-b16ec62dd82e" class="striped"><td class="profile"><span class="baseIcon reference"></span><span>hasMember</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span> <span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span>0</span><span>..</span><span>0</span></td><td class="profile"><span>Reference</span><span>(</span><span>http://hl7.org/fhir/StructureDefinition/Observation</span><span> | </span><span>http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse</span><span> | </span><span>http://hl7.org/fhir/StructureDefinition/MolecularSequence</span><span>)</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.hasMember</pre></p></div><span><b>Short description </b></span><p><span>Related resource that belongs to the Observation group</span></p><span><b>Definition </b></span><div class="markdown"><p>This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>When using this element, an observation will typically have either a value or a set of related resources, although both may be present in some cases.  For a discussion on the ways Observations can assembled in groups together, see <a href="observation.html#obsgrouping">Notes</a> below.  Note that a system may calculate results from <a href="questionnaireresponse.html">QuestionnaireResponse</a>  into a final score and represent the score as an Observation.</p>
+</div><span><b>Data Type </b></span><p><span>Reference</span><span>(</span><span>http://hl7.org/fhir/StructureDefinition/Observation</span><span> | </span><span>http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse</span><span> | </span><span>http://hl7.org/fhir/StructureDefinition/MolecularSequence</span><span>)</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li><li class=""><b>ref-1:</b>SHALL have a contained resource if a local reference is provided<br/><code>reference.startsWith('#').not() or (reference.substring(1).trace('url') in %resource.contained.id.trace('ids'))</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>rim:</b>The target of a resource reference is a RIM entry point (Act, Role, or Entity)</li><li class=""><b>v2:</b>Relationships established by OBX-4 usage</li><li class=""><b>rim:</b>outBoundRelationship</li></ul></td></tr><tr id="Observation.derivedFrom" data-id="40b74b5d-77a8-48c2-8497-115335e3ae6e" data-parentId="284971f9-c88a-4826-84a9-b16ec62dd82e" class="collapsed striped constraints"><td class="profile"><span class="baseIcon reference"></span><span class="constraints">derivedFrom</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span> <span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span class="constraints">1</span><span class="constraints">..</span><span>0</span></td><td class="profile"><span class="constraints">Reference</span><span class="constraints">(</span><a title="Die Sequenz umfasst Informationen zu einer biologischen Sequenz, hier DNA-Sequenz. Es kann sich hierbei auch um Sequenzrohdaten oder assemblierte Daten handeln, jeweils mit den dazugeh&#246;rigen Metadaten (z.B. Datum der Probennahme, Sequenzierungsger&#228;t, Adapter f&#252;r die Library Preparation, Upload in eine Online-Datenbank (Repositorium), etc.) handeln." href="artifacts/rki.demis.igs/rki.demis.igs/MetadataResources/StructureDefinition/MolecularSequence/StructureDefinition-Sequence.xml"  class="constraints">Sequenz</a><span class="constraints">)</span></td><td class="details hidden"><span class="pin-control"></span><span><b>Element Id</b></span><div><p><pre>Observation.derivedFrom</pre></p></div><span class="constraints"><b>Short description </b></span><p><span class="constraints">Verweis auf die Sequenz</span></p><span class="constraints"><b>Definition </b></span><div class="markdown constraints"><p>Verweis auf die Sequenz</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>All the reference choices that are listed in this element can represent clinical observations and other measurements that may be the source for a derived value.  The most common reference will be another Observation.  For a discussion on the ways Observations can assembled in groups together, see <a href="observation.html#obsgrouping">Notes</a> below.</p>
+</div><span class="constraints"><b>Data Type </b></span><p><span class="constraints">Reference</span><span class="constraints">(</span><a title="Die Sequenz umfasst Informationen zu einer biologischen Sequenz, hier DNA-Sequenz. Es kann sich hierbei auch um Sequenzrohdaten oder assemblierte Daten handeln, jeweils mit den dazugeh&#246;rigen Metadaten (z.B. Datum der Probennahme, Sequenzierungsger&#228;t, Adapter f&#252;r die Library Preparation, Upload in eine Online-Datenbank (Repositorium), etc.) handeln." href="artifacts/rki.demis.igs/rki.demis.igs/MetadataResources/StructureDefinition/MolecularSequence/StructureDefinition-Sequence.xml"  class="constraints">Sequenz</a><span class="constraints">)</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li><li class=""><b>ref-1:</b>SHALL have a contained resource if a local reference is provided<br/><code>reference.startsWith('#').not() or (reference.substring(1).trace('url') in %resource.contained.id.trace('ids'))</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>rim:</b>The target of a resource reference is a RIM entry point (Act, Role, or Entity)</li><li class=""><b>v2:</b>Relationships established by OBX-4 usage</li><li class=""><b>rim:</b>.targetObservation</li></ul></td></tr><tr id="Observation.component" data-id="bafad1b8-c461-4496-ad3f-36f8e7f5c7c2" data-parentId="284971f9-c88a-4826-84a9-b16ec62dd82e" class="collapsed striped"><td class="profile"><span class="baseIcon backboneElement"></span><span>component</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>0</span></td><td class="profile"><span>BackboneElement</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>Observation.component</pre></p></div><span><b>Short description </b></span><p><span>Component results</span></p><span><b>Definition </b></span><div class="markdown"><p>Some observations have multiple component observations.  These component observations are expressed as separate code value pairs that share the same attributes.  Examples include systolic and diastolic component observations for blood pressure measurement and multiple component observations for genetics observations.</p>
+</div><span><b>Requirements </b></span><div class="markdown"><p>Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>For a discussion on the ways Observations can be assembled in groups together see <a href="observation.html#notes">Notes</a> below.</p>
+</div><span><b>Data Type </b></span><p><span>BackboneElement</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>containment by OBX-4?</li><li class=""><b>rim:</b>outBoundRelationship[typeCode=COMP]</li></ul></td></tr></table></div><div class="treetable-right-panel"></div></div></div><script type="text/javascript">
+(function() {
+var isTreetableVisible = document.querySelector(".treetable") != null;
+if (isTreetableVisible) {
+var resourceTreeTablebff9e7467c604b50829847a7bd610958 = new Stu3TreeTable(false);
+resourceTreeTablebff9e7467c604b50829847a7bd610958.init("bff9e7467c604b50829847a7bd610958");
+}
+})();
+</script></p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="ig-view-footer" role="contentinfo" aria-label="Footer">
+                
+<div class="container">
+    <div class="row">
+        <p>Powered by <b>SIMPLIFIER.NET</b></p>
+        <div>
+            HL7<sup>&reg;</sup> and FHIR<sup>&reg;</sup> are the registered trademarks of Health Level Seven International
+        </div>
+    </div>
+</div>
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>

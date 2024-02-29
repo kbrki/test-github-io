@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetMRSP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetMRSP"/>
+  <version value="1.1.0"/>
+  <name value="AnswerSetMRSP"/>
+  <title value="AnswerSet für Middle-East-Respiratory-Syndrome-Coronavirus (MERS-CoV)"/>
+  <status value="active"/>
+  <date value="2023-05-30"/>
+  <description value="Das ValueSet AnswerSetMRSP enthält die Codes der Answer-Codes für Middle-East-Respiratory-Syndrome-Coronavirus (MERS-CoV)."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230331"/>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="697932005"/>
+        <display value="Middle East respiratory syndrome coronavirus (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Middle East respiratory syndrome coronavirus (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="MERS-CoV"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

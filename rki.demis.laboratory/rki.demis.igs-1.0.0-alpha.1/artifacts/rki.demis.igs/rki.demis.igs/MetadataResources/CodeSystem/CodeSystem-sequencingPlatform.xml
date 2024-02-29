@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="sequencingPlatform" />
+  <url value="https://demis.rki.de/fhir/CodeSystem/sequencingPlatform" />
+  <version value="1.0.0" />
+  <name value="SequencingPlatform" />
+  <title value="Sequenzierungsplatform" />
+  <status value="active" />
+  <date value="2023-07-17" />
+  <description value="Das CodeSystem SequencingPlatform enthält die Codes zur Angabe der Sequenzierungsplattform, welche verwendet wurde (angelehnt an ENA)." />
+  <caseSensitive value="false" />
+  <valueSet value="https://demis.rki.de/fhir/ValueSet/sequencingPlatform" />
+  <content value="complete" />
+  <count value="8" />
+  <concept>
+    <code value="ls454"/>
+    <display value="454 technology use 1-color sequential flows"/>
+  </concept>
+  <concept>
+    <code value="illumina"/>
+    <display value="Illumina is 4-channel flowgram with 1-to-1 mapping between basecalls and flows"/>
+  </concept>
+  <concept>
+    <code value="pacbio_smrt"/>
+    <display value="PacificBiosciences platform type for the single molecule real time (SMRT) technology."/>
+  </concept>
+  <concept>
+    <code value="ion_torrent"/>
+    <display value="Ion Torrent Personal Genome Machine (PGM) from Life Technologies."/>
+  </concept>
+  <concept>
+    <code value="capillary"/>
+    <display value="Sequencers based on capillary electrophoresis technology manufactured by LifeTech (formerly Applied BioSciences)."/>
+  </concept>
+  <concept>
+    <code value="oxford_nanopore"/>
+    <display value="Oxford Nanopore platform type. nanopore-based electronic single molecule analysis."/>
+  </concept>
+  <concept>
+    <code value="bgiseq"/>
+    <display value="BGISEQ"/>
+  </concept>
+  <concept>
+    <code value="dnbseq"/>
+    <display value="DNBSEQ"/>
+  </concept>
+</CodeSystem>

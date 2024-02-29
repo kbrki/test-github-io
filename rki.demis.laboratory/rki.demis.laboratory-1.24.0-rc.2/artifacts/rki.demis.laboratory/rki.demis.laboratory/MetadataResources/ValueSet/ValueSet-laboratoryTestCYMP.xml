@@ -1,0 +1,1043 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="laboratoryTestCYMP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/laboratoryTestCYMP"/>
+  <version value="1.2.0"/>
+  <name value="LaboratoryTestCYMP"/>
+  <title value="Labortest für Cytomegalie, Cytomegalievirus"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-11-01"/>
+  <publisher value="Robert Koch-Institut"/>
+  <description value="Das ValueSet LaboratoryTestCYMP enthält die Codes der Labortests für Cytomegalie, Cytomegalievirus."/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <version value="2.76"/>
+      <concept>
+        <code value="45326-6"/>
+        <display value="Cytomegalovirus IgG Ab avidity [Ratio] in Serum or Plasma"/>
+      </concept>
+      <concept>
+        <code value="34201-4"/>
+        <display value="Cytomegalovirus [Presence] in Amniotic fluid by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus [Nachweis] in Amnionflüssigkeit mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="88624-2"/>
+        <display value="Cytomegalovirus [Presence] in Amniotic fluid by Shell vial culture"/>
+      </concept>
+      <concept>
+        <code value="43706-1"/>
+        <display value="Cytomegalovirus [Presence] in Anal by Shell vial culture"/>
+      </concept>
+      <concept>
+        <code value="5835-4"/>
+        <display value="Cytomegalovirus [Presence] in Blood by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus [Nachweis] in Blut mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="43703-8"/>
+        <display value="Cytomegalovirus [Presence] in Blood by Shell vial culture"/>
+      </concept>
+      <concept>
+        <code value="43704-6"/>
+        <display value="Cytomegalovirus [Presence] in Body fluid by Shell vial culture"/>
+      </concept>
+      <concept>
+        <code value="88564-0"/>
+        <display value="Cytomegalovirus [Presence] in Bone marrow by Organism specific culture"/>
+      </concept>
+      <concept>
+        <code value="43705-3"/>
+        <display value="Cytomegalovirus [Presence] in Bone marrow by Shell vial culture"/>
+      </concept>
+      <concept>
+        <code value="32675-1"/>
+        <display value="Cytomegalovirus [Presence] in Bronchial specimen by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus [Nachweis] in Probenmaterial aus dem Bronchialtrakt mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="88623-4"/>
+        <display value="Cytomegalovirus [Presence] in Cerebral spinal fluid by Organism specific culture"/>
+      </concept>
+      <concept>
+        <code value="43702-0"/>
+        <display value="Cytomegalovirus [Presence] in Cerebral spinal fluid by Shell vial culture"/>
+      </concept>
+      <concept>
+        <code value="91783-1"/>
+        <display value="Cytomegalovirus [Presence] in Lower respiratory specimen by Organism specific culture"/>
+      </concept>
+      <concept>
+        <code value="81328-7"/>
+        <display value="Cytomegalovirus [Presence] in Lower respiratory specimen by Shell vial culture"/>
+      </concept>
+      <concept>
+        <code value="88625-9"/>
+        <display value="Cytomegalovirus [Presence] in Ocular fluid by Organism specific culture"/>
+      </concept>
+      <concept>
+        <code value="88622-6"/>
+        <display value="Cytomegalovirus [Presence] in Ocular fluid by Shell vial culture"/>
+      </concept>
+      <concept>
+        <code value="5838-8"/>
+        <display value="Cytomegalovirus [Presence] in Specimen by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus [Nachweis] in Probenmaterial mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="43701-2"/>
+        <display value="Cytomegalovirus [Presence] in Specimen by Shell vial culture"/>
+      </concept>
+      <concept>
+        <code value="5836-2"/>
+        <display value="Cytomegalovirus [Presence] in Tissue by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus [Nachweis] in Gewebe mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="43707-9"/>
+        <display value="Cytomegalovirus [Presence] in Tissue by Shell vial culture"/>
+      </concept>
+      <concept>
+        <code value="5837-0"/>
+        <display value="Cytomegalovirus [Presence] in Urine by Organism specific culture"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus [Nachweis] in Urin mit erregerspezifischer Kultur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="43700-4"/>
+        <display value="Cytomegalovirus [Presence] in Urine by Shell vial culture"/>
+      </concept>
+      <concept>
+        <code value="15377-5"/>
+        <display value="Cytomegalovirus Ab [Presence] in Serum by Latex agglutination"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus Antikörper [Nachweis] in Serum mit Latexagglutination"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="47363-7"/>
+        <display value="Cytomegalovirus Ab [Presence] in Serum from Donor by Hemagglutination"/>
+      </concept>
+      <concept>
+        <code value="22239-8"/>
+        <display value="Cytomegalovirus Ab [Presence] in Serum or Plasma"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus Antikörper [Nachweis] in Serum oder Plasma"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="59838-3"/>
+        <display value="Cytomegalovirus Ab [Presence] in Serum or Plasma by Latex agglutination"/>
+      </concept>
+      <concept>
+        <code value="47430-4"/>
+        <display value="Cytomegalovirus Ab [Presence] in Serum or Plasma from Donor"/>
+      </concept>
+      <concept>
+        <code value="22240-6"/>
+        <display value="Cytomegalovirus Ab [Titer] in Cerebral spinal fluid"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus Antikörper [Titer] in Zerebrospinalflüssigkeit"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="9514-1"/>
+        <display value="Cytomegalovirus Ab [Titer] in Cerebral spinal fluid by Complement fixation"/>
+      </concept>
+      <concept>
+        <code value="9513-3"/>
+        <display value="Cytomegalovirus Ab [Titer] in Serum by Complement fixation"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus Antikörper [Titer] in Serum mit Komplementbindungsreaktion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="22241-4"/>
+        <display value="Cytomegalovirus Ab [Titer] in Serum or Plasma"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus Antikörper [Titer] in Serum oder Plasma"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="32170-3"/>
+        <display value="Cytomegalovirus Ab [Titer] in Serum or Plasma by Immunofluorescence"/>
+      </concept>
+      <concept>
+        <code value="5121-9"/>
+        <display value="Cytomegalovirus Ab [Titer] in Serum or Plasma by Latex agglutination"/>
+      </concept>
+      <concept>
+        <code value="16712-2"/>
+        <display value="Cytomegalovirus Ab [Units/volume] in Body fluid"/>
+      </concept>
+      <concept>
+        <code value="16713-0"/>
+        <display value="Cytomegalovirus Ab [Units/volume] in Cerebral spinal fluid"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus Antikörper [Einheiten/Volumen] in Zerebrospinalflüssigkeit"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="52976-8"/>
+        <display value="Cytomegalovirus Ab [Units/volume] in Serum by Complement fixation"/>
+      </concept>
+      <concept>
+        <code value="16714-8"/>
+        <display value="Cytomegalovirus Ab [Units/volume] in Serum by Latex agglutination"/>
+      </concept>
+      <concept>
+        <code value="7851-9"/>
+        <display value="Cytomegalovirus Ab [Units/volume] in Serum or Plasma"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus Antikörper [Einheiten/Volumen] in Serum oder Plasma"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="5122-7"/>
+        <display value="Cytomegalovirus Ab [Units/volume] in Serum or Plasma by Immunofluorescence"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus Antikörper [Einheiten/Volumen] in Serum oder Plasma mit Immunfluoreszenztest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="16718-9"/>
+        <display value="Cytomegalovirus Ag [Presence] in Blood"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus Antigen [Nachweis] in Blut"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="54164-9"/>
+        <display value="Cytomegalovirus immediate-early Ag [Presence] in Blood"/>
+      </concept>
+      <concept>
+        <code value="88566-5"/>
+        <display value="Cytomegalovirus Ag [Presence] in Bone marrow by Immunofluorescence"/>
+      </concept>
+      <concept>
+        <code value="77388-7"/>
+        <display value="Cytomegalovirus Ag [Presence] in Bronchoalveolar lavage by Immunofluorescence"/>
+      </concept>
+      <concept>
+        <code value="89583-9"/>
+        <display value="Cytomegalovirus Ag [Presence] in Cerebral spinal fluid by Immunofluorescence"/>
+      </concept>
+      <concept>
+        <code value="67805-2"/>
+        <display value="Cytomegalovirus Ag [Presence] in Isolate by Immunofluorescence"/>
+      </concept>
+      <concept>
+        <code value="31795-8"/>
+        <display value="Cytomegalovirus Ag [Presence] in Serum or Plasma"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus Antigen [Nachweis] in Serum oder Plasma"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="6376-8"/>
+        <display value="Cytomegalovirus Ag [Presence] in Serum or Plasma by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus Antigen [Nachweis] in Serum oder Plasma mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="6377-6"/>
+        <display value="Cytomegalovirus Ag [Presence] in Serum or Plasma by Immunofluorescence"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus Antigen [Nachweis] in Serum oder Plasma mit Immunfluoreszenztest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="31797-4"/>
+        <display value="Cytomegalovirus Ag [Presence] in Specimen"/>
+      </concept>
+      <concept>
+        <code value="42336-8"/>
+        <display value="Cytomegalovirus Ag [#/area] in Specimen"/>
+      </concept>
+      <concept>
+        <code value="60541-0"/>
+        <display value="Cytomegalovirus early Ag [Presence] in Specimen"/>
+      </concept>
+      <concept>
+        <code value="6379-2"/>
+        <display value="Cytomegalovirus Ag [Presence] in Specimen by Immunoassay"/>
+      </concept>
+      <concept>
+        <code value="6381-8"/>
+        <display value="Cytomegalovirus Ag [Presence] in Specimen by Immunofluorescence"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus Antigen [Nachweis] in Probenmaterial mit Immunfluoreszenztest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="10660-9"/>
+        <display value="Cytomegalovirus Ag [Presence] in Tissue by Immune stain"/>
+      </concept>
+      <concept>
+        <code value="86517-0"/>
+        <display value="Cytomegalovirus Ag [Presence] in Tissue by Immunofluorescence"/>
+      </concept>
+      <concept>
+        <code value="49348-6"/>
+        <display value="Cytomegalovirus DNA [#/volume] (viral load) in Amniotic fluid by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="29604-6"/>
+        <display value="Cytomegalovirus DNA [#/volume] (viral load) in Blood by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus DNA [#/Volumen] (Viruslast) in Blut mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="49350-2"/>
+        <display value="Cytomegalovirus DNA [#/volume] (viral load) in Bone marrow by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="49349-4"/>
+        <display value="Cytomegalovirus DNA [#/volume] (viral load) in Bronchoalveolar lavage by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="39003-9"/>
+        <display value="Cytomegalovirus DNA [#/volume] (viral load) in Cerebral spinal fluid by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="88545-9"/>
+        <display value="Cytomegalovirus DNA [#/volume] (viral load) in DBS by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="88130-0"/>
+        <display value="Cytomegalovirus DNA [#/volume] (viral load) in Ocular fluid by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="98081-3"/>
+        <display value="Cytomegalovirus DNA [#/volume] (viral load) in Saliva (oral fluid) by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="30247-1"/>
+        <display value="Cytomegalovirus DNA [#/volume] (viral load) in Serum or Plasma by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="33006-8"/>
+        <display value="Cytomegalovirus DNA [#/volume] (viral load) in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus DNA [#/Volumen] (Viruslast) in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="49351-0"/>
+        <display value="Cytomegalovirus DNA [#/volume] (viral load) in Tissue by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus DNA [#/Volumen] (Viruslast) in Gewebe mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="49347-8"/>
+        <display value="Cytomegalovirus DNA [#/volume] (viral load) in Urine by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus DNA [#/Volumen] (Viruslast) in Urin mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="54163-1"/>
+        <display value="Cytomegalovirus DNA [#/volume] (viral load) in Urine by Probe and target amplification method detection limit = 200 copies/ml"/>
+      </concept>
+      <concept>
+        <code value="94823-2"/>
+        <display value="Cytomegalovirus DNA [Log #/volume] (viral load) in Amniotic fluid by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="54206-8"/>
+        <display value="Cytomegalovirus DNA [Log #/volume] (viral load) in Serum or Plasma by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="53763-9"/>
+        <display value="Cytomegalovirus DNA [Log #/volume] (viral load) in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus DNA [log #/Volumen] (Viruslast) in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="100676-6"/>
+        <display value="Cytomegalovirus DNA [log units/volume] (viral load) in Blood by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="72494-8"/>
+        <display value="Cytomegalovirus DNA [log units/volume] (viral load) in Serum or Plasma by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="96396-7"/>
+        <display value="Cytomegalovirus DNA [log units/volume] (viral load) in Specimen by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="29590-7"/>
+        <display value="Cytomegalovirus DNA [Mass/volume] (viral load) in Blood by Probe"/>
+      </concept>
+      <concept>
+        <code value="34719-5"/>
+        <display value="Cytomegalovirus DNA [Presence] in Amniotic fluid by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus DNA [Nachweis] in Amnionflüssigkeit mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="4996-5"/>
+        <display value="Cytomegalovirus DNA [Presence] in Blood by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus DNA [Nachweis] in Blut mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="28008-1"/>
+        <display value="Cytomegalovirus DNA [Presence] in Blood by Probe with signal amplification"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus DNA [Nachweis] in Blut mit Sondendetektion mit Signalamplifikation"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="88567-3"/>
+        <display value="Cytomegalovirus DNA [Presence] in Bone marrow by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="35401-9"/>
+        <display value="Cytomegalovirus DNA [Presence] in Bronchial specimen by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="82189-2"/>
+        <display value="Cytomegalovirus DNA [Presence] in Cerebral spinal fluid by NAA with non-probe detection"/>
+      </concept>
+      <concept>
+        <code value="30326-3"/>
+        <display value="Cytomegalovirus DNA [Presence] in Cerebral spinal fluid by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus DNA [Nachweis] in Zerebrospinalflüssigkeit mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="88535-0"/>
+        <display value="Cytomegalovirus DNA [Presence] in DBS by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus DNA [Nachweis] in Trockenblut mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="88558-2"/>
+        <display value="Cytomegalovirus DNA [Presence] in Lower respiratory specimen by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="88131-8"/>
+        <display value="Cytomegalovirus DNA [Presence] in Ocular fluid by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="83065-3"/>
+        <display value="Cytomegalovirus DNA [Presence] in Saliva (oral fluid) by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="30246-3"/>
+        <display value="Cytomegalovirus DNA [Presence] in Serum or Plasma by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus DNA [Nachweis] in Serum oder Plasma mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="5000-5"/>
+        <display value="Cytomegalovirus DNA [Presence] in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus DNA [Nachweis] in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="4998-1"/>
+        <display value="Cytomegalovirus DNA [Presence] in Tissue by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus DNA [Nachweis] in Gewebe mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="4997-3"/>
+        <display value="Cytomegalovirus DNA [Presence] in Tissue by Probe"/>
+      </concept>
+      <concept>
+        <code value="4999-9"/>
+        <display value="Cytomegalovirus DNA [Presence] in Urine by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="100675-8"/>
+        <display value="Cytomegalovirus DNA [Units/volume] (viral load) in Blood by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="72493-0"/>
+        <display value="Cytomegalovirus DNA [Units/volume] (viral load) in Serum or Plasma by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="34720-3"/>
+        <display value="Cytomegalovirus DNA [Units/volume] (viral load) in Specimen by NAA with probe detection"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus DNA [Einheiten/Volumen] (Viruslast) in Probenmaterial mit Nukleinsäureamplifikation mit Sondendetektion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="24041-6"/>
+        <display value="Cytomegalovirus DNA [Units/volume] (viral load) in Specimen by Probe with signal amplification"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus DNA [Einheiten/Volumen] (Viruslast) in Probenmaterial mit Sondendetektion mit Signalamplifikation"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="16717-1"/>
+        <display value="Cytomegalovirus Ag [Presence] in Urine by Immunoassay"/>
+      </concept>
+      <concept>
+        <code value="31796-6"/>
+        <display value="Cytomegalovirus Ag [Presence] in Urine"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus Antigen [Nachweis] in Urin"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="72605-9"/>
+        <display value="Cytomegalovirus glycoprotein genotype in Specimen by NAA with probe detection"/>
+      </concept>
+      <concept>
+        <code value="45286-2"/>
+        <display value="Cytomegalovirus IgA Ab [Presence] in Body fluid"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus IgA-Antikörper [Nachweis] in Körperflüssigkeit"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="20475-0"/>
+        <display value="Cytomegalovirus IgG Ab [Interpretation] in Serum or Plasma"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus IgG-Antikörper [Interpretation] in Serum oder Plasma"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="50018-1"/>
+        <display value="Cytomegalovirus IgG Ab [Presence] in Body fluid"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus IgG-Antikörper [Nachweis] in Körperflüssigkeit"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="42495-2"/>
+        <display value="Cytomegalovirus IgG Ab [Presence] in Cerebral spinal fluid"/>
+      </concept>
+      <concept>
+        <code value="95527-8"/>
+        <display value="Cytomegalovirus IgG Ab [Presence] in Saliva (oral fluid) by Immunoassay"/>
+      </concept>
+      <concept>
+        <code value="22244-8"/>
+        <display value="Cytomegalovirus IgG Ab [Presence] in Serum or Plasma"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus IgG-Antikörper [Nachweis] in Serum oder Plasma"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="13949-3"/>
+        <display value="Cytomegalovirus IgG Ab [Presence] in Serum or Plasma by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus IgG-Antikörper [Nachweis] in Serum oder Plasma mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="87726-6"/>
+        <display value="Cytomegalovirus IgG Ab [Presence] in Serum or Plasma from Donor by Immunoassay"/>
+      </concept>
+      <concept>
+        <code value="32835-1"/>
+        <display value="Cytomegalovirus IgG Ab [Ratio] in Serum or Plasma --1st specimen/2nd specimen"/>
+      </concept>
+      <concept>
+        <code value="32791-6"/>
+        <display value="Cytomegalovirus IgG Ab [Ratio] in Serum or Plasma by Immunoassay --1st specimen/2nd specimen"/>
+      </concept>
+      <concept>
+        <code value="22245-5"/>
+        <display value="Cytomegalovirus IgG Ab [Titer] in Cerebral spinal fluid"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus IgG-Antikörper [Titer] in Zerebrospinalflüssigkeit"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="11008-0"/>
+        <display value="Cytomegalovirus IgG Ab [Titer] in Cerebral spinal fluid by Immunofluorescence"/>
+      </concept>
+      <concept>
+        <code value="22246-3"/>
+        <display value="Cytomegalovirus IgG Ab [Titer] in Serum or Plasma"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus IgG-Antikörper [Titer] in Serum oder Plasma"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="5125-0"/>
+        <display value="Cytomegalovirus IgG Ab [Titer] in Serum or Plasma by Immunofluorescence"/>
+      </concept>
+      <concept>
+        <code value="22243-0"/>
+        <display value="Cytomegalovirus IgG Ab [Units/volume] in Cerebral spinal fluid"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus IgG-Antikörper [Einheiten/Volumen] in Zerebrospinalflüssigkeit"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="6921-1"/>
+        <display value="Cytomegalovirus IgG Ab [Units/volume] in Cerebral spinal fluid by Immunoassay"/>
+      </concept>
+      <concept>
+        <code value="7852-7"/>
+        <display value="Cytomegalovirus IgG Ab [Units/volume] in Serum or Plasma"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus IgG-Antikörper [Einheiten/Volumen] in Serum oder Plasma"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="13225-8"/>
+        <display value="Cytomegalovirus IgG Ab [Units/volume] in Serum or Plasma --1st specimen"/>
+      </concept>
+      <concept>
+        <code value="22247-1"/>
+        <display value="Cytomegalovirus IgG Ab [Units/volume] in Serum or Plasma --2nd specimen"/>
+      </concept>
+      <concept>
+        <code value="5124-3"/>
+        <display value="Cytomegalovirus IgG Ab [Units/volume] in Serum or Plasma by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus IgG-Antikörper [Einheiten/Volumen] in Serum oder Plasma mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="16716-3"/>
+        <display value="Cytomegalovirus IgG Ab [Units/volume] in Serum or Plasma by Immunoassay --2nd specimen"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus IgG-Antikörper [Einheiten/Volumen] in Serum oder Plasma mit Immunoassay --2. Probenmaterial"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="16715-5"/>
+        <display value="Cytomegalovirus IgG Ab [Units/volume] in Serum or Plasma by Immunofluorescence"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus IgG-Antikörper [Einheiten/Volumen] in Serum oder Plasma mit Immunfluoreszenztest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="78445-4"/>
+        <display value="Cytomegalovirus IgG Ab avidity [Presence] in Serum or Plasma by Immunoassay"/>
+      </concept>
+      <concept>
+        <code value="52984-2"/>
+        <display value="Cytomegalovirus IgG Ab avidity [Ratio] in Serum or Plasma by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus IgG-Antikörperavidität [Verhältnis] in Serum oder Plasma mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="47307-4"/>
+        <display value="Cytomegalovirus IgG Ab index [Units/volume] in Serum and CSF"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus IgG-Antikörperindex [Einheiten/Volumen] in Serum und Zerebrospinalflüssigkeit"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="43045-4"/>
+        <display value="Cytomegalovirus IgM Ab [Presence] in Cerebral spinal fluid"/>
+      </concept>
+      <concept>
+        <code value="42899-5"/>
+        <display value="Cytomegalovirus IgM Ab [Presence] in Cerebral spinal fluid by Immunofluorescence"/>
+      </concept>
+      <concept>
+        <code value="30325-5"/>
+        <display value="Cytomegalovirus IgM Ab [Presence] in Serum or Plasma"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus IgM-Antikörper [Nachweis] in Serum oder Plasma"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="24119-0"/>
+        <display value="Cytomegalovirus IgM Ab [Presence] in Serum or Plasma by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus IgM-Antikörper [Nachweis] in Serum oder Plasma mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="49539-0"/>
+        <display value="Cytomegalovirus IgM Ab [Presence] in Serum or Plasma by Immunofluorescence"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus IgM-Antikörper [Nachweis] in Serum oder Plasma mit Immunfluoreszenztest"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="87725-8"/>
+        <display value="Cytomegalovirus IgM Ab [Presence] in Serum or Plasma from Donor by Immunoassay"/>
+      </concept>
+      <concept>
+        <code value="22248-9"/>
+        <display value="Cytomegalovirus IgM Ab [Titer] in Cerebral spinal fluid"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus IgM-Antikörper [Titer] in Zerebrospinalflüssigkeit"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="21237-3"/>
+        <display value="Cytomegalovirus IgM Ab [Titer] in Cerebral spinal fluid by Immunofluorescence"/>
+      </concept>
+      <concept>
+        <code value="22249-7"/>
+        <display value="Cytomegalovirus IgM Ab [Titer] in Serum or Plasma"/>
+      </concept>
+      <concept>
+        <code value="5127-6"/>
+        <display value="Cytomegalovirus IgM Ab [Titer] in Serum or Plasma by Immunofluorescence"/>
+      </concept>
+      <concept>
+        <code value="41155-3"/>
+        <display value="Cytomegalovirus IgM Ab [Units/volume] in Body fluid"/>
+      </concept>
+      <concept>
+        <code value="33285-8"/>
+        <display value="Cytomegalovirus IgM Ab [Units/volume] in Body fluid by Immunoassay"/>
+      </concept>
+      <concept>
+        <code value="13226-6"/>
+        <display value="Cytomegalovirus IgM Ab [Units/volume] in Cerebral spinal fluid"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus IgM-Antikörper [Einheiten/Volumen] in Zerebrospinalflüssigkeit"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="44817-5"/>
+        <display value="Cytomegalovirus IgM Ab [Units/volume] in Cerebral spinal fluid by Immunoassay"/>
+      </concept>
+      <concept>
+        <code value="7853-5"/>
+        <display value="Cytomegalovirus IgM Ab [Units/volume] in Serum or Plasma"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus IgM-Antikörper [Einheiten/Volumen] in Serum oder Plasma"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="5126-8"/>
+        <display value="Cytomegalovirus IgM Ab [Units/volume] in Serum or Plasma by Immunoassay"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus IgM-Antikörper [Einheiten/Volumen] in Serum oder Plasma mit Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="33616-4"/>
+        <display value="Cytomegalovirus early Ag [Presence] in Urine"/>
+        <designation>
+          <language value="de-DE"/>
+          <use>
+            <system value="http://loinc.org"/>
+            <code value="LONG_COMMON_NAME"/>
+          </use>
+          <value value="Cytomegalie-Virus early Antigen [Nachweis] in Urin"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="16719-7"/>
+        <display value="Cytomegalovirus inclusion bodies [Presence] in Urine by Microscopic observation"/>
+      </concept>
+      <concept>
+        <code value="78001-5"/>
+        <display value="Cytomegalovirus pp65 Ag/100000 PMN cells in Blood by Immunofluorescence"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="TransactionID" />
+  <url value="https://demis.rki.de/fhir/StructureDefinition/TransactionID" />
+  <version value="1.3.0" />
+  <name value="TransactionID" />
+  <title value="Transaktions-ID" />
+  <status value="active" />
+  <date value="2023-10-12" />
+  <description value="Die Transaktions-ID dient der Angabe der Referenz auf das Analyse-Ergebnis." />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Specimen.processing" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="https://demis.rki.de/fhir/StructureDefinition/TransactionID" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <short value="Transaktions-ID" />
+      <definition value="Transaktions-ID" />
+      <type>
+        <code value="string" />
+      </type>
+      <type>
+        <code value="Identifier"/>
+        <profile value="https://demis.rki.de/fhir/StructureDefinition/TransactionIdIdentifier"/>
+      </type>
+      <constraint>
+        <key value="checkFormatOfTransactionIdString"/>
+        <severity value="warning"/>
+        <human value="Die Transaktion-Id muss dem Format IGS-12345-XYZP-XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX entsprechen."/>
+        <expression value="$this.is(string) implies $this.as(string).matches('^IGS-[0-9]{5}-[A-Z]{3}P-[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$')"/>
+      </constraint>
+    </element>
+  </differential>
+</StructureDefinition>

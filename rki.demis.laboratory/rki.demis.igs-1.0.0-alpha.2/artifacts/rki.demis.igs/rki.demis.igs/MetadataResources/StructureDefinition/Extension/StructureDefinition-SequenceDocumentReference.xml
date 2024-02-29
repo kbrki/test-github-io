@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="SequenceDocumentReference" />
+  <url value="https://demis.rki.de/fhir/StructureDefinition/SequenceDocumentReference" />
+  <version value="1.1.0" />
+  <name value="SequenceDocumentReference" />
+  <title value="Referenz auf das SequenceDocument" />
+  <status value="draft" />
+  <date value="2023-12-29" />
+  <description value="Die SequenceDocumentReference verweist auf das SequenceDocument, in dem die Sequenzdaten im FASTA- oder FASTQ-Format referenziert werden." />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="MolecularSequence" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="https://demis.rki.de/fhir/StructureDefinition/SequenceDocumentReference" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/SequenceDocument" />
+        <aggregation value="referenced" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

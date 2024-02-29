@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetYPSP"/>
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetYPSP"/>
+  <version value="1.3.0"/>
+  <name value="AnswerSetYPSP"/>
+  <title value="AnswerSet für Yersinia pestis"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-11-09"/>
+  <publisher value="Robert Koch-Institut"/>
+  <description value="Das ValueSet AnswerSetYPSP enthält die Codes der Answer-Codes für Yersinia pestis."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20230901"/>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100"/>
+        </extension>
+        <code value="54365000"/>
+        <display value="Yersinia pestis (organism)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Yersinia pestis (organism)"/>
+        </designation>
+        <designation>
+          <language value="de-DE"/>
+          <value value="Yersinia pestis"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>
