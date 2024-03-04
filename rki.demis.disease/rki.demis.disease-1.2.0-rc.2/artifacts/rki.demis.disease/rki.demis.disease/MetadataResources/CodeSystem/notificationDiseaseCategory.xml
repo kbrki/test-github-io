@@ -2,11 +2,11 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="notificationDiseaseCategory" />
   <url value="https://demis.rki.de/fhir/CodeSystem/notificationDiseaseCategory" />
-  <version value="1.5.0" />
+  <version value="1.4.1" />
   <name value="NotificationDiseaseCategory" />
   <title value="Meldetatbestand" />
   <status value="active" />
-  <date value="2024-01-15" />
+  <date value="2023-09-22" />
   <description value="Das CodeSystem NotificationDiseaseCategory enthält die Codes der Meldetatbestände." />
   <caseSensitive value="false" />
   <valueSet value="https://demis.rki.de/fhir/ValueSet/notificationDiseaseCategory" />
@@ -17,35 +17,12 @@
     <description value="Nutzungsstatus"/>
     <type value="code"/>
   </property>
-  <property>
-    <code value="national-notificationCategory"/>
-    <description value="Nationaler Meldetatbestand"/>
-    <type value="boolean"/>
-  </property>
-  <property>
-    <code value="federal-state-specific-notificationCategory"/>
-    <description value="Bundeslandspezifischer Meldetatbestand"/>
-    <type value="boolean"/>
-  </property>
-  <property>
-    <code value="federal-state"/>
-    <description value="Bundesland"/>
-    <type value="Coding"/>
-  </property>
   <concept>
     <code value="band"/>
     <display value="Milzbrand"/>
     <property>
       <code value="usage-status"/>
       <valueCode value="active"/>
-    </property>
-    <property>
-      <code value="national-notificationCategory"/>
-      <valueBoolean value="true"/>
-    </property>
-    <property>
-      <code value="federal-state-specific-notificationCategory"/>
-      <valueBoolean value="false"/>
     </property>
   </concept>
   <concept>
@@ -55,14 +32,6 @@
       <code value="usage-status"/>
       <valueCode value="active"/>
     </property>
-    <property>
-      <code value="national-notificationCategory"/>
-      <valueBoolean value="true"/>
-    </property>
-    <property>
-      <code value="federal-state-specific-notificationCategory"/>
-      <valueBoolean value="false"/>
-    </property>
   </concept>
   <concept>
     <code value="clod"/>
@@ -70,14 +39,6 @@
     <property>
       <code value="usage-status"/>
       <valueCode value="active"/>
-    </property>
-    <property>
-      <code value="national-notificationCategory"/>
-      <valueBoolean value="true"/>
-    </property>
-    <property>
-      <code value="federal-state-specific-notificationCategory"/>
-      <valueBoolean value="false"/>
     </property>
   </concept>
   <concept>
@@ -87,14 +48,6 @@
       <code value="usage-status"/>
       <valueCode value="active"/>
     </property>
-    <property>
-      <code value="national-notificationCategory"/>
-      <valueBoolean value="true"/>
-    </property>
-    <property>
-      <code value="federal-state-specific-notificationCategory"/>
-      <valueBoolean value="false"/>
-    </property>
   </concept>
   <concept>
     <code value="cvdd"/>
@@ -102,14 +55,6 @@
     <property>
       <code value="usage-status"/>
       <valueCode value="active"/>
-    </property>
-    <property>
-      <code value="national-notificationCategory"/>
-      <valueBoolean value="true"/>
-    </property>
-    <property>
-      <code value="federal-state-specific-notificationCategory"/>
-      <valueBoolean value="false"/>
     </property>
   </concept>
   <concept>
@@ -119,14 +64,6 @@
       <code value="usage-status"/>
       <valueCode value="active"/>
     </property>
-    <property>
-      <code value="national-notificationCategory"/>
-      <valueBoolean value="true"/>
-    </property>
-    <property>
-      <code value="federal-state-specific-notificationCategory"/>
-      <valueBoolean value="false"/>
-    </property>
   </concept>
   <concept>
     <code value="dend"/>
@@ -134,14 +71,6 @@
     <property>
       <code value="usage-status"/>
       <valueCode value="active"/>
-    </property>
-    <property>
-      <code value="national-notificationCategory"/>
-      <valueBoolean value="true"/>
-    </property>
-    <property>
-      <code value="federal-state-specific-notificationCategory"/>
-      <valueBoolean value="false"/>
     </property>
   </concept>
   <concept>
@@ -151,14 +80,6 @@
       <code value="usage-status"/>
       <valueCode value="active"/>
     </property>
-    <property>
-      <code value="national-notificationCategory"/>
-      <valueBoolean value="true"/>
-    </property>
-    <property>
-      <code value="federal-state-specific-notificationCategory"/>
-      <valueBoolean value="false"/>
-    </property>
   </concept>
   <concept>
     <code value="gfvd"/>
@@ -166,14 +87,6 @@
     <property>
       <code value="usage-status"/>
       <valueCode value="active"/>
-    </property>
-    <property>
-      <code value="national-notificationCategory"/>
-      <valueBoolean value="true"/>
-    </property>
-    <property>
-      <code value="federal-state-specific-notificationCategory"/>
-      <valueBoolean value="false"/>
     </property>
   </concept>
   <concept>
@@ -183,14 +96,6 @@
       <code value="usage-status"/>
       <valueCode value="active"/>
     </property>
-    <property>
-      <code value="national-notificationCategory"/>
-      <valueBoolean value="true"/>
-    </property>
-    <property>
-      <code value="federal-state-specific-notificationCategory"/>
-      <valueBoolean value="false"/>
-    </property>
   </concept>
   <concept>
     <code value="mbvd"/>
@@ -198,14 +103,6 @@
     <property>
       <code value="usage-status"/>
       <valueCode value="active"/>
-    </property>
-    <property>
-      <code value="national-notificationCategory"/>
-      <valueBoolean value="true"/>
-    </property>
-    <property>
-      <code value="federal-state-specific-notificationCategory"/>
-      <valueBoolean value="false"/>
     </property>
   </concept>
   <concept>
@@ -215,14 +112,6 @@
       <code value="usage-status"/>
       <valueCode value="active"/>
     </property>
-    <property>
-      <code value="national-notificationCategory"/>
-      <valueBoolean value="true"/>
-    </property>
-    <property>
-      <code value="federal-state-specific-notificationCategory"/>
-      <valueBoolean value="false"/>
-    </property>
   </concept>
   <concept>
     <code value="cdfd"/>
@@ -230,14 +119,6 @@
     <property>
       <code value="usage-status"/>
       <valueCode value="active"/>
-    </property>
-    <property>
-      <code value="national-notificationCategory"/>
-      <valueBoolean value="true"/>
-    </property>
-    <property>
-      <code value="federal-state-specific-notificationCategory"/>
-      <valueBoolean value="false"/>
     </property>
   </concept>
   <concept>
@@ -247,14 +128,6 @@
       <code value="usage-status"/>
       <valueCode value="active"/>
     </property>
-    <property>
-      <code value="national-notificationCategory"/>
-      <valueBoolean value="true"/>
-    </property>
-    <property>
-      <code value="federal-state-specific-notificationCategory"/>
-      <valueBoolean value="false"/>
-    </property>
   </concept>
   <concept>
     <code value="havd"/>
@@ -262,14 +135,6 @@
     <property>
       <code value="usage-status"/>
       <valueCode value="active"/>
-    </property>
-    <property>
-      <code value="national-notificationCategory"/>
-      <valueBoolean value="true"/>
-    </property>
-    <property>
-      <code value="federal-state-specific-notificationCategory"/>
-      <valueBoolean value="false"/>
     </property>
   </concept>
   <concept>
@@ -279,14 +144,6 @@
       <code value="usage-status"/>
       <valueCode value="active"/>
     </property>
-    <property>
-      <code value="national-notificationCategory"/>
-      <valueBoolean value="true"/>
-    </property>
-    <property>
-      <code value="federal-state-specific-notificationCategory"/>
-      <valueBoolean value="false"/>
-    </property>
   </concept>
   <concept>
     <code value="hcvd"/>
@@ -294,14 +151,6 @@
     <property>
       <code value="usage-status"/>
       <valueCode value="active"/>
-    </property>
-    <property>
-      <code value="national-notificationCategory"/>
-      <valueBoolean value="true"/>
-    </property>
-    <property>
-      <code value="federal-state-specific-notificationCategory"/>
-      <valueBoolean value="false"/>
     </property>
   </concept>
   <concept>
@@ -311,14 +160,6 @@
       <code value="usage-status"/>
       <valueCode value="active"/>
     </property>
-    <property>
-      <code value="national-notificationCategory"/>
-      <valueBoolean value="true"/>
-    </property>
-    <property>
-      <code value="federal-state-specific-notificationCategory"/>
-      <valueBoolean value="false"/>
-    </property>
   </concept>
   <concept>
     <code value="hevd"/>
@@ -326,14 +167,6 @@
     <property>
       <code value="usage-status"/>
       <valueCode value="active"/>
-    </property>
-    <property>
-      <code value="national-notificationCategory"/>
-      <valueBoolean value="true"/>
-    </property>
-    <property>
-      <code value="federal-state-specific-notificationCategory"/>
-      <valueBoolean value="false"/>
     </property>
   </concept>
   <concept>
@@ -343,14 +176,6 @@
       <code value="usage-status"/>
       <valueCode value="active"/>
     </property>
-    <property>
-      <code value="national-notificationCategory"/>
-      <valueBoolean value="true"/>
-    </property>
-    <property>
-      <code value="federal-state-specific-notificationCategory"/>
-      <valueBoolean value="false"/>
-    </property>
   </concept>
   <concept>
     <code value="husd"/>
@@ -358,14 +183,6 @@
     <property>
       <code value="usage-status"/>
       <valueCode value="active"/>
-    </property>
-    <property>
-      <code value="national-notificationCategory"/>
-      <valueBoolean value="true"/>
-    </property>
-    <property>
-      <code value="federal-state-specific-notificationCategory"/>
-      <valueBoolean value="false"/>
     </property>
   </concept>
   <concept>
@@ -375,14 +192,6 @@
       <code value="usage-status"/>
       <valueCode value="active"/>
     </property>
-    <property>
-      <code value="national-notificationCategory"/>
-      <valueBoolean value="true"/>
-    </property>
-    <property>
-      <code value="federal-state-specific-notificationCategory"/>
-      <valueBoolean value="false"/>
-    </property>
   </concept>
   <concept>
     <code value="izvd"/>
@@ -390,14 +199,6 @@
     <property>
       <code value="usage-status"/>
       <valueCode value="active"/>
-    </property>
-    <property>
-      <code value="national-notificationCategory"/>
-      <valueBoolean value="true"/>
-    </property>
-    <property>
-      <code value="federal-state-specific-notificationCategory"/>
-      <valueBoolean value="false"/>
     </property>
   </concept>
   <concept>
@@ -407,14 +208,6 @@
       <code value="usage-status"/>
       <valueCode value="active"/>
     </property>
-    <property>
-      <code value="national-notificationCategory"/>
-      <valueBoolean value="true"/>
-    </property>
-    <property>
-      <code value="federal-state-specific-notificationCategory"/>
-      <valueBoolean value="false"/>
-    </property>
   </concept>
   <concept>
     <code value="mpxd"/>
@@ -422,14 +215,6 @@
     <property>
       <code value="usage-status"/>
       <valueCode value="active"/>
-    </property>
-    <property>
-      <code value="national-notificationCategory"/>
-      <valueBoolean value="true"/>
-    </property>
-    <property>
-      <code value="federal-state-specific-notificationCategory"/>
-      <valueBoolean value="false"/>
     </property>
   </concept>
   <concept>
@@ -439,14 +224,6 @@
       <code value="usage-status"/>
       <valueCode value="active"/>
     </property>
-    <property>
-      <code value="national-notificationCategory"/>
-      <valueBoolean value="true"/>
-    </property>
-    <property>
-      <code value="federal-state-specific-notificationCategory"/>
-      <valueBoolean value="false"/>
-    </property>
   </concept>
   <concept>
     <code value="mybd"/>
@@ -454,14 +231,6 @@
     <property>
       <code value="usage-status"/>
       <valueCode value="active"/>
-    </property>
-    <property>
-      <code value="national-notificationCategory"/>
-      <valueBoolean value="true"/>
-    </property>
-    <property>
-      <code value="federal-state-specific-notificationCategory"/>
-      <valueBoolean value="false"/>
     </property>
   </concept>
   <concept>
@@ -471,14 +240,6 @@
       <code value="usage-status"/>
       <valueCode value="active"/>
     </property>
-    <property>
-      <code value="national-notificationCategory"/>
-      <valueBoolean value="true"/>
-    </property>
-    <property>
-      <code value="federal-state-specific-notificationCategory"/>
-      <valueBoolean value="false"/>
-    </property>
   </concept>
   <concept>
     <code value="neid"/>
@@ -486,14 +247,6 @@
     <property>
       <code value="usage-status"/>
       <valueCode value="active"/>
-    </property>
-    <property>
-      <code value="national-notificationCategory"/>
-      <valueBoolean value="true"/>
-    </property>
-    <property>
-      <code value="federal-state-specific-notificationCategory"/>
-      <valueBoolean value="false"/>
     </property>
   </concept>
   <concept>
@@ -503,14 +256,6 @@
       <code value="usage-status"/>
       <valueCode value="active"/>
     </property>
-    <property>
-      <code value="national-notificationCategory"/>
-      <valueBoolean value="true"/>
-    </property>
-    <property>
-      <code value="federal-state-specific-notificationCategory"/>
-      <valueBoolean value="false"/>
-    </property>
   </concept>
   <concept>
     <code value="ruvd"/>
@@ -518,14 +263,6 @@
     <property>
       <code value="usage-status"/>
       <valueCode value="active"/>
-    </property>
-    <property>
-      <code value="national-notificationCategory"/>
-      <valueBoolean value="true"/>
-    </property>
-    <property>
-      <code value="federal-state-specific-notificationCategory"/>
-      <valueBoolean value="false"/>
     </property>
   </concept>
   <concept>
@@ -535,14 +272,6 @@
       <code value="usage-status"/>
       <valueCode value="active"/>
     </property>
-    <property>
-      <code value="national-notificationCategory"/>
-      <valueBoolean value="true"/>
-    </property>
-    <property>
-      <code value="federal-state-specific-notificationCategory"/>
-      <valueBoolean value="false"/>
-    </property>
   </concept>
   <concept>
     <code value="spad"/>
@@ -550,14 +279,6 @@
     <property>
       <code value="usage-status"/>
       <valueCode value="active"/>
-    </property>
-    <property>
-      <code value="national-notificationCategory"/>
-      <valueBoolean value="true"/>
-    </property>
-    <property>
-      <code value="federal-state-specific-notificationCategory"/>
-      <valueBoolean value="false"/>
     </property>
   </concept>
   <concept>
@@ -567,14 +288,6 @@
       <code value="usage-status"/>
       <valueCode value="active"/>
     </property>
-    <property>
-      <code value="national-notificationCategory"/>
-      <valueBoolean value="true"/>
-    </property>
-    <property>
-      <code value="federal-state-specific-notificationCategory"/>
-      <valueBoolean value="false"/>
-    </property>
   </concept>
   <concept>
     <code value="sxxd"/>
@@ -582,14 +295,6 @@
     <property>
       <code value="usage-status"/>
       <valueCode value="active"/>
-    </property>
-    <property>
-      <code value="national-notificationCategory"/>
-      <valueBoolean value="true"/>
-    </property>
-    <property>
-      <code value="federal-state-specific-notificationCategory"/>
-      <valueBoolean value="false"/>
     </property>
   </concept>
   <concept>
@@ -599,14 +304,6 @@
       <code value="usage-status"/>
       <valueCode value="active"/>
     </property>
-    <property>
-      <code value="national-notificationCategory"/>
-      <valueBoolean value="true"/>
-    </property>
-    <property>
-      <code value="federal-state-specific-notificationCategory"/>
-      <valueBoolean value="false"/>
-    </property>
   </concept>
   <concept>
     <code value="vchd"/>
@@ -614,14 +311,6 @@
     <property>
       <code value="usage-status"/>
       <valueCode value="active"/>
-    </property>
-    <property>
-      <code value="national-notificationCategory"/>
-      <valueBoolean value="true"/>
-    </property>
-    <property>
-      <code value="federal-state-specific-notificationCategory"/>
-      <valueBoolean value="false"/>
     </property>
   </concept>
   <concept>
@@ -631,14 +320,6 @@
       <code value="usage-status"/>
       <valueCode value="active"/>
     </property>
-    <property>
-      <code value="national-notificationCategory"/>
-      <valueBoolean value="true"/>
-    </property>
-    <property>
-      <code value="federal-state-specific-notificationCategory"/>
-      <valueBoolean value="false"/>
-    </property>
   </concept>
   <concept>
     <code value="vzzd"/>
@@ -646,35 +327,6 @@
     <property>
       <code value="usage-status"/>
       <valueCode value="active"/>
-    </property>
-    <property>
-      <code value="national-notificationCategory"/>
-      <valueBoolean value="false"/>
-    </property>
-    <property>
-      <code value="federal-state-specific-notificationCategory"/>
-      <valueBoolean value="true"/>
-    </property>
-	<property>
-      <code value="federal-state"/>
-	  <valueCoding>
-        <system value="urn:iso:std:iso:3166-2:de"/>
-        <code value="DE-BB"/>
-      </valueCoding>
-    </property>	
-	<property>
-      <code value="federal-state"/>
-	  <valueCoding>
-        <system value="urn:iso:std:iso:3166-2:de"/>
-        <code value="DE-SN"/>
-      </valueCoding>
-    </property>
-	<property>
-      <code value="federal-state"/>
-	  <valueCoding>
-        <system value="urn:iso:std:iso:3166-2:de"/>
-        <code value="DE-ST"/>
-      </valueCoding>
     </property>
   </concept>
   <concept>
@@ -684,14 +336,6 @@
       <code value="usage-status"/>
       <valueCode value="active"/>
     </property>
-    <property>
-      <code value="national-notificationCategory"/>
-      <valueBoolean value="true"/>
-    </property>
-    <property>
-      <code value="federal-state-specific-notificationCategory"/>
-      <valueBoolean value="false"/>
-    </property>
   </concept>
   <concept>
     <code value="sspd"/>
@@ -699,14 +343,6 @@
     <property>
       <code value="usage-status"/>
       <valueCode value="active"/>
-    </property>
-    <property>
-      <code value="national-notificationCategory"/>
-      <valueBoolean value="true"/>
-    </property>
-    <property>
-      <code value="federal-state-specific-notificationCategory"/>
-      <valueBoolean value="false"/>
     </property>
   </concept>
   <concept>
@@ -716,14 +352,6 @@
       <code value="usage-status"/>
       <valueCode value="active"/>
     </property>
-    <property>
-      <code value="national-notificationCategory"/>
-      <valueBoolean value="true"/>
-    </property>
-    <property>
-      <code value="federal-state-specific-notificationCategory"/>
-      <valueBoolean value="false"/>
-    </property>
   </concept>
   <concept>
     <code value="opxd"/>
@@ -731,14 +359,6 @@
     <property>
       <code value="usage-status"/>
       <valueCode value="active"/>
-    </property>
-    <property>
-      <code value="national-notificationCategory"/>
-      <valueBoolean value="true"/>
-    </property>
-    <property>
-      <code value="federal-state-specific-notificationCategory"/>
-      <valueBoolean value="false"/>
     </property>
   </concept>
 </CodeSystem>
