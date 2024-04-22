@@ -1,0 +1,573 @@
+<Bundle xmlns="http://hl7.org/fhir">
+   <id value="5af0a1be-996c-3344-830e-af1dbefb4756"></id>
+   <meta>
+      <lastUpdated value="2022-12-23T09:50:00.000+01:00"></lastUpdated>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/NotificationBundleDisease"></profile>
+   </meta>
+   <identifier>
+      <system value="https://demis.rki.de/fhir/NamingSystem/NotificationBundleId"></system>
+      <value value="74dc8366-0099-3165-a385-55cf9528e404"></value>
+   </identifier>
+   <type value="document"></type>
+   <timestamp value="2022-12-23T09:50:00.000+01:00"></timestamp>
+   <entry>
+      <fullUrl value="https://demis.rki.de/fhir/Composition/10366f7d-4d1d-352c-ab5a-55a08e048e9f"></fullUrl>
+      <resource>
+         <Composition xmlns="http://hl7.org/fhir">
+            <id value="10366f7d-4d1d-352c-ab5a-55a08e048e9f"></id>
+            <meta>
+               <lastUpdated value="2022-12-23T09:50:00.000+01:00"></lastUpdated>
+               <profile value="https://demis.rki.de/fhir/StructureDefinition/NotificationDiseaseMYTD"></profile>
+            </meta>
+            <identifier>
+               <system value="https://demis.rki.de/fhir/NamingSystem/NotificationId"></system>
+               <value value="439c062a-854b-41bd-bcd3-1731fc1ba0d2"></value>
+            </identifier>
+            <status value="final"></status>
+            <type>
+               <coding>
+                  <system value="http://loinc.org"></system>
+                  <code value="34782-3"></code>
+                  <display value="Infectious disease Note"></display>
+               </coding>
+            </type>
+            <category>
+               <coding>
+                  <system value="https://demis.rki.de/fhir/CodeSystem/notificationType"></system>
+                  <code value="6.1_2"></code>
+                  <display value="Meldung gemäß §6 Absatz 1, 2"></display>
+               </coding>
+            </category>
+            <subject>
+               <reference value="Patient/b1b9c120-2963-3d82-af22-28828b011f52"></reference>
+            </subject>
+            <date value="2022-12-23T01:00:00+01:00"></date>
+            <author>
+               <reference value="PractitionerRole/41da2017-7c0b-395f-b1f3-6bff5661794d"></reference>
+            </author>
+            <title value="Meldung gemäß §6 Absatz 1, 2 IfSG"></title>
+            <section>
+               <title value="Diagnose"></title>
+               <code>
+                  <coding>
+                     <system value="https://demis.rki.de/fhir/CodeSystem/sectionCode"></system>
+                     <code value="diagnosis"></code>
+                     <display value="Diagnose"></display>
+                  </coding>
+               </code>
+               <entry>
+                  <reference value="Condition/5c5fcb71-bc14-3a79-b7cd-58934d6612d5"></reference>
+               </entry>
+            </section>
+            <section>
+               <title value="Meldetatbestandsübergreifende klinische und epidemiologische Angaben"></title>
+               <code>
+                  <coding>
+                     <system value="https://demis.rki.de/fhir/CodeSystem/sectionCode"></system>
+                     <code value="generalClinAndEpiInformation"></code>
+                     <display value="Meldetatbestandsübergreifende klinische und epidemiologische Angaben"></display>
+                  </coding>
+               </code>
+               <entry>
+                  <reference value="QuestionnaireResponse/88f3a841-ed61-33ad-8d6b-f6f8ca798fad"></reference>
+               </entry>
+            </section>
+            <section>
+               <title value="Meldetatbestandsspezifische klinische und epidemiologische Angaben"></title>
+               <code>
+                  <coding>
+                     <system value="https://demis.rki.de/fhir/CodeSystem/sectionCode"></system>
+                     <code value="specificClinAndEpiInformation"></code>
+                     <display value="Meldetatbestandsspezifische klinische und epidemiologische Angaben"></display>
+                  </coding>
+               </code>
+               <entry>
+                  <reference value="QuestionnaireResponse/2db11616-3af6-3394-98e4-379a40e489e2"></reference>
+               </entry>
+            </section>
+         </Composition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="https://demis.rki.de/fhir/Patient/b1b9c120-2963-3d82-af22-28828b011f52"></fullUrl>
+      <resource>
+         <Patient xmlns="http://hl7.org/fhir">
+            <id value="b1b9c120-2963-3d82-af22-28828b011f52"></id>
+            <meta>
+               <profile value="https://demis.rki.de/fhir/StructureDefinition/NotifiedPerson"></profile>
+            </meta>
+            <name>
+               <use value="official"></use>
+               <family value="Andersen"></family>
+               <given value="Mert"></given>
+            </name>
+            <telecom>
+               <system value="phone"></system>
+               <value value="03044948433"></value>
+            </telecom>
+            <gender value="male"></gender>
+            <birthDate value="1995-10-27"></birthDate>
+            <address>
+               <extension url="https://demis.rki.de/fhir/StructureDefinition/AddressUse">
+                  <valueCoding>
+                     <system value="https://demis.rki.de/fhir/CodeSystem/addressUse"></system>
+                     <code value="primary"></code>
+                  </valueCoding>
+               </extension>
+               <line value="Anna-Maria-Müller-Str. 55"></line>
+               <city value="Berlin"></city>
+               <postalCode value="13053"></postalCode>
+               <country value="DE"></country>
+            </address>
+         </Patient>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="https://demis.rki.de/fhir/Condition/5c5fcb71-bc14-3a79-b7cd-58934d6612d5"></fullUrl>
+      <resource>
+         <Condition xmlns="http://hl7.org/fhir">
+            <id value="5c5fcb71-bc14-3a79-b7cd-58934d6612d5"></id>
+            <meta>
+               <profile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseMYTD"></profile>
+            </meta>
+            <verificationStatus>
+               <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"></system>
+                  <code value="confirmed"></code>
+               </coding>
+            </verificationStatus>
+            <code>
+               <coding>
+                  <system value="https://demis.rki.de/fhir/CodeSystem/notificationDiseaseCategory"></system>
+                  <code value="mytd"></code>
+                  <display value="Tuberkulose"></display>
+               </coding>
+            </code>
+            <subject>
+               <reference value="Patient/b1b9c120-2963-3d82-af22-28828b011f52"></reference>
+            </subject>
+            <onsetDateTime value="2022-12-17"></onsetDateTime>
+            <recordedDate value="2022-12-23"></recordedDate>
+            <note>
+               <text value="Textueller Hinweis"></text>
+            </note>
+         </Condition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="https://demis.rki.de/fhir/Organization/2318e707-ad88-46a6-8be2-8731c7138bc6"></fullUrl>
+      <resource>
+         <Organization xmlns="http://hl7.org/fhir">
+            <id value="2318e707-ad88-46a6-8be2-8731c7138bc6"></id>
+            <meta>
+               <profile value="https://demis.rki.de/fhir/StructureDefinition/NotifierFacility"></profile>
+            </meta>
+            <identifier>
+               <system value="https://fhir.kbv.de/NamingSystem/KBV_NS_Base_BSNR"></system>
+               <value value="987653400"></value>
+            </identifier>
+            <type>
+               <coding>
+                  <system value="https://demis.rki.de/fhir/CodeSystem/organizationType"></system>
+                  <code value="physicianOffice"></code>
+               </coding>
+            </type>
+            <name value="Hausarztpraxis Hausdorf"></name>
+            <telecom>
+               <system value="phone"></system>
+               <value value="308976543210"></value>
+               <use value="work"></use>
+            </telecom>
+            <address>
+               <line value="Stadtweg 10"></line>
+               <city value="Berlin"></city>
+               <postalCode value="12142"></postalCode>
+               <country value="DE"></country>
+            </address>
+         </Organization>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="https://demis.rki.de/fhir/PractitionerRole/41da2017-7c0b-395f-b1f3-6bff5661794d"></fullUrl>
+      <resource>
+         <PractitionerRole xmlns="http://hl7.org/fhir">
+            <id value="41da2017-7c0b-395f-b1f3-6bff5661794d"></id>
+            <meta>
+               <profile value="https://demis.rki.de/fhir/StructureDefinition/NotifierRole"></profile>
+            </meta>
+            <organization>
+               <reference value="Organization/2318e707-ad88-46a6-8be2-8731c7138bc6"></reference>
+            </organization>
+         </PractitionerRole>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="https://demis.rki.de/fhir/Organization/eac3986c-e3ef-47c0-a5cf-d04703abd3de"></fullUrl>
+      <resource>
+         <Organization xmlns="http://hl7.org/fhir">
+            <id value="eac3986c-e3ef-47c0-a5cf-d04703abd3de"></id>
+            <meta>
+               <profile value="http://hl7.org/fhir/StructureDefinition/Organization"></profile>
+            </meta>
+            <type>
+               <coding>
+                  <system value="https://demis.rki.de/fhir/CodeSystem/organizationType"></system>
+                  <code value="hospitalLab"></code>
+               </coding>
+            </type>
+            <name value="Sankt Gertrauden Krankenhaus - Krankenhauslabor"></name>
+            <telecom>
+               <system value="phone"></system>
+               <value value="309876543211"></value>
+               <use value="work"></use>
+            </telecom>
+            <address>
+               <line value="Dingsweg 321"></line>
+               <city value="Berlin"></city>
+               <postalCode value="13055"></postalCode>
+               <country value="DE"></country>
+            </address>
+         </Organization>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="https://demis.rki.de/fhir/QuestionnaireResponse/88f3a841-ed61-33ad-8d6b-f6f8ca798fad"></fullUrl>
+      <resource>
+         <QuestionnaireResponse xmlns="http://hl7.org/fhir">
+            <id value="88f3a841-ed61-33ad-8d6b-f6f8ca798fad"></id>
+            <meta>
+               <profile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseInformationCommon"></profile>
+            </meta>
+            <questionnaire value="https://demis.rki.de/fhir/Questionnaire/DiseaseQuestionsCommon"></questionnaire>
+            <status value="completed"></status>
+            <subject>
+               <reference value="Patient/b1b9c120-2963-3d82-af22-28828b011f52"></reference>
+            </subject>
+            <item>
+               <linkId value="isDead"></linkId>
+               <answer>
+                  <valueCoding>
+                     <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+                     <code value="no"></code>
+                     <display value="Nein"></display>
+                  </valueCoding>
+               </answer>
+            </item>
+            <item>
+               <linkId value="militaryAffiliation"></linkId>
+               <answer>
+                  <valueCoding>
+                     <system value="https://demis.rki.de/fhir/CodeSystem/militaryAffiliation"></system>
+                     <code value="noReferenceToBundeswehr"></code>
+                     <display value="Kein Bezug zur BW"></display>
+                  </valueCoding>
+               </answer>
+            </item>
+            <item>
+               <linkId value="labSpecimenTaken"></linkId>
+               <answer>
+                  <valueCoding>
+                     <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+                     <code value="yes"></code>
+                     <display value="Ja"></display>
+                  </valueCoding>
+                  <item>
+                     <linkId value="labSpecimenLab"></linkId>
+                     <answer>
+                        <valueReference>
+                           <reference value="Organization/eac3986c-e3ef-47c0-a5cf-d04703abd3de"></reference>
+                        </valueReference>
+                     </answer>
+                  </item>
+               </answer>
+            </item>
+            <item>
+               <linkId value="hospitalized"></linkId>
+               <answer>
+                  <valueCoding>
+                     <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+                     <code value="no"></code>
+                     <display value="Nein"></display>
+                  </valueCoding>
+               </answer>
+            </item>
+            <item>
+               <linkId value="infectProtectFacility"></linkId>
+               <answer>
+                  <valueCoding>
+                     <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+                     <code value="no"></code>
+                     <display value="Nein"></display>
+                  </valueCoding>
+               </answer>
+            </item>
+            <item>
+               <linkId value="placeExposure"></linkId>
+               <answer>
+                  <valueCoding>
+                     <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+                     <code value="yes"></code>
+                     <display value="Ja"></display>
+                  </valueCoding>
+                  <item>
+                     <linkId value="placeExposureGroup"></linkId>
+                     <item>
+                        <linkId value="placeExposureBegin"></linkId>
+                        <answer>
+                           <valueDate value="2022-11-12"></valueDate>
+                        </answer>
+                     </item>
+                     <item>
+                        <linkId value="placeExposureEnd"></linkId>
+                        <answer>
+                           <valueDate value="2022-12-20"></valueDate>
+                        </answer>
+                     </item>
+                     <item>
+                        <linkId value="placeExposureRegion"></linkId>
+                        <answer>
+                           <valueCoding>
+                              <system value="http://snomed.info/sct"></system>
+                              <code value="21000246"></code>
+                              <display value="Bangladesch"></display>
+                           </valueCoding>
+                        </answer>
+                     </item>
+                     <item>
+                        <linkId value="placeExposureHint"></linkId>
+                        <answer>
+                           <valueString value="Facharzt im Auslandsjahr."></valueString>
+                        </answer>
+                     </item>
+                  </item>
+               </answer>
+            </item>
+            <item>
+               <linkId value="organDonation"></linkId>
+               <answer>
+                  <valueCoding>
+                     <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+                     <code value="no"></code>
+                     <display value="Nein"></display>
+                  </valueCoding>
+               </answer>
+            </item>
+            <item>
+               <linkId value="additionalInformation"></linkId>
+               <answer>
+                  <valueString value="Erste Infektion war bekannt in Bangladesh nach 4 Monaten Aufenthalt"></valueString>
+               </answer>
+            </item>
+         </QuestionnaireResponse>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="https://demis.rki.de/fhir/QuestionnaireResponse/2db11616-3af6-3394-98e4-379a40e489e2"></fullUrl>
+      <resource>
+         <QuestionnaireResponse xmlns="http://hl7.org/fhir">
+            <id value="2db11616-3af6-3394-98e4-379a40e489e2"></id>
+            <meta>
+               <profile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseInformationMYTD"></profile>
+            </meta>
+            <questionnaire value="https://demis.rki.de/fhir/Questionnaire/DiseaseQuestionsMYTD"></questionnaire>
+            <status value="completed"></status>
+            <subject>
+               <reference value="Patient/b1b9c120-2963-3d82-af22-28828b011f52"></reference>
+            </subject>
+            <item>
+               <linkId value="immunization"></linkId>
+               <answer>
+                  <valueCoding>
+                     <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"></system>
+                     <code value="ASKU"></code>
+                     <display value="asked but unknown"></display>
+                  </valueCoding>
+               </answer>
+            </item>
+            <item>
+               <linkId value="infectionEnvironmentSettingKind"></linkId>
+               <answer>
+                  <valueCoding>
+                     <system value="http://snomed.info/sct"></system>
+                     <code value="74964007"></code>
+                     <display value="andere/sonstige"></display>
+                  </valueCoding>
+                  <item>
+                     <linkId value="infectionEnvironmentSettingGroup"></linkId>
+                     <item>
+                        <linkId value="infectionEnvironmentSettingBegin"></linkId>
+                        <answer>
+                           <valueDate value="2022-11-12"></valueDate>
+                        </answer>
+                     </item>
+                     <item>
+                        <linkId value="infectionEnvironmentSettingEnd"></linkId>
+                        <answer>
+                           <valueDate value="2022-12-20"></valueDate>
+                        </answer>
+                     </item>
+                  </item>
+               </answer>
+            </item>
+            <item>
+               <linkId value="nationalityGroup"></linkId>
+               <item>
+                  <linkId value="nationality"></linkId>
+                  <answer>
+                     <valueCoding>
+                        <system value="urn:iso:std:iso:3166"></system>
+                        <code value="DE"></code>
+                        <display value="Deutschland"></display>
+                     </valueCoding>
+                  </answer>
+               </item>
+               <item>
+                  <linkId value="countryOfBirth"></linkId>
+                  <answer>
+                     <valueCoding>
+                        <system value="urn:iso:std:iso:3166"></system>
+                        <code value="DE"></code>
+                        <display value="Deutschland"></display>
+                     </valueCoding>
+                  </answer>
+               </item>
+            </item>
+            <item>
+               <linkId value="countryOfBirthParentGroup"></linkId>
+               <item>
+                  <linkId value="countryOfBirthMother"></linkId>
+                  <answer>
+                     <valueCoding>
+                        <system value="urn:iso:std:iso:3166"></system>
+                        <code value="DE"></code>
+                        <display value="Deutschland"></display>
+                     </valueCoding>
+                  </answer>
+               </item>
+               <item>
+                  <linkId value="countryOfBirthFather"></linkId>
+                  <answer>
+                     <valueCoding>
+                        <system value="urn:iso:std:iso:3166"></system>
+                        <code value="DE"></code>
+                        <display value="Deutschland"></display>
+                     </valueCoding>
+                  </answer>
+               </item>
+            </item>
+            <item>
+               <linkId value="causeDiagnosis"></linkId>
+               <answer>
+                  <valueCoding>
+                     <system value="http://snomed.info/sct"></system>
+                     <code value="11999007+308537004"></code>
+                     <display value="Überwachung gesunder Befundträger nach früherer Tuberkulose"></display>
+                  </valueCoding>
+               </answer>
+            </item>
+            <item>
+               <linkId value="statusDiagnosis"></linkId>
+               <answer>
+                  <valueCoding>
+                     <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+                     <code value="yes"></code>
+                     <display value="Ja"></display>
+                  </valueCoding>
+                  <item>
+                     <linkId value="treatment"></linkId>
+                     <answer>
+                        <valueCoding>
+                           <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+                           <code value="yes"></code>
+                           <display value="Ja"></display>
+                        </valueCoding>
+                        <item>
+                           <linkId value="treatmentBegin"></linkId>
+                           <answer>
+                              <valueDate value="2022-12-23"></valueDate>
+                           </answer>
+                        </item>
+                        <item>
+                           <linkId value="resultOfTreatment"></linkId>
+                           <answer>
+                              <valueCoding>
+                                 <system value="http://snomed.info/sct"></system>
+                                 <code value="371001000"></code>
+                                 <display value="Abschluss der Behandlung mit Nachweis einer negativen Kultur im letzten Behandlungsmonat und zu wenigstens einem früheren Zeitpunkt"></display>
+                              </valueCoding>
+                           </answer>
+                        </item>
+                     </answer>
+                  </item>
+               </answer>
+            </item>
+            <item>
+               <linkId value="majorSite"></linkId>
+               <answer>
+                  <valueCoding>
+                     <system value="http://snomed.info/sct"></system>
+                     <code value="154283005"></code>
+                     <display value="Lunge (Lungenparenchym, Tracheobronchialbaum, Kehlkopf)"></display>
+                  </valueCoding>
+               </answer>
+            </item>
+            <item>
+               <linkId value="minorSite"></linkId>
+               <answer>
+                  <valueCoding>
+                     <system value="http://snomed.info/sct"></system>
+                     <code value="260413007"></code>
+                     <display value="kein weiteres Organ betroffen"></display>
+                  </valueCoding>
+               </answer>
+            </item>
+            <item>
+               <linkId value="prevTreatment"></linkId>
+               <answer>
+                  <valueCoding>
+                     <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+                     <code value="yes"></code>
+                     <display value="Ja"></display>
+                  </valueCoding>
+                  <item>
+                     <linkId value="statusPrevTreatment"></linkId>
+                     <answer>
+                        <valueCoding>
+                           <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+                           <code value="yes"></code>
+                           <display value="Ja"></display>
+                        </valueCoding>
+                        <item>
+                           <linkId value="prevTreatmentYear"></linkId>
+                           <answer>
+                              <valueDate value="2022"></valueDate>
+                           </answer>
+                        </item>
+                        <item>
+                           <linkId value="resultOfPrevTreatment"></linkId>
+                           <answer>
+                              <valueCoding>
+                                 <system value="http://snomed.info/sct"></system>
+                                 <code value="182992009"></code>
+                                 <display value="Abschluss der Behandlung ohne Nachweis einer negativen Kultur"></display>
+                              </valueCoding>
+                           </answer>
+                        </item>
+                     </answer>
+                  </item>
+               </answer>
+            </item>
+            <item>
+               <linkId value="outbreak"></linkId>
+               <answer>
+                  <valueCoding>
+                     <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+                     <code value="no"></code>
+                     <display value="Nein"></display>
+                  </valueCoding>
+               </answer>
+            </item>
+         </QuestionnaireResponse>
+      </resource>
+   </entry>
+</Bundle>
