@@ -20,6 +20,10 @@
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Organization",
   "derivation": "constraint",
   "snapshot": {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
+      "valueString": "4.0.1"
+    } ],
     "element": [ {
       "id": "Organization",
       "path": "Organization",
@@ -841,6 +845,13 @@
       } ]
     }, {
       "id": "Organization.identifier:reportingSite.system",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode": "normative"
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+        "valueCode": "4.0.0"
+      } ],
       "path": "Organization.identifier.system",
       "short": "The namespace for the identifier value",
       "definition": "Establishes the namespace for the value - that is, a URL that describes a set values that are unique.",
@@ -884,6 +895,13 @@
       } ]
     }, {
       "id": "Organization.identifier:reportingSite.value",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode": "normative"
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+        "valueCode": "4.0.0"
+      } ],
       "path": "Organization.identifier.value",
       "short": "The value that is unique",
       "definition": "The portion of the identifier typically relevant to the user and which is unique within the context of the system.",
@@ -1327,6 +1345,13 @@
       } ]
     }, {
       "id": "Organization.telecom:phone.system",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode": "normative"
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+        "valueCode": "4.0.0"
+      } ],
       "path": "Organization.telecom.system",
       "short": "phone | fax | email | pager | url | sms | other",
       "definition": "Telecommunications form for contact point - what communications system is required to make use of the contact.",
@@ -1374,6 +1399,13 @@
       } ]
     }, {
       "id": "Organization.telecom:phone.value",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode": "normative"
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+        "valueCode": "4.0.0"
+      } ],
       "path": "Organization.telecom.value",
       "short": "The actual contact point details",
       "definition": "The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address).",
@@ -1650,6 +1682,13 @@
       } ]
     }, {
       "id": "Organization.telecom:fax.system",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode": "normative"
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+        "valueCode": "4.0.0"
+      } ],
       "path": "Organization.telecom.system",
       "short": "phone | fax | email | pager | url | sms | other",
       "definition": "Telecommunications form for contact point - what communications system is required to make use of the contact.",
@@ -1697,6 +1736,13 @@
       } ]
     }, {
       "id": "Organization.telecom:fax.value",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode": "normative"
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+        "valueCode": "4.0.0"
+      } ],
       "path": "Organization.telecom.value",
       "short": "The actual contact point details",
       "definition": "The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address).",
@@ -1973,6 +2019,13 @@
       } ]
     }, {
       "id": "Organization.telecom:email.system",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode": "normative"
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+        "valueCode": "4.0.0"
+      } ],
       "path": "Organization.telecom.system",
       "short": "phone | fax | email | pager | url | sms | other",
       "definition": "Telecommunications form for contact point - what communications system is required to make use of the contact.",
@@ -2020,6 +2073,13 @@
       } ]
     }, {
       "id": "Organization.telecom:email.value",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode": "normative"
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+        "valueCode": "4.0.0"
+      } ],
       "path": "Organization.telecom.value",
       "short": "The actual contact point details",
       "definition": "The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address).",
@@ -2179,9 +2239,9 @@
     }, {
       "id": "Organization.address",
       "path": "Organization.address",
-      "short": "Eine Adresse gemäß postalischer Konventionen",
-      "definition": "Eine Adresse gemäß postalischer Konventionen (im Gegensatz zu bspw. GPS-Koordinaten). Die Adresse kann sowohl zur Zustellung von Postsendungen oder zum Aufsuchen von Orten, die keine gültige Postadresse haben, verwendet werden.\r\n\r\nDie verwendeten Extensions in diesem Profil bilden die Struktur der Adresse ab, wie sie im VSDM-Format der elektronischen Versichertenkarte verwendet wird.\r\n\r\nInsbesondere bei ausländischen Adresse oder Adressen, die nicht durch Einlesen einer elektronischen Versichertenkarte erfasst wurden, sind abweichende Strukturen möglich. Die Verwendung der Extensions ist nicht verpflichtend.",
-      "comment": "Note: address is intended to describe postal addresses for administrative purposes, not to describe absolute geographical coordinates.  Postal addresses are often used as proxies for physical locations (also see the [Location](location.html#) resource).",
+      "short": "An address for the organization",
+      "definition": "An address for the organization.",
+      "comment": "Organization may have multiple addresses with different uses or applicable periods. The use code 'home' is not to be used.",
       "requirements": "May need to keep track of the organization's addresses for contacting, billing or reporting requirements.",
       "min": 0,
       "max": "*",
@@ -2194,17 +2254,7 @@
         "code": "Address",
         "profile": [ "http://fhir.de/StructureDefinition/address-de-basis" ]
       } ],
-      "example": [ {
-        "label": "Beispiel für einfache Adresse",
-        "valueAddress": {
-          "use": "home",
-          "type": "postal",
-          "line": [ "Musterweg 42" ],
-          "city": "Musterhausen",
-          "postalCode": "99999"
-        }
-      } ],
-      "condition": [ "ele-1" ],
+      "condition": [ "org-2" ],
       "constraint": [ {
         "key": "ele-1",
         "severity": "error",
@@ -2212,48 +2262,6 @@
         "expression": "hasValue() or (children().count() > id.count())",
         "xpath": "@value|f:*|h:div",
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
-      }, {
-        "key": "add-1",
-        "severity": "error",
-        "human": "Wenn die Extension 'Hausnummer' verwendet wird, muss auch Address.line gefüllt werden",
-        "expression": "line.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber').empty() or $this.hasValue())",
-        "source": "http://fhir.de/StructureDefinition/address-de-basis"
-      }, {
-        "key": "add-2",
-        "severity": "error",
-        "human": "Wenn die Extension 'Strasse' verwendet wird, muss auch Address.line gefüllt werden",
-        "expression": "line.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName').empty() or $this.hasValue())",
-        "source": "http://fhir.de/StructureDefinition/address-de-basis"
-      }, {
-        "key": "add-3",
-        "severity": "error",
-        "human": "Wenn die Extension 'Postfach' verwendet wird, muss auch Address.line gefüllt werden",
-        "expression": "line.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox').empty() or $this.hasValue())",
-        "source": "http://fhir.de/StructureDefinition/address-de-basis"
-      }, {
-        "key": "add-4",
-        "severity": "warning",
-        "human": "Eine Postfach-Adresse darf nicht vom Type \"physical\" oder \"both\" sein.",
-        "expression": "line.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox').empty() or $this.hasValue()) or type='postal' or type.empty()",
-        "source": "http://fhir.de/StructureDefinition/address-de-basis"
-      }, {
-        "key": "add-5",
-        "severity": "error",
-        "human": "Wenn die Extension 'Adresszusatz' verwendet wird, muss auch Address.line gefüllt werden",
-        "expression": "line.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator').empty() or $this.hasValue())",
-        "source": "http://fhir.de/StructureDefinition/address-de-basis"
-      }, {
-        "key": "add-6",
-        "severity": "warning",
-        "human": "Wenn die Extension 'Postfach' verwendet wird, dürfen die Extensions 'Strasse' und 'Hausnummer' nicht verwendet werden",
-        "expression": "line.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox').empty() or ($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName').empty() and $this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber').empty()))",
-        "source": "http://fhir.de/StructureDefinition/address-de-basis"
-      }, {
-        "key": "add-7",
-        "severity": "warning",
-        "human": "Wenn die Extension 'Precinct' (Stadtteil) verwendet wird, dann muss diese Information auch als separates line-item abgebildet sein.",
-        "expression": "extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct').empty() or all(line contains extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct').value.ofType(string))",
-        "source": "http://fhir.de/StructureDefinition/address-de-basis"
       }, {
         "key": "org-2",
         "severity": "error",
@@ -2263,18 +2271,16 @@
         "source": "http://hl7.org/fhir/StructureDefinition/Organization"
       } ],
       "isModifier": false,
+      "isSummary": false,
       "mapping": [ {
-        "identity": "rim",
-        "map": "n/a"
-      }, {
         "identity": "v2",
-        "map": "XAD"
+        "map": "ORC-23?"
       }, {
         "identity": "rim",
-        "map": "AD"
+        "map": ".address"
       }, {
         "identity": "servd",
-        "map": "Address"
+        "map": "./PrimaryAddress and ./OtherAddresses"
       } ]
     }, {
       "id": "Organization.partOf",
@@ -2672,6 +2678,13 @@
       } ]
     }, {
       "id": "Organization.contact.telecom:phone.system",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode": "normative"
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+        "valueCode": "4.0.0"
+      } ],
       "path": "Organization.contact.telecom.system",
       "short": "phone | fax | email | pager | url | sms | other",
       "definition": "Telecommunications form for contact point - what communications system is required to make use of the contact.",
@@ -2719,6 +2732,13 @@
       } ]
     }, {
       "id": "Organization.contact.telecom:phone.value",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode": "normative"
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+        "valueCode": "4.0.0"
+      } ],
       "path": "Organization.contact.telecom.value",
       "short": "The actual contact point details",
       "definition": "The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address).",
@@ -2983,6 +3003,13 @@
       } ]
     }, {
       "id": "Organization.contact.telecom:fax.system",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode": "normative"
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+        "valueCode": "4.0.0"
+      } ],
       "path": "Organization.contact.telecom.system",
       "short": "phone | fax | email | pager | url | sms | other",
       "definition": "Telecommunications form for contact point - what communications system is required to make use of the contact.",
@@ -3030,6 +3057,13 @@
       } ]
     }, {
       "id": "Organization.contact.telecom:fax.value",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode": "normative"
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+        "valueCode": "4.0.0"
+      } ],
       "path": "Organization.contact.telecom.value",
       "short": "The actual contact point details",
       "definition": "The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address).",
@@ -3294,6 +3328,13 @@
       } ]
     }, {
       "id": "Organization.contact.telecom:email.system",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode": "normative"
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+        "valueCode": "4.0.0"
+      } ],
       "path": "Organization.contact.telecom.system",
       "short": "phone | fax | email | pager | url | sms | other",
       "definition": "Telecommunications form for contact point - what communications system is required to make use of the contact.",
@@ -3341,6 +3382,13 @@
       } ]
     }, {
       "id": "Organization.contact.telecom:email.value",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode": "normative"
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+        "valueCode": "4.0.0"
+      } ],
       "path": "Organization.contact.telecom.value",
       "short": "The actual contact point details",
       "definition": "The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address).",
@@ -3500,9 +3548,8 @@
     }, {
       "id": "Organization.contact.address",
       "path": "Organization.contact.address",
-      "short": "Eine Adresse gemäß postalischer Konventionen",
-      "definition": "Eine Adresse gemäß postalischer Konventionen (im Gegensatz zu bspw. GPS-Koordinaten). Die Adresse kann sowohl zur Zustellung von Postsendungen oder zum Aufsuchen von Orten, die keine gültige Postadresse haben, verwendet werden.\r\n\r\nDie verwendeten Extensions in diesem Profil bilden die Struktur der Adresse ab, wie sie im VSDM-Format der elektronischen Versichertenkarte verwendet wird.\r\n\r\nInsbesondere bei ausländischen Adresse oder Adressen, die nicht durch Einlesen einer elektronischen Versichertenkarte erfasst wurden, sind abweichende Strukturen möglich. Die Verwendung der Extensions ist nicht verpflichtend.",
-      "comment": "Note: address is intended to describe postal addresses for administrative purposes, not to describe absolute geographical coordinates.  Postal addresses are often used as proxies for physical locations (also see the [Location](location.html#) resource).",
+      "short": "Visiting or postal addresses for the contact",
+      "definition": "Visiting or postal addresses for the contact.",
       "requirements": "May need to keep track of a contact party's address for contacting, billing or reporting requirements.",
       "min": 0,
       "max": "1",
@@ -3515,17 +3562,6 @@
         "code": "Address",
         "profile": [ "http://fhir.de/StructureDefinition/address-de-basis" ]
       } ],
-      "example": [ {
-        "label": "Beispiel für einfache Adresse",
-        "valueAddress": {
-          "use": "home",
-          "type": "postal",
-          "line": [ "Musterweg 42" ],
-          "city": "Musterhausen",
-          "postalCode": "99999"
-        }
-      } ],
-      "condition": [ "ele-1" ],
       "constraint": [ {
         "key": "ele-1",
         "severity": "error",
@@ -3533,62 +3569,15 @@
         "expression": "hasValue() or (children().count() > id.count())",
         "xpath": "@value|f:*|h:div",
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
-      }, {
-        "key": "add-1",
-        "severity": "error",
-        "human": "Wenn die Extension 'Hausnummer' verwendet wird, muss auch Address.line gefüllt werden",
-        "expression": "line.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber').empty() or $this.hasValue())",
-        "source": "http://fhir.de/StructureDefinition/address-de-basis"
-      }, {
-        "key": "add-2",
-        "severity": "error",
-        "human": "Wenn die Extension 'Strasse' verwendet wird, muss auch Address.line gefüllt werden",
-        "expression": "line.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName').empty() or $this.hasValue())",
-        "source": "http://fhir.de/StructureDefinition/address-de-basis"
-      }, {
-        "key": "add-3",
-        "severity": "error",
-        "human": "Wenn die Extension 'Postfach' verwendet wird, muss auch Address.line gefüllt werden",
-        "expression": "line.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox').empty() or $this.hasValue())",
-        "source": "http://fhir.de/StructureDefinition/address-de-basis"
-      }, {
-        "key": "add-4",
-        "severity": "warning",
-        "human": "Eine Postfach-Adresse darf nicht vom Type \"physical\" oder \"both\" sein.",
-        "expression": "line.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox').empty() or $this.hasValue()) or type='postal' or type.empty()",
-        "source": "http://fhir.de/StructureDefinition/address-de-basis"
-      }, {
-        "key": "add-5",
-        "severity": "error",
-        "human": "Wenn die Extension 'Adresszusatz' verwendet wird, muss auch Address.line gefüllt werden",
-        "expression": "line.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator').empty() or $this.hasValue())",
-        "source": "http://fhir.de/StructureDefinition/address-de-basis"
-      }, {
-        "key": "add-6",
-        "severity": "warning",
-        "human": "Wenn die Extension 'Postfach' verwendet wird, dürfen die Extensions 'Strasse' und 'Hausnummer' nicht verwendet werden",
-        "expression": "line.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox').empty() or ($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName').empty() and $this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber').empty()))",
-        "source": "http://fhir.de/StructureDefinition/address-de-basis"
-      }, {
-        "key": "add-7",
-        "severity": "warning",
-        "human": "Wenn die Extension 'Precinct' (Stadtteil) verwendet wird, dann muss diese Information auch als separates line-item abgebildet sein.",
-        "expression": "extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct').empty() or all(line contains extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct').value.ofType(string))",
-        "source": "http://fhir.de/StructureDefinition/address-de-basis"
       } ],
       "isModifier": false,
+      "isSummary": false,
       "mapping": [ {
-        "identity": "rim",
-        "map": "n/a"
-      }, {
         "identity": "v2",
-        "map": "XAD"
+        "map": "PID-11"
       }, {
         "identity": "rim",
-        "map": "AD"
-      }, {
-        "identity": "servd",
-        "map": "Address"
+        "map": "./addr"
       } ]
     }, {
       "id": "Organization.endpoint",

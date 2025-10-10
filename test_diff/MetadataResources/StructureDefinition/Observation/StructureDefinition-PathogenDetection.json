@@ -24,6 +24,10 @@
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
   "derivation": "constraint",
   "snapshot": {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
+      "valueString": "4.0.1"
+    } ],
     "element": [ {
       "id": "Observation",
       "path": "Observation",
@@ -354,7 +358,8 @@
         "source": "http://hl7.org/fhir/StructureDefinition/Extension"
       } ],
       "mustSupport": true,
-      "isModifier": false
+      "isModifier": false,
+      "isSummary": false
     }, {
       "id": "Observation.extension:triggeredBy.id",
       "path": "Observation.extension.id",

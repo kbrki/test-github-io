@@ -15,6 +15,10 @@
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Specimen",
   "derivation": "constraint",
   "snapshot": {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
+      "valueString": "4.0.1"
+    } ],
     "element": [ {
       "id": "Specimen",
       "path": "Specimen",
@@ -1993,6 +1997,7 @@
       } ],
       "mustSupport": true,
       "isModifier": false,
+      "isSummary": false,
       "mapping": [ {
         "identity": "rim",
         "map": "n/a"
@@ -2035,6 +2040,7 @@
       } ],
       "mustSupport": true,
       "isModifier": false,
+      "isSummary": false,
       "mapping": [ {
         "identity": "rim",
         "map": "n/a"

@@ -20,6 +20,10 @@
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Bundle",
   "derivation": "constraint",
   "snapshot": {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
+      "valueString": "4.0.1"
+    } ],
     "element": [ {
       "id": "Bundle",
       "path": "Bundle",
@@ -508,6 +512,13 @@
       } ]
     }, {
       "id": "Bundle.type",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode": "normative"
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+        "valueCode": "4.0.0"
+      } ],
       "path": "Bundle.type",
       "short": "document | message | transaction | transaction-response | batch | batch-response | history | searchset | collection",
       "definition": "Indicates the purpose of this bundle - how it is intended to be used.",

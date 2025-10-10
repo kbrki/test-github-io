@@ -20,6 +20,10 @@
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Organization",
   "derivation": "constraint",
   "snapshot": {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
+      "valueString": "4.0.1"
+    } ],
     "element": [ {
       "id": "Organization",
       "path": "Organization",
@@ -2629,7 +2633,7 @@
       "path": "Organization.address",
       "short": "Einrichtungsadresse",
       "definition": "Einrichtungsadresse",
-      "comment": "Note: address is intended to describe postal addresses for administrative purposes, not to describe absolute geographical coordinates.  Postal addresses are often used as proxies for physical locations (also see the [Location](location.html#) resource).",
+      "comment": "Organization may have multiple addresses with different uses or applicable periods. The use code 'home' is not to be used.",
       "requirements": "May need to keep track of the organization's addresses for contacting, billing or reporting requirements.",
       "min": 1,
       "max": "1",
@@ -2642,17 +2646,7 @@
         "code": "Address",
         "profile": [ "http://fhir.de/StructureDefinition/address-de-basis" ]
       } ],
-      "example": [ {
-        "label": "Beispiel für einfache Adresse",
-        "valueAddress": {
-          "use": "home",
-          "type": "postal",
-          "line": [ "Musterweg 42" ],
-          "city": "Musterhausen",
-          "postalCode": "99999"
-        }
-      } ],
-      "condition": [ "ele-1" ],
+      "condition": [ "org-2" ],
       "constraint": [ {
         "key": "ele-1",
         "severity": "error",
@@ -2660,48 +2654,6 @@
         "expression": "hasValue() or (children().count() > id.count())",
         "xpath": "@value|f:*|h:div",
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
-      }, {
-        "key": "add-1",
-        "severity": "error",
-        "human": "Wenn die Extension 'Hausnummer' verwendet wird, muss auch Address.line gefüllt werden",
-        "expression": "line.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber').empty() or $this.hasValue())",
-        "source": "http://fhir.de/StructureDefinition/address-de-basis"
-      }, {
-        "key": "add-2",
-        "severity": "error",
-        "human": "Wenn die Extension 'Strasse' verwendet wird, muss auch Address.line gefüllt werden",
-        "expression": "line.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName').empty() or $this.hasValue())",
-        "source": "http://fhir.de/StructureDefinition/address-de-basis"
-      }, {
-        "key": "add-3",
-        "severity": "error",
-        "human": "Wenn die Extension 'Postfach' verwendet wird, muss auch Address.line gefüllt werden",
-        "expression": "line.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox').empty() or $this.hasValue())",
-        "source": "http://fhir.de/StructureDefinition/address-de-basis"
-      }, {
-        "key": "add-4",
-        "severity": "warning",
-        "human": "Eine Postfach-Adresse darf nicht vom Type \"physical\" oder \"both\" sein.",
-        "expression": "line.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox').empty() or $this.hasValue()) or type='postal' or type.empty()",
-        "source": "http://fhir.de/StructureDefinition/address-de-basis"
-      }, {
-        "key": "add-5",
-        "severity": "error",
-        "human": "Wenn die Extension 'Adresszusatz' verwendet wird, muss auch Address.line gefüllt werden",
-        "expression": "line.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator').empty() or $this.hasValue())",
-        "source": "http://fhir.de/StructureDefinition/address-de-basis"
-      }, {
-        "key": "add-6",
-        "severity": "warning",
-        "human": "Wenn die Extension 'Postfach' verwendet wird, dürfen die Extensions 'Strasse' und 'Hausnummer' nicht verwendet werden",
-        "expression": "line.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox').empty() or ($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName').empty() and $this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber').empty()))",
-        "source": "http://fhir.de/StructureDefinition/address-de-basis"
-      }, {
-        "key": "add-7",
-        "severity": "warning",
-        "human": "Wenn die Extension 'Precinct' (Stadtteil) verwendet wird, dann muss diese Information auch als separates line-item abgebildet sein.",
-        "expression": "extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct').empty() or all(line contains extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct').value.ofType(string))",
-        "source": "http://fhir.de/StructureDefinition/address-de-basis"
       }, {
         "key": "org-2",
         "severity": "error",
@@ -2712,18 +2664,16 @@
       } ],
       "mustSupport": true,
       "isModifier": false,
+      "isSummary": false,
       "mapping": [ {
-        "identity": "rim",
-        "map": "n/a"
-      }, {
         "identity": "v2",
-        "map": "XAD"
+        "map": "ORC-23?"
       }, {
         "identity": "rim",
-        "map": "AD"
+        "map": ".address"
       }, {
         "identity": "servd",
-        "map": "Address"
+        "map": "./PrimaryAddress and ./OtherAddresses"
       } ]
     }, {
       "id": "Organization.address.id",

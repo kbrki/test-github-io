@@ -20,6 +20,10 @@
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Practitioner",
   "derivation": "constraint",
   "snapshot": {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
+      "valueString": "4.0.1"
+    } ],
     "element": [ {
       "id": "Practitioner",
       "path": "Practitioner",
@@ -591,6 +595,7 @@
       } ],
       "mustSupport": true,
       "isModifier": false,
+      "isSummary": false,
       "mapping": [ {
         "identity": "rim",
         "map": "n/a"
@@ -717,7 +722,7 @@
       "path": "Practitioner.name",
       "short": "Name des Melders",
       "definition": "Name des Melders. Mindestens ein Vorname und der Nachname müssen angegeben werden.",
-      "comment": "Names may be changed, or repudiated, or people may have different names in different contexts. Names may be divided into parts of different type that have variable significance depending on context, though the division into parts does not always matter. With personal names, the different parts may or may not be imbued with some implicit meaning; various cultures associate different importance with the name parts and the degree to which systems must care about name parts around the world varies widely.",
+      "comment": "The selection of the use property should ensure that there is a single usual name specified, and others use the nickname (alias), old, or other values as appropriate.    In general, select the value to be used in the ResourceReference.display based on this:  1. There is more than 1 name 2. Use = usual 3. Period is current to the date of the usage 4. Use = official 5. Other order as decided by internal business rules.",
       "requirements": "The name(s) that a Practitioner is known by. Where there are multiple, the name that the practitioner is usually known as should be used in the display.",
       "min": 1,
       "max": "1",
@@ -730,7 +735,6 @@
         "code": "HumanName",
         "profile": [ "http://fhir.de/StructureDefinition/humanname-de-basis" ]
       } ],
-      "condition": [ "ele-1" ],
       "constraint": [ {
         "key": "ele-1",
         "severity": "error",
@@ -738,45 +742,19 @@
         "expression": "hasValue() or (children().count() > id.count())",
         "xpath": "@value|f:*|h:div",
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
-      }, {
-        "key": "hum-1",
-        "severity": "error",
-        "human": "Wenn die Extension 'namenszusatz' verwendet wird, dann muss der vollständige Name im Attribut 'family' angegeben werden",
-        "expression": "family.extension('http://fhir.de/StructureDefinition/humanname-namenszusatz').empty() or family.hasValue()",
-        "source": "http://fhir.de/StructureDefinition/humanname-de-basis"
-      }, {
-        "key": "hum-2",
-        "severity": "error",
-        "human": "Wenn die Extension 'nachname' verwendet wird, dann muss der vollständige Name im Attribut 'family' angegeben werden",
-        "expression": "family.extension('http://hl7.org/fhir/StructureDefinition/humanname-own-name').empty() or family.hasValue()",
-        "source": "http://fhir.de/StructureDefinition/humanname-de-basis"
-      }, {
-        "key": "hum-3",
-        "severity": "error",
-        "human": "Wenn die Extension 'vorsatzwort' verwendet wird, dann muss der vollständige Name im Attribut 'family' angegeben werden",
-        "expression": "family.extension('http://hl7.org/fhir/StructureDefinition/humanname-own-prefix').empty() or family.hasValue()",
-        "source": "http://fhir.de/StructureDefinition/humanname-de-basis"
-      }, {
-        "key": "hum-4",
-        "severity": "error",
-        "human": "Wenn die Extension 'prefix-qualifier' verwendet wird, dann muss ein Namenspräfix im Attribut 'prefix' angegeben werden",
-        "expression": "prefix.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier').empty() or $this.hasValue())",
-        "source": "http://fhir.de/StructureDefinition/humanname-de-basis"
       } ],
       "mustSupport": true,
       "isModifier": false,
+      "isSummary": true,
       "mapping": [ {
-        "identity": "rim",
-        "map": "n/a"
-      }, {
         "identity": "v2",
-        "map": "XPN"
+        "map": "XCN Components"
       }, {
         "identity": "rim",
-        "map": "EN (actually, PN)"
+        "map": "./name"
       }, {
         "identity": "servd",
-        "map": "ProviderName"
+        "map": "./PreferredName (GivenNames, FamilyName, TitleCode)"
       } ]
     }, {
       "id": "Practitioner.name.id",
@@ -2189,7 +2167,7 @@
       "path": "Practitioner.address",
       "short": "Adresse des Melders",
       "definition": "Adresse des Melders",
-      "comment": "Note: address is intended to describe postal addresses for administrative purposes, not to describe absolute geographical coordinates.  Postal addresses are often used as proxies for physical locations (also see the [Location](location.html#) resource).",
+      "comment": "The PractitionerRole does not have an address value on it, as it is expected that the location property be used for this purpose (which has an address).",
       "requirements": "The home/mailing address of the practitioner is often required for employee administration purposes, and also for some rostering services where the start point (practitioners home) can be used in calculations.",
       "min": 0,
       "max": "1",
@@ -2202,17 +2180,6 @@
         "code": "Address",
         "profile": [ "http://fhir.de/StructureDefinition/address-de-basis" ]
       } ],
-      "example": [ {
-        "label": "Beispiel für einfache Adresse",
-        "valueAddress": {
-          "use": "home",
-          "type": "postal",
-          "line": [ "Musterweg 42" ],
-          "city": "Musterhausen",
-          "postalCode": "99999"
-        }
-      } ],
-      "condition": [ "ele-1" ],
       "constraint": [ {
         "key": "ele-1",
         "severity": "error",
@@ -2220,63 +2187,19 @@
         "expression": "hasValue() or (children().count() > id.count())",
         "xpath": "@value|f:*|h:div",
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
-      }, {
-        "key": "add-1",
-        "severity": "error",
-        "human": "Wenn die Extension 'Hausnummer' verwendet wird, muss auch Address.line gefüllt werden",
-        "expression": "line.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber').empty() or $this.hasValue())",
-        "source": "http://fhir.de/StructureDefinition/address-de-basis"
-      }, {
-        "key": "add-2",
-        "severity": "error",
-        "human": "Wenn die Extension 'Strasse' verwendet wird, muss auch Address.line gefüllt werden",
-        "expression": "line.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName').empty() or $this.hasValue())",
-        "source": "http://fhir.de/StructureDefinition/address-de-basis"
-      }, {
-        "key": "add-3",
-        "severity": "error",
-        "human": "Wenn die Extension 'Postfach' verwendet wird, muss auch Address.line gefüllt werden",
-        "expression": "line.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox').empty() or $this.hasValue())",
-        "source": "http://fhir.de/StructureDefinition/address-de-basis"
-      }, {
-        "key": "add-4",
-        "severity": "warning",
-        "human": "Eine Postfach-Adresse darf nicht vom Type \"physical\" oder \"both\" sein.",
-        "expression": "line.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox').empty() or $this.hasValue()) or type='postal' or type.empty()",
-        "source": "http://fhir.de/StructureDefinition/address-de-basis"
-      }, {
-        "key": "add-5",
-        "severity": "error",
-        "human": "Wenn die Extension 'Adresszusatz' verwendet wird, muss auch Address.line gefüllt werden",
-        "expression": "line.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator').empty() or $this.hasValue())",
-        "source": "http://fhir.de/StructureDefinition/address-de-basis"
-      }, {
-        "key": "add-6",
-        "severity": "warning",
-        "human": "Wenn die Extension 'Postfach' verwendet wird, dürfen die Extensions 'Strasse' und 'Hausnummer' nicht verwendet werden",
-        "expression": "line.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox').empty() or ($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName').empty() and $this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber').empty()))",
-        "source": "http://fhir.de/StructureDefinition/address-de-basis"
-      }, {
-        "key": "add-7",
-        "severity": "warning",
-        "human": "Wenn die Extension 'Precinct' (Stadtteil) verwendet wird, dann muss diese Information auch als separates line-item abgebildet sein.",
-        "expression": "extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct').empty() or all(line contains extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct').value.ofType(string))",
-        "source": "http://fhir.de/StructureDefinition/address-de-basis"
       } ],
       "mustSupport": true,
       "isModifier": false,
+      "isSummary": true,
       "mapping": [ {
-        "identity": "rim",
-        "map": "n/a"
-      }, {
         "identity": "v2",
-        "map": "XAD"
+        "map": "ORC-24, STF-11, ROL-11, PRT-14"
       }, {
         "identity": "rim",
-        "map": "AD"
+        "map": "./addr"
       }, {
         "identity": "servd",
-        "map": "Address"
+        "map": "./Addresses"
       } ]
     }, {
       "id": "Practitioner.address.id",
