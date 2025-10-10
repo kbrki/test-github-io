@@ -1,0 +1,373 @@
+{
+  "resourceType": "ValueSet",
+  "id": "answerSetINVP",
+  "url": "https://demis.rki.de/fhir/ValueSet/answerSetINVP",
+  "version": "1.6.0",
+  "name": "AnswerSetINVP",
+  "title": "AnswerSet für Influenzavirus; Meldepflicht nur für den direkten Nachweis",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-04-08",
+  "publisher": "Robert Koch-Institut",
+  "contact": [ {
+    "telecom": [ {
+      "system": "email",
+      "value": "demis-support@rki.de"
+    } ]
+  } ],
+  "description": "Das ValueSet AnswerSetINVP enthält die Codes der Answer-Codes für Influenzavirus; Meldepflicht nur für den direkten Nachweis.",
+  "jurisdiction": [ {
+    "coding": [ {
+      "system": "urn:iso:std:iso:3166",
+      "version": "ALPHA-2",
+      "code": "DE"
+    } ]
+  } ],
+  "copyright": "This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. “SNOMED” and “SNOMED CT” are registered trademarks of the IHTSDO.\r\n\r\nDieses Material enthält SNOMED Clinical Terms® (SNOMED CT®), die mit Genehmigung der International Health Terminology Standards Development Organisation (IHTSDO) verwendet werden. Alle Rechte vorbehalten. SNOMED CT® wurde ursprünglich vom College of American Pathologists entwickelt. \"SNOMED\" und \"SNOMED CT\" sind eingetragene Warenzeichen der IHTSDO.\r\n\r\nDownloadbedingungen für SNOMED-CT\r\n\r\nEnthält durch SNOMED International urheberrechtlich geschützte Information. Jede Verwendung von SNOMED CT in Deutschland erfordert eine vollgültige Affiliate Lizenz oder eine Sublizenz. Die entsprechende Lizenz ist kostenlos, vorausgesetzt die Verwendung findet nur in Deutschland statt und erfüllt die Bedingungen des Affiliate License Agreements. Affiliate Lizenzen können über das Mitglieder-Lizenzierungs- und Distributions-Service (MLDS) direkt beim jeweiligen NRC beantragt werden. https://mlds.ihtsdotools.org/#/landing/DE?lang=de\r\n\r\nContains information protected by copyright of SNOMED International. Any use of SNOMED CT in Austria requires a valid affiliate license or sublicense. The corresponding license is free of charge, provided that the use only takes place in Austria and fulfills the conditions of the Affiliate License Agreement. Affiliate licenses can be requested directly from the respective NRC via the Member Licensing and Distribution Service (MLDS). ttps://mlds.ihtsdotools.org/#/landing/DE?lang=de",
+  "compose": {
+    "include": [ {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "concept": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 90
+        } ],
+        "code": "407479009",
+        "display": "Influenza A-Virus"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 80
+        } ],
+        "code": "407480007",
+        "display": "Influenza B-Virus"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 70
+        } ],
+        "code": "407482004",
+        "display": "Influenza C-Virus"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 40
+        } ],
+        "code": "426959005",
+        "display": "Influenza B-Virus, Yamagata-Abstammung"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 45
+        } ],
+        "code": "427672003",
+        "display": "Influenza B-Virus, Victoria-Abstammung"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 55
+        } ],
+        "code": "442352004",
+        "display": "Influenza A-Virus, Subtyp H1N1"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 50
+        } ],
+        "code": "446646008",
+        "display": "Influenza A-Virus, Subtyp H3N2"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 1
+        } ],
+        "code": "448325003",
+        "display": "Influenza A-Virus, Subtyp H9N2"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 60
+        } ],
+        "code": "449024000",
+        "display": "Pandemic influenza A (H1N1) 2009"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 1
+        } ],
+        "code": "450480003",
+        "display": "Influenza A-Virus, Subtyp H3N2v"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 1
+        } ],
+        "code": "609444009",
+        "display": "Influenza A-Virus, Subtyp H7N9"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 1
+        } ],
+        "code": "700350009",
+        "display": "Influenza A-Virus, Subtyp H10N8"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "708527000",
+        "display": "Influenza A-Virus, Subtyp H5N8"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "715346008",
+        "display": "Influenza A-Virus, Subtyp H7N7"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "715347004",
+        "display": "Influenza A-Virus, Subtyp H7N3"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "715348009",
+        "display": "Influenza A-Virus, Subtyp H7N2"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "715349001",
+        "display": "Influenza A-Virus, Subtyp H2N2"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "715350001",
+        "display": "Influenza A-Virus, Subtyp H10N7"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 110
+        } ],
+        "code": "725894000",
+        "display": "Influenza-Virus"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 1
+        } ],
+        "code": "772807005",
+        "display": "Influenza A-Virus, Subtyp H3N8"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 1
+        } ],
+        "code": "772809008",
+        "display": "Influenza A-Virus, Subtyp H1N2"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 1
+        } ],
+        "code": "772827006",
+        "display": "Influenza A-Virus, Subtyp H5N1"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 1
+        } ],
+        "code": "781630008",
+        "display": "Influenza D-Virus"
+      } ]
+    }, {
+      "valueSet": [ "https://demis.rki.de/fhir/ValueSet/answerSetLaboratoryTest-SNOMED" ]
+    }, {
+      "valueSet": [ "https://demis.rki.de/fhir/ValueSet/answerSetResistance-SNOMED" ]
+    } ]
+  },
+  "expansion": {
+    "timestamp": "2025-04-08T00:00:00+02:00",
+    "contains": [ {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "code": "260373001",
+      "display": "Detected (qualifier value)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "code": "700350009",
+      "display": "Influenza A-Virus, Subtyp H10N8"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "code": "450480003",
+      "display": "Influenza A-Virus, Subtyp H3N2v"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "code": "715350001",
+      "display": "Influenza A-Virus, Subtyp H10N7"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "code": "407482004",
+      "display": "Influenza C-Virus"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "code": "260385009",
+      "display": "Negative (qualifier value)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "code": "715346008",
+      "display": "Influenza A-Virus, Subtyp H7N7"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "code": "715348009",
+      "display": "Influenza A-Virus, Subtyp H7N2"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "code": "260415000",
+      "display": "Not detected (qualifier value)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "code": "772807005",
+      "display": "Influenza A-Virus, Subtyp H3N8"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "code": "82334004",
+      "display": "Indeterminate (qualifier value)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "code": "442352004",
+      "display": "Influenza A-Virus, Subtyp H1N1"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "code": "772809008",
+      "display": "Influenza A-Virus, Subtyp H1N2"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "code": "407479009",
+      "display": "Influenza A-Virus"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "code": "10828004",
+      "display": "Positive (qualifier value)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "code": "407480007",
+      "display": "Influenza B-Virus"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "code": "1255965005",
+      "display": "Susceptible with increased exposure (qualifier value)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "code": "446646008",
+      "display": "Influenza A-Virus, Subtyp H3N2"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "code": "781630008",
+      "display": "Influenza D-Virus"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "code": "708527000",
+      "display": "Influenza A-Virus, Subtyp H5N8"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "code": "715349001",
+      "display": "Influenza A-Virus, Subtyp H2N2"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "code": "715347004",
+      "display": "Influenza A-Virus, Subtyp H7N3"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "code": "131196009",
+      "display": "Susceptible (qualifier value)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "code": "448325003",
+      "display": "Influenza A-Virus, Subtyp H9N2"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "code": "264841006",
+      "display": "Intermediately susceptible (qualifier value)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "code": "427672003",
+      "display": "Influenza B-Virus, Victoria-Abstammung"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "code": "725894000",
+      "display": "Influenza-Virus"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "code": "772827006",
+      "display": "Influenza A-Virus, Subtyp H5N1"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "code": "449024000",
+      "display": "Pandemic influenza A (H1N1) 2009"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "code": "609444009",
+      "display": "Influenza A-Virus, Subtyp H7N9"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "code": "426959005",
+      "display": "Influenza B-Virus, Yamagata-Abstammung"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "code": "260408008",
+      "display": "Weakly positive (qualifier value)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "code": "42425007",
+      "display": "Equivocal (qualifier value)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "code": "30714006",
+      "display": "Resistant (qualifier value)"
+    } ]
+  }
+}
