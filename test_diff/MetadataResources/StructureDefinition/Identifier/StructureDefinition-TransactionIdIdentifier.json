@@ -6,8 +6,23 @@
   "name": "TransactionIdIdentifier",
   "title": "Transaktions-Id Identifier",
   "status": "active",
-  "date": "2023-10-12",
-  "description": "Der TransactionIdIdentifier dient der Angabe der Transaktions-Id als Identifier.",
+  "date": "2025-02-20",
+  "publisher": "Robert Koch-Institut",
+  "contact": [ {
+    "telecom": [ {
+      "system": "email",
+      "value": "demis-support@rki.de"
+    } ]
+  } ],
+  "description": "Der TransactionIdIdentifier dient der Angabe der Transaktions-Id.",
+  "jurisdiction": [ {
+    "coding": [ {
+      "system": "urn:iso:std:iso:3166",
+      "version": "ALPHA-2",
+      "code": "DE"
+    } ]
+  } ],
+  "copyright": "Copyright (C) 2021-2025 Robert Koch-Institut",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,
@@ -286,7 +301,7 @@
       }, {
         "key": "checkFormatOfTransactionIdIdentifier",
         "severity": "warning",
-        "human": "Die Transaktion-Id muss dem Format IGS-12345-XYZP-XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX entsprechen.",
+        "human": "Die Transaktion-Id muss dem Format IGS-12345-CVDP-UUID entsprechen.\r\n\r\n**IGS**: festes Prefix\r\n\r\n**12345**: 5-stelliger Identifier (DEMIS-ParticipantID) des sequenzierenden Labors (Untersuchungslabors), analog zum bereits existierenden DEMIS-System (DEMIS-10001 bis derzeit DEMIS-10563). Die Liste wird von der DEMIS-Geschäftsstelle gepflegt. Falls Sie noch nicht registriert sind, wenden Sie sich bitte an demis-support@rki.de.\r\n\r\n**CVDP**: 4-stelliges DEMIS-Kürzel, welches dem Meldetatbestand direkt zugeordnet wird.\r\n\r\n**UUID**: hexadezimal Zahl nach dem Muster 8-4-4-4-12 (z.B. be8131da-9024-41a4-a53c-3ce0d6f6fe37).\r\n\r\nBeispiel: IGS-10001-CVDP-be8131da-9024-41a4-a53c-3ce0d6f6fe37.",
         "expression": "$this.as(string).matches('^IGS-[0-9]{5}-[A-Z]{3}P-[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$')"
       } ],
       "mustSupport": true,
@@ -390,7 +405,7 @@
       "constraint": [ {
         "key": "checkFormatOfTransactionIdIdentifier",
         "severity": "warning",
-        "human": "Die Transaktion-Id muss dem Format IGS-12345-XYZP-XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX entsprechen.",
+        "human": "Die Transaktion-Id muss dem Format IGS-12345-CVDP-UUID entsprechen.\r\n\r\n**IGS**: festes Prefix\r\n\r\n**12345**: 5-stelliger Identifier (DEMIS-ParticipantID) des sequenzierenden Labors (Untersuchungslabors), analog zum bereits existierenden DEMIS-System (DEMIS-10001 bis derzeit DEMIS-10563). Die Liste wird von der DEMIS-Geschäftsstelle gepflegt. Falls Sie noch nicht registriert sind, wenden Sie sich bitte an demis-support@rki.de.\r\n\r\n**CVDP**: 4-stelliges DEMIS-Kürzel, welches dem Meldetatbestand direkt zugeordnet wird.\r\n\r\n**UUID**: hexadezimal Zahl nach dem Muster 8-4-4-4-12 (z.B. be8131da-9024-41a4-a53c-3ce0d6f6fe37).\r\n\r\nBeispiel: IGS-10001-CVDP-be8131da-9024-41a4-a53c-3ce0d6f6fe37.",
         "expression": "$this.as(string).matches('^IGS-[0-9]{5}-[A-Z]{3}P-[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$')"
       } ],
       "mustSupport": true

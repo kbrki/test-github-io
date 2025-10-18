@@ -2,12 +2,27 @@
   "resourceType": "StructureDefinition",
   "id": "SubmittingPerson",
   "url": "https://demis.rki.de/fhir/StructureDefinition/SubmittingPerson",
-  "version": "1.5.0",
+  "version": "2.0.0",
   "name": "SubmittingPerson",
   "title": "Einsender",
   "status": "active",
-  "date": "2025-03-27",
+  "date": "2025-02-20",
+  "publisher": "Robert Koch-Institut",
+  "contact": [ {
+    "telecom": [ {
+      "system": "email",
+      "value": "demis-support@rki.de"
+    } ]
+  } ],
   "description": "Der Einsender umfasst die Informationen zur Person, die die Probe einsendet. Er muss in der Meldung enthalten sein, wenn die Einsender-Einrichtung nicht enthalten ist.",
+  "jurisdiction": [ {
+    "coding": [ {
+      "system": "urn:iso:std:iso:3166",
+      "version": "ALPHA-2",
+      "code": "DE"
+    } ]
+  } ],
+  "copyright": "Copyright (C) 2021-2025 Robert Koch-Institut",
   "fhirVersion": "4.0.1",
   "mapping": [ {
     "identity": "servd",
@@ -314,7 +329,7 @@
         "code": "canonical",
         "targetProfile": [ "http://hl7.org/fhir/StructureDefinition/StructureDefinition" ]
       } ],
-      "fixedCanonical": "https://demis.rki.de/fhir/StructureDefinition/SubmittingPerson",
+      "patternCanonical": "https://demis.rki.de/fhir/StructureDefinition/SubmittingPerson",
       "constraint": [ {
         "key": "ele-1",
         "severity": "error",
@@ -644,7 +659,7 @@
       "definition": "An identifier that applies to this person in this role.",
       "requirements": "Often, specific identities are assigned for the agent.",
       "min": 0,
-      "max": "*",
+      "max": "0",
       "base": {
         "path": "Practitioner.identifier",
         "min": 0,
@@ -684,7 +699,7 @@
       "comment": "If the practitioner is not in use by one organization, then it should mark the period on the PractitonerRole with an end date (even if they are active) as they may be active in another role.",
       "requirements": "Need to be able to mark a practitioner record as not to be used because it was created in error.",
       "min": 0,
-      "max": "1",
+      "max": "0",
       "base": {
         "path": "Practitioner.active",
         "min": 0,
@@ -1673,7 +1688,7 @@
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       }, {
         "key": "validEmailAddress",
-        "severity": "warning",
+        "severity": "error",
         "human": "Die E-Mail-Adresse muss valide sein.",
         "expression": "$this.matches('^[a-zA-Z0-9._%+-]+@(?:[a-zA-Z0-9-]+[.])+[a-zA-Z0-9]{2,63}$')"
       } ],
@@ -2023,7 +2038,7 @@
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       }, {
         "key": "validPhoneNumber",
-        "severity": "warning",
+        "severity": "error",
         "human": "Die Telefonnummer muss valide sein.",
         "expression": "$this.matches('^[0+][0-9 \\\\-\\\\(\\\\)]{6,50}$')"
       } ],
@@ -2458,7 +2473,7 @@
       "short": "Straßenname mit Hausnummer oder Postfach sowie weitere Angaben zur Zustellung",
       "definition": "Diese Komponente kann Straßennamen, Hausnummer, Appartmentnummer, Postfach, c/o sowie weitere Zustellungshinweise enthalten. Die Informationen können in mehrere line-Komponenten aufgeteilt werden.\r\nBei Verwendung der Extensions, um Straße, Hausnnummer und Postleitzahl strukturiert zu übermitteln, müssen diese Informationen stets vollständig auch in der line-Komponente, die sie erweitern, enthalten sein, um es Systemen, die diese Extensions nicht verwenden zu ermöglichen, auf diese Informationen zugreifen zu können.",
       "min": 1,
-      "max": "1",
+      "max": "3",
       "base": {
         "path": "Address.line",
         "min": 0,
@@ -2914,10 +2929,6 @@
       "mustSupport": true,
       "isModifier": false,
       "isSummary": true,
-      "binding": {
-        "strength": "preferred",
-        "valueSet": "https://demis.rki.de/fhir/ValueSet/postalCode"
-      },
       "mapping": [ {
         "identity": "v2",
         "map": "XAD.5"
@@ -3476,7 +3487,7 @@
       "path": "Practitioner.meta.profile",
       "min": 1,
       "max": "1",
-      "fixedCanonical": "https://demis.rki.de/fhir/StructureDefinition/SubmittingPerson",
+      "patternCanonical": "https://demis.rki.de/fhir/StructureDefinition/SubmittingPerson",
       "mustSupport": true
     }, {
       "id": "Practitioner.extension",
@@ -3500,6 +3511,14 @@
         "profile": [ "https://demis.rki.de/fhir/StructureDefinition/Salutation" ]
       } ],
       "mustSupport": true
+    }, {
+      "id": "Practitioner.identifier",
+      "path": "Practitioner.identifier",
+      "max": "0"
+    }, {
+      "id": "Practitioner.active",
+      "path": "Practitioner.active",
+      "max": "0"
     }, {
       "id": "Practitioner.name",
       "path": "Practitioner.name",
@@ -3551,7 +3570,7 @@
       "min": 1,
       "constraint": [ {
         "key": "validEmailAddress",
-        "severity": "warning",
+        "severity": "error",
         "human": "Die E-Mail-Adresse muss valide sein.",
         "expression": "$this.matches('^[a-zA-Z0-9._%+-]+@(?:[a-zA-Z0-9-]+[.])+[a-zA-Z0-9]{2,63}$')"
       } ],
@@ -3591,7 +3610,7 @@
       "min": 1,
       "constraint": [ {
         "key": "validPhoneNumber",
-        "severity": "warning",
+        "severity": "error",
         "human": "Die Telefonnummer muss valide sein.",
         "expression": "$this.matches('^[0+][0-9 \\\\-\\\\(\\\\)]{6,50}$')"
       } ],
@@ -3616,7 +3635,7 @@
       "id": "Practitioner.address.line",
       "path": "Practitioner.address.line",
       "min": 1,
-      "max": "1",
+      "max": "3",
       "mustSupport": true
     }, {
       "id": "Practitioner.address.line.extension",
@@ -3641,12 +3660,9 @@
     }, {
       "id": "Practitioner.address.postalCode",
       "path": "Practitioner.address.postalCode",
+      "short": "Postleitzahl",
       "min": 1,
-      "mustSupport": true,
-      "binding": {
-        "strength": "preferred",
-        "valueSet": "https://demis.rki.de/fhir/ValueSet/postalCode"
-      }
+      "mustSupport": true
     }, {
       "id": "Practitioner.address.country",
       "path": "Practitioner.address.country",

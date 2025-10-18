@@ -6,7 +6,7 @@
   "name": "NotificationDiseaseCategoryToTransmissionCategory",
   "title": "NotificationDiseaseCategoryToTransmissionCategory",
   "status": "active",
-  "date": "2025-07-31",
+  "date": "2025-08-06",
   "description": "Die ConceptMap NotificationDiseaseCategoryToTransmissionCategory ordnet die Meldetatbestände der Erkrankungsmeldung den 3-Buchstaben-Codes der Übermittlungskategorien aus SurvNet zu.",
   "sourceUri": "https://demis.rki.de/fhir/CodeSystem/notificationDiseaseCategory",
   "targetUri": "https://demis.rki.de/fhir/CodeSystem/transmissionCategory",
@@ -312,6 +312,48 @@
       "display": "Subakute sklerosierende Panenzephalitis (SSPE)",
       "target": [ {
         "code": "ssp",
+        "equivalence": "relatedto"
+      } ]
+    }, {
+      "code": "chtd",
+      "display": "Chlamydia trachomatis, sofern es sich um einen der Serotypen L1 bis L3 handelt",
+      "target": [ {
+        "code": "cht",
+        "equivalence": "relatedto"
+      } ]
+    }, {
+      "code": "echd",
+      "display": "Echinococcus sp.",
+      "target": [ {
+        "code": "ech",
+        "equivalence": "relatedto"
+      } ]
+    }, {
+      "code": "hivd",
+      "display": "Humanes Immundefizienz-Virus (HIV)",
+      "target": [ {
+        "code": "hiv",
+        "equivalence": "relatedto"
+      } ]
+    }, {
+      "code": "negd",
+      "display": "Neisseria gonorrhoeae",
+      "target": [ {
+        "code": "neg",
+        "equivalence": "relatedto"
+      } ]
+    }, {
+      "code": "toxd",
+      "display": "Toxoplasma gondii; Meldepflicht nur bei konnatalen Infektionen",
+      "target": [ {
+        "code": "tox",
+        "equivalence": "relatedto"
+      } ]
+    }, {
+      "code": "trpd",
+      "display": "Treponema pallidum",
+      "target": [ {
+        "code": "trp",
         "equivalence": "relatedto"
       } ]
     } ]

@@ -2,12 +2,12 @@
   "resourceType": "ValueSet",
   "id": "material",
   "url": "https://demis.rki.de/fhir/ValueSet/material",
-  "version": "2.1.0",
+  "version": "2.2.1",
   "name": "Material",
   "title": "Material",
   "status": "active",
   "experimental": false,
-  "date": "2025-04-08",
+  "date": "2025-08-14",
   "publisher": "Robert Koch-Institut",
   "contact": [ {
     "telecom": [ {
@@ -15,7 +15,7 @@
       "value": "demis-support@rki.de"
     } ]
   } ],
-  "description": "Das ValueSet Material enthält die Codes der Materialien.",
+  "description": "Das ValueSet Material umfasst alle spezifischen Material-ValueSets. Es wird lediglich im abstrakten Oberprofil Specimen eingebunden.",
   "jurisdiction": [ {
     "coding": [ {
       "system": "urn:iso:std:iso:3166",
@@ -53,6 +53,8 @@
     }, {
       "valueSet": [ "https://demis.rki.de/fhir/ValueSet/materialCHLP" ]
     }, {
+      "valueSet": [ "https://demis.rki.de/fhir/ValueSet/materialCHTP" ]
+    }, {
       "valueSet": [ "https://demis.rki.de/fhir/ValueSet/materialCKVP" ]
     }, {
       "valueSet": [ "https://demis.rki.de/fhir/ValueSet/materialCLOP" ]
@@ -78,6 +80,8 @@
       "valueSet": [ "https://demis.rki.de/fhir/ValueSet/materialEBCP" ]
     }, {
       "valueSet": [ "https://demis.rki.de/fhir/ValueSet/materialEBVP" ]
+    }, {
+      "valueSet": [ "https://demis.rki.de/fhir/ValueSet/materialECHP" ]
     }, {
       "valueSet": [ "https://demis.rki.de/fhir/ValueSet/materialECOP" ]
     }, {
@@ -108,6 +112,8 @@
       "valueSet": [ "https://demis.rki.de/fhir/ValueSet/materialHFAP" ]
     }, {
       "valueSet": [ "https://demis.rki.de/fhir/ValueSet/materialHINP" ]
+    }, {
+      "valueSet": [ "https://demis.rki.de/fhir/ValueSet/materialHIVP" ]
     }, {
       "valueSet": [ "https://demis.rki.de/fhir/ValueSet/materialHTVP" ]
     }, {
@@ -140,6 +146,8 @@
       "valueSet": [ "https://demis.rki.de/fhir/ValueSet/materialMYTP" ]
     }, {
       "valueSet": [ "https://demis.rki.de/fhir/ValueSet/materialNCVP" ]
+    }, {
+      "valueSet": [ "https://demis.rki.de/fhir/ValueSet/materialNEGP" ]
     }, {
       "valueSet": [ "https://demis.rki.de/fhir/ValueSet/materialNEIP" ]
     }, {
@@ -179,7 +187,11 @@
     }, {
       "valueSet": [ "https://demis.rki.de/fhir/ValueSet/materialSTYP" ]
     }, {
+      "valueSet": [ "https://demis.rki.de/fhir/ValueSet/materialTOXP" ]
+    }, {
       "valueSet": [ "https://demis.rki.de/fhir/ValueSet/materialTRIP" ]
+    }, {
+      "valueSet": [ "https://demis.rki.de/fhir/ValueSet/materialTRPP" ]
     }, {
       "valueSet": [ "https://demis.rki.de/fhir/ValueSet/materialVCHP" ]
     }, {
@@ -197,7 +209,7 @@
     } ]
   },
   "expansion": {
-    "timestamp": "2025-04-08T00:00:00+02:00",
+    "timestamp": "2025-08-14T00:00:00+02:00",
     "contains": [ {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",
@@ -1376,13 +1388,13 @@
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",
-      "code": "119369008",
-      "display": "Probenmaterial eines Ulkus"
+      "code": "258511009",
+      "display": "Urethralabstrich des Penis"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",
-      "code": "258511009",
-      "display": "Urethralabstrich des Penis"
+      "code": "119369008",
+      "display": "Probenmaterial eines Ulkus"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",

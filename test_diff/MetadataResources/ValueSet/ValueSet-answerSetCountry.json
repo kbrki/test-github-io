@@ -2,14 +2,27 @@
   "resourceType": "ValueSet",
   "id": "answerSetCountry",
   "url": "https://demis.rki.de/fhir/ValueSet/answerSetCountry",
-  "version": "1.4.1",
+  "version": "2.0.0",
   "name": "AnswerSetCountry",
-  "title": "Anwort Country mit staatenlos und Ausland",
+  "title": "ISO-Länderliste inklusive SNOMED-Erweiterungen.",
   "status": "active",
   "experimental": false,
-  "date": "2024-09-02",
+  "date": "2025-08-29",
   "publisher": "Robert Koch-Institut",
-  "description": "Das ValueSet answerSetCountry enthält die Codes der Antwortmöglichkeiten für Country mit staatenlos und Ausland.",
+  "contact": [ {
+    "telecom": [ {
+      "system": "email",
+      "value": "demis-support@rki.de"
+    } ]
+  } ],
+  "description": "Dieses ValueSet enthält die ISO-Codes zur Angabe von Staaten sowie erweiterte Angaben in Form von inkludierten SNOMED-ValueSets.",
+  "jurisdiction": [ {
+    "coding": [ {
+      "system": "urn:iso:std:iso:3166",
+      "version": "ALPHA-2",
+      "code": "DE"
+    } ]
+  } ],
   "compose": {
     "include": [ {
       "system": "urn:iso:std:iso:3166",
@@ -1758,30 +1771,42 @@
         "display": "Zimbabwe"
       } ]
     }, {
-      "system": "https://demis.rki.de/fhir/CodeSystem/noCountry",
-      "version": "1.1.0"
-    }, {
-      "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
-      "version": "2.1.0",
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20241115",
       "concept": [ {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 999
         } ],
-        "code": "ASKU",
-        "display": "asked but unknown"
+        "code": "1631000175102",
+        "display": "Patient not asked (contextual qualifier) (qualifier value)",
+        "designation": [ {
+          "language": "de-DE",
+          "value": "Patient/Patientin nicht gefragt"
+        } ]
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 1000
         } ],
-        "code": "NASK",
-        "display": "not asked"
+        "code": "261665006",
+        "display": "Unbekannt"
+      } ]
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "concept": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 998
+        } ],
+        "code": "34051000087100:{370130000=41277001}",
+        "display": "Staatenlos"
       } ]
     } ]
   },
   "expansion": {
-    "timestamp": "2024-09-02T00:00:00+02:00",
+    "timestamp": "2025-08-29T00:00:00+02:00",
     "contains": [ {
       "system": "urn:iso:std:iso:3166",
       "code": "HM",
@@ -1954,6 +1979,11 @@
       "system": "urn:iso:std:iso:3166",
       "code": "IQ",
       "display": "Iraq"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "code": "1631000175102",
+      "display": "Patient not asked (contextual qualifier) (qualifier value)"
     }, {
       "system": "urn:iso:std:iso:3166",
       "code": "ID",
@@ -2251,6 +2281,11 @@
       "code": "PH",
       "display": "Philippines"
     }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "code": "261665006",
+      "display": "Unbekannt"
+    }, {
       "system": "urn:iso:std:iso:3166",
       "code": "OM",
       "display": "Oman"
@@ -2355,11 +2390,6 @@
       "code": "RO",
       "display": "Romania"
     }, {
-      "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
-      "version": "2.1.0",
-      "code": "ASKU",
-      "display": "asked but unknown"
-    }, {
       "system": "urn:iso:std:iso:3166",
       "code": "AZ",
       "display": "Azerbaijan"
@@ -2384,11 +2414,6 @@
       "code": "AE",
       "display": "United Arab Emirates"
     }, {
-      "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
-      "version": "2.1.0",
-      "code": "NASK",
-      "display": "not asked"
-    }, {
       "system": "urn:iso:std:iso:3166",
       "code": "AO",
       "display": "Angola"
@@ -2400,6 +2425,11 @@
       "system": "urn:iso:std:iso:3166",
       "code": "AM",
       "display": "Armenia"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "code": "34051000087100:{370130000=41277001}",
+      "display": "Staatenlos"
     }, {
       "system": "urn:iso:std:iso:3166",
       "code": "AI",
@@ -2573,11 +2603,6 @@
       "code": "SS",
       "display": "South Sudan"
     }, {
-      "system": "https://demis.rki.de/fhir/CodeSystem/noCountry",
-      "version": "1.1.0",
-      "code": "31099997",
-      "display": "staatenlos"
-    }, {
       "system": "urn:iso:std:iso:3166",
       "code": "CN",
       "display": "China"
@@ -2733,11 +2758,6 @@
       "system": "urn:iso:std:iso:3166",
       "code": "VE",
       "display": "Venezuela"
-    }, {
-      "system": "https://demis.rki.de/fhir/CodeSystem/noCountry",
-      "version": "1.1.0",
-      "code": "31099999",
-      "display": "Ausland (Land unbekannt)"
     }, {
       "system": "urn:iso:std:iso:3166",
       "code": "VN",

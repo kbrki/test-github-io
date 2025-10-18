@@ -2,12 +2,27 @@
   "resourceType": "StructureDefinition",
   "id": "AddressUse",
   "url": "https://demis.rki.de/fhir/StructureDefinition/AddressUse",
-  "version": "1.3.0",
+  "version": "2.0.0",
   "name": "AddressUse",
   "title": "Adressnutzung",
   "status": "active",
-  "date": "2023-10-16",
+  "date": "2025-03-27",
+  "publisher": "Robert Koch-Institut",
+  "contact": [ {
+    "telecom": [ {
+      "system": "email",
+      "value": "demis-support@rki.de"
+    } ]
+  } ],
   "description": "Über die Adressnutzung kann die Art des Aufenthaltsortes der Betroffenen Person angegeben werden.",
+  "jurisdiction": [ {
+    "coding": [ {
+      "system": "urn:iso:std:iso:3166",
+      "version": "ALPHA-2",
+      "code": "DE"
+    } ]
+  } ],
+  "copyright": "Copyright (C) 2021-2025 Robert Koch-Institut",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,
@@ -163,7 +178,7 @@
       "id": "Extension.value[x]",
       "path": "Extension.value[x]",
       "short": "Art der Adresse",
-      "definition": "Art der Adresse. Der Wert muss entsprechend des vom RKI definierten ValueSets (https://demis.rki.de/fhir/ValueSet/answerSetAddressUse) im coding Element dargestellt werden.",
+      "definition": "Art der Adresse. Der Wert muss entsprechend des vom RKI definierten ValueSets (https://demis.rki.de/fhir/ValueSet/addressUse) im coding Element dargestellt werden.",
       "min": 1,
       "max": "1",
       "base": {
@@ -187,7 +202,7 @@
       "isSummary": false,
       "binding": {
         "strength": "required",
-        "valueSet": "https://demis.rki.de/fhir/ValueSet/answerSetAddressUse"
+        "valueSet": "https://demis.rki.de/fhir/ValueSet/addressUse"
       },
       "mapping": [ {
         "identity": "rim",
@@ -464,7 +479,7 @@
       "id": "Extension.value[x]",
       "path": "Extension.value[x]",
       "short": "Art der Adresse",
-      "definition": "Art der Adresse. Der Wert muss entsprechend des vom RKI definierten ValueSets (https://demis.rki.de/fhir/ValueSet/answerSetAddressUse) im coding Element dargestellt werden.",
+      "definition": "Art der Adresse. Der Wert muss entsprechend des vom RKI definierten ValueSets (https://demis.rki.de/fhir/ValueSet/addressUse) im coding Element dargestellt werden.",
       "min": 1,
       "type": [ {
         "code": "Coding"
@@ -472,7 +487,7 @@
       "mustSupport": true,
       "binding": {
         "strength": "required",
-        "valueSet": "https://demis.rki.de/fhir/ValueSet/answerSetAddressUse"
+        "valueSet": "https://demis.rki.de/fhir/ValueSet/addressUse"
       }
     }, {
       "id": "Extension.value[x].system",

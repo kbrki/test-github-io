@@ -2,12 +2,27 @@
   "resourceType": "StructureDefinition",
   "id": "ProcessNotificationRequestParameters",
   "url": "https://demis.rki.de/fhir/StructureDefinition/ProcessNotificationRequestParameters",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "name": "ProcessNotificationRequestParameters",
   "title": "ProcessNotification-Eingabeparameter",
   "status": "active",
-  "date": "2023-09-20",
-  "description": "Der ProcessNotificationRequestParameter ist der Eingabeparameter für die ProcessNotification-Operation. Er enthält den an DEMIS übermittelten Meldevorgang.",
+  "date": "2025-02-20",
+  "publisher": "Robert Koch-Institut",
+  "contact": [ {
+    "telecom": [ {
+      "system": "email",
+      "value": "demis-support@rki.de"
+    } ]
+  } ],
+  "description": "Der ProcessNotificationRequestParameter ist der Eingabeparameter für die ProcessNotification-Operation. Er enthält den Meldevorgang der an DEMIS übermittelt wird.",
+  "jurisdiction": [ {
+    "coding": [ {
+      "system": "urn:iso:std:iso:3166",
+      "version": "ALPHA-2",
+      "code": "DE"
+    } ]
+  } ],
+  "copyright": "Copyright (C) 2021-2025 Robert Koch-Institut",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -259,7 +274,7 @@
         "code": "canonical",
         "targetProfile": [ "http://hl7.org/fhir/StructureDefinition/StructureDefinition" ]
       } ],
-      "fixedCanonical": "https://demis.rki.de/fhir/StructureDefinition/ProcessNotificationRequestParameters",
+      "patternCanonical": "https://demis.rki.de/fhir/StructureDefinition/ProcessNotificationRequestParameters",
       "constraint": [ {
         "key": "ele-1",
         "severity": "error",
@@ -574,7 +589,7 @@
       "short": "If parameter is a data type",
       "definition": "If the parameter is a data type.",
       "min": 0,
-      "max": "1",
+      "max": "0",
       "base": {
         "path": "Parameters.parameter.value[x]",
         "min": 0,
@@ -695,8 +710,8 @@
     }, {
       "id": "Parameters.parameter.resource",
       "path": "Parameters.parameter.resource",
-      "short": "Contains a collection of resources",
-      "definition": "A container for a collection of resources.",
+      "short": "Meldevorgang",
+      "definition": "Meldevorgang der an DEMIS übermittelt wird.",
       "comment": "When resolving references in resources, the operation definition may specify how references may be resolved between parameters. If a reference cannot be resolved between the parameters, the application should fall back to it's general resource resolution methods.",
       "min": 1,
       "max": "1",
@@ -732,7 +747,7 @@
       "definition": "A named part of a multi-part parameter.",
       "comment": "Only one level of nested parameters is allowed.",
       "min": 0,
-      "max": "*",
+      "max": "0",
       "base": {
         "path": "Parameters.parameter.part",
         "min": 0,
@@ -762,7 +777,7 @@
       "path": "Parameters.meta.profile",
       "min": 1,
       "max": "1",
-      "fixedCanonical": "https://demis.rki.de/fhir/StructureDefinition/ProcessNotificationRequestParameters",
+      "patternCanonical": "https://demis.rki.de/fhir/StructureDefinition/ProcessNotificationRequestParameters",
       "mustSupport": true
     }, {
       "id": "Parameters.parameter",
@@ -771,14 +786,24 @@
       "max": "1",
       "mustSupport": true
     }, {
+      "id": "Parameters.parameter.value[x]",
+      "path": "Parameters.parameter.value[x]",
+      "max": "0"
+    }, {
       "id": "Parameters.parameter.resource",
       "path": "Parameters.parameter.resource",
+      "short": "Meldevorgang",
+      "definition": "Meldevorgang der an DEMIS übermittelt wird.",
       "min": 1,
       "type": [ {
         "code": "Resource",
         "profile": [ "https://demis.rki.de/fhir/StructureDefinition/NotificationBundle" ]
       } ],
       "mustSupport": true
+    }, {
+      "id": "Parameters.parameter.part",
+      "path": "Parameters.parameter.part",
+      "max": "0"
     } ]
   }
 }

@@ -2,12 +2,27 @@
   "resourceType": "StructureDefinition",
   "id": "NotifierRole",
   "url": "https://demis.rki.de/fhir/StructureDefinition/NotifierRole",
-  "version": "1.3.0",
+  "version": "2.0.0",
   "name": "NotifierRole",
   "title": "Melder-Rolle",
   "status": "active",
-  "date": "2023-11-23",
+  "date": "2025-02-20",
+  "publisher": "Robert Koch-Institut",
+  "contact": [ {
+    "telecom": [ {
+      "system": "email",
+      "value": "demis-support@rki.de"
+    } ]
+  } ],
   "description": "Melder müssen gemäß IfSG entweder Angaben zu ihrer Einrichtung oder Angaben zu ihrer Person angeben. Es können auch beide Angaben hinterlegt werden. Die Melder-Rolle ist erforderlich, um eine Unterscheidung zwischen Melder und Meldender Einrichtung vornehmen zu können. Sie beinhaltet lediglich Verweise auf die Meldende Person und/oder die Meldende Einrichtung.",
+  "jurisdiction": [ {
+    "coding": [ {
+      "system": "urn:iso:std:iso:3166",
+      "version": "ALPHA-2",
+      "code": "DE"
+    } ]
+  } ],
+  "copyright": "Copyright (C) 2021-2025 Robert Koch-Institut",
   "fhirVersion": "4.0.1",
   "mapping": [ {
     "identity": "servd",
@@ -315,7 +330,7 @@
         "code": "canonical",
         "targetProfile": [ "http://hl7.org/fhir/StructureDefinition/StructureDefinition" ]
       } ],
-      "fixedCanonical": "https://demis.rki.de/fhir/StructureDefinition/NotifierRole",
+      "patternCanonical": "https://demis.rki.de/fhir/StructureDefinition/NotifierRole",
       "constraint": [ {
         "key": "ele-1",
         "severity": "error",
@@ -601,7 +616,7 @@
       "definition": "Business Identifiers that are specific to a role/location.",
       "requirements": "Often, specific identities are assigned for the agent.",
       "min": 0,
-      "max": "*",
+      "max": "0",
       "base": {
         "path": "PractitionerRole.identifier",
         "min": 0,
@@ -641,7 +656,7 @@
       "comment": "If this value is false, you may refer to the period to see when the role was in active use. If there is no period specified, no inference can be made about when it was active.",
       "requirements": "Need to be able to mark a practitioner role record as not to be used because it was created in error, or otherwise no longer in active use.",
       "min": 0,
-      "max": "1",
+      "max": "0",
       "base": {
         "path": "PractitionerRole.active",
         "min": 0,
@@ -678,7 +693,7 @@
       "definition": "The period during which the person is authorized to act as a practitioner in these role(s) for the organization.",
       "requirements": "Even after the agencies is revoked, the fact that it existed must still be recorded.",
       "min": 0,
-      "max": "1",
+      "max": "0",
       "base": {
         "path": "PractitionerRole.period",
         "min": 0,
@@ -735,6 +750,7 @@
         "xpath": "@value|f:*|h:div",
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       } ],
+      "mustSupport": true,
       "isModifier": false,
       "isSummary": true,
       "mapping": [ {
@@ -852,7 +868,7 @@
       "definition": "The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.  The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. \"Patient\" is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources).",
       "comment": "This element is used to indicate the type of  the target of the reference. This may be used which ever of the other elements are populated (or not). In some cases, the type of the target may be determined by inspection of the reference (e.g. a RESTful URL) or by resolving the target of the reference; if both the type and a reference is provided, the reference SHALL resolve to a resource of the same type as that specified.",
       "min": 0,
-      "max": "1",
+      "max": "0",
       "base": {
         "path": "Reference.type",
         "min": 0,
@@ -891,7 +907,7 @@
       "definition": "An identifier for the target resource. This is used when there is no way to reference the other resource directly, either because the entity it represents is not available through a FHIR server, or because there is no way for the author of the resource to convert a known identifier to an actual location. There is no requirement that a Reference.identifier point to something that is actually exposed as a FHIR instance, but it SHALL point to a business concept that would be expected to be exposed as a FHIR instance, and that instance would need to be of a FHIR resource type allowed by the reference.",
       "comment": "When an identifier is provided in place of a reference, any system processing the reference will only be able to resolve the identifier to a reference if it understands the business context in which the identifier is used. Sometimes this is global (e.g. a national identifier) but often it is not. For this reason, none of the useful mechanisms described for working with references (e.g. chaining, includes) are possible, nor should servers be expected to be able resolve the reference. Servers may accept an identifier based reference untouched, resolve it, and/or reject it - see CapabilityStatement.rest.resource.referencePolicy.   When both an identifier and a literal reference are provided, the literal reference is preferred. Applications processing the resource are allowed - but not required - to check that the identifier matches the literal reference  Applications converting a logical reference to a literal reference may choose to leave the logical reference present, or remove it.  Reference is intended to point to a structure that can potentially be expressed as a FHIR resource, though there is no need for it to exist as an actual FHIR resource instance - except in as much as an application wishes to actual find the target of the reference. The content referred to be the identifier must meet the logical constraints implied by any limitations on what resource types are permitted for the reference.  For example, it would not be legitimate to send the identifier for a drug prescription if the type were Reference(Observation|DiagnosticReport).  One of the use-cases for Reference.identifier is the situation where no FHIR representation exists (where the type is Reference (Any).",
       "min": 0,
-      "max": "1",
+      "max": "0",
       "base": {
         "path": "Reference.identifier",
         "min": 0,
@@ -925,7 +941,7 @@
       "definition": "Plain text narrative that identifies the resource in addition to the resource reference.",
       "comment": "This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.",
       "min": 0,
-      "max": "1",
+      "max": "0",
       "base": {
         "path": "Reference.display",
         "min": 0,
@@ -973,6 +989,7 @@
         "xpath": "@value|f:*|h:div",
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       } ],
+      "mustSupport": true,
       "isModifier": false,
       "isSummary": true,
       "mapping": [ {
@@ -1090,7 +1107,7 @@
       "definition": "The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.  The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. \"Patient\" is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources).",
       "comment": "This element is used to indicate the type of  the target of the reference. This may be used which ever of the other elements are populated (or not). In some cases, the type of the target may be determined by inspection of the reference (e.g. a RESTful URL) or by resolving the target of the reference; if both the type and a reference is provided, the reference SHALL resolve to a resource of the same type as that specified.",
       "min": 0,
-      "max": "1",
+      "max": "0",
       "base": {
         "path": "Reference.type",
         "min": 0,
@@ -1129,7 +1146,7 @@
       "definition": "An identifier for the target resource. This is used when there is no way to reference the other resource directly, either because the entity it represents is not available through a FHIR server, or because there is no way for the author of the resource to convert a known identifier to an actual location. There is no requirement that a Reference.identifier point to something that is actually exposed as a FHIR instance, but it SHALL point to a business concept that would be expected to be exposed as a FHIR instance, and that instance would need to be of a FHIR resource type allowed by the reference.",
       "comment": "When an identifier is provided in place of a reference, any system processing the reference will only be able to resolve the identifier to a reference if it understands the business context in which the identifier is used. Sometimes this is global (e.g. a national identifier) but often it is not. For this reason, none of the useful mechanisms described for working with references (e.g. chaining, includes) are possible, nor should servers be expected to be able resolve the reference. Servers may accept an identifier based reference untouched, resolve it, and/or reject it - see CapabilityStatement.rest.resource.referencePolicy.   When both an identifier and a literal reference are provided, the literal reference is preferred. Applications processing the resource are allowed - but not required - to check that the identifier matches the literal reference  Applications converting a logical reference to a literal reference may choose to leave the logical reference present, or remove it.  Reference is intended to point to a structure that can potentially be expressed as a FHIR resource, though there is no need for it to exist as an actual FHIR resource instance - except in as much as an application wishes to actual find the target of the reference. The content referred to be the identifier must meet the logical constraints implied by any limitations on what resource types are permitted for the reference.  For example, it would not be legitimate to send the identifier for a drug prescription if the type were Reference(Observation|DiagnosticReport).  One of the use-cases for Reference.identifier is the situation where no FHIR representation exists (where the type is Reference (Any).",
       "min": 0,
-      "max": "1",
+      "max": "0",
       "base": {
         "path": "Reference.identifier",
         "min": 0,
@@ -1163,7 +1180,7 @@
       "definition": "Plain text narrative that identifies the resource in addition to the resource reference.",
       "comment": "This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.",
       "min": 0,
-      "max": "1",
+      "max": "0",
       "base": {
         "path": "Reference.display",
         "min": 0,
@@ -1194,7 +1211,7 @@
       "comment": "A person may have more than one role.",
       "requirements": "Need to know what authority the practitioner has - what can they do?",
       "min": 0,
-      "max": "*",
+      "max": "0",
       "base": {
         "path": "PractitionerRole.code",
         "min": 0,
@@ -1238,7 +1255,7 @@
       "short": "Specific specialty of the practitioner",
       "definition": "Specific specialty of the practitioner.",
       "min": 0,
-      "max": "*",
+      "max": "0",
       "base": {
         "path": "PractitionerRole.specialty",
         "min": 0,
@@ -1282,7 +1299,7 @@
       "short": "The location(s) at which this practitioner provides care",
       "definition": "The location(s) at which this practitioner provides care.",
       "min": 0,
-      "max": "*",
+      "max": "0",
       "base": {
         "path": "PractitionerRole.location",
         "min": 0,
@@ -1318,7 +1335,7 @@
       "short": "The list of healthcare services that this worker provides for this role's Organization/Location(s)",
       "definition": "The list of healthcare services that this worker provides for this role's Organization/Location(s).",
       "min": 0,
-      "max": "*",
+      "max": "0",
       "base": {
         "path": "PractitionerRole.healthcareService",
         "min": 0,
@@ -1352,7 +1369,7 @@
       "definition": "Contact details that are specific to the role/location/service.",
       "requirements": "Often practitioners have a dedicated line for each location (or service) that they work at, and need to be able to define separate contact details for each of these.",
       "min": 0,
-      "max": "*",
+      "max": "0",
       "base": {
         "path": "PractitionerRole.telecom",
         "min": 0,
@@ -1382,7 +1399,7 @@
       "definition": "A collection of times the practitioner is available or performing this role at the location and/or healthcareservice.",
       "comment": "More detailed availability information may be provided in associated Schedule/Slot resources.",
       "min": 0,
-      "max": "*",
+      "max": "0",
       "base": {
         "path": "PractitionerRole.availableTime",
         "min": 0,
@@ -1642,7 +1659,7 @@
       "short": "Not available during this time due to provided reason",
       "definition": "The practitioner is not available or performing this role during this period of time due to the provided reason.",
       "min": 0,
-      "max": "*",
+      "max": "0",
       "base": {
         "path": "PractitionerRole.notAvailable",
         "min": 0,
@@ -1833,7 +1850,7 @@
       "short": "Description of availability exceptions",
       "definition": "A description of site availability exceptions, e.g. public holiday availability. Succinctly describing all possible exceptions to normal site availability as details in the available Times and not available Times.",
       "min": 0,
-      "max": "1",
+      "max": "0",
       "base": {
         "path": "PractitionerRole.availabilityExceptions",
         "min": 0,
@@ -1863,7 +1880,7 @@
       "definition": "Technical endpoints providing access to services operated for the practitioner with this role.",
       "requirements": "Organizations have multiple systems that provide various services and ,ay also be different for practitioners too.  So the endpoint satisfies the need to be able to define the technical connection details for how to connect to them, and for what purpose.",
       "min": 0,
-      "max": "*",
+      "max": "0",
       "base": {
         "path": "PractitionerRole.endpoint",
         "min": 0,
@@ -1910,8 +1927,20 @@
       "path": "PractitionerRole.meta.profile",
       "min": 1,
       "max": "1",
-      "fixedCanonical": "https://demis.rki.de/fhir/StructureDefinition/NotifierRole",
+      "patternCanonical": "https://demis.rki.de/fhir/StructureDefinition/NotifierRole",
       "mustSupport": true
+    }, {
+      "id": "PractitionerRole.identifier",
+      "path": "PractitionerRole.identifier",
+      "max": "0"
+    }, {
+      "id": "PractitionerRole.active",
+      "path": "PractitionerRole.active",
+      "max": "0"
+    }, {
+      "id": "PractitionerRole.period",
+      "path": "PractitionerRole.period",
+      "max": "0"
     }, {
       "id": "PractitionerRole.practitioner",
       "path": "PractitionerRole.practitioner",
@@ -1921,12 +1950,25 @@
         "code": "Reference",
         "targetProfile": [ "https://demis.rki.de/fhir/StructureDefinition/Notifier" ],
         "aggregation": [ "bundled" ]
-      } ]
+      } ],
+      "mustSupport": true
     }, {
       "id": "PractitionerRole.practitioner.reference",
       "path": "PractitionerRole.practitioner.reference",
       "min": 1,
       "mustSupport": true
+    }, {
+      "id": "PractitionerRole.practitioner.type",
+      "path": "PractitionerRole.practitioner.type",
+      "max": "0"
+    }, {
+      "id": "PractitionerRole.practitioner.identifier",
+      "path": "PractitionerRole.practitioner.identifier",
+      "max": "0"
+    }, {
+      "id": "PractitionerRole.practitioner.display",
+      "path": "PractitionerRole.practitioner.display",
+      "max": "0"
     }, {
       "id": "PractitionerRole.organization",
       "path": "PractitionerRole.organization",
@@ -1936,12 +1978,61 @@
         "code": "Reference",
         "targetProfile": [ "https://demis.rki.de/fhir/StructureDefinition/NotifierFacility" ],
         "aggregation": [ "bundled" ]
-      } ]
+      } ],
+      "mustSupport": true
     }, {
       "id": "PractitionerRole.organization.reference",
       "path": "PractitionerRole.organization.reference",
       "min": 1,
       "mustSupport": true
+    }, {
+      "id": "PractitionerRole.organization.type",
+      "path": "PractitionerRole.organization.type",
+      "max": "0"
+    }, {
+      "id": "PractitionerRole.organization.identifier",
+      "path": "PractitionerRole.organization.identifier",
+      "max": "0"
+    }, {
+      "id": "PractitionerRole.organization.display",
+      "path": "PractitionerRole.organization.display",
+      "max": "0"
+    }, {
+      "id": "PractitionerRole.code",
+      "path": "PractitionerRole.code",
+      "max": "0"
+    }, {
+      "id": "PractitionerRole.specialty",
+      "path": "PractitionerRole.specialty",
+      "max": "0"
+    }, {
+      "id": "PractitionerRole.location",
+      "path": "PractitionerRole.location",
+      "max": "0"
+    }, {
+      "id": "PractitionerRole.healthcareService",
+      "path": "PractitionerRole.healthcareService",
+      "max": "0"
+    }, {
+      "id": "PractitionerRole.telecom",
+      "path": "PractitionerRole.telecom",
+      "max": "0"
+    }, {
+      "id": "PractitionerRole.availableTime",
+      "path": "PractitionerRole.availableTime",
+      "max": "0"
+    }, {
+      "id": "PractitionerRole.notAvailable",
+      "path": "PractitionerRole.notAvailable",
+      "max": "0"
+    }, {
+      "id": "PractitionerRole.availabilityExceptions",
+      "path": "PractitionerRole.availabilityExceptions",
+      "max": "0"
+    }, {
+      "id": "PractitionerRole.endpoint",
+      "path": "PractitionerRole.endpoint",
+      "max": "0"
     } ]
   }
 }

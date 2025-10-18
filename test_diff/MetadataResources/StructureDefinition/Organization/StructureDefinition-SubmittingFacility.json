@@ -2,12 +2,27 @@
   "resourceType": "StructureDefinition",
   "id": "SubmittingFacility",
   "url": "https://demis.rki.de/fhir/StructureDefinition/SubmittingFacility",
-  "version": "1.6.0",
+  "version": "2.0.0",
   "name": "SubmittingFacility",
   "title": "Einsender-Einrichtung",
   "status": "active",
-  "date": "2025-03-27",
+  "date": "2025-02-20",
+  "publisher": "Robert Koch-Institut",
+  "contact": [ {
+    "telecom": [ {
+      "system": "email",
+      "value": "demis-support@rki.de"
+    } ]
+  } ],
   "description": "Die Einsender-Einrichtung enthält die Angaben der einsendenden Einrichtung. Die Informationen werden vom zuständigen Gesundsamt zur  Kontaktaufnahme genutzt.",
+  "jurisdiction": [ {
+    "coding": [ {
+      "system": "urn:iso:std:iso:3166",
+      "version": "ALPHA-2",
+      "code": "DE"
+    } ]
+  } ],
+  "copyright": "Copyright (C) 2021-2025 Robert Koch-Institut",
   "fhirVersion": "4.0.1",
   "mapping": [ {
     "identity": "servd",
@@ -352,7 +367,7 @@
         "code": "canonical",
         "targetProfile": [ "http://hl7.org/fhir/StructureDefinition/StructureDefinition" ]
       } ],
-      "fixedCanonical": "https://demis.rki.de/fhir/StructureDefinition/SubmittingFacility",
+      "patternCanonical": "https://demis.rki.de/fhir/StructureDefinition/SubmittingFacility",
       "constraint": [ {
         "key": "ele-1",
         "severity": "error",
@@ -634,8 +649,15 @@
     }, {
       "id": "Organization.identifier",
       "path": "Organization.identifier",
+      "slicing": {
+        "discriminator": [ {
+          "type": "value",
+          "path": "system"
+        } ],
+        "rules": "open"
+      },
       "short": "Identifier für den Einsender",
-      "definition": "falls vorhanden, eindeutigen Identifier für den Einsender (z.B. BSNR)",
+      "definition": "Falls vorhanden, eindeutigen Identifier für den Einsender (z.B. BSNR)",
       "requirements": "Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization.",
       "min": 0,
       "max": "*",
@@ -672,6 +694,49 @@
         "map": "./Identifiers"
       } ]
     }, {
+      "id": "Organization.identifier:bsnr",
+      "path": "Organization.identifier",
+      "sliceName": "bsnr",
+      "short": "Betriebsstättennummer",
+      "definition": "Betriebsstättennummer",
+      "requirements": "Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization.",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "Organization.identifier",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "Identifier",
+        "profile": [ "http://fhir.de/StructureDefinition/identifier-bsnr" ]
+      } ],
+      "condition": [ "org-1" ],
+      "constraint": [ {
+        "key": "ele-1",
+        "severity": "error",
+        "human": "All FHIR elements must have a @value or children",
+        "expression": "hasValue() or (children().count() > id.count())",
+        "xpath": "@value|f:*|h:div",
+        "source": "http://hl7.org/fhir/StructureDefinition/Element"
+      } ],
+      "mustSupport": true,
+      "isModifier": false,
+      "isSummary": true,
+      "mapping": [ {
+        "identity": "w5",
+        "map": "FiveWs.identifier"
+      }, {
+        "identity": "v2",
+        "map": "XON.10 / XON.3"
+      }, {
+        "identity": "rim",
+        "map": ".scopes[Role](classCode=IDENT)"
+      }, {
+        "identity": "servd",
+        "map": "./Identifiers"
+      } ]
+    }, {
       "id": "Organization.active",
       "path": "Organization.active",
       "short": "Whether the organization's record is still in active use",
@@ -679,7 +744,7 @@
       "comment": "This active flag is not intended to be used to mark an organization as temporarily closed or under construction. Instead the Location(s) within the Organization should have the suspended status. If further details of the reason for the suspension are required, then an extension on this element should be used.  This element is labeled as a modifier because it may be used to mark that the resource was created in error.",
       "requirements": "Need a flag to indicate a record is no longer to be used and should generally be hidden for the user in the UI.",
       "min": 0,
-      "max": "1",
+      "max": "0",
       "base": {
         "path": "Organization.active",
         "min": 0,
@@ -1492,7 +1557,7 @@
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       }, {
         "key": "validEmailAddress",
-        "severity": "warning",
+        "severity": "error",
         "human": "Die E-Mail-Adresse muss valide sein.",
         "expression": "$this.matches('^[a-zA-Z0-9._%+-]+@(?:[a-zA-Z0-9-]+[.])+[a-zA-Z0-9]{2,63}$')"
       } ],
@@ -1658,6 +1723,7 @@
         "xpath": "count(f:use[@value='home']) = 0",
         "source": "http://hl7.org/fhir/StructureDefinition/Organization"
       } ],
+      "mustSupport": true,
       "isModifier": false,
       "isSummary": false,
       "mapping": [ {
@@ -1850,7 +1916,7 @@
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       }, {
         "key": "validPhoneNumber",
-        "severity": "warning",
+        "severity": "error",
         "human": "Die Telefonnummer muss valide sein.",
         "expression": "$this.matches('^[0+][0-9 \\\\-\\\\(\\\\)]{6,50}$')"
       } ],
@@ -2173,7 +2239,7 @@
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       }, {
         "key": "validUrl",
-        "severity": "warning",
+        "severity": "error",
         "human": "Die Url muss valide sein.",
         "expression": "$this.matches('^(https?:\\\\/\\\\/(?:www\\\\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\\\.[^\\\\s]{2,}|www\\\\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\\\.[^\\\\s]{2,}|https?:\\\\/\\\\/(?:www\\\\.|(?!www))[a-zA-Z0-9]+\\\\.[^\\\\s]{2,}|www\\\\.[a-zA-Z0-9]+\\\\.[^\\\\s]{2,})$')"
       } ],
@@ -2496,7 +2562,7 @@
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       }, {
         "key": "validFaxNumber",
-        "severity": "warning",
+        "severity": "error",
         "human": "Die Faxnummer muss valide sein.",
         "expression": "$this.matches('^[0+][0-9 \\\\-\\\\(\\\\)]{6,50}$')"
       } ],
@@ -2937,7 +3003,7 @@
       "path": "Organization.address.line",
       "short": "Straßenname mit Hausnummer oder Postfach sowie weitere Angaben zur Zustellung",
       "definition": "Diese Komponente kann Straßennamen, Hausnummer, Appartmentnummer, Postfach, c/o sowie weitere Zustellungshinweise enthalten. Die Informationen können in mehrere line-Komponenten aufgeteilt werden.\r\nBei Verwendung der Extensions, um Straße, Hausnnummer und Postleitzahl strukturiert zu übermitteln, müssen diese Informationen stets vollständig auch in der line-Komponente, die sie erweitern, enthalten sein, um es Systemen, die diese Extensions nicht verwenden zu ermöglichen, auf diese Informationen zugreifen zu können.",
-      "min": 0,
+      "min": 1,
       "max": "3",
       "base": {
         "path": "Address.line",
@@ -3398,10 +3464,6 @@
       "mustSupport": true,
       "isModifier": false,
       "isSummary": true,
-      "binding": {
-        "strength": "preferred",
-        "valueSet": "https://demis.rki.de/fhir/ValueSet/postalCode"
-      },
       "mapping": [ {
         "identity": "v2",
         "map": "XAD.5"
@@ -3799,7 +3861,8 @@
         "max": "1"
       },
       "type": [ {
-        "code": "Address"
+        "code": "Address",
+        "profile": [ "http://fhir.de/StructureDefinition/address-de-basis" ]
       } ],
       "constraint": [ {
         "key": "ele-1",
@@ -3875,13 +3938,35 @@
       "sliceName": "submittingFacility",
       "min": 1,
       "max": "1",
-      "fixedCanonical": "https://demis.rki.de/fhir/StructureDefinition/SubmittingFacility",
+      "patternCanonical": "https://demis.rki.de/fhir/StructureDefinition/SubmittingFacility",
       "mustSupport": true
     }, {
       "id": "Organization.identifier",
       "path": "Organization.identifier",
+      "slicing": {
+        "discriminator": [ {
+          "type": "value",
+          "path": "system"
+        } ],
+        "rules": "open"
+      },
       "short": "Identifier für den Einsender",
-      "definition": "falls vorhanden, eindeutigen Identifier für den Einsender (z.B. BSNR)"
+      "definition": "Falls vorhanden, eindeutigen Identifier für den Einsender (z.B. BSNR)"
+    }, {
+      "id": "Organization.identifier:bsnr",
+      "path": "Organization.identifier",
+      "sliceName": "bsnr",
+      "short": "Betriebsstättennummer",
+      "definition": "Betriebsstättennummer",
+      "type": [ {
+        "code": "Identifier",
+        "profile": [ "http://fhir.de/StructureDefinition/identifier-bsnr" ]
+      } ],
+      "mustSupport": true
+    }, {
+      "id": "Organization.active",
+      "path": "Organization.active",
+      "max": "0"
     }, {
       "id": "Organization.type",
       "path": "Organization.type",
@@ -3949,7 +4034,7 @@
       "min": 1,
       "constraint": [ {
         "key": "validEmailAddress",
-        "severity": "warning",
+        "severity": "error",
         "human": "Die E-Mail-Adresse muss valide sein.",
         "expression": "$this.matches('^[a-zA-Z0-9._%+-]+@(?:[a-zA-Z0-9-]+[.])+[a-zA-Z0-9]{2,63}$')"
       } ],
@@ -3957,7 +4042,8 @@
     }, {
       "id": "Organization.telecom:Phone",
       "path": "Organization.telecom",
-      "sliceName": "Phone"
+      "sliceName": "Phone",
+      "mustSupport": true
     }, {
       "id": "Organization.telecom:Phone.extension",
       "path": "Organization.telecom.extension",
@@ -3989,7 +4075,7 @@
       "min": 1,
       "constraint": [ {
         "key": "validPhoneNumber",
-        "severity": "warning",
+        "severity": "error",
         "human": "Die Telefonnummer muss valide sein.",
         "expression": "$this.matches('^[0+][0-9 \\\\-\\\\(\\\\)]{6,50}$')"
       } ],
@@ -4010,7 +4096,7 @@
       "min": 1,
       "constraint": [ {
         "key": "validUrl",
-        "severity": "warning",
+        "severity": "error",
         "human": "Die Url muss valide sein.",
         "expression": "$this.matches('^(https?:\\\\/\\\\/(?:www\\\\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\\\.[^\\\\s]{2,}|www\\\\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\\\.[^\\\\s]{2,}|https?:\\\\/\\\\/(?:www\\\\.|(?!www))[a-zA-Z0-9]+\\\\.[^\\\\s]{2,}|www\\\\.[a-zA-Z0-9]+\\\\.[^\\\\s]{2,})$')"
       } ],
@@ -4031,7 +4117,7 @@
       "min": 1,
       "constraint": [ {
         "key": "validFaxNumber",
-        "severity": "warning",
+        "severity": "error",
         "human": "Die Faxnummer muss valide sein.",
         "expression": "$this.matches('^[0+][0-9 \\\\-\\\\(\\\\)]{6,50}$')"
       } ],
@@ -4051,6 +4137,7 @@
     }, {
       "id": "Organization.address.line",
       "path": "Organization.address.line",
+      "min": 1,
       "max": "3",
       "mustSupport": true
     }, {
@@ -4061,12 +4148,9 @@
     }, {
       "id": "Organization.address.postalCode",
       "path": "Organization.address.postalCode",
+      "short": "Postleitzahl",
       "min": 1,
-      "mustSupport": true,
-      "binding": {
-        "strength": "preferred",
-        "valueSet": "https://demis.rki.de/fhir/ValueSet/postalCode"
-      }
+      "mustSupport": true
     }, {
       "id": "Organization.address.country",
       "path": "Organization.address.country",
@@ -4088,6 +4172,13 @@
       "short": "Ansprechpartner der Einrichtung",
       "definition": "Ansprechpartner der Einrichtung",
       "mustSupport": true
+    }, {
+      "id": "Organization.contact.address",
+      "path": "Organization.contact.address",
+      "type": [ {
+        "code": "Address",
+        "profile": [ "http://fhir.de/StructureDefinition/address-de-basis" ]
+      } ]
     }, {
       "id": "Organization.endpoint",
       "path": "Organization.endpoint",

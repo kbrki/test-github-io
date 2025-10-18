@@ -2,14 +2,27 @@
   "resourceType": "ValueSet",
   "id": "evidenceIZVD",
   "url": "https://demis.rki.de/fhir/ValueSet/evidenceIZVD",
-  "version": "1.3.0",
+  "version": "2.0.0",
   "name": "EvidenceIZVD",
   "title": "Symptome und Manifestationen in Bezug auf den Meldetatbestand \"Zoonotische Influenza\"",
   "status": "active",
   "experimental": false,
-  "date": "2025-02-20",
+  "date": "2025-09-03",
   "publisher": "Robert Koch-Institut",
+  "contact": [ {
+    "telecom": [ {
+      "system": "email",
+      "value": "demis-support@rki.de"
+    } ]
+  } ],
   "description": "Das ValueSet EvidenceIZVD enthält die kodierten Angaben zu Symptomen und Manifestationen in Bezug auf den Meldetatbestand \"Zoonotische Influenza\".",
+  "jurisdiction": [ {
+    "coding": [ {
+      "system": "urn:iso:std:iso:3166",
+      "version": "ALPHA-2",
+      "code": "DE"
+    } ]
+  } ],
   "copyright": "This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. “SNOMED” and “SNOMED CT” are registered trademarks of the IHTSDO.\r\n\r\nDieses Material enthält SNOMED Clinical Terms® (SNOMED CT®), die mit Genehmigung der International Health Terminology Standards Development Organisation (IHTSDO) verwendet werden. Alle Rechte vorbehalten. SNOMED CT® wurde ursprünglich vom College of American Pathologists entwickelt. \"SNOMED\" und \"SNOMED CT\" sind eingetragene Warenzeichen der IHTSDO.\r\n\r\nDownloadbedingungen für SNOMED-CT\r\n\r\nEnthält durch SNOMED International urheberrechtlich geschützte Information. Jede Verwendung von SNOMED CT in Deutschland erfordert eine vollgültige Affiliate Lizenz oder eine Sublizenz. Die entsprechende Lizenz ist kostenlos, vorausgesetzt die Verwendung findet nur in Deutschland statt und erfüllt die Bedingungen des Affiliate License Agreements. Affiliate Lizenzen können über das Mitglieder-Lizenzierungs- und Distributions-Service (MLDS) direkt beim jeweiligen NRC beantragt werden. https://mlds.ihtsdotools.org/#/landing/DE?lang=de\r\n\r\nContains information protected by copyright of SNOMED International. Any use of SNOMED CT in Austria requires a valid affiliate license or sublicense. The corresponding license is free of charge, provided that the use only takes place in Austria and fulfills the conditions of the Affiliate License Agreement. Affiliate licenses can be requested directly from the respective NRC via the Member Licensing and Distribution Service (MLDS). ttps://mlds.ihtsdotools.org/#/landing/DE?lang=de",
   "compose": {
     "include": [ {
@@ -21,59 +34,31 @@
           "valueInteger": 12
         } ],
         "code": "161891005",
-        "display": "Rückenschmerzen",
-        "designation": [ {
-          "language": "en-US",
-          "use": {
-            "system": "http://snomed.info/sct",
-            "code": "900000000000003001"
-          },
-          "value": "Backache (finding)"
-        } ]
+        "display": "Rückenschmerzen"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 19
         } ],
         "code": "162397003",
-        "display": "Halsschmerzen/-entzündung",
-        "designation": [ {
-          "language": "en-US",
-          "use": {
-            "system": "http://snomed.info/sct",
-            "code": "900000000000003001"
-          },
-          "value": "Pain in throat (finding)"
-        } ]
+        "display": "Halsschmerzen"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
-          "valueInteger": 0
+          "valueInteger": 10
         } ],
         "code": "213257006:{246112005=24484000}",
-        "display": "schweres Krankheitsgefühl",
-        "designation": [ {
-          "language": "en-US",
-          "use": {
-            "system": "http://snomed.info/sct",
-            "code": "1119454002"
-          },
-          "value": "213257006 | Generally unwell (finding) | : {246112005 | Severity (attribute) | = 24484000 | Severe (severity modifier) (qualifier value) |}"
-        } ]
+        "display": "schweres Krankheitsgefühl"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 14
         } ],
         "code": "233604007",
-        "display": "Lungenentzündung (Pneumonie)",
+        "display": "Pneumonie",
         "designation": [ {
-          "language": "en-US",
-          "use": {
-            "system": "http://snomed.info/sct",
-            "code": "900000000000003001"
-          },
-          "value": "Pneumonia (disorder)"
+          "language": "de-DE",
+          "value": "Lungenentzündung (Pneumonie)"
         } ]
       }, {
         "extension": [ {
@@ -81,29 +66,17 @@
           "valueInteger": 15
         } ],
         "code": "25064002",
-        "display": "Kopfschmerzen",
-        "designation": [ {
-          "language": "en-US",
-          "use": {
-            "system": "http://snomed.info/sct",
-            "code": "900000000000003001"
-          },
-          "value": "Headache (finding)"
-        } ]
+        "display": "Kopfschmerzen"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 26
         } ],
         "code": "267036007",
-        "display": "Atemstörung (Dyspnoe)",
+        "display": "Dyspnoe",
         "designation": [ {
-          "language": "en-US",
-          "use": {
-            "system": "http://snomed.info/sct",
-            "code": "900000000000003001"
-          },
-          "value": "Dyspnea (finding)"
+          "language": "de-DE",
+          "value": "Atemstörung (Dyspnoe)"
         } ]
       }, {
         "extension": [ {
@@ -111,59 +84,35 @@
           "valueInteger": 11
         } ],
         "code": "275280004",
-        "display": "Schnupfen",
+        "display": "Sniffles (finding)",
         "designation": [ {
-          "language": "en-US",
-          "use": {
-            "system": "http://snomed.info/sct",
-            "code": "900000000000003001"
-          },
-          "value": "Sniffles (finding)"
+          "language": "de-DE",
+          "value": "Schnupfen"
         } ]
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 24
         } ],
-        "code": "409966000",
-        "display": "Durchfall, akut",
-        "designation": [ {
-          "language": "en-US",
-          "use": {
-            "system": "http://snomed.info/sct",
-            "code": "900000000000003001"
-          },
-          "value": "Acute diarrhea (disorder)"
-        } ]
+        "code": "386661006",
+        "display": "Fieber"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 23
         } ],
         "code": "43724002",
-        "display": "Frösteln",
-        "designation": [ {
-          "language": "en-US",
-          "use": {
-            "system": "http://snomed.info/sct",
-            "code": "900000000000003001"
-          },
-          "value": "Chill (finding)"
-        } ]
+        "display": "Frösteln"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 22
         } ],
         "code": "45170000",
-        "display": "Gehirnentzündung (Enzephalitis)",
+        "display": "Enzephalitis",
         "designation": [ {
-          "language": "en-US",
-          "use": {
-            "system": "http://snomed.info/sct",
-            "code": "900000000000003001"
-          },
-          "value": "Encephalitis (disorder)"
+          "language": "de-DE",
+          "value": "Gehirnentzündung (Enzephalitis)"
         } ]
       }, {
         "extension": [ {
@@ -171,59 +120,21 @@
           "valueInteger": 16
         } ],
         "code": "49727002",
-        "display": "Husten",
-        "designation": [ {
-          "language": "en-US",
-          "use": {
-            "system": "http://snomed.info/sct",
-            "code": "900000000000003001"
-          },
-          "value": "Cough (finding)"
-        } ]
-      }, {
-        "extension": [ {
-          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
-          "valueInteger": 18
-        } ],
-        "code": "50920009",
-        "display": "Herzmuskelentzündung (Myokarditis)",
-        "designation": [ {
-          "language": "en-US",
-          "use": {
-            "system": "http://snomed.info/sct",
-            "code": "900000000000003001"
-          },
-          "value": "Myocarditis (disorder)"
-        } ]
-      }, {
-        "extension": [ {
-          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
-          "valueInteger": 27
-        } ],
-        "code": "67782005",
-        "display": "akutes schweres Atemnotsyndrom (ARDS)",
-        "designation": [ {
-          "language": "en-US",
-          "use": {
-            "system": "http://snomed.info/sct",
-            "code": "900000000000003001"
-          },
-          "value": "Acute respiratory distress syndrome (disorder)"
-        } ]
+        "display": "Husten"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 13
         } ],
         "code": "68962001",
-        "display": "Muskelschmerzen",
+        "display": "Myalgie",
         "designation": [ {
-          "language": "en-US",
+          "language": "de-DE",
           "use": {
             "system": "http://snomed.info/sct",
-            "code": "900000000000003001"
+            "code": "900000000000013009"
           },
-          "value": "Muscle pain (finding)"
+          "value": "Muskelschmerzen"
         } ]
       }, {
         "extension": [ {
@@ -231,14 +142,10 @@
           "valueInteger": 17
         } ],
         "code": "7180009",
-        "display": "Hirnhautentzündung (Meningitis)",
+        "display": "Meningitis",
         "designation": [ {
-          "language": "en-US",
-          "use": {
-            "system": "http://snomed.info/sct",
-            "code": "900000000000003001"
-          },
-          "value": "Meningitis (disorder)"
+          "language": "de-DE",
+          "value": "Hirnhautentzündung (Meningitis)"
         } ]
       }, {
         "extension": [ {
@@ -246,56 +153,24 @@
           "valueInteger": 21
         } ],
         "code": "90834002",
-        "display": "Gliederschmerzen",
-        "designation": [ {
-          "language": "en-US",
-          "use": {
-            "system": "http://snomed.info/sct",
-            "code": "900000000000003001"
-          },
-          "value": "Pain in limb (finding)"
-        } ]
-      }, {
-        "extension": [ {
-          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
-          "valueInteger": 20
-        } ],
-        "code": "95891005",
-        "display": "grippetypische Symptomatik",
-        "designation": [ {
-          "language": "en-US",
-          "use": {
-            "system": "http://snomed.info/sct",
-            "code": "900000000000003001"
-          },
-          "value": "Influenza-like illness (finding)"
-        } ]
+        "display": "Gliederschmerzen"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 25
         } ],
         "code": "9826008",
-        "display": "Bindehautentzündung (Konjunktivitis)",
+        "display": "Konjunktivitis",
         "designation": [ {
-          "language": "en-US",
-          "use": {
-            "system": "http://snomed.info/sct",
-            "code": "900000000000003001"
-          },
-          "value": "Conjunctivitis (disorder)"
+          "language": "de-DE",
+          "value": "Bindehautentzündung (Konjunktivitis)"
         } ]
       } ]
     } ]
   },
   "expansion": {
-    "timestamp": "2025-02-20T00:00:00+01:00",
+    "timestamp": "2025-09-03T00:00:00+02:00",
     "contains": [ {
-      "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
-      "code": "409966000",
-      "display": "Durchfall, akut"
-    }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",
       "code": "49727002",
@@ -308,23 +183,23 @@
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",
-      "code": "95891005",
-      "display": "grippetypische Symptomatik"
+      "code": "267036007",
+      "display": "Dyspnoe"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",
-      "code": "267036007",
-      "display": "Atemstörung (Dyspnoe)"
+      "code": "386661006",
+      "display": "Fieber"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",
       "code": "275280004",
-      "display": "Schnupfen"
+      "display": "Sniffles (finding)"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",
       "code": "68962001",
-      "display": "Muskelschmerzen"
+      "display": "Myalgie"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",
@@ -333,23 +208,13 @@
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",
-      "code": "50920009",
-      "display": "Herzmuskelentzündung (Myokarditis)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
-      "code": "67782005",
-      "display": "akutes schweres Atemnotsyndrom (ARDS)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
       "code": "9826008",
-      "display": "Bindehautentzündung (Konjunktivitis)"
+      "display": "Konjunktivitis"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",
       "code": "162397003",
-      "display": "Halsschmerzen/-entzündung"
+      "display": "Halsschmerzen"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",
@@ -359,12 +224,12 @@
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",
       "code": "233604007",
-      "display": "Lungenentzündung (Pneumonie)"
+      "display": "Pneumonie"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",
       "code": "45170000",
-      "display": "Gehirnentzündung (Enzephalitis)"
+      "display": "Enzephalitis"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",
@@ -379,7 +244,7 @@
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",
       "code": "7180009",
-      "display": "Hirnhautentzündung (Meningitis)"
+      "display": "Meningitis"
     } ]
   }
 }

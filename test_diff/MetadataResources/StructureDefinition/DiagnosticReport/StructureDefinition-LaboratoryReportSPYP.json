@@ -6,8 +6,23 @@
   "name": "LaboratoryReportSPYP",
   "title": "Laborbericht für Scharlach, Beta-hämolysierenden Streptokokken der Gruppe A",
   "status": "active",
-  "date": "2023-10-30",
+  "date": "2025-02-20",
+  "publisher": "Robert Koch-Institut",
+  "contact": [ {
+    "telecom": [ {
+      "system": "email",
+      "value": "demis-support@rki.de"
+    } ]
+  } ],
   "description": "Der Scharlach; GAS-Laborbericht kann mehrere Scharlach; GAS-Erregernachweise enthalten und fasst die Ergebnisse der Einzeltests zusammen.",
+  "jurisdiction": [ {
+    "coding": [ {
+      "system": "urn:iso:std:iso:3166",
+      "version": "ALPHA-2",
+      "code": "DE"
+    } ]
+  } ],
+  "copyright": "Copyright (C) 2021-2025 Robert Koch-Institut",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -17,7 +32,7 @@
   "snapshot": {
     "extension": [ {
       "url": "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
-      "valueString": "1.7.0"
+      "valueString": "2.0.0"
     } ],
     "element": [ {
       "id": "DiagnosticReport",
@@ -306,7 +321,7 @@
         "code": "canonical",
         "targetProfile": [ "http://hl7.org/fhir/StructureDefinition/StructureDefinition" ]
       } ],
-      "fixedCanonical": "https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportSPYP",
+      "patternCanonical": "https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportSPYP",
       "constraint": [ {
         "key": "ele-1",
         "severity": "error",
@@ -923,6 +938,7 @@
       "type": [ {
         "code": "uri"
       } ],
+      "patternUri": "http://snomed.info/sct",
       "constraint": [ {
         "key": "ele-1",
         "severity": "error",
@@ -950,7 +966,7 @@
       "short": "Version of the system - if relevant",
       "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
       "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
-      "min": 0,
+      "min": 1,
       "max": "1",
       "base": {
         "path": "Coding.version",
@@ -968,6 +984,7 @@
         "xpath": "@value|f:*|h:div",
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       } ],
+      "mustSupport": true,
       "isModifier": false,
       "isSummary": true,
       "mapping": [ {
@@ -1565,6 +1582,12 @@
       "type": [ {
         "code": "CodeableConcept"
       } ],
+      "patternCodeableConcept": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+          "code": "FILL"
+        } ]
+      },
       "constraint": [ {
         "key": "ele-1",
         "severity": "error",
@@ -1598,7 +1621,7 @@
       "definition": "Establishes the namespace for the value - that is, a URL that describes a set values that are unique.",
       "comment": "Identifier.system is always case sensitive.",
       "requirements": "There are many sets  of identifiers.  To perform matching of two identifiers, we need to know what set we're dealing with. The system identifies a particular set of unique identifiers.",
-      "min": 0,
+      "min": 1,
       "max": "1",
       "base": {
         "path": "Identifier.system",
@@ -1639,7 +1662,7 @@
       "short": "The value that is unique",
       "definition": "The portion of the identifier typically relevant to the user and which is unique within the context of the system.",
       "comment": "If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value's primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the [Rendered Value extension](extension-rendered-value.html). Identifier.value is to be treated as case sensitive unless knowledge of the Identifier.system allows the processer to be confident that non-case-sensitive processing is safe.",
-      "min": 0,
+      "min": 1,
       "max": "1",
       "base": {
         "path": "Identifier.value",
@@ -2685,8 +2708,8 @@
     }, {
       "id": "DiagnosticReport.issued",
       "path": "DiagnosticReport.issued",
-      "short": "Zeitpunkt der Erstellung/Bearbeitung (der aktuellen Version) des Laborberichts",
-      "definition": "Zeitpunkt der Erstellung/Bearbeitung (der aktuellen Version) des Laborberichts. Dieser ändert sich entsprechend bei Ergänzungen/Korrekturen.",
+      "short": "Zeitpunkt der Erstellung/Bearbeitung (der aktuellen Version) des Laborbefundes",
+      "definition": "Zeitpunkt der Erstellung/Bearbeitung (der aktuellen Version) des Laborbefundes. Dieser ändert sich entsprechend bei Ergänzungen/Korrekturen.",
       "comment": "May be different from the update time of the resource itself, because that is the status of the record (potentially a secondary copy), not the actual release time of the report.",
       "requirements": "Clinicians need to be able to check the date that the report was released.",
       "alias": [ "Date published", "Date Issued", "Date Verified" ],
@@ -3352,6 +3375,13 @@
     }, {
       "id": "DiagnosticReport.conclusionCode",
       "path": "DiagnosticReport.conclusionCode",
+      "slicing": {
+        "discriminator": [ {
+          "type": "value",
+          "path": "coding.system"
+        } ],
+        "rules": "closed"
+      },
       "short": "Kodierte Zusammenfassung der Testergebnisse",
       "definition": "Fasst die Ergebnisse der Einzeltests in kodierter Form zusammen und gibt damit an, ob der Meldetatbestand erfüllt ist.",
       "min": 1,
@@ -3392,7 +3422,50 @@
         "map": "inboundRelationship[typeCode=SPRT].source[classCode=OBS, moodCode=EVN, code=LOINC:54531-9].value (type=CD)"
       } ]
     }, {
-      "id": "DiagnosticReport.conclusionCode.id",
+      "id": "DiagnosticReport.conclusionCode:demisConclusionCode",
+      "path": "DiagnosticReport.conclusionCode",
+      "sliceName": "demisConclusionCode",
+      "short": "Codes for the clinical conclusion of test results",
+      "definition": "One or more codes that represent the summary conclusion (interpretation/impression) of the diagnostic report.",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "DiagnosticReport.conclusionCode",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "CodeableConcept"
+      } ],
+      "constraint": [ {
+        "key": "ele-1",
+        "severity": "error",
+        "human": "All FHIR elements must have a @value or children",
+        "expression": "hasValue() or (children().count() > id.count())",
+        "xpath": "@value|f:*|h:div",
+        "source": "http://hl7.org/fhir/StructureDefinition/Element"
+      } ],
+      "mustSupport": true,
+      "isModifier": false,
+      "isSummary": false,
+      "binding": {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString": "AdjunctDiagnosis"
+        } ],
+        "strength": "example",
+        "description": "Diagnosis codes provided as adjuncts to the report.",
+        "valueSet": "http://hl7.org/fhir/ValueSet/clinical-findings"
+      },
+      "mapping": [ {
+        "identity": "v2",
+        "map": "OBX"
+      }, {
+        "identity": "rim",
+        "map": "inboundRelationship[typeCode=SPRT].source[classCode=OBS, moodCode=EVN, code=LOINC:54531-9].value (type=CD)"
+      } ]
+    }, {
+      "id": "DiagnosticReport.conclusionCode:demisConclusionCode.id",
       "path": "DiagnosticReport.conclusionCode.id",
       "representation": [ "xmlAttr" ],
       "short": "Unique id for inter-element referencing",
@@ -3418,7 +3491,7 @@
         "map": "n/a"
       } ]
     }, {
-      "id": "DiagnosticReport.conclusionCode.extension",
+      "id": "DiagnosticReport.conclusionCode:demisConclusionCode.extension",
       "path": "DiagnosticReport.conclusionCode.extension",
       "slicing": {
         "discriminator": [ {
@@ -3464,7 +3537,7 @@
         "map": "n/a"
       } ]
     }, {
-      "id": "DiagnosticReport.conclusionCode.coding",
+      "id": "DiagnosticReport.conclusionCode:demisConclusionCode.coding",
       "path": "DiagnosticReport.conclusionCode.coding",
       "short": "Code defined by a terminology system",
       "definition": "A reference to a code defined by a terminology system.",
@@ -3507,7 +3580,7 @@
         "map": "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding"
       } ]
     }, {
-      "id": "DiagnosticReport.conclusionCode.coding.id",
+      "id": "DiagnosticReport.conclusionCode:demisConclusionCode.coding.id",
       "path": "DiagnosticReport.conclusionCode.coding.id",
       "representation": [ "xmlAttr" ],
       "short": "Unique id for inter-element referencing",
@@ -3533,7 +3606,7 @@
         "map": "n/a"
       } ]
     }, {
-      "id": "DiagnosticReport.conclusionCode.coding.extension",
+      "id": "DiagnosticReport.conclusionCode:demisConclusionCode.coding.extension",
       "path": "DiagnosticReport.conclusionCode.coding.extension",
       "slicing": {
         "discriminator": [ {
@@ -3579,7 +3652,7 @@
         "map": "n/a"
       } ]
     }, {
-      "id": "DiagnosticReport.conclusionCode.coding.system",
+      "id": "DiagnosticReport.conclusionCode:demisConclusionCode.coding.system",
       "path": "DiagnosticReport.conclusionCode.coding.system",
       "short": "Identity of the terminology system",
       "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
@@ -3595,6 +3668,7 @@
       "type": [ {
         "code": "uri"
       } ],
+      "fixedUri": "https://demis.rki.de/fhir/CodeSystem/conclusionCode",
       "constraint": [ {
         "key": "ele-1",
         "severity": "error",
@@ -3617,7 +3691,7 @@
         "map": "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem"
       } ]
     }, {
-      "id": "DiagnosticReport.conclusionCode.coding.version",
+      "id": "DiagnosticReport.conclusionCode:demisConclusionCode.coding.version",
       "path": "DiagnosticReport.conclusionCode.coding.version",
       "short": "Version of the system - if relevant",
       "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
@@ -3653,7 +3727,7 @@
         "map": "fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion"
       } ]
     }, {
-      "id": "DiagnosticReport.conclusionCode.coding.code",
+      "id": "DiagnosticReport.conclusionCode:demisConclusionCode.coding.code",
       "path": "DiagnosticReport.conclusionCode.coding.code",
       "short": "Symbol in syntax defined by the system",
       "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
@@ -3690,7 +3764,7 @@
         "map": "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code"
       } ]
     }, {
-      "id": "DiagnosticReport.conclusionCode.coding.display",
+      "id": "DiagnosticReport.conclusionCode:demisConclusionCode.coding.display",
       "extension": [ {
         "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
         "valueBoolean": true
@@ -3730,7 +3804,7 @@
         "map": "fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName"
       } ]
     }, {
-      "id": "DiagnosticReport.conclusionCode.coding.userSelected",
+      "id": "DiagnosticReport.conclusionCode:demisConclusionCode.coding.userSelected",
       "path": "DiagnosticReport.conclusionCode.coding.userSelected",
       "short": "If this coding was chosen directly by the user",
       "definition": "Indicates that this coding was chosen by a user directly - e.g. off a pick list of available items (codes or displays).",
@@ -3767,7 +3841,7 @@
         "map": "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]"
       } ]
     }, {
-      "id": "DiagnosticReport.conclusionCode.text",
+      "id": "DiagnosticReport.conclusionCode:demisConclusionCode.text",
       "extension": [ {
         "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
         "valueBoolean": true
@@ -3854,7 +3928,7 @@
       "path": "DiagnosticReport.meta.profile",
       "min": 1,
       "max": "1",
-      "fixedCanonical": "https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportSPYP",
+      "patternCanonical": "https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportSPYP",
       "mustSupport": true
     }, {
       "id": "DiagnosticReport.code",
