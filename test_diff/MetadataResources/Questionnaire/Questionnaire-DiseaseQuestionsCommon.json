@@ -2,11 +2,11 @@
   "resourceType": "Questionnaire",
   "id": "DiseaseQuestionsCommon",
   "url": "https://demis.rki.de/fhir/Questionnaire/DiseaseQuestionsCommon",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "name": "DiseaseQuestionsCommon",
   "title": "Fragebogen für meldetatbestandsübergreifende klinische und epidemiologische Angaben",
   "status": "active",
-  "date": "2025-01-06",
+  "date": "2025-10-25",
   "description": "Fragen, die meldetatbestandsübergreifend von Interesse sind, werden in diesem allgemeinen Fragebogen abgebildet. Dieser Fragebogen ist für sämtliche Meldungen gemäß §6 Absatz 1, 2 IfSG auszufüllen und somit als spezifische QuestionnaireResponse integraler Bestandteil einer jeden Meldung.",
   "item": [ {
     "extension": [ {
@@ -181,9 +181,12 @@
           "display": "Radio Button"
         } ]
       }
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/entryFormat",
+      "valueString": "Die für den Infektionsschutz relevanten Einrichtungen sind im Infektionsschutzgesetz definiert. Dazu zählen u.a. Einrichtungen gemäß § 23 IfSG (z.B. Krankenhäuser, ärztliche Praxen, Dialyseeinrichtungen und Rettungsdienste), gemäß § 33 IfSG (z.B. Kitas, Kinderhorte, Schulen, Heime und Ferienlager) und gemäß §§ 35-36 IfSG (Pflegeeinrichtungen, Obdachlosunterkünfte, Einrichtungen zur gemeinschaftlichen Unterbringung von Asylsuchenden, sonstige Massenunterkünfte, Justizvollzugsanstalten)."
     } ],
     "linkId": "infectProtectFacility",
-    "text": "Ist die betroffene Person in einer für den Infektionsschutz relevanten Einrichtung tätig, betreut oder untergebracht? (Die für den Infektionsschutz relevanten Einrichtungen sind im Infektionsschutzgesetz definiert. Dazu zählen u.a. Einrichtungen gemäß § 23 IfSG (z.B. Krankenhäuser, ärztliche Praxen, Dialyseeinrichtungen und Rettungsdienste), gemäß § 33 IfSG (z.B. Kitas, Kinderhorte, Schulen, Heime und Ferienlager) und gemäß §§ 35-36 IfSG (Pflegeeinrichtungen, Obdachlosunterkünfte, Einrichtungen zur gemeinschaftlichen Unterbringung von Asylsuchenden, sonstige Massenunterkünfte, Justizvollzugsanstalten).)",
+    "text": "Ist die betroffene Person in einer für den Infektionsschutz relevanten Einrichtung tätig, betreut oder untergebracht?",
     "type": "choice",
     "required": true,
     "answerValueSet": "https://demis.rki.de/fhir/ValueSet/yesOrNoOrNoInformation",
