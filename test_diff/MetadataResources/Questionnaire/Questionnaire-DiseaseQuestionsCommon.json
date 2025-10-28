@@ -2,27 +2,12 @@
   "resourceType": "Questionnaire",
   "id": "DiseaseQuestionsCommon",
   "url": "https://demis.rki.de/fhir/Questionnaire/DiseaseQuestionsCommon",
-  "version": "1.4.1",
+  "version": "1.4.0",
   "name": "DiseaseQuestionsCommon",
   "title": "Fragebogen für meldetatbestandsübergreifende klinische und epidemiologische Angaben",
   "status": "active",
-  "date": "2025-09-01",
-  "publisher": "Robert Koch-Institut",
-  "contact": [ {
-    "telecom": [ {
-      "system": "email",
-      "value": "demis-support@rki.de"
-    } ]
-  } ],
+  "date": "2025-01-06",
   "description": "Fragen, die meldetatbestandsübergreifend von Interesse sind, werden in diesem allgemeinen Fragebogen abgebildet. Dieser Fragebogen ist für sämtliche Meldungen gemäß §6 Absatz 1, 2 IfSG auszufüllen und somit als spezifische QuestionnaireResponse integraler Bestandteil einer jeden Meldung.",
-  "jurisdiction": [ {
-    "coding": [ {
-      "system": "urn:iso:std:iso:3166",
-      "version": "ALPHA-2",
-      "code": "DE"
-    } ]
-  } ],
-  "copyright": "Copyright (C) 2021-2025 Robert Koch-Institut",
   "item": [ {
     "extension": [ {
       "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -41,16 +26,12 @@
     "answerValueSet": "https://demis.rki.de/fhir/ValueSet/yesOrNoOrNoInformation",
     "initial": [ {
       "valueCoding": {
-        "system": "http://snomed.info/sct",
-        "code": "1631000175102",
-        "display": "Patient not asked (contextual qualifier) (qualifier value)"
+        "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "code": "NASK",
+        "display": "not asked"
       }
     } ],
     "item": [ {
-      "extension": [ {
-        "url": "http://hl7.org/fhir/StructureDefinition/regex",
-        "valueString": "^19[0-9]{2}-[0-9]{2}-[0-9]{2}$|^20[0-9]{2}-[0-9]{2}-[0-9]{2}$|^19[0-9]{2}-[0-9]{2}$|^20[0-9]{2}-[0-9]{2}$"
-      } ],
       "linkId": "deathDate",
       "text": "Sterbedatum",
       "type": "date",
@@ -81,9 +62,9 @@
     "answerValueSet": "https://demis.rki.de/fhir/ValueSet/answerSetMilitaryAffiliation",
     "initial": [ {
       "valueCoding": {
-        "system": "http://snomed.info/sct",
-        "code": "1631000175102",
-        "display": "Patient not asked (contextual qualifier) (qualifier value)"
+        "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "code": "NASK",
+        "display": "not asked"
       }
     } ]
   }, {
@@ -104,9 +85,9 @@
     "answerValueSet": "https://demis.rki.de/fhir/ValueSet/yesOrNoOrNoInformation",
     "initial": [ {
       "valueCoding": {
-        "system": "http://snomed.info/sct",
-        "code": "1631000175102",
-        "display": "Patient not asked (contextual qualifier) (qualifier value)"
+        "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "code": "NASK",
+        "display": "not asked"
       }
     } ],
     "item": [ {
@@ -145,9 +126,9 @@
     "answerValueSet": "https://demis.rki.de/fhir/ValueSet/yesOrNoOrNoInformation",
     "initial": [ {
       "valueCoding": {
-        "system": "http://snomed.info/sct",
-        "code": "1631000175102",
-        "display": "Patient not asked (contextual qualifier) (qualifier value)"
+        "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "code": "NASK",
+        "display": "not asked"
       }
     } ],
     "item": [ {
@@ -200,9 +181,6 @@
           "display": "Radio Button"
         } ]
       }
-    }, {
-      "url": "http://hl7.org/fhir/StructureDefinition/entryFormat",
-      "valueString": "(Die für den Infektionsschutz relevanten Einrichtungen sind im Infektionsschutzgesetz definiert. Dazu zählen u.a. Einrichtungen gemäß § 23 IfSG (z.B. Krankenhäuser, ärztliche Praxen, Dialyseeinrichtungen und Rettungsdienste), gemäß § 33 IfSG (z.B. Kitas, Kinderhorte, Schulen, Heime und Ferienlager) und gemäß §§ 35-36 IfSG (Pflegeeinrichtungen, Obdachlosunterkünfte, Einrichtungen zur gemeinschaftlichen Unterbringung von Asylsuchenden, sonstige Massenunterkünfte, Justizvollzugsanstalten).)"
     } ],
     "linkId": "infectProtectFacility",
     "text": "Ist die betroffene Person in einer für den Infektionsschutz relevanten Einrichtung tätig, betreut oder untergebracht? (Die für den Infektionsschutz relevanten Einrichtungen sind im Infektionsschutzgesetz definiert. Dazu zählen u.a. Einrichtungen gemäß § 23 IfSG (z.B. Krankenhäuser, ärztliche Praxen, Dialyseeinrichtungen und Rettungsdienste), gemäß § 33 IfSG (z.B. Kitas, Kinderhorte, Schulen, Heime und Ferienlager) und gemäß §§ 35-36 IfSG (Pflegeeinrichtungen, Obdachlosunterkünfte, Einrichtungen zur gemeinschaftlichen Unterbringung von Asylsuchenden, sonstige Massenunterkünfte, Justizvollzugsanstalten).)",
@@ -211,9 +189,9 @@
     "answerValueSet": "https://demis.rki.de/fhir/ValueSet/yesOrNoOrNoInformation",
     "initial": [ {
       "valueCoding": {
-        "system": "http://snomed.info/sct",
-        "code": "1631000175102",
-        "display": "Patient not asked (contextual qualifier) (qualifier value)"
+        "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "code": "NASK",
+        "display": "not asked"
       }
     } ],
     "item": [ {
@@ -264,10 +242,6 @@
         "required": false,
         "answerValueSet": "https://demis.rki.de/fhir/ValueSet/organizationType"
       }, {
-        "extension": [ {
-          "url": "http://hl7.org/fhir/StructureDefinition/regex",
-          "valueString": "^19[0-9]{2}-[0-9]{2}-[0-9]{2}$|^20[0-9]{2}-[0-9]{2}-[0-9]{2}$|^19[0-9]{2}-[0-9]{2}$|^20[0-9]{2}-[0-9]{2}$"
-        } ],
         "linkId": "infectProtectFacilityBegin",
         "text": "Beginn",
         "type": "date",
@@ -280,10 +254,6 @@
           }
         } ]
       }, {
-        "extension": [ {
-          "url": "http://hl7.org/fhir/StructureDefinition/regex",
-          "valueString": "^19[0-9]{2}-[0-9]{2}-[0-9]{2}$|^20[0-9]{2}-[0-9]{2}-[0-9]{2}$|^19[0-9]{2}-[0-9]{2}$|^20[0-9]{2}-[0-9]{2}$"
-        } ],
         "linkId": "infectProtectFacilityEnd",
         "text": "Ende",
         "type": "date",
@@ -356,9 +326,9 @@
     "answerValueSet": "https://demis.rki.de/fhir/ValueSet/yesOrNoOrNoInformation",
     "initial": [ {
       "valueCoding": {
-        "system": "http://snomed.info/sct",
-        "code": "1631000175102",
-        "display": "Patient not asked (contextual qualifier) (qualifier value)"
+        "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "code": "NASK",
+        "display": "not asked"
       }
     } ],
     "item": [ {
@@ -385,10 +355,6 @@
       "required": true,
       "repeats": true,
       "item": [ {
-        "extension": [ {
-          "url": "http://hl7.org/fhir/StructureDefinition/regex",
-          "valueString": "^19[0-9]{2}-[0-9]{2}-[0-9]{2}$|^20[0-9]{2}-[0-9]{2}-[0-9]{2}$|^19[0-9]{2}-[0-9]{2}$|^20[0-9]{2}-[0-9]{2}$"
-        } ],
         "linkId": "placeExposureBegin",
         "text": "Beginn",
         "type": "date",
@@ -401,10 +367,6 @@
           }
         } ]
       }, {
-        "extension": [ {
-          "url": "http://hl7.org/fhir/StructureDefinition/regex",
-          "valueString": "^19[0-9]{2}-[0-9]{2}-[0-9]{2}$|^20[0-9]{2}-[0-9]{2}-[0-9]{2}$|^19[0-9]{2}-[0-9]{2}$|^20[0-9]{2}-[0-9]{2}$"
-        } ],
         "linkId": "placeExposureEnd",
         "text": "Ende",
         "type": "date",
@@ -442,9 +404,9 @@
         "answerValueSet": "https://demis.rki.de/fhir/ValueSet/answerSetGeographicRegion",
         "initial": [ {
           "valueCoding": {
-            "system": "http://snomed.info/sct",
-            "code": "1631000175102",
-            "display": "Patient not asked (contextual qualifier) (qualifier value)"
+            "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+            "code": "NASK",
+            "display": "not asked"
           }
         } ]
       }, {
@@ -479,9 +441,9 @@
     "answerValueSet": "https://demis.rki.de/fhir/ValueSet/yesOrNoOrNoInformation",
     "initial": [ {
       "valueCoding": {
-        "system": "http://snomed.info/sct",
-        "code": "1631000175102",
-        "display": "Patient not asked (contextual qualifier) (qualifier value)"
+        "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "code": "NASK",
+        "display": "not asked"
       }
     } ]
   }, {

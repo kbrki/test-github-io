@@ -2,27 +2,12 @@
   "resourceType": "StructureDefinition",
   "id": "ProcessNotificationResponseParameters",
   "url": "https://demis.rki.de/fhir/StructureDefinition/ProcessNotificationResponseParameters",
-  "version": "2.0.0",
+  "version": "1.2.0",
   "name": "ProcessNotificationResponseParameters",
   "title": "ProcessNotification-Ausgabeparameter",
   "status": "active",
-  "date": "2025-02-20",
-  "publisher": "Robert Koch-Institut",
-  "contact": [ {
-    "telecom": [ {
-      "system": "email",
-      "value": "demis-support@rki.de"
-    } ]
-  } ],
+  "date": "2023-09-20",
   "description": "Der ProcessNotificationResponseParameter ist der Ausgabeparameter für die ProcessNotification-Operation. Er beinhaltet ein Quittungs-Bundle und eine ProcessNotificationResponse.",
-  "jurisdiction": [ {
-    "coding": [ {
-      "system": "urn:iso:std:iso:3166",
-      "version": "ALPHA-2",
-      "code": "DE"
-    } ]
-  } ],
-  "copyright": "Copyright (C) 2021-2025 Robert Koch-Institut",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -30,10 +15,6 @@
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Parameters",
   "derivation": "constraint",
   "snapshot": {
-    "extension": [ {
-      "url": "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
-      "valueString": "4.0.1"
-    } ],
     "element": [ {
       "id": "Parameters",
       "path": "Parameters",
@@ -274,7 +255,7 @@
         "code": "canonical",
         "targetProfile": [ "http://hl7.org/fhir/StructureDefinition/StructureDefinition" ]
       } ],
-      "patternCanonical": "https://demis.rki.de/fhir/StructureDefinition/ProcessNotificationResponseParameters",
+      "fixedCanonical": "https://demis.rki.de/fhir/StructureDefinition/ProcessNotificationResponseParameters",
       "constraint": [ {
         "key": "ele-1",
         "severity": "error",
@@ -926,7 +907,7 @@
       "short": "If parameter is a data type",
       "definition": "If the parameter is a data type.",
       "min": 0,
-      "max": "0",
+      "max": "1",
       "base": {
         "path": "Parameters.parameter.value[x]",
         "min": 0,
@@ -1084,7 +1065,7 @@
       "definition": "A named part of a multi-part parameter.",
       "comment": "Only one level of nested parameters is allowed.",
       "min": 0,
-      "max": "0",
+      "max": "*",
       "base": {
         "path": "Parameters.parameter.part",
         "min": 0,
@@ -1272,7 +1253,7 @@
       "short": "If parameter is a data type",
       "definition": "If the parameter is a data type.",
       "min": 0,
-      "max": "0",
+      "max": "1",
       "base": {
         "path": "Parameters.parameter.value[x]",
         "min": 0,
@@ -1424,7 +1405,7 @@
       "definition": "A named part of a multi-part parameter.",
       "comment": "Only one level of nested parameters is allowed.",
       "min": 0,
-      "max": "0",
+      "max": "*",
       "base": {
         "path": "Parameters.parameter.part",
         "min": 0,
@@ -1454,7 +1435,7 @@
       "path": "Parameters.meta.profile",
       "min": 1,
       "max": "1",
-      "patternCanonical": "https://demis.rki.de/fhir/StructureDefinition/ProcessNotificationResponseParameters",
+      "fixedCanonical": "https://demis.rki.de/fhir/StructureDefinition/ProcessNotificationResponseParameters",
       "mustSupport": true
     }, {
       "id": "Parameters.parameter",
@@ -1477,10 +1458,6 @@
       "fixedString": "bundle",
       "mustSupport": true
     }, {
-      "id": "Parameters.parameter:bundle.value[x]",
-      "path": "Parameters.parameter.value[x]",
-      "max": "0"
-    }, {
       "id": "Parameters.parameter:bundle.resource",
       "path": "Parameters.parameter.resource",
       "min": 1,
@@ -1489,10 +1466,6 @@
         "profile": [ "https://demis.rki.de/fhir/StructureDefinition/ReceiptBundle" ]
       } ],
       "mustSupport": true
-    }, {
-      "id": "Parameters.parameter:bundle.part",
-      "path": "Parameters.parameter.part",
-      "max": "0"
     }, {
       "id": "Parameters.parameter:operationOutcome",
       "path": "Parameters.parameter",
@@ -1506,10 +1479,6 @@
       "fixedString": "operationOutcome",
       "mustSupport": true
     }, {
-      "id": "Parameters.parameter:operationOutcome.value[x]",
-      "path": "Parameters.parameter.value[x]",
-      "max": "0"
-    }, {
       "id": "Parameters.parameter:operationOutcome.resource",
       "path": "Parameters.parameter.resource",
       "min": 1,
@@ -1518,10 +1487,6 @@
         "profile": [ "https://demis.rki.de/fhir/StructureDefinition/ProcessNotificationResponse" ]
       } ],
       "mustSupport": true
-    }, {
-      "id": "Parameters.parameter:operationOutcome.part",
-      "path": "Parameters.parameter.part",
-      "max": "0"
     } ]
   }
 }

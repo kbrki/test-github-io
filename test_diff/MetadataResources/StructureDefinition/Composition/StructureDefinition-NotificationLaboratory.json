@@ -2,27 +2,12 @@
   "resourceType": "StructureDefinition",
   "id": "NotificationLaboratory",
   "url": "https://demis.rki.de/fhir/StructureDefinition/NotificationLaboratory",
-  "version": "2.0.2",
+  "version": "1.8.0",
   "name": "NotificationLaboratory",
   "title": "Erregernachweismeldung",
   "status": "active",
-  "date": "2025-08-06",
-  "publisher": "Robert Koch-Institut",
-  "contact": [ {
-    "telecom": [ {
-      "system": "email",
-      "value": "demis-support@rki.de"
-    } ]
-  } ],
+  "date": "2025-07-25",
   "description": "Die Erregernachweismeldung definiert die Meldeinhalte, die von Laboren übermittelt werden müssen. Erregerspezifische Befunddaten werden über Subprofile des Laborberichts-Profils definiert. In der Erregernachweismeldung kann ein spezifischer Laborbericht referenziert werden.",
-  "jurisdiction": [ {
-    "coding": [ {
-      "system": "urn:iso:std:iso:3166",
-      "version": "ALPHA-2",
-      "code": "DE"
-    } ]
-  } ],
-  "copyright": "Copyright (C) 2021-2025 Robert Koch-Institut",
   "fhirVersion": "4.0.1",
   "mapping": [ {
     "identity": "cda",
@@ -39,10 +24,6 @@
   "baseDefinition": "https://demis.rki.de/fhir/StructureDefinition/Notification",
   "derivation": "constraint",
   "snapshot": {
-    "extension": [ {
-      "url": "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
-      "valueString": "2.0.1"
-    } ],
     "element": [ {
       "id": "Composition",
       "path": "Composition",
@@ -98,12 +79,6 @@
         "expression": "text.`div`.exists()",
         "xpath": "exists(f:text/h:div)",
         "source": "http://hl7.org/fhir/StructureDefinition/DomainResource"
-      }, {
-        "key": "idOfReferencedNotificationUnequalToNotificationId",
-        "severity": "error",
-        "human": "Die in relatesTo angegebene ID der referenzierten Meldung darf nicht gleich der Meldungs-ID (Composition.identifier) sein.",
-        "expression": "Composition.relatesTo.count()=0 or (Composition.relatesTo.target.identifier.value.toString()!=Composition.identifier.value.toString())",
-        "source": "https://demis.rki.de/fhir/StructureDefinition/Notification"
       } ],
       "isModifier": false,
       "isSummary": false,
@@ -338,7 +313,7 @@
         "code": "canonical",
         "targetProfile": [ "http://hl7.org/fhir/StructureDefinition/StructureDefinition" ]
       } ],
-      "patternCanonical": "https://demis.rki.de/fhir/StructureDefinition/NotificationLaboratory",
+      "fixedCanonical": "https://demis.rki.de/fhir/StructureDefinition/NotificationLaboratory",
       "constraint": [ {
         "key": "ele-1",
         "severity": "error",
@@ -621,7 +596,7 @@
       "id": "Composition.identifier",
       "path": "Composition.identifier",
       "short": "Eindeutige ID der Meldung",
-      "definition": "Eindeutige ID der Meldung, die vom Melder bei Erstellung generiert wird oder sich aus der Auftragsnummer ableitet. Es handelt sich um eine UUID im NamingSystem https://demis.rki.de/fhir/NamingSystem/NotificationId.\r\n\r\nAls system MUSS https://demis.rki.de/fhir/NamingSystem/NotificationId verwendet werden.\r\n\r\nDer value MUSS eine durch das System des Melders generierte UUID sein, die gemäß einer der beiden im Folgenden beschriebenen Varianten gebildet wird:\r\n\r\nVariante 1 - Bildung einer Random-UUID (v4) gemäß RFC4122\r\nVariante 2 - Bildung einer namensbasierten UUID (v5) gemäß RFC4122 (SHA1-basiert)",
+      "definition": "Eindeutige ID der Meldung, die vom Melder bei Erstellung generiert wird oder sich aus der Auftragsnummer ableitet. Es handelt sich um eine UUID im NamingSystem https://demis.rki.de/fhir/NamingSystem/NotificationId.",
       "comment": "Bei einer Ergänzungs- bzw. einer Korrekturmeldung ist die gleiche NotificationId der Meldung anzugegeben.",
       "min": 1,
       "max": "1",
@@ -740,7 +715,7 @@
       "comment": "Applications can assume that an identifier is permanent unless it explicitly says that it is temporary.",
       "requirements": "Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers.",
       "min": 0,
-      "max": "0",
+      "max": "1",
       "base": {
         "path": "Identifier.use",
         "min": 0,
@@ -784,7 +759,7 @@
       "comment": "This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.",
       "requirements": "Allows users to make use of identifiers when the identifier system is not known.",
       "min": 0,
-      "max": "0",
+      "max": "1",
       "base": {
         "path": "Identifier.type",
         "min": 0,
@@ -889,12 +864,6 @@
         "expression": "hasValue() or (children().count() > id.count())",
         "xpath": "@value|f:*|h:div",
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
-      }, {
-        "key": "validNotificationId",
-        "severity": "error",
-        "human": "Die NotificationId muss dem UUID-Format [0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12} entsprechen.",
-        "expression": "$this.toString().matches('^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$')",
-        "source": "https://demis.rki.de/fhir/StructureDefinition/Notification"
       } ],
       "mustSupport": true,
       "isModifier": false,
@@ -915,7 +884,7 @@
       "short": "Time period when id is/was valid for use",
       "definition": "Time period during which identifier is/was valid for use.",
       "min": 0,
-      "max": "0",
+      "max": "1",
       "base": {
         "path": "Identifier.period",
         "min": 0,
@@ -951,7 +920,7 @@
       "definition": "Organization that issued/manages the identifier.",
       "comment": "The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization.",
       "min": 0,
-      "max": "0",
+      "max": "1",
       "base": {
         "path": "Identifier.assigner",
         "min": 0,
@@ -986,7 +955,7 @@
       "path": "Composition.status",
       "short": "Status der Meldungsinhalte",
       "definition": "Der Status gibt, ob die Meldungsinhalte verbindlich oder vorläufig sind. Oder ob es sich um eine Korrektur-bzw. Ergänzungsmeldung handelt.",
-      "comment": "Der Status ist szenarienspezifisch (siehe Abschnitt Lifecyclemanagement im Implementierungsleitfaden) folgendermaßen zu belegen: \r\nfinal - wenn keine weiteren Untersuchungen notwendig sind oder es sich um das erste von mehreren Untersuchungsergebnissen handelt;\r\npreliminary - wenn ein Bestätigungstest notwendig ist;\r\namended - wenn die Meldung korrigiert oder um einen weiteren Erregernachweis ergänzt wird.",
+      "comment": "Der Status ist szenarienspezifisch folgendermaßen zu belegen:\r\nfinal - wenn keine weiteren Untersuchungen notwendig sind und der Meldetatbestand erfüllt ist\r\npreliminary - wenn ein Bestätigungstest notwendig ist\r\namended - wenn die Meldung korrigiert oder um einen weiteren Erregernachweis ergänzt wird",
       "requirements": "Need to be able to mark interim, amended, or withdrawn compositions or documents.",
       "min": 1,
       "max": "1",
@@ -1011,9 +980,13 @@
       "isModifierReason": "This element is labelled as a modifier because it is a status element that contains status entered-in-error which means that the resource should not be treated as valid",
       "isSummary": true,
       "binding": {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString": "CompositionStatus"
+        } ],
         "strength": "required",
-        "description": "Status der Meldungsinhalte",
-        "valueSet": "https://demis.rki.de/fhir/ValueSet/notificationStatus"
+        "description": "The workflow/clinical status of the composition.",
+        "valueSet": "http://hl7.org/fhir/ValueSet/composition-status|4.0.1"
       },
       "mapping": [ {
         "identity": "workflow",
@@ -1211,7 +1184,7 @@
       "comment": "Very often the text is the same as a displayName of one of the codings.",
       "requirements": "The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.",
       "min": 0,
-      "max": "0",
+      "max": "1",
       "base": {
         "path": "CodeableConcept.text",
         "min": 0,
@@ -1243,12 +1216,12 @@
     }, {
       "id": "Composition.category",
       "path": "Composition.category",
-      "short": "Categorization of Composition",
-      "definition": "A categorization for the type of the composition - helps for indexing and searching. This may be implied by or derived from the code specified in the Composition Type.",
+      "short": "Art der Meldung",
+      "definition": "Art der Meldung. Für die Erregernachweismeldung ist category mit dem LOINC-Code \"Laboratory report\" im coding zu belegen.",
       "comment": "This is a metadata field from [XDS/MHD](http://wiki.ihe.net/index.php?title=Mobile_access_to_Health_Documents_(MHD)).",
       "requirements": "Helps humans to assess whether the composition is of interest when viewing an index of compositions or documents.",
       "min": 0,
-      "max": "0",
+      "max": "1",
       "base": {
         "path": "Composition.category",
         "min": 0,
@@ -1265,6 +1238,7 @@
         "xpath": "@value|f:*|h:div",
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       } ],
+      "mustSupport": true,
       "isModifier": false,
       "isSummary": true,
       "binding": {
@@ -1371,8 +1345,8 @@
       "definition": "A reference to a code defined by a terminology system.",
       "comment": "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.",
       "requirements": "Allows for alternative encodings within a code system, and translations to other code systems.",
-      "min": 0,
-      "max": "*",
+      "min": 1,
+      "max": "1",
       "base": {
         "path": "CodeableConcept.coding",
         "min": 0,
@@ -1381,6 +1355,11 @@
       "type": [ {
         "code": "Coding"
       } ],
+      "patternCoding": {
+        "system": "http://loinc.org",
+        "code": "11502-2",
+        "display": "Laboratory report"
+      },
       "constraint": [ {
         "key": "ele-1",
         "severity": "error",
@@ -1389,6 +1368,7 @@
         "xpath": "@value|f:*|h:div",
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       } ],
+      "mustSupport": true,
       "isModifier": false,
       "isSummary": true,
       "mapping": [ {
@@ -1413,7 +1393,7 @@
       "comment": "Very often the text is the same as a displayName of one of the codings.",
       "requirements": "The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.",
       "min": 0,
-      "max": "0",
+      "max": "1",
       "base": {
         "path": "CodeableConcept.text",
         "min": 0,
@@ -1445,8 +1425,8 @@
     }, {
       "id": "Composition.subject",
       "path": "Composition.subject",
-      "short": "Verweis auf die betroffene Person (namentlich oder anonym).",
-      "definition": "Verweis auf die betroffene Person (namentlich oder anonym).",
+      "short": "Verweis auf die betroffene Person (namentlich).",
+      "definition": "Verweis auf die betroffene Person (namentlich).",
       "comment": "For clinical documents, this is usually the patient.",
       "requirements": "Essential metadata for searching for the composition. Identifies who and/or what the composition/document is about.",
       "min": 1,
@@ -1495,7 +1475,7 @@
       "definition": "Describes the clinical encounter or type of care this documentation is associated with.",
       "requirements": "Provides context for the composition and supports searching.",
       "min": 0,
-      "max": "0",
+      "max": "1",
       "base": {
         "path": "Composition.encounter",
         "min": 0,
@@ -1731,7 +1711,7 @@
       "definition": "The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.  The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. \"Patient\" is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources).",
       "comment": "This element is used to indicate the type of  the target of the reference. This may be used which ever of the other elements are populated (or not). In some cases, the type of the target may be determined by inspection of the reference (e.g. a RESTful URL) or by resolving the target of the reference; if both the type and a reference is provided, the reference SHALL resolve to a resource of the same type as that specified.",
       "min": 0,
-      "max": "0",
+      "max": "1",
       "base": {
         "path": "Reference.type",
         "min": 0,
@@ -1770,7 +1750,7 @@
       "definition": "An identifier for the target resource. This is used when there is no way to reference the other resource directly, either because the entity it represents is not available through a FHIR server, or because there is no way for the author of the resource to convert a known identifier to an actual location. There is no requirement that a Reference.identifier point to something that is actually exposed as a FHIR instance, but it SHALL point to a business concept that would be expected to be exposed as a FHIR instance, and that instance would need to be of a FHIR resource type allowed by the reference.",
       "comment": "When an identifier is provided in place of a reference, any system processing the reference will only be able to resolve the identifier to a reference if it understands the business context in which the identifier is used. Sometimes this is global (e.g. a national identifier) but often it is not. For this reason, none of the useful mechanisms described for working with references (e.g. chaining, includes) are possible, nor should servers be expected to be able resolve the reference. Servers may accept an identifier based reference untouched, resolve it, and/or reject it - see CapabilityStatement.rest.resource.referencePolicy.   When both an identifier and a literal reference are provided, the literal reference is preferred. Applications processing the resource are allowed - but not required - to check that the identifier matches the literal reference  Applications converting a logical reference to a literal reference may choose to leave the logical reference present, or remove it.  Reference is intended to point to a structure that can potentially be expressed as a FHIR resource, though there is no need for it to exist as an actual FHIR resource instance - except in as much as an application wishes to actual find the target of the reference. The content referred to be the identifier must meet the logical constraints implied by any limitations on what resource types are permitted for the reference.  For example, it would not be legitimate to send the identifier for a drug prescription if the type were Reference(Observation|DiagnosticReport).  One of the use-cases for Reference.identifier is the situation where no FHIR representation exists (where the type is Reference (Any).",
       "min": 0,
-      "max": "0",
+      "max": "1",
       "base": {
         "path": "Reference.identifier",
         "min": 0,
@@ -1804,7 +1784,7 @@
       "definition": "Plain text narrative that identifies the resource in addition to the resource reference.",
       "comment": "This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.",
       "min": 0,
-      "max": "0",
+      "max": "1",
       "base": {
         "path": "Reference.display",
         "min": 0,
@@ -2503,7 +2483,7 @@
       "definition": "A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources.",
       "comment": "Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure \"/[type]/[id]\" then it should be assumed that the reference is to a FHIR RESTful server.",
       "min": 0,
-      "max": "0",
+      "max": "1",
       "base": {
         "path": "Reference.reference",
         "min": 0,
@@ -2679,7 +2659,7 @@
       "comment": "Applications can assume that an identifier is permanent unless it explicitly says that it is temporary.",
       "requirements": "Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers.",
       "min": 0,
-      "max": "0",
+      "max": "1",
       "base": {
         "path": "Identifier.use",
         "min": 0,
@@ -2723,7 +2703,7 @@
       "comment": "This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.",
       "requirements": "Allows users to make use of identifiers when the identifier system is not known.",
       "min": 0,
-      "max": "0",
+      "max": "1",
       "base": {
         "path": "Identifier.type",
         "min": 0,
@@ -2848,7 +2828,7 @@
       "short": "Time period when id is/was valid for use",
       "definition": "Time period during which identifier is/was valid for use.",
       "min": 0,
-      "max": "0",
+      "max": "1",
       "base": {
         "path": "Identifier.period",
         "min": 0,
@@ -2884,7 +2864,7 @@
       "definition": "Organization that issued/manages the identifier.",
       "comment": "The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization.",
       "min": 0,
-      "max": "0",
+      "max": "1",
       "base": {
         "path": "Identifier.assigner",
         "min": 0,
@@ -2925,7 +2905,7 @@
       "definition": "Plain text narrative that identifies the resource in addition to the resource reference.",
       "comment": "This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.",
       "min": 0,
-      "max": "0",
+      "max": "1",
       "base": {
         "path": "Reference.display",
         "min": 0,
@@ -3214,8 +3194,8 @@
       },
       "short": "Composition is broken into sections",
       "definition": "The root of the sections that make up the composition.",
-      "min": 1,
-      "max": "1",
+      "min": 0,
+      "max": "*",
       "base": {
         "path": "Composition.section",
         "min": 0,
@@ -3246,7 +3226,6 @@
         "xpath": "@value|f:*|h:div",
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       } ],
-      "mustSupport": true,
       "isModifier": false,
       "isSummary": false,
       "mapping": [ {
@@ -3746,7 +3725,7 @@
       "sliceName": "laboratoryReport",
       "short": "Enthält einen Verweis auf einen erregerspezifischen Laborbericht",
       "definition": "Entsprechend des Meldetatbestandes wird an dieser Stelle ein erregerspezifischer Laborbericht z.B. SARS-CoV-2-Laborbericht referenziert.",
-      "min": 1,
+      "min": 0,
       "max": "1",
       "base": {
         "path": "Composition.section",
@@ -4650,7 +4629,26 @@
       "path": "Composition.meta.profile",
       "min": 1,
       "max": "1",
-      "patternCanonical": "https://demis.rki.de/fhir/StructureDefinition/NotificationLaboratory",
+      "fixedCanonical": "https://demis.rki.de/fhir/StructureDefinition/NotificationLaboratory",
+      "mustSupport": true
+    }, {
+      "id": "Composition.identifier",
+      "path": "Composition.identifier",
+      "short": "Eindeutige ID der Meldung",
+      "definition": "Eindeutige ID der Meldung, die vom Melder bei Erstellung generiert wird oder sich aus der Auftragsnummer ableitet. Es handelt sich um eine UUID im NamingSystem https://demis.rki.de/fhir/NamingSystem/NotificationId.",
+      "comment": "Bei einer Ergänzungs- bzw. einer Korrekturmeldung ist die gleiche NotificationId der Meldung anzugegeben.",
+      "min": 1,
+      "mustSupport": true
+    }, {
+      "id": "Composition.identifier.system",
+      "path": "Composition.identifier.system",
+      "min": 1,
+      "fixedUri": "https://demis.rki.de/fhir/NamingSystem/NotificationId",
+      "mustSupport": true
+    }, {
+      "id": "Composition.identifier.value",
+      "path": "Composition.identifier.value",
+      "min": 1,
       "mustSupport": true
     }, {
       "id": "Composition.type",
@@ -4670,12 +4668,26 @@
     }, {
       "id": "Composition.category",
       "path": "Composition.category",
-      "max": "0"
+      "short": "Art der Meldung",
+      "definition": "Art der Meldung. Für die Erregernachweismeldung ist category mit dem LOINC-Code \"Laboratory report\" im coding zu belegen.",
+      "max": "1",
+      "mustSupport": true
+    }, {
+      "id": "Composition.category.coding",
+      "path": "Composition.category.coding",
+      "min": 1,
+      "max": "1",
+      "patternCoding": {
+        "system": "http://loinc.org",
+        "code": "11502-2",
+        "display": "Laboratory report"
+      },
+      "mustSupport": true
     }, {
       "id": "Composition.subject",
       "path": "Composition.subject",
-      "short": "Verweis auf die betroffene Person (namentlich oder anonym).",
-      "definition": "Verweis auf die betroffene Person (namentlich oder anonym).",
+      "short": "Verweis auf die betroffene Person (namentlich).",
+      "definition": "Verweis auf die betroffene Person (namentlich).",
       "min": 1,
       "type": [ {
         "code": "Reference",
@@ -4696,17 +4708,13 @@
           "path": "code.coding"
         } ],
         "rules": "closed"
-      },
-      "min": 1,
-      "max": "1",
-      "mustSupport": true
+      }
     }, {
       "id": "Composition.section:laboratoryReport",
       "path": "Composition.section",
       "sliceName": "laboratoryReport",
       "short": "Enthält einen Verweis auf einen erregerspezifischen Laborbericht",
       "definition": "Entsprechend des Meldetatbestandes wird an dieser Stelle ein erregerspezifischer Laborbericht z.B. SARS-CoV-2-Laborbericht referenziert.",
-      "min": 1,
       "max": "1",
       "mustSupport": true
     }, {

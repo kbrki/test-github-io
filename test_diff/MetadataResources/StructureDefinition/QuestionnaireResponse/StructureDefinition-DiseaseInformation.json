@@ -2,38 +2,19 @@
   "resourceType": "StructureDefinition",
   "id": "DiseaseInformation",
   "url": "https://demis.rki.de/fhir/StructureDefinition/DiseaseInformation",
-  "version": "1.4.1",
+  "version": "1.3.0",
   "name": "DiseaseInformation",
   "title": "Meldetatbestandsspezifische klinische und epidemiologische Angaben",
   "status": "active",
-  "date": "2025-09-01",
-  "publisher": "Robert Koch-Institut",
-  "contact": [ {
-    "telecom": [ {
-      "system": "email",
-      "value": "demis-support@rki.de"
-    } ]
-  } ],
+  "date": "2024-09-04",
   "description": "DiseaseInformation",
-  "jurisdiction": [ {
-    "coding": [ {
-      "system": "urn:iso:std:iso:3166",
-      "version": "ALPHA-2",
-      "code": "DE"
-    } ]
-  } ],
-  "copyright": "Copyright (C) 2021-2025 Robert Koch-Institut",
   "fhirVersion": "4.0.1",
   "kind": "resource",
-  "abstract": true,
+  "abstract": false,
   "type": "QuestionnaireResponse",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse",
   "derivation": "constraint",
   "snapshot": {
-    "extension": [ {
-      "url": "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
-      "valueString": "4.0.1"
-    } ],
     "element": [ {
       "id": "QuestionnaireResponse",
       "path": "QuestionnaireResponse",
@@ -519,7 +500,6 @@
         "xpath": "@value|f:*|h:div",
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       } ],
-      "mustSupport": true,
       "isModifier": true,
       "isModifierReason": "This element is labelled as a modifier because it is a status element that contains status entered-in-error which means that the resource should not be treated as valid",
       "isSummary": true,
@@ -545,8 +525,8 @@
     }, {
       "id": "QuestionnaireResponse.subject",
       "path": "QuestionnaireResponse.subject",
-      "short": "Verweis auf die in der Meldung benannte betroffene Person (namentlich oder anonym).",
-      "definition": "Verweis auf die in der Meldung benannte betroffene Person (namentlich oder anonym). Hierbei handelt es sich grundsätzlich um den Verweis auf die in der Erregernachweismeldung als „subject“ referenzierte Patient Ressource.",
+      "short": "Verweis auf die in der Meldung benannte betroffene Person.",
+      "definition": "Verweis auf die in der Meldung benannte betroffene Person. Hierbei handelt es sich grundsätzlich um den Verweis auf die in der Erregernachweismeldung als „subject“ referenzierte Patient Ressource.",
       "comment": "If the Questionnaire declared a subjectType, the resource pointed to by this element must be an instance of one of the listed types.",
       "requirements": "Allows linking the answers to the individual the answers describe.  May also affect access control.",
       "alias": [ "Patient", "Focus" ],
@@ -559,7 +539,7 @@
       },
       "type": [ {
         "code": "Reference",
-        "targetProfile": [ "https://demis.rki.de/fhir/StructureDefinition/NotifiedPerson", "https://demis.rki.de/fhir/StructureDefinition/NotifiedPersonAnonymous" ]
+        "targetProfile": [ "https://demis.rki.de/fhir/StructureDefinition/NotifiedPerson" ]
       } ],
       "constraint": [ {
         "key": "ele-1",
@@ -1457,17 +1437,16 @@
       "id": "QuestionnaireResponse.status",
       "path": "QuestionnaireResponse.status",
       "short": "Status der Fragebogeninhalte",
-      "definition": "Status der Fragebogeninhalte",
-      "mustSupport": true
+      "definition": "Status der Fragebogeninhalte"
     }, {
       "id": "QuestionnaireResponse.subject",
       "path": "QuestionnaireResponse.subject",
-      "short": "Verweis auf die in der Meldung benannte betroffene Person (namentlich oder anonym).",
-      "definition": "Verweis auf die in der Meldung benannte betroffene Person (namentlich oder anonym). Hierbei handelt es sich grundsätzlich um den Verweis auf die in der Erregernachweismeldung als „subject“ referenzierte Patient Ressource.",
+      "short": "Verweis auf die in der Meldung benannte betroffene Person.",
+      "definition": "Verweis auf die in der Meldung benannte betroffene Person. Hierbei handelt es sich grundsätzlich um den Verweis auf die in der Erregernachweismeldung als „subject“ referenzierte Patient Ressource.",
       "min": 1,
       "type": [ {
         "code": "Reference",
-        "targetProfile": [ "https://demis.rki.de/fhir/StructureDefinition/NotifiedPerson", "https://demis.rki.de/fhir/StructureDefinition/NotifiedPersonAnonymous" ]
+        "targetProfile": [ "https://demis.rki.de/fhir/StructureDefinition/NotifiedPerson" ]
       } ],
       "mustSupport": true
     }, {

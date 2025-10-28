@@ -2,27 +2,12 @@
   "resourceType": "StructureDefinition",
   "id": "HospitalizationRegion",
   "url": "https://demis.rki.de/fhir/StructureDefinition/HospitalizationRegion",
-  "version": "1.1.1",
+  "version": "1.1.0",
   "name": "HospitalizationRegion",
   "title": "Region der Hospitalisierung",
   "status": "active",
-  "date": "2025-09-01",
-  "publisher": "Robert Koch-Institut",
-  "contact": [ {
-    "telecom": [ {
-      "system": "email",
-      "value": "demis-support@rki.de"
-    } ]
-  } ],
+  "date": "2024-09-04",
   "description": "Die HospitalizationRegion dient der Angabe der geografischen Region der Hospitalisierung.",
-  "jurisdiction": [ {
-    "coding": [ {
-      "system": "urn:iso:std:iso:3166",
-      "version": "ALPHA-2",
-      "code": "DE"
-    } ]
-  } ],
-  "copyright": "Copyright (C) 2021-2025 Robert Koch-Institut",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,
@@ -34,10 +19,6 @@
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation": "constraint",
   "snapshot": {
-    "extension": [ {
-      "url": "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
-      "valueString": "4.0.1"
-    } ],
     "element": [ {
       "id": "Extension",
       "path": "Extension",
@@ -179,7 +160,7 @@
       "path": "Extension.value[x]",
       "short": "Value of extension",
       "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
-      "min": 1,
+      "min": 0,
       "max": "1",
       "base": {
         "path": "Extension.value[x]",
@@ -197,7 +178,6 @@
         "xpath": "@value|f:*|h:div",
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       } ],
-      "mustSupport": true,
       "isModifier": false,
       "isSummary": false,
       "mapping": [ {
@@ -630,11 +610,9 @@
     }, {
       "id": "Extension.value[x]",
       "path": "Extension.value[x]",
-      "min": 1,
       "type": [ {
         "code": "CodeableConcept"
-      } ],
-      "mustSupport": true
+      } ]
     }, {
       "id": "Extension.value[x].coding",
       "path": "Extension.value[x].coding",
