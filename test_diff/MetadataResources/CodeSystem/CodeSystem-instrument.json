@@ -2,14 +2,28 @@
   "resourceType": "CodeSystem",
   "id": "instrument",
   "url": "https://demis.rki.de/fhir/igs/CodeSystem/instrument",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "name": "Instrument",
-  "title": "Gerätename",
+  "title": "Sequenziergerät",
   "status": "active",
   "experimental": false,
-  "date": "2024-07-24",
+  "date": "2025-10-31",
   "publisher": "Robert Koch-Institut",
+  "contact": [ {
+    "telecom": [ {
+      "system": "email",
+      "value": "demis-support@rki.de"
+    } ]
+  } ],
   "description": "Das CodeSystem Instrument enthält die Codes der Sequenzierungsgerätenamen (angelehnt an ENA).",
+  "jurisdiction": [ {
+    "coding": [ {
+      "system": "urn:iso:std:iso:3166",
+      "version": "ALPHA-2",
+      "code": "DE"
+    } ]
+  } ],
+  "copyright": "(C) 2021-2025 Robert Koch-Institut",
   "caseSensitive": false,
   "valueSet": "https://demis.rki.de/fhir/igs/ValueSet/instrument",
   "content": "complete",
@@ -24,14 +38,68 @@
     "code": "454_gs_flx",
     "display": "454_GS_FLX"
   }, {
-    "code": "454_gs_flx+",
-    "display": "454_GS_FLX+"
-  }, {
     "code": "454_gs_flx_titanium",
     "display": "454_GS_FLX_Titanium"
   }, {
+    "code": "454_gs_flx+",
+    "display": "454_GS_FLX+"
+  }, {
     "code": "454_gs_junior",
     "display": "454_GS_Junior"
+  }, {
+    "code": "ab_310_genetic_analyzer",
+    "display": "AB_310_Genetic_Analyzer"
+  }, {
+    "code": "ab_3130_genetic_analyzer",
+    "display": "AB_3130_Genetic_Analyzer"
+  }, {
+    "code": "ab_3130xl_genetic_analyzer",
+    "display": "AB_3130xL_Genetic_Analyzer"
+  }, {
+    "code": "ab_3500_genetic_analyzer",
+    "display": "AB_3500_Genetic_Analyzer"
+  }, {
+    "code": "ab_3500xl_genetic_analyzer",
+    "display": "AB_3500xL_Genetic_Analyzer"
+  }, {
+    "code": "ab_3730_genetic_analyzer",
+    "display": "AB_3730_Genetic_Analyzer"
+  }, {
+    "code": "ab_3730xl_genetic_analyzer",
+    "display": "AB_3730xL_Genetic_Analyzer"
+  }, {
+    "code": "bgiseq-500",
+    "display": "BGISEQ-500"
+  }, {
+    "code": "dnbseq-g400",
+    "display": "DNBSEQ-G400"
+  }, {
+    "code": "dnbseq-g400_fast",
+    "display": "DNBSEQ-G400_FAST"
+  }, {
+    "code": "dnbseq-g50",
+    "display": "DNBSEQ-G50"
+  }, {
+    "code": "dnbseq-g99",
+    "display": "DNBSEQ-G99"
+  }, {
+    "code": "dnbseq-t10",
+    "display": "DNBSEQ-T10"
+  }, {
+    "code": "dnbseq-t20",
+    "display": "DNBSEQ-T20"
+  }, {
+    "code": "dnbseq-t7",
+    "display": "DNBSEQ-T7"
+  }, {
+    "code": "flongle",
+    "display": "Flongle"
+  }, {
+    "code": "g4",
+    "display": "G4"
+  }, {
+    "code": "gridion",
+    "display": "GridION"
   }, {
     "code": "hiseq_x_five",
     "display": "HiSeq_X_Five"
@@ -72,29 +140,29 @@
     "code": "illumina_iseq_100",
     "display": "Illumina_iSeq_100"
   }, {
+    "code": "illumina_miniseq",
+    "display": "Illumina_MiniSeq"
+  }, {
     "code": "illumina_miseq",
     "display": "Illumina_MiSeq"
   }, {
-    "code": "illumina_miniseq",
-    "display": "Illumina_MiniSeq"
+    "code": "illumina_nextseq_1000",
+    "display": "Illumina_NextSeq_1000"
+  }, {
+    "code": "illumina_nextseq_2000",
+    "display": "Illumina_NextSeq_2000"
   }, {
     "code": "illumina_novaseq_6000",
     "display": "Illumina_NovaSeq_6000"
   }, {
-    "code": "nextseq_500",
-    "display": "NextSeq_500"
+    "code": "illumina_novaseq_x",
+    "display": "Illumina_NovaSeq_X"
   }, {
-    "code": "nextseq_550",
-    "display": "NextSeq_550"
+    "code": "illumina_novaseq_x_plus",
+    "display": "Illumina_NovaSeq_X_PLUS"
   }, {
-    "code": "pacbio_rs",
-    "display": "PacBio_RS"
-  }, {
-    "code": "pacbio_rs_ii",
-    "display": "PacBio_RS_II"
-  }, {
-    "code": "sequel",
-    "display": "Sequel"
+    "code": "ion_torrent_genexus",
+    "display": "Ion_Torrent_Genexus"
   }, {
     "code": "ion_torrent_pgm",
     "display": "Ion_Torrent_PGM"
@@ -108,62 +176,35 @@
     "code": "ion_torrent_s5_xl",
     "display": "Ion_Torrent_S5_XL"
   }, {
-    "code": "ab_3730xl_genetic_analyzer",
-    "display": "AB_3730xL_Genetic_Analyzer"
-  }, {
-    "code": "ab_3730_genetic_analyzer",
-    "display": "AB_3730_Genetic_Analyzer"
-  }, {
-    "code": "ab_3500xl_genetic_analyzer",
-    "display": "AB_3500xL_Genetic_Analyzer"
-  }, {
-    "code": "ab_3500_genetic_analyzer",
-    "display": "AB_3500_Genetic_Analyzer"
-  }, {
-    "code": "ab_3130xl_genetic_analyzer",
-    "display": "AB_3130xL_Genetic_Analyzer"
-  }, {
-    "code": "ab_3130_genetic_analyzer",
-    "display": "AB_3130_Genetic_Analyzer"
-  }, {
-    "code": "ab_310_genetic_analyzer",
-    "display": "AB_310_Genetic_Analyzer"
-  }, {
     "code": "minion",
     "display": "MinION"
   }, {
-    "code": "gridion",
-    "display": "GridION"
+    "code": "nextseq_500",
+    "display": "NextSeq_500"
+  }, {
+    "code": "nextseq_550",
+    "display": "NextSeq_550"
+  }, {
+    "code": "onso",
+    "display": "Onso"
+  }, {
+    "code": "pacbio_rs",
+    "display": "PacBio_RS"
+  }, {
+    "code": "pacbio_rs_ii",
+    "display": "PacBio_RS_II"
   }, {
     "code": "promethion",
     "display": "PromethION"
   }, {
-    "code": "bgiseq-500",
-    "display": "BGISEQ-500"
+    "code": "px",
+    "display": "PX"
   }, {
-    "code": "dnbseq-t7",
-    "display": "DNBSEQ-T7"
+    "code": "revio",
+    "display": "Revio"
   }, {
-    "code": "dnbseq-g400",
-    "display": "DNBSEQ-G400"
-  }, {
-    "code": "dnbseq-g50",
-    "display": "DNBSEQ-G50"
-  }, {
-    "code": "dnbseq-g400_fast",
-    "display": "DNBSEQ-G400_FAST"
-  }, {
-    "code": "illumina_nextseq_1000",
-    "display": "Illumina_NextSeq_1000"
-  }, {
-    "code": "illumina_nextseq_2000",
-    "display": "Illumina_NextSeq_2000"
-  }, {
-    "code": "illumina_novaseq_x",
-    "display": "Illumina_NovaSeq_X"
-  }, {
-    "code": "illumina_novaseq_x_plus",
-    "display": "Illumina_NovaSeq_X_PLUS"
+    "code": "sequel",
+    "display": "Sequel"
   }, {
     "code": "sequel_ii",
     "display": "Sequel_II"
@@ -171,35 +212,8 @@
     "code": "sequel_iie",
     "display": "Sequel_IIe"
   }, {
-    "code": "flongle",
-    "display": "Flongle"
-  }, {
-    "code": "dnbseq-t10",
-    "display": "DNBSEQ-T10"
-  }, {
-    "code": "dnbseq-t20",
-    "display": "DNBSEQ-T20"
-  }, {
-    "code": "dnbseq-g99",
-    "display": "DNBSEQ-G99"
-  }, {
-    "code": "ion_torrent_genexus",
-    "display": "Ion_Torrent_Genexus"
-  }, {
-    "code": "onso",
-    "display": "Onso"
-  }, {
-    "code": "revio",
-    "display": "Revio"
-  }, {
     "code": "ug_100",
     "display": "UG_100"
-  }, {
-    "code": "g4",
-    "display": "G4"
-  }, {
-    "code": "px",
-    "display": "PX"
   }, {
     "code": "unspecified",
     "display": "unspecified"

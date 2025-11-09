@@ -2,60 +2,74 @@
   "resourceType": "ValueSet",
   "id": "sequencingPlatform",
   "url": "https://demis.rki.de/fhir/igs/ValueSet/sequencingPlatform",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "name": "SequencingPlatform",
   "title": "Sequenzierungsplattform",
   "status": "active",
   "experimental": false,
-  "date": "2024-07-24",
+  "date": "2025-10-31",
   "publisher": "Robert Koch-Institut",
+  "contact": [ {
+    "telecom": [ {
+      "system": "email",
+      "value": "demis-support@rki.de"
+    } ]
+  } ],
   "description": "Das ValueSet SequencingPlatform enthält die Codes der Sequenzierungsplattformen (angelehnt an ENA).",
+  "jurisdiction": [ {
+    "coding": [ {
+      "system": "urn:iso:std:iso:3166",
+      "version": "ALPHA-2",
+      "code": "DE"
+    } ]
+  } ],
+  "copyright": "(C) 2021-2025 Robert Koch-Institut",
   "compose": {
     "include": [ {
       "system": "https://demis.rki.de/fhir/igs/CodeSystem/sequencingPlatform",
-      "version": "2.0.0"
+      "version": "2.0.1"
     } ]
   },
   "expansion": {
-    "timestamp": "2024-07-24T00:00:00+02:00",
+    "timestamp": "2025-10-31T00:00:00+01:00",
     "contains": [ {
       "system": "https://demis.rki.de/fhir/igs/CodeSystem/sequencingPlatform",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "code": "illumina",
       "display": "Illumina is 4-channel flowgram with 1-to-1 mapping between basecalls and flows"
     }, {
       "system": "https://demis.rki.de/fhir/igs/CodeSystem/sequencingPlatform",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "code": "oxford_nanopore",
       "display": "Oxford Nanopore platform type. nanopore-based electronic single molecule analysis."
     }, {
       "system": "https://demis.rki.de/fhir/igs/CodeSystem/sequencingPlatform",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "code": "capillary",
       "display": "Sequencers based on capillary electrophoresis technology manufactured by LifeTech (formerly Applied BioSciences)."
     }, {
       "system": "https://demis.rki.de/fhir/igs/CodeSystem/sequencingPlatform",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "code": "bgiseq",
       "display": "BGISEQ"
     }, {
       "system": "https://demis.rki.de/fhir/igs/CodeSystem/sequencingPlatform",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "code": "dnbseq",
       "display": "DNBSEQ"
     }, {
       "system": "https://demis.rki.de/fhir/igs/CodeSystem/sequencingPlatform",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "code": "ls454",
       "display": "454 technology use 1-color sequential flows"
     }, {
       "system": "https://demis.rki.de/fhir/igs/CodeSystem/sequencingPlatform",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "code": "ion_torrent",
       "display": "Ion Torrent Personal Genome Machine (PGM) from Life Technologies."
     }, {
       "system": "https://demis.rki.de/fhir/igs/CodeSystem/sequencingPlatform",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "code": "pacbio_smrt",
       "display": "PacificBiosciences platform type for the single molecule real time (SMRT) technology."
     } ]

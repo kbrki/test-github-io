@@ -2,12 +2,12 @@
   "resourceType": "CodeSystem",
   "id": "notificationCategory",
   "url": "https://demis.rki.de/fhir/CodeSystem/notificationCategory",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "name": "NotificationCategory",
-  "title": "Meldetatbestand",
+  "title": "Meldetatbestände nach § 7 IfSG",
   "status": "active",
   "experimental": false,
-  "date": "2025-07-31",
+  "date": "2025-08-11",
   "publisher": "Robert Koch-Institut",
   "contact": [ {
     "telecom": [ {
@@ -15,7 +15,7 @@
       "value": "demis-support@rki.de"
     } ]
   } ],
-  "description": "Das CodeSystem NotificationCategory enthält die Codes der Meldetatbestände.",
+  "description": "Das CodeSystem NotificationCategory enthält die Codes der Meldetatbestände nach § 7 IfSG.",
   "jurisdiction": [ {
     "coding": [ {
       "system": "urn:iso:std:iso:3166",
@@ -25,9 +25,8 @@
   } ],
   "copyright": "(C) 2021-2025 Robert Koch-Institut",
   "caseSensitive": false,
-  "valueSet": "https://demis.rki.de/fhir/ValueSet/notificationCategory",
   "content": "complete",
-  "count": 85,
+  "count": 91,
   "property": [ {
     "code": "inactive",
     "type": "boolean"
@@ -43,6 +42,10 @@
     "code": "federal-state",
     "description": "Bundesland",
     "type": "Coding"
+  }, {
+    "code": "ifsg-paragraph",
+    "description": "IfSG-Paragraph",
+    "type": "code"
   } ],
   "concept": [ {
     "extension": [ {
@@ -64,6 +67,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -85,6 +91,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -112,6 +121,9 @@
         "system": "urn:iso:std:iso:3166-2:de",
         "code": "DE-SN"
       }
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -133,6 +145,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -160,6 +175,9 @@
         "system": "urn:iso:std:iso:3166-2:de",
         "code": "DE-SN"
       }
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -181,6 +199,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -202,6 +223,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -223,6 +247,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -244,6 +271,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -319,6 +349,9 @@
         "system": "urn:iso:std:iso:3166-2:de",
         "code": "DE-TH"
       }
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -340,6 +373,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -361,6 +397,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -382,6 +421,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -403,6 +445,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -424,6 +469,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -445,6 +493,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -484,6 +535,9 @@
         "system": "urn:iso:std:iso:3166-2:de",
         "code": "DE-ST"
       }
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -505,6 +559,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -526,6 +583,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -547,6 +607,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -574,6 +637,9 @@
         "system": "urn:iso:std:iso:3166-2:de",
         "code": "DE-SN"
       }
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -595,6 +661,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -616,6 +685,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -637,6 +709,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -658,6 +733,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -697,6 +775,9 @@
         "system": "urn:iso:std:iso:3166-2:de",
         "code": "DE-ST"
       }
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -718,6 +799,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -757,6 +841,9 @@
         "system": "urn:iso:std:iso:3166-2:de",
         "code": "DE-TH"
       }
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -778,6 +865,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -799,6 +889,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -820,6 +913,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -847,6 +943,9 @@
         "system": "urn:iso:std:iso:3166-2:de",
         "code": "DE-SN"
       }
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -868,6 +967,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -889,6 +991,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -910,6 +1015,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -931,6 +1039,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -952,6 +1063,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -973,6 +1087,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -994,6 +1111,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -1015,6 +1135,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -1036,6 +1159,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -1057,6 +1183,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -1078,6 +1207,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -1099,6 +1231,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -1120,6 +1255,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -1141,6 +1279,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -1162,6 +1303,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -1183,6 +1327,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -1204,6 +1351,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -1225,6 +1375,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -1246,6 +1399,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -1267,6 +1423,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -1288,6 +1447,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -1309,6 +1471,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -1330,6 +1495,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -1357,6 +1525,9 @@
         "system": "urn:iso:std:iso:3166-2:de",
         "code": "DE-SN"
       }
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -1378,6 +1549,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -1399,6 +1573,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -1420,6 +1597,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -1447,6 +1627,9 @@
         "system": "urn:iso:std:iso:3166-2:de",
         "code": "DE-SN"
       }
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -1468,6 +1651,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -1489,6 +1675,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -1510,6 +1699,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -1537,6 +1729,9 @@
         "system": "urn:iso:std:iso:3166-2:de",
         "code": "DE-SN"
       }
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -1558,6 +1753,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -1579,6 +1777,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -1600,6 +1801,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -1621,6 +1825,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -1642,6 +1849,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -1663,6 +1873,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -1684,6 +1897,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -1705,6 +1921,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -1738,6 +1957,9 @@
         "system": "urn:iso:std:iso:3166-2:de",
         "code": "DE-TH"
       }
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -1759,6 +1981,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -1780,6 +2005,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -1801,6 +2029,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -1822,6 +2053,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -1843,6 +2077,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -1864,6 +2101,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -1885,6 +2125,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -1906,6 +2149,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -1927,6 +2173,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -1948,6 +2197,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -1969,6 +2221,9 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
     } ]
   }, {
     "extension": [ {
@@ -1990,6 +2245,153 @@
     }, {
       "code": "federal-state-specific-notificationCategory",
       "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.1"
+    } ]
+  }, {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder",
+      "valueInteger": 60
+    } ],
+    "code": "chtp",
+    "display": "Chlamydia trachomatis, sofern es sich um einen der Serotypen L1 bis L3 handelt",
+    "designation": [ {
+      "language": "de-DE",
+      "value": "Chlamydia trachomatis"
+    } ],
+    "property": [ {
+      "code": "inactive",
+      "valueBoolean": true
+    }, {
+      "code": "diagnosticReport-profile",
+      "valueString": "https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportCHTP"
+    }, {
+      "code": "federal-state-specific-notificationCategory",
+      "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.3"
+    } ]
+  }, {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder",
+      "valueInteger": 50
+    } ],
+    "code": "echp",
+    "display": "Echinococcus sp.",
+    "designation": [ {
+      "language": "de-DE",
+      "value": "Echinococcus sp."
+    } ],
+    "property": [ {
+      "code": "inactive",
+      "valueBoolean": true
+    }, {
+      "code": "diagnosticReport-profile",
+      "valueString": "https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportECHP"
+    }, {
+      "code": "federal-state-specific-notificationCategory",
+      "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.3"
+    } ]
+  }, {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder",
+      "valueInteger": 40
+    } ],
+    "code": "hivp",
+    "display": "Humanes Immundefizienz-Virus (HIV)",
+    "designation": [ {
+      "language": "de-DE",
+      "value": "HIV"
+    } ],
+    "property": [ {
+      "code": "inactive",
+      "valueBoolean": true
+    }, {
+      "code": "diagnosticReport-profile",
+      "valueString": "https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportHIVP"
+    }, {
+      "code": "federal-state-specific-notificationCategory",
+      "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.3"
+    } ]
+  }, {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder",
+      "valueInteger": 30
+    } ],
+    "code": "negp",
+    "display": "Neisseria gonorrhoeae",
+    "designation": [ {
+      "language": "de-DE",
+      "value": "Neisseria gonorrhoeae (Gonorrhö)"
+    } ],
+    "property": [ {
+      "code": "inactive",
+      "valueBoolean": true
+    }, {
+      "code": "diagnosticReport-profile",
+      "valueString": "https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportNEGP"
+    }, {
+      "code": "federal-state-specific-notificationCategory",
+      "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.3"
+    } ]
+  }, {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder",
+      "valueInteger": 20
+    } ],
+    "code": "toxp",
+    "display": "Toxoplasma gondii; Meldepflicht nur bei konnatalen Infektionen",
+    "designation": [ {
+      "language": "de-DE",
+      "value": "Toxoplasma gondii, konnatal"
+    } ],
+    "property": [ {
+      "code": "inactive",
+      "valueBoolean": true
+    }, {
+      "code": "diagnosticReport-profile",
+      "valueString": "https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportTOXP"
+    }, {
+      "code": "federal-state-specific-notificationCategory",
+      "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.3"
+    } ]
+  }, {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder",
+      "valueInteger": 10
+    } ],
+    "code": "trpp",
+    "display": "Treponema pallidum",
+    "designation": [ {
+      "language": "de-DE",
+      "value": "Treponema pallidum (Syphilis)"
+    } ],
+    "property": [ {
+      "code": "inactive",
+      "valueBoolean": true
+    }, {
+      "code": "diagnosticReport-profile",
+      "valueString": "https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportTRPP"
+    }, {
+      "code": "federal-state-specific-notificationCategory",
+      "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "7.3"
     } ]
   } ]
 }

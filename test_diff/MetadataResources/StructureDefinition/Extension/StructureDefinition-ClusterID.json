@@ -34,6 +34,10 @@
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation": "constraint",
   "snapshot": {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
+      "valueString": "4.0.1"
+    } ],
     "element": [ {
       "id": "Extension",
       "path": "Extension",
@@ -186,7 +190,6 @@
         "code": "Identifier",
         "profile": [ "https://demis.rki.de/fhir/StructureDefinition/ClusterIdIdentifier" ]
       } ],
-      "condition": [ "ele-1" ],
       "constraint": [ {
         "key": "ele-1",
         "severity": "error",
@@ -197,18 +200,10 @@
       } ],
       "mustSupport": true,
       "isModifier": false,
+      "isSummary": false,
       "mapping": [ {
         "identity": "rim",
-        "map": "n/a"
-      }, {
-        "identity": "v2",
-        "map": "CX / EI (occasionally, more often EI maps to a resource id or a URL)"
-      }, {
-        "identity": "rim",
-        "map": "II - The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT]"
-      }, {
-        "identity": "servd",
-        "map": "Identifier"
+        "map": "N/A"
       } ]
     } ]
   },

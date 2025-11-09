@@ -2,12 +2,27 @@
   "resourceType": "StructureDefinition",
   "id": "Sequence",
   "url": "https://demis.rki.de/fhir/igs/StructureDefinition/Sequence",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "name": "Sequence",
   "title": "Sequenz",
   "status": "active",
-  "date": "2024-11-26",
+  "date": "2025-11-04",
+  "publisher": "Robert Koch-Institut",
+  "contact": [ {
+    "telecom": [ {
+      "system": "email",
+      "value": "demis-support@rki.de"
+    } ]
+  } ],
   "description": "Die Sequenz umfasst Informationen zu einer biologischen Sequenz, hier DNA-Sequenz. Es kann sich hierbei auch um Sequenzrohdaten oder assemblierte Daten handeln, jeweils mit den dazugehörigen Metadaten (z.B. Datum der Probennahme, Sequenzierungsgerät, Adapter für die Library Preparation, Upload in eine Online-Datenbank (Repositorium), etc.) handeln.",
+  "jurisdiction": [ {
+    "coding": [ {
+      "system": "urn:iso:std:iso:3166",
+      "version": "ALPHA-2",
+      "code": "DE"
+    } ]
+  } ],
+  "copyright": "Copyright (C) 2021-2025 Robert Koch-Institut",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -15,6 +30,10 @@
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/MolecularSequence",
   "derivation": "constraint",
   "snapshot": {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
+      "valueString": "4.0.1"
+    } ],
     "element": [ {
       "id": "MolecularSequence",
       "path": "MolecularSequence",
@@ -298,7 +317,7 @@
         "code": "canonical",
         "targetProfile": [ "http://hl7.org/fhir/StructureDefinition/StructureDefinition" ]
       } ],
-      "fixedCanonical": "https://demis.rki.de/fhir/igs/StructureDefinition/Sequence",
+      "patternCanonical": "https://demis.rki.de/fhir/igs/StructureDefinition/Sequence",
       "constraint": [ {
         "key": "ele-1",
         "severity": "error",
@@ -574,6 +593,7 @@
       } ],
       "mustSupport": true,
       "isModifier": false,
+      "isSummary": false,
       "mapping": [ {
         "identity": "rim",
         "map": "n/a"
@@ -616,6 +636,7 @@
       } ],
       "mustSupport": true,
       "isModifier": false,
+      "isSummary": false,
       "mapping": [ {
         "identity": "rim",
         "map": "n/a"
@@ -658,6 +679,7 @@
       } ],
       "mustSupport": true,
       "isModifier": false,
+      "isSummary": false,
       "mapping": [ {
         "identity": "rim",
         "map": "n/a"
@@ -3225,6 +3247,7 @@
       } ],
       "mustSupport": true,
       "isModifier": false,
+      "isSummary": false,
       "mapping": [ {
         "identity": "rim",
         "map": "n/a"
@@ -3267,6 +3290,7 @@
       } ],
       "mustSupport": true,
       "isModifier": false,
+      "isSummary": false,
       "mapping": [ {
         "identity": "rim",
         "map": "n/a"
@@ -3309,6 +3333,7 @@
       } ],
       "mustSupport": true,
       "isModifier": false,
+      "isSummary": false,
       "mapping": [ {
         "identity": "rim",
         "map": "n/a"
@@ -4132,7 +4157,7 @@
       "path": "MolecularSequence.meta.profile",
       "min": 1,
       "max": "1",
-      "fixedCanonical": "https://demis.rki.de/fhir/igs/StructureDefinition/Sequence",
+      "patternCanonical": "https://demis.rki.de/fhir/igs/StructureDefinition/Sequence",
       "mustSupport": true
     }, {
       "id": "MolecularSequence.extension",

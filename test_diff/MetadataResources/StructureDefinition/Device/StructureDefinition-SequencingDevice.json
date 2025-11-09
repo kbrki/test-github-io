@@ -2,12 +2,27 @@
   "resourceType": "StructureDefinition",
   "id": "SequencingDevice",
   "url": "https://demis.rki.de/fhir/igs/StructureDefinition/SequencingDevice",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "name": "SequencingDevice",
   "title": "Sequenziergerät",
   "status": "active",
-  "date": "2024-10-31",
+  "date": "2025-11-04",
+  "publisher": "Robert Koch-Institut",
+  "contact": [ {
+    "telecom": [ {
+      "system": "email",
+      "value": "demis-support@rki.de"
+    } ]
+  } ],
   "description": "Das Sequenziergerät umfasst die Angabe des Namens des Sequenziergerätes, sowie die Sequenzierungsplattform auf die die Sequenz hochgeladen wurde oder beabsichtigt wird, hochgeladen zu werden.",
+  "jurisdiction": [ {
+    "coding": [ {
+      "system": "urn:iso:std:iso:3166",
+      "version": "ALPHA-2",
+      "code": "DE"
+    } ]
+  } ],
+  "copyright": "Copyright (C) 2021-2025 Robert Koch-Institut",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -15,6 +30,10 @@
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Device",
   "derivation": "constraint",
   "snapshot": {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
+      "valueString": "4.0.1"
+    } ],
     "element": [ {
       "id": "Device",
       "path": "Device",
@@ -294,7 +313,7 @@
         "code": "canonical",
         "targetProfile": [ "http://hl7.org/fhir/StructureDefinition/StructureDefinition" ]
       } ],
-      "fixedCanonical": "https://demis.rki.de/fhir/igs/StructureDefinition/SequencingDevice",
+      "patternCanonical": "https://demis.rki.de/fhir/igs/StructureDefinition/SequencingDevice",
       "constraint": [ {
         "key": "ele-1",
         "severity": "error",
@@ -3021,7 +3040,7 @@
       "path": "Device.meta.profile",
       "min": 1,
       "max": "1",
-      "fixedCanonical": "https://demis.rki.de/fhir/igs/StructureDefinition/SequencingDevice",
+      "patternCanonical": "https://demis.rki.de/fhir/igs/StructureDefinition/SequencingDevice",
       "mustSupport": true
     }, {
       "id": "Device.deviceName",
