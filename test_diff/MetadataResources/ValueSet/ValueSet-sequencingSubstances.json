@@ -1,0 +1,33 @@
+{
+  "resourceType": "ValueSet",
+  "id": "sequencingSubstances",
+  "url": "https://demis.rki.de/fhir/igs/ValueSet/sequencingSubstances",
+  "version": "2.0.0",
+  "name": "SequencingSubstances",
+  "title": "Sequenziermaterial",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-07-24",
+  "publisher": "Robert Koch-Institut",
+  "description": "Das ValueSet SequencingSubstances enthält die Codes der Sequenziermaterialien.",
+  "compose": {
+    "include": [ {
+      "system": "https://demis.rki.de/fhir/igs/CodeSystem/sequencingSubstances",
+      "version": "2.0.0"
+    } ]
+  },
+  "expansion": {
+    "timestamp": "2024-07-24T00:00:00+02:00",
+    "contains": [ {
+      "system": "https://demis.rki.de/fhir/igs/CodeSystem/sequencingSubstances",
+      "version": "2.0.0",
+      "code": "primer",
+      "display": "Primer-Scheme"
+    }, {
+      "system": "https://demis.rki.de/fhir/igs/CodeSystem/sequencingSubstances",
+      "version": "2.0.0",
+      "code": "adapter",
+      "display": "Adapter"
+    } ]
+  }
+}

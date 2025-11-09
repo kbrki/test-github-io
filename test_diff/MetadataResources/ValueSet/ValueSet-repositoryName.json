@@ -1,0 +1,53 @@
+{
+  "resourceType": "ValueSet",
+  "id": "repositoryName",
+  "url": "https://demis.rki.de/fhir/igs/ValueSet/repositoryName",
+  "version": "2.0.0",
+  "name": "RepositoryName",
+  "title": "Name des Repository",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-07-24",
+  "publisher": "Robert Koch-Institut",
+  "description": "Das ValueSet RepositoryName enthält die Codes der Namen der Online-Datenbanken (Repositories).",
+  "compose": {
+    "include": [ {
+      "system": "https://demis.rki.de/fhir/igs/CodeSystem/repositoryName",
+      "version": "2.0.0"
+    } ]
+  },
+  "expansion": {
+    "timestamp": "2024-07-24T00:00:00+02:00",
+    "contains": [ {
+      "system": "https://demis.rki.de/fhir/igs/CodeSystem/repositoryName",
+      "version": "2.0.0",
+      "code": "other",
+      "display": "OTHER"
+    }, {
+      "system": "https://demis.rki.de/fhir/igs/CodeSystem/repositoryName",
+      "version": "2.0.0",
+      "code": "sra",
+      "display": "SRA"
+    }, {
+      "system": "https://demis.rki.de/fhir/igs/CodeSystem/repositoryName",
+      "version": "2.0.0",
+      "code": "gisaid",
+      "display": "GISAID"
+    }, {
+      "system": "https://demis.rki.de/fhir/igs/CodeSystem/repositoryName",
+      "version": "2.0.0",
+      "code": "ena",
+      "display": "ENA"
+    }, {
+      "system": "https://demis.rki.de/fhir/igs/CodeSystem/repositoryName",
+      "version": "2.0.0",
+      "code": "genbank",
+      "display": "GenBank"
+    }, {
+      "system": "https://demis.rki.de/fhir/igs/CodeSystem/repositoryName",
+      "version": "2.0.0",
+      "code": "pubmlst",
+      "display": "PubMLST"
+    } ]
+  }
+}

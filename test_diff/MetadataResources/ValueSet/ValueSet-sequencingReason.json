@@ -1,0 +1,56 @@
+{
+  "resourceType": "ValueSet",
+  "id": "sequencingReason",
+  "url": "https://demis.rki.de/fhir/igs/ValueSet/sequencingReason",
+  "version": "2.1.0",
+  "name": "SequencingReason",
+  "title": "Grund der Sequenzierung",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-07-30",
+  "publisher": "Robert Koch-Institut",
+  "description": "Das ValueSet SequencingReason enthält die Codes für den Grund der Sequenzierung der Probe.",
+  "compose": {
+    "include": [ {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "concept": [ {
+        "code": "255226008",
+        "display": "Random (qualifier value)"
+      }, {
+        "code": "385644000",
+        "display": "Requested (qualifier value)"
+      }, {
+        "code": "58147004",
+        "display": "Clinical (qualifier value)"
+      }, {
+        "code": "74964007",
+        "display": "Other (qualifier value)"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "timestamp": "2025-07-30T00:00:00+02:00",
+    "contains": [ {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "code": "385644000",
+      "display": "Requested (qualifier value)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "code": "58147004",
+      "display": "Clinical (qualifier value)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "code": "255226008",
+      "display": "Random (qualifier value)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "code": "74964007",
+      "display": "Andere"
+    } ]
+  }
+}

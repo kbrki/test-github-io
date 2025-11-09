@@ -1,0 +1,203 @@
+{
+  "resourceType": "ValueSet",
+  "id": "sequencingStrategy",
+  "url": "https://demis.rki.de/fhir/igs/ValueSet/sequencingStrategy",
+  "version": "2.0.0",
+  "name": "SequencingStrategy",
+  "title": "Sequenzierungsstrategie",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-07-24",
+  "publisher": "Robert Koch-Institut",
+  "description": "Das ValueSet SequencingStrategy enthält die Codes der Sequenzierstrategien (angelehnt an ENA).",
+  "compose": {
+    "include": [ {
+      "system": "https://demis.rki.de/fhir/igs/CodeSystem/sequencingStrategy",
+      "version": "2.0.0"
+    } ]
+  },
+  "expansion": {
+    "timestamp": "2024-07-24T00:00:00+02:00",
+    "contains": [ {
+      "system": "https://demis.rki.de/fhir/igs/CodeSystem/sequencingStrategy",
+      "version": "2.0.0",
+      "code": "mnase-seq",
+      "display": "Identifies well-positioned nucleosomes. uses Micrococcal Nuclease (MNase) is an endo-exonuclease that processively digests DNA until an obstruction, such as a nucleosome, is reached."
+    }, {
+      "system": "https://demis.rki.de/fhir/igs/CodeSystem/sequencingStrategy",
+      "version": "2.0.0",
+      "code": "targeted-capture",
+      "display": "Enrichment of a targeted subset of loci."
+    }, {
+      "system": "https://demis.rki.de/fhir/igs/CodeSystem/sequencingStrategy",
+      "version": "2.0.0",
+      "code": "rad-seq",
+      "display": "RAD sequencing"
+    }, {
+      "system": "https://demis.rki.de/fhir/igs/CodeSystem/sequencingStrategy",
+      "version": "2.0.0",
+      "code": "cloneend",
+      "display": "Clone end (5’, 3’, or both) sequencing."
+    }, {
+      "system": "https://demis.rki.de/fhir/igs/CodeSystem/sequencingStrategy",
+      "version": "2.0.0",
+      "code": "tethered-chromatin-conformation-capture",
+      "display": "Tethered Chromatin Conformation Capture"
+    }, {
+      "system": "https://demis.rki.de/fhir/igs/CodeSystem/sequencingStrategy",
+      "version": "2.0.0",
+      "code": "other",
+      "display": "Library strategy not listed."
+    }, {
+      "system": "https://demis.rki.de/fhir/igs/CodeSystem/sequencingStrategy",
+      "version": "2.0.0",
+      "code": "amplicon",
+      "display": "Sequencing of overlapping or distinct PCR or RT-PCR products. For example, metagenomic community profiling using SSU rRNA."
+    }, {
+      "system": "https://demis.rki.de/fhir/igs/CodeSystem/sequencingStrategy",
+      "version": "2.0.0",
+      "code": "ssrna-seq",
+      "display": "Strand-specific RNA sequencing."
+    }, {
+      "system": "https://demis.rki.de/fhir/igs/CodeSystem/sequencingStrategy",
+      "version": "2.0.0",
+      "code": "fl-cdna",
+      "display": "Full-length sequencing of cDNA templates"
+    }, {
+      "system": "https://demis.rki.de/fhir/igs/CodeSystem/sequencingStrategy",
+      "version": "2.0.0",
+      "code": "clone",
+      "display": "Genomic clone based (hierarchical) sequencing."
+    }, {
+      "system": "https://demis.rki.de/fhir/igs/CodeSystem/sequencingStrategy",
+      "version": "2.0.0",
+      "code": "tn-seq",
+      "display": "Quantitatively determine fitness of bacterial genes based on how many times a purposely seeded transposon gets inserted into each gene of a colony after some time."
+    }, {
+      "system": "https://demis.rki.de/fhir/igs/CodeSystem/sequencingStrategy",
+      "version": "2.0.0",
+      "code": "est",
+      "display": "Single pass sequencing of cDNA templates"
+    }, {
+      "system": "https://demis.rki.de/fhir/igs/CodeSystem/sequencingStrategy",
+      "version": "2.0.0",
+      "code": "mre-seq",
+      "display": "Methylation-Sensitive Restriction Enzyme Sequencing."
+    }, {
+      "system": "https://demis.rki.de/fhir/igs/CodeSystem/sequencingStrategy",
+      "version": "2.0.0",
+      "code": "ncrna-seq",
+      "display": "Capture of other non-coding RNA types, including post-translation modification types such as snRNA (small nuclear RNA) or snoRNA (small nucleolar RNA), or expression regulation types such as siRNA (small interfering RNA) or piRNA/piwi/RNA (piwi-interacting RNA)."
+    }, {
+      "system": "https://demis.rki.de/fhir/igs/CodeSystem/sequencingStrategy",
+      "version": "2.0.0",
+      "code": "wxs",
+      "display": "Random sequencing of exonic regions selected from the genome. (see pubmed 20111037 for details)"
+    }, {
+      "system": "https://demis.rki.de/fhir/igs/CodeSystem/sequencingStrategy",
+      "version": "2.0.0",
+      "code": "synthetic-long-read",
+      "display": "binning and barcoding of large DNA fragments to facilitate assembly of the fragment"
+    }, {
+      "system": "https://demis.rki.de/fhir/igs/CodeSystem/sequencingStrategy",
+      "version": "2.0.0",
+      "code": "mirna-seq",
+      "display": "Micro RNA sequencing strategy designed to capture post-transcriptional RNA elements and include non-coding functional elements. (see pubmed 21787409 for details)"
+    }, {
+      "system": "https://demis.rki.de/fhir/igs/CodeSystem/sequencingStrategy",
+      "version": "2.0.0",
+      "code": "finishing",
+      "display": "Sequencing intended to finish (close) gaps in existing coverage."
+    }, {
+      "system": "https://demis.rki.de/fhir/igs/CodeSystem/sequencingStrategy",
+      "version": "2.0.0",
+      "code": "cts",
+      "display": "Concatenated Tag Sequencing"
+    }, {
+      "system": "https://demis.rki.de/fhir/igs/CodeSystem/sequencingStrategy",
+      "version": "2.0.0",
+      "code": "faire-seq",
+      "display": "Formaldehyde Assisted Isolation of Regulatory Elements. Reveals regions of open chromatin."
+    }, {
+      "system": "https://demis.rki.de/fhir/igs/CodeSystem/sequencingStrategy",
+      "version": "2.0.0",
+      "code": "wgs",
+      "display": "Whole Genome Sequencing - random sequencing of the whole genome (see pubmed 10731132 for details)"
+    }, {
+      "system": "https://demis.rki.de/fhir/igs/CodeSystem/sequencingStrategy",
+      "version": "2.0.0",
+      "code": "chia-pet",
+      "display": "Direct sequencing of proximity-ligated chromatin immunoprecipitates."
+    }, {
+      "system": "https://demis.rki.de/fhir/igs/CodeSystem/sequencingStrategy",
+      "version": "2.0.0",
+      "code": "dnase-hypersensitivity",
+      "display": "Sequencing of hypersensitive sites, or segments of open chromatin that are more readily cleaved by DNaseI."
+    }, {
+      "system": "https://demis.rki.de/fhir/igs/CodeSystem/sequencingStrategy",
+      "version": "2.0.0",
+      "code": "chip-seq",
+      "display": "ChIP-seq, Chromatin ImmunoPrecipitation, reveals binding sites of specific proteins, typically transcription factors (TFs) using antibodies to extract DNA fragments bound to the target protein."
+    }, {
+      "system": "https://demis.rki.de/fhir/igs/CodeSystem/sequencingStrategy",
+      "version": "2.0.0",
+      "code": "wcs",
+      "display": "Random sequencing of a whole chromosome or other replicon isolated from a genome."
+    }, {
+      "system": "https://demis.rki.de/fhir/igs/CodeSystem/sequencingStrategy",
+      "version": "2.0.0",
+      "code": "hi-c",
+      "display": "Chromosome Conformation Capture technique where a biotin-labeled nucleotide is incorporated at the ligation junction, enabling selective purification of chimeric DNA ligation junctions followed by deep sequencing."
+    }, {
+      "system": "https://demis.rki.de/fhir/igs/CodeSystem/sequencingStrategy",
+      "version": "2.0.0",
+      "code": "validation",
+      "display": "CGHub special request"
+    }, {
+      "system": "https://demis.rki.de/fhir/igs/CodeSystem/sequencingStrategy",
+      "version": "2.0.0",
+      "code": "atac-seq",
+      "display": "Assay for Transposase-Accessible Chromatin (ATAC) strategy is used to study genome-wide chromatin accessibility. alternative method to DNase-seq that uses an engineered Tn5 transposase to cleave DNA and to integrate primer DNA sequences into the cleaved genomic DNA."
+    }, {
+      "system": "https://demis.rki.de/fhir/igs/CodeSystem/sequencingStrategy",
+      "version": "2.0.0",
+      "code": "medip-seq",
+      "display": "Methylated DNA Immunoprecipitation Sequencing."
+    }, {
+      "system": "https://demis.rki.de/fhir/igs/CodeSystem/sequencingStrategy",
+      "version": "2.0.0",
+      "code": "wga",
+      "display": "Whole Genome Amplification followed by random sequencing. (see pubmed 1631067,8962113 for details)"
+    }, {
+      "system": "https://demis.rki.de/fhir/igs/CodeSystem/sequencingStrategy",
+      "version": "2.0.0",
+      "code": "rna-seq",
+      "display": "Random sequencing of whole transcriptome, also known as Whole Transcriptome Shotgun Sequencing, or WTSS). (see pubmed 18611170 for details)"
+    }, {
+      "system": "https://demis.rki.de/fhir/igs/CodeSystem/sequencingStrategy",
+      "version": "2.0.0",
+      "code": "rip-seq",
+      "display": "Direct sequencing of RNA immunoprecipitates (includes CLIP-Seq, HITS-CLIP and PAR-CLIP)."
+    }, {
+      "system": "https://demis.rki.de/fhir/igs/CodeSystem/sequencingStrategy",
+      "version": "2.0.0",
+      "code": "poolclone",
+      "display": "Shotgun of pooled clones (usually BACs and Fosmids)."
+    }, {
+      "system": "https://demis.rki.de/fhir/igs/CodeSystem/sequencingStrategy",
+      "version": "2.0.0",
+      "code": "selex",
+      "display": "Systematic Evolution of Ligands by Exponential enrichment"
+    }, {
+      "system": "https://demis.rki.de/fhir/igs/CodeSystem/sequencingStrategy",
+      "version": "2.0.0",
+      "code": "bisulfite-seq",
+      "display": "MethylC-seq. Sequencing following treatment of DNA with bisulfite to convert cytosine residues to uracil depending on methylation status."
+    }, {
+      "system": "https://demis.rki.de/fhir/igs/CodeSystem/sequencingStrategy",
+      "version": "2.0.0",
+      "code": "mbd-seq",
+      "display": "Methyl CpG Binding Domain Sequencing."
+    } ]
+  }
+}
