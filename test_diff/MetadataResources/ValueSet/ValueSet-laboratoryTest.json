@@ -2,12 +2,12 @@
   "resourceType": "ValueSet",
   "id": "laboratoryTest",
   "url": "https://demis.rki.de/fhir/ValueSet/laboratoryTest",
-  "version": "2.2.1",
+  "version": "2.1.0",
   "name": "LaboratoryTest",
   "title": "Labortest",
   "status": "active",
   "experimental": false,
-  "date": "2025-08-14",
+  "date": "2025-04-08",
   "publisher": "Robert Koch-Institut",
   "contact": [ {
     "telecom": [ {
@@ -15,7 +15,7 @@
       "value": "demis-support@rki.de"
     } ]
   } ],
-  "description": "Das ValueSet LaboratoryTest umfasst alle spezifischen LaboratoryTest-ValueSets. Es wird lediglich im abstrakten Oberprofil LaboratoryReport eingebunden.",
+  "description": "Das ValueSet LaboratoryTest enthält die Codes für die Labortests.",
   "jurisdiction": [ {
     "coding": [ {
       "system": "urn:iso:std:iso:3166",
@@ -53,8 +53,6 @@
     }, {
       "valueSet": [ "https://demis.rki.de/fhir/ValueSet/laboratoryTestCHLP" ]
     }, {
-      "valueSet": [ "https://demis.rki.de/fhir/ValueSet/laboratoryTestCHTP" ]
-    }, {
       "valueSet": [ "https://demis.rki.de/fhir/ValueSet/laboratoryTestCKVP" ]
     }, {
       "valueSet": [ "https://demis.rki.de/fhir/ValueSet/laboratoryTestCLOP" ]
@@ -80,8 +78,6 @@
       "valueSet": [ "https://demis.rki.de/fhir/ValueSet/laboratoryTestEBCP" ]
     }, {
       "valueSet": [ "https://demis.rki.de/fhir/ValueSet/laboratoryTestEBVP" ]
-    }, {
-      "valueSet": [ "https://demis.rki.de/fhir/ValueSet/laboratoryTestECHP" ]
     }, {
       "valueSet": [ "https://demis.rki.de/fhir/ValueSet/laboratoryTestECOP" ]
     }, {
@@ -112,8 +108,6 @@
       "valueSet": [ "https://demis.rki.de/fhir/ValueSet/laboratoryTestHFAP" ]
     }, {
       "valueSet": [ "https://demis.rki.de/fhir/ValueSet/laboratoryTestHINP" ]
-    }, {
-      "valueSet": [ "https://demis.rki.de/fhir/ValueSet/laboratoryTestHIVP" ]
     }, {
       "valueSet": [ "https://demis.rki.de/fhir/ValueSet/laboratoryTestHTVP" ]
     }, {
@@ -146,8 +140,6 @@
       "valueSet": [ "https://demis.rki.de/fhir/ValueSet/laboratoryTestMYTP" ]
     }, {
       "valueSet": [ "https://demis.rki.de/fhir/ValueSet/laboratoryTestNCVP" ]
-    }, {
-      "valueSet": [ "https://demis.rki.de/fhir/ValueSet/laboratoryTestNEGP" ]
     }, {
       "valueSet": [ "https://demis.rki.de/fhir/ValueSet/laboratoryTestNEIP" ]
     }, {
@@ -187,11 +179,7 @@
     }, {
       "valueSet": [ "https://demis.rki.de/fhir/ValueSet/laboratoryTestSTYP" ]
     }, {
-      "valueSet": [ "https://demis.rki.de/fhir/ValueSet/laboratoryTestTOXP" ]
-    }, {
       "valueSet": [ "https://demis.rki.de/fhir/ValueSet/laboratoryTestTRIP" ]
-    }, {
-      "valueSet": [ "https://demis.rki.de/fhir/ValueSet/laboratoryTestTRPP" ]
     }, {
       "valueSet": [ "https://demis.rki.de/fhir/ValueSet/laboratoryTestVCHP" ]
     }, {
@@ -209,7 +197,7 @@
     } ]
   },
   "expansion": {
-    "timestamp": "2025-08-14T00:00:00+02:00",
+    "timestamp": "2025-04-08T00:00:00+02:00",
     "contains": [ {
       "system": "http://loinc.org",
       "version": "2.79",
@@ -623,11 +611,6 @@
     }, {
       "system": "http://loinc.org",
       "version": "2.79",
-      "code": "22592-0",
-      "display": "Treponema pallidum IgG-Antikörper [Einheiten/Volumen] in Serum"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.79",
       "code": "17057-1",
       "display": "Legionella pneumophila Antigen [Nachweis] in Probenmaterial"
     }, {
@@ -1008,16 +991,6 @@
     }, {
       "system": "http://loinc.org",
       "version": "2.79",
-      "code": "56888-1",
-      "display": "HIV 1+2 Antikörper+HIV-1 p24 Antigen [Nachweis] in Serum oder Plasma mittels Immunoassay"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.79",
-      "code": "104780-2",
-      "display": "Neisseria gonorrhoeae rRNA [Presence] in Specimen by Molecular genetics method"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.79",
       "code": "18998-5",
       "display": "Trimethoprim+Sulfamethoxazol [Empfindlichkeit]"
     }, {
@@ -1080,11 +1053,6 @@
       "version": "2.79",
       "code": "35776-4",
       "display": "Ceftazidim+Clavulanat [Empfindlichkeit]"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.79",
-      "code": "25836-8",
-      "display": "HIV-1 RNA [#/Volumen] (Viruslast) in Probenmaterial mittels Nukleinsäureamplifikation mit Sondendetektion"
     }, {
       "system": "http://loinc.org",
       "version": "2.79",
@@ -1258,11 +1226,6 @@
     }, {
       "system": "http://loinc.org",
       "version": "2.79",
-      "code": "25867-3",
-      "display": "Echinococcus sp Antikörper [Titer] in Serum"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.79",
       "code": "31971-5",
       "display": "Streptococcus pyogenes Antigen [Nachweis] in Probenmaterial"
     }, {
@@ -1310,11 +1273,6 @@
       "version": "2.79",
       "code": "104342-1",
       "display": "Bornavirus RNA [Nachweis] in Probenmaterial mittels Nukleinsäureamplifikation mit Sondendetektion"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.79",
-      "code": "69354-9",
-      "display": "HIV-2 RNA [Einheiten/Volumen] (Viruslast) in Serum oder Plasma mittels Nukleinsäureamplifikation mit Sondendetektion"
     }, {
       "system": "http://loinc.org",
       "version": "2.79",
@@ -1633,16 +1591,6 @@
     }, {
       "system": "http://loinc.org",
       "version": "2.79",
-      "code": "31777-6",
-      "display": "Chlamydia trachomatis Antigen [Nachweis] in Probenmaterial"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.79",
-      "code": "105340-4",
-      "display": "Chlamydia trachomatis L3 DNA [Presence] in Specimen by NAA with probe detection"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.79",
       "code": "71768-6",
       "display": "Ebola-Virus Antigen [Nachweis] in Probenmaterial mittels Immunoassay"
     }, {
@@ -1790,11 +1738,6 @@
       "version": "2.79",
       "code": "49451-8",
       "display": "Varicella-Zoster-Virus DNA [#/Volumen] (Viruslast) in Probenmaterial mittels Nukleinsäureamplifikation mit Sondendetektion"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.79",
-      "code": "8040-8",
-      "display": "Toxoplasma gondii IgM-Antikörper [Einheiten/Volumen] in Serum"
     }, {
       "system": "http://loinc.org",
       "version": "2.79",
@@ -2033,11 +1976,6 @@
     }, {
       "system": "http://loinc.org",
       "version": "2.79",
-      "code": "22594-6",
-      "display": "Treponema pallidum IgM-Antikörper [Einheiten/Volumen] in Serum"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.79",
       "code": "25514-1",
       "display": "Röteln-Virus IgG-Antikörper [Nachweis] in Serum"
     }, {
@@ -2053,18 +1991,8 @@
     }, {
       "system": "http://loinc.org",
       "version": "2.79",
-      "code": "31809-7",
-      "display": "Echinococcus sp Ag [Presence] in Stool"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.79",
       "code": "265-9",
       "display": "Ganciclovir [Susceptibility]"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.79",
-      "code": "22265-3",
-      "display": "Echinococcus sp IgG-Antikörper [Einheiten/Volumen] in Serum"
     }, {
       "system": "http://loinc.org",
       "version": "2.79",
@@ -2080,11 +2008,6 @@
       "version": "2.79",
       "code": "73606-6",
       "display": "Besifloxacin [Empfindlichkeit]"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.79",
-      "code": "7863-4",
-      "display": "Echinococcus sp Antikörper [Einheiten/Volumen] in Serum"
     }, {
       "system": "http://loinc.org",
       "version": "2.79",
@@ -2105,11 +2028,6 @@
       "version": "2.79",
       "code": "101140-2",
       "display": "Salmonella sp Antigen [Nachweis] in Stuhl mittels Immunoassay-Schnelltest"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.79",
-      "code": "105339-6",
-      "display": "Chlamydia trachomatis L1 DNA [Presence] in Specimen by NAA with probe detection"
     }, {
       "system": "http://loinc.org",
       "version": "2.79",
@@ -2235,11 +2153,6 @@
       "version": "2.79",
       "code": "41856-6",
       "display": "Variola-Virus DNA [Nachweis] in Probenmaterial mittels Nukleinsäureamplifikation mit Sondendetektion"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.79",
-      "code": "47212-6",
-      "display": "Chlamydia trachomatis DNA [Nachweis oder Identität] in Probenmaterial mittels Nukleinsäureamplifikation mit Sondendetektion"
     }, {
       "system": "http://loinc.org",
       "version": "2.79",
@@ -2498,18 +2411,8 @@
     }, {
       "system": "http://loinc.org",
       "version": "2.79",
-      "code": "25339-3",
-      "display": "Echinococcus sp Antikörper [Nachweis] in Serum"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.79",
       "code": "5257-1",
       "display": "Mycoplasma pneumoniae IgM-Antikörper [Nachweis] in Serum mittels Immunoassay"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.79",
-      "code": "22577-1",
-      "display": "Toxoplasma gondii Antikörper [Nachweis] in Serum"
     }, {
       "system": "http://loinc.org",
       "version": "2.79",
@@ -2803,11 +2706,6 @@
     }, {
       "system": "http://loinc.org",
       "version": "2.79",
-      "code": "47476-7",
-      "display": "Reagin Antikörper [Titer] in Probenmaterial"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.79",
       "code": "60489-2",
       "display": "Streptococcus pyogenes DNA [Nachweis] in Probenmaterial vom Rachen mittels Nukleinsäureamplifikation mit Sondendetektion"
     }, {
@@ -2820,11 +2718,6 @@
       "version": "2.79",
       "code": "42980-3",
       "display": "Polio virus Ab [Titer] in Serum"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.79",
-      "code": "8039-0",
-      "display": "Toxoplasma gondii IgG-Antikörper [Einheiten/Volumen] in Serum"
     }, {
       "system": "http://loinc.org",
       "version": "2.79",
@@ -2923,11 +2816,6 @@
     }, {
       "system": "http://loinc.org",
       "version": "2.79",
-      "code": "104765-3",
-      "display": "Neisseria gonorrhoeae DNA [Presence] in Specimen by Molecular genetics method"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.79",
       "code": "32700-7",
       "display": "Mikroskopische Beobachtung [Nachweis oder Identität] in Blut mittels Malariaausstrich"
     }, {
@@ -2975,11 +2863,6 @@
       "version": "2.79",
       "code": "18903-5",
       "display": "Chloramphenicol [Empfindlichkeit]"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.79",
-      "code": "32515-9",
-      "display": "CD3+CD4+ (T4-Helfer)-Zellen [#/Volumen] in Probenmaterial"
     }, {
       "system": "http://loinc.org",
       "version": "2.79",
@@ -3258,11 +3141,6 @@
     }, {
       "system": "http://loinc.org",
       "version": "2.79",
-      "code": "6561-5",
-      "display": "Treponema pallidum IgG-Antikörper [Nachweis] in Serum"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.79",
       "code": "7981-4",
       "display": "Parvovirus B19 IgM-Antikörper [Nachweis] in Serum"
     }, {
@@ -3393,11 +3271,6 @@
     }, {
       "system": "http://loinc.org",
       "version": "2.79",
-      "code": "49448-4",
-      "display": "Toxoplasma gondii DNA [#/Volumen] in Probenmaterial mittels Nukleinsäureamplifikation mit Sondendetektion"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.79",
       "code": "7906-1",
       "display": "Hepatitis-D-Virus RNA [Nachweis] in Serum mittels Nukleinsäureamplifikation mit Sondendetektion"
     }, {
@@ -3450,11 +3323,6 @@
       "version": "2.79",
       "code": "32777-5",
       "display": "Escherichia coli O157:H7 Antigen [Nachweis] in Stuhl"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.79",
-      "code": "41122-3",
-      "display": "Treponema pallidum Antikörper [Einheiten/Volumen] in Probenmaterial"
     }, {
       "system": "http://loinc.org",
       "version": "2.79",
@@ -3725,11 +3593,6 @@
       "version": "2.79",
       "code": "18956-3",
       "display": "Norfloxacin [Empfindlichkeit]"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.79",
-      "code": "7919-4",
-      "display": "HIV 2 Ab [Presence] in Serum"
     }, {
       "system": "http://loinc.org",
       "version": "2.79",
@@ -4083,11 +3946,6 @@
     }, {
       "system": "http://loinc.org",
       "version": "2.79",
-      "code": "16794-0",
-      "display": "Echinococcus sp IgM Ab [Units/volume] in Serum"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.79",
       "code": "18888-8",
       "display": "Cefoxitin [Empfindlichkeit]"
     }, {
@@ -4290,11 +4148,6 @@
       "version": "2.79",
       "code": "5064-1",
       "display": "Borrelia burgdorferi IgM-Antikörper [Einheiten/Volumen] in Serum mittels Immunoassay"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.79",
-      "code": "13499-9",
-      "display": "HIV-1 Antikörper-Bandenmuster [Interpretation] in Serum mittels Immunoblot"
     }, {
       "system": "http://loinc.org",
       "version": "2.79",
@@ -4595,11 +4448,6 @@
       "version": "2.79",
       "code": "40987-0",
       "display": "Respiratorisches Synzytial-Virus RNA [Nachweis oder Identität] in Probenmaterial mittels Nukleinsäureamplifikation mit Sondendetektion"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.79",
-      "code": "104391-8",
-      "display": "Echinococcus sp [Nachweis oder Identität] in Probenmaterial"
     }, {
       "system": "http://loinc.org",
       "version": "2.79",
@@ -4968,11 +4816,6 @@
     }, {
       "system": "http://loinc.org",
       "version": "2.79",
-      "code": "22464-2",
-      "display": "Reagin-Antikörper [Nachweis] in Probenmaterial"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.79",
       "code": "88874-3",
       "display": "Mycobacterium tuberculosis Komplex DNA [Nachweis] in Isolat oder Probenmaterial mittels Molekulargenetik"
     }, {
@@ -5293,16 +5136,6 @@
     }, {
       "system": "http://loinc.org",
       "version": "2.79",
-      "code": "31073-0",
-      "display": "HIV-2 Antikörper-Bandenmuster [Interpretation] in Serum mittels Immunoblot"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.79",
-      "code": "69353-1",
-      "display": "HIV-2 RNA [Nachweis] in Serum oder Plasma mittels Nukleinsäureamplifikation mit Sondendetektion"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.79",
       "code": "13226-6",
       "display": "Cytomegalie-Virus IgM-Antikörper [Einheiten/Volumen] in Liquor"
     }, {
@@ -5435,11 +5268,6 @@
       "version": "2.79",
       "code": "54914-7",
       "display": "Hepatitis-C-Virus Core Antigen [Einheiten/Volumen] in Serum mittels Immunoassay"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.79",
-      "code": "25842-6",
-      "display": "HIV-2 provirale DNA [Nachweis] in Probenmaterial mittels Nukleinsäureamplifikation mit Sondendetektion"
     }, {
       "system": "http://loinc.org",
       "version": "2.79",
@@ -5708,11 +5536,6 @@
     }, {
       "system": "http://loinc.org",
       "version": "2.79",
-      "code": "104478-3",
-      "display": "Treponema pallidum ITpA-index [Relative Ratio] in Serum and CSF"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.79",
       "code": "41730-3",
       "display": "Cefoxitin+Clavulanat [Empfindlichkeit]"
     }, {
@@ -5835,11 +5658,6 @@
       "version": "2.79",
       "code": "26060-4",
       "display": "Europäische-Frühsommer-Meningoenzephalitis-Virus IgM-Antikörper [Einheiten/Volumen] in Serum mittels Immunoassay"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.79",
-      "code": "22578-9",
-      "display": "Toxoplasma gondii IgA-Antikörper [Einheiten/Volumen] in Serum"
     }, {
       "system": "http://loinc.org",
       "version": "2.79",
@@ -5968,11 +5786,6 @@
     }, {
       "system": "http://loinc.org",
       "version": "2.79",
-      "code": "11474-4",
-      "display": "Hydatidenzyste identifiziert in Probenmaterial mittels feuchter Nativpräparation"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.79",
       "code": "35792-1",
       "display": "Difloxacin [Susceptibility]"
     }, {
@@ -6050,11 +5863,6 @@
       "version": "2.79",
       "code": "38990-8",
       "display": "Escherichia coli O157:H7 DNA [Nachweis] in Probenmaterial mittels Nukleinsäureamplifikation mit Sondendetektion"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.79",
-      "code": "24012-7",
-      "display": "HIV-1 Antigen [Nachweis] in Serum"
     }, {
       "system": "http://loinc.org",
       "version": "2.79",
@@ -6228,11 +6036,6 @@
     }, {
       "system": "http://loinc.org",
       "version": "2.79",
-      "code": "29904-0",
-      "display": "Toxoplasma gondii DNA [Nachweis] in Probenmaterial mittels Nukleinsäureamplifikation mit Sondendetektion"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.79",
       "code": "85839-9",
       "display": "Beta-Lactam-Resistenz ESBL blaTEM-Gen [Nachweis] mittels Molekulargenetik"
     }, {
@@ -6260,11 +6063,6 @@
       "version": "2.79",
       "code": "26062-0",
       "display": "Europäische-Frühsommer-Meningoenzephalitis-Virus IgG-Antikörper [Einheiten/Volumen] in Serum"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.79",
-      "code": "22587-0",
-      "display": "Treponema pallidum Antikörper [Nachweis] in Serum"
     }, {
       "system": "http://loinc.org",
       "version": "2.79",
@@ -6393,11 +6191,6 @@
     }, {
       "system": "http://loinc.org",
       "version": "2.79",
-      "code": "49580-4",
-      "display": "HIV 1+2 Ab [Presence] in Specimen by Rapid immunoassay"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.79",
       "code": "82299-9",
       "display": "Escherichia coli Shiga-ähnliches Toxin 1+2 [Nachweis] in Stuhl mittels Immunoassay"
     }, {
@@ -6463,11 +6256,6 @@
     }, {
       "system": "http://loinc.org",
       "version": "2.79",
-      "code": "41163-7",
-      "display": "Treponema pallidum DNA [Nachweis] in Probenmaterial mittels Nukleinsäureamplifikation mit Sondendetektion"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.79",
       "code": "31038-3",
       "display": "Gatifloxacin [Empfindlichkeit]"
     }, {
@@ -6523,11 +6311,6 @@
     }, {
       "system": "http://loinc.org",
       "version": "2.79",
-      "code": "74853-3",
-      "display": "HIV 1 proviral DNA [Presence] in Specimen by NAA with probe detection"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.79",
       "code": "94101-3",
       "display": "Hantavirus Typ Seoul IgG-Antikörper [Nachweis] in Serum oder Plasma mittels Line-Blot"
     }, {
@@ -6545,11 +6328,6 @@
       "version": "2.79",
       "code": "9362-5",
       "display": "Bordetella pertussis IgA-Antikörper [Einheiten/Volumen] in Serum"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.79",
-      "code": "47211-8",
-      "display": "Chlamydia trachomatis L2 DNA [Nachweis] in Probenmaterial mittels Nukleinsäureamplifikation mit Sondendetektion"
     }, {
       "system": "http://loinc.org",
       "version": "2.79",
@@ -6665,11 +6443,6 @@
       "version": "2.79",
       "code": "92854-9",
       "display": "Adenovirus DNA [#/Volumen] (Viruslast) in Kornea bzw. Konjunktiva mittels Nukleinsäureamplifikation mit Sondendetektion"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.79",
-      "code": "6562-3",
-      "display": "Treponema pallidum IgM-Antikörper [Nachweis] in Serum"
     }, {
       "system": "http://loinc.org",
       "version": "2.79",
@@ -6820,11 +6593,6 @@
       "version": "2.79",
       "code": "63368-5",
       "display": "Carbapenem-Resistenzgene [Nachweis oder Identität] mittels Nukleinsäureamplifikation mit Sondendetektion"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.79",
-      "code": "53379-4",
-      "display": "HIV-1 Antikörper [Nachweis] in Probenmaterial"
     }, {
       "system": "http://loinc.org",
       "version": "2.79",
@@ -7028,11 +6796,6 @@
     }, {
       "system": "http://loinc.org",
       "version": "2.79",
-      "code": "9821-0",
-      "display": "HIV-1 p24 Antigen [Nachweis] in Serum"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.79",
       "code": "82512-5",
       "display": "Hepatitis-C-Virus Genotyp 1 [Typ] in Serum oder Plasma mittels Nukleinsäureamplifikation mit Sondendetektion"
     }, {
@@ -7060,11 +6823,6 @@
       "version": "2.79",
       "code": "60535-2",
       "display": "Doripenem [Empfindlichkeit]"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.79",
-      "code": "30204-2",
-      "display": "Chlamydia trachomatis Antikörper [Nachweis] in Serum"
     }, {
       "system": "http://loinc.org",
       "version": "2.79",
@@ -7210,11 +6968,6 @@
       "version": "2.79",
       "code": "18911-8",
       "display": "Colistimethate"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.79",
-      "code": "5018-7",
-      "display": "HIV-1 RNA [Nachweis] in Probenmaterial mittels Nukleinsäureamplifikation mit Sondendetektion"
     }, {
       "system": "http://loinc.org",
       "version": "2.79",
@@ -7400,11 +7153,6 @@
       "version": "2.79",
       "code": "8012-7",
       "display": "Rotavirus dsRNA [Nachweis] in Stuhl mittels Nukleinsäureamplifikation mit Sondendetektion"
-    }, {
-      "system": "http://loinc.org",
-      "version": "2.79",
-      "code": "32171-1",
-      "display": "Echinococcus sp IgG-Antikörper [Nachweis] in Serum"
     }, {
       "system": "http://loinc.org",
       "version": "2.79",

@@ -2,27 +2,12 @@
   "resourceType": "StructureDefinition",
   "id": "TransactionID",
   "url": "https://demis.rki.de/fhir/StructureDefinition/TransactionID",
-  "version": "2.0.0",
+  "version": "1.3.0",
   "name": "TransactionID",
   "title": "Transaktions-ID",
   "status": "active",
-  "date": "2025-02-20",
-  "publisher": "Robert Koch-Institut",
-  "contact": [ {
-    "telecom": [ {
-      "system": "email",
-      "value": "demis-support@rki.de"
-    } ]
-  } ],
+  "date": "2023-10-12",
   "description": "Die Transaktions-ID dient der Angabe der Referenz auf das Analyse-Ergebnis.",
-  "jurisdiction": [ {
-    "coding": [ {
-      "system": "urn:iso:std:iso:3166",
-      "version": "ALPHA-2",
-      "code": "DE"
-    } ]
-  } ],
-  "copyright": "Copyright (C) 2021-2025 Robert Koch-Institut",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,
@@ -34,10 +19,6 @@
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation": "constraint",
   "snapshot": {
-    "extension": [ {
-      "url": "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
-      "valueString": "4.0.1"
-    } ],
     "element": [ {
       "id": "Extension",
       "path": "Extension",
@@ -179,7 +160,7 @@
       "path": "Extension.value[x]",
       "short": "Transaktions-ID",
       "definition": "Transaktions-ID",
-      "min": 1,
+      "min": 0,
       "max": "1",
       "base": {
         "path": "Extension.value[x]",
@@ -187,6 +168,8 @@
         "max": "1"
       },
       "type": [ {
+        "code": "string"
+      }, {
         "code": "Identifier",
         "profile": [ "https://demis.rki.de/fhir/StructureDefinition/TransactionIdIdentifier" ]
       } ],
@@ -197,8 +180,12 @@
         "expression": "hasValue() or (children().count() > id.count())",
         "xpath": "@value|f:*|h:div",
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
+      }, {
+        "key": "checkFormatOfTransactionIdString",
+        "severity": "warning",
+        "human": "Die Transaktion-Id muss dem Format IGS-12345-XYZP-XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX entsprechen.",
+        "expression": "$this.is(string) implies $this.as(string).matches('^IGS-[0-9]{5}-[A-Z]{3}P-[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$')"
       } ],
-      "mustSupport": true,
       "isModifier": false,
       "isSummary": false,
       "mapping": [ {
@@ -217,12 +204,18 @@
       "path": "Extension.value[x]",
       "short": "Transaktions-ID",
       "definition": "Transaktions-ID",
-      "min": 1,
       "type": [ {
+        "code": "string"
+      }, {
         "code": "Identifier",
         "profile": [ "https://demis.rki.de/fhir/StructureDefinition/TransactionIdIdentifier" ]
       } ],
-      "mustSupport": true
+      "constraint": [ {
+        "key": "checkFormatOfTransactionIdString",
+        "severity": "warning",
+        "human": "Die Transaktion-Id muss dem Format IGS-12345-XYZP-XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX entsprechen.",
+        "expression": "$this.is(string) implies $this.as(string).matches('^IGS-[0-9]{5}-[A-Z]{3}P-[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$')"
+      } ]
     } ]
   }
 }

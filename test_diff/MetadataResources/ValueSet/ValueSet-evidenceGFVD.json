@@ -2,27 +2,14 @@
   "resourceType": "ValueSet",
   "id": "evidenceGFVD",
   "url": "https://demis.rki.de/fhir/ValueSet/evidenceGFVD",
-  "version": "1.6.4",
+  "version": "1.6.3",
   "name": "EvidenceGFVD",
   "title": "Symptome und Manifestationen in Bezug auf den Meldetatbestand \"Gelbfieber\"",
   "status": "active",
   "experimental": false,
-  "date": "2025-09-03",
+  "date": "2025-02-20",
   "publisher": "Robert Koch-Institut",
-  "contact": [ {
-    "telecom": [ {
-      "system": "email",
-      "value": "demis-support@rki.de"
-    } ]
-  } ],
   "description": "Das ValueSet EvidenceGFVD enthält die kodierten Angaben zu Symptomen und Manifestationen in Bezug auf den Meldetatbestand \"Gelbfieber\".",
-  "jurisdiction": [ {
-    "coding": [ {
-      "system": "urn:iso:std:iso:3166",
-      "version": "ALPHA-2",
-      "code": "DE"
-    } ]
-  } ],
   "copyright": "This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. “SNOMED” and “SNOMED CT” are registered trademarks of the IHTSDO.\r\n\r\nDieses Material enthält SNOMED Clinical Terms® (SNOMED CT®), die mit Genehmigung der International Health Terminology Standards Development Organisation (IHTSDO) verwendet werden. Alle Rechte vorbehalten. SNOMED CT® wurde ursprünglich vom College of American Pathologists entwickelt. \"SNOMED\" und \"SNOMED CT\" sind eingetragene Warenzeichen der IHTSDO.\r\n\r\nDownloadbedingungen für SNOMED-CT\r\n\r\nEnthält durch SNOMED International urheberrechtlich geschützte Information. Jede Verwendung von SNOMED CT in Deutschland erfordert eine vollgültige Affiliate Lizenz oder eine Sublizenz. Die entsprechende Lizenz ist kostenlos, vorausgesetzt die Verwendung findet nur in Deutschland statt und erfüllt die Bedingungen des Affiliate License Agreements. Affiliate Lizenzen können über das Mitglieder-Lizenzierungs- und Distributions-Service (MLDS) direkt beim jeweiligen NRC beantragt werden. https://mlds.ihtsdotools.org/#/landing/DE?lang=de\r\n\r\nContains information protected by copyright of SNOMED International. Any use of SNOMED CT in Austria requires a valid affiliate license or sublicense. The corresponding license is free of charge, provided that the use only takes place in Austria and fulfills the conditions of the Affiliate License Agreement. Affiliate licenses can be requested directly from the respective NRC via the Member Licensing and Distribution Service (MLDS). ttps://mlds.ihtsdotools.org/#/landing/DE?lang=de",
   "compose": {
     "include": [ {
@@ -34,10 +21,14 @@
           "valueInteger": 21
         } ],
         "code": "131148009",
-        "display": "Bleeding (finding)",
+        "display": "Blutung",
         "designation": [ {
-          "language": "de-DE",
-          "value": "Blutung"
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001"
+          },
+          "value": "Bleeding (finding)"
         } ]
       }, {
         "extension": [ {
@@ -45,17 +36,29 @@
           "valueInteger": 19
         } ],
         "code": "131148009:{363698007=414781009}",
-        "display": "Blutung der Schleimhäute"
+        "display": "Blutung der Schleimhäute",
+        "designation": [ {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "1119454002"
+          },
+          "value": "131148009 | Bleeding (finding) | : {363698007 | Finding site (attribute) | = 414781009 | Mucous membrane structure (body structure) |}"
+        } ]
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 15
         } ],
         "code": "165413005",
-        "display": "Hämatorkrit hoch",
+        "display": "Hämatokrit > 120% des Normwertes",
         "designation": [ {
-          "language": "de-DE",
-          "value": "Hämatokrit > 120% des Normwertes"
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001"
+          },
+          "value": "Hematocrit above reference range (finding)"
         } ]
       }, {
         "extension": [ {
@@ -63,10 +66,14 @@
           "valueInteger": 16
         } ],
         "code": "18165001",
-        "display": "Ikterus",
+        "display": "Gelbsucht (Ikterus)",
         "designation": [ {
-          "language": "de-DE",
-          "value": "Gelbsucht (Ikterus)"
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001"
+          },
+          "value": "Jaundice (finding)"
         } ]
       }, {
         "extension": [ {
@@ -74,17 +81,29 @@
           "valueInteger": 25
         } ],
         "code": "267038008:{42752001=166778002}",
-        "display": "Anzeichen für Plasmaaustritt (Ödeme bei Hypoproteninämie)"
+        "display": "Anzeichen für Plasmaaustritt (Ödeme bei Hypoproteninämie)",
+        "designation": [ {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "1119454002"
+          },
+          "value": "267038008 | Edema (finding) | : {42752001 | Due to (attribute) | = 166778002 | Serum proteins below reference range (finding) |}"
+        } ]
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 13
         } ],
         "code": "271813007",
-        "display": "Petechien",
+        "display": "Hauteinblutung, Petechien",
         "designation": [ {
-          "language": "de-DE",
-          "value": "Hauteinblutung, Petechien"
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001"
+          },
+          "value": "Petechiae (finding)"
         } ]
       }, {
         "extension": [ {
@@ -92,10 +111,14 @@
           "valueInteger": 22
         } ],
         "code": "2901004",
-        "display": "Meläna",
+        "display": "Blutstuhl, Melaena",
         "designation": [ {
-          "language": "de-DE",
-          "value": "Blutstuhl, Melaena"
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001"
+          },
+          "value": "Melena (disorder)"
         } ]
       }, {
         "extension": [ {
@@ -103,10 +126,14 @@
           "valueInteger": 10
         } ],
         "code": "302215000",
-        "display": "Thrombozytopenie",
+        "display": "Thrombozytopenie (<= 150.000 Zellen/cmm)",
         "designation": [ {
-          "language": "de-DE",
-          "value": "Thrombozytopenie (<= 150.000 Zellen/cmm)"
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001"
+          },
+          "value": "Thrombocytopenic disorder (disorder)"
         } ]
       }, {
         "extension": [ {
@@ -114,10 +141,14 @@
           "valueInteger": 14
         } ],
         "code": "302227002",
-        "display": "Ekchymose",
+        "display": "Hauteinblutung, Ekchymosen",
         "designation": [ {
-          "language": "de-DE",
-          "value": "Hauteinblutung, Ekchymosen"
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001"
+          },
+          "value": "Ecchymosis (finding)"
         } ]
       }, {
         "extension": [ {
@@ -125,17 +156,29 @@
           "valueInteger": 17
         } ],
         "code": "386661006",
-        "display": "Fieber"
+        "display": "Fieber",
+        "designation": [ {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001"
+          },
+          "value": "Fever (finding)"
+        } ]
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 12
         } ],
         "code": "387778001",
-        "display": "Hauteinblutungen",
+        "display": "Hauteinblutung, Purpura",
         "designation": [ {
-          "language": "de-DE",
-          "value": "Hauteinblutung, Purpura"
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001"
+          },
+          "value": "Purpuric disorder (disorder)"
         } ]
       }, {
         "extension": [ {
@@ -143,35 +186,59 @@
           "valueInteger": 26
         } ],
         "code": "389026000:{42752001=166778002}",
-        "display": "Anzeichen für Plasmaaustritt (Aszites)"
+        "display": "Anzeichen für Plasmaaustritt (Aszites)",
+        "designation": [ {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "1119454002"
+          },
+          "value": "389026000 | Ascites (disorder) | : {42752001 | Due to (attribute) | = 166778002 | Serum proteins below reference range (finding) |}"
+        } ]
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 27
         } ],
         "code": "417186004:{255234002=78534001}",
-        "display": "Absinken des Hämatokrit nach Volumenersatztherapie um >= 20% des Ausgangswertes"
+        "display": "Absinken des Hämatokrit nach Volumenersatztherapie um >= 20% des Ausgangswertes",
+        "designation": [ {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "1119454002"
+          },
+          "value": "417186004 | Precipitous drop in hematocrit (finding) | : {255234002 | After (attribute) | = 78534001 | Body fluid replacement (procedure) |}"
+        } ]
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 24
         } ],
         "code": "60046008:{42752001=166778002}",
-        "display": "Anzeichen für Plasmaaustritt (Pleuraerguss)"
+        "display": "Anzeichen für Plasmaaustritt (Pleuraerguss)",
+        "designation": [ {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "1119454002"
+          },
+          "value": "60046008 | Pleural effusion (disorder) | : {42752001 | Due to (attribute) | = 166778002 | Serum proteins below reference range (finding) |}"
+        } ]
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 23
         } ],
         "code": "66857006",
-        "display": "Hämoptyse",
+        "display": "Bluthusten (Hämoptysen)",
         "designation": [ {
-          "language": "de-DE",
+          "language": "en-US",
           "use": {
             "system": "http://snomed.info/sct",
-            "code": "900000000000013009"
+            "code": "900000000000003001"
           },
-          "value": "Bluthusten"
+          "value": "Hemoptysis (disorder)"
         } ]
       }, {
         "extension": [ {
@@ -179,31 +246,55 @@
           "valueInteger": 18
         } ],
         "code": "74474003",
-        "display": "Gastrointestinale Blutung"
+        "display": "Blutung gastrointestinal",
+        "designation": [ {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001"
+          },
+          "value": "Gastrointestinal hemorrhage (disorder)"
+        } ]
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 11
         } ],
         "code": "846603004",
-        "display": "Positiver Tourniquet-Test"
+        "display": "positiver Tourniquet-Test",
+        "designation": [ {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001"
+          },
+          "value": "Capillary fragility detected by tourniquet test (finding)"
+        } ]
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 20
         } ],
         "code": "95385002",
-        "display": "Blutung an Injektionsstelle"
+        "display": "Blutung aus Injektionsstelle",
+        "designation": [ {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001"
+          },
+          "value": "Injection site hemorrhage (disorder)"
+        } ]
       } ]
     } ]
   },
   "expansion": {
-    "timestamp": "2025-09-03T00:00:00+02:00",
+    "timestamp": "2025-02-20T00:00:00+01:00",
     "contains": [ {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",
       "code": "271813007",
-      "display": "Petechien"
+      "display": "Hauteinblutung, Petechien"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",
@@ -213,17 +304,17 @@
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",
       "code": "95385002",
-      "display": "Blutung an Injektionsstelle"
+      "display": "Blutung aus Injektionsstelle"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",
       "code": "18165001",
-      "display": "Ikterus"
+      "display": "Gelbsucht (Ikterus)"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",
       "code": "302215000",
-      "display": "Thrombozytopenie"
+      "display": "Thrombozytopenie (<= 150.000 Zellen/cmm)"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",
@@ -233,7 +324,7 @@
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",
       "code": "74474003",
-      "display": "Gastrointestinale Blutung"
+      "display": "Blutung gastrointestinal"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",
@@ -248,7 +339,7 @@
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",
       "code": "165413005",
-      "display": "Hämatorkrit hoch"
+      "display": "Hämatokrit > 120% des Normwertes"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",
@@ -258,12 +349,12 @@
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",
       "code": "387778001",
-      "display": "Hauteinblutungen"
+      "display": "Hauteinblutung, Purpura"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",
       "code": "846603004",
-      "display": "Positiver Tourniquet-Test"
+      "display": "positiver Tourniquet-Test"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",
@@ -273,22 +364,22 @@
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",
       "code": "302227002",
-      "display": "Ekchymose"
+      "display": "Hauteinblutung, Ekchymosen"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",
       "code": "131148009",
-      "display": "Bleeding (finding)"
+      "display": "Blutung"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",
       "code": "66857006",
-      "display": "Hämoptyse"
+      "display": "Bluthusten (Hämoptysen)"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",
       "code": "2901004",
-      "display": "Meläna"
+      "display": "Blutstuhl, Melaena"
     } ]
   }
 }

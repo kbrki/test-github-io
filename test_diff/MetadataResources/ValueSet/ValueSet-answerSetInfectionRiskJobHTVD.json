@@ -2,27 +2,14 @@
   "resourceType": "ValueSet",
   "id": "answerSetInfectionRiskJobHTVD",
   "url": "https://demis.rki.de/fhir/ValueSet/answerSetInfectionRiskJobHTVD",
-  "version": "2.0.0",
+  "version": "1.3.2",
   "name": "AnswerSetInfectionRiskJobHTVD",
   "title": "Antwortmöglichkeiten für die Angabe der beruflichen Risiken in Zusammenhang mit dem Meldetatbestand \"Hantavirus-Erkrankung, hämorrhagischer Verlauf\"",
   "status": "active",
   "experimental": false,
-  "date": "2025-09-03",
+  "date": "2025-02-20",
   "publisher": "Robert Koch-Institut",
-  "contact": [ {
-    "telecom": [ {
-      "system": "email",
-      "value": "demis-support@rki.de"
-    } ]
-  } ],
   "description": "Das ValueSet AnswerSetInfectionRiskJobHTVD enthält die kodierten Antwortmöglichkeiten für die Angabe der beruflichen Risiken in Zusammenhang mit dem Meldetatbestand \"Hantavirus-Erkrankung, hämorrhagischer Verlauf\".",
-  "jurisdiction": [ {
-    "coding": [ {
-      "system": "urn:iso:std:iso:3166",
-      "version": "ALPHA-2",
-      "code": "DE"
-    } ]
-  } ],
   "copyright": "This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. “SNOMED” and “SNOMED CT” are registered trademarks of the IHTSDO.\r\n\r\nDieses Material enthält SNOMED Clinical Terms® (SNOMED CT®), die mit Genehmigung der International Health Terminology Standards Development Organisation (IHTSDO) verwendet werden. Alle Rechte vorbehalten. SNOMED CT® wurde ursprünglich vom College of American Pathologists entwickelt. \"SNOMED\" und \"SNOMED CT\" sind eingetragene Warenzeichen der IHTSDO.\r\n\r\nDownloadbedingungen für SNOMED-CT\r\n\r\nEnthält durch SNOMED International urheberrechtlich geschützte Information. Jede Verwendung von SNOMED CT in Deutschland erfordert eine vollgültige Affiliate Lizenz oder eine Sublizenz. Die entsprechende Lizenz ist kostenlos, vorausgesetzt die Verwendung findet nur in Deutschland statt und erfüllt die Bedingungen des Affiliate License Agreements. Affiliate Lizenzen können über das Mitglieder-Lizenzierungs- und Distributions-Service (MLDS) direkt beim jeweiligen NRC beantragt werden. https://mlds.ihtsdotools.org/#/landing/DE?lang=de\r\n\r\nContains information protected by copyright of SNOMED International. Any use of SNOMED CT in Austria requires a valid affiliate license or sublicense. The corresponding license is free of charge, provided that the use only takes place in Austria and fulfills the conditions of the Affiliate License Agreement. Affiliate licenses can be requested directly from the respective NRC via the Member Licensing and Distribution Service (MLDS). ttps://mlds.ihtsdotools.org/#/landing/DE?lang=de",
   "compose": {
     "include": [ {
@@ -34,24 +21,44 @@
           "valueInteger": 13
         } ],
         "code": "106290006",
-        "display": "Tierarzt/Tierärztin"
+        "display": "Tierarzt/Tierärztin",
+        "designation": [ {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001"
+          },
+          "value": "Veterinarian (occupation)"
+        } ]
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 17
         } ],
         "code": "106388008",
-        "display": "Landwirt/Landwirtin"
+        "display": "Landwirt/-in",
+        "designation": [ {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001"
+          },
+          "value": "Farmer (occupation)"
+        } ]
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 18
         } ],
         "code": "106390009",
-        "display": "Agricultural/animal husbandry worker (occupation)",
+        "display": "Landarbeiter/-in",
         "designation": [ {
-          "language": "de-DE",
-          "value": "Landarbeiter/-in"
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001"
+          },
+          "value": "Agricultural/animal husbandry worker (occupation)"
         } ]
       }, {
         "extension": [ {
@@ -59,17 +66,29 @@
           "valueInteger": 25
         } ],
         "code": "106400003",
-        "display": "Fischer/Fischerin"
+        "display": "Fischer/-in, Angler/-in",
+        "designation": [ {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001"
+          },
+          "value": "Fisherman (occupation)"
+        } ]
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 14
         } ],
         "code": "106440009",
-        "display": "Fleischzubereiter / Fleischzubereiterin",
+        "display": "Schlachthofmitarbeiter/-in; Metzger/-in",
         "designation": [ {
-          "language": "de-DE",
-          "value": "Schlachthofmitarbeiter/-in; Metzger/-in"
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001"
+          },
+          "value": "Butcher/meat preparer (occupation)"
         } ]
       }, {
         "extension": [ {
@@ -77,31 +96,59 @@
           "valueInteger": 26
         } ],
         "code": "106524008",
-        "display": "Bauarbeiter/Bauarbeiterin"
+        "display": "Bauarbeiter/-in",
+        "designation": [ {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001"
+          },
+          "value": "Construction worker (occupation)"
+        } ]
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 19
         } ],
         "code": "1290220002",
-        "display": "Laborarbeiter / Laborarbeiterin"
+        "display": "Laborarbeiter/-in",
+        "designation": [ {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001"
+          },
+          "value": "Laboratory worker (occupation)"
+        } ]
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 24
         } ],
         "code": "159116001",
-        "display": "Florist/Floristin"
+        "display": "Florist/in",
+        "designation": [ {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001"
+          },
+          "value": "Florist (occupation)"
+        } ]
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 10
         } ],
         "code": "159462004",
-        "display": "Animal trader (occupation)",
+        "display": "Tierhändler/-in",
         "designation": [ {
-          "language": "de-DE",
-          "value": "Tierhändler/-in"
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001"
+          },
+          "value": "Animal trader (occupation)"
         } ]
       }, {
         "extension": [ {
@@ -109,24 +156,44 @@
           "valueInteger": 20
         } ],
         "code": "160157004",
-        "display": "Kanalarbeiter/Kanalarbeiterin"
+        "display": "Kanalarbeiter/-in",
+        "designation": [ {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001"
+          },
+          "value": "Sewerman (occupation)"
+        } ]
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 16
         } ],
         "code": "160209004",
-        "display": "Müllmann/Müllfrau"
+        "display": "Müllarbeiter/-in",
+        "designation": [ {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001"
+          },
+          "value": "Refuse collector/dustman (occupation)"
+        } ]
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 11
         } ],
         "code": "224152001",
-        "display": "Keeps pets (finding)",
+        "display": "Tierhalter/-in",
         "designation": [ {
-          "language": "de-DE",
-          "value": "Tierhalter/-in"
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001"
+          },
+          "value": "Keeps pets (finding)"
         } ]
       }, {
         "extension": [ {
@@ -134,90 +201,138 @@
           "valueInteger": 15
         } ],
         "code": "308228003",
-        "display": "Schäfer/Schäferin"
+        "display": "Schäfer/-in",
+        "designation": [ {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001"
+          },
+          "value": "Shepherd (occupation)"
+        } ]
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 22
         } ],
         "code": "34024003",
-        "display": "Gärtner/Gärtnerin"
+        "display": "Gärtner/in",
+        "designation": [ {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001"
+          },
+          "value": "Gardener (occupation)"
+        } ]
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 23
         } ],
         "code": "34484007",
-        "display": "Forstarbeiter/Forstarbeiterin"
+        "display": "Förster/-in, Waldarbeiter /-in",
+        "designation": [ {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001"
+          },
+          "value": "Forestry worker (occupation)"
+        } ]
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 12
         } ],
         "code": "53216000",
-        "display": "Tierarzthelfer/Tierarzthelferin"
+        "display": "Tierarzthelfer/-in",
+        "designation": [ {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001"
+          },
+          "value": "Veterinary assistant (occupation)"
+        } ]
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 21
         } ],
         "code": "72867000",
-        "display": "Jäger / Jägerin"
+        "display": "Jäger/-in",
+        "designation": [ {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001"
+          },
+          "value": "Trapper and hunter (occupation)"
+        } ]
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 1
         } ],
         "code": "74964007",
-        "display": "Andere"
-      }, {
+        "display": "Andere",
+        "designation": [ {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001"
+          },
+          "value": "Other (qualifier value)"
+        } ]
+      } ]
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+      "version": "2.1.0",
+      "concept": [ {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 999
         } ],
-        "code": "1631000175102",
-        "display": "Patient not asked (contextual qualifier) (qualifier value)",
-        "designation": [ {
-          "language": "de-DE",
-          "value": "Patient/Patientin nicht gefragt"
-        } ]
+        "code": "ASKU",
+        "display": "asked but unknown"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 1000
         } ],
-        "code": "261665006",
-        "display": "Unbekannt"
+        "code": "NASK",
+        "display": "not asked"
       } ]
     } ]
   },
   "expansion": {
-    "timestamp": "2025-09-03T00:00:00+02:00",
+    "timestamp": "2025-02-20T00:00:00+01:00",
     "contains": [ {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",
       "code": "34484007",
-      "display": "Forstarbeiter/Forstarbeiterin"
+      "display": "Förster/-in, Waldarbeiter /-in"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",
       "code": "34024003",
-      "display": "Gärtner/Gärtnerin"
+      "display": "Gärtner/in"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",
       "code": "53216000",
-      "display": "Tierarzthelfer/Tierarzthelferin"
+      "display": "Tierarzthelfer/-in"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+      "version": "2.1.0",
+      "code": "NASK",
+      "display": "not asked"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",
       "code": "106400003",
-      "display": "Fischer/Fischerin"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
-      "code": "261665006",
-      "display": "Unbekannt"
+      "display": "Fischer/-in, Angler/-in"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",
@@ -227,22 +342,22 @@
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",
       "code": "160157004",
-      "display": "Kanalarbeiter/Kanalarbeiterin"
+      "display": "Kanalarbeiter/-in"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",
       "code": "224152001",
-      "display": "Keeps pets (finding)"
+      "display": "Tierhalter/-in"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",
       "code": "159116001",
-      "display": "Florist/Floristin"
+      "display": "Florist/in"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",
       "code": "106388008",
-      "display": "Landwirt/Landwirtin"
+      "display": "Landwirt/-in"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",
@@ -251,48 +366,48 @@
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",
-      "code": "1631000175102",
-      "display": "Patient not asked (contextual qualifier) (qualifier value)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
       "code": "106440009",
-      "display": "Fleischzubereiter / Fleischzubereiterin"
+      "display": "Schlachthofmitarbeiter/-in; Metzger/-in"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",
       "code": "160209004",
-      "display": "Müllmann/Müllfrau"
+      "display": "Müllarbeiter/-in"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",
       "code": "308228003",
-      "display": "Schäfer/Schäferin"
+      "display": "Schäfer/-in"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",
       "code": "1290220002",
-      "display": "Laborarbeiter / Laborarbeiterin"
+      "display": "Laborarbeiter/-in"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",
       "code": "159462004",
-      "display": "Animal trader (occupation)"
+      "display": "Tierhändler/-in"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",
       "code": "72867000",
-      "display": "Jäger / Jägerin"
+      "display": "Jäger/-in"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+      "version": "2.1.0",
+      "code": "ASKU",
+      "display": "asked but unknown"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",
       "code": "106524008",
-      "display": "Bauarbeiter/Bauarbeiterin"
+      "display": "Bauarbeiter/-in"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20241115",
       "code": "106390009",
-      "display": "Agricultural/animal husbandry worker (occupation)"
+      "display": "Landarbeiter/-in"
     } ]
   }
 }
