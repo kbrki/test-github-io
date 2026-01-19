@@ -2,12 +2,12 @@
   "resourceType": "ValueSet",
   "id": "laboratoryTestMRSP",
   "url": "https://demis.rki.de/fhir/ValueSet/laboratoryTestMRSP",
-  "version": "1.8.0",
+  "version": "1.9.0",
   "name": "LaboratoryTestMRSP",
   "title": "Labortest für Middle-East-Respiratory-Syndrome-Coronavirus (MERS-CoV)",
   "status": "active",
   "experimental": false,
-  "date": "2025-04-08",
+  "date": "2025-12-05",
   "publisher": "Robert Koch-Institut",
   "contact": [ {
     "telecom": [ {
@@ -27,8 +27,11 @@
   "compose": {
     "include": [ {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "concept": [ {
+        "code": "108181-9",
+        "display": "Middle East respiratory syndrome coronavirus (MERS-CoV) RNA [Presence] in Specimen by NAA with non-probe detection"
+      }, {
         "code": "41852-5",
         "display": "Mikroorganismus oder Erreger identifiziert in Probenmaterial"
       }, {
@@ -41,20 +44,25 @@
     } ]
   },
   "expansion": {
-    "timestamp": "2025-04-08T00:00:00+02:00",
+    "timestamp": "2025-12-05T00:00:00+01:00",
     "contains": [ {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
+      "code": "108181-9",
+      "display": "Middle East respiratory syndrome coronavirus (MERS-CoV) RNA [Presence] in Specimen by NAA with non-probe detection"
+    }, {
+      "system": "http://loinc.org",
+      "version": "2.81",
       "code": "88197-9",
       "display": "Middle East respiratory syndrome-Coronavirus (MERS-CoV) RNA [Nachweis] in Probenmaterial vom Nasopharynx mittels Nukleinsäureamplifikation mit Sondendetektion"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "94501-4",
       "display": "Middle East respiratory syndrome-Coronavirus (MERS-CoV) RNA [Nachweis] in Probenmaterial vom Respirationstrakt mittels Nukleinsäureamplifikation mit Sondendetektion"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "41852-5",
       "display": "Mikroorganismus oder Erreger identifiziert in Probenmaterial"
     } ]

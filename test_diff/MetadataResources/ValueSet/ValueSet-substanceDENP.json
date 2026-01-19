@@ -2,12 +2,12 @@
   "resourceType": "ValueSet",
   "id": "substanceDENP",
   "url": "https://demis.rki.de/fhir/ValueSet/substanceDENP",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "name": "SubstanceDENP",
   "title": "Analyt-Set für Denguevirus",
   "status": "active",
   "experimental": false,
-  "date": "2025-04-08",
+  "date": "2025-12-05",
   "publisher": "Robert Koch-Institut",
   "contact": [ {
     "telecom": [ {
@@ -27,28 +27,24 @@
   "compose": {
     "include": [ {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "concept": [ {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 1
         } ],
         "code": "121020003",
-        "display": "Antigen of Dengue virus (substance)",
-        "designation": [ {
-          "language": "de-DE",
-          "value": "Dengue-Virus-Antigen"
-        } ]
+        "display": "Dengue-Virus-Antigen"
       } ]
     } ]
   },
   "expansion": {
-    "timestamp": "2025-04-08T00:00:00+02:00",
+    "timestamp": "2025-12-05T00:00:00+01:00",
     "contains": [ {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "121020003",
-      "display": "Antigen of Dengue virus (substance)"
+      "display": "Dengue-Virus-Antigen"
     } ]
   }
 }

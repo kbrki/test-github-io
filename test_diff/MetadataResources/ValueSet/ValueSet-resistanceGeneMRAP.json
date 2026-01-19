@@ -2,12 +2,12 @@
   "resourceType": "ValueSet",
   "id": "resistanceGeneMRAP",
   "url": "https://demis.rki.de/fhir/ValueSet/resistanceGeneMRAP",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "name": "ResistanceGeneMRAP",
   "title": "Resistenzdeterminante für Staphylococcus aureus (Methicillin-resistente Stämme); Meldepflicht nur für den Nachweis aus Blut oder Liquor",
   "status": "active",
   "experimental": false,
-  "date": "2025-03-31",
+  "date": "2025-12-02",
   "publisher": "Robert Koch-Institut",
   "contact": [ {
     "telecom": [ {
@@ -27,7 +27,7 @@
   "compose": {
     "include": [ {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "concept": [ {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
@@ -77,20 +77,20 @@
     } ]
   },
   "expansion": {
-    "timestamp": "2025-03-31T00:00:00+02:00",
+    "timestamp": "2025-12-02T00:00:00+01:00",
     "contains": [ {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "48813-0",
       "display": "Methicillin-Resistenz mecA-Gen [Nachweis] mittels Molekulargenetik"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "86621-0",
       "display": "Methicillin-Resistenz mecC-Gen [Nachweis] mittels Molekulargenetik"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "48816-3",
       "display": "Staphylococcus aureus Panton-Valentine-leukocidin-Gene [Nachweis] in Isolat oder Probenmaterial mittels Molekulargenetik"
     } ]

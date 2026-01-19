@@ -2,12 +2,12 @@
   "resourceType": "ValueSet",
   "id": "methodMYTP",
   "url": "https://demis.rki.de/fhir/ValueSet/methodMYTP",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "name": "MethodMYTP",
   "title": "Nachweismethode für Mycobacterium tuberculosis",
   "status": "active",
   "experimental": false,
-  "date": "2025-04-08",
+  "date": "2025-12-19",
   "publisher": "Robert Koch-Institut",
   "contact": [ {
     "telecom": [ {
@@ -27,14 +27,14 @@
   "compose": {
     "include": [ {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "concept": [ {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 20
         } ],
         "code": "1304162005",
-        "display": "Nucleic acid sequencing technique (qualifier value)",
+        "display": "Methode der Nukleinsäuresequenzierung",
         "designation": [ {
           "language": "de-DE",
           "value": "Nukleinsäuresequenzierung"
@@ -45,7 +45,7 @@
           "valueInteger": 21
         } ],
         "code": "264896000",
-        "display": "Nucleic acid analysis (qualifier value)",
+        "display": "Nukleinsäureanalyse",
         "designation": [ {
           "language": "de-DE",
           "value": "Nukleinsäure-Assay"
@@ -56,18 +56,14 @@
           "valueInteger": 27
         } ],
         "code": "702658000",
-        "display": "Microbial culture technique (qualifier value)",
-        "designation": [ {
-          "language": "de-DE",
-          "value": "Mikrobielle Kulturtechnik"
-        } ]
+        "display": "Mikrobielle Kulturmethode"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 10
         } ],
         "code": "708056006",
-        "display": "Acid fast stain technique (qualifier value)",
+        "display": "Methode zum Nachweis säurefester Stäbchen",
         "designation": [ {
           "language": "de-DE",
           "value": "Nachweis säurefester Stäbchen"
@@ -76,27 +72,27 @@
     } ]
   },
   "expansion": {
-    "timestamp": "2025-04-08T00:00:00+02:00",
+    "timestamp": "2025-12-19T00:00:00+01:00",
     "contains": [ {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "708056006",
-      "display": "Acid fast stain technique (qualifier value)"
+      "display": "Methode zum Nachweis säurefester Stäbchen"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "702658000",
-      "display": "Microbial culture technique (qualifier value)"
+      "display": "Mikrobielle Kulturmethode"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "1304162005",
-      "display": "Nucleic acid sequencing technique (qualifier value)"
+      "display": "Methode der Nukleinsäuresequenzierung"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "264896000",
-      "display": "Nucleic acid analysis (qualifier value)"
+      "display": "Nukleinsäureanalyse"
     } ]
   }
 }

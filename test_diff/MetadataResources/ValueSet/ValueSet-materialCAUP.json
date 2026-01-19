@@ -2,12 +2,12 @@
   "resourceType": "ValueSet",
   "id": "materialCAUP",
   "url": "https://demis.rki.de/fhir/ValueSet/materialCAUP",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "name": "MaterialCAUP",
   "title": "Material für Candida auris; Meldepflicht nur für den direkten Nachweis",
   "status": "active",
   "experimental": false,
-  "date": "2025-04-08",
+  "date": "2025-12-05",
   "publisher": "Robert Koch-Institut",
   "contact": [ {
     "telecom": [ {
@@ -27,7 +27,7 @@
   "compose": {
     "include": [ {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "concept": [ {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
@@ -45,6 +45,27 @@
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "119312009",
+        "display": "Katheterspitze eingereicht als Probenmaterial"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "119359002",
+        "display": "Knochenmarkprobe"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "119376003",
+        "display": "Gewebeprobe"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 19
         } ],
         "code": "122575003",
@@ -56,6 +77,13 @@
         } ],
         "code": "123038009",
         "display": "Probenmaterial"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "258450006",
+        "display": "Liquorprobe"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
@@ -80,10 +108,24 @@
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "309201001",
+        "display": "Aszitesflüssigkeitsprobe"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 11
         } ],
         "code": "473409003",
         "display": "Zentralvenöser Katheter (ZVK) eingereicht als Probenmaterial"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "57711000052109",
+        "display": "Punktat"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
@@ -109,62 +151,92 @@
     } ]
   },
   "expansion": {
-    "timestamp": "2025-04-08T00:00:00+02:00",
+    "timestamp": "2025-12-05T00:00:00+01:00",
     "contains": [ {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "119303007",
       "display": "Probenmaterial von mikrobiellem Isolat"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
-      "code": "119297000",
-      "display": "Blutprobe"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "866033003",
       "display": "Blutprobe in aerober Blutkulturflasche"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "878861003",
       "display": "Blutprobe in Blutkulturflasche"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
-      "code": "122575003",
-      "display": "Urinprobe"
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "258450006",
+      "display": "Liquorprobe"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "123038009",
       "display": "Probenmaterial"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "258528007",
       "display": "Rektalabstrich"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
-      "code": "309166000",
-      "display": "Ohrabstrich"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
-      "code": "473409003",
-      "display": "Zentralvenöser Katheter (ZVK) eingereicht als Probenmaterial"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "866032008",
       "display": "Blutprobe in anaerober Blutkulturflasche"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "119359002",
+      "display": "Knochenmarkprobe"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "119376003",
+      "display": "Gewebeprobe"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "258503004",
       "display": "Hautabstrich"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "309201001",
+      "display": "Aszitesflüssigkeitsprobe"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "119297000",
+      "display": "Blutprobe"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "57711000052109",
+      "display": "Punktat"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "122575003",
+      "display": "Urinprobe"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "119312009",
+      "display": "Katheterspitze eingereicht als Probenmaterial"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "309166000",
+      "display": "Ohrabstrich"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "473409003",
+      "display": "Zentralvenöser Katheter (ZVK) eingereicht als Probenmaterial"
     } ]
   }
 }

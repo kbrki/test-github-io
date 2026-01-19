@@ -2,12 +2,12 @@
   "resourceType": "ValueSet",
   "id": "substanceHBVP",
   "url": "https://demis.rki.de/fhir/ValueSet/substanceHBVP",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "name": "SubstanceHBVP",
   "title": "Analyt-Set für Hepatitis-B-Virus; Meldepflicht für alle Nachweise",
   "status": "active",
   "experimental": false,
-  "date": "2025-04-08",
+  "date": "2025-12-05",
   "publisher": "Robert Koch-Institut",
   "contact": [ {
     "telecom": [ {
@@ -27,60 +27,48 @@
   "compose": {
     "include": [ {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "concept": [ {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 1
         } ],
         "code": "22290004",
-        "display": "Antigen of Hepatitis B virus surface protein (substance)",
-        "designation": [ {
-          "language": "de-DE",
-          "value": "HBs-Antigen"
-        } ]
+        "display": "HBs-Antigen"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 1
         } ],
         "code": "39082004",
-        "display": "Antigen of Hepatitis B virus core protein (substance)",
-        "designation": [ {
-          "language": "de-DE",
-          "value": "HBc-Antigen"
-        } ]
+        "display": "HBc-Antigen"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 1
         } ],
         "code": "60605004",
-        "display": "Antigen of Hepatitis B virus e protein (substance)",
-        "designation": [ {
-          "language": "de-DE",
-          "value": "HBe-Antigen"
-        } ]
+        "display": "HBe-Antigen"
       } ]
     } ]
   },
   "expansion": {
-    "timestamp": "2025-04-08T00:00:00+02:00",
+    "timestamp": "2025-12-05T00:00:00+01:00",
     "contains": [ {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "60605004",
-      "display": "Antigen of Hepatitis B virus e protein (substance)"
+      "display": "HBe-Antigen"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "39082004",
-      "display": "Antigen of Hepatitis B virus core protein (substance)"
+      "display": "HBc-Antigen"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "22290004",
-      "display": "Antigen of Hepatitis B virus surface protein (substance)"
+      "display": "HBs-Antigen"
     } ]
   }
 }

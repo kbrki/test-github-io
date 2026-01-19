@@ -2,12 +2,12 @@
   "resourceType": "ValueSet",
   "id": "laboratoryTestRUVP",
   "url": "https://demis.rki.de/fhir/ValueSet/laboratoryTestRUVP",
-  "version": "1.8.0",
+  "version": "1.9.0",
   "name": "LaboratoryTestRUVP",
   "title": "Labortest für Rubellavirus",
   "status": "active",
   "experimental": false,
-  "date": "2025-04-08",
+  "date": "2025-12-05",
   "publisher": "Robert Koch-Institut",
   "contact": [ {
     "telecom": [ {
@@ -27,7 +27,7 @@
   "compose": {
     "include": [ {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "concept": [ {
         "code": "100341-7",
         "display": "Röteln-Virus IgG-Antikörperindex [Einheiten/Volumen] in Serum und Liquor"
@@ -54,10 +54,10 @@
         "display": "Röteln-Virus IgM-Antikörper [Nachweis] in Serum"
       }, {
         "code": "31966-5",
-        "display": "Rubella virus Ag [Presence] in Specimen"
+        "display": "Röteln-Virus Antigen [Nachweis] in Probenmaterial"
       }, {
         "code": "34421-8",
-        "display": "Rubella virus IgG Ab avidity [Ratio] in Serum"
+        "display": "Röteln-Virus IgG-Antikörperavidität [Verhältnis] in Serum"
       }, {
         "code": "39013-8",
         "display": "Röteln-Virus IgG-Antikörper [Nachweis] in Liquor"
@@ -94,119 +94,127 @@
       }, {
         "code": "8015-0",
         "display": "Röteln-Virus IgM-Antikörper [Einheiten/Volumen] in Serum"
+      }, {
+        "code": "85690-6",
+        "display": "Röteln-Virus Genotyp in Probenmaterial"
       } ]
     } ]
   },
   "expansion": {
-    "timestamp": "2025-04-08T00:00:00+02:00",
+    "timestamp": "2025-12-05T00:00:00+01:00",
     "contains": [ {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "31616-6",
       "display": "Röteln-Virus IgM-Antikörper [Nachweis] in Serum"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "13281-1",
       "display": "Röteln-Virus IgG-Antikörper [Einheiten/Volumen] in Liquor"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "41763-4",
       "display": "Röteln-Virus IgG-Antikörper [Titer] in Serum"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "39013-8",
       "display": "Röteln-Virus IgG-Antikörper [Nachweis] in Liquor"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "13282-9",
       "display": "Röteln-Virus IgM-Antikörper [Einheiten/Volumen] in Liquor"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "8015-0",
       "display": "Röteln-Virus IgM-Antikörper [Einheiten/Volumen] in Serum"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "41852-5",
       "display": "Mikroorganismus oder Erreger identifiziert in Probenmaterial"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "46110-3",
       "display": "Röteln-Virus IgG-Antikörper [Titer] in Liquor"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "34421-8",
-      "display": "Rubella virus IgG Ab avidity [Ratio] in Serum"
+      "display": "Röteln-Virus IgG-Antikörperavidität [Verhältnis] in Serum"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "8014-3",
       "display": "Röteln-Virus IgG-Antikörper [Einheiten/Volumen] in Serum"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "31966-5",
-      "display": "Rubella virus Ag [Presence] in Specimen"
+      "display": "Röteln-Virus Antigen [Nachweis] in Probenmaterial"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "49107-6",
       "display": "Röteln-Virus IgM-Antikörper [Titer] in Serum"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "54091-4",
       "display": "Röteln-Virus RNA [Nachweis] in Probenmaterial mittels Nukleinsäureamplifikation mit Sondendetektion"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "25514-1",
       "display": "Röteln-Virus IgG-Antikörper [Nachweis] in Serum"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "40667-8",
       "display": "Röteln-Virus IgG-Antikörper [Nachweis] in Serum oder Plasma mittels Immunoassay"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "46109-5",
       "display": "Röteln-Virus IgM-Antikörper [Titer] in Liquor"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "5334-8",
       "display": "Röteln-Virus IgG-Antikörper [Einheiten/Volumen] in Serum oder Plasma mittels Immunoassay"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "17552-1",
       "display": "Röteln-Virus IgM-Antikörper [Nachweis] in Liquor"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "5335-5",
       "display": "Röteln-Virus IgM-Antikörper [Einheiten/Volumen] in Serum mittels Immunoassay"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "17551-3",
       "display": "Röteln-Virus IgG-Antikörper [Einheiten/Volumen] in Liquor mittels Immunoassay"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "24116-6",
       "display": "Röteln-Virus IgM-Antikörper [Nachweis] in Serum oder Plasma mittels Immunoassay"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
+      "code": "85690-6",
+      "display": "Röteln-Virus Genotyp in Probenmaterial"
+    }, {
+      "system": "http://loinc.org",
+      "version": "2.81",
       "code": "100341-7",
       "display": "Röteln-Virus IgG-Antikörperindex [Einheiten/Volumen] in Serum und Liquor"
     } ]

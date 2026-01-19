@@ -2,12 +2,27 @@
   "resourceType": "StructureDefinition",
   "id": "NotifiedPersonFacility",
   "url": "https://demis.rki.de/fhir/StructureDefinition/NotifiedPersonFacility",
-  "version": "1.7.0",
+  "version": "2.0.1",
   "name": "NotifiedPersonFacility",
   "title": "Betroffenen-Einrichtung",
   "status": "active",
-  "date": "2025-03-27",
+  "date": "2026-01-08",
+  "publisher": "Robert Koch-Institut",
+  "contact": [ {
+    "telecom": [ {
+      "system": "email",
+      "value": "demis-support@rki.de"
+    } ]
+  } ],
   "description": "Sofern dem Melder bekannt ist, wo sich die betroffene Person derzeit aufhält (abweichend vom Hauptwohnsitz) ist diese Information anzugeben.",
+  "jurisdiction": [ {
+    "coding": [ {
+      "system": "urn:iso:std:iso:3166",
+      "version": "ALPHA-2",
+      "code": "DE"
+    } ]
+  } ],
+  "copyright": "Copyright (C) 2021-2025 Robert Koch-Institut",
   "fhirVersion": "4.0.1",
   "mapping": [ {
     "identity": "servd",
@@ -20,6 +35,10 @@
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Organization",
   "derivation": "constraint",
   "snapshot": {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
+      "valueString": "4.0.1"
+    } ],
     "element": [ {
       "id": "Organization",
       "path": "Organization",
@@ -348,7 +367,7 @@
         "code": "canonical",
         "targetProfile": [ "http://hl7.org/fhir/StructureDefinition/StructureDefinition" ]
       } ],
-      "fixedCanonical": "https://demis.rki.de/fhir/StructureDefinition/NotifiedPersonFacility",
+      "patternCanonical": "https://demis.rki.de/fhir/StructureDefinition/NotifiedPersonFacility",
       "constraint": [ {
         "key": "ele-1",
         "severity": "error",
@@ -675,7 +694,7 @@
       "comment": "This active flag is not intended to be used to mark an organization as temporarily closed or under construction. Instead the Location(s) within the Organization should have the suspended status. If further details of the reason for the suspension are required, then an extension on this element should be used.  This element is labeled as a modifier because it may be used to mark that the resource was created in error.",
       "requirements": "Need a flag to indicate a record is no longer to be used and should generally be hidden for the user in the UI.",
       "min": 0,
-      "max": "1",
+      "max": "0",
       "base": {
         "path": "Organization.active",
         "min": 0,
@@ -1254,8 +1273,8 @@
         } ],
         "rules": "closed"
       },
-      "short": "Kontaktangaben der Betroffenen Person",
-      "definition": "Kontaktangaben der Betroffenen Person. Telefonnummern oder E-Mailadressen können angegeben werden.",
+      "short": "Kontaktangaben der Betroffenen-Einrichtung",
+      "definition": "Kontaktangaben der Betroffenen-Einrichtung. Telefonnummern, E-Mailadressen, Urls oder Faxnummern können angegeben werden.",
       "comment": "The use code 'home' is not to be used. Note that these contacts are not the contact details of people who are employed by or represent the organization, but official contacts for the organization itself.",
       "requirements": "Human contact for the organization.",
       "min": 0,
@@ -1488,7 +1507,7 @@
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       }, {
         "key": "validEmailAddress",
-        "severity": "warning",
+        "severity": "error",
         "human": "Die E-Mail-Adresse muss valide sein.",
         "expression": "$this.matches('^[a-zA-Z0-9._%+-]+@(?:[a-zA-Z0-9-]+[.])+[a-zA-Z0-9]{2,63}$')"
       } ],
@@ -1654,6 +1673,7 @@
         "xpath": "count(f:use[@value='home']) = 0",
         "source": "http://hl7.org/fhir/StructureDefinition/Organization"
       } ],
+      "mustSupport": true,
       "isModifier": false,
       "isSummary": false,
       "mapping": [ {
@@ -1846,7 +1866,7 @@
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       }, {
         "key": "validPhoneNumber",
-        "severity": "warning",
+        "severity": "error",
         "human": "Die Telefonnummer muss valide sein.",
         "expression": "$this.matches('^[0+][0-9 \\\\-\\\\(\\\\)]{6,50}$')"
       } ],
@@ -1979,34 +1999,24 @@
         "map": "./StartDate and ./EndDate"
       } ]
     }, {
-      "id": "Organization.address",
-      "path": "Organization.address",
-      "short": "Einrichtungsaddresse",
-      "definition": "Einrichtungsaddresse",
-      "comment": "Note: address is intended to describe postal addresses for administrative purposes, not to describe absolute geographical coordinates.  Postal addresses are often used as proxies for physical locations (also see the [Location](location.html#) resource).",
-      "requirements": "May need to keep track of the organization's addresses for contacting, billing or reporting requirements.",
+      "id": "Organization.telecom:Url",
+      "path": "Organization.telecom",
+      "sliceName": "Url",
+      "short": "A contact detail for the organization",
+      "definition": "A contact detail for the organization.",
+      "comment": "The use code 'home' is not to be used. Note that these contacts are not the contact details of people who are employed by or represent the organization, but official contacts for the organization itself.",
+      "requirements": "Human contact for the organization.",
       "min": 0,
       "max": "*",
       "base": {
-        "path": "Organization.address",
+        "path": "Organization.telecom",
         "min": 0,
         "max": "*"
       },
       "type": [ {
-        "code": "Address",
-        "profile": [ "http://fhir.de/StructureDefinition/address-de-basis" ]
+        "code": "ContactPoint"
       } ],
-      "example": [ {
-        "label": "Beispiel für einfache Adresse",
-        "valueAddress": {
-          "use": "home",
-          "type": "postal",
-          "line": [ "Musterweg 42" ],
-          "city": "Musterhausen",
-          "postalCode": "99999"
-        }
-      } ],
-      "condition": [ "ele-1" ],
+      "condition": [ "org-3" ],
       "constraint": [ {
         "key": "ele-1",
         "severity": "error",
@@ -2015,73 +2025,28 @@
         "xpath": "@value|f:*|h:div",
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       }, {
-        "key": "add-1",
+        "key": "org-3",
         "severity": "error",
-        "human": "Wenn die Extension 'Hausnummer' verwendet wird, muss auch Address.line gefüllt werden",
-        "expression": "line.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber').empty() or $this.hasValue())",
-        "source": "http://fhir.de/StructureDefinition/address-de-basis"
-      }, {
-        "key": "add-2",
-        "severity": "error",
-        "human": "Wenn die Extension 'Strasse' verwendet wird, muss auch Address.line gefüllt werden",
-        "expression": "line.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName').empty() or $this.hasValue())",
-        "source": "http://fhir.de/StructureDefinition/address-de-basis"
-      }, {
-        "key": "add-3",
-        "severity": "error",
-        "human": "Wenn die Extension 'Postfach' verwendet wird, muss auch Address.line gefüllt werden",
-        "expression": "line.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox').empty() or $this.hasValue())",
-        "source": "http://fhir.de/StructureDefinition/address-de-basis"
-      }, {
-        "key": "add-4",
-        "severity": "warning",
-        "human": "Eine Postfach-Adresse darf nicht vom Type \"physical\" oder \"both\" sein.",
-        "expression": "line.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox').empty() or $this.hasValue()) or type='postal' or type.empty()",
-        "source": "http://fhir.de/StructureDefinition/address-de-basis"
-      }, {
-        "key": "add-5",
-        "severity": "error",
-        "human": "Wenn die Extension 'Adresszusatz' verwendet wird, muss auch Address.line gefüllt werden",
-        "expression": "line.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator').empty() or $this.hasValue())",
-        "source": "http://fhir.de/StructureDefinition/address-de-basis"
-      }, {
-        "key": "add-6",
-        "severity": "warning",
-        "human": "Wenn die Extension 'Postfach' verwendet wird, dürfen die Extensions 'Strasse' und 'Hausnummer' nicht verwendet werden",
-        "expression": "line.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox').empty() or ($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName').empty() and $this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber').empty()))",
-        "source": "http://fhir.de/StructureDefinition/address-de-basis"
-      }, {
-        "key": "add-7",
-        "severity": "warning",
-        "human": "Wenn die Extension 'Precinct' (Stadtteil) verwendet wird, dann muss diese Information auch als separates line-item abgebildet sein.",
-        "expression": "extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct').empty() or all(line contains extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct').value.ofType(string))",
-        "source": "http://fhir.de/StructureDefinition/address-de-basis"
-      }, {
-        "key": "org-2",
-        "severity": "error",
-        "human": "An address of an organization can never be of use 'home'",
+        "human": "The telecom of an organization can never be of use 'home'",
         "expression": "where(use = 'home').empty()",
         "xpath": "count(f:use[@value='home']) = 0",
         "source": "http://hl7.org/fhir/StructureDefinition/Organization"
       } ],
-      "mustSupport": true,
       "isModifier": false,
+      "isSummary": false,
       "mapping": [ {
-        "identity": "rim",
-        "map": "n/a"
-      }, {
         "identity": "v2",
-        "map": "XAD"
+        "map": "ORC-22?"
       }, {
         "identity": "rim",
-        "map": "AD"
+        "map": ".telecom"
       }, {
         "identity": "servd",
-        "map": "Address"
+        "map": "./ContactPoints"
       } ]
     }, {
-      "id": "Organization.address.id",
-      "path": "Organization.address.id",
+      "id": "Organization.telecom:Url.id",
+      "path": "Organization.telecom.id",
       "representation": [ "xmlAttr" ],
       "short": "Unique id for inter-element referencing",
       "definition": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
@@ -2106,8 +2071,8 @@
         "map": "n/a"
       } ]
     }, {
-      "id": "Organization.address.extension",
-      "path": "Organization.address.extension",
+      "id": "Organization.telecom:Url.extension",
+      "path": "Organization.telecom.extension",
       "slicing": {
         "discriminator": [ {
           "type": "value",
@@ -2152,6 +2117,653 @@
         "map": "n/a"
       } ]
     }, {
+      "id": "Organization.telecom:Url.system",
+      "path": "Organization.telecom.system",
+      "short": "phone | fax | email | pager | url | sms | other",
+      "definition": "Telecommunications form for contact point - what communications system is required to make use of the contact.",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "ContactPoint.system",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code"
+      } ],
+      "fixedCode": "url",
+      "condition": [ "cpt-2" ],
+      "constraint": [ {
+        "key": "ele-1",
+        "severity": "error",
+        "human": "All FHIR elements must have a @value or children",
+        "expression": "hasValue() or (children().count() > id.count())",
+        "xpath": "@value|f:*|h:div",
+        "source": "http://hl7.org/fhir/StructureDefinition/Element"
+      } ],
+      "mustSupport": true,
+      "isModifier": false,
+      "isSummary": true,
+      "binding": {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString": "ContactPointSystem"
+        } ],
+        "strength": "required",
+        "description": "Telecommunications form for contact point.",
+        "valueSet": "http://hl7.org/fhir/ValueSet/contact-point-system|4.0.1"
+      },
+      "mapping": [ {
+        "identity": "v2",
+        "map": "XTN.3"
+      }, {
+        "identity": "rim",
+        "map": "./scheme"
+      }, {
+        "identity": "servd",
+        "map": "./ContactPointType"
+      } ]
+    }, {
+      "id": "Organization.telecom:Url.value",
+      "path": "Organization.telecom.value",
+      "short": "The actual contact point details",
+      "definition": "The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address).",
+      "comment": "Additional text data such as phone extension numbers, or notes about use of the contact are sometimes included in the value.",
+      "requirements": "Need to support legacy numbers that are not in a tightly controlled format.",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "ContactPoint.value",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string"
+      } ],
+      "constraint": [ {
+        "key": "ele-1",
+        "severity": "error",
+        "human": "All FHIR elements must have a @value or children",
+        "expression": "hasValue() or (children().count() > id.count())",
+        "xpath": "@value|f:*|h:div",
+        "source": "http://hl7.org/fhir/StructureDefinition/Element"
+      }, {
+        "key": "validUrl",
+        "severity": "error",
+        "human": "Die Url muss valide sein.",
+        "expression": "$this.matches('^(https?:\\\\/\\\\/(?:www\\\\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\\\.[^\\\\s]{2,}|www\\\\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\\\.[^\\\\s]{2,}|https?:\\\\/\\\\/(?:www\\\\.|(?!www))[a-zA-Z0-9]+\\\\.[^\\\\s]{2,}|www\\\\.[a-zA-Z0-9]+\\\\.[^\\\\s]{2,})$')"
+      } ],
+      "mustSupport": true,
+      "isModifier": false,
+      "isSummary": true,
+      "mapping": [ {
+        "identity": "v2",
+        "map": "XTN.1 (or XTN.12)"
+      }, {
+        "identity": "rim",
+        "map": "./url"
+      }, {
+        "identity": "servd",
+        "map": "./Value"
+      } ]
+    }, {
+      "id": "Organization.telecom:Url.use",
+      "path": "Organization.telecom.use",
+      "short": "home | work | temp | old | mobile - purpose of this contact point",
+      "definition": "Identifies the purpose for the contact point.",
+      "comment": "Applications can assume that a contact is current unless it explicitly says that it is temporary or old.",
+      "requirements": "Need to track the way a person uses this contact, so a user can choose which is appropriate for their purpose.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ContactPoint.use",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code"
+      } ],
+      "constraint": [ {
+        "key": "ele-1",
+        "severity": "error",
+        "human": "All FHIR elements must have a @value or children",
+        "expression": "hasValue() or (children().count() > id.count())",
+        "xpath": "@value|f:*|h:div",
+        "source": "http://hl7.org/fhir/StructureDefinition/Element"
+      } ],
+      "isModifier": true,
+      "isModifierReason": "This is labeled as \"Is Modifier\" because applications should not mistake a temporary or old contact etc.for a current/permanent one",
+      "isSummary": true,
+      "binding": {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString": "ContactPointUse"
+        } ],
+        "strength": "required",
+        "description": "Use of contact point.",
+        "valueSet": "http://hl7.org/fhir/ValueSet/contact-point-use|4.0.1"
+      },
+      "mapping": [ {
+        "identity": "v2",
+        "map": "XTN.2 - but often indicated by field"
+      }, {
+        "identity": "rim",
+        "map": "unique(./use)"
+      }, {
+        "identity": "servd",
+        "map": "./ContactPointPurpose"
+      } ]
+    }, {
+      "id": "Organization.telecom:Url.rank",
+      "path": "Organization.telecom.rank",
+      "short": "Specify preferred order of use (1 = highest)",
+      "definition": "Specifies a preferred order in which to use a set of contacts. ContactPoints with lower rank values are more preferred than those with higher rank values.",
+      "comment": "Note that rank does not necessarily follow the order in which the contacts are represented in the instance.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ContactPoint.rank",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "positiveInt"
+      } ],
+      "constraint": [ {
+        "key": "ele-1",
+        "severity": "error",
+        "human": "All FHIR elements must have a @value or children",
+        "expression": "hasValue() or (children().count() > id.count())",
+        "xpath": "@value|f:*|h:div",
+        "source": "http://hl7.org/fhir/StructureDefinition/Element"
+      } ],
+      "isModifier": false,
+      "isSummary": true,
+      "mapping": [ {
+        "identity": "v2",
+        "map": "n/a"
+      }, {
+        "identity": "rim",
+        "map": "n/a"
+      } ]
+    }, {
+      "id": "Organization.telecom:Url.period",
+      "path": "Organization.telecom.period",
+      "short": "Time period when the contact point was/is in use",
+      "definition": "Time period when the contact point was/is in use.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ContactPoint.period",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "Period"
+      } ],
+      "constraint": [ {
+        "key": "ele-1",
+        "severity": "error",
+        "human": "All FHIR elements must have a @value or children",
+        "expression": "hasValue() or (children().count() > id.count())",
+        "xpath": "@value|f:*|h:div",
+        "source": "http://hl7.org/fhir/StructureDefinition/Element"
+      } ],
+      "isModifier": false,
+      "isSummary": true,
+      "mapping": [ {
+        "identity": "v2",
+        "map": "N/A"
+      }, {
+        "identity": "rim",
+        "map": "./usablePeriod[type=\"IVL<TS>\"]"
+      }, {
+        "identity": "servd",
+        "map": "./StartDate and ./EndDate"
+      } ]
+    }, {
+      "id": "Organization.telecom:Fax",
+      "path": "Organization.telecom",
+      "sliceName": "Fax",
+      "short": "A contact detail for the organization",
+      "definition": "A contact detail for the organization.",
+      "comment": "The use code 'home' is not to be used. Note that these contacts are not the contact details of people who are employed by or represent the organization, but official contacts for the organization itself.",
+      "requirements": "Human contact for the organization.",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "Organization.telecom",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "ContactPoint"
+      } ],
+      "condition": [ "org-3" ],
+      "constraint": [ {
+        "key": "ele-1",
+        "severity": "error",
+        "human": "All FHIR elements must have a @value or children",
+        "expression": "hasValue() or (children().count() > id.count())",
+        "xpath": "@value|f:*|h:div",
+        "source": "http://hl7.org/fhir/StructureDefinition/Element"
+      }, {
+        "key": "org-3",
+        "severity": "error",
+        "human": "The telecom of an organization can never be of use 'home'",
+        "expression": "where(use = 'home').empty()",
+        "xpath": "count(f:use[@value='home']) = 0",
+        "source": "http://hl7.org/fhir/StructureDefinition/Organization"
+      } ],
+      "isModifier": false,
+      "isSummary": false,
+      "mapping": [ {
+        "identity": "v2",
+        "map": "ORC-22?"
+      }, {
+        "identity": "rim",
+        "map": ".telecom"
+      }, {
+        "identity": "servd",
+        "map": "./ContactPoints"
+      } ]
+    }, {
+      "id": "Organization.telecom:Fax.id",
+      "path": "Organization.telecom.id",
+      "representation": [ "xmlAttr" ],
+      "short": "Unique id for inter-element referencing",
+      "definition": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "Element.id",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+          "valueUrl": "string"
+        } ],
+        "code": "http://hl7.org/fhirpath/System.String"
+      } ],
+      "isModifier": false,
+      "isSummary": false,
+      "mapping": [ {
+        "identity": "rim",
+        "map": "n/a"
+      } ]
+    }, {
+      "id": "Organization.telecom:Fax.extension",
+      "path": "Organization.telecom.extension",
+      "slicing": {
+        "discriminator": [ {
+          "type": "value",
+          "path": "url"
+        } ],
+        "description": "Extensions are always sliced by (at least) url",
+        "rules": "open"
+      },
+      "short": "Additional content defined by implementations",
+      "definition": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "alias": [ "extensions", "user content" ],
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "Element.extension",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "Extension"
+      } ],
+      "constraint": [ {
+        "key": "ele-1",
+        "severity": "error",
+        "human": "All FHIR elements must have a @value or children",
+        "expression": "hasValue() or (children().count() > id.count())",
+        "xpath": "@value|f:*|h:div",
+        "source": "http://hl7.org/fhir/StructureDefinition/Element"
+      }, {
+        "key": "ext-1",
+        "severity": "error",
+        "human": "Must have either extensions or value[x], not both",
+        "expression": "extension.exists() != value.exists()",
+        "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+        "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+      } ],
+      "isModifier": false,
+      "isSummary": false,
+      "mapping": [ {
+        "identity": "rim",
+        "map": "n/a"
+      } ]
+    }, {
+      "id": "Organization.telecom:Fax.system",
+      "path": "Organization.telecom.system",
+      "short": "phone | fax | email | pager | url | sms | other",
+      "definition": "Telecommunications form for contact point - what communications system is required to make use of the contact.",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "ContactPoint.system",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code"
+      } ],
+      "fixedCode": "fax",
+      "condition": [ "cpt-2" ],
+      "constraint": [ {
+        "key": "ele-1",
+        "severity": "error",
+        "human": "All FHIR elements must have a @value or children",
+        "expression": "hasValue() or (children().count() > id.count())",
+        "xpath": "@value|f:*|h:div",
+        "source": "http://hl7.org/fhir/StructureDefinition/Element"
+      } ],
+      "mustSupport": true,
+      "isModifier": false,
+      "isSummary": true,
+      "binding": {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString": "ContactPointSystem"
+        } ],
+        "strength": "required",
+        "description": "Telecommunications form for contact point.",
+        "valueSet": "http://hl7.org/fhir/ValueSet/contact-point-system|4.0.1"
+      },
+      "mapping": [ {
+        "identity": "v2",
+        "map": "XTN.3"
+      }, {
+        "identity": "rim",
+        "map": "./scheme"
+      }, {
+        "identity": "servd",
+        "map": "./ContactPointType"
+      } ]
+    }, {
+      "id": "Organization.telecom:Fax.value",
+      "path": "Organization.telecom.value",
+      "short": "The actual contact point details",
+      "definition": "The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address).",
+      "comment": "Additional text data such as phone extension numbers, or notes about use of the contact are sometimes included in the value.",
+      "requirements": "Need to support legacy numbers that are not in a tightly controlled format.",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "ContactPoint.value",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string"
+      } ],
+      "constraint": [ {
+        "key": "ele-1",
+        "severity": "error",
+        "human": "All FHIR elements must have a @value or children",
+        "expression": "hasValue() or (children().count() > id.count())",
+        "xpath": "@value|f:*|h:div",
+        "source": "http://hl7.org/fhir/StructureDefinition/Element"
+      }, {
+        "key": "validFaxNumber",
+        "severity": "error",
+        "human": "Die Faxnummer muss valide sein.",
+        "expression": "$this.matches('^[0+][0-9 \\\\-\\\\(\\\\)]{6,50}$')"
+      } ],
+      "mustSupport": true,
+      "isModifier": false,
+      "isSummary": true,
+      "mapping": [ {
+        "identity": "v2",
+        "map": "XTN.1 (or XTN.12)"
+      }, {
+        "identity": "rim",
+        "map": "./url"
+      }, {
+        "identity": "servd",
+        "map": "./Value"
+      } ]
+    }, {
+      "id": "Organization.telecom:Fax.use",
+      "path": "Organization.telecom.use",
+      "short": "home | work | temp | old | mobile - purpose of this contact point",
+      "definition": "Identifies the purpose for the contact point.",
+      "comment": "Applications can assume that a contact is current unless it explicitly says that it is temporary or old.",
+      "requirements": "Need to track the way a person uses this contact, so a user can choose which is appropriate for their purpose.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ContactPoint.use",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code"
+      } ],
+      "constraint": [ {
+        "key": "ele-1",
+        "severity": "error",
+        "human": "All FHIR elements must have a @value or children",
+        "expression": "hasValue() or (children().count() > id.count())",
+        "xpath": "@value|f:*|h:div",
+        "source": "http://hl7.org/fhir/StructureDefinition/Element"
+      } ],
+      "isModifier": true,
+      "isModifierReason": "This is labeled as \"Is Modifier\" because applications should not mistake a temporary or old contact etc.for a current/permanent one",
+      "isSummary": true,
+      "binding": {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString": "ContactPointUse"
+        } ],
+        "strength": "required",
+        "description": "Use of contact point.",
+        "valueSet": "http://hl7.org/fhir/ValueSet/contact-point-use|4.0.1"
+      },
+      "mapping": [ {
+        "identity": "v2",
+        "map": "XTN.2 - but often indicated by field"
+      }, {
+        "identity": "rim",
+        "map": "unique(./use)"
+      }, {
+        "identity": "servd",
+        "map": "./ContactPointPurpose"
+      } ]
+    }, {
+      "id": "Organization.telecom:Fax.rank",
+      "path": "Organization.telecom.rank",
+      "short": "Specify preferred order of use (1 = highest)",
+      "definition": "Specifies a preferred order in which to use a set of contacts. ContactPoints with lower rank values are more preferred than those with higher rank values.",
+      "comment": "Note that rank does not necessarily follow the order in which the contacts are represented in the instance.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ContactPoint.rank",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "positiveInt"
+      } ],
+      "constraint": [ {
+        "key": "ele-1",
+        "severity": "error",
+        "human": "All FHIR elements must have a @value or children",
+        "expression": "hasValue() or (children().count() > id.count())",
+        "xpath": "@value|f:*|h:div",
+        "source": "http://hl7.org/fhir/StructureDefinition/Element"
+      } ],
+      "isModifier": false,
+      "isSummary": true,
+      "mapping": [ {
+        "identity": "v2",
+        "map": "n/a"
+      }, {
+        "identity": "rim",
+        "map": "n/a"
+      } ]
+    }, {
+      "id": "Organization.telecom:Fax.period",
+      "path": "Organization.telecom.period",
+      "short": "Time period when the contact point was/is in use",
+      "definition": "Time period when the contact point was/is in use.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ContactPoint.period",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "Period"
+      } ],
+      "constraint": [ {
+        "key": "ele-1",
+        "severity": "error",
+        "human": "All FHIR elements must have a @value or children",
+        "expression": "hasValue() or (children().count() > id.count())",
+        "xpath": "@value|f:*|h:div",
+        "source": "http://hl7.org/fhir/StructureDefinition/Element"
+      } ],
+      "isModifier": false,
+      "isSummary": true,
+      "mapping": [ {
+        "identity": "v2",
+        "map": "N/A"
+      }, {
+        "identity": "rim",
+        "map": "./usablePeriod[type=\"IVL<TS>\"]"
+      }, {
+        "identity": "servd",
+        "map": "./StartDate and ./EndDate"
+      } ]
+    }, {
+      "id": "Organization.address",
+      "path": "Organization.address",
+      "short": "Einrichtungsaddresse",
+      "definition": "Einrichtungsaddresse",
+      "comment": "Organization may have multiple addresses with different uses or applicable periods. The use code 'home' is not to be used.",
+      "requirements": "May need to keep track of the organization's addresses for contacting, billing or reporting requirements.",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "Organization.address",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "Address",
+        "profile": [ "http://fhir.de/StructureDefinition/address-de-basis" ]
+      } ],
+      "condition": [ "org-2" ],
+      "constraint": [ {
+        "key": "ele-1",
+        "severity": "error",
+        "human": "All FHIR elements must have a @value or children",
+        "expression": "hasValue() or (children().count() > id.count())",
+        "xpath": "@value|f:*|h:div",
+        "source": "http://hl7.org/fhir/StructureDefinition/Element"
+      }, {
+        "key": "org-2",
+        "severity": "error",
+        "human": "An address of an organization can never be of use 'home'",
+        "expression": "where(use = 'home').empty()",
+        "xpath": "count(f:use[@value='home']) = 0",
+        "source": "http://hl7.org/fhir/StructureDefinition/Organization"
+      } ],
+      "mustSupport": true,
+      "isModifier": false,
+      "isSummary": false,
+      "mapping": [ {
+        "identity": "v2",
+        "map": "ORC-23?"
+      }, {
+        "identity": "rim",
+        "map": ".address"
+      }, {
+        "identity": "servd",
+        "map": "./PrimaryAddress and ./OtherAddresses"
+      } ]
+    }, {
+      "id": "Organization.address.id",
+      "path": "Organization.address.id",
+      "representation": [ "xmlAttr" ],
+      "short": "Unique id for inter-element referencing",
+      "definition": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "Element.id",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+          "valueUrl": "string"
+        } ],
+        "code": "http://hl7.org/fhirpath/System.String"
+      } ],
+      "mapping": [ {
+        "identity": "rim",
+        "map": "n/a"
+      } ]
+    }, {
+      "id": "Organization.address.extension",
+      "path": "Organization.address.extension",
+      "slicing": {
+        "discriminator": [ {
+          "type": "value",
+          "path": "url"
+        } ],
+        "description": "Extensions are always sliced by (at least) url",
+        "rules": "open"
+      },
+      "short": "Additional content defined by implementations",
+      "definition": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "alias": [ "extensions", "user content" ],
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "Element.extension",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "Extension"
+      } ],
+      "condition": [ "ele-1" ],
+      "constraint": [ {
+        "key": "ele-1",
+        "severity": "error",
+        "human": "All FHIR elements must have a @value or children",
+        "expression": "hasValue() or (children().count() > id.count())",
+        "xpath": "@value|f:*|h:div",
+        "source": "http://hl7.org/fhir/StructureDefinition/Element"
+      }, {
+        "key": "ext-1",
+        "severity": "error",
+        "human": "Must have either extensions or value[x], not both",
+        "expression": "extension.exists() != value.exists()",
+        "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
+        "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+      } ],
+      "mapping": [ {
+        "identity": "rim",
+        "map": "n/a"
+      }, {
+        "identity": "rim",
+        "map": "N/A"
+      } ]
+    }, {
       "id": "Organization.address.extension:Stadtteil",
       "path": "Organization.address.extension",
       "sliceName": "Stadtteil",
@@ -2186,11 +2798,12 @@
         "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source": "http://hl7.org/fhir/StructureDefinition/Extension"
       } ],
-      "isModifier": false,
-      "isSummary": false,
       "mapping": [ {
         "identity": "rim",
         "map": "n/a"
+      }, {
+        "identity": "rim",
+        "map": "N/A"
       }, {
         "identity": "rim",
         "map": "ADXP[partType=PRE]"
@@ -2216,6 +2829,7 @@
         "label": "General",
         "valueCode": "home"
       } ],
+      "condition": [ "ele-1" ],
       "constraint": [ {
         "key": "ele-1",
         "severity": "error",
@@ -2237,6 +2851,9 @@
         "valueSet": "http://hl7.org/fhir/ValueSet/address-use|4.0.1"
       },
       "mapping": [ {
+        "identity": "rim",
+        "map": "n/a"
+      }, {
         "identity": "v2",
         "map": "XAD.7"
       }, {
@@ -2266,6 +2883,7 @@
         "label": "General",
         "valueCode": "both"
       } ],
+      "condition": [ "ele-1" ],
       "constraint": [ {
         "key": "ele-1",
         "severity": "error",
@@ -2274,7 +2892,6 @@
         "xpath": "@value|f:*|h:div",
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       } ],
-      "isModifier": false,
       "isSummary": true,
       "binding": {
         "extension": [ {
@@ -2286,6 +2903,9 @@
         "valueSet": "http://hl7.org/fhir/ValueSet/address-type|4.0.1"
       },
       "mapping": [ {
+        "identity": "rim",
+        "map": "n/a"
+      }, {
         "identity": "v2",
         "map": "XAD.18"
       }, {
@@ -2316,6 +2936,7 @@
         "label": "General",
         "valueString": "137 Nowhere Street, Erewhon 9132"
       } ],
+      "condition": [ "ele-1" ],
       "constraint": [ {
         "key": "ele-1",
         "severity": "error",
@@ -2324,9 +2945,11 @@
         "xpath": "@value|f:*|h:div",
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       } ],
-      "isModifier": false,
       "isSummary": true,
       "mapping": [ {
+        "identity": "rim",
+        "map": "n/a"
+      }, {
         "identity": "v2",
         "map": "XAD.1 + XAD.2 + XAD.3 + XAD.4 + XAD.5 + XAD.6"
       }, {
@@ -2341,6 +2964,7 @@
       "path": "Organization.address.line",
       "short": "Straßenname mit Hausnummer oder Postfach sowie weitere Angaben zur Zustellung",
       "definition": "Diese Komponente kann Straßennamen, Hausnummer, Appartmentnummer, Postfach, c/o sowie weitere Zustellungshinweise enthalten. Die Informationen können in mehrere line-Komponenten aufgeteilt werden.\r\nBei Verwendung der Extensions, um Straße, Hausnnummer und Postleitzahl strukturiert zu übermitteln, müssen diese Informationen stets vollständig auch in der line-Komponente, die sie erweitern, enthalten sein, um es Systemen, die diese Extensions nicht verwenden zu ermöglichen, auf diese Informationen zugreifen zu können.",
+      "comment": "Note that FHIR strings SHALL NOT exceed 1MB in size",
       "min": 0,
       "max": "3",
       "base": {
@@ -2368,6 +2992,7 @@
           } ]
         }
       } ],
+      "condition": [ "ele-1" ],
       "constraint": [ {
         "key": "ele-1",
         "severity": "error",
@@ -2376,9 +3001,11 @@
         "xpath": "@value|f:*|h:div",
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       } ],
-      "isModifier": false,
       "isSummary": true,
       "mapping": [ {
+        "identity": "rim",
+        "map": "n/a"
+      }, {
         "identity": "v2",
         "map": "XAD.1 + XAD.2 (note: XAD.1 and XAD.2 have different meanings for a company address than for a person address)"
       }, {
@@ -2395,8 +3022,8 @@
       "id": "Organization.address.line.id",
       "path": "Organization.address.line.id",
       "representation": [ "xmlAttr" ],
-      "short": "xml:id (or equivalent in JSON)",
-      "definition": "unique id for the element within a resource (for internal references)",
+      "short": "Unique id for inter-element referencing",
+      "definition": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
       "min": 0,
       "max": "1",
       "base": {
@@ -2411,8 +3038,10 @@
         } ],
         "code": "http://hl7.org/fhirpath/System.String"
       } ],
-      "isModifier": false,
-      "isSummary": false
+      "mapping": [ {
+        "identity": "rim",
+        "map": "n/a"
+      } ]
     }, {
       "id": "Organization.address.line.extension",
       "path": "Organization.address.line.extension",
@@ -2421,7 +3050,7 @@
           "type": "value",
           "path": "url"
         } ],
-        "ordered": false,
+        "description": "Extensions are always sliced by (at least) url",
         "rules": "open"
       },
       "short": "Extension",
@@ -2436,6 +3065,7 @@
       "type": [ {
         "code": "Extension"
       } ],
+      "condition": [ "ele-1" ],
       "constraint": [ {
         "key": "ele-1",
         "severity": "error",
@@ -2450,9 +3080,7 @@
         "expression": "extension.exists() != value.exists()",
         "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source": "http://hl7.org/fhir/StructureDefinition/Extension"
-      } ],
-      "isModifier": false,
-      "isSummary": false
+      } ]
     }, {
       "id": "Organization.address.line.extension:Strasse",
       "path": "Organization.address.line.extension",
@@ -2488,9 +3116,13 @@
         "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source": "http://hl7.org/fhir/StructureDefinition/Extension"
       } ],
-      "isModifier": false,
-      "isSummary": false,
       "mapping": [ {
+        "identity": "rim",
+        "map": "n/a"
+      }, {
+        "identity": "rim",
+        "map": "N/A"
+      }, {
         "identity": "rim",
         "map": "ADXP[partType=STR]"
       } ]
@@ -2529,9 +3161,13 @@
         "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source": "http://hl7.org/fhir/StructureDefinition/Extension"
       } ],
-      "isModifier": false,
-      "isSummary": false,
       "mapping": [ {
+        "identity": "rim",
+        "map": "n/a"
+      }, {
+        "identity": "rim",
+        "map": "N/A"
+      }, {
         "identity": "rim",
         "map": "ADXP[partType=BNR]"
       } ]
@@ -2570,9 +3206,13 @@
         "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source": "http://hl7.org/fhir/StructureDefinition/Extension"
       } ],
-      "isModifier": false,
-      "isSummary": false,
       "mapping": [ {
+        "identity": "rim",
+        "map": "n/a"
+      }, {
+        "identity": "rim",
+        "map": "N/A"
+      }, {
         "identity": "rim",
         "map": "ADXP[partType=ADL]"
       } ]
@@ -2609,8 +3249,6 @@
         "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source": "http://hl7.org/fhir/StructureDefinition/Extension"
       } ],
-      "isModifier": false,
-      "isSummary": false,
       "mapping": [ {
         "identity": "rim",
         "map": "ADXP[partType=POB]"
@@ -2620,7 +3258,7 @@
       "path": "Organization.address.line.value",
       "representation": [ "xmlAttr" ],
       "short": "Primitive value for string",
-      "definition": "The actual value",
+      "definition": "Primitive value for string",
       "min": 0,
       "max": "1",
       "base": {
@@ -2638,14 +3276,13 @@
         } ],
         "code": "http://hl7.org/fhirpath/System.String"
       } ],
-      "maxLength": 1048576,
-      "isModifier": false,
-      "isSummary": false
+      "maxLength": 1048576
     }, {
       "id": "Organization.address.city",
       "path": "Organization.address.city",
       "short": "Name of city, town etc.",
       "definition": "The name of the city, town, suburb, village or other community or delivery center.",
+      "comment": "Note that FHIR strings SHALL NOT exceed 1MB in size",
       "alias": [ "Municpality" ],
       "min": 0,
       "max": "1",
@@ -2661,6 +3298,7 @@
         "label": "General",
         "valueString": "Erewhon"
       } ],
+      "condition": [ "ele-1" ],
       "constraint": [ {
         "key": "ele-1",
         "severity": "error",
@@ -2669,9 +3307,11 @@
         "xpath": "@value|f:*|h:div",
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       } ],
-      "isModifier": false,
       "isSummary": true,
       "mapping": [ {
+        "identity": "rim",
+        "map": "n/a"
+      }, {
         "identity": "v2",
         "map": "XAD.3"
       }, {
@@ -2705,6 +3345,7 @@
         "label": "General",
         "valueString": "Madison"
       } ],
+      "condition": [ "ele-1" ],
       "constraint": [ {
         "key": "ele-1",
         "severity": "error",
@@ -2713,9 +3354,11 @@
         "xpath": "@value|f:*|h:div",
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       } ],
-      "isModifier": false,
       "isSummary": true,
       "mapping": [ {
+        "identity": "rim",
+        "map": "n/a"
+      }, {
         "identity": "v2",
         "map": "XAD.9"
       }, {
@@ -2727,6 +3370,7 @@
       "path": "Organization.address.state",
       "short": "Bundesland",
       "definition": "Name (oder Kürzel) des Bundeslandes.",
+      "comment": "Note that FHIR strings SHALL NOT exceed 1MB in size",
       "alias": [ "Province", "Territory" ],
       "min": 0,
       "max": "1",
@@ -2738,6 +3382,7 @@
       "type": [ {
         "code": "string"
       } ],
+      "condition": [ "ele-1" ],
       "constraint": [ {
         "key": "ele-1",
         "severity": "error",
@@ -2746,13 +3391,15 @@
         "xpath": "@value|f:*|h:div",
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       } ],
-      "isModifier": false,
       "isSummary": true,
       "binding": {
         "strength": "preferred",
         "valueSet": "http://fhir.de/ValueSet/iso/bundeslaender"
       },
       "mapping": [ {
+        "identity": "rim",
+        "map": "n/a"
+      }, {
         "identity": "v2",
         "map": "XAD.4"
       }, {
@@ -2770,6 +3417,7 @@
       "path": "Organization.address.postalCode",
       "short": "Postleitzahl",
       "definition": "Postleitzahl gemäß der im jeweiligen Land gültigen Konventionen",
+      "comment": "Note that FHIR strings SHALL NOT exceed 1MB in size",
       "alias": [ "Zip" ],
       "min": 0,
       "max": "1",
@@ -2785,6 +3433,7 @@
         "label": "General",
         "valueString": "9132"
       } ],
+      "condition": [ "ele-1" ],
       "constraint": [ {
         "key": "ele-1",
         "severity": "error",
@@ -2793,13 +3442,11 @@
         "xpath": "@value|f:*|h:div",
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       } ],
-      "isModifier": false,
       "isSummary": true,
-      "binding": {
-        "strength": "preferred",
-        "valueSet": "https://demis.rki.de/fhir/ValueSet/postalCode"
-      },
       "mapping": [ {
+        "identity": "rim",
+        "map": "n/a"
+      }, {
         "identity": "v2",
         "map": "XAD.5"
       }, {
@@ -2828,6 +3475,7 @@
       "type": [ {
         "code": "string"
       } ],
+      "condition": [ "ele-1" ],
       "constraint": [ {
         "key": "ele-1",
         "severity": "error",
@@ -2836,13 +3484,15 @@
         "xpath": "@value|f:*|h:div",
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       } ],
-      "isModifier": false,
       "isSummary": true,
       "binding": {
         "strength": "extensible",
         "valueSet": "http://hl7.org/fhir/ValueSet/iso3166-1-2"
       },
       "mapping": [ {
+        "identity": "rim",
+        "map": "n/a"
+      }, {
         "identity": "v2",
         "map": "XAD.6"
       }, {
@@ -2860,6 +3510,7 @@
       "path": "Organization.address.period",
       "short": "Time period when address was/is in use",
       "definition": "Time period when address was/is in use.",
+      "comment": "A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. \"the patient was an inpatient of the hospital for this time range\") or one value from the range applies (e.g. \"give to the patient between these two times\").\n\nPeriod is not used for a duration (a measure of elapsed time). See [Duration](datatypes.html#Duration).",
       "requirements": "Allows addresses to be placed in historical context.",
       "min": 0,
       "max": "1",
@@ -2878,6 +3529,7 @@
           "end": "2010-07-01"
         }
       } ],
+      "condition": [ "ele-1" ],
       "constraint": [ {
         "key": "ele-1",
         "severity": "error",
@@ -2885,10 +3537,25 @@
         "expression": "hasValue() or (children().count() > id.count())",
         "xpath": "@value|f:*|h:div",
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
+      }, {
+        "key": "per-1",
+        "severity": "error",
+        "human": "If present, start SHALL have a lower value than end",
+        "expression": "start.hasValue().not() or end.hasValue().not() or (start <= end)",
+        "xpath": "not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) <= xs:dateTime(f:end/@value))",
+        "source": "http://hl7.org/fhir/StructureDefinition/Period"
       } ],
-      "isModifier": false,
       "isSummary": true,
       "mapping": [ {
+        "identity": "rim",
+        "map": "n/a"
+      }, {
+        "identity": "v2",
+        "map": "DR"
+      }, {
+        "identity": "rim",
+        "map": "IVL<TS>[lowClosed=\"true\" and highClosed=\"true\"] or URG<TS>[lowClosed=\"true\" and highClosed=\"true\"]"
+      }, {
         "identity": "v2",
         "map": "XAD.12 / XAD.13 + XAD.14"
       }, {
@@ -3195,7 +3862,8 @@
         "max": "1"
       },
       "type": [ {
-        "code": "Address"
+        "code": "Address",
+        "profile": [ "http://fhir.de/StructureDefinition/address-de-basis" ]
       } ],
       "constraint": [ {
         "key": "ele-1",
@@ -3271,8 +3939,12 @@
       "sliceName": "notifiedPersonFacility",
       "min": 1,
       "max": "1",
-      "fixedCanonical": "https://demis.rki.de/fhir/StructureDefinition/NotifiedPersonFacility",
+      "patternCanonical": "https://demis.rki.de/fhir/StructureDefinition/NotifiedPersonFacility",
       "mustSupport": true
+    }, {
+      "id": "Organization.active",
+      "path": "Organization.active",
+      "max": "0"
     }, {
       "id": "Organization.type",
       "path": "Organization.type",
@@ -3320,8 +3992,8 @@
         } ],
         "rules": "closed"
       },
-      "short": "Kontaktangaben der Betroffenen Person",
-      "definition": "Kontaktangaben der Betroffenen Person. Telefonnummern oder E-Mailadressen können angegeben werden.",
+      "short": "Kontaktangaben der Betroffenen-Einrichtung",
+      "definition": "Kontaktangaben der Betroffenen-Einrichtung. Telefonnummern, E-Mailadressen, Urls oder Faxnummern können angegeben werden.",
       "mustSupport": true
     }, {
       "id": "Organization.telecom:Email",
@@ -3339,7 +4011,7 @@
       "min": 1,
       "constraint": [ {
         "key": "validEmailAddress",
-        "severity": "warning",
+        "severity": "error",
         "human": "Die E-Mail-Adresse muss valide sein.",
         "expression": "$this.matches('^[a-zA-Z0-9._%+-]+@(?:[a-zA-Z0-9-]+[.])+[a-zA-Z0-9]{2,63}$')"
       } ],
@@ -3347,7 +4019,8 @@
     }, {
       "id": "Organization.telecom:Phone",
       "path": "Organization.telecom",
-      "sliceName": "Phone"
+      "sliceName": "Phone",
+      "mustSupport": true
     }, {
       "id": "Organization.telecom:Phone.extension",
       "path": "Organization.telecom.extension",
@@ -3379,8 +4052,50 @@
       "min": 1,
       "constraint": [ {
         "key": "validPhoneNumber",
-        "severity": "warning",
+        "severity": "error",
         "human": "Die Telefonnummer muss valide sein.",
+        "expression": "$this.matches('^[0+][0-9 \\\\-\\\\(\\\\)]{6,50}$')"
+      } ],
+      "mustSupport": true
+    }, {
+      "id": "Organization.telecom:Url",
+      "path": "Organization.telecom",
+      "sliceName": "Url"
+    }, {
+      "id": "Organization.telecom:Url.system",
+      "path": "Organization.telecom.system",
+      "min": 1,
+      "fixedCode": "url",
+      "mustSupport": true
+    }, {
+      "id": "Organization.telecom:Url.value",
+      "path": "Organization.telecom.value",
+      "min": 1,
+      "constraint": [ {
+        "key": "validUrl",
+        "severity": "error",
+        "human": "Die Url muss valide sein.",
+        "expression": "$this.matches('^(https?:\\\\/\\\\/(?:www\\\\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\\\.[^\\\\s]{2,}|www\\\\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\\\.[^\\\\s]{2,}|https?:\\\\/\\\\/(?:www\\\\.|(?!www))[a-zA-Z0-9]+\\\\.[^\\\\s]{2,}|www\\\\.[a-zA-Z0-9]+\\\\.[^\\\\s]{2,})$')"
+      } ],
+      "mustSupport": true
+    }, {
+      "id": "Organization.telecom:Fax",
+      "path": "Organization.telecom",
+      "sliceName": "Fax"
+    }, {
+      "id": "Organization.telecom:Fax.system",
+      "path": "Organization.telecom.system",
+      "min": 1,
+      "fixedCode": "fax",
+      "mustSupport": true
+    }, {
+      "id": "Organization.telecom:Fax.value",
+      "path": "Organization.telecom.value",
+      "min": 1,
+      "constraint": [ {
+        "key": "validFaxNumber",
+        "severity": "error",
+        "human": "Die Faxnummer muss valide sein.",
         "expression": "$this.matches('^[0+][0-9 \\\\-\\\\(\\\\)]{6,50}$')"
       } ],
       "mustSupport": true
@@ -3416,10 +4131,7 @@
     }, {
       "id": "Organization.address.postalCode",
       "path": "Organization.address.postalCode",
-      "binding": {
-        "strength": "preferred",
-        "valueSet": "https://demis.rki.de/fhir/ValueSet/postalCode"
-      }
+      "short": "Postleitzahl"
     }, {
       "id": "Organization.address.country",
       "path": "Organization.address.country",
@@ -3439,6 +4151,13 @@
       "short": "Ansprechpartner der Einrichtung",
       "definition": "Ansprechpartner der Einrichtung",
       "mustSupport": true
+    }, {
+      "id": "Organization.contact.address",
+      "path": "Organization.contact.address",
+      "type": [ {
+        "code": "Address",
+        "profile": [ "http://fhir.de/StructureDefinition/address-de-basis" ]
+      } ]
     }, {
       "id": "Organization.endpoint",
       "path": "Organization.endpoint",

@@ -2,12 +2,12 @@
   "resourceType": "ValueSet",
   "id": "laboratoryTestMSVP",
   "url": "https://demis.rki.de/fhir/ValueSet/laboratoryTestMSVP",
-  "version": "1.7.0",
+  "version": "1.8.0",
   "name": "LaboratoryTestMSVP",
   "title": "Labortest für Masernvirus",
   "status": "active",
   "experimental": false,
-  "date": "2025-04-08",
+  "date": "2025-12-05",
   "publisher": "Robert Koch-Institut",
   "contact": [ {
     "telecom": [ {
@@ -27,8 +27,11 @@
   "compose": {
     "include": [ {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "concept": [ {
+        "code": "101201-2",
+        "display": "Measles virus IgG Ab index [Units/volume] in Serum and CSF"
+      }, {
         "code": "104427-0",
         "display": "Masern-Virus Genotyp [Identität] in Probenmaterial mittels Sequenzierung"
       }, {
@@ -36,7 +39,7 @@
         "display": "Masern-Virus IgG-Antikörperavidität [Verhältnis] in Serum mittels Immunoassay"
       }, {
         "code": "13283-7",
-        "display": "Measles virus IgM Ab [Units/volume] in Cerebral spinal fluid"
+        "display": "Masern-Virus IgM-Antikörper [Einheiten/Volumen] in Liquor"
       }, {
         "code": "14304-0",
         "display": "Masern-Virus IgG-Antikörper [Einheiten/Volumen] in Serum mittels Immunoassay --1. Probenmaterial"
@@ -54,7 +57,7 @@
         "display": "Masern-Virus IgM-Antikörper [Nachweis] in Serum"
       }, {
         "code": "22500-3",
-        "display": "Measles virus IgG Ab [Units/volume] in Cerebral spinal fluid"
+        "display": "Masern-Virus IgG-Antikörper [Einheiten/Volumen] in Liquor"
       }, {
         "code": "25299-9",
         "display": "Masern-Virus IgG-Antikörper [Verhältnis] in Serum --1. Probenmaterial/2. Probenmaterial"
@@ -95,110 +98,115 @@
     } ]
   },
   "expansion": {
-    "timestamp": "2025-04-08T00:00:00+02:00",
+    "timestamp": "2025-12-05T00:00:00+01:00",
     "contains": [ {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "104428-8",
       "display": "Masern-Virus IgG-Antikörperavidität [Verhältnis] in Serum mittels Immunoassay"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "9566-1",
       "display": "Masern-Virus IgG-Antikörper [Einheiten/Volumen] in Liquor mittels Immunoassay"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "5244-9",
       "display": "Masern-Virus IgG-Antikörper [Einheiten/Volumen] in Serum mittels Immunoassay"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "60422-3",
       "display": "Masern-Virus Genotyp [Nachweis oder Identität] in Probenmaterial mittels Nukleinsäureamplifikation mit Sondendetektion"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "14304-0",
       "display": "Masern-Virus IgG-Antikörper [Einheiten/Volumen] in Serum mittels Immunoassay --1. Probenmaterial"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "41852-5",
       "display": "Mikroorganismus oder Erreger identifiziert in Probenmaterial"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "13283-7",
-      "display": "Measles virus IgM Ab [Units/volume] in Cerebral spinal fluid"
+      "display": "Masern-Virus IgM-Antikörper [Einheiten/Volumen] in Liquor"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "40649-6",
       "display": "Masern-Virus IgM-Antikörper [Einheiten/Volumen] in Liquor mittels Immunoassay"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
+      "code": "101201-2",
+      "display": "Measles virus IgG Ab index [Units/volume] in Serum and CSF"
+    }, {
+      "system": "http://loinc.org",
+      "version": "2.81",
       "code": "14305-7",
       "display": "Masern-Virus IgG-Antikörper [Einheiten/Volumen] in Serum mittels Immunoassay --2. Probenmaterial"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "17554-7",
       "display": "Masern-Virus IgA-Antikörper [Einheiten/Volumen] in Serum"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "48508-6",
       "display": "Masern-Virus RNA [Nachweis] in Probenmaterial mittels Nukleinsäureamplifikation mit Sondendetektion"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "35276-5",
       "display": "Masern-Virus IgM-Antikörper [Nachweis] in Serum mittels Immunoassay"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "35275-7",
       "display": "Masern-Virus IgG-Antikörper [Nachweis] in Serum mittels Immunoassay"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "22500-3",
-      "display": "Measles virus IgG Ab [Units/volume] in Cerebral spinal fluid"
+      "display": "Masern-Virus IgG-Antikörper [Einheiten/Volumen] in Liquor"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "20479-2",
       "display": "Masern-Virus IgG-Antikörper [Nachweis] in Serum"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "25421-9",
       "display": "Masern-Virus IgM-Antikörper [Einheiten/Volumen] in Serum mittels Immunoassay"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "25299-9",
       "display": "Masern-Virus IgG-Antikörper [Verhältnis] in Serum --1. Probenmaterial/2. Probenmaterial"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "21503-8",
       "display": "Masern-Virus IgM-Antikörper [Nachweis] in Serum"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "7963-2",
       "display": "Masern-Virus IgM-Antikörper [Einheiten/Volumen] in Serum"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "104427-0",
       "display": "Masern-Virus Genotyp [Identität] in Probenmaterial mittels Sequenzierung"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "7962-4",
       "display": "Masern-Virus IgG-Antikörper [Einheiten/Volumen] in Serum"
     } ]

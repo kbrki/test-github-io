@@ -2,12 +2,12 @@
   "resourceType": "ValueSet",
   "id": "materialMYTP",
   "url": "https://demis.rki.de/fhir/ValueSet/materialMYTP",
-  "version": "1.11.0",
+  "version": "1.11.1",
   "name": "MaterialMYTP",
   "title": "Material für Mycobacterium tuberculosis, Mycobacterium africanum, Mycobacterium bovis; Meldepflicht für den direkten Erregernachweis sowie nachfolgend für das Ergebnis der Resistenzbestimmung; vorab auch für den Nachweis säurefester Stäbchen im Sputum",
   "status": "active",
   "experimental": false,
-  "date": "2025-04-08",
+  "date": "2025-12-05",
   "publisher": "Robert Koch-Institut",
   "contact": [ {
     "telecom": [ {
@@ -27,7 +27,7 @@
   "compose": {
     "include": [ {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "concept": [ {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
@@ -463,11 +463,7 @@
           "valueInteger": 0
         } ],
         "code": "258412000",
-        "display": "Oropharyngeal aspirate (specimen)",
-        "designation": [ {
-          "language": "de-DE",
-          "value": "Oropharyngeales Aspirat"
-        } ]
+        "display": "Oropharyngeales Aspirat"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
@@ -495,11 +491,7 @@
           "valueInteger": 0
         } ],
         "code": "258480001",
-        "display": "Transtracheal aspirate specimen (specimen)",
-        "designation": [ {
-          "language": "de-DE",
-          "value": "Transtracheale Aspiratsprobe"
-        } ]
+        "display": "Transtracheale Aspiratprobe"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
@@ -562,9 +554,13 @@
           "valueInteger": 0
         } ],
         "code": "309171007",
-        "display": "Lower respiratory fluid specimen (specimen)",
+        "display": "Flüssigkeitsprobe der unteren Atemwegen",
         "designation": [ {
           "language": "de-DE",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009"
+          },
           "value": "Flüssigkeit der unteren Atemwege"
         } ]
       }, {
@@ -580,11 +576,7 @@
           "valueInteger": 0
         } ],
         "code": "415293009",
-        "display": "Respiratory secretion (specimen)",
-        "designation": [ {
-          "language": "de-DE",
-          "value": "Atemwegssekret"
-        } ]
+        "display": "Atemwegssekret"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
@@ -605,11 +597,7 @@
           "valueInteger": 0
         } ],
         "code": "433801000124107",
-        "display": "Combined nasopharyngeal and oropharyngeal swab (specimen)",
-        "designation": [ {
-          "language": "de-DE",
-          "value": "Kombinierter nasopharyngealer und oropharyngealer Abstrich"
-        } ]
+        "display": "Kombinierter nasopharyngealer und oropharyngealer Abstrich"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
@@ -623,11 +611,7 @@
           "valueInteger": 0
         } ],
         "code": "445297001",
-        "display": "Swab of internal nose (specimen)",
-        "designation": [ {
-          "language": "de-DE",
-          "value": "Abstrich der inneren Nase"
-        } ]
+        "display": "Abstrich der inneren Nase"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
@@ -695,450 +679,450 @@
     } ]
   },
   "expansion": {
-    "timestamp": "2025-04-08T00:00:00+02:00",
+    "timestamp": "2025-12-05T00:00:00+01:00",
     "contains": [ {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "309105004",
       "display": "Knochenbiopsat"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "119390000",
       "display": "Probenmaterial der Trachea"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "128168004",
       "display": "Lebergewebeprobe"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "258450006",
       "display": "Liquorprobe"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "309172000",
       "display": "Pleurabiopsat"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "119323008",
       "display": "Eiterprobe"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "445297001",
-      "display": "Swab of internal nose (specimen)"
+      "display": "Abstrich der inneren Nase"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "123038009",
       "display": "Probenmaterial"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "309176002",
       "display": "Bronchienbürstenbiopsat"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "309199003",
       "display": "Gastrointestinalflüssigkeitsprobe"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "445447003",
       "display": "Tracheaaspirat"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "168141000",
       "display": "Nasensekretprobe"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "119389009",
       "display": "Probenmaterial des Rachens"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "415293009",
-      "display": "Respiratory secretion (specimen)"
+      "display": "Atemwegssekret"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "119371008",
       "display": "Abszessprobe"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "410580001",
       "display": "Atemwegssekretprobe"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "258470000",
       "display": "Prostataflüssigkeitprobe"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "461911000124106",
       "display": "Oropharyngealer Abstrich"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "57741000052105",
       "display": "Trachealsekretprobe"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "119400006",
       "display": "Probenmaterial der Kornea"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "472867001",
       "display": "Tonsillenabstrich"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "472901003",
       "display": "Nasennebenhöhlenabstrich"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "119295008",
       "display": "Aspirat"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "258604001",
       "display": "Probenmaterial der oberen Atemwege"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "119347001",
       "display": "Spermaprobe"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "447154002",
       "display": "Probenmaterial der Nase"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "430248009",
       "display": "Probenmaterial des Nasopharynx"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "257261003",
       "display": "Abstrich"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "119391001",
       "display": "Probenmaterial der Bronchien"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "258480001",
-      "display": "Transtracheal aspirate specimen (specimen)"
+      "display": "Transtracheale Aspiratprobe"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "258411007",
       "display": "Nasopharyngeales Aspirat"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "119339001",
       "display": "Stuhlprobe"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "309066003",
       "display": "Hautbiopsat"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "168139001",
       "display": "Peritonealflüssigkeitsprobe"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "309171007",
-      "display": "Lower respiratory fluid specimen (specimen)"
+      "display": "Flüssigkeitsprobe der unteren Atemwegen"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "258609006",
       "display": "Sputumprobe mittels Trachealaspiration"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "309164002",
       "display": "Abstrich der oberen Atemwege"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "699874006",
       "display": "Perikardgewebeprobe"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "258467004",
       "display": "Nasopharyngeale Spülflüssigkeit"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "302795002",
       "display": "Lymphknotenaspirat"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "119342007",
       "display": "Speichelprobe"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "309051001",
       "display": "Körperflüssigkeitsprobe"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "258498002",
       "display": "Konjunktivalabstrich"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "433801000124107",
-      "display": "Combined nasopharyngeal and oropharyngeal swab (specimen)"
+      "display": "Kombinierter nasopharyngealer und oropharyngealer Abstrich"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "441620008",
       "display": "Probenmaterial aus Mundflüssigkeit"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "122610009",
       "display": "Lungenbiopsat"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "258446004",
       "display": "Bronchialsekretprobe"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "309174004",
       "display": "Bronchialbiopsat"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "309216003",
       "display": "Duodenalbiopsat"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "472894002",
       "display": "Korneaabstrich"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "434250007",
       "display": "Perikardbiopsat"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "258469001",
       "display": "Rachenspülflüssigkeit"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "258417006",
       "display": "Knochengewebsprobe"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "258606004",
       "display": "Probenmaterial der unteren Atemwege"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "119345009",
       "display": "Menstrualblutprobe"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "122575003",
       "display": "Urinprobe"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "432981006",
       "display": "Augenaspirat mittels Feinnadelbiopsie"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "697989009",
       "display": "Nasenvorhofabstrich"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "119341000",
       "display": "Gallensekretprobe"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "309079007",
       "display": "Lymphknotenbiopsat"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "128157004",
       "display": "Gehirngewebeprobe"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "258455001",
       "display": "Drainageflüssigkeitsprobe"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "122877000",
       "display": "Trachealaspirat der oberen Atemwege"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "309203003",
       "display": "Leberbiopsat"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "128159001",
       "display": "Kolongewebeprobe"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "418564007",
       "display": "Pleuraflüssigkeitprobe"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "119303007",
       "display": "Probenmaterial von mikrobiellem Isolat"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "127460002",
       "display": "Pleuragewebeprobe"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "878861003",
       "display": "Blutprobe in Blutkulturflasche"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "258459007",
       "display": "Magenflüssigkeitprobe"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "258529004",
       "display": "Rachenabstrich"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "399492000",
       "display": "Lungengewebeprobe"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "258500001",
       "display": "Nasopharynxabstrich"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "447339001",
       "display": "Nasensekretausstrich"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "608969007",
       "display": "Hautprobe"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "16224371000119105",
       "display": "Probenmaterial aus Nasenspülflüssigkeit"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "119359002",
       "display": "Knochenmarkprobe"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "119376003",
       "display": "Gewebeprobe"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "258607008",
       "display": "Probenmaterial der bronchoalveolären Lavageflüssigkeit"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "309269002",
       "display": "Nierenbiopsat"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "119334006",
       "display": "Sputumprobe"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "258412000",
-      "display": "Oropharyngeal aspirate (specimen)"
+      "display": "Oropharyngeales Aspirat"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "122618002",
       "display": "Pleuraaspirat mittels Feinnadel"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "127474009",
       "display": "Nierengewebeprobe"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "309078004",
       "display": "Probenmaterial des Lymphknotengewebes"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "472881004",
       "display": "Abstrich aus Pharynx"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "446972001",
       "display": "Abszessaspirat"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "119382000",
       "display": "Probenmaterial des Kolons"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "309166000",
       "display": "Ohrabstrich"
     } ]

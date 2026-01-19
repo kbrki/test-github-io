@@ -2,12 +2,12 @@
   "resourceType": "ValueSet",
   "id": "laboratoryTestSPYP",
   "url": "https://demis.rki.de/fhir/ValueSet/laboratoryTestSPYP",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "name": "LaboratoryTestSPYP",
   "title": "Labortest für Scharlach, Beta-hämolysierenden Streptokokken der Gruppe A",
   "status": "active",
   "experimental": false,
-  "date": "2025-04-08",
+  "date": "2025-12-05",
   "publisher": "Robert Koch-Institut",
   "contact": [ {
     "telecom": [ {
@@ -27,13 +27,13 @@
   "compose": {
     "include": [ {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "concept": [ {
         "code": "103627-6",
-        "display": "Streptococcus pyogenes DNA [Presence] in Specimen by NAA with probe detection"
+        "display": "Streptococcus pyogenes DNA [Nachweis] in Probenmaterial mittels Nukleinsäureamplifikation mit Sondendetektion"
       }, {
         "code": "105062-4",
-        "display": "Streptococcus pyogenes DNA [Presence] in Specimen"
+        "display": "Streptococcus pyogenes DNA [Nachweis] in Probenmaterial"
       }, {
         "code": "17656-0",
         "display": "Streptococcus pyogenes [Nachweis] in Probenmaterial mittels erregerspezifischer Kultur"
@@ -59,52 +59,52 @@
     } ]
   },
   "expansion": {
-    "timestamp": "2025-04-08T00:00:00+02:00",
+    "timestamp": "2025-12-05T00:00:00+01:00",
     "contains": [ {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "105062-4",
-      "display": "Streptococcus pyogenes DNA [Presence] in Specimen"
+      "display": "Streptococcus pyogenes DNA [Nachweis] in Probenmaterial"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "17656-0",
       "display": "Streptococcus pyogenes [Nachweis] in Probenmaterial mittels erregerspezifischer Kultur"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "31971-5",
       "display": "Streptococcus pyogenes Antigen [Nachweis] in Probenmaterial"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "49610-9",
       "display": "Streptococcus pyogenes DNA [Nachweis oder Identität] in Probenmaterial mittels Nukleinsäureamplifikation mit Sondendetektion"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "78012-2",
       "display": "Streptococcus pyogenes Antigen [Nachweis] in Probenmaterial vom Rachen mittels Immunoassay-Schnelltest"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "41852-5",
       "display": "Mikroorganismus oder Erreger identifiziert in Probenmaterial"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "60489-2",
       "display": "Streptococcus pyogenes DNA [Nachweis] in Probenmaterial vom Rachen mittels Nukleinsäureamplifikation mit Sondendetektion"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "75756-7",
       "display": "Bakterien identifiziert in Isolat mittels MS.MALDI-TOF"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "103627-6",
-      "display": "Streptococcus pyogenes DNA [Presence] in Specimen by NAA with probe detection"
+      "display": "Streptococcus pyogenes DNA [Nachweis] in Probenmaterial mittels Nukleinsäureamplifikation mit Sondendetektion"
     } ]
   }
 }

@@ -2,12 +2,12 @@
   "resourceType": "StructureDefinition",
   "id": "address-de-basis",
   "url": "http://fhir.de/StructureDefinition/address-de-basis",
-  "version": "1.5.3",
+  "version": "1.5.4",
   "name": "AddressDeBasis",
   "title": "Adresse, deutsches Basisprofil",
   "status": "active",
   "experimental": false,
-  "date": "2025-01-30",
+  "date": "2025-06-16",
   "publisher": "HL7 Deutschland e.V. (Technisches Komitee FHIR)",
   "contact": [ {
     "telecom": [ {
@@ -27,13 +27,6 @@
   "snapshot": {
     "element": [ {
       "id": "Address",
-      "extension": [ {
-        "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode": "normative"
-      }, {
-        "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode": "4.0.0"
-      } ],
       "path": "Address",
       "short": "Eine Adresse gemäß postalischer Konventionen",
       "definition": "Eine Adresse gemäß postalischer Konventionen (im Gegensatz zu bspw. GPS-Koordinaten). Die Adresse kann sowohl zur Zustellung von Postsendungen oder zum Aufsuchen von Orten, die keine gültige Postadresse haben, verwendet werden.\r\n\r\nDie verwendeten Extensions in diesem Profil bilden die Struktur der Adresse ab, wie sie im VSDM-Format der elektronischen Versichertenkarte verwendet wird.\r\n\r\nInsbesondere bei ausländischen Adresse oder Adressen, die nicht durch Einlesen einer elektronischen Versichertenkarte erfasst wurden, sind abweichende Strukturen möglich. Die Verwendung der Extensions ist nicht verpflichtend.",
@@ -106,7 +99,6 @@
         "expression": "extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct').empty() or all(line contains extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct').value.ofType(string))",
         "source": "http://fhir.de/StructureDefinition/address-de-basis"
       } ],
-      "isModifier": false,
       "mapping": [ {
         "identity": "rim",
         "map": "n/a"
@@ -140,8 +132,6 @@
         } ],
         "code": "http://hl7.org/fhirpath/System.String"
       } ],
-      "isModifier": false,
-      "isSummary": false,
       "mapping": [ {
         "identity": "rim",
         "map": "n/a"
@@ -171,6 +161,7 @@
       "type": [ {
         "code": "Extension"
       } ],
+      "condition": [ "ele-1" ],
       "constraint": [ {
         "key": "ele-1",
         "severity": "error",
@@ -183,14 +174,15 @@
         "severity": "error",
         "human": "Must have either extensions or value[x], not both",
         "expression": "extension.exists() != value.exists()",
-        "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+        "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source": "http://hl7.org/fhir/StructureDefinition/Extension"
       } ],
-      "isModifier": false,
-      "isSummary": false,
       "mapping": [ {
         "identity": "rim",
         "map": "n/a"
+      }, {
+        "identity": "rim",
+        "map": "N/A"
       } ]
     }, {
       "id": "Address.extension:Stadtteil",
@@ -227,11 +219,12 @@
         "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source": "http://hl7.org/fhir/StructureDefinition/Extension"
       } ],
-      "isModifier": false,
-      "isSummary": false,
       "mapping": [ {
         "identity": "rim",
         "map": "n/a"
+      }, {
+        "identity": "rim",
+        "map": "N/A"
       }, {
         "identity": "rim",
         "map": "ADXP[partType=PRE]"
@@ -257,6 +250,7 @@
         "label": "General",
         "valueCode": "home"
       } ],
+      "condition": [ "ele-1" ],
       "constraint": [ {
         "key": "ele-1",
         "severity": "error",
@@ -278,6 +272,9 @@
         "valueSet": "http://hl7.org/fhir/ValueSet/address-use|4.0.1"
       },
       "mapping": [ {
+        "identity": "rim",
+        "map": "n/a"
+      }, {
         "identity": "v2",
         "map": "XAD.7"
       }, {
@@ -307,6 +304,7 @@
         "label": "General",
         "valueCode": "both"
       } ],
+      "condition": [ "ele-1" ],
       "constraint": [ {
         "key": "ele-1",
         "severity": "error",
@@ -315,7 +313,6 @@
         "xpath": "@value|f:*|h:div",
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       } ],
-      "isModifier": false,
       "isSummary": true,
       "binding": {
         "extension": [ {
@@ -327,6 +324,9 @@
         "valueSet": "http://hl7.org/fhir/ValueSet/address-type|4.0.1"
       },
       "mapping": [ {
+        "identity": "rim",
+        "map": "n/a"
+      }, {
         "identity": "v2",
         "map": "XAD.18"
       }, {
@@ -357,6 +357,7 @@
         "label": "General",
         "valueString": "137 Nowhere Street, Erewhon 9132"
       } ],
+      "condition": [ "ele-1" ],
       "constraint": [ {
         "key": "ele-1",
         "severity": "error",
@@ -365,9 +366,11 @@
         "xpath": "@value|f:*|h:div",
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       } ],
-      "isModifier": false,
       "isSummary": true,
       "mapping": [ {
+        "identity": "rim",
+        "map": "n/a"
+      }, {
         "identity": "v2",
         "map": "XAD.1 + XAD.2 + XAD.3 + XAD.4 + XAD.5 + XAD.6"
       }, {
@@ -382,6 +385,7 @@
       "path": "Address.line",
       "short": "Straßenname mit Hausnummer oder Postfach sowie weitere Angaben zur Zustellung",
       "definition": "Diese Komponente kann Straßennamen, Hausnummer, Appartmentnummer, Postfach, c/o sowie weitere Zustellungshinweise enthalten. Die Informationen können in mehrere line-Komponenten aufgeteilt werden.\r\nBei Verwendung der Extensions, um Straße, Hausnnummer und Postleitzahl strukturiert zu übermitteln, müssen diese Informationen stets vollständig auch in der line-Komponente, die sie erweitern, enthalten sein, um es Systemen, die diese Extensions nicht verwenden zu ermöglichen, auf diese Informationen zugreifen zu können.",
+      "comment": "Note that FHIR strings SHALL NOT exceed 1MB in size",
       "min": 0,
       "max": "3",
       "base": {
@@ -409,6 +413,7 @@
           } ]
         }
       } ],
+      "condition": [ "ele-1" ],
       "constraint": [ {
         "key": "ele-1",
         "severity": "error",
@@ -417,9 +422,11 @@
         "xpath": "@value|f:*|h:div",
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       } ],
-      "isModifier": false,
       "isSummary": true,
       "mapping": [ {
+        "identity": "rim",
+        "map": "n/a"
+      }, {
         "identity": "v2",
         "map": "XAD.1 + XAD.2 (note: XAD.1 and XAD.2 have different meanings for a company address than for a person address)"
       }, {
@@ -436,8 +443,8 @@
       "id": "Address.line.id",
       "path": "Address.line.id",
       "representation": [ "xmlAttr" ],
-      "short": "xml:id (or equivalent in JSON)",
-      "definition": "unique id for the element within a resource (for internal references)",
+      "short": "Unique id for inter-element referencing",
+      "definition": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
       "min": 0,
       "max": "1",
       "base": {
@@ -452,8 +459,10 @@
         } ],
         "code": "http://hl7.org/fhirpath/System.String"
       } ],
-      "isModifier": false,
-      "isSummary": false
+      "mapping": [ {
+        "identity": "rim",
+        "map": "n/a"
+      } ]
     }, {
       "id": "Address.line.extension",
       "path": "Address.line.extension",
@@ -462,11 +471,11 @@
           "type": "value",
           "path": "url"
         } ],
-        "ordered": false,
+        "description": "Extensions are always sliced by (at least) url",
         "rules": "open"
       },
       "short": "Additional content defined by implementations",
-      "definition": "May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "definition": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
       "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
       "alias": [ "extensions", "user content" ],
       "min": 0,
@@ -479,6 +488,7 @@
       "type": [ {
         "code": "Extension"
       } ],
+      "condition": [ "ele-1" ],
       "constraint": [ {
         "key": "ele-1",
         "severity": "error",
@@ -494,8 +504,13 @@
         "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source": "http://hl7.org/fhir/StructureDefinition/Extension"
       } ],
-      "isModifier": false,
-      "isSummary": false
+      "mapping": [ {
+        "identity": "rim",
+        "map": "n/a"
+      }, {
+        "identity": "rim",
+        "map": "N/A"
+      } ]
     }, {
       "id": "Address.line.extension:Strasse",
       "path": "Address.line.extension",
@@ -531,9 +546,13 @@
         "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source": "http://hl7.org/fhir/StructureDefinition/Extension"
       } ],
-      "isModifier": false,
-      "isSummary": false,
       "mapping": [ {
+        "identity": "rim",
+        "map": "n/a"
+      }, {
+        "identity": "rim",
+        "map": "N/A"
+      }, {
         "identity": "rim",
         "map": "ADXP[partType=STR]"
       } ]
@@ -572,9 +591,13 @@
         "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source": "http://hl7.org/fhir/StructureDefinition/Extension"
       } ],
-      "isModifier": false,
-      "isSummary": false,
       "mapping": [ {
+        "identity": "rim",
+        "map": "n/a"
+      }, {
+        "identity": "rim",
+        "map": "N/A"
+      }, {
         "identity": "rim",
         "map": "ADXP[partType=BNR]"
       } ]
@@ -613,9 +636,13 @@
         "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source": "http://hl7.org/fhir/StructureDefinition/Extension"
       } ],
-      "isModifier": false,
-      "isSummary": false,
       "mapping": [ {
+        "identity": "rim",
+        "map": "n/a"
+      }, {
+        "identity": "rim",
+        "map": "N/A"
+      }, {
         "identity": "rim",
         "map": "ADXP[partType=ADL]"
       } ]
@@ -654,9 +681,13 @@
         "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source": "http://hl7.org/fhir/StructureDefinition/Extension"
       } ],
-      "isModifier": false,
-      "isSummary": false,
       "mapping": [ {
+        "identity": "rim",
+        "map": "n/a"
+      }, {
+        "identity": "rim",
+        "map": "N/A"
+      }, {
         "identity": "rim",
         "map": "ADXP[partType=POB]"
       } ]
@@ -665,7 +696,7 @@
       "path": "Address.line.value",
       "representation": [ "xmlAttr" ],
       "short": "Primitive value for string",
-      "definition": "The actual value",
+      "definition": "Primitive value for string",
       "min": 0,
       "max": "1",
       "base": {
@@ -683,14 +714,13 @@
         } ],
         "code": "http://hl7.org/fhirpath/System.String"
       } ],
-      "maxLength": 1048576,
-      "isModifier": false,
-      "isSummary": false
+      "maxLength": 1048576
     }, {
       "id": "Address.city",
       "path": "Address.city",
       "short": "Name of city, town etc.",
       "definition": "The name of the city, town, suburb, village or other community or delivery center.",
+      "comment": "Note that FHIR strings SHALL NOT exceed 1MB in size",
       "alias": [ "Municpality" ],
       "min": 0,
       "max": "1",
@@ -706,6 +736,7 @@
         "label": "General",
         "valueString": "Erewhon"
       } ],
+      "condition": [ "ele-1" ],
       "constraint": [ {
         "key": "ele-1",
         "severity": "error",
@@ -714,9 +745,11 @@
         "xpath": "@value|f:*|h:div",
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       } ],
-      "isModifier": false,
       "isSummary": true,
       "mapping": [ {
+        "identity": "rim",
+        "map": "n/a"
+      }, {
         "identity": "v2",
         "map": "XAD.3"
       }, {
@@ -750,6 +783,7 @@
         "label": "General",
         "valueString": "Madison"
       } ],
+      "condition": [ "ele-1" ],
       "constraint": [ {
         "key": "ele-1",
         "severity": "error",
@@ -758,9 +792,11 @@
         "xpath": "@value|f:*|h:div",
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       } ],
-      "isModifier": false,
       "isSummary": true,
       "mapping": [ {
+        "identity": "rim",
+        "map": "n/a"
+      }, {
         "identity": "v2",
         "map": "XAD.9"
       }, {
@@ -772,6 +808,7 @@
       "path": "Address.state",
       "short": "Bundesland",
       "definition": "Name (oder Kürzel) des Bundeslandes.",
+      "comment": "Note that FHIR strings SHALL NOT exceed 1MB in size",
       "alias": [ "Province", "Territory" ],
       "min": 0,
       "max": "1",
@@ -783,6 +820,7 @@
       "type": [ {
         "code": "string"
       } ],
+      "condition": [ "ele-1" ],
       "constraint": [ {
         "key": "ele-1",
         "severity": "error",
@@ -791,13 +829,15 @@
         "xpath": "@value|f:*|h:div",
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       } ],
-      "isModifier": false,
       "isSummary": true,
       "binding": {
         "strength": "preferred",
         "valueSet": "http://fhir.de/ValueSet/iso/bundeslaender"
       },
       "mapping": [ {
+        "identity": "rim",
+        "map": "n/a"
+      }, {
         "identity": "v2",
         "map": "XAD.4"
       }, {
@@ -815,6 +855,7 @@
       "path": "Address.postalCode",
       "short": "Postleitzahl",
       "definition": "Postleitzahl gemäß der im jeweiligen Land gültigen Konventionen",
+      "comment": "Note that FHIR strings SHALL NOT exceed 1MB in size",
       "alias": [ "Zip" ],
       "min": 0,
       "max": "1",
@@ -830,6 +871,7 @@
         "label": "General",
         "valueString": "9132"
       } ],
+      "condition": [ "ele-1" ],
       "constraint": [ {
         "key": "ele-1",
         "severity": "error",
@@ -838,9 +880,11 @@
         "xpath": "@value|f:*|h:div",
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       } ],
-      "isModifier": false,
       "isSummary": true,
       "mapping": [ {
+        "identity": "rim",
+        "map": "n/a"
+      }, {
         "identity": "v2",
         "map": "XAD.5"
       }, {
@@ -869,6 +913,7 @@
       "type": [ {
         "code": "string"
       } ],
+      "condition": [ "ele-1" ],
       "constraint": [ {
         "key": "ele-1",
         "severity": "error",
@@ -877,13 +922,15 @@
         "xpath": "@value|f:*|h:div",
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       } ],
-      "isModifier": false,
       "isSummary": true,
       "binding": {
         "strength": "preferred",
         "valueSet": "http://hl7.org/fhir/ValueSet/iso3166-1-2"
       },
       "mapping": [ {
+        "identity": "rim",
+        "map": "n/a"
+      }, {
         "identity": "v2",
         "map": "XAD.6"
       }, {
@@ -901,6 +948,7 @@
       "path": "Address.period",
       "short": "Time period when address was/is in use",
       "definition": "Time period when address was/is in use.",
+      "comment": "A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. \"the patient was an inpatient of the hospital for this time range\") or one value from the range applies (e.g. \"give to the patient between these two times\").\n\nPeriod is not used for a duration (a measure of elapsed time). See [Duration](datatypes.html#Duration).",
       "requirements": "Allows addresses to be placed in historical context.",
       "min": 0,
       "max": "1",
@@ -919,6 +967,7 @@
           "end": "2010-07-01"
         }
       } ],
+      "condition": [ "ele-1" ],
       "constraint": [ {
         "key": "ele-1",
         "severity": "error",
@@ -926,10 +975,25 @@
         "expression": "hasValue() or (children().count() > id.count())",
         "xpath": "@value|f:*|h:div",
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
+      }, {
+        "key": "per-1",
+        "severity": "error",
+        "human": "If present, start SHALL have a lower value than end",
+        "expression": "start.hasValue().not() or end.hasValue().not() or (start <= end)",
+        "xpath": "not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) <= xs:dateTime(f:end/@value))",
+        "source": "http://hl7.org/fhir/StructureDefinition/Period"
       } ],
-      "isModifier": false,
       "isSummary": true,
       "mapping": [ {
+        "identity": "rim",
+        "map": "n/a"
+      }, {
+        "identity": "v2",
+        "map": "DR"
+      }, {
+        "identity": "rim",
+        "map": "IVL<TS>[lowClosed=\"true\" and highClosed=\"true\"] or URG<TS>[lowClosed=\"true\" and highClosed=\"true\"]"
+      }, {
         "identity": "v2",
         "map": "XAD.12 / XAD.13 + XAD.14"
       }, {

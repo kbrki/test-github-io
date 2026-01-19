@@ -2,12 +2,12 @@
   "resourceType": "ValueSet",
   "id": "substanceCLOP",
   "url": "https://demis.rki.de/fhir/ValueSet/substanceCLOP",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "name": "SubstanceCLOP",
   "title": "Analyt-Set für Clostridium botulinum oder Toxinnachweis",
   "status": "active",
   "experimental": false,
-  "date": "2025-04-08",
+  "date": "2025-12-05",
   "publisher": "Robert Koch-Institut",
   "contact": [ {
     "telecom": [ {
@@ -27,7 +27,7 @@
   "compose": {
     "include": [ {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "concept": [ {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
@@ -38,7 +38,7 @@
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
-          "valueInteger": 1
+          "valueInteger": 100
         } ],
         "code": "11894001",
         "display": "Clostridium-Botulinumtoxin",
@@ -56,109 +56,85 @@
           "valueInteger": 1
         } ],
         "code": "129471005",
-        "display": "Botulinum toxin type B (substance)",
-        "designation": [ {
-          "language": "de-DE",
-          "value": "Botulinumtoxin Typ B"
-        } ]
+        "display": "Botulinumtoxin Typ B"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 0
         } ],
         "code": "385331001",
-        "display": "Botulinum toxin type C (substance)",
-        "designation": [ {
-          "language": "de-DE",
-          "value": "Botulinumtoxin Typ C"
-        } ]
+        "display": "Botulinumtoxin Typ C"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 0
         } ],
         "code": "385332008",
-        "display": "Botulinum toxin type D (substance)",
-        "designation": [ {
-          "language": "de-DE",
-          "value": "Botulinumtoxin Typ D"
-        } ]
+        "display": "Botulinumtoxin Typ D"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 1
         } ],
         "code": "385333003",
-        "display": "Botulinum toxin type E (substance)",
-        "designation": [ {
-          "language": "de-DE",
-          "value": "Botulinumtoxin Typ E"
-        } ]
+        "display": "Botulinumtoxin Typ E"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 1
         } ],
         "code": "385334009",
-        "display": "Botulinum toxin type F (substance)",
-        "designation": [ {
-          "language": "de-DE",
-          "value": "Botulinumtoxin Typ F"
-        } ]
+        "display": "Botulinumtoxin Typ F"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 0
         } ],
         "code": "385335005",
-        "display": "Botulinum toxin type G (substance)",
-        "designation": [ {
-          "language": "de-DE",
-          "value": "Botulinumtoxin Typ G"
-        } ]
+        "display": "Botulinumtoxin Typ G"
       } ]
     } ]
   },
   "expansion": {
-    "timestamp": "2025-04-08T00:00:00+02:00",
+    "timestamp": "2025-12-05T00:00:00+01:00",
     "contains": [ {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "385333003",
-      "display": "Botulinum toxin type E (substance)"
+      "display": "Botulinumtoxin Typ E"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "385332008",
-      "display": "Botulinum toxin type D (substance)"
+      "display": "Botulinumtoxin Typ D"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "385335005",
-      "display": "Botulinum toxin type G (substance)"
+      "display": "Botulinumtoxin Typ G"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "129471005",
-      "display": "Botulinum toxin type B (substance)"
+      "display": "Botulinumtoxin Typ B"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "11894001",
       "display": "Clostridium-Botulinumtoxin"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "385334009",
-      "display": "Botulinum toxin type F (substance)"
+      "display": "Botulinumtoxin Typ F"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "385331001",
-      "display": "Botulinum toxin type C (substance)"
+      "display": "Botulinumtoxin Typ C"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "108890005",
       "display": "Botulinumtoxin Typ A"
     } ]

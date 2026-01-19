@@ -2,12 +2,12 @@
   "resourceType": "ValueSet",
   "id": "methodTOXP",
   "url": "https://demis.rki.de/fhir/ValueSet/methodTOXP",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "name": "MethodTOXP",
-  "title": "Nachweismethode für Toxoplasma gondii, konnatal",
+  "title": "Nachweismethode für Toxoplasma gondii, konnatale Infektion des Kindes",
   "status": "active",
   "experimental": false,
-  "date": "2025-08-12",
+  "date": "2025-12-18",
   "publisher": "Robert Koch-Institut",
   "contact": [ {
     "telecom": [ {
@@ -15,7 +15,7 @@
       "value": "demis-support@rki.de"
     } ]
   } ],
-  "description": "Das ValueSet MethodTOXP enthält die Codes der Nachweismethoden für Toxoplasma gondii, konnatal.",
+  "description": "Das ValueSet MethodTOXP enthält die Codes der Nachweismethoden für Toxoplasma gondii, konnatale Infektion des Kindes.",
   "jurisdiction": [ {
     "coding": [ {
       "system": "urn:iso:std:iso:3166",
@@ -27,25 +27,14 @@
   "compose": {
     "include": [ {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "concept": [ {
-        "extension": [ {
-          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
-          "valueInteger": 41
-        } ],
-        "code": "118119003",
-        "display": "Measurement of microbial antibody (procedure)",
-        "designation": [ {
-          "language": "de-DE",
-          "value": "Antikörpernachweis"
-        } ]
-      }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 20
         } ],
         "code": "1304162005",
-        "display": "Nucleic acid sequencing technique (qualifier value)",
+        "display": "Methode der Nukleinsäuresequenzierung",
         "designation": [ {
           "language": "de-DE",
           "value": "Nukleinsäuresequenzierung"
@@ -56,7 +45,7 @@
           "valueInteger": 21
         } ],
         "code": "264896000",
-        "display": "Nucleic acid analysis (qualifier value)",
+        "display": "Nukleinsäureanalyse",
         "designation": [ {
           "language": "de-DE",
           "value": "Nukleinsäure-Assay"
@@ -67,7 +56,7 @@
           "valueInteger": 34
         } ],
         "code": "31651002",
-        "display": "Immunoglobulin A measurement (procedure)",
+        "display": "Immunglobulin-A-Messung",
         "designation": [ {
           "language": "de-DE",
           "value": "Immunglobulin-A (IgA)-Bestimmung"
@@ -78,7 +67,7 @@
           "valueInteger": 33
         } ],
         "code": "45293001",
-        "display": "Immunoglobulin G measurement (procedure)",
+        "display": "Immunglobulin-G-Messung",
         "designation": [ {
           "language": "de-DE",
           "value": "Immunglobulin-G (IgG)-Bestimmung"
@@ -89,46 +78,57 @@
           "valueInteger": 32
         } ],
         "code": "45764000",
-        "display": "Immunoglobulin M measurement (procedure)",
+        "display": "Immunglobulin-M-Messung",
         "designation": [ {
           "language": "de-DE",
           "value": "Immunglobulin-M (IgM)-Bestimmung"
+        } ]
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "703446000",
+        "display": "Immunoblot-Methode",
+        "designation": [ {
+          "language": "de-DE",
+          "value": "Immunoblot"
         } ]
       } ]
     } ]
   },
   "expansion": {
-    "timestamp": "2025-08-12T00:00:00+02:00",
+    "timestamp": "2025-12-18T00:00:00+01:00",
     "contains": [ {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "45293001",
-      "display": "Immunoglobulin G measurement (procedure)"
+      "display": "Immunglobulin-G-Messung"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "45764000",
-      "display": "Immunoglobulin M measurement (procedure)"
+      "display": "Immunglobulin-M-Messung"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
-      "code": "118119003",
-      "display": "Measurement of microbial antibody (procedure)"
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "703446000",
+      "display": "Immunoblot-Methode"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "31651002",
-      "display": "Immunoglobulin A measurement (procedure)"
+      "display": "Immunglobulin-A-Messung"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "1304162005",
-      "display": "Nucleic acid sequencing technique (qualifier value)"
+      "display": "Methode der Nukleinsäuresequenzierung"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "264896000",
-      "display": "Nucleic acid analysis (qualifier value)"
+      "display": "Nukleinsäureanalyse"
     } ]
   }
 }

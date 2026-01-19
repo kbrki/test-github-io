@@ -2,12 +2,12 @@
   "resourceType": "ValueSet",
   "id": "substanceCORP",
   "url": "https://demis.rki.de/fhir/ValueSet/substanceCORP",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "name": "SubstanceCORP",
   "title": "Analyt-Set für Corynebacterium spp. (Toxin bildend)",
   "status": "active",
   "experimental": false,
-  "date": "2025-04-08",
+  "date": "2025-12-05",
   "publisher": "Robert Koch-Institut",
   "contact": [ {
     "telecom": [ {
@@ -27,28 +27,24 @@
   "compose": {
     "include": [ {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "concept": [ {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 1
         } ],
         "code": "55123007",
-        "display": "Diphtheria toxin (substance)",
-        "designation": [ {
-          "language": "de-DE",
-          "value": "Diphtherietoxin"
-        } ]
+        "display": "Diphtherietoxin"
       } ]
     } ]
   },
   "expansion": {
-    "timestamp": "2025-04-08T00:00:00+02:00",
+    "timestamp": "2025-12-05T00:00:00+01:00",
     "contains": [ {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "55123007",
-      "display": "Diphtheria toxin (substance)"
+      "display": "Diphtherietoxin"
     } ]
   }
 }

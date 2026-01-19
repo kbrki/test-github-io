@@ -2,11 +2,11 @@
   "resourceType": "StructureDefinition",
   "id": "ImmunizationInformation",
   "url": "https://demis.rki.de/fhir/StructureDefinition/ImmunizationInformation",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "name": "ImmunizationInformation",
   "title": "Impfung",
   "status": "active",
-  "date": "2024-09-04",
+  "date": "2026-01-07",
   "description": "Die Impfung umfasst Angaben zum Impfstoff und das Datum der Impfung.",
   "fhirVersion": "4.0.1",
   "mapping": [ {
@@ -20,6 +20,10 @@
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Immunization",
   "derivation": "constraint",
   "snapshot": {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
+      "valueString": "4.0.1"
+    } ],
     "element": [ {
       "id": "Immunization",
       "path": "Immunization",
@@ -1589,7 +1593,7 @@
       },
       "type": [ {
         "code": "Reference",
-        "targetProfile": [ "https://demis.rki.de/fhir/StructureDefinition/NotifiedPerson" ]
+        "targetProfile": [ "https://demis.rki.de/fhir/StructureDefinition/NotifiedPerson", "https://demis.rki.de/fhir/StructureDefinition/NotifiedPersonAnonymous" ]
       } ],
       "constraint": [ {
         "key": "ele-1",
@@ -3965,7 +3969,7 @@
       "definition": "Verweis auf die in der Meldung benannte betroffene Person. Hierbei handelt es sich grundsätzlich um den Verweis auf die in der Erregernachweismeldung als „subject“ referenzierte Patient Ressource.",
       "type": [ {
         "code": "Reference",
-        "targetProfile": [ "https://demis.rki.de/fhir/StructureDefinition/NotifiedPerson" ]
+        "targetProfile": [ "https://demis.rki.de/fhir/StructureDefinition/NotifiedPerson", "https://demis.rki.de/fhir/StructureDefinition/NotifiedPersonAnonymous" ]
       } ],
       "mustSupport": true
     }, {

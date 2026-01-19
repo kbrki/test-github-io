@@ -2,12 +2,12 @@
   "resourceType": "ValueSet",
   "id": "methodHIVP",
   "url": "https://demis.rki.de/fhir/ValueSet/methodHIVP",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "name": "MethodHIVP",
   "title": "Nachweismethode für HIV",
   "status": "active",
   "experimental": false,
-  "date": "2025-08-12",
+  "date": "2025-12-02",
   "publisher": "Robert Koch-Institut",
   "contact": [ {
     "telecom": [ {
@@ -27,36 +27,14 @@
   "compose": {
     "include": [ {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "concept": [ {
-        "extension": [ {
-          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
-          "valueInteger": 90
-        } ],
-        "code": "118119003",
-        "display": "Measurement of microbial antibody (procedure)",
-        "designation": [ {
-          "language": "de-DE",
-          "value": "Antikörpernachweis"
-        } ]
-      }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 20
         } ],
-        "code": "1304162005",
-        "display": "Nucleic acid sequencing technique (qualifier value)",
-        "designation": [ {
-          "language": "de-DE",
-          "value": "Nukleinsäuresequenzierung"
-        } ]
-      }, {
-        "extension": [ {
-          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
-          "valueInteger": 21
-        } ],
         "code": "264896000",
-        "display": "Nucleic acid analysis (qualifier value)",
+        "display": "Nukleinsäureanalyse",
         "designation": [ {
           "language": "de-DE",
           "value": "Nukleinsäure-Assay"
@@ -67,7 +45,7 @@
           "valueInteger": 40
         } ],
         "code": "703446000",
-        "display": "Immunoblot assay technique (qualifier value)",
+        "display": "Immunoblot-Methode",
         "designation": [ {
           "language": "de-DE",
           "value": "Immunoblot"
@@ -78,29 +56,14 @@
           "valueInteger": 50
         } ],
         "code": "708058007",
-        "display": "Flow cytometry technique (qualifier value)",
-        "designation": [ {
-          "language": "de-DE",
-          "value": "Durchflusszytometrie"
-        } ]
-      }, {
-        "extension": [ {
-          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
-          "valueInteger": 0
-        } ],
-        "code": "708099001",
-        "display": "Rapid immunoassay technique (qualifier value)",
-        "designation": [ {
-          "language": "de-DE",
-          "value": "Schnelltest-Immunoassay"
-        } ]
+        "display": "Durchflusszytometrie"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 30
         } ],
         "code": "767096000",
-        "display": "Indirect immunofluorescence technique (qualifier value)",
+        "display": "Indirekte Immunfluoreszenzmethode",
         "designation": [ {
           "language": "de-DE",
           "value": "Indirekte Immunfluoreszenz"
@@ -109,42 +72,27 @@
     } ]
   },
   "expansion": {
-    "timestamp": "2025-08-12T00:00:00+02:00",
+    "timestamp": "2025-12-02T00:00:00+01:00",
     "contains": [ {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
-      "code": "708099001",
-      "display": "Rapid immunoassay technique (qualifier value)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
-      "code": "118119003",
-      "display": "Measurement of microbial antibody (procedure)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "703446000",
-      "display": "Immunoblot assay technique (qualifier value)"
+      "display": "Immunoblot-Methode"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "708058007",
-      "display": "Flow cytometry technique (qualifier value)"
+      "display": "Durchflusszytometrie"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "767096000",
-      "display": "Indirect immunofluorescence technique (qualifier value)"
+      "display": "Indirekte Immunfluoreszenzmethode"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
-      "code": "1304162005",
-      "display": "Nucleic acid sequencing technique (qualifier value)"
-    }, {
-      "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "264896000",
-      "display": "Nucleic acid analysis (qualifier value)"
+      "display": "Nukleinsäureanalyse"
     } ]
   }
 }

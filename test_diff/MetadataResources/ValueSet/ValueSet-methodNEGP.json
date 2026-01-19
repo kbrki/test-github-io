@@ -2,12 +2,12 @@
   "resourceType": "ValueSet",
   "id": "methodNEGP",
   "url": "https://demis.rki.de/fhir/ValueSet/methodNEGP",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "name": "MethodNEGP",
   "title": "Nachweismethode für Neisseria gonorrhoeae (Gonorrhö)",
   "status": "active",
   "experimental": false,
-  "date": "2025-08-12",
+  "date": "2025-12-19",
   "publisher": "Robert Koch-Institut",
   "contact": [ {
     "telecom": [ {
@@ -27,14 +27,14 @@
   "compose": {
     "include": [ {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "concept": [ {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 20
         } ],
         "code": "1304162005",
-        "display": "Nucleic acid sequencing technique (qualifier value)",
+        "display": "Methode der Nukleinsäuresequenzierung",
         "designation": [ {
           "language": "de-DE",
           "value": "Nukleinsäuresequenzierung"
@@ -45,7 +45,7 @@
           "valueInteger": 21
         } ],
         "code": "264896000",
-        "display": "Nucleic acid analysis (qualifier value)",
+        "display": "Nukleinsäureanalyse",
         "designation": [ {
           "language": "de-DE",
           "value": "Nukleinsäure-Assay"
@@ -56,7 +56,7 @@
           "valueInteger": 25
         } ],
         "code": "278289002",
-        "display": "Microscopy technique (qualifier value)",
+        "display": "Mikroskopiemethode",
         "designation": [ {
           "language": "de-DE",
           "value": "Mikroskopie"
@@ -67,9 +67,13 @@
           "valueInteger": 30
         } ],
         "code": "703725008",
-        "display": "Culture technique (qualifier value)",
+        "display": "Kultur",
         "designation": [ {
           "language": "de-DE",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009"
+          },
           "value": "Kultivierung"
         } ]
       }, {
@@ -78,41 +82,45 @@
           "valueInteger": 28
         } ],
         "code": "83581000052107",
-        "display": "Matrix assisted laser desorption ionization time of flight mass spectrometry technique (qualifier value)",
+        "display": "MALDI-TOF-Massenspektrometrie",
         "designation": [ {
           "language": "de-DE",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009"
+          },
           "value": "MALDI-TOF"
         } ]
       } ]
     } ]
   },
   "expansion": {
-    "timestamp": "2025-08-12T00:00:00+02:00",
+    "timestamp": "2025-12-19T00:00:00+01:00",
     "contains": [ {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "278289002",
-      "display": "Microscopy technique (qualifier value)"
+      "display": "Mikroskopiemethode"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "1304162005",
-      "display": "Nucleic acid sequencing technique (qualifier value)"
+      "display": "Methode der Nukleinsäuresequenzierung"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "264896000",
-      "display": "Nucleic acid analysis (qualifier value)"
+      "display": "Nukleinsäureanalyse"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "703725008",
-      "display": "Culture technique (qualifier value)"
+      "display": "Kultur"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "83581000052107",
-      "display": "Matrix assisted laser desorption ionization time of flight mass spectrometry technique (qualifier value)"
+      "display": "MALDI-TOF-Massenspektrometrie"
     } ]
   }
 }

@@ -2,12 +2,12 @@
   "resourceType": "ValueSet",
   "id": "methodECHP",
   "url": "https://demis.rki.de/fhir/ValueSet/methodECHP",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "name": "MethodECHP",
   "title": "Nachweismethode für Echinococcus sp.",
   "status": "active",
   "experimental": false,
-  "date": "2025-08-12",
+  "date": "2025-12-02",
   "publisher": "Robert Koch-Institut",
   "contact": [ {
     "telecom": [ {
@@ -27,14 +27,14 @@
   "compose": {
     "include": [ {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "concept": [ {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 41
         } ],
         "code": "118119003",
-        "display": "Measurement of microbial antibody (procedure)",
+        "display": "Mikrobieller Antikörpernachweis",
         "designation": [ {
           "language": "de-DE",
           "value": "Antikörpernachweis"
@@ -45,18 +45,14 @@
           "valueInteger": 40
         } ],
         "code": "121276004",
-        "display": "Antigen assay (procedure)",
-        "designation": [ {
-          "language": "de-DE",
-          "value": "Antigennachweis"
-        } ]
+        "display": "Antigennachweis"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 20
         } ],
         "code": "1304162005",
-        "display": "Nucleic acid sequencing technique (qualifier value)",
+        "display": "Methode der Nukleinsäuresequenzierung",
         "designation": [ {
           "language": "de-DE",
           "value": "Nukleinsäuresequenzierung"
@@ -67,7 +63,7 @@
           "valueInteger": 21
         } ],
         "code": "264896000",
-        "display": "Nucleic acid analysis (qualifier value)",
+        "display": "Nukleinsäureanalyse",
         "designation": [ {
           "language": "de-DE",
           "value": "Nukleinsäure-Assay"
@@ -78,41 +74,53 @@
           "valueInteger": 30
         } ],
         "code": "278289002",
-        "display": "Microscopy technique (qualifier value)",
+        "display": "Mikroskopiemethode",
         "designation": [ {
           "language": "de-DE",
           "value": "Mikroskopie"
         } ]
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "714797009",
+        "display": "Histologischer Test"
       } ]
     } ]
   },
   "expansion": {
-    "timestamp": "2025-08-12T00:00:00+02:00",
+    "timestamp": "2025-12-02T00:00:00+01:00",
     "contains": [ {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "278289002",
-      "display": "Microscopy technique (qualifier value)"
+      "display": "Mikroskopiemethode"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "118119003",
-      "display": "Measurement of microbial antibody (procedure)"
+      "display": "Mikrobieller Antikörpernachweis"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "121276004",
-      "display": "Antigen assay (procedure)"
+      "display": "Antigennachweis"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "1304162005",
-      "display": "Nucleic acid sequencing technique (qualifier value)"
+      "display": "Methode der Nukleinsäuresequenzierung"
     }, {
       "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/11000274103/version/20241115",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "264896000",
-      "display": "Nucleic acid analysis (qualifier value)"
+      "display": "Nukleinsäureanalyse"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "714797009",
+      "display": "Histologischer Nachweis einer C.-difficile-Infektion aus Gewebe (Endoskopie, Kolektomie oder Autopsie)"
     } ]
   }
 }

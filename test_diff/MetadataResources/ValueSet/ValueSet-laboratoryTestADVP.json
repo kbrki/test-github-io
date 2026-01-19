@@ -2,12 +2,12 @@
   "resourceType": "ValueSet",
   "id": "laboratoryTestADVP",
   "url": "https://demis.rki.de/fhir/ValueSet/laboratoryTestADVP",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "name": "LaboratoryTestADVP",
   "title": "Labortest für Adenoviren; Meldepflicht nur für den direkten Nachweis im Konjunktivalabstrich",
   "status": "active",
   "experimental": false,
-  "date": "2025-04-08",
+  "date": "2025-12-05",
   "publisher": "Robert Koch-Institut",
   "contact": [ {
     "telecom": [ {
@@ -27,13 +27,13 @@
   "compose": {
     "include": [ {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "concept": [ {
         "code": "104326-4",
         "display": "Adenovirus sp identifiziert [Typ] in Probenmaterial mittels Sequenzierung"
       }, {
         "code": "105887-4",
-        "display": "Adenovirus DNA [Presence] in Specimen"
+        "display": "Adenovirus DNA [Nachweis] in Probenmaterial"
       }, {
         "code": "31710-7",
         "display": "Adenovirus Antigen [Nachweis] in konjunktivalem Probenmaterial"
@@ -59,50 +59,50 @@
     } ]
   },
   "expansion": {
-    "timestamp": "2025-04-08T00:00:00+02:00",
+    "timestamp": "2025-12-05T00:00:00+01:00",
     "contains": [ {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "39528-5",
       "display": "Adenovirus DNA [Nachweis] in Probenmaterial mittels Nukleinsäureamplifikation mit Sondendetektion"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "31714-9",
       "display": "Adenovirus Antigen [Nachweis] in Probenmaterial"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "105887-4",
-      "display": "Adenovirus DNA [Presence] in Specimen"
+      "display": "Adenovirus DNA [Nachweis] in Probenmaterial"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "41852-5",
       "display": "Mikroorganismus oder Erreger identifiziert in Probenmaterial"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "104326-4",
       "display": "Adenovirus sp identifiziert [Typ] in Probenmaterial mittels Sequenzierung"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "92854-9",
       "display": "Adenovirus DNA [#/Volumen] (Viruslast) in Kornea bzw. Konjunktiva mittels Nukleinsäureamplifikation mit Sondendetektion"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "31710-7",
       "display": "Adenovirus Antigen [Nachweis] in konjunktivalem Probenmaterial"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "40976-3",
       "display": "Adenovirus DNA [Nachweis oder Identität] in Probenmaterial mittels Nukleinsäureamplifikation mit Sondendetektion"
     }, {
       "system": "http://loinc.org",
-      "version": "2.79",
+      "version": "2.81",
       "code": "88533-5",
       "display": "Adenovirus DNA [Nachweis] in Kornea bzw. Konjunktiva mittels Nukleinsäureamplifikation mit Sondendetektion"
     } ]
