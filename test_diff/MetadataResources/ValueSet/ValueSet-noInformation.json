@@ -1,13 +1,13 @@
 {
   "resourceType": "ValueSet",
-  "id": "noCountry-SNOMED",
-  "url": "https://demis.rki.de/fhir/ValueSet/noCountry-SNOMED",
-  "version": "1.0.2",
-  "name": "NoCountry-SNOMED",
-  "title": "SNOMED-Codes für \"Staatenlos\" oder \"Ausland\".",
+  "id": "noInformation",
+  "url": "https://demis.rki.de/fhir/ValueSet/noInformation",
+  "version": "1.0.1",
+  "name": "NoInformation",
+  "title": "Angaben \"Patient/Patientin nicht gefragt\" und \"Unbekannt\" als SNOMED-Codes.",
   "status": "active",
   "experimental": false,
-  "date": "2026-01-07",
+  "date": "2026-01-09",
   "publisher": "Robert Koch-Institut",
   "contact": [ {
     "telecom": [ {
@@ -15,7 +15,7 @@
       "value": "demis-support@rki.de"
     } ]
   } ],
-  "description": "Dieses ValueSet enthält die SNOMED-Codes für die Angaben \"Staatenlos\" oder \"Unbekannt\". Es dient zur Ergänzung dieser Inhalte in dem ValueSet asnwerSetCountry-ISO-SNOMED.",
+  "description": "Dieses ValueSet enthält die SNOMED-Codes für \"Patient/Patientin nicht gefragt\" und \"Unbekannt\". Es dient in einigen ValueSets als Erweiterung der fachlichen Inhalte.",
   "jurisdiction": [ {
     "coding": [ {
       "system": "urn:iso:std:iso:3166",
@@ -31,20 +31,32 @@
       "concept": [ {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
-          "valueInteger": 4
+          "valueInteger": 1
         } ],
-        "code": "34051000087100:{370130000=41277001}",
-        "display": "Staatenlos"
+        "code": "1631000175102",
+        "display": "Patient/Patientin nicht gefragt"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 2
+        } ],
+        "code": "261665006",
+        "display": "Unbekannt"
       } ]
     } ]
   },
   "expansion": {
-    "timestamp": "2026-01-07T00:00:00+01:00",
+    "timestamp": "2026-01-09T00:00:00+01:00",
     "contains": [ {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
-      "code": "34051000087100:{370130000=41277001}",
-      "display": "Staatenlos"
+      "code": "1631000175102",
+      "display": "Patient/Patientin nicht gefragt"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "261665006",
+      "display": "Unbekannt"
     } ]
   }
 }

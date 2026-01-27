@@ -1,13 +1,13 @@
 {
   "resourceType": "ValueSet",
-  "id": "yesOrNoOrNoInformation-SNOMED",
-  "url": "https://demis.rki.de/fhir/ValueSet/yesOrNoOrNoInformation-SNOMED",
-  "version": "1.0.2",
-  "name": "YesOrNoOrNoInformation-SNOMED",
-  "title": "SNOMED-Codes zur standardmäßigen Beantwortung von Ja/Nein-Fragen in DEMIS-Questionnaires.",
+  "id": "answerSetSpecimenWBKD",
+  "url": "https://demis.rki.de/fhir/ValueSet/answerSetSpecimenWBKD",
+  "version": "1.0.0",
+  "name": "AnswerSetSpecimenWBKD",
+  "title": "Antwortmöglichkeiten für die Angabe der Nachweisprobe der Weitere bedrohliche Krankheiten",
   "status": "active",
   "experimental": false,
-  "date": "2026-01-07",
+  "date": "2026-01-09",
   "publisher": "Robert Koch-Institut",
   "contact": [ {
     "telecom": [ {
@@ -15,7 +15,7 @@
       "value": "demis-support@rki.de"
     } ]
   } ],
-  "description": "Dieses ValueSet enthält die Codes für die Antwortmöglichkeiten \"Ja\", \"Nein\", \"Unbekannt\" und \"Patient/Patientin nicht gefragt\". Es wird zur beantwortung von Ja/Nein-Fragen in DEMIS-Questionnaires benutzt.",
+  "description": "Das ValueSet AnswerSetSpecimenWBKD enthält die kodierten Antwortmöglichkeiten für die Nachweisprobe der Weitere bedrohliche Krankheiten .",
   "jurisdiction": [ {
     "coding": [ {
       "system": "urn:iso:std:iso:3166",
@@ -31,6 +31,62 @@
       "concept": [ {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 14
+        } ],
+        "code": "119297000",
+        "display": "Blutprobe"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 11
+        } ],
+        "code": "119339001",
+        "display": "Stuhlprobe"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 12
+        } ],
+        "code": "119364003",
+        "display": "Serumprobe"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 13
+        } ],
+        "code": "119376003",
+        "display": "Gewebeprobe"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 10
+        } ],
+        "code": "122575003",
+        "display": "Urinprobe"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 16
+        } ],
+        "code": "257261003",
+        "display": "Abstrich"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 15
+        } ],
+        "code": "258527002",
+        "display": "Analabstrich"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 5
+        } ],
+        "code": "74964007",
+        "display": "Andere"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 1
         } ],
         "code": "1631000175102",
@@ -42,25 +98,11 @@
         } ],
         "code": "261665006",
         "display": "Unbekannt"
-      }, {
-        "extension": [ {
-          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
-          "valueInteger": 7
-        } ],
-        "code": "373066001",
-        "display": "Ja"
-      }, {
-        "extension": [ {
-          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
-          "valueInteger": 6
-        } ],
-        "code": "373067005",
-        "display": "Nein"
       } ]
     } ]
   },
   "expansion": {
-    "timestamp": "2026-01-07T00:00:00+01:00",
+    "timestamp": "2026-01-09T00:00:00+01:00",
     "contains": [ {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
@@ -69,8 +111,18 @@
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
-      "code": "373067005",
-      "display": "Nein"
+      "code": "119297000",
+      "display": "Blutprobe"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "122575003",
+      "display": "Urinprobe"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "257261003",
+      "display": "Abstrich"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
@@ -79,8 +131,28 @@
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
-      "code": "373066001",
-      "display": "Ja"
+      "code": "258527002",
+      "display": "Analabstrich"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "119364003",
+      "display": "Serumprobe"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "119339001",
+      "display": "Stuhlprobe"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "119376003",
+      "display": "Gewebeprobe"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "74964007",
+      "display": "Andere"
     } ]
   }
 }

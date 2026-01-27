@@ -1,13 +1,13 @@
 {
   "resourceType": "ValueSet",
-  "id": "noInformation-SNOMED",
-  "url": "https://demis.rki.de/fhir/ValueSet/noInformation-SNOMED",
-  "version": "1.0.2",
-  "name": "NoInformation-SNOMED",
-  "title": "Angaben \"Patient/Patientin nicht gefragt\" und \"Unbekannt\" als SNOMED-Codes.",
+  "id": "answerSetSpezFormCJKD",
+  "url": "https://demis.rki.de/fhir/ValueSet/answerSetSpezFormCJKD",
+  "version": "1.0.1",
+  "name": "AnswerSetSpezFormCJKD",
+  "title": "Antwortmöglichkeiten für die Angabe der Ausprägung des Meldetatbestands \"Creutzfeldt-Jakob-Krankheit (CJK)\"",
   "status": "active",
   "experimental": false,
-  "date": "2026-01-07",
+  "date": "2026-01-09",
   "publisher": "Robert Koch-Institut",
   "contact": [ {
     "telecom": [ {
@@ -15,7 +15,7 @@
       "value": "demis-support@rki.de"
     } ]
   } ],
-  "description": "Dieses ValueSet enthält die SNOMED-Codes für \"Patient/Patientin nicht gefragt\" und \"Unbekannt\". Es dient in einigen ValueSets als Erweiterung der fachlichen Inhalte.",
+  "description": "Das ValueSet AnswerSetSpezFormCJKD enthält die kodierten Antwortmöglichkeiten für die Angabe der Ausprägung des Meldetatbestands \"Creutzfeldt-Jakob-Krankheit (CJK)\".",
   "jurisdiction": [ {
     "coding": [ {
       "system": "urn:iso:std:iso:3166",
@@ -29,6 +29,20 @@
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
       "concept": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 10
+        } ],
+        "code": "713060000",
+        "display": "Creutzfeldt-Jakob-Krankheit, sporadische"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 11
+        } ],
+        "code": "715662009",
+        "display": "Creutzfeldt-Jakob-Krankheit, iatrogene Form"
+      }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 1
@@ -46,12 +60,22 @@
     } ]
   },
   "expansion": {
-    "timestamp": "2026-01-07T00:00:00+01:00",
+    "timestamp": "2026-01-09T00:00:00+01:00",
     "contains": [ {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "1631000175102",
       "display": "Patient/Patientin nicht gefragt"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "713060000",
+      "display": "Creutzfeldt-Jakob-Krankheit, sporadische"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "715662009",
+      "display": "Creutzfeldt-Jakob-Krankheit, iatrogene Form"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
