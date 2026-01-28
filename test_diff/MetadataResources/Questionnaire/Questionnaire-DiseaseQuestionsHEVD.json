@@ -2,27 +2,12 @@
   "resourceType": "Questionnaire",
   "id": "DiseaseQuestionsHEVD",
   "url": "https://demis.rki.de/fhir/Questionnaire/DiseaseQuestionsHEVD",
-  "version": "1.3.0",
+  "version": "1.2.1",
   "name": "DiseaseQuestionsHEVD",
   "title": "Hepatitis E: spezifische klinische und epidemiologische Angaben",
   "status": "active",
-  "date": "2026-01-22",
-  "publisher": "Robert Koch-Institut",
-  "contact": [ {
-    "telecom": [ {
-      "system": "email",
-      "value": "demis-support@rki.de"
-    } ]
-  } ],
+  "date": "2024-07-22",
   "description": "Hepatitis E-spezifische Informationsbedarfe werden in diesem meldetatbestandsspezifischen Fragebogen zusammengestellt. Dieser manifestiert sich als entsprechende QuestionnaireResponse innerhalb der Meldung.",
-  "jurisdiction": [ {
-    "coding": [ {
-      "system": "urn:iso:std:iso:3166",
-      "version": "ALPHA-2",
-      "code": "DE"
-    } ]
-  } ],
-  "copyright": "Copyright (C) 2021-2025 Robert Koch-Institut",
   "item": [ {
     "extension": [ {
       "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -42,9 +27,9 @@
     "answerValueSet": "https://demis.rki.de/fhir/ValueSet/yesOrNoOrNoInformation",
     "initial": [ {
       "valueCoding": {
-        "system": "http://snomed.info/sct",
-        "code": "1631000175102",
-        "display": "Patient not asked (contextual qualifier) (qualifier value)"
+        "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "code": "NASK",
+        "display": "not asked"
       }
     } ],
     "item": [ {
@@ -59,8 +44,8 @@
         "question": "immunization",
         "operator": "=",
         "answerCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "373066001"
+          "system": "https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer",
+          "code": "yes"
         }
       } ],
       "required": false,
@@ -72,71 +57,88 @@
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://hl7.org/fhir/questionnaire-item-control",
-          "code": "drop-down",
-          "display": "Drop down"
+          "code": "gtable",
+          "display": "Group Table"
         } ]
       }
     } ],
-    "linkId": "infectionRiskKindJob",
-    "text": "Berufliches Risiko",
-    "type": "choice",
+    "linkId": "infectionRiskKindGroup",
+    "text": "Welche Risikofaktoren liegen bei der betroffenen Person vor?",
+    "type": "group",
     "required": true,
     "repeats": false,
-    "answerValueSet": "https://demis.rki.de/fhir/ValueSet/answerSetInfectionRiskJobHEVD",
-    "initial": [ {
-      "valueCoding": {
-        "system": "http://snomed.info/sct",
-        "code": "1631000175102",
-        "display": "Patient not asked (contextual qualifier) (qualifier value)"
-      }
-    } ]
-  }, {
-    "extension": [ {
-      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
-      "valueCodeableConcept": {
-        "coding": [ {
-          "system": "http://hl7.org/fhir/questionnaire-item-control",
-          "code": "drop-down",
-          "display": "Drop down"
-        } ]
-      }
-    } ],
-    "linkId": "infectionRiskKindAnimal",
-    "text": "Tierkontakt",
-    "type": "choice",
-    "required": true,
-    "repeats": false,
-    "answerValueSet": "https://demis.rki.de/fhir/ValueSet/answerSetInfectionRiskAnimalHEVD",
-    "initial": [ {
-      "valueCoding": {
-        "system": "http://snomed.info/sct",
-        "code": "1631000175102",
-        "display": "Patient not asked (contextual qualifier) (qualifier value)"
-      }
-    } ]
-  }, {
-    "extension": [ {
-      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
-      "valueCodeableConcept": {
-        "coding": [ {
-          "system": "http://hl7.org/fhir/questionnaire-item-control",
-          "code": "drop-down",
-          "display": "Drop down"
-        } ]
-      }
-    } ],
-    "linkId": "infectionRiskKindOther",
-    "text": "Sonstiger Kontakt",
-    "type": "choice",
-    "required": true,
-    "repeats": false,
-    "answerValueSet": "https://demis.rki.de/fhir/ValueSet/answerSetInfectionRiskOtherHEVD",
-    "initial": [ {
-      "valueCoding": {
-        "system": "http://snomed.info/sct",
-        "code": "1631000175102",
-        "display": "Patient not asked (contextual qualifier) (qualifier value)"
-      }
+    "item": [ {
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "http://hl7.org/fhir/questionnaire-item-control",
+            "code": "drop-down",
+            "display": "Drop down"
+          } ]
+        }
+      } ],
+      "linkId": "infectionRiskKindJob",
+      "text": "Berufliches Risiko",
+      "type": "choice",
+      "required": true,
+      "repeats": false,
+      "answerValueSet": "https://demis.rki.de/fhir/ValueSet/answerSetInfectionRiskJobHEVD",
+      "initial": [ {
+        "valueCoding": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+          "code": "NASK",
+          "display": "not asked"
+        }
+      } ]
+    }, {
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "http://hl7.org/fhir/questionnaire-item-control",
+            "code": "drop-down",
+            "display": "Drop down"
+          } ]
+        }
+      } ],
+      "linkId": "infectionRiskKindAnimal",
+      "text": "Tierkontakt",
+      "type": "choice",
+      "required": true,
+      "repeats": false,
+      "answerValueSet": "https://demis.rki.de/fhir/ValueSet/answerSetInfectionRiskAnimalHEVD",
+      "initial": [ {
+        "valueCoding": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+          "code": "NASK",
+          "display": "not asked"
+        }
+      } ]
+    }, {
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "http://hl7.org/fhir/questionnaire-item-control",
+            "code": "drop-down",
+            "display": "Drop down"
+          } ]
+        }
+      } ],
+      "linkId": "infectionRiskKindOther",
+      "text": "Sonstiger Kontakt",
+      "type": "choice",
+      "required": true,
+      "repeats": false,
+      "answerValueSet": "https://demis.rki.de/fhir/ValueSet/answerSetInfectionRiskOtherHEVD",
+      "initial": [ {
+        "valueCoding": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+          "code": "NASK",
+          "display": "not asked"
+        }
+      } ]
     } ]
   }, {
     "extension": [ {
@@ -157,9 +159,9 @@
     "answerValueSet": "https://demis.rki.de/fhir/ValueSet/answerSetInfectionPathHEVD",
     "initial": [ {
       "valueCoding": {
-        "system": "http://snomed.info/sct",
-        "code": "1631000175102",
-        "display": "Patient not asked (contextual qualifier) (qualifier value)"
+        "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "code": "NASK",
+        "display": "not asked"
       }
     } ]
   }, {
@@ -181,9 +183,9 @@
     "answerValueSet": "https://demis.rki.de/fhir/ValueSet/yesOrNoOrNoInformation",
     "initial": [ {
       "valueCoding": {
-        "system": "http://snomed.info/sct",
-        "code": "1631000175102",
-        "display": "Patient not asked (contextual qualifier) (qualifier value)"
+        "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "code": "NASK",
+        "display": "not asked"
       }
     } ],
     "item": [ {
@@ -194,8 +196,8 @@
         "question": "outbreak",
         "operator": "=",
         "answerCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "373066001"
+          "system": "https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer",
+          "code": "yes"
         }
       } ],
       "required": false,
@@ -208,8 +210,8 @@
         "question": "outbreak",
         "operator": "=",
         "answerCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "373066001"
+          "system": "https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer",
+          "code": "yes"
         }
       } ],
       "required": false,

@@ -2,20 +2,12 @@
   "resourceType": "Questionnaire",
   "id": "DiseaseQuestionsECHD",
   "url": "https://demis.rki.de/fhir/Questionnaire/DiseaseQuestionsECHD",
-  "version": "1.2.0",
+  "version": "1.1.1",
   "name": "DiseaseQuestionsECHD",
   "title": "Echinococcus sp.: spezifische klinische und epidemiologische Angaben",
   "status": "active",
-  "date": "2026-01-15",
+  "date": "2026-01-12",
   "description": "Echinococcus sp. spezifische Informationsbedarfe werden in diesem meldetatbestandsspezifischen Fragebogen zusammengestellt. Dieser manifestiert sich als entsprechende QuestionnaireResponse innerhalb der Meldung.",
-  "jurisdiction": [ {
-    "coding": [ {
-      "system": "urn:iso:std:iso:3166",
-      "version": "ALPHA-2",
-      "code": "DE"
-    } ]
-  } ],
-  "copyright": "Copyright (C) 2021-2025 Robert Koch-Institut",
   "item": [ {
     "extension": [ {
       "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -220,7 +212,7 @@
     "type": "choice",
     "required": true,
     "repeats": false,
-    "answerValueSet": "https://demis.rki.de/fhir/ValueSet/yesOrNoOrNoInformation",
+    "answerValueSet": "https://demis.rki.de/fhir/ValueSet/yesOrNoOrNoInformation-SNOMED",
     "item": [ {
       "extension": [ {
         "url": "http://hl7.org/fhir/StructureDefinition/regex",
@@ -299,6 +291,6 @@
     "type": "choice",
     "required": true,
     "repeats": false,
-    "answerValueSet": "https://demis.rki.de/fhir/ValueSet/answerSetCountry"
+    "answerValueSet": "https://demis.rki.de/fhir/ValueSet/answerSetCountry-ISO-SNOMED"
   } ]
 }

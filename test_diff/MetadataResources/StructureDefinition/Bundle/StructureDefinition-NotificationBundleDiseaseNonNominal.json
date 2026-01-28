@@ -2,27 +2,12 @@
   "resourceType": "StructureDefinition",
   "id": "NotificationBundleDiseaseNonNominal",
   "url": "https://demis.rki.de/fhir/StructureDefinition/NotificationBundleDiseaseNonNominal",
-  "version": "1.0.2",
+  "version": "1.0.1",
   "name": "NotificationBundleDiseaseNonNominal",
   "title": "Nichtnamentlicher Ergänzungsmeldevorgang zur nichtnamentlichen Erregernachweismeldung nach § 7 Abs. 3 IfSG",
   "status": "active",
-  "date": "2025-09-25",
-  "publisher": "Robert Koch-Institut",
-  "contact": [ {
-    "telecom": [ {
-      "system": "email",
-      "value": "demis-support@rki.de"
-    } ]
-  } ],
+  "date": "2025-08-12",
   "description": "Der nichtnamentliche Ergänzungsmeldevorgang ist vom Meldevorgang abgeleitet und bildet den Container für eine meldetatbestandsspezifische, nichtnamentliche Ergänzungsmeldung (und die darin referenzierten Ressourcen) durch die behandelnde Person, im Rahmen einer nichtnamentlichen Erregernachweismeldung nach § 7 Abs. 3 IfSG.",
-  "jurisdiction": [ {
-    "coding": [ {
-      "system": "urn:iso:std:iso:3166",
-      "version": "ALPHA-2",
-      "code": "DE"
-    } ]
-  } ],
-  "copyright": "Copyright (C) 2021-2025 Robert Koch-Institut",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -351,7 +336,7 @@
         "code": "canonical",
         "targetProfile": [ "http://hl7.org/fhir/StructureDefinition/StructureDefinition" ]
       } ],
-      "patternCanonical": "https://demis.rki.de/fhir/StructureDefinition/NotificationBundleDiseaseNonNominal",
+      "fixedCanonical": "https://demis.rki.de/fhir/StructureDefinition/NotificationBundleDiseaseNonNominal",
       "constraint": [ {
         "key": "ele-1",
         "severity": "error",
@@ -3088,7 +3073,7 @@
       "path": "Bundle.meta.profile",
       "min": 1,
       "max": "1",
-      "patternCanonical": "https://demis.rki.de/fhir/StructureDefinition/NotificationBundleDiseaseNonNominal",
+      "fixedCanonical": "https://demis.rki.de/fhir/StructureDefinition/NotificationBundleDiseaseNonNominal",
       "mustSupport": true
     }, {
       "id": "Bundle.identifier.system",
