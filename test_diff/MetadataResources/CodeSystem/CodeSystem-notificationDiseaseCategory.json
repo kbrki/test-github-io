@@ -2,12 +2,12 @@
   "resourceType": "CodeSystem",
   "id": "notificationDiseaseCategory",
   "url": "https://demis.rki.de/fhir/CodeSystem/notificationDiseaseCategory",
-  "version": "2.0.3",
+  "version": "2.1.0",
   "name": "NotificationDiseaseCategory",
   "title": "Meldetatbestände nach § 6 und § 7 Abs. 3 IfSG",
   "status": "active",
   "experimental": false,
-  "date": "2026-01-19",
+  "date": "2026-01-09",
   "publisher": "Robert Koch-Institut",
   "contact": [ {
     "telecom": [ {
@@ -26,7 +26,7 @@
   "copyright": "(C) 2021-2025 Robert Koch-Institut",
   "caseSensitive": false,
   "content": "complete",
-  "count": 49,
+  "count": 50,
   "property": [ {
     "code": "inactive",
     "type": "boolean"
@@ -1089,6 +1089,27 @@
     }, {
       "code": "ifsg-paragraph",
       "valueCode": "7.3"
+    } ]
+  }, {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder",
+      "valueInteger": 9
+    } ],
+    "code": "wbkd",
+    "display": "Weitere bedrohliche Krankheiten",
+    "designation": [ {
+      "language": "de-DE",
+      "value": "Weitere bedrohliche Krankheiten"
+    } ],
+    "property": [ {
+      "code": "inactive",
+      "valueBoolean": false
+    }, {
+      "code": "federal-state-specific-notificationCategory",
+      "valueBoolean": false
+    }, {
+      "code": "ifsg-paragraph",
+      "valueCode": "6.1"
     } ]
   } ]
 }

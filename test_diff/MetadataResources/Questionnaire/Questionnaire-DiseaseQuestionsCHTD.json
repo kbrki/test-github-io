@@ -2,12 +2,27 @@
   "resourceType": "Questionnaire",
   "id": "DiseaseQuestionsCHTD",
   "url": "https://demis.rki.de/fhir/Questionnaire/DiseaseQuestionsCHTD",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "name": "DiseaseQuestionsCHTD",
   "title": "Chlamydia trachomatis, sofern es sich um einen der Serotypen L1 bis L3 handelt: spezifische klinische und epidemiologische Angaben",
   "status": "active",
-  "date": "2026-01-12",
+  "date": "2026-01-15",
+  "publisher": "Robert Koch-Institut",
+  "contact": [ {
+    "telecom": [ {
+      "system": "email",
+      "value": "demis-support@rki.de"
+    } ]
+  } ],
   "description": "Chlamydia trachomatis (L1 bis L3) spezifische Informationsbedarfe werden in diesem meldetatbestandsspezifischen Fragebogen zusammengestellt. Dieser manifestiert sich als entsprechende QuestionnaireResponse innerhalb der Meldung.",
+  "jurisdiction": [ {
+    "coding": [ {
+      "system": "urn:iso:std:iso:3166",
+      "version": "ALPHA-2",
+      "code": "DE"
+    } ]
+  } ],
+  "copyright": "Copyright (C) 2021-2025 Robert Koch-Institut",
   "item": [ {
     "extension": [ {
       "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -183,7 +198,7 @@
     "type": "choice",
     "required": true,
     "repeats": false,
-    "answerValueSet": "https://demis.rki.de/fhir/ValueSet/answerSetCountry-ISO-SNOMED",
+    "answerValueSet": "https://demis.rki.de/fhir/ValueSet/answerSetCountry",
     "item": [ {
       "extension": [ {
         "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -226,7 +241,7 @@
     "type": "choice",
     "required": true,
     "repeats": false,
-    "answerValueSet": "https://demis.rki.de/fhir/ValueSet/answerSetCountry-ISO-SNOMED",
+    "answerValueSet": "https://demis.rki.de/fhir/ValueSet/answerSetCountry",
     "item": [ {
       "extension": [ {
         "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",

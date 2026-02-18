@@ -2,15 +2,30 @@
   "resourceType": "StructureDefinition",
   "id": "DiseaseInformation",
   "url": "https://demis.rki.de/fhir/StructureDefinition/DiseaseInformation",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "name": "DiseaseInformation",
   "title": "Meldetatbestandsspezifische klinische und epidemiologische Angaben",
   "status": "active",
-  "date": "2025-04-25",
+  "date": "2025-09-01",
+  "publisher": "Robert Koch-Institut",
+  "contact": [ {
+    "telecom": [ {
+      "system": "email",
+      "value": "demis-support@rki.de"
+    } ]
+  } ],
   "description": "DiseaseInformation",
+  "jurisdiction": [ {
+    "coding": [ {
+      "system": "urn:iso:std:iso:3166",
+      "version": "ALPHA-2",
+      "code": "DE"
+    } ]
+  } ],
+  "copyright": "Copyright (C) 2021-2025 Robert Koch-Institut",
   "fhirVersion": "4.0.1",
   "kind": "resource",
-  "abstract": false,
+  "abstract": true,
   "type": "QuestionnaireResponse",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse",
   "derivation": "constraint",
@@ -504,6 +519,7 @@
         "xpath": "@value|f:*|h:div",
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       } ],
+      "mustSupport": true,
       "isModifier": true,
       "isModifierReason": "This element is labelled as a modifier because it is a status element that contains status entered-in-error which means that the resource should not be treated as valid",
       "isSummary": true,
@@ -1441,7 +1457,8 @@
       "id": "QuestionnaireResponse.status",
       "path": "QuestionnaireResponse.status",
       "short": "Status der Fragebogeninhalte",
-      "definition": "Status der Fragebogeninhalte"
+      "definition": "Status der Fragebogeninhalte",
+      "mustSupport": true
     }, {
       "id": "QuestionnaireResponse.subject",
       "path": "QuestionnaireResponse.subject",
