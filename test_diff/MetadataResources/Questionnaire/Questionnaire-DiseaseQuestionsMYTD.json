@@ -2,27 +2,12 @@
   "resourceType": "Questionnaire",
   "id": "DiseaseQuestionsMYTD",
   "url": "https://demis.rki.de/fhir/Questionnaire/DiseaseQuestionsMYTD",
-  "version": "1.5.3",
+  "version": "1.5.0",
   "name": "DiseaseQuestionsMYTD",
   "title": "Tuberkulose: spezifische klinische und epidemiologische Angaben",
   "status": "active",
-  "date": "2025-11-29",
-  "publisher": "Robert Koch-Institut",
-  "contact": [ {
-    "telecom": [ {
-      "system": "email",
-      "value": "demis-support@rki.de"
-    } ]
-  } ],
+  "date": "2024-12-13",
   "description": "Tuberkulose spezifische Informationsbedarfe werden in diesem meldetatbestandsspezifischen Fragebogen zusammengestellt. Dieser manifestiert sich als entsprechende QuestionnaireResponse innerhalb der Meldung.",
-  "jurisdiction": [ {
-    "coding": [ {
-      "system": "urn:iso:std:iso:3166",
-      "version": "ALPHA-2",
-      "code": "DE"
-    } ]
-  } ],
-  "copyright": "Copyright (C) 2021-2025 Robert Koch-Institut",
   "item": [ {
     "extension": [ {
       "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -42,9 +27,9 @@
     "answerValueSet": "https://demis.rki.de/fhir/ValueSet/yesOrNoOrNoInformation",
     "initial": [ {
       "valueCoding": {
-        "system": "http://snomed.info/sct",
-        "code": "1631000175102",
-        "display": "Patient not asked (contextual qualifier) (qualifier value)"
+        "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "code": "NASK",
+        "display": "not asked"
       }
     } ],
     "item": [ {
@@ -59,8 +44,8 @@
         "question": "immunization",
         "operator": "=",
         "answerCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "373066001"
+          "system": "https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer",
+          "code": "yes"
         }
       } ],
       "required": false,
@@ -85,15 +70,24 @@
     "answerValueSet": "https://demis.rki.de/fhir/ValueSet/answerSetInfectionEnvironmentSettingMYTD",
     "initial": [ {
       "valueCoding": {
-        "system": "http://snomed.info/sct",
-        "code": "1631000175102",
-        "display": "Patient not asked (contextual qualifier) (qualifier value)"
+        "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "code": "NASK",
+        "display": "not asked"
       }
     } ],
     "item": [ {
-      "linkId": "infectionEnvironmentSettingBegin",
-      "text": "Beginn Infektionsumfeld",
-      "type": "date",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "http://hl7.org/fhir/questionnaire-item-control",
+            "code": "gtable",
+            "display": "Group Table"
+          } ]
+        }
+      } ],
+      "linkId": "infectionEnvironmentSettingGroup",
+      "type": "group",
       "enableWhen": [ {
         "question": "infectionEnvironmentSettingKind",
         "operator": "=",
@@ -111,111 +105,114 @@
       } ],
       "enableBehavior": "any",
       "required": false,
-      "repeats": false
-    }, {
-      "linkId": "infectionEnvironmentSettingEnd",
-      "text": "Ende Infektionsumfeld",
-      "type": "date",
-      "enableWhen": [ {
-        "question": "infectionEnvironmentSettingKind",
-        "operator": "=",
-        "answerCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "257656006"
-        }
+      "repeats": false,
+      "item": [ {
+        "linkId": "infectionEnvironmentSettingBegin",
+        "text": "Beginn Infektionsumfeld",
+        "type": "date",
+        "required": false,
+        "repeats": false
       }, {
-        "question": "infectionEnvironmentSettingKind",
-        "operator": "=",
-        "answerCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "74964007"
+        "linkId": "infectionEnvironmentSettingEnd",
+        "text": "Ende Infektionsumfeld",
+        "type": "date",
+        "required": false,
+        "repeats": false
+      } ]
+    } ]
+  }, {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/questionnaire-item-control",
+          "code": "gtable",
+          "display": "Group Table"
+        } ]
+      }
+    } ],
+    "linkId": "nationalityGroup",
+    "type": "group",
+    "required": true,
+    "repeats": false,
+    "item": [ {
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "http://hl7.org/fhir/questionnaire-item-control",
+            "code": "drop-down",
+            "display": "Drop down"
+          } ]
         }
       } ],
-      "enableBehavior": "any",
+      "linkId": "nationality",
+      "text": "Welche Staatsangehörigkeit hat die betroffene Person?",
+      "type": "choice",
+      "required": true,
+      "repeats": false,
+      "answerValueSet": "https://demis.rki.de/fhir/ValueSet/answerSetCountry",
+      "initial": [ {
+        "valueCoding": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+          "code": "NASK",
+          "display": "not asked"
+        }
+      } ]
+    }, {
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "http://hl7.org/fhir/questionnaire-item-control",
+            "code": "drop-down",
+            "display": "Drop down"
+          } ]
+        }
+      } ],
+      "linkId": "countryOfBirth",
+      "text": "Welcher ist der Geburtsstaat der betroffenen Person?",
+      "type": "choice",
+      "required": true,
+      "repeats": false,
+      "answerValueSet": "https://demis.rki.de/fhir/ValueSet/answerSetCountry",
+      "initial": [ {
+        "valueCoding": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+          "code": "NASK",
+          "display": "not asked"
+        }
+      } ]
+    }, {
+      "linkId": "yearOfEntry",
+      "text": "Jahr der Einreise in Deutschland?",
+      "type": "date",
+      "enableWhen": [ {
+        "question": "countryOfBirth",
+        "operator": "!=",
+        "answerCoding": {
+          "system": "urn:iso:std:iso:3166",
+          "code": "DE"
+        }
+      }, {
+        "question": "countryOfBirth",
+        "operator": "!=",
+        "answerCoding": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+          "code": "ASKU"
+        }
+      }, {
+        "question": "countryOfBirth",
+        "operator": "!=",
+        "answerCoding": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+          "code": "NASK"
+        }
+      } ],
+      "enableBehavior": "all",
       "required": false,
       "repeats": false
     } ]
-  }, {
-    "extension": [ {
-      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
-      "valueCodeableConcept": {
-        "coding": [ {
-          "system": "http://hl7.org/fhir/questionnaire-item-control",
-          "code": "drop-down",
-          "display": "Drop down"
-        } ]
-      }
-    } ],
-    "linkId": "nationality",
-    "text": "Welche Staatsangehörigkeit hat die betroffene Person?",
-    "type": "choice",
-    "required": true,
-    "repeats": false,
-    "answerValueSet": "https://demis.rki.de/fhir/ValueSet/answerSetCountry",
-    "initial": [ {
-      "valueCoding": {
-        "system": "http://snomed.info/sct",
-        "code": "1631000175102",
-        "display": "Patient not asked (contextual qualifier) (qualifier value)"
-      }
-    } ]
-  }, {
-    "extension": [ {
-      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
-      "valueCodeableConcept": {
-        "coding": [ {
-          "system": "http://hl7.org/fhir/questionnaire-item-control",
-          "code": "drop-down",
-          "display": "Drop down"
-        } ]
-      }
-    } ],
-    "linkId": "countryOfBirth",
-    "text": "Welcher ist der Geburtsstaat der betroffenen Person?",
-    "type": "choice",
-    "required": true,
-    "repeats": false,
-    "answerValueSet": "https://demis.rki.de/fhir/ValueSet/answerSetCountry",
-    "initial": [ {
-      "valueCoding": {
-        "system": "http://snomed.info/sct",
-        "code": "1631000175102",
-        "display": "Patient not asked (contextual qualifier) (qualifier value)"
-      }
-    } ]
-  }, {
-    "extension": [ {
-      "url": "http://hl7.org/fhir/StructureDefinition/regex",
-      "valueString": "^19[0-9]{2}$|^20[0-9]{2}$"
-    } ],
-    "linkId": "yearOfEntry",
-    "text": "Jahr der Einreise in Deutschland?",
-    "type": "date",
-    "enableWhen": [ {
-      "question": "countryOfBirth",
-      "operator": "!=",
-      "answerCoding": {
-        "system": "urn:iso:std:iso:3166",
-        "code": "DE"
-      }
-    }, {
-      "question": "countryOfBirth",
-      "operator": "!=",
-      "answerCoding": {
-        "system": "http://snomed.info/sct",
-        "code": "261665006"
-      }
-    }, {
-      "question": "countryOfBirth",
-      "operator": "!=",
-      "answerCoding": {
-        "system": "http://snomed.info/sct",
-        "code": "1631000175102"
-      }
-    } ],
-    "enableBehavior": "all",
-    "required": false,
-    "repeats": false
   }, {
     "extension": [ {
       "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -235,9 +232,9 @@
     "answerValueSet": "https://demis.rki.de/fhir/ValueSet/yesOrNoOrNoInformation",
     "initial": [ {
       "valueCoding": {
-        "system": "http://snomed.info/sct",
-        "code": "1631000175102",
-        "display": "Patient not asked (contextual qualifier) (qualifier value)"
+        "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "code": "NASK",
+        "display": "not asked"
       }
     } ],
     "item": [ {
@@ -258,8 +255,8 @@
         "question": "childrenUnder15Years",
         "operator": "=",
         "answerCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "373066001"
+          "system": "https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer",
+          "code": "yes"
         }
       } ],
       "required": false,
@@ -267,9 +264,9 @@
       "answerValueSet": "https://demis.rki.de/fhir/ValueSet/answerSetCountry",
       "initial": [ {
         "valueCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "1631000175102",
-          "display": "Patient not asked (contextual qualifier) (qualifier value)"
+          "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+          "code": "NASK",
+          "display": "not asked"
         }
       } ]
     }, {
@@ -290,8 +287,8 @@
         "question": "childrenUnder15Years",
         "operator": "=",
         "answerCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "373066001"
+          "system": "https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer",
+          "code": "yes"
         }
       } ],
       "required": false,
@@ -299,9 +296,9 @@
       "answerValueSet": "https://demis.rki.de/fhir/ValueSet/answerSetCountry",
       "initial": [ {
         "valueCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "1631000175102",
-          "display": "Patient not asked (contextual qualifier) (qualifier value)"
+          "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+          "code": "NASK",
+          "display": "not asked"
         }
       } ]
     } ]
@@ -324,9 +321,9 @@
     "answerValueSet": "https://demis.rki.de/fhir/ValueSet/answerSetCauseDiagnosisMYTD",
     "initial": [ {
       "valueCoding": {
-        "system": "http://snomed.info/sct",
-        "code": "1631000175102",
-        "display": "Patient not asked (contextual qualifier) (qualifier value)"
+        "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "code": "NASK",
+        "display": "not asked"
       }
     } ]
   }, {
@@ -348,9 +345,9 @@
     "answerValueSet": "https://demis.rki.de/fhir/ValueSet/yesOrNoOrNoInformation",
     "initial": [ {
       "valueCoding": {
-        "system": "http://snomed.info/sct",
-        "code": "1631000175102",
-        "display": "Patient not asked (contextual qualifier) (qualifier value)"
+        "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "code": "NASK",
+        "display": "not asked"
       }
     } ],
     "item": [ {
@@ -371,8 +368,8 @@
         "question": "statusDiagnosis",
         "operator": "=",
         "answerCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "373066001"
+          "system": "https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer",
+          "code": "yes"
         }
       } ],
       "required": true,
@@ -380,16 +377,12 @@
       "answerValueSet": "https://demis.rki.de/fhir/ValueSet/yesOrNoOrNoInformation",
       "initial": [ {
         "valueCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "1631000175102",
-          "display": "Patient not asked (contextual qualifier) (qualifier value)"
+          "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+          "code": "NASK",
+          "display": "not asked"
         }
       } ],
       "item": [ {
-        "extension": [ {
-          "url": "http://hl7.org/fhir/StructureDefinition/regex",
-          "valueString": "^19[0-9]{2}-[0-9]{2}$|^20[0-9]{2}-[0-9]{2}$|^19[0-9]{2}$|^20[0-9]{2}$"
-        } ],
         "linkId": "treatmentBegin",
         "text": "Jahr und Monat der Behandlung",
         "type": "date",
@@ -397,8 +390,8 @@
           "question": "treatment",
           "operator": "=",
           "answerCoding": {
-            "system": "http://snomed.info/sct",
-            "code": "373066001"
+            "system": "https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer",
+            "code": "yes"
           }
         } ],
         "required": false,
@@ -421,8 +414,8 @@
           "question": "treatment",
           "operator": "=",
           "answerCoding": {
-            "system": "http://snomed.info/sct",
-            "code": "373066001"
+            "system": "https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer",
+            "code": "yes"
           }
         } ],
         "required": true,
@@ -430,43 +423,10 @@
         "answerValueSet": "https://demis.rki.de/fhir/ValueSet/answerSetResultOfTreatmentMYTD",
         "initial": [ {
           "valueCoding": {
-            "system": "http://snomed.info/sct",
-            "code": "1631000175102",
-            "display": "Patient not asked (contextual qualifier) (qualifier value)"
+            "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+            "code": "NASK",
+            "display": "not asked"
           }
-        } ],
-        "item": [ {
-          "extension": [ {
-            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
-            "valueCodeableConcept": {
-              "coding": [ {
-                "system": "http://hl7.org/fhir/questionnaire-item-control",
-                "code": "drop-down",
-                "display": "Drop down"
-              } ]
-            }
-          } ],
-          "linkId": "continuedTreatment",
-          "text": "Findet diese frühere Behandlung nach mehr als 12 Monaten statt? (Ergebnis steht noch aus)",
-          "type": "choice",
-          "enableWhen": [ {
-            "question": "resultOfTreatment",
-            "operator": "=",
-            "answerCoding": {
-              "system": "http://snomed.info/sct",
-              "code": "266714009"
-            }
-          } ],
-          "required": true,
-          "repeats": false,
-          "answerValueSet": "https://demis.rki.de/fhir/ValueSet/yesOrNoOrNoInformation",
-          "initial": [ {
-            "valueCoding": {
-              "system": "http://snomed.info/sct",
-              "code": "1631000175102",
-              "display": "Patient not asked (contextual qualifier) (qualifier value)"
-            }
-          } ]
         } ]
       } ]
     } ]
@@ -489,9 +449,9 @@
     "answerValueSet": "https://demis.rki.de/fhir/ValueSet/answerSetMajorSiteMYTD",
     "initial": [ {
       "valueCoding": {
-        "system": "http://snomed.info/sct",
-        "code": "1631000175102",
-        "display": "Patient not asked (contextual qualifier) (qualifier value)"
+        "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "code": "NASK",
+        "display": "not asked"
       }
     } ]
   }, {
@@ -513,9 +473,9 @@
     "answerValueSet": "https://demis.rki.de/fhir/ValueSet/answerSetMinorSiteMYTD",
     "initial": [ {
       "valueCoding": {
-        "system": "http://snomed.info/sct",
-        "code": "1631000175102",
-        "display": "Patient not asked (contextual qualifier) (qualifier value)"
+        "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "code": "NASK",
+        "display": "not asked"
       }
     } ]
   }, {
@@ -530,16 +490,16 @@
       }
     } ],
     "linkId": "prevTreatment",
-    "text": "War die betroffene Person bereits zuvor an einer Tuberkulose erkrankt?",
+    "text": "War die betroffene Person bereits zuvor an einer Tuberkulose erkrankt (StatusPrevDisease)?",
     "type": "choice",
     "required": true,
     "repeats": false,
     "answerValueSet": "https://demis.rki.de/fhir/ValueSet/yesOrNoOrNoInformation",
     "initial": [ {
       "valueCoding": {
-        "system": "http://snomed.info/sct",
-        "code": "1631000175102",
-        "display": "Patient not asked (contextual qualifier) (qualifier value)"
+        "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "code": "NASK",
+        "display": "not asked"
       }
     } ],
     "item": [ {
@@ -560,8 +520,8 @@
         "question": "prevTreatment",
         "operator": "=",
         "answerCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "373066001"
+          "system": "https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer",
+          "code": "yes"
         }
       } ],
       "required": true,
@@ -569,16 +529,12 @@
       "answerValueSet": "https://demis.rki.de/fhir/ValueSet/yesOrNoOrNoInformation",
       "initial": [ {
         "valueCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "1631000175102",
-          "display": "Patient not asked (contextual qualifier) (qualifier value)"
+          "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+          "code": "NASK",
+          "display": "not asked"
         }
       } ],
       "item": [ {
-        "extension": [ {
-          "url": "http://hl7.org/fhir/StructureDefinition/regex",
-          "valueString": "^19[0-9]{2}-[0-9]{2}$|^20[0-9]{2}-[0-9]{2}$|^19[0-9]{2}$|^20[0-9]{2}$"
-        } ],
         "linkId": "prevTreatmentYear",
         "text": "Jahr der Vorbehandlung",
         "type": "date",
@@ -586,8 +542,8 @@
           "question": "statusPrevTreatment",
           "operator": "=",
           "answerCoding": {
-            "system": "http://snomed.info/sct",
-            "code": "373066001"
+            "system": "https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer",
+            "code": "yes"
           }
         } ],
         "required": false,
@@ -610,8 +566,8 @@
           "question": "statusPrevTreatment",
           "operator": "=",
           "answerCoding": {
-            "system": "http://snomed.info/sct",
-            "code": "373066001"
+            "system": "https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer",
+            "code": "yes"
           }
         } ],
         "required": true,
@@ -619,9 +575,9 @@
         "answerValueSet": "https://demis.rki.de/fhir/ValueSet/answerSetResultOfPrevTreatmentMYTD",
         "initial": [ {
           "valueCoding": {
-            "system": "http://snomed.info/sct",
-            "code": "1631000175102",
-            "display": "Patient not asked (contextual qualifier) (qualifier value)"
+            "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+            "code": "NASK",
+            "display": "not asked"
           }
         } ]
       } ]
@@ -645,9 +601,9 @@
     "answerValueSet": "https://demis.rki.de/fhir/ValueSet/yesOrNoOrNoInformation",
     "initial": [ {
       "valueCoding": {
-        "system": "http://snomed.info/sct",
-        "code": "1631000175102",
-        "display": "Patient not asked (contextual qualifier) (qualifier value)"
+        "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "code": "NASK",
+        "display": "not asked"
       }
     } ],
     "item": [ {
@@ -658,8 +614,8 @@
         "question": "outbreak",
         "operator": "=",
         "answerCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "373066001"
+          "system": "https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer",
+          "code": "yes"
         }
       } ],
       "required": false,
@@ -672,8 +628,8 @@
         "question": "outbreak",
         "operator": "=",
         "answerCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "373066001"
+          "system": "https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer",
+          "code": "yes"
         }
       } ],
       "required": false,

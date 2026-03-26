@@ -2,11 +2,11 @@
   "resourceType": "StructureDefinition",
   "id": "PathogenDetection",
   "url": "https://demis.rki.de/fhir/StructureDefinition/PathogenDetection",
-  "version": "2.1.1",
+  "version": "3.0.0",
   "name": "PathogenDetection",
   "title": "Erregernachweis",
   "status": "active",
-  "date": "2026-01-08",
+  "date": "2026-02-12",
   "publisher": "Robert Koch-Institut",
   "contact": [ {
     "telecom": [ {
@@ -6518,7 +6518,7 @@
       "id": "Observation.method",
       "path": "Observation.method",
       "short": "Angaben zur genutzten Nachweismethode.",
-      "definition": "Angaben zur genutzten Nachweismethode. Über die im Observation.code verschlüsselte Nachweismethode hinaus, sollen dem öffentlichen Gesundheitsdienst detaillierte Angaben zur jeweils genutzten Nachweismethode bereitgestellt werden. Für die automatisierte Weiterverarbeitung der Inhalte im Gesundheitsamt ist die Angabe der Methode wichtig. Insbesondere für unspezifische LOINC Codes, wie sie für die Meldung von mikrobiologischen Ergebnissen benötigt werden ist die Angabe der Methode als SNOMED-CT Code notwendig um einen vollständigen Meldungsinhalt zu übermitteln. Die Angabe einer Methode als SNOMED -CT Code wird jetzt verpflichtend eingeführt. Das ValueSet Method ist noch nicht verpflichtend, da das vom BfArM erstellte RefSet für Methoden noch nicht fertig ist.",
+      "definition": "Angaben zur genutzten Nachweismethode. Über die im Observation.code verschlüsselte Nachweismethode hinaus, sollen dem öffentlichen Gesundheitsdienst detaillierte Angaben zur jeweils genutzten Nachweismethode bereitgestellt werden. Für die automatisierte Weiterverarbeitung der Inhalte im Gesundheitsamt ist die Angabe der Methode wichtig. Insbesondere für unspezifische LOINC Codes, wie sie für die Meldung von mikrobiologischen Ergebnissen benötigt werden ist die Angabe der Methode als SNOMED-CT Code notwendig um einen vollständigen Meldungsinhalt zu übermitteln. Die Angabe einer Methode als SNOMED-CT Code wird jetzt verpflichtend eingeführt.",
       "comment": "Die Angabe der Nachweismethode unter Verwendung von method.text ist in folgenden zwei Ausnahmefällen zulässig: \r\n- Die Nachweismethode ist in dem ValueSet https://demis.rki.de/fhir/ValueSet/method nicht enthalten. Bitte geben Sie Feedback an DEMIS (demis-support@rki.de), damit das ValueSet ergänzt werden kann.\n- Das Primärsystem kann die internen Codes zur Zeit noch nicht korrekt auf die SNOMED-Codes des ValueSets https://demis.rki.de/fhir/ValueSet/method mappen.",
       "requirements": "In some cases, method can impact results and is thus used for determining whether results can be compared or determining significance of results.",
       "min": 1,
@@ -6659,7 +6659,7 @@
       "isModifier": false,
       "isSummary": true,
       "binding": {
-        "strength": "extensible",
+        "strength": "required",
         "valueSet": "https://demis.rki.de/fhir/ValueSet/method"
       },
       "mapping": [ {
@@ -9712,7 +9712,7 @@
       "id": "Observation.method",
       "path": "Observation.method",
       "short": "Angaben zur genutzten Nachweismethode.",
-      "definition": "Angaben zur genutzten Nachweismethode. Über die im Observation.code verschlüsselte Nachweismethode hinaus, sollen dem öffentlichen Gesundheitsdienst detaillierte Angaben zur jeweils genutzten Nachweismethode bereitgestellt werden. Für die automatisierte Weiterverarbeitung der Inhalte im Gesundheitsamt ist die Angabe der Methode wichtig. Insbesondere für unspezifische LOINC Codes, wie sie für die Meldung von mikrobiologischen Ergebnissen benötigt werden ist die Angabe der Methode als SNOMED-CT Code notwendig um einen vollständigen Meldungsinhalt zu übermitteln. Die Angabe einer Methode als SNOMED -CT Code wird jetzt verpflichtend eingeführt. Das ValueSet Method ist noch nicht verpflichtend, da das vom BfArM erstellte RefSet für Methoden noch nicht fertig ist.",
+      "definition": "Angaben zur genutzten Nachweismethode. Über die im Observation.code verschlüsselte Nachweismethode hinaus, sollen dem öffentlichen Gesundheitsdienst detaillierte Angaben zur jeweils genutzten Nachweismethode bereitgestellt werden. Für die automatisierte Weiterverarbeitung der Inhalte im Gesundheitsamt ist die Angabe der Methode wichtig. Insbesondere für unspezifische LOINC Codes, wie sie für die Meldung von mikrobiologischen Ergebnissen benötigt werden ist die Angabe der Methode als SNOMED-CT Code notwendig um einen vollständigen Meldungsinhalt zu übermitteln. Die Angabe einer Methode als SNOMED-CT Code wird jetzt verpflichtend eingeführt.",
       "comment": "Die Angabe der Nachweismethode unter Verwendung von method.text ist in folgenden zwei Ausnahmefällen zulässig: \r\n- Die Nachweismethode ist in dem ValueSet https://demis.rki.de/fhir/ValueSet/method nicht enthalten. Bitte geben Sie Feedback an DEMIS (demis-support@rki.de), damit das ValueSet ergänzt werden kann.\n- Das Primärsystem kann die internen Codes zur Zeit noch nicht korrekt auf die SNOMED-Codes des ValueSets https://demis.rki.de/fhir/ValueSet/method mappen.",
       "min": 1,
       "max": "1",
@@ -9724,7 +9724,7 @@
       "max": "1",
       "mustSupport": true,
       "binding": {
-        "strength": "extensible",
+        "strength": "required",
         "valueSet": "https://demis.rki.de/fhir/ValueSet/method"
       }
     }, {
