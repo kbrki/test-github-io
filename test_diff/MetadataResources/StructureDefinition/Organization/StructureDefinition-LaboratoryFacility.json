@@ -2,11 +2,11 @@
   "resourceType": "StructureDefinition",
   "id": "LaboratoryFacility",
   "url": "https://demis.rki.de/fhir/StructureDefinition/LaboratoryFacility",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "name": "LaboratoryFacility",
   "title": "Beauftragtes Labor",
   "status": "active",
-  "date": "2025-12-11",
+  "date": "2026-03-13",
   "publisher": "Robert Koch-Institut",
   "contact": [ {
     "telecom": [ {
@@ -1282,8 +1282,7 @@
       } ],
       "patternCoding": {
         "system": "https://demis.rki.de/fhir/CodeSystem/organizationType",
-        "code": "laboratory",
-        "display": "Erregerdiagnostische Untersuchungsstelle"
+        "code": "laboratory"
       },
       "constraint": [ {
         "key": "ele-1",
@@ -1431,7 +1430,7 @@
       "definition": "Kontaktangaben der Einrichtung. Telefonnummern, E-Mailadressen, Urls und Faxnummern können angegeben werden.",
       "comment": "The use code 'home' is not to be used. Note that these contacts are not the contact details of people who are employed by or represent the organization, but official contacts for the organization itself.",
       "requirements": "Human contact for the organization.",
-      "min": 1,
+      "min": 0,
       "max": "*",
       "base": {
         "path": "Organization.telecom",
@@ -4147,8 +4146,7 @@
       "max": "1",
       "patternCoding": {
         "system": "https://demis.rki.de/fhir/CodeSystem/organizationType",
-        "code": "laboratory",
-        "display": "Erregerdiagnostische Untersuchungsstelle"
+        "code": "laboratory"
       },
       "mustSupport": true
     }, {
@@ -4170,7 +4168,6 @@
       },
       "short": "Kontaktangaben der Einrichtung",
       "definition": "Kontaktangaben der Einrichtung. Telefonnummern, E-Mailadressen, Urls und Faxnummern können angegeben werden.",
-      "min": 1,
       "mustSupport": true
     }, {
       "id": "Organization.telecom:Email",
@@ -4288,7 +4285,8 @@
       "min": 1,
       "mustSupport": true,
       "binding": {
-        "strength": "extensible"
+        "strength": "extensible",
+        "valueSet": "http://hl7.org/fhir/ValueSet/iso3166-1-2"
       }
     }, {
       "id": "Organization.contact",

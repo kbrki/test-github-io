@@ -2,11 +2,11 @@
   "resourceType": "StructureDefinition",
   "id": "DiseaseTRPD",
   "url": "https://demis.rki.de/fhir/StructureDefinition/DiseaseTRPD",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "name": "DiseaseTRPD",
   "title": "Nichtnamentliche Ergänzung von Erkrankungsinformationen für Treponema pallidum",
   "status": "active",
-  "date": "2025-08-12",
+  "date": "2026-03-13",
   "description": "Die Condition-Ressource DiseaseTRPD spezifiziert die zu ergänzenden Erkrankungsinformationen wie z.B. Symptome hinsichtlich Treponema pallidum.",
   "fhirVersion": "4.0.1",
   "mapping": [ {
@@ -2318,6 +2318,7 @@
         "xpath": "@value|f:*|h:div",
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       } ],
+      "mustSupport": true,
       "isModifier": false,
       "isSummary": false,
       "mapping": [ {
@@ -2452,6 +2453,7 @@
         "xpath": "@value|f:*|h:div",
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       } ],
+      "mustSupport": true,
       "isModifier": false,
       "isSummary": true,
       "binding": {
@@ -2573,10 +2575,11 @@
         "xpath": "@value|f:*|h:div",
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       } ],
+      "mustSupport": true,
       "isModifier": false,
       "isSummary": true,
       "binding": {
-        "strength": "extensible",
+        "strength": "required",
         "description": "Symptome und Manifestationen in Bezug auf Treponema pallidum",
         "valueSet": "https://demis.rki.de/fhir/ValueSet/evidenceTRPD"
       },
@@ -2687,6 +2690,7 @@
         "xpath": "@value|f:*|h:div",
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       } ],
+      "mustSupport": true,
       "isModifier": false,
       "isSummary": true,
       "mapping": [ {
@@ -2759,6 +2763,7 @@
         "xpath": "@value|f:*|h:div",
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       } ],
+      "mustSupport": true,
       "isModifier": false,
       "isSummary": true,
       "mapping": [ {
@@ -2979,30 +2984,35 @@
       "id": "Condition.evidence",
       "path": "Condition.evidence",
       "short": "Symptome und Manifestationen in Bezug auf Treponema pallidum",
-      "definition": "Der Wert muss als SNOMED-Code - entsprechend des vom RKI definierten und in regelmäßigen Abständen aktualisierten ValueSets (https://demis.rki.de/fhir/ValueSet/evidenceTRPD) – im code.coding Element dargestellt werden."
+      "definition": "Der Wert muss als SNOMED-Code - entsprechend des vom RKI definierten und in regelmäßigen Abständen aktualisierten ValueSets (https://demis.rki.de/fhir/ValueSet/evidenceTRPD) – im code.coding Element dargestellt werden.",
+      "mustSupport": true
     }, {
       "id": "Condition.evidence.code",
       "path": "Condition.evidence.code",
       "min": 1,
-      "max": "1"
+      "max": "1",
+      "mustSupport": true
     }, {
       "id": "Condition.evidence.code.coding",
       "path": "Condition.evidence.code.coding",
       "min": 1,
       "max": "1",
+      "mustSupport": true,
       "binding": {
-        "strength": "extensible",
+        "strength": "required",
         "description": "Symptome und Manifestationen in Bezug auf Treponema pallidum",
         "valueSet": "https://demis.rki.de/fhir/ValueSet/evidenceTRPD"
       }
     }, {
       "id": "Condition.evidence.code.coding.system",
       "path": "Condition.evidence.code.coding.system",
-      "min": 1
+      "min": 1,
+      "mustSupport": true
     }, {
       "id": "Condition.evidence.code.coding.code",
       "path": "Condition.evidence.code.coding.code",
-      "min": 1
+      "min": 1,
+      "mustSupport": true
     } ]
   }
 }

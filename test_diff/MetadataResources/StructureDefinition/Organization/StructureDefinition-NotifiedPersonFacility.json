@@ -2,27 +2,12 @@
   "resourceType": "StructureDefinition",
   "id": "NotifiedPersonFacility",
   "url": "https://demis.rki.de/fhir/StructureDefinition/NotifiedPersonFacility",
-  "version": "2.0.1",
+  "version": "1.8.0",
   "name": "NotifiedPersonFacility",
   "title": "Betroffenen-Einrichtung",
   "status": "active",
-  "date": "2026-01-08",
-  "publisher": "Robert Koch-Institut",
-  "contact": [ {
-    "telecom": [ {
-      "system": "email",
-      "value": "demis-support@rki.de"
-    } ]
-  } ],
+  "date": "2025-12-11",
   "description": "Sofern dem Melder bekannt ist, wo sich die betroffene Person derzeit aufhält (abweichend vom Hauptwohnsitz) ist diese Information anzugeben.",
-  "jurisdiction": [ {
-    "coding": [ {
-      "system": "urn:iso:std:iso:3166",
-      "version": "ALPHA-2",
-      "code": "DE"
-    } ]
-  } ],
-  "copyright": "Copyright (C) 2021-2025 Robert Koch-Institut",
   "fhirVersion": "4.0.1",
   "mapping": [ {
     "identity": "servd",
@@ -367,7 +352,7 @@
         "code": "canonical",
         "targetProfile": [ "http://hl7.org/fhir/StructureDefinition/StructureDefinition" ]
       } ],
-      "patternCanonical": "https://demis.rki.de/fhir/StructureDefinition/NotifiedPersonFacility",
+      "fixedCanonical": "https://demis.rki.de/fhir/StructureDefinition/NotifiedPersonFacility",
       "constraint": [ {
         "key": "ele-1",
         "severity": "error",
@@ -694,7 +679,7 @@
       "comment": "This active flag is not intended to be used to mark an organization as temporarily closed or under construction. Instead the Location(s) within the Organization should have the suspended status. If further details of the reason for the suspension are required, then an extension on this element should be used.  This element is labeled as a modifier because it may be used to mark that the resource was created in error.",
       "requirements": "Need a flag to indicate a record is no longer to be used and should generally be hidden for the user in the UI.",
       "min": 0,
-      "max": "0",
+      "max": "1",
       "base": {
         "path": "Organization.active",
         "min": 0,
@@ -1273,8 +1258,8 @@
         } ],
         "rules": "closed"
       },
-      "short": "Kontaktangaben der Betroffenen-Einrichtung",
-      "definition": "Kontaktangaben der Betroffenen-Einrichtung. Telefonnummern, E-Mailadressen, Urls oder Faxnummern können angegeben werden.",
+      "short": "Kontaktangaben der Betroffenen Person",
+      "definition": "Kontaktangaben der Betroffenen Person. Telefonnummern oder E-Mailadressen können angegeben werden.",
       "comment": "The use code 'home' is not to be used. Note that these contacts are not the contact details of people who are employed by or represent the organization, but official contacts for the organization itself.",
       "requirements": "Human contact for the organization.",
       "min": 0,
@@ -1507,7 +1492,7 @@
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       }, {
         "key": "validEmailAddress",
-        "severity": "error",
+        "severity": "warning",
         "human": "Die E-Mail-Adresse muss valide sein.",
         "expression": "$this.matches('^[a-zA-Z0-9._%+-]+@(?:[a-zA-Z0-9-]+[.])+[a-zA-Z0-9]{2,63}$')"
       } ],
@@ -1673,7 +1658,6 @@
         "xpath": "count(f:use[@value='home']) = 0",
         "source": "http://hl7.org/fhir/StructureDefinition/Organization"
       } ],
-      "mustSupport": true,
       "isModifier": false,
       "isSummary": false,
       "mapping": [ {
@@ -1866,7 +1850,7 @@
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       }, {
         "key": "validPhoneNumber",
-        "severity": "error",
+        "severity": "warning",
         "human": "Die Telefonnummer muss valide sein.",
         "expression": "$this.matches('^[0+][0-9 \\\\-\\\\(\\\\)]{6,50}$')"
       } ],
@@ -2189,7 +2173,7 @@
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       }, {
         "key": "validUrl",
-        "severity": "error",
+        "severity": "warning",
         "human": "Die Url muss valide sein.",
         "expression": "$this.matches('^(https?:\\\\/\\\\/(?:www\\\\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\\\.[^\\\\s]{2,}|www\\\\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\\\.[^\\\\s]{2,}|https?:\\\\/\\\\/(?:www\\\\.|(?!www))[a-zA-Z0-9]+\\\\.[^\\\\s]{2,}|www\\\\.[a-zA-Z0-9]+\\\\.[^\\\\s]{2,})$')"
       } ],
@@ -2512,7 +2496,7 @@
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       }, {
         "key": "validFaxNumber",
-        "severity": "error",
+        "severity": "warning",
         "human": "Die Faxnummer muss valide sein.",
         "expression": "$this.matches('^[0+][0-9 \\\\-\\\\(\\\\)]{6,50}$')"
       } ],
@@ -3443,6 +3427,10 @@
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       } ],
       "isSummary": true,
+      "binding": {
+        "strength": "preferred",
+        "valueSet": "https://demis.rki.de/fhir/ValueSet/postalCode"
+      },
       "mapping": [ {
         "identity": "rim",
         "map": "n/a"
@@ -3862,8 +3850,7 @@
         "max": "1"
       },
       "type": [ {
-        "code": "Address",
-        "profile": [ "http://fhir.de/StructureDefinition/address-de-basis" ]
+        "code": "Address"
       } ],
       "constraint": [ {
         "key": "ele-1",
@@ -3939,12 +3926,8 @@
       "sliceName": "notifiedPersonFacility",
       "min": 1,
       "max": "1",
-      "patternCanonical": "https://demis.rki.de/fhir/StructureDefinition/NotifiedPersonFacility",
+      "fixedCanonical": "https://demis.rki.de/fhir/StructureDefinition/NotifiedPersonFacility",
       "mustSupport": true
-    }, {
-      "id": "Organization.active",
-      "path": "Organization.active",
-      "max": "0"
     }, {
       "id": "Organization.type",
       "path": "Organization.type",
@@ -3992,8 +3975,8 @@
         } ],
         "rules": "closed"
       },
-      "short": "Kontaktangaben der Betroffenen-Einrichtung",
-      "definition": "Kontaktangaben der Betroffenen-Einrichtung. Telefonnummern, E-Mailadressen, Urls oder Faxnummern können angegeben werden.",
+      "short": "Kontaktangaben der Betroffenen Person",
+      "definition": "Kontaktangaben der Betroffenen Person. Telefonnummern oder E-Mailadressen können angegeben werden.",
       "mustSupport": true
     }, {
       "id": "Organization.telecom:Email",
@@ -4011,7 +3994,7 @@
       "min": 1,
       "constraint": [ {
         "key": "validEmailAddress",
-        "severity": "error",
+        "severity": "warning",
         "human": "Die E-Mail-Adresse muss valide sein.",
         "expression": "$this.matches('^[a-zA-Z0-9._%+-]+@(?:[a-zA-Z0-9-]+[.])+[a-zA-Z0-9]{2,63}$')"
       } ],
@@ -4019,8 +4002,7 @@
     }, {
       "id": "Organization.telecom:Phone",
       "path": "Organization.telecom",
-      "sliceName": "Phone",
-      "mustSupport": true
+      "sliceName": "Phone"
     }, {
       "id": "Organization.telecom:Phone.extension",
       "path": "Organization.telecom.extension",
@@ -4052,7 +4034,7 @@
       "min": 1,
       "constraint": [ {
         "key": "validPhoneNumber",
-        "severity": "error",
+        "severity": "warning",
         "human": "Die Telefonnummer muss valide sein.",
         "expression": "$this.matches('^[0+][0-9 \\\\-\\\\(\\\\)]{6,50}$')"
       } ],
@@ -4073,7 +4055,7 @@
       "min": 1,
       "constraint": [ {
         "key": "validUrl",
-        "severity": "error",
+        "severity": "warning",
         "human": "Die Url muss valide sein.",
         "expression": "$this.matches('^(https?:\\\\/\\\\/(?:www\\\\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\\\.[^\\\\s]{2,}|www\\\\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\\\.[^\\\\s]{2,}|https?:\\\\/\\\\/(?:www\\\\.|(?!www))[a-zA-Z0-9]+\\\\.[^\\\\s]{2,}|www\\\\.[a-zA-Z0-9]+\\\\.[^\\\\s]{2,})$')"
       } ],
@@ -4094,7 +4076,7 @@
       "min": 1,
       "constraint": [ {
         "key": "validFaxNumber",
-        "severity": "error",
+        "severity": "warning",
         "human": "Die Faxnummer muss valide sein.",
         "expression": "$this.matches('^[0+][0-9 \\\\-\\\\(\\\\)]{6,50}$')"
       } ],
@@ -4131,7 +4113,10 @@
     }, {
       "id": "Organization.address.postalCode",
       "path": "Organization.address.postalCode",
-      "short": "Postleitzahl"
+      "binding": {
+        "strength": "preferred",
+        "valueSet": "https://demis.rki.de/fhir/ValueSet/postalCode"
+      }
     }, {
       "id": "Organization.address.country",
       "path": "Organization.address.country",
@@ -4151,13 +4136,6 @@
       "short": "Ansprechpartner der Einrichtung",
       "definition": "Ansprechpartner der Einrichtung",
       "mustSupport": true
-    }, {
-      "id": "Organization.contact.address",
-      "path": "Organization.contact.address",
-      "type": [ {
-        "code": "Address",
-        "profile": [ "http://fhir.de/StructureDefinition/address-de-basis" ]
-      } ]
     }, {
       "id": "Organization.endpoint",
       "path": "Organization.endpoint",

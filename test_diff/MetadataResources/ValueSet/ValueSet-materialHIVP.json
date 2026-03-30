@@ -2,12 +2,12 @@
   "resourceType": "ValueSet",
   "id": "materialHIVP",
   "url": "https://demis.rki.de/fhir/ValueSet/materialHIVP",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "name": "MaterialHIVP",
   "title": "Material für Humanes Immundefizienz-Virus (HIV)",
   "status": "active",
   "experimental": false,
-  "date": "2025-12-05",
+  "date": "2026-03-20",
   "publisher": "Robert Koch-Institut",
   "contact": [ {
     "telecom": [ {
@@ -188,6 +188,13 @@
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 0
         } ],
+        "code": "119298005",
+        "display": "Gemischt-venöse Blutprobe"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
         "code": "119361006",
         "display": "Plasmaprobe"
       }, {
@@ -216,8 +223,36 @@
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 0
         } ],
+        "code": "122560006",
+        "display": "Spenderblutprobe"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
         "code": "122592007",
         "display": "Azelluläre Blutprobe"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "1345234004",
+        "display": "Dünner Tropfen"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "1345235003",
+        "display": "Dicker Tropfen"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "1345270001",
+        "display": "Blutkulturplatte eingereicht als Probenmaterial"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
@@ -237,16 +272,15 @@
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 0
         } ],
+        "code": "404684003",
+        "display": "Klinisch relevante Erscheinung"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
         "code": "440500007",
-        "display": "Trockenblutkarte",
-        "designation": [ {
-          "language": "de-DE",
-          "use": {
-            "system": "http://snomed.info/sct",
-            "code": "900000000000013009"
-          },
-          "value": "Dried Blood Spot Sample"
-        } ]
+        "display": "Trockenblutkarte"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
@@ -262,6 +296,35 @@
           },
           "value": "EDTA-Blutprobe"
         } ]
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "57921000052103",
+        "display": "Vollblutprobe mit EDTA-Zusatz",
+        "designation": [ {
+          "language": "de-DE",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009"
+          },
+          "value": "EDTA-Vollblutprobe"
+        } ]
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "703432000",
+        "display": "Venöse Plasmaprobe"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "708048008",
+        "display": "Plasma mit Citrat-Zusatz"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
@@ -295,7 +358,7 @@
     } ]
   },
   "expansion": {
-    "timestamp": "2025-12-05T00:00:00+01:00",
+    "timestamp": "2026-03-20T00:00:00+01:00",
     "contains": [ {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
@@ -316,6 +379,11 @@
       "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "309052008",
       "display": "Probenmaterial der männlichen Genitalien"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "404684003",
+      "display": "Klinisch relevante Erscheinung"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
@@ -354,6 +422,11 @@
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "1345235003",
+      "display": "Dicker Tropfen"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "122554006",
       "display": "Kapillarblutprobe"
     }, {
@@ -389,6 +462,11 @@
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "1345270001",
+      "display": "Blutkulturplatte eingereicht als Probenmaterial"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "119328004",
       "display": "Muttermilchprobe"
     }, {
@@ -396,6 +474,11 @@
       "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "122592007",
       "display": "Azelluläre Blutprobe"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "57921000052103",
+      "display": "Vollblutprobe mit EDTA-Zusatz"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
@@ -411,6 +494,11 @@
       "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "258524009",
       "display": "Zervixabstrich"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "1345234004",
+      "display": "Dünner Tropfen"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
@@ -456,6 +544,26 @@
       "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "258511009",
       "display": "Urethralabstrich des Penis"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "708048008",
+      "display": "Plasma mit Citrat-Zusatz"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "119298005",
+      "display": "Gemischt-venöse Blutprobe"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "703432000",
+      "display": "Venöse Plasmaprobe"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "122560006",
+      "display": "Spenderblutprobe"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",

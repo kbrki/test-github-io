@@ -2,12 +2,12 @@
   "resourceType": "ValueSet",
   "id": "laboratoryTestCombined",
   "url": "https://demis.rki.de/fhir/ValueSet/laboratoryTestCombined",
-  "version": "2.0.0",
+  "version": "2.2.0",
   "name": "LaboratoryTestCombined",
   "title": "Labortests aller spezifischen LaboratoryTest-ValueSets (Kombiniert)",
   "status": "active",
   "experimental": false,
-  "date": "2025-12-05",
+  "date": "2026-03-23",
   "publisher": "Robert Koch-Institut",
   "contact": [ {
     "telecom": [ {
@@ -327,6 +327,9 @@
       }, {
         "code": "104428-8",
         "display": "Masern-Virus IgG-Antikörperavidität [Verhältnis] in Serum mittels Immunoassay"
+      }, {
+        "code": "104429-6",
+        "display": "Masern-Virus IgM-Antikörper [Verhältnis] in Serum mittels Immunoassay"
       }, {
         "code": "104432-0",
         "display": "Mycobacterium leprae PGL-1 Antikörper [Titer] in Serum"
@@ -1273,6 +1276,9 @@
         "code": "22309-9",
         "display": "Hantavirus Typ Puumala IgM-Antikörper [Titer] in Serum"
       }, {
+        "code": "22312-3",
+        "display": "Hepatitis-A-Virus Antikörper [Einheiten/Volumen] in Serum"
+      }, {
         "code": "22313-1",
         "display": "Hepatitis-A-Virus IgG-Antikörper [Einheiten/Volumen] in Serum"
       }, {
@@ -1494,6 +1500,12 @@
       }, {
         "code": "24128-1",
         "display": "Bordetella pertussis.Pertussis-Toxin IgA-Antikörper [Einheiten/Volumen] in Serum mittels Immunoassay"
+      }, {
+        "code": "24396-4",
+        "display": "Brucella sp IgG-Antikörper [Nachweis] in Serum"
+      }, {
+        "code": "24397-2",
+        "display": "Brucella sp IgM-Antikörper [Nachweis] in Serum"
       }, {
         "code": "25299-9",
         "display": "Masern-Virus IgG-Antikörper [Verhältnis] in Serum --1. Probenmaterial/2. Probenmaterial"
@@ -2007,6 +2019,9 @@
       }, {
         "code": "33331-0",
         "display": "West-Nil-Virus IgM-Antikörper [Titer] in Serum"
+      }, {
+        "code": "33390-6",
+        "display": "Respiratorisches Synzytial-Virus Antikörper [Nachweis] in Serum"
       }, {
         "code": "33462-3",
         "display": "Hepatitis-C-Virus IgG-Antikörper [Nachweis] in Serum mittels Immunoblot"
@@ -4264,6 +4279,9 @@
         "code": "94759-8",
         "display": "SARS-CoV-2 (COVID-19) RNA [Nachweis] in Probenmaterial vom Nasopharynx mittels Nukleinsäureamplifikation mit Sondendetektion"
       }, {
+        "code": "94769-7",
+        "display": "SARS-CoV-2 (COVID-19) Antikörper [Einheiten/Volumen] in Serum oder Plasma mittels Immunoassay"
+      }, {
         "code": "94837-2",
         "display": "Dengue-Virus 1+2+3+4 RNA [Nachweis] in Amnionflüssigkeit mittels Nukleinsäureamplifikation mit Sondendetektion"
       }, {
@@ -4477,7 +4495,7 @@
     } ]
   },
   "expansion": {
-    "timestamp": "2025-12-05T00:00:00+01:00",
+    "timestamp": "2026-03-23T00:00:00+01:00",
     "contains": [ {
       "system": "http://loinc.org",
       "version": "2.81",
@@ -5551,6 +5569,11 @@
     }, {
       "system": "http://loinc.org",
       "version": "2.81",
+      "code": "33390-6",
+      "display": "Respiratorisches Synzytial-Virus Antikörper [Nachweis] in Serum"
+    }, {
+      "system": "http://loinc.org",
+      "version": "2.81",
       "code": "18917-5",
       "display": "Doxycyclin [Empfindlichkeit]"
     }, {
@@ -6481,6 +6504,11 @@
     }, {
       "system": "http://loinc.org",
       "version": "2.81",
+      "code": "24397-2",
+      "display": "Brucella sp IgM-Antikörper [Nachweis] in Serum"
+    }, {
+      "system": "http://loinc.org",
+      "version": "2.81",
       "code": "73596-9",
       "display": "Marbofloxacin [Empfindlichkeit]"
     }, {
@@ -6503,6 +6531,11 @@
       "version": "2.81",
       "code": "13270-4",
       "display": "Mycoplasma pneumoniae IgA-Antikörper [Einheiten/Volumen] in Serum"
+    }, {
+      "system": "http://loinc.org",
+      "version": "2.81",
+      "code": "104429-6",
+      "display": "Masern-Virus IgM-Antikörper [Verhältnis] in Serum mittels Immunoassay"
     }, {
       "system": "http://loinc.org",
       "version": "2.81",
@@ -7623,6 +7656,11 @@
       "version": "2.81",
       "code": "11011-4",
       "display": "Hepatitis-C-Virus RNA [Einheiten/Volumen] (Viruslast) in Serum oder Plasma mittels Nukleinsäureamplifikation mit Sondendetektion"
+    }, {
+      "system": "http://loinc.org",
+      "version": "2.81",
+      "code": "94769-7",
+      "display": "SARS-CoV-2 (COVID-19) Antikörper [Einheiten/Volumen] in Serum oder Plasma mittels Immunoassay"
     }, {
       "system": "http://loinc.org",
       "version": "2.81",
@@ -10356,6 +10394,11 @@
     }, {
       "system": "http://loinc.org",
       "version": "2.81",
+      "code": "22312-3",
+      "display": "Hepatitis-A-Virus Antikörper [Einheiten/Volumen] in Serum"
+    }, {
+      "system": "http://loinc.org",
+      "version": "2.81",
       "code": "38990-8",
       "display": "Escherichia coli O157:H7 DNA [Nachweis] in Probenmaterial mittels Nukleinsäureamplifikation mit Sondendetektion"
     }, {
@@ -10838,6 +10881,11 @@
       "version": "2.81",
       "code": "74853-3",
       "display": "HIV 1 proviral DNA [Presence] in Specimen by NAA with probe detection"
+    }, {
+      "system": "http://loinc.org",
+      "version": "2.81",
+      "code": "24396-4",
+      "display": "Brucella sp IgG-Antikörper [Nachweis] in Serum"
     }, {
       "system": "http://loinc.org",
       "version": "2.81",

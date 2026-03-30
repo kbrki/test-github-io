@@ -2,27 +2,12 @@
   "resourceType": "StructureDefinition",
   "id": "TransmittingSite",
   "url": "https://demis.rki.de/fhir/StructureDefinition/TransmittingSite",
-  "version": "2.0.1",
+  "version": "1.4.0",
   "name": "TransmittingSite",
   "title": "Übermittlungsstelle",
   "status": "active",
-  "date": "2026-01-08",
-  "publisher": "Robert Koch-Institut",
-  "contact": [ {
-    "telecom": [ {
-      "system": "email",
-      "value": "demis-support@rki.de"
-    } ]
-  } ],
+  "date": "2024-01-08",
   "description": "Übermittlungsstelle",
-  "jurisdiction": [ {
-    "coding": [ {
-      "system": "urn:iso:std:iso:3166",
-      "version": "ALPHA-2",
-      "code": "DE"
-    } ]
-  } ],
-  "copyright": "Copyright (C) 2021-2025 Robert Koch-Institut",
   "fhirVersion": "4.0.1",
   "mapping": [ {
     "identity": "servd",
@@ -331,7 +316,7 @@
         "code": "canonical",
         "targetProfile": [ "http://hl7.org/fhir/StructureDefinition/StructureDefinition" ]
       } ],
-      "patternCanonical": "https://demis.rki.de/fhir/StructureDefinition/TransmittingSite",
+      "fixedCanonical": "https://demis.rki.de/fhir/StructureDefinition/TransmittingSite",
       "constraint": [ {
         "key": "ele-1",
         "severity": "error",
@@ -1036,7 +1021,7 @@
       "comment": "This active flag is not intended to be used to mark an organization as temporarily closed or under construction. Instead the Location(s) within the Organization should have the suspended status. If further details of the reason for the suspension are required, then an extension on this element should be used.  This element is labeled as a modifier because it may be used to mark that the resource was created in error.",
       "requirements": "Need a flag to indicate a record is no longer to be used and should generally be hidden for the user in the UI.",
       "min": 0,
-      "max": "0",
+      "max": "1",
       "base": {
         "path": "Organization.active",
         "min": 0,
@@ -1165,7 +1150,7 @@
       "comment": "There are no dates associated with the alias/historic names, as this is not intended to track when names were used, but to assist in searching so that older names can still result in identifying the organization.",
       "requirements": "Over time locations and organizations go through many changes and can be known by different names.  For searching knowing previous names that the organization was known by can be very useful.",
       "min": 0,
-      "max": "0",
+      "max": "*",
       "base": {
         "path": "Organization.alias",
         "min": 0,
@@ -1199,7 +1184,7 @@
         "rules": "closed"
       },
       "short": "A contact detail for the organization",
-      "definition": "Kontaktangaben der Einrichtung. Telefonnummern, E-Mailadressen, Urls und Faxnummern können angegeben werden.",
+      "definition": "A contact detail for the organization.",
       "comment": "The use code 'home' is not to be used. Note that these contacts are not the contact details of people who are employed by or represent the organization, but official contacts for the organization itself.",
       "requirements": "Human contact for the organization.",
       "min": 0,
@@ -1274,7 +1259,6 @@
         "xpath": "count(f:use[@value='home']) = 0",
         "source": "http://hl7.org/fhir/StructureDefinition/Organization"
       } ],
-      "mustSupport": true,
       "isModifier": false,
       "isSummary": false,
       "mapping": [ {
@@ -1446,7 +1430,7 @@
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       }, {
         "key": "validPhoneNumber",
-        "severity": "error",
+        "severity": "warning",
         "human": "Die Telefonnummer muss valide sein.",
         "expression": "$this.matches('^[0+][0-9 \\\\-\\\\(\\\\)]{6,50}$')"
       } ],
@@ -1783,7 +1767,7 @@
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       }, {
         "key": "validFaxNumber",
-        "severity": "error",
+        "severity": "warning",
         "human": "Die Faxnummer muss valide sein.",
         "expression": "$this.matches('^[0+][0-9 \\\\-\\\\(\\\\)]{6,50}$')"
       } ],
@@ -2120,7 +2104,7 @@
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       }, {
         "key": "validEmailAddress",
-        "severity": "error",
+        "severity": "warning",
         "human": "Die E-Mail-Adresse muss valide sein.",
         "expression": "$this.matches('^[a-zA-Z0-9._%+-]+@(?:[a-zA-Z0-9-]+[.])+[a-zA-Z0-9]{2,63}$')"
       } ],
@@ -2779,7 +2763,7 @@
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       }, {
         "key": "validPhoneNumber",
-        "severity": "error",
+        "severity": "warning",
         "human": "Die Telefonnummer muss valide sein.",
         "expression": "$this.matches('^[0+][0-9 \\\\-\\\\(\\\\)]{6,50}$')"
       } ],
@@ -3104,7 +3088,7 @@
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       }, {
         "key": "validFaxNumber",
-        "severity": "error",
+        "severity": "warning",
         "human": "Die Faxnummer muss valide sein.",
         "expression": "$this.matches('^[0+][0-9 \\\\-\\\\(\\\\)]{6,50}$')"
       } ],
@@ -3429,7 +3413,7 @@
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       }, {
         "key": "validEmailAddress",
-        "severity": "error",
+        "severity": "warning",
         "human": "Die E-Mail-Adresse muss valide sein.",
         "expression": "$this.matches('^[a-zA-Z0-9._%+-]+@(?:[a-zA-Z0-9-]+[.])+[a-zA-Z0-9]{2,63}$')"
       } ],
@@ -3639,7 +3623,7 @@
       "path": "Organization.meta.profile",
       "min": 1,
       "max": "1",
-      "patternCanonical": "https://demis.rki.de/fhir/StructureDefinition/TransmittingSite",
+      "fixedCanonical": "https://demis.rki.de/fhir/StructureDefinition/TransmittingSite",
       "mustSupport": true
     }, {
       "id": "Organization.identifier",
@@ -3684,14 +3668,6 @@
       "min": 1,
       "mustSupport": true
     }, {
-      "id": "Organization.active",
-      "path": "Organization.active",
-      "max": "0"
-    }, {
-      "id": "Organization.alias",
-      "path": "Organization.alias",
-      "max": "0"
-    }, {
       "id": "Organization.telecom",
       "path": "Organization.telecom",
       "slicing": {
@@ -3700,13 +3676,11 @@
           "path": "system"
         } ],
         "rules": "closed"
-      },
-      "definition": "Kontaktangaben der Einrichtung. Telefonnummern, E-Mailadressen, Urls und Faxnummern können angegeben werden."
+      }
     }, {
       "id": "Organization.telecom:phone",
       "path": "Organization.telecom",
-      "sliceName": "phone",
-      "mustSupport": true
+      "sliceName": "phone"
     }, {
       "id": "Organization.telecom:phone.system",
       "extension": [ {
@@ -3733,7 +3707,7 @@
       "min": 1,
       "constraint": [ {
         "key": "validPhoneNumber",
-        "severity": "error",
+        "severity": "warning",
         "human": "Die Telefonnummer muss valide sein.",
         "expression": "$this.matches('^[0+][0-9 \\\\-\\\\(\\\\)]{6,50}$')"
       } ],
@@ -3768,7 +3742,7 @@
       "min": 1,
       "constraint": [ {
         "key": "validFaxNumber",
-        "severity": "error",
+        "severity": "warning",
         "human": "Die Faxnummer muss valide sein.",
         "expression": "$this.matches('^[0+][0-9 \\\\-\\\\(\\\\)]{6,50}$')"
       } ],
@@ -3803,7 +3777,7 @@
       "min": 1,
       "constraint": [ {
         "key": "validEmailAddress",
-        "severity": "error",
+        "severity": "warning",
         "human": "Die E-Mail-Adresse muss valide sein.",
         "expression": "$this.matches('^[a-zA-Z0-9._%+-]+@(?:[a-zA-Z0-9-]+[.])+[a-zA-Z0-9]{2,63}$')"
       } ],
@@ -3855,7 +3829,7 @@
       "min": 1,
       "constraint": [ {
         "key": "validPhoneNumber",
-        "severity": "error",
+        "severity": "warning",
         "human": "Die Telefonnummer muss valide sein.",
         "expression": "$this.matches('^[0+][0-9 \\\\-\\\\(\\\\)]{6,50}$')"
       } ],
@@ -3890,7 +3864,7 @@
       "min": 1,
       "constraint": [ {
         "key": "validFaxNumber",
-        "severity": "error",
+        "severity": "warning",
         "human": "Die Faxnummer muss valide sein.",
         "expression": "$this.matches('^[0+][0-9 \\\\-\\\\(\\\\)]{6,50}$')"
       } ],
@@ -3925,7 +3899,7 @@
       "min": 1,
       "constraint": [ {
         "key": "validEmailAddress",
-        "severity": "error",
+        "severity": "warning",
         "human": "Die E-Mail-Adresse muss valide sein.",
         "expression": "$this.matches('^[a-zA-Z0-9._%+-]+@(?:[a-zA-Z0-9-]+[.])+[a-zA-Z0-9]{2,63}$')"
       } ],

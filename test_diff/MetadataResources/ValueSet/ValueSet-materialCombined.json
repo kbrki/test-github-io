@@ -2,12 +2,12 @@
   "resourceType": "ValueSet",
   "id": "materialCombined",
   "url": "https://demis.rki.de/fhir/ValueSet/materialCombined",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "name": "MaterialCombined",
   "title": "Material (Kombiniert)",
   "status": "active",
   "experimental": false,
-  "date": "2025-12-05",
+  "date": "2026-03-20",
   "publisher": "Robert Koch-Institut",
   "contact": [ {
     "telecom": [ {
@@ -60,12 +60,19 @@
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 0
         } ],
+        "code": "119294007",
+        "display": "Trockenblutprobe"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
         "code": "119295008",
         "display": "Aspirat"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
-          "valueInteger": 0
+          "valueInteger": 72
         } ],
         "code": "119297000",
         "display": "Blutprobe"
@@ -156,6 +163,13 @@
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 25
+        } ],
+        "code": "119334006",
+        "display": "Sputumprobe"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 0
         } ],
         "code": "119339001",
@@ -224,6 +238,20 @@
         } ],
         "code": "119359002",
         "display": "Knochenmarkprobe"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "119361006",
+        "display": "Plasmaprobe"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "119364003",
+        "display": "Serumprobe"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
@@ -314,6 +342,20 @@
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 0
         } ],
+        "code": "119389009",
+        "display": "Probenmaterial des Rachens"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "119390000",
+        "display": "Probenmaterial der Trachea"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
         "code": "119391001",
         "display": "Probenmaterial der Bronchien"
       }, {
@@ -322,7 +364,15 @@
           "valueInteger": 0
         } ],
         "code": "119392008",
-        "display": "Anales Probenmaterial"
+        "display": "Anales Probenmaterial",
+        "designation": [ {
+          "language": "de-DE",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009"
+          },
+          "value": "Probenmaterial vom Anus"
+        } ]
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
@@ -399,6 +449,20 @@
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 0
         } ],
+        "code": "122554006",
+        "display": "Kapillarblutprobe"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "122555007",
+        "display": "Venöse Blutprobe"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
         "code": "122556008",
         "display": "Nabelschnurblutprobe"
       }, {
@@ -410,7 +474,11 @@
         "display": "Spenderblutprobe",
         "designation": [ {
           "language": "de-DE",
-          "value": "Blutprobe von Blutspender"
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009"
+          },
+          "value": "Blutprobe eines Spenders / einer Spenderin"
         } ]
       }, {
         "extension": [ {
@@ -515,8 +583,22 @@
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 0
         } ],
+        "code": "122592007",
+        "display": "Azelluläre Blutprobe"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
         "code": "122610009",
         "display": "Lungenbiopsat"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "122618002",
+        "display": "Pleuraaspirat mittels Feinnadel"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
@@ -531,6 +613,32 @@
         } ],
         "code": "122643008",
         "display": "Dickdarmgewebeprobe"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "122736005",
+        "display": "Tissue specimen from placenta (specimen)",
+        "designation": [ {
+          "language": "de-DE",
+          "value": "Plazentagewebeprobe"
+        } ]
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "122877000",
+        "display": "Trachealaspirat der oberen Atemwege",
+        "designation": [ {
+          "language": "de-DE",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009"
+          },
+          "value": "Trachealaspirat des oberen Atmungstrakts"
+        } ]
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
@@ -614,33 +722,21 @@
           "valueInteger": 0
         } ],
         "code": "1345219005",
-        "display": "Abstrich von Portio vaginalis uteri",
-        "designation": [ {
-          "language": "de-DE",
-          "value": "Portioabstrich"
-        } ]
+        "display": "Abstrich von Portio vaginalis uteri"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 0
         } ],
         "code": "1345231007",
-        "display": "Kulturplatte eingereicht als Probenmaterial",
-        "designation": [ {
-          "language": "de-DE",
-          "value": "Kulturplatte"
-        } ]
+        "display": "Kulturplatte eingereicht als Probenmaterial"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 0
         } ],
         "code": "1345234004",
-        "display": "Dünner Tropfen",
-        "designation": [ {
-          "language": "de-DE",
-          "value": "Dünner Blutausstrich"
-        } ]
+        "display": "Dünner Tropfen"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
@@ -654,33 +750,21 @@
           "valueInteger": 0
         } ],
         "code": "1345268005",
-        "display": "Dip-Slide eingereicht als Probenmaterial",
-        "designation": [ {
-          "language": "de-DE",
-          "value": "Eintauchobjektträger"
-        } ]
+        "display": "Dip-Slide eingereicht als Probenmaterial"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 0
         } ],
         "code": "1345269002",
-        "display": "Pilzkulturplatte eingereicht als Probenmaterial",
-        "designation": [ {
-          "language": "de-DE",
-          "value": "Pilzkulturplatte"
-        } ]
+        "display": "Pilzkulturplatte eingereicht als Probenmaterial"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 0
         } ],
         "code": "1345270001",
-        "display": "Blutkulturplatte eingereicht als Probenmaterial",
-        "designation": [ {
-          "language": "de-DE",
-          "value": "Blutkulturplatte"
-        } ]
+        "display": "Blutkulturplatte eingereicht als Probenmaterial"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
@@ -728,6 +812,13 @@
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 0
         } ],
+        "code": "16224371000119105",
+        "display": "Probenmaterial aus Nasenspülflüssigkeit"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
         "code": "168139001",
         "display": "Peritonealflüssigkeitsprobe"
       }, {
@@ -742,8 +833,29 @@
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 0
         } ],
+        "code": "168141000",
+        "display": "Nasensekretprobe"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
         "code": "257261003",
         "display": "Abstrich"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "258411007",
+        "display": "Nasopharyngeales Aspirat"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "258412000",
+        "display": "Oropharyngeales Aspirat"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
@@ -826,6 +938,13 @@
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 0
         } ],
+        "code": "258446004",
+        "display": "Bronchialsekretprobe"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
         "code": "258448003",
         "display": "Bursaflüssigkeitsprobe"
       }, {
@@ -896,6 +1015,20 @@
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 0
         } ],
+        "code": "258467004",
+        "display": "Nasopharyngeale Spülflüssigkeit"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "258469001",
+        "display": "Rachenspülflüssigkeit"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
         "code": "258470000",
         "display": "Prostataflüssigkeitprobe"
       }, {
@@ -912,6 +1045,13 @@
         } ],
         "code": "258475005",
         "display": "Nasennebenhöhlenspülflüssigkeit"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "258480001",
+        "display": "Transtracheale Aspiratprobe"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
@@ -983,6 +1123,13 @@
         } ],
         "code": "258498002",
         "display": "Konjunktivalabstrich"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 49
+        } ],
+        "code": "258500001",
+        "display": "Nasopharynxabstrich"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
@@ -1098,6 +1245,13 @@
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 33
+        } ],
+        "code": "258529004",
+        "display": "Rachenabstrich"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 0
         } ],
         "code": "258530009",
@@ -1170,6 +1324,13 @@
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 0
         } ],
+        "code": "258580003",
+        "display": "Vollblutprobe"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
         "code": "258588005",
         "display": "Hämatomprobe"
       }, {
@@ -1179,6 +1340,34 @@
         } ],
         "code": "258589002",
         "display": "Lymphknotenprobe"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 39
+        } ],
+        "code": "258604001",
+        "display": "Probenmaterial der oberen Atemwege"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 38
+        } ],
+        "code": "258606004",
+        "display": "Probenmaterial der unteren Atemwege"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 40
+        } ],
+        "code": "258607008",
+        "display": "Probenmaterial der bronchoalveolären Lavageflüssigkeit"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "258609006",
+        "display": "Sputumprobe mittels Trachealaspiration"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
@@ -1221,6 +1410,13 @@
         } ],
         "code": "302795002",
         "display": "Lymphknotenaspirat"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "303248007",
+        "display": "Blutfilm"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
@@ -1303,6 +1499,13 @@
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 0
         } ],
+        "code": "309164002",
+        "display": "Abstrich der oberen Atemwege"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
         "code": "309165001",
         "display": "Probenmaterial vom Ohr"
       }, {
@@ -1319,6 +1522,21 @@
         } ],
         "code": "309170008",
         "display": "Probenmaterial von Gewebe der unteren Atemwege"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "309171007",
+        "display": "Flüssigkeitsprobe der unteren Atemwegen",
+        "designation": [ {
+          "language": "de-DE",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009"
+          },
+          "value": "Flüssigkeit der unteren Atemwege"
+        } ]
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
@@ -1459,7 +1677,21 @@
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 75
+        } ],
+        "code": "410580001",
+        "display": "Atemwegssekretprobe"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 0
+        } ],
+        "code": "415293009",
+        "display": "Atemwegssekret"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 45
         } ],
         "code": "418564007",
         "display": "Pleuraflüssigkeitprobe"
@@ -1470,6 +1702,13 @@
         } ],
         "code": "418932006",
         "display": "Mundabstrich"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "430248009",
+        "display": "Probenmaterial des Nasopharynx"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
@@ -1510,6 +1749,13 @@
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 0
         } ],
+        "code": "433801000124107",
+        "display": "Kombinierter nasopharyngealer und oropharyngealer Abstrich"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
         "code": "434250007",
         "display": "Perikardbiopsat"
       }, {
@@ -1538,8 +1784,22 @@
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 0
         } ],
+        "code": "440500007",
+        "display": "Trockenblutkarte"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
         "code": "440674008",
         "display": "Spülflüssigkeit"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "441620008",
+        "display": "Probenmaterial aus Mundflüssigkeit"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
@@ -1561,6 +1821,28 @@
         } ],
         "code": "445160003",
         "display": "Augenabstrich"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "445295009",
+        "display": "Blutprobe mit EDTA-Zusatz",
+        "designation": [ {
+          "language": "de-DE",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009"
+          },
+          "value": "EDTA-Blutprobe"
+        } ]
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "445297001",
+        "display": "Abstrich der inneren Nase"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
@@ -1596,6 +1878,13 @@
         } ],
         "code": "445444005",
         "display": "Leistenabstrich"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 22
+        } ],
+        "code": "445447003",
+        "display": "Tracheaaspirat"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
@@ -1675,6 +1964,20 @@
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 0
         } ],
+        "code": "447154002",
+        "display": "Probenmaterial der Nase"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "447339001",
+        "display": "Nasensekretausstrich"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
         "code": "447488002",
         "display": "Suprapubische Urinprobe"
       }, {
@@ -1696,6 +1999,13 @@
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 0
         } ],
+        "code": "461911000124106",
+        "display": "Oropharyngealer Abstrich"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
         "code": "472862007",
         "display": "Hautläsionsabstrich"
       }, {
@@ -1710,6 +2020,13 @@
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 0
         } ],
+        "code": "472867001",
+        "display": "Tonsillenabstrich"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
         "code": "472871003",
         "display": "Ulkusabstrich"
       }, {
@@ -1719,6 +2036,13 @@
         } ],
         "code": "472879001",
         "display": "Plazentaabstrich"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "472881004",
+        "display": "Abstrich aus Pharynx"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
@@ -1761,6 +2085,13 @@
         } ],
         "code": "472900002",
         "display": "Zahnfleischabstrich"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "472901003",
+        "display": "Nasennebenhöhlenabstrich"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
@@ -1822,8 +2153,23 @@
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 0
         } ],
+        "code": "57741000052105",
+        "display": "Trachealsekretprobe"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
         "code": "57921000052103",
-        "display": "Vollblutprobe mit EDTA-Zusatz"
+        "display": "Vollblutprobe mit EDTA-Zusatz",
+        "designation": [ {
+          "language": "de-DE",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009"
+          },
+          "value": "EDTA-Vollblutprobe"
+        } ]
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
@@ -1845,6 +2191,13 @@
         } ],
         "code": "69640009",
         "display": "Kruste"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "697989009",
+        "display": "Nasenvorhofabstrich"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
@@ -1894,6 +2247,21 @@
         } ],
         "code": "708048008",
         "display": "Plasma mit Citrat-Zusatz"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "708049000",
+        "display": "Plasmaprobe mit EDTA-Zusatz",
+        "designation": [ {
+          "language": "de-DE",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009"
+          },
+          "value": "EDTA-Plasmaprobe"
+        } ]
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
@@ -1963,6 +2331,20 @@
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 0
         } ],
+        "code": "737535000",
+        "display": "Blutausstrichprobe"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "788707000",
+        "display": "Plasma-, Serum- oder Vollblutprobe"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
         "code": "866032008",
         "display": "Blutprobe in anaerober Blutkulturflasche"
       }, {
@@ -1975,7 +2357,7 @@
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
-          "valueInteger": 0
+          "valueInteger": 71
         } ],
         "code": "878861003",
         "display": "Blutprobe in Blutkulturflasche"
@@ -1998,7 +2380,7 @@
     } ]
   },
   "expansion": {
-    "timestamp": "2025-12-05T00:00:00+01:00",
+    "timestamp": "2026-03-20T00:00:00+01:00",
     "contains": [ {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
@@ -2022,6 +2404,11 @@
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "119390000",
+      "display": "Probenmaterial der Trachea"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "309176002",
       "display": "Bronchienbürstenbiopsat"
     }, {
@@ -2034,6 +2421,26 @@
       "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "258502009",
       "display": "Eiterabstrich"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "445447003",
+      "display": "Tracheaaspirat"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "168141000",
+      "display": "Nasensekretprobe"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "119389009",
+      "display": "Probenmaterial des Rachens"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "122554006",
+      "display": "Kapillarblutprobe"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
@@ -2092,8 +2499,18 @@
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "430248009",
+      "display": "Probenmaterial des Nasopharynx"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "119332005",
       "display": "Synovialflüssigkeitsprobe"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "258480001",
+      "display": "Transtracheale Aspiratprobe"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
@@ -2112,8 +2529,23 @@
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "258411007",
+      "display": "Nasopharyngeales Aspirat"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "309171007",
+      "display": "Flüssigkeitsprobe der unteren Atemwegen"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "472923004",
       "display": "Periphere Gefäßkatheterspitze eingereicht als Probenmaterial"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "309164002",
+      "display": "Abstrich der oberen Atemwege"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
@@ -2157,8 +2589,23 @@
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "433801000124107",
+      "display": "Kombinierter nasopharyngealer und oropharyngealer Abstrich"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "258513007",
       "display": "Präputiumabstrich"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "122736005",
+      "display": "Tissue specimen from placenta (specimen)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "788707000",
+      "display": "Plasma-, Serum- oder Vollblutprobe"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
@@ -2174,6 +2621,11 @@
       "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "438660002",
       "display": "Probenmaterial einer Prothese"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "258446004",
+      "display": "Bronchialsekretprobe"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
@@ -2214,6 +2666,11 @@
       "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "472884007",
       "display": "Tiefer Wundabstrich"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "697989009",
+      "display": "Nasenvorhofabstrich"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
@@ -2284,6 +2741,16 @@
       "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "119344008",
       "display": "Probenmaterial des Genitals"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "119361006",
+      "display": "Plasmaprobe"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "258412000",
+      "display": "Oropharyngeales Aspirat"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
@@ -2372,6 +2839,11 @@
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "708049000",
+      "display": "Plasmaprobe mit EDTA-Zusatz"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "309503002",
       "display": "Mammillensekretprobe"
     }, {
@@ -2384,6 +2856,11 @@
       "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "119371008",
       "display": "Abszessprobe"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "410580001",
+      "display": "Atemwegssekretprobe"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
@@ -2409,6 +2886,16 @@
       "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "703691002",
       "display": "Zentrifugierte Liquorprobe"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "472867001",
+      "display": "Tonsillenabstrich"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "472901003",
+      "display": "Nasennebenhöhlenabstrich"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
@@ -2517,6 +3004,11 @@
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "445295009",
+      "display": "Blutprobe mit EDTA-Zusatz"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "866033003",
       "display": "Blutprobe in aerober Blutkulturflasche"
     }, {
@@ -2524,6 +3016,11 @@
       "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "258475005",
       "display": "Nasennebenhöhlenspülflüssigkeit"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "258580003",
+      "display": "Vollblutprobe"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
@@ -2552,6 +3049,11 @@
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "258469001",
+      "display": "Rachenspülflüssigkeit"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "473415003",
       "display": "Intrauterinpessar eingereicht als Probenmaterial"
     }, {
@@ -2559,6 +3061,11 @@
       "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "1345235003",
       "display": "Dicker Tropfen"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "258606004",
+      "display": "Probenmaterial der unteren Atemwege"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
@@ -2584,6 +3091,11 @@
       "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "258424007",
       "display": "Herzklappengewebeprobe"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "440500007",
+      "display": "Trockenblutkarte"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
@@ -2617,8 +3129,18 @@
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "122592007",
+      "display": "Azelluläre Blutprobe"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "445372002",
       "display": "Ventrikelliquorprobe"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "258529004",
+      "display": "Rachenabstrich"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
@@ -2659,6 +3181,11 @@
       "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "737357006",
       "display": "Fetalblutprobe"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "122618002",
+      "display": "Pleuraaspirat mittels Feinnadel"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
@@ -2714,6 +3241,11 @@
       "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "472900002",
       "display": "Zahnfleischabstrich"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "119294007",
+      "display": "Trockenblutprobe"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
@@ -2787,6 +3319,11 @@
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "415293009",
+      "display": "Atemwegssekret"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "445364004",
       "display": "Axillaabstrich"
     }, {
@@ -2799,6 +3336,11 @@
       "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "733104004",
       "display": "Wangenschleimhautabstrich"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "461911000124106",
+      "display": "Oropharyngealer Abstrich"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
@@ -2862,6 +3404,11 @@
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "441620008",
+      "display": "Probenmaterial aus Mundflüssigkeit"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "472932002",
       "display": "Gefäßkatheter eingereicht als Probenmaterial"
     }, {
@@ -2884,6 +3431,11 @@
       "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "432134009",
       "display": "Hautaspirat mittels Feinnadelbiopsie"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "303248007",
+      "display": "Blutfilm"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
@@ -2914,6 +3466,16 @@
       "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "119341000",
       "display": "Gallensekretprobe"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "119364003",
+      "display": "Serumprobe"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "122877000",
+      "display": "Trachealaspirat der oberen Atemwege"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
@@ -2962,6 +3524,26 @@
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "258500001",
+      "display": "Nasopharynxabstrich"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "447339001",
+      "display": "Nasensekretausstrich"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "16224371000119105",
+      "display": "Probenmaterial aus Nasenspülflüssigkeit"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "258607008",
+      "display": "Probenmaterial der bronchoalveolären Lavageflüssigkeit"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "258570002",
       "display": "Urogenitales Probenmaterial"
     }, {
@@ -2974,6 +3556,11 @@
       "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "309110000",
       "display": "Bursagewebeprobe"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "472881004",
+      "display": "Abstrich aus Pharynx"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
@@ -3014,6 +3601,11 @@
       "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "258450006",
       "display": "Liquorprobe"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "445297001",
+      "display": "Abstrich der inneren Nase"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
@@ -3064,6 +3656,21 @@
       "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "363329003",
       "display": "Gewebsprobe der Atemwege"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "57741000052105",
+      "display": "Trachealsekretprobe"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "258604001",
+      "display": "Probenmaterial der oberen Atemwege"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "447154002",
+      "display": "Probenmaterial der Nase"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
@@ -3119,6 +3726,21 @@
       "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "309066003",
       "display": "Hautbiopsat"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "258609006",
+      "display": "Sputumprobe mittels Trachealaspiration"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "122555007",
+      "display": "Venöse Blutprobe"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "258467004",
+      "display": "Nasopharyngeale Spülflüssigkeit"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
@@ -3189,6 +3811,11 @@
       "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "16221251000119108",
       "display": "Urinprobe aus geradem Einmalkatheter"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "737535000",
+      "display": "Blutausstrichprobe"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
@@ -3339,6 +3966,11 @@
       "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "309269002",
       "display": "Nierenbiopsat"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "119334006",
+      "display": "Sputumprobe"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",

@@ -2,12 +2,12 @@
   "resourceType": "ValueSet",
   "id": "answerSetPathogenCombined",
   "url": "https://demis.rki.de/fhir/ValueSet/answerSetPathogenCombined",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "name": "AnswerSetPathogenCombined",
   "title": "AnswerSet aller spezifischen AnswerSet-ValueSets (Kombiniert)",
   "status": "active",
   "experimental": false,
-  "date": "2025-12-05",
+  "date": "2026-03-20",
   "publisher": "Robert Koch-Institut",
   "contact": [ {
     "telecom": [ {
@@ -3890,11 +3890,7 @@
           "valueInteger": 0
         } ],
         "code": "1263733001",
-        "display": "SARS-CoV-1",
-        "designation": [ {
-          "language": "de-DE",
-          "value": "SARS Coronavirus"
-        } ]
+        "display": "SARS-CoV-1"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
@@ -4007,6 +4003,17 @@
         } ],
         "code": "12842000",
         "display": "Humanes Echovirus 21"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "1285009006",
+        "display": "Enterobacter roggenkampii (organism)",
+        "designation": [ {
+          "language": "de-DE",
+          "value": "Enterobacter roggenkampii"
+        } ]
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
@@ -4205,8 +4212,127 @@
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 0
         } ],
+        "code": "1354801007",
+        "display": "Escherichia coli, Serotyp O125:H6",
+        "designation": [ {
+          "language": "de-DE",
+          "value": "Escherichia coli, Serogruppe O125:H6"
+        } ]
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "1354805003",
+        "display": "Bunthörnchen-Bornavirus 1"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "1354809009",
+        "display": "Influenza-A-Virus, Subtyp H5N2"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "1354810004",
+        "display": "Influenza-A-Virus, Subtyp H10N3"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "1354811000",
+        "display": "Influenza-A-Virus, Subtyp H1N2v"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "1354812007",
+        "display": "Influenza-A-Virus, Subtyp H1N1v"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "1354813002",
+        "display": "Influenza-A-Virus, Subtyp H5N6"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
         "code": "13615007",
         "display": "Salmonella Regent"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "1366123008",
+        "display": "Monkeypox virus, clade I (organism)",
+        "designation": [ {
+          "language": "de-DE",
+          "value": "Mpox-Virus, Clade I"
+        } ]
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "1366124002",
+        "display": "Monkeypox virus, subclade Ia (organism)",
+        "designation": [ {
+          "language": "de-DE",
+          "value": "Mpox-Virus, Subclade Ia"
+        } ]
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "1366125001",
+        "display": "Monkeypox virus, subclade Ib (organism)",
+        "designation": [ {
+          "language": "de-DE",
+          "value": "Mpox-Virus, Subclade Ib"
+        } ]
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "1366126000",
+        "display": "Monkeypox virus, clade II (organism)",
+        "designation": [ {
+          "language": "de-DE",
+          "value": "Mpox-Virus, Clade II"
+        } ]
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "1366127009",
+        "display": "Monkeypox virus, subclade IIa (organism)",
+        "designation": [ {
+          "language": "de-DE",
+          "value": "Mpox-Virus, Subclade IIa"
+        } ]
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "1366128004",
+        "display": "Monkeypox virus, subclade IIb (organism)",
+        "designation": [ {
+          "language": "de-DE",
+          "value": "Mpox-Virus, Subclade IIb"
+        } ]
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
@@ -6051,7 +6177,11 @@
         "display": "Escherichia-coli-Lipopolysaccharid-Antikörper",
         "designation": [ {
           "language": "de-DE",
-          "value": "E.coli-LPS-Antikörper"
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009"
+          },
+          "value": "E. coli-LPS-Antikörper"
         } ]
       }, {
         "extension": [ {
@@ -12746,6 +12876,13 @@
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 0
         } ],
+        "code": "446396002",
+        "display": "Influenza A-Virus, Subtyp H1"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
         "code": "446489003",
         "display": "Yersinia massiliensis"
       }, {
@@ -12753,8 +12890,36 @@
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 0
         } ],
+        "code": "446645007",
+        "display": "Influenza A-Virus, Subtyp H3"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
         "code": "446646008",
         "display": "Influenza A-Virus, Subtyp H3N2"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "446647004",
+        "display": "Influenza A-Virus, Subtyp H5"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "446648009",
+        "display": "Influenza A-Virus, Subtyp H7"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 0
+        } ],
+        "code": "446649001",
+        "display": "Influenza A-Virus, Subtyp H9"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
@@ -12845,22 +13010,14 @@
           "valueInteger": 0
         } ],
         "code": "448711000124108",
-        "display": "Shigatoxin-produzierendes Escherichia coli, Serogruppe O132",
-        "designation": [ {
-          "language": "de-DE",
-          "value": "Shiga-Toxin-produzierende Escherichia coli, Serogruppe O132"
-        } ]
+        "display": "Shigatoxin-produzierendes Escherichia coli, Serogruppe O132"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
           "valueInteger": 0
         } ],
         "code": "448721000124100",
-        "display": "Shigatoxin-produzierendes Escherichia coli, Serogruppe O78",
-        "designation": [ {
-          "language": "de-DE",
-          "value": "Shiga-Toxin-produzierende Escherichia coli, Serogruppe O78"
-        } ]
+        "display": "Shigatoxin-produzierendes Escherichia coli, Serogruppe O78"
       }, {
         "extension": [ {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
@@ -18482,7 +18639,11 @@
         "display": "Escherichia-coli-O157-Antigen",
         "designation": [ {
           "language": "de-DE",
-          "value": "E.coli-O157-Antigen"
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009"
+          },
+          "value": "E. coli-O157-Antigen"
         } ]
       }, {
         "extension": [ {
@@ -21494,6 +21655,10 @@
         "display": "Produkt, das genau Atovaquon 250 Milligramm und Proguanilhydrochlorid 100 Milligramm/1 Tablette mit konventioneller Wirkstofffreisetzung enthält",
         "designation": [ {
           "language": "de-DE",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009"
+          },
           "value": "Atovaquon 250 mg und Proguanilhydrochloride 100 mg als Tablette zum Einnehmen"
         } ]
       }, {
@@ -24032,7 +24197,7 @@
     } ]
   },
   "expansion": {
-    "timestamp": "2025-12-05T00:00:00+01:00",
+    "timestamp": "2026-03-20T00:00:00+01:00",
     "contains": [ {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
@@ -24306,6 +24471,11 @@
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "1354809009",
+      "display": "Influenza-A-Virus, Subtyp H5N2"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "7830000",
       "display": "Salmonella Hallfold"
     }, {
@@ -24428,6 +24598,11 @@
       "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "84287002",
       "display": "Salmonella Duval"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "1354810004",
+      "display": "Influenza-A-Virus, Subtyp H10N3"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
@@ -25386,6 +25561,11 @@
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "1366126000",
+      "display": "Monkeypox virus, clade II (organism)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "725471006",
       "display": "Humanes Alphaherpesvirus 3 clade 3"
     }, {
@@ -26026,6 +26206,11 @@
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "1354801007",
+      "display": "Escherichia coli, Serotyp O125:H6"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "31989009",
       "display": "Murray-Valley-Enzephalitis-Virus"
     }, {
@@ -26193,6 +26378,11 @@
       "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "72877003",
       "display": "Humanes Coxsackie-Virus A24"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "1354813002",
+      "display": "Influenza-A-Virus, Subtyp H5N6"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
@@ -26578,6 +26768,11 @@
       "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "428855006",
       "display": "Streptococcus pyogenes, Typ emm90"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "446645007",
+      "display": "Influenza A-Virus, Subtyp H3"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
@@ -28116,6 +28311,11 @@
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "1366123008",
+      "display": "Monkeypox virus, clade I (organism)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "420872003",
       "display": "Lonsdalea quercina"
     }, {
@@ -28478,6 +28678,11 @@
       "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "79910006",
       "display": "Salmonella Caen"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "1354812007",
+      "display": "Influenza-A-Virus, Subtyp H1N1v"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
@@ -28908,6 +29113,11 @@
       "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "421225004",
       "display": "Dickeya chrysanthemi"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "1366127009",
+      "display": "Monkeypox virus, subclade IIa (organism)"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
@@ -29433,6 +29643,11 @@
       "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "427822003",
       "display": "Streptococcus pyogenes, Typ emm4"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "1366124002",
+      "display": "Monkeypox virus, subclade Ia (organism)"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
@@ -30703,6 +30918,11 @@
       "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "407252007",
       "display": "Escherichia coli, Serogruppe O2"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "446647004",
+      "display": "Influenza A-Virus, Subtyp H5"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
@@ -33391,6 +33611,11 @@
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "1354805003",
+      "display": "Bunthörnchen-Bornavirus 1"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "43794009",
       "display": "Humanes Echovirus 3"
     }, {
@@ -34561,6 +34786,11 @@
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "1354811000",
+      "display": "Influenza-A-Virus, Subtyp H1N2v"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "6938001",
       "display": "Salmonella Carmel"
     }, {
@@ -34973,6 +35203,11 @@
       "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "420490008",
       "display": "Brenneria nigrifluens"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "446649001",
+      "display": "Influenza A-Virus, Subtyp H9"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
@@ -37316,6 +37551,11 @@
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "446648009",
+      "display": "Influenza A-Virus, Subtyp H7"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "782228004",
       "display": "Shiga-Toxin-produzierende Escherichia coli, Serogruppe O3"
     }, {
@@ -39646,6 +39886,11 @@
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "1366128004",
+      "display": "Monkeypox virus, subclade IIb (organism)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "7746003",
       "display": "Humanes Echovirus 24"
     }, {
@@ -40201,6 +40446,11 @@
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "1285009006",
+      "display": "Enterobacter roggenkampii (organism)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "1921001",
       "display": "Salmonella Donna"
     }, {
@@ -40298,6 +40548,11 @@
       "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "37286001",
       "display": "Salmonella Penarth"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "1366125001",
+      "display": "Monkeypox virus, subclade Ib (organism)"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",
@@ -40683,6 +40938,11 @@
       "version": "http://snomed.info/sct/11000274103/version/20251115",
       "code": "458091003",
       "display": "Escherichia coli, Serogruppe O11"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "446396002",
+      "display": "Influenza A-Virus, Subtyp H1"
     }, {
       "system": "http://snomed.info/sct",
       "version": "http://snomed.info/sct/11000274103/version/20251115",

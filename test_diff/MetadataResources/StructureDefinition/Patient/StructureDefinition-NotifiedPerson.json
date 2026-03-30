@@ -2,27 +2,12 @@
   "resourceType": "StructureDefinition",
   "id": "NotifiedPerson",
   "url": "https://demis.rki.de/fhir/StructureDefinition/NotifiedPerson",
-  "version": "2.4.0",
+  "version": "1.10.0",
   "name": "NotifiedPerson",
   "title": "Betroffene Person",
   "status": "active",
-  "date": "2026-02-04",
-  "publisher": "Robert Koch-Institut",
-  "contact": [ {
-    "telecom": [ {
-      "system": "email",
-      "value": "demis-support@rki.de"
-    } ]
-  } ],
+  "date": "2025-07-31",
   "description": "Die betroffene Person enthält relevante Angaben zum Patienten, die entsprechend der aktuellen Planung aus den Auftragsdaten extrahiert werden, die der Einsender dem jeweiligen Labor übermittelt hat. Dies werden in der Mehrzahl der Fälle die Angaben von der eGK der betroffenen Person sein (Versichertenstammdaten).",
-  "jurisdiction": [ {
-    "coding": [ {
-      "system": "urn:iso:std:iso:3166",
-      "version": "ALPHA-2",
-      "code": "DE"
-    } ]
-  } ],
-  "copyright": "Copyright (C) 2021-2025 Robert Koch-Institut",
   "fhirVersion": "4.0.1",
   "mapping": [ {
     "identity": "cda",
@@ -110,7 +95,7 @@
         "expression": "name.given.all(matches('^[^@\\\\*?$|=´\"\\\\[\\\\]{}<>0-9]{0,100}$'))"
       }, {
         "key": "genderExists",
-        "severity": "error",
+        "severity": "warning",
         "human": "Wenn als gender other angegeben wird, muss die Extension http://fhir.de/StructureDefinition/gender-amtlich-de befüllt werden.",
         "expression": "gender.exists() and gender = 'other' implies gender.extension('http://fhir.de/StructureDefinition/gender-amtlich-de').exists()"
       } ],
@@ -341,7 +326,7 @@
         "code": "canonical",
         "targetProfile": [ "http://hl7.org/fhir/StructureDefinition/StructureDefinition" ]
       } ],
-      "patternCanonical": "https://demis.rki.de/fhir/StructureDefinition/NotifiedPerson",
+      "fixedCanonical": "https://demis.rki.de/fhir/StructureDefinition/NotifiedPerson",
       "constraint": [ {
         "key": "ele-1",
         "severity": "error",
@@ -667,7 +652,7 @@
       "comment": "If a record is inactive, and linked to an active record, then future patient/record updates should occur on the other patient.",
       "requirements": "Need to be able to mark a patient record as not to be used because it was created in error.",
       "min": 0,
-      "max": "0",
+      "max": "1",
       "base": {
         "path": "Patient.active",
         "min": 0,
@@ -1714,7 +1699,7 @@
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       }, {
         "key": "validEmailAddress",
-        "severity": "error",
+        "severity": "warning",
         "human": "Die E-Mail-Adresse muss valide sein.",
         "expression": "$this.matches('^[a-zA-Z0-9._%+-]+@(?:[a-zA-Z0-9-]+[.])+[a-zA-Z0-9]{2,63}$')"
       } ],
@@ -2064,7 +2049,7 @@
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       }, {
         "key": "validPhoneNumber",
-        "severity": "error",
+        "severity": "warning",
         "human": "Die Telefonnummer muss valide sein.",
         "expression": "$this.matches('^[0+][0-9 \\\\-\\\\(\\\\)]{6,50}$')"
       } ],
@@ -2534,7 +2519,7 @@
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       }, {
         "key": "validBirthDate",
-        "severity": "error",
+        "severity": "warning",
         "human": "Das Geburtsjahr muss mit 19 oder 20 beginnen.",
         "expression": "$this.toString().matches('^19[0-9]{2}-[0-9]{2}-[0-9]{2}$|^20[0-9]{2}-[0-9]{2}-[0-9]{2}$|^19[0-9]{2}-[0-9]{2}$|^20[0-9]{2}-[0-9]{2}$|^19[0-9]{2}$|^20[0-9]{2}$')"
       } ],
@@ -2557,9 +2542,9 @@
     }, {
       "id": "Patient.deceased[x]",
       "path": "Patient.deceased[x]",
-      "short": "Indicates if the individual is deceased or not",
-      "definition": "Indicates if the individual is deceased or not.",
-      "comment": "Diese Angabe betrifft nur die DEMIS-Erkrankungsmeldung (https://simplifier.net/rki.demis.disease): Angaben zum Tod der betroffenen Person sollen ausschließlich über den Fragebogen DiseaseQuestionsCommon dokumentiert werden, siehe dazu linkId isDead und deathDate in https://simplifier.net/guide/rki.demis.disease/Home/resources/questionnaires/guide-diseasequestionscommon.md?version=current.",
+      "short": "Verstorben",
+      "definition": "Angabe ob die betroffene Person verstorben ist",
+      "comment": "If there's no value in the instance, it means there is no statement on whether or not the individual is deceased. Most systems will interpret the absence of a value as a sign of the person being alive.",
       "requirements": "The fact that a patient is deceased influences the clinical process. Also, in human communication and relation management it is necessary to know whether the person is alive.",
       "min": 0,
       "max": "1",
@@ -2581,6 +2566,7 @@
         "xpath": "@value|f:*|h:div",
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       } ],
+      "mustSupport": true,
       "isModifier": true,
       "isModifierReason": "This element is labeled as a modifier because once a patient is marked as deceased, the actions that are appropriate to perform on the patient may be significantly different.",
       "isSummary": true,
@@ -2597,12 +2583,12 @@
     }, {
       "id": "Patient.address",
       "path": "Patient.address",
-      "short": "Adresse der betroffenen Person",
-      "definition": "Meldepflichtige Angaben zur Betroffenen Person sind die Unterscheidung Hauptwohnung, gewöhnlicher Aufenthaltsortes oder ggf. derzeitiger Aufenthaltsort. Diese Angaben können hier gemacht werden durch die spezifizierung über die extension \"addressUse\". Ist die Art des Wohnsitzes nicht bekannt, so ist bei der Adresse vom Hauptwohnsitz auszugehen. Ist die betroffene Person in einer Einrichtung untergebracht, kann über die Extension \"facility\" die Einrichtung angegeben werden.",
+      "short": "Adresse",
+      "definition": "Adresse der betroffenen Person. Über die Extension \"addressUse\" kann angegeben werden, um welche Art von Adresse es sich handelt. Ist die betroffene Person in einer Einrichtung untergebracht, kann über die Extension die Einrichtung angegeben werden.",
       "comment": "Patient may have multiple addresses with different uses or applicable periods.",
       "requirements": "May need to keep track of patient addresses for contacting, billing or reporting requirements and also to help with identification.",
       "min": 0,
-      "max": "3",
+      "max": "*",
       "base": {
         "path": "Patient.address",
         "min": 0,
@@ -2670,7 +2656,7 @@
       },
       "short": "Extension",
       "definition": "An Extension",
-      "min": 1,
+      "min": 0,
       "max": "*",
       "base": {
         "path": "Element.extension",
@@ -2747,8 +2733,8 @@
       "sliceName": "addressUse",
       "short": "Optional Extensions Element",
       "definition": "Optional Extension Element - found in all resources.",
-      "min": 1,
-      "max": "1",
+      "min": 0,
+      "max": "*",
       "base": {
         "path": "Element.extension",
         "min": 0,
@@ -2774,8 +2760,6 @@
         "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source": "http://hl7.org/fhir/StructureDefinition/Extension"
       } ],
-      "mustSupport": true,
-      "isModifier": false,
       "mapping": [ {
         "identity": "rim",
         "map": "n/a"
@@ -2977,8 +2961,8 @@
     }, {
       "id": "Patient.address.line",
       "path": "Patient.address.line",
-      "short": "Straßenname mit Hausnummer oder Postfach sowie weitere Angaben zur Zustellung",
-      "definition": "Diese Komponente kann Straßennamen, Hausnummer, Appartmentnummer, Postfach, c/o sowie weitere Zustellungshinweise enthalten. Die Informationen können in mehrere line-Komponenten aufgeteilt werden.\r\nBei Verwendung der Extensions, um Straße, Hausnnummer und Postleitzahl strukturiert zu übermitteln, müssen diese Informationen stets vollständig auch in der line-Komponente, die sie erweitern, enthalten sein, um es Systemen, die diese Extensions nicht verwenden zu ermöglichen, auf diese Informationen zugreifen zu können.",
+      "short": "Anschriftenzeile",
+      "definition": "Anschriftenzeile. Die Angabe eines Postfaches ist nicht erlaubt.",
       "comment": "Note that FHIR strings SHALL NOT exceed 1MB in size",
       "min": 0,
       "max": "3",
@@ -3068,10 +3052,8 @@
         "description": "Extensions are always sliced by (at least) url",
         "rules": "open"
       },
-      "short": "Additional content defined by implementations",
-      "definition": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
-      "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-      "alias": [ "extensions", "user content" ],
+      "short": "Extension",
+      "definition": "An Extension",
       "min": 0,
       "max": "*",
       "base": {
@@ -3097,13 +3079,6 @@
         "expression": "extension.exists() != value.exists()",
         "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source": "http://hl7.org/fhir/StructureDefinition/Extension"
-      } ],
-      "mapping": [ {
-        "identity": "rim",
-        "map": "n/a"
-      }, {
-        "identity": "rim",
-        "map": "N/A"
       } ]
     }, {
       "id": "Patient.address.line.extension:Strasse",
@@ -3304,8 +3279,8 @@
     }, {
       "id": "Patient.address.city",
       "path": "Patient.address.city",
-      "short": "Name of city, town etc.",
-      "definition": "The name of the city, town, suburb, village or other community or delivery center.",
+      "short": "Stadt",
+      "definition": "Stadt",
       "comment": "Note that FHIR strings SHALL NOT exceed 1MB in size",
       "alias": [ "Municpality" ],
       "min": 0,
@@ -3440,7 +3415,7 @@
       "id": "Patient.address.postalCode",
       "path": "Patient.address.postalCode",
       "short": "Postleitzahl",
-      "definition": "Postleitzahl gemäß der im jeweiligen Land gültigen Konventionen",
+      "definition": "Postleitzahl. Der Wert muss entsprechend des vom RKI definierten ValueSets (https://demis.rki.de/fhir/ValueSet/postalCode) im coding Element dargestellt werden.",
       "comment": "Note that FHIR strings SHALL NOT exceed 1MB in size",
       "alias": [ "Zip" ],
       "min": 0,
@@ -3467,6 +3442,10 @@
         "source": "http://hl7.org/fhir/StructureDefinition/Element"
       } ],
       "isSummary": true,
+      "binding": {
+        "strength": "preferred",
+        "valueSet": "https://demis.rki.de/fhir/ValueSet/postalCode"
+      },
       "mapping": [ {
         "identity": "rim",
         "map": "n/a"
@@ -3537,7 +3516,7 @@
       "comment": "A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. \"the patient was an inpatient of the hospital for this time range\") or one value from the range applies (e.g. \"give to the patient between these two times\").\n\nPeriod is not used for a duration (a measure of elapsed time). See [Duration](datatypes.html#Duration).",
       "requirements": "Allows addresses to be placed in historical context.",
       "min": 0,
-      "max": "0",
+      "max": "1",
       "base": {
         "path": "Address.period",
         "min": 0,
@@ -4357,7 +4336,7 @@
       "comment": "This may be the primary care provider (in a GP context), or it may be a patient nominated care manager in a community/disability setting, or even organization that will provide people to perform the care provider roles.  It is not to be used to record Care Teams, these should be in a CareTeam resource that may be linked to the CarePlan or EpisodeOfCare resources. Multiple GPs may be recorded against the patient for various reasons, such as a student that has his home GP listed along with the GP at university during the school semesters, or a \"fly-in/fly-out\" worker that has the onsite GP also included with his home GP to remain aware of medical issues.  Jurisdictions may decide that they can profile this down to 1 if desired, or 1 per type.",
       "alias": [ "careProvider" ],
       "min": 0,
-      "max": "0",
+      "max": "*",
       "base": {
         "path": "Patient.generalPractitioner",
         "min": 0,
@@ -4661,7 +4640,7 @@
         "expression": "name.given.all(matches('^[^@\\\\*?$|=´\"\\\\[\\\\]{}<>0-9]{0,100}$'))"
       }, {
         "key": "genderExists",
-        "severity": "error",
+        "severity": "warning",
         "human": "Wenn als gender other angegeben wird, muss die Extension http://fhir.de/StructureDefinition/gender-amtlich-de befüllt werden.",
         "expression": "gender.exists() and gender = 'other' implies gender.extension('http://fhir.de/StructureDefinition/gender-amtlich-de').exists()"
       } ]
@@ -4675,12 +4654,8 @@
       "path": "Patient.meta.profile",
       "min": 1,
       "max": "1",
-      "patternCanonical": "https://demis.rki.de/fhir/StructureDefinition/NotifiedPerson",
+      "fixedCanonical": "https://demis.rki.de/fhir/StructureDefinition/NotifiedPerson",
       "mustSupport": true
-    }, {
-      "id": "Patient.active",
-      "path": "Patient.active",
-      "max": "0"
     }, {
       "id": "Patient.name",
       "path": "Patient.name",
@@ -4736,7 +4711,7 @@
       "min": 1,
       "constraint": [ {
         "key": "validEmailAddress",
-        "severity": "error",
+        "severity": "warning",
         "human": "Die E-Mail-Adresse muss valide sein.",
         "expression": "$this.matches('^[a-zA-Z0-9._%+-]+@(?:[a-zA-Z0-9-]+[.])+[a-zA-Z0-9]{2,63}$')"
       } ],
@@ -4776,7 +4751,7 @@
       "min": 1,
       "constraint": [ {
         "key": "validPhoneNumber",
-        "severity": "error",
+        "severity": "warning",
         "human": "Die Telefonnummer muss valide sein.",
         "expression": "$this.matches('^[0+][0-9 \\\\-\\\\(\\\\)]{6,50}$')"
       } ],
@@ -4816,7 +4791,7 @@
       "definition": "Geburtsdatum der betroffenen Person",
       "constraint": [ {
         "key": "validBirthDate",
-        "severity": "error",
+        "severity": "warning",
         "human": "Das Geburtsjahr muss mit 19 oder 20 beginnen.",
         "expression": "$this.toString().matches('^19[0-9]{2}-[0-9]{2}-[0-9]{2}$|^20[0-9]{2}-[0-9]{2}-[0-9]{2}$|^19[0-9]{2}-[0-9]{2}$|^20[0-9]{2}-[0-9]{2}$|^19[0-9]{2}$|^20[0-9]{2}$')"
       } ],
@@ -4824,13 +4799,14 @@
     }, {
       "id": "Patient.deceased[x]",
       "path": "Patient.deceased[x]",
-      "comment": "Diese Angabe betrifft nur die DEMIS-Erkrankungsmeldung (https://simplifier.net/rki.demis.disease): Angaben zum Tod der betroffenen Person sollen ausschließlich über den Fragebogen DiseaseQuestionsCommon dokumentiert werden, siehe dazu linkId isDead und deathDate in https://simplifier.net/guide/rki.demis.disease/Home/resources/questionnaires/guide-diseasequestionscommon.md?version=current."
+      "short": "Verstorben",
+      "definition": "Angabe ob die betroffene Person verstorben ist",
+      "mustSupport": true
     }, {
       "id": "Patient.address",
       "path": "Patient.address",
-      "short": "Adresse der betroffenen Person",
-      "definition": "Meldepflichtige Angaben zur Betroffenen Person sind die Unterscheidung Hauptwohnung, gewöhnlicher Aufenthaltsortes oder ggf. derzeitiger Aufenthaltsort. Diese Angaben können hier gemacht werden durch die spezifizierung über die extension \"addressUse\". Ist die Art des Wohnsitzes nicht bekannt, so ist bei der Adresse vom Hauptwohnsitz auszugehen. Ist die betroffene Person in einer Einrichtung untergebracht, kann über die Extension \"facility\" die Einrichtung angegeben werden.",
-      "max": "3",
+      "short": "Adresse",
+      "definition": "Adresse der betroffenen Person. Über die Extension \"addressUse\" kann angegeben werden, um welche Art von Adresse es sich handelt. Ist die betroffene Person in einer Einrichtung untergebracht, kann über die Extension die Einrichtung angegeben werden.",
       "type": [ {
         "code": "Address",
         "profile": [ "http://fhir.de/StructureDefinition/address-de-basis" ]
@@ -4839,19 +4815,21 @@
     }, {
       "id": "Patient.address.extension",
       "path": "Patient.address.extension",
-      "min": 1
+      "slicing": {
+        "discriminator": [ {
+          "type": "value",
+          "path": "url"
+        } ],
+        "rules": "open"
+      }
     }, {
       "id": "Patient.address.extension:addressUse",
       "path": "Patient.address.extension",
       "sliceName": "addressUse",
-      "min": 1,
-      "max": "1",
       "type": [ {
         "code": "Extension",
         "profile": [ "https://demis.rki.de/fhir/StructureDefinition/AddressUse" ]
-      } ],
-      "mustSupport": true,
-      "isModifier": false
+      } ]
     }, {
       "id": "Patient.address.extension:facility",
       "path": "Patient.address.extension",
@@ -4867,16 +4845,37 @@
     }, {
       "id": "Patient.address.line",
       "path": "Patient.address.line",
+      "short": "Anschriftenzeile",
+      "definition": "Anschriftenzeile. Die Angabe eines Postfaches ist nicht erlaubt.",
       "max": "3"
+    }, {
+      "id": "Patient.address.line.extension",
+      "path": "Patient.address.line.extension",
+      "slicing": {
+        "discriminator": [ {
+          "type": "value",
+          "path": "url"
+        } ],
+        "rules": "open"
+      }
     }, {
       "id": "Patient.address.line.extension:Postfach",
       "path": "Patient.address.line.extension",
       "sliceName": "Postfach",
       "max": "0"
     }, {
-      "id": "Patient.address.district",
-      "path": "Patient.address.district",
-      "max": "0"
+      "id": "Patient.address.city",
+      "path": "Patient.address.city",
+      "short": "Stadt",
+      "definition": "Stadt"
+    }, {
+      "id": "Patient.address.postalCode",
+      "path": "Patient.address.postalCode",
+      "definition": "Postleitzahl. Der Wert muss entsprechend des vom RKI definierten ValueSets (https://demis.rki.de/fhir/ValueSet/postalCode) im coding Element dargestellt werden.",
+      "binding": {
+        "strength": "preferred",
+        "valueSet": "https://demis.rki.de/fhir/ValueSet/postalCode"
+      }
     }, {
       "id": "Patient.address.country",
       "path": "Patient.address.country",
@@ -4886,10 +4885,6 @@
         "strength": "extensible",
         "valueSet": "http://hl7.org/fhir/ValueSet/iso3166-1-2"
       }
-    }, {
-      "id": "Patient.address.period",
-      "path": "Patient.address.period",
-      "max": "0"
     }, {
       "id": "Patient.maritalStatus",
       "path": "Patient.maritalStatus",
@@ -4911,10 +4906,6 @@
     }, {
       "id": "Patient.communication",
       "path": "Patient.communication",
-      "max": "0"
-    }, {
-      "id": "Patient.generalPractitioner",
-      "path": "Patient.generalPractitioner",
       "max": "0"
     }, {
       "id": "Patient.managingOrganization",

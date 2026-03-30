@@ -2,11 +2,11 @@
   "resourceType": "StructureDefinition",
   "id": "InfectProtectFacility",
   "url": "https://demis.rki.de/fhir/StructureDefinition/InfectProtectFacility",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "name": "InfectProtectFacility",
   "title": "IfSG-Einrichtung",
   "status": "active",
-  "date": "2025-12-11",
+  "date": "2026-03-13",
   "publisher": "Robert Koch-Institut",
   "contact": [ {
     "telecom": [ {
@@ -736,7 +736,7 @@
       "definition": "Art der Einrichtung.",
       "comment": "Organizations can be corporations, wards, sections, clinical teams, government departments, etc. Note that code is generally a classifier of the type of organization; in many applications, codes are used to identity a particular organization (say, ward) as opposed to another of the same type - these are identifiers, not codes  When considering if multiple types are appropriate, you should evaluate if child organizations would be a more appropriate use of the concept, as different types likely are in different sub-areas of the organization. This is most likely to be used where type values have orthogonal values, such as a religious, academic and medical center.  We expect that some jurisdictions will profile this optionality to be a single cardinality.",
       "requirements": "Need to be able to track the kind of organization that this is - different organization types have different uses.",
-      "min": 0,
+      "min": 1,
       "max": "1",
       "base": {
         "path": "Organization.type",
@@ -1278,7 +1278,7 @@
       "definition": "Kontaktangaben der Einrichtung. Telefonnummern, E-Mailadressen, Urls und Faxnummern können angegeben werden.",
       "comment": "The use code 'home' is not to be used. Note that these contacts are not the contact details of people who are employed by or represent the organization, but official contacts for the organization itself.",
       "requirements": "Human contact for the organization.",
-      "min": 1,
+      "min": 0,
       "max": "*",
       "base": {
         "path": "Organization.telecom",
@@ -3942,6 +3942,7 @@
       "path": "Organization.type",
       "short": "Art der Einrichtung",
       "definition": "Art der Einrichtung.",
+      "min": 1,
       "max": "1",
       "mustSupport": true
     }, {
@@ -3983,7 +3984,6 @@
       },
       "short": "Kontaktangaben der Einrichtung",
       "definition": "Kontaktangaben der Einrichtung. Telefonnummern, E-Mailadressen, Urls und Faxnummern können angegeben werden.",
-      "min": 1,
       "mustSupport": true
     }, {
       "id": "Organization.telecom:Email",
@@ -4101,7 +4101,8 @@
       "min": 1,
       "mustSupport": true,
       "binding": {
-        "strength": "extensible"
+        "strength": "extensible",
+        "valueSet": "http://hl7.org/fhir/ValueSet/iso3166-1-2"
       }
     }, {
       "id": "Organization.contact",
