@@ -1,0 +1,214 @@
+{
+  "resourceType": "ValueSet",
+  "id": "evidenceTRPD",
+  "url": "https://demis.rki.de/fhir/ValueSet/evidenceTRPD",
+  "version": "1.0.3",
+  "name": "EvidenceTRPD",
+  "title": "Symptome und Manifestationen in Bezug auf den Meldetatbestand \"Treponema pallidum (Syphilis)\"",
+  "status": "active",
+  "experimental": false,
+  "date": "2026-01-09",
+  "publisher": "Robert Koch-Institut",
+  "contact": [ {
+    "telecom": [ {
+      "system": "email",
+      "value": "demis-support@rki.de"
+    } ]
+  } ],
+  "description": "Das ValueSet EvidenceTRPD enthält die kodierten Angaben zu Symptomen und Manifestationen in Bezug auf den Meldetatbestand \"Treponema pallidum (Syphilis)\".",
+  "jurisdiction": [ {
+    "coding": [ {
+      "system": "urn:iso:std:iso:3166",
+      "version": "ALPHA-2",
+      "code": "DE"
+    } ]
+  } ],
+  "copyright": "This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. “SNOMED” and “SNOMED CT” are registered trademarks of the IHTSDO.\r\n\r\nDieses Material enthält SNOMED Clinical Terms® (SNOMED CT®), die mit Genehmigung der International Health Terminology Standards Development Organisation (IHTSDO) verwendet werden. Alle Rechte vorbehalten. SNOMED CT® wurde ursprünglich vom College of American Pathologists entwickelt. \"SNOMED\" und \"SNOMED CT\" sind eingetragene Warenzeichen der IHTSDO.\r\n\r\nDownloadbedingungen für SNOMED-CT\r\n\r\nEnthält durch SNOMED International urheberrechtlich geschützte Information. Jede Verwendung von SNOMED CT in Deutschland erfordert eine vollgültige Affiliate Lizenz oder eine Sublizenz. Die entsprechende Lizenz ist kostenlos, vorausgesetzt die Verwendung findet nur in Deutschland statt und erfüllt die Bedingungen des Affiliate License Agreements. Affiliate Lizenzen können über das Mitglieder-Lizenzierungs- und Distributions-Service (MLDS) direkt beim jeweiligen NRC beantragt werden. https://mlds.ihtsdotools.org/#/landing/DE?lang=de\r\n\r\nContains information protected by copyright of SNOMED International. Any use of SNOMED CT in Austria requires a valid affiliate license or sublicense. The corresponding license is free of charge, provided that the use only takes place in Austria and fulfills the conditions of the Affiliate License Agreement. Affiliate licenses can be requested directly from the respective NRC via the Member Licensing and Distribution Service (MLDS). ttps://mlds.ihtsdotools.org/#/landing/DE?lang=de",
+  "compose": {
+    "include": [ {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "concept": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 12
+        } ],
+        "code": "186847001",
+        "display": "Primäre genitale Syphilis"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 16
+        } ],
+        "code": "26039008:{418775008=16488004;418775008=270352002}",
+        "display": "Klinisch und labordiagnostisch gesicherte Neurosyphilis"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 15
+        } ],
+        "code": "26039008:{719722006=706876006}",
+        "display": "Neurologische bzw. psychiatrische Symptomatik mit Verdacht auf Neurosyphilis"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 2
+        } ],
+        "code": "261665006",
+        "display": "Unbekannt"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 14
+        } ],
+        "code": "266127002",
+        "display": "Primäre Syphilis"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 19
+        } ],
+        "code": "266128007",
+        "display": "Exanthem durch sekundäre Syphilis"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 18
+        } ],
+        "code": "274741002",
+        "display": "Generalisiert vergrößerte Lymphknoten",
+        "designation": [ {
+          "language": "de-DE",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009"
+          },
+          "value": "Generalisierte Lymphknotenschwellung"
+        } ]
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 13
+        } ],
+        "code": "31015008",
+        "display": "Primäre anale Syphilis"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 11
+        } ],
+        "code": "402942007",
+        "display": "Syphilitisches Schanker der Mundschleimhäute",
+        "designation": [ {
+          "language": "de-DE",
+          "value": "Primäre orale Syphilis"
+        } ]
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 10
+        } ],
+        "code": "59934002",
+        "display": "Sekundäre syphilitische Lymphadenopathie",
+        "designation": [ {
+          "language": "de-DE",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009"
+          },
+          "value": "Sekundäre syphilitische Lymphadenitis"
+        } ]
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 5
+        } ],
+        "code": "74964007",
+        "display": "Andere"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 17
+        } ],
+        "code": "83883001",
+        "display": "Kardiovaskuläre Syphilis"
+      }, {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger": 20
+        } ],
+        "code": "91554004",
+        "display": "Condyloma latum"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "timestamp": "2026-01-09T00:00:00+01:00",
+    "contains": [ {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "31015008",
+      "display": "Primäre anale Syphilis"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "274741002",
+      "display": "Generalisiert vergrößerte Lymphknoten"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "261665006",
+      "display": "Unbekannt"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "266127002",
+      "display": "Primäre Syphilis"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "186847001",
+      "display": "Primäre genitale Syphilis"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "266128007",
+      "display": "Exanthem durch sekundäre Syphilis"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "83883001",
+      "display": "Kardiovaskuläre Syphilis"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "26039008:{418775008=16488004;418775008=270352002}",
+      "display": "Klinisch und labordiagnostisch gesicherte Neurosyphilis"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "74964007",
+      "display": "Andere"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "91554004",
+      "display": "Condyloma latum"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "59934002",
+      "display": "Sekundäre syphilitische Lymphadenopathie"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "402942007",
+      "display": "Syphilitisches Schanker der Mundschleimhäute"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/11000274103/version/20251115",
+      "code": "26039008:{719722006=706876006}",
+      "display": "Neurologische bzw. psychiatrische Symptomatik mit Verdacht auf Neurosyphilis"
+    } ]
+  }
+}
